@@ -1,14 +1,13 @@
 # Quantum Repeaters
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Repeaters Flowchart:
@@ -43,9 +42,7 @@ Quantum Repeaters Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Repeaters Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_85_quantum_networking/quantum_repeaters/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_85_quantum_networking/quantum_repeaters/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_85_quantum_networking/quantum_repeaters/test_algorithm.py)
-
-
-   Quantum Repeaters
 
 What problem does it solve? (1 sentence)  
    Extends quantum communication distance by creating entanglement between distant nodes through intermediate nodes, enabling long-distance quantum communication and quantum networks.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like signal repeaters: Quantum Repeaters are like signal repeaters but for quantum information - you use intermediate nodes (repeaters) to extend the range of quantum communication, creating entanglement over long distances - just as repeaters extend radio range, quantum repeaters extend quantum communication range.
 
 Inputs & Outputs  
-   - Input: Quantum channels, intermediate nodes, entanglement sources, quantum memories, protocols.  
-   - Output: Extended quantum links, long-distance entanglement, quantum communication, network connectivity.
+
+  - Input: Quantum channels, intermediate nodes, entanglement sources, quantum memories, protocols.  
+  - Output: Extended quantum links, long-distance entanglement, quantum communication, network connectivity.
 
 Step-by-step description (5–10 lines max)  
 Deploy: deploy quantum repeaters along path.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Repeaters: distance: 1000 km → repeaters: deploy 10 repeaters → create: local entanglement → swap: entanglement swapping → chain: chain swaps → result: entanglement over 1000 km → Quantum Repeaters successful.
 
 Time & Space Complexity  
-   - Time: O(r·s) where r is repeaters, s is swap time (repeater operations).  
-   - Space: O(r + m) where r is repeater storage, m is memory storage (quantum memories).
+
+  - Time: O(r·s) where r is repeaters, s is swap time (repeater operations).  
+  - Space: O(r + m) where r is repeater storage, m is memory storage (quantum memories).
 
 Strengths  
+
 - Distance: extends quantum communication distance.
 - Networking: enables long-distance quantum networks.
 - Scalability: enables scaling quantum networks.
 
 Weaknesses / limitations  
+
 - Complexity: quantum repeaters are complex.
 - Memory: requires quantum memories.
 - Loss: entanglement loss affects performance.

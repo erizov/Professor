@@ -1,14 +1,13 @@
 # SQL Transactions
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 SQL Transactions Flowchart:
@@ -43,9 +42,7 @@ SQL Transactions Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 SQL Transactions Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_49_sql_fundamentals/transactions/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_49_sql_fundamentals/transactions/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_49_sql_fundamentals/transactions/test_algorithm.py)
-
 
    SQL Transactions
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Either all operations succeed together or none do, safeguarding integrity even under failures.
 
 Inputs & Outputs  
-   - Input: BEGIN/COMMIT/ROLLBACK directives plus SQL statements.  
-   - Output: Committed data changes or a rollback to the previous state.
+
+  - Input: BEGIN/COMMIT/ROLLBACK directives plus SQL statements.  
+  - Output: Committed data changes or a rollback to the previous state.
 
 Step-by-step description (5–10 lines max)  
 BEGIN (implicit or explicit) starts a transaction context.
@@ -109,14 +104,17 @@ Tiny example (hand-simulated)
    Transfer funds: debit one account, credit another, COMMIT only if both succeed; else ROLLBACK.
 
 Time & Space Complexity  
-   - Time: Depends on enclosed statements; logging adds small overhead.  
-   - Space: Requires log space for redo/undo records.
+
+  - Time: Depends on enclosed statements; logging adds small overhead.  
+  - Space: Requires log space for redo/undo records.
 
 Strengths  
+
 - Protects data integrity under concurrency and crashes.
 - Simplifies multi-step operations for developers.
 
 Weaknesses / limitations  
+
 - Excessive transaction scope can cause contention.
 - Long transactions hold locks, reducing throughput.
 

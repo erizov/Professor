@@ -1,14 +1,13 @@
 # Hexagonal (Ports and Adapters)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Hexagonal (Ports and Adapters) Flowchart:
@@ -43,9 +42,7 @@ Hexagonal (Ports and Adapters) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Hexagonal (Ports and Adapters) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_02/lecture_10_architectural_patterns/hexagonal/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_10_architectural_patterns/hexagonal/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_10_architectural_patterns/hexagonal/test_algorithm.py)
-

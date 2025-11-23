@@ -1,14 +1,13 @@
 # Quantum Search (Grover's Algorithm)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Search (Grover's Algorithm) Flowchart:
@@ -49,9 +48,7 @@ Quantum Search (Grover's Algorithm) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Search (Grover's Algorithm) Step-by-Step Execution:
@@ -75,9 +72,7 @@ Step 3: Check remaining (index 3, value 7)
 Found! Index 3
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -90,12 +85,11 @@ flowchart TD
     More -->|No| NotFound([Not Found])
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_81_quantum_applications/quantum_search/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_81_quantum_applications/quantum_search/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_81_quantum_applications/quantum_search/test_algorithm.py)
-
 
 Quantum Search (Grover's Algorithm)
 
@@ -106,8 +100,9 @@ Intuition (plain-language explanation)
 Like quantum search: Quantum Search is like searching a phone book with quantum powers - instead of checking each entry one by one (classical), quantum superposition lets you check many entries at once, then amplify the correct one - just as quantum search finds items faster, Grover's algorithm finds items in a database faster.
 
 Inputs & Outputs  
-   - Input: Unsorted database, search criteria, oracle function, number of items N.  
-   - Output: Found item, search result, index of target, quantum state.
+
+  - Input: Unsorted database, search criteria, oracle function, number of items N.  
+  - Output: Found item, search result, index of target, quantum state.
 
 Step-by-step description (5–10 lines max)  
 Initialize: initialize quantum register in superposition.
@@ -125,15 +120,18 @@ Tiny example (hand-simulated)
    Quantum Search: database: 1 million items → initialize: superposition of all items → oracle: mark target → amplify: Grover diffusion → repeat: ~1000 iterations (√N) → measure: find target → result: found in √N time vs N time → Quantum Search successful.
 
 Time & Space Complexity  
-   - Time: O(√N) where N is database size (quadratic speedup over classical O(N)).  
-   - Space: O(log N) where N is database size (qubits needed).
+
+  - Time: O(√N) where N is database size (quadratic speedup over classical O(N)).  
+  - Space: O(log N) where N is database size (qubits needed).
 
 Strengths  
+
 - Speedup: quadratic speedup over classical search.
 - Optimal: optimal for unstructured search.
 - General: applicable to many search problems.
 
 Weaknesses / limitations  
+
 - Oracle: requires efficient oracle implementation.
 - Amplitude: requires exact number of iterations.
 - Noise: quantum noise affects success probability.

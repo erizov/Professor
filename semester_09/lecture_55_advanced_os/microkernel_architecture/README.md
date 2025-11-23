@@ -1,14 +1,13 @@
 # Microkernel Architecture
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Microkernel Architecture Flowchart:
@@ -43,9 +42,7 @@ Microkernel Architecture Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Microkernel Architecture Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_55_advanced_os/microkernel_architecture/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_55_advanced_os/microkernel_architecture/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_55_advanced_os/microkernel_architecture/test_algorithm.py)
-
-
-   Microkernel Architecture
 
 What problem does it solve? (1 sentence)  
    Minimizes kernel to essential functions (IPC, scheduling, memory management), moving most OS services to user-space servers, improving modularity, security, and maintainability.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a minimal government with specialized agencies: microkernel architecture is like a minimal central government (kernel) that only handles essential functions (like basic laws and coordination), while specialized agencies (user-space servers) handle specific services (like file systems, network stacks) - if an agency (server) crashes, it doesn't bring down the whole government (system), and you can update or replace agencies (servers) without changing the core government (kernel).
 
 Inputs & Outputs  
-   - Input: System calls, IPC messages, hardware interrupts, resource requests.  
-   - Output: Minimal kernel, user-space servers, modular OS services, improved reliability.
+
+  - Input: System calls, IPC messages, hardware interrupts, resource requests.  
+  - Output: Minimal kernel, user-space servers, modular OS services, improved reliability.
 
 Step-by-step description (5–10 lines max)  
 Minimize kernel: implement only essential functions in kernel (IPC, scheduling, memory).
@@ -113,15 +106,18 @@ Tiny example (hand-simulated)
    Microkernel: minimal kernel (IPC, scheduling, memory) → user-space servers: file system server, network server, device driver servers → IPC: kernel and servers communicate via messages → isolation: file server crash doesn't crash system → update: replace file server without kernel changes → modularity: add new services as new servers → microkernel architecture.
 
 Time & Space Complexity  
-   - Time: O(1) for kernel operations, O(m) for IPC where m is message size (may be slower than monolithic).  
-   - Space: O(k + s) where k is kernel size, s is total server size (smaller kernel, distributed services).
+
+  - Time: O(1) for kernel operations, O(m) for IPC where m is message size (may be slower than monolithic).  
+  - Space: O(k + s) where k is kernel size, s is total server size (smaller kernel, distributed services).
 
 Strengths  
+
 - Modularity: services can be updated or replaced independently.
 - Reliability: server failures don't crash entire system.
 - Security: better isolation between OS components.
 
 Weaknesses / limitations  
+
 - Performance: IPC overhead may be higher than monolithic kernel.
 - Complexity: managing multiple servers adds complexity.
 - Coordination: requires careful coordination between servers.

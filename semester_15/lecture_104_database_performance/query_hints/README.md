@@ -1,14 +1,13 @@
 # Query Hints
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Query Hints Flowchart:
@@ -43,9 +42,7 @@ Query Hints Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Query Hints Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_15/lecture_104_database_performance/query_hints/algorithm.py)
 - [Java Implementation](/code/semester_15/lecture_104_database_performance/query_hints/Algorithm.java)
 - [Python Tests](/code/semester_15/lecture_104_database_performance/query_hints/test_algorithm.py)
-
-
-   Query Hints
 
 What problem does it solve? (1 sentence)  
 Implements query hints algorithm.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Query Hints is a fundamental algorithm in computer science.
 
 Inputs & Outputs  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+
+  - Input: Algorithm-specific inputs  
+  - Output: Algorithm-specific outputs
 
 Step-by-step description (5–10 lines max)  
 Initialize data structures
@@ -107,13 +100,16 @@ Tiny example (hand-simulated)
    Example: Query Hints applied to sample data.
 
 Time & Space Complexity  
-   - Time: Varies  
-   - Space: Varies
+
+  - Time: Varies  
+  - Space: Varies
 
 Strengths  
+
 - Efficient for specific use cases
 
 Weaknesses / limitations  
+
 - May have limitations in certain scenarios
 
 Compare with alternatives  

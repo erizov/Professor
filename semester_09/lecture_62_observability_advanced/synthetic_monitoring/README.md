@@ -1,14 +1,13 @@
 # Synthetic Monitoring
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Synthetic Monitoring Flowchart:
@@ -43,9 +42,7 @@ Synthetic Monitoring Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Synthetic Monitoring Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_62_observability_advanced/synthetic_monitoring/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_62_observability_advanced/synthetic_monitoring/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_62_observability_advanced/synthetic_monitoring/test_algorithm.py)
-
-
-   Synthetic Monitoring
 
 What problem does it solve? (1 sentence)  
    Proactively monitors application availability and performance by simulating user interactions and transactions, detecting issues before real users are affected.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like a robot tester: synthetic monitoring is like having a robot that continuously tests your application - the robot performs the same actions real users would do (like logging in, browsing products, making purchases) from different locations around the world - if the robot finds a problem (like slow response or error), it alerts you immediately, even if no real users have encountered it yet - it's like having a 24/7 quality assurance tester that never sleeps.
 
 Inputs & Outputs  
-   - Input: Test scripts, monitoring locations, test scenarios, frequency, thresholds.  
-   - Output: Synthetic test results, availability metrics, performance measurements, proactive alerts.
+
+  - Input: Test scripts, monitoring locations, test scenarios, frequency, thresholds.  
+  - Output: Synthetic test results, availability metrics, performance measurements, proactive alerts.
 
 Step-by-step description (5–10 lines max)  
 Define scenarios: define user interaction scenarios to test (login, checkout, search).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Synthetic monitoring: e-commerce site → scenario: user login → script: POST /login, check response → deploy: monitors in 5 regions → schedule: run every 5 min → execute: monitors test login → measure: response time 200ms, success rate 100% → alert: response time > 500ms → detect: login fails in Asia region → alert: proactive detection → synthetic monitoring operational.
 
 Time & Space Complexity  
-   - Time: O(s) where s is scenario execution time (varies by test complexity).  
-   - Space: O(r) where r is number of test results (result storage).
+
+  - Time: O(s) where s is scenario execution time (varies by test complexity).  
+  - Space: O(r) where r is number of test results (result storage).
 
 Strengths  
+
 - Proactive: detects issues before real users are affected.
 - Coverage: tests from multiple geographic locations.
 - Consistency: provides consistent monitoring regardless of user traffic.
 
 Weaknesses / limitations  
+
 - Cost: running synthetic tests continuously can be expensive.
 - Limited: may not catch all real user scenarios.
 - Maintenance: test scripts need maintenance as application changes.

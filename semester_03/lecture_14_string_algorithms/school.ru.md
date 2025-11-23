@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 14 String Algorithms — string algorithms - demonstration. this lecture covers string algorithms including kmp, boyer-moore, and rabin-karp.
+Лекция 14 Строка Algorithms — строка algorithms - demonstration. this лекция covers строка algorithms including kmp, boyer-moore, and rabin-karp.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 14 String Algorithms — string algorithms - demonstration. this lecture
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 14 string algorithms:
+Рассмотрим конкретный пример работы лекция 14 строка algorithms:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 14 String Algorithms — string algorithms - demonstration. this lecture
 
 ### Базовые
 
-1. Что делает алгоритм lecture 14 string algorithms?
-2. В каких ситуациях используется lecture 14 string algorithms?
+1. Что делает алгоритм лекция 14 строка algorithms?
+2. В каких ситуациях используется лекция 14 строка algorithms?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 14 string algorithms обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 14 string algorithms?
-3. Можно ли улучшить работу lecture 14 string algorithms?
+1. Как лекция 14 строка algorithms обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 14 строка algorithms?
+3. Можно ли улучшить работу лекция 14 строка algorithms?
 
 ### Сложные
 
-1. Какова временная сложность lecture 14 string algorithms?
-2. Как lecture 14 string algorithms работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 14 string algorithms?
+1. Какова временная сложность лекция 14 строка algorithms?
+2. Как лекция 14 строка algorithms работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 14 строка algorithms?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 14 string algorithms.
+Выполни простую операцию с алгоритмом лекция 14 строка algorithms.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 14 string algorithms к более сложному набору данных.
+Примени алгоритм лекция 14 строка algorithms к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 14 string algorithms на языке программирования.
+Напиши реализацию алгоритма лекция 14 строка algorithms на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

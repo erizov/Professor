@@ -1,14 +1,13 @@
 # Exokernel Design
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Exokernel Design Flowchart:
@@ -43,9 +42,7 @@ Exokernel Design Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Exokernel Design Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_55_advanced_os/exokernel_design/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_55_advanced_os/exokernel_design/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_55_advanced_os/exokernel_design/test_algorithm.py)
-
-
-   Exokernel Design
 
 What problem does it solve? (1 sentence)  
 Minimizes kernel functionality to provide only hardware abstraction and resource protection, allowing applications to implement their own OS abstractions for maximum performance and flexibility.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a bare-bones apartment building: exokernel design is like a minimal apartment building that only provides the essentials (structure, utilities, security) - instead of the building management dictating how you organize your apartment (like traditional OS), you get a basic space (hardware abstraction) and organize it however you want (application-level OS abstractions) - this gives you maximum control and performance, but requires you to do more work yourself.
 
 Inputs & Outputs  
-   - Input: Hardware resources, application requests, resource allocation policies.  
-   - Output: Minimal kernel, hardware abstraction, resource protection, application-level abstractions.
+
+  - Input: Hardware resources, application requests, resource allocation policies.  
+  - Output: Minimal kernel, hardware abstraction, resource protection, application-level abstractions.
 
 Step-by-step description (5–10 lines max)  
 Minimize kernel: implement only essential kernel functions (hardware abstraction, protection).
@@ -112,15 +105,18 @@ Tiny example (hand-simulated)
    Exokernel: minimal kernel → provides: hardware abstraction (CPU, memory, disk), resource protection (secure multiplexing) → application: implements own file system, network stack, scheduler using library OS → control: application optimizes file system for its workload → performance: minimal kernel overhead → flexibility: application has full control → exokernel design.
 
 Time & Space Complexity  
-   - Time: O(1) for kernel operations (minimal overhead), O(a) for application-level abstractions where a is application complexity.  
-   - Space: O(k) where k is minimal kernel size (much smaller than monolithic kernel).
+
+  - Time: O(1) for kernel operations (minimal overhead), O(a) for application-level abstractions where a is application complexity.  
+  - Space: O(k) where k is minimal kernel size (much smaller than monolithic kernel).
 
 Strengths  
+
 - Performance: minimal kernel overhead enables maximum performance.
 - Flexibility: applications can implement custom OS abstractions.
 - Control: applications have fine-grained control over resources.
 
 Weaknesses / limitations  
+
 - Complexity: applications must implement more functionality themselves.
 - Portability: less portable due to application-specific abstractions.
 - Security: requires careful design to maintain security with minimal kernel.

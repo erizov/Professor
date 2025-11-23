@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 106 Nosql Advanced Topics — nosql - demonstration. this lecture covers nosql database algorithms and patterns.
+Лекция 106 Nosql Продвинутый Topics — nosql - demonstration. this лекция covers nosql база данных algorithms and patterns.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 106 Nosql Advanced Topics — nosql - demonstration. this lecture covers
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 106 nosql advanced topics:
+Рассмотрим конкретный пример работы лекция 106 nosql продвинутый topics:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 106 Nosql Advanced Topics — nosql - demonstration. this lecture covers
 
 ### Базовые
 
-1. Что делает алгоритм lecture 106 nosql advanced topics?
-2. В каких ситуациях используется lecture 106 nosql advanced topics?
+1. Что делает алгоритм лекция 106 nosql продвинутый topics?
+2. В каких ситуациях используется лекция 106 nosql продвинутый topics?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 106 nosql advanced topics обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 106 nosql advanced topics?
-3. Можно ли улучшить работу lecture 106 nosql advanced topics?
+1. Как лекция 106 nosql продвинутый topics обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 106 nosql продвинутый topics?
+3. Можно ли улучшить работу лекция 106 nosql продвинутый topics?
 
 ### Сложные
 
-1. Какова временная сложность lecture 106 nosql advanced topics?
-2. Как lecture 106 nosql advanced topics работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 106 nosql advanced topics?
+1. Какова временная сложность лекция 106 nosql продвинутый topics?
+2. Как лекция 106 nosql продвинутый topics работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 106 nosql продвинутый topics?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 106 nosql advanced topics.
+Выполни простую операцию с алгоритмом лекция 106 nosql продвинутый topics.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 106 nosql advanced topics к более сложному набору данных.
+Примени алгоритм лекция 106 nosql продвинутый topics к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 106 nosql advanced topics на языке программирования.
+Напиши реализацию алгоритма лекция 106 nosql продвинутый topics на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

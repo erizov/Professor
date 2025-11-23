@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 76 Platform Engineering — platform engineering - demonstration. this lecture covers platform engineering patterns.
+Лекция 76 Platform Инженерия — platform инженерия - demonstration. this лекция covers platform инженерия patterns.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 76 Platform Engineering — platform engineering - demonstration. this l
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 76 platform engineering:
+Рассмотрим конкретный пример работы лекция 76 platform инженерия:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 76 Platform Engineering — platform engineering - demonstration. this l
 
 ### Базовые
 
-1. Что делает алгоритм lecture 76 platform engineering?
-2. В каких ситуациях используется lecture 76 platform engineering?
+1. Что делает алгоритм лекция 76 platform инженерия?
+2. В каких ситуациях используется лекция 76 platform инженерия?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 76 platform engineering обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 76 platform engineering?
-3. Можно ли улучшить работу lecture 76 platform engineering?
+1. Как лекция 76 platform инженерия обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 76 platform инженерия?
+3. Можно ли улучшить работу лекция 76 platform инженерия?
 
 ### Сложные
 
-1. Какова временная сложность lecture 76 platform engineering?
-2. Как lecture 76 platform engineering работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 76 platform engineering?
+1. Какова временная сложность лекция 76 platform инженерия?
+2. Как лекция 76 platform инженерия работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 76 platform инженерия?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 76 platform engineering.
+Выполни простую операцию с алгоритмом лекция 76 platform инженерия.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 76 platform engineering к более сложному набору данных.
+Примени алгоритм лекция 76 platform инженерия к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 76 platform engineering на языке программирования.
+Напиши реализацию алгоритма лекция 76 platform инженерия на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Index - Algorithms Course</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .filters {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .filter-group label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        
+        .filter-group select,
+        .filter-group input {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .filter-group select:focus,
+        .filter-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .btn {
+            padding: 0.5rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+        
+        .algorithms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .algorithm-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .algorithm-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .algorithm-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .algorithm-card .meta {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .badge-semester {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .badge-category {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+        
+        .badge-complexity {
+            background: #fff3e0;
+            color: #e65100;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        .pagination button {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .pagination button:hover {
+            background: #f5f5f5;
+        }
+        
+        .pagination button.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            overflow: auto;
+        }
+        
+        .modal-content {
+            background: white;
+            margin: 5% auto;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            color: #000;
+        }
+        
+        .md-content {
+            margin-top: 1rem;
+        }
+        
+        .md-content h1, .md-content h2, .md-content h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #667eea;
+        }
+        
+        .md-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .md-content ul, .md-content ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .md-content code {
+            background: #f5f5f5;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .md-content pre {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 id="page-title">Algorithm Index</h1>
+        <p id="page-description">Browse algorithms by level and language</p>
+        <div class="nav-menu">
+            <a href="/" id="nav-home">Home</a>
+            <a href="/algorithm-index" id="nav-algorithm-index">Algorithm Index</a>
+            <a href="/sandbox" id="nav-sandbox">Sandbox</a>
+            <a href="/test-reports" id="nav-test-reports">Test Reports</a>
+            <a href="/admin" id="admin-link" style="display: none;">Admin</a>
+            
+            <!-- Language and Level controls in nav-menu -->
+            <div style="display: flex; gap: 0.5rem; align-items: center; margin-left: auto;">
+                <label for="header-level" style="color: white; font-weight: 600; margin-right: 0.25rem;">Level:</label>
+                <select id="header-level" style="padding: 0.5rem; border-radius: 4px; border: none; font-size: 0.9rem; background: white;">
+                    <option value="school">School</option>
+                    <option value="univer">University</option>
+                </select>
+                
+                <label for="header-language" style="color: white; font-weight: 600; margin-left: 1rem; margin-right: 0.25rem;">Language:</label>
+                <select id="header-language" style="padding: 0.5rem; border-radius: 4px; border: none; font-size: 0.9rem; background: white;">
+                    <option value="en">English</option>
+                    <option value="ru">Russian</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="filters">
+            <div class="filter-group">
+                <label for="level">Level</label>
+                <select id="level">
+                    <option value="school" {{ 'selected' if preferred_level == 'school' else '' }}>School</option>
+                    <option value="univer" {{ 'selected' if preferred_level == 'university' or preferred_level == 'univer' else '' }}>University</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="language">Language</label>
+                <select id="language">
+                    <option value="en" {{ 'selected' if preferred_language == 'en' else '' }}>English</option>
+                    <option value="ru" {{ 'selected' if preferred_language == 'ru' else '' }}>Russian</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="search">Search</label>
+                <input type="text" id="search" placeholder="Search algorithms...">
+            </div>
+            <div class="filter-group">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="semester">Semester</label>
+                <select id="semester">
+                    <option value="">All Semesters</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>&nbsp;</label>
+                <button class="btn btn-primary" onclick="loadAlgorithms()">Apply Filters</button>
+            </div>
+        </div>
+        
+        <div id="algorithms-container">
+            <div class="loading">Loading algorithms...</div>
+        </div>
+        
+        <div class="pagination" id="pagination"></div>
+    </div>
+    
+    <!-- Modal for algorithm content -->
+    <div id="previewModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="preview-content" class="md-content"></div>
+        </div>
+    </div>
+    
+    <script>
+        let currentPage = 1;
+        let currentFilters = {};
+        
+        // Load user preferences on page load
+        async function loadUserPreferences() {
+            try {
+                const response = await fetch('/algorithm-index/api/preferences');
+                if (response.ok) {
+                    const prefs = await response.json();
+                    document.getElementById('level').value = prefs.level || 'school';
+                    document.getElementById('language').value = prefs.language || 'en';
+                }
+            } catch (error) {
+                console.error('Error loading preferences:', error);
+            }
+        }
+        
+        // Save user preferences
+        async function saveUserPreferences() {
+            const level = document.getElementById('level').value;
+            const language = document.getElementById('language').value;
+            
+            try {
+                const response = await fetch('/algorithm-index/api/preferences', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        level: level,
+                        language: language
+                    })
+                });
+                
+                if (response.ok) {
+                    console.log('Preferences saved');
+                }
+            } catch (error) {
+                console.error('Error saving preferences:', error);
+            }
+        }
+        
+        // Load algorithms
+        async function loadAlgorithms(page = 1) {
+            // Get level and language from header dropdowns (or fallback to filter dropdowns)
+            const headerLevel = document.getElementById('header-level');
+            const headerLanguage = document.getElementById('header-language');
+            let level = headerLevel ? headerLevel.value : (document.getElementById('level')?.value || 'school');
+            let language = headerLanguage ? headerLanguage.value : (document.getElementById('language')?.value || 'en');
+            
+            // Normalize level value (university -> univer)
+            if (level === 'university') {
+                level = 'univer';
+            }
+            
+            // Ensure level and language are not empty
+            if (!level) level = 'school';
+            if (!language) language = 'en';
+            
+            // Sync filter dropdowns with header dropdowns
+            const filterLevel = document.getElementById('level');
+            const filterLanguage = document.getElementById('language');
+            if (filterLevel) filterLevel.value = level === 'univer' ? 'univer' : level;
+            if (filterLanguage) filterLanguage.value = language;
+            
+            const search = document.getElementById('search').value;
+            const category = document.getElementById('category').value;
+            const semester = document.getElementById('semester').value;
+            
+            // Save preferences when filters change
+            saveUserPreferences();
+            
+            console.log('Loading algorithms with level:', level, 'language:', language);
+            
+            const params = new URLSearchParams({
+                level: level,
+                language: language,
+                page: page,
+                per_page: 50
+            });
+            
+            if (search) params.append('search', search);
+            if (category) params.append('category', category);
+            if (semester) params.append('semester', semester);
+            
+            try {
+                console.log('Fetching algorithms with params:', params.toString());
+                const response = await fetch(`/algorithm-index/api/algorithms?${params}`);
+                const data = await response.json();
+                
+                console.log('Received algorithms:', data.algorithms?.length || 0, 'Total:', data.total || 0);
+                
+                displayAlgorithms(data.algorithms);
+                displayPagination(data.page, data.total_pages);
+                currentPage = data.page;
+            } catch (error) {
+                console.error('Error loading algorithms:', error);
+                const language = document.getElementById('header-language')?.value || document.getElementById('language')?.value || 'en';
+                const errorText = language === 'ru' ? 'Ошибка загрузки алгоритмов' : 'Error loading algorithms';
+                document.getElementById('algorithms-container').innerHTML = 
+                    `<div class="loading">${errorText}</div>`;
+            }
+        }
+        
+        // Display algorithms
+        function displayAlgorithms(algorithms) {
+            const container = document.getElementById('algorithms-container');
+            
+            if (algorithms.length === 0) {
+                container.innerHTML = '<div class="loading">No algorithms found</div>';
+                return;
+            }
+            
+            container.innerHTML = '<div class="algorithms-grid"></div>';
+            const grid = container.querySelector('.algorithms-grid');
+            
+            algorithms.forEach(algo => {
+                const card = document.createElement('div');
+                card.className = 'algorithm-card';
+                card.onclick = () => showAlgorithmContent(algo);
+                
+                card.innerHTML = `
+                    <h3>${algo.display_name || algo.name}</h3>
+                    <p>${algo.short_description || algo.description || ''}</p>
+                    <div class="meta">
+                        ${algo.semester_number ? `<span class="badge badge-semester">Semester ${algo.semester_number}</span>` : ''}
+                        ${algo.category ? `<span class="badge badge-category">${algo.category}</span>` : ''}
+                        ${algo.time_complexity ? `<span class="badge badge-complexity">${algo.time_complexity}</span>` : ''}
+                    </div>
+                `;
+                
+                grid.appendChild(card);
+            });
+        }
+        
+        // Display pagination
+        function displayPagination(currentPage, totalPages) {
+            const pagination = document.getElementById('pagination');
+            pagination.innerHTML = '';
+            
+            if (totalPages <= 1) return;
+            
+            // Get language for translations
+            const language = document.getElementById('header-language')?.value || document.getElementById('language')?.value || 'en';
+            const prevText = language === 'ru' ? 'Назад' : 'Previous';
+            const nextText = language === 'ru' ? 'Вперед' : 'Next';
+            
+            // Previous button
+            const prevBtn = document.createElement('button');
+            prevBtn.textContent = prevText;
+            prevBtn.disabled = currentPage === 1;
+            prevBtn.onclick = () => loadAlgorithms(currentPage - 1);
+            pagination.appendChild(prevBtn);
+            
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+                    const btn = document.createElement('button');
+                    btn.textContent = i;
+                    btn.className = i === currentPage ? 'active' : '';
+                    btn.onclick = () => loadAlgorithms(i);
+                    pagination.appendChild(btn);
+                } else if (i === currentPage - 3 || i === currentPage + 3) {
+                    const span = document.createElement('span');
+                    span.textContent = '...';
+                    span.style.padding = '0.5rem';
+                    pagination.appendChild(span);
+                }
+            }
+            
+            // Next button
+            const nextBtn = document.createElement('button');
+            nextBtn.textContent = nextText;
+            nextBtn.disabled = currentPage === totalPages;
+            nextBtn.onclick = () => loadAlgorithms(currentPage + 1);
+            pagination.appendChild(nextBtn);
+        }
+        
+        // Show algorithm content in modal
+        async function showAlgorithmContent(algo) {
+            const modal = document.getElementById('previewModal');
+            const content = document.getElementById('preview-content');
+            
+            const language = document.getElementById('header-language')?.value || document.getElementById('language')?.value || 'en';
+            const loadingText = language === 'ru' ? 'Загрузка содержимого...' : 'Loading content...';
+            content.innerHTML = `<div class="loading">${loadingText}</div>`;
+            modal.style.display = 'block';
+            
+            try {
+                const level = document.getElementById('header-level')?.value || document.getElementById('level')?.value || 'school';
+                const lang = document.getElementById('header-language')?.value || document.getElementById('language')?.value || 'en';
+                const response = await fetch(
+                    `/algorithm-index/api/md-file?path=${encodeURIComponent(algo.folder_path)}&level=${level}&language=${lang}`
+                );
+                const data = await response.json();
+                
+                if (data.content) {
+                    // Simple markdown rendering (you might want to use a library like marked.js)
+                    content.innerHTML = `<h1>${algo.display_name || algo.name}</h1>` + 
+                                      convertMarkdownToHTML(data.content);
+                } else {
+                    const notAvailableText = language === 'ru' ? 'Содержимое недоступно' : 'Content not available';
+                    content.innerHTML = `<p>${notAvailableText}</p>`;
+                }
+            } catch (error) {
+                console.error('Error loading content:', error);
+                const errorText = language === 'ru' ? 'Ошибка загрузки содержимого' : 'Error loading content';
+                content.innerHTML = `<p>${errorText}</p>`;
+            }
+        }
+        
+        // Simple markdown to HTML converter
+        function convertMarkdownToHTML(md) {
+            let html = md;
+            // Headers
+            html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+            html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+            html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+            // Bold
+            html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            // Lists
+            html = html.replace(/^\* (.*$)/gim, '<li>$1</li>');
+            html = html.replace(/^(\d+)\. (.*$)/gim, '<li>$2</li>');
+            // Wrap consecutive list items
+            html = html.replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>');
+            // Code blocks
+            html = html.replace(/```[\s\S]*?```/g, '<pre><code>$&</code></pre>');
+            // Inline code
+            html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+            // Paragraphs
+            html = html.split('\n\n').map(p => {
+                if (!p.trim() || p.startsWith('<')) return p;
+                return `<p>${p}</p>`;
+            }).join('\n');
+            
+            return html;
+        }
+        
+        // Close modal
+        function closeModal() {
+            document.getElementById('previewModal').style.display = 'none';
+        }
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('previewModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+        
+        // Load categories and semesters
+        async function loadFilters() {
+            try {
+                const [categoriesRes, semestersRes] = await Promise.all([
+                    fetch('/api/categories'),
+                    fetch('/api/semesters')
+                ]);
+                
+                const categories = await categoriesRes.json();
+                const semesters = await semestersRes.json();
+                
+                const categorySelect = document.getElementById('category');
+                categories.forEach(cat => {
+                    const option = document.createElement('option');
+                    option.value = cat;
+                    option.textContent = cat;
+                    categorySelect.appendChild(option);
+                });
+                
+                const semesterSelect = document.getElementById('semester');
+                semesters.forEach(sem => {
+                    const option = document.createElement('option');
+                    option.value = sem;
+                    option.textContent = `Semester ${sem}`;
+                    semesterSelect.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Error loading filters:', error);
+            }
+        }
+        
+        // Update UI language
+        function updateUILanguage(language) {
+            const translations = {
+                en: {
+                    'page-title': 'Algorithm Index',
+                    'page-description': 'Browse algorithms by level and language',
+                    'level-label': 'Level:',
+                    'language-label': 'Language:',
+                    'level': 'Level',
+                    'language': 'Language',
+                    'search': 'Search',
+                    'search-placeholder': 'Search algorithms...',
+                    'category': 'Category',
+                    'all-categories': 'All Categories',
+                    'semester': 'Semester',
+                    'all-semesters': 'All Semesters',
+                    'apply-filters': 'Apply Filters',
+                    'school': 'School',
+                    'university': 'University',
+                    'russian': 'Russian',
+                    'english': 'English',
+                    'no-algorithms': 'No algorithms found',
+                    'error-loading': 'Error loading algorithms',
+                    'nav-home': 'Home',
+                    'nav-algorithm-index': 'Algorithm Index',
+                    'nav-sandbox': 'Sandbox',
+                    'nav-test-reports': 'Test Reports',
+                    'nav-executor': 'Algorithm Executor',
+                    'previous': 'Previous',
+                    'next': 'Next',
+                    'loading-content': 'Loading content...',
+                    'content-not-available': 'Content not available',
+                    'error-loading-content': 'Error loading content'
+                },
+                ru: {
+                    'page-title': 'Индекс алгоритмов',
+                    'page-description': 'Просмотр алгоритмов по уровню и языку',
+                    'level-label': 'Уровень:',
+                    'language-label': 'Язык:',
+                    'level': 'Уровень',
+                    'language': 'Язык',
+                    'search': 'Поиск',
+                    'search-placeholder': 'Поиск алгоритмов...',
+                    'category': 'Категория',
+                    'all-categories': 'Все категории',
+                    'semester': 'Семестр',
+                    'all-semesters': 'Все семестры',
+                    'apply-filters': 'Применить фильтры',
+                    'school': 'Школа',
+                    'university': 'Университет',
+                    'russian': 'Русский',
+                    'english': 'Английский',
+                    'no-algorithms': 'Алгоритмы не найдены',
+                    'error-loading': 'Ошибка загрузки алгоритмов',
+                    'nav-home': 'Главная',
+                    'nav-algorithm-index': 'Индекс алгоритмов',
+                    'nav-sandbox': 'Песочница',
+                    'nav-test-reports': 'Результаты тестов',
+                    'nav-executor': 'Исполнитель алгоритмов',
+                    'previous': 'Назад',
+                    'next': 'Вперед',
+                    'loading-content': 'Загрузка содержимого...',
+                    'content-not-available': 'Содержимое недоступно',
+                    'error-loading-content': 'Ошибка загрузки содержимого'
+                }
+            };
+            
+            // Ensure language is 'ru' or 'en'
+            const normalizedLang = (language === 'ru' || language === 'en') ? language : 'en';
+            const t = translations[normalizedLang] || translations.en;
+            
+            console.log('updateUILanguage: language=', language, 'normalized=', normalizedLang, 'has translations:', !!t);
+            
+            // Update page title and description
+            const pageTitle = document.getElementById('page-title');
+            const pageDescription = document.getElementById('page-description');
+            if (pageTitle) pageTitle.textContent = t['page-title'];
+            if (pageDescription) pageDescription.textContent = t['page-description'];
+            
+            // Update header labels
+            const levelLabel = document.querySelector('label[for="header-level"]');
+            const languageLabel = document.querySelector('label[for="header-language"]');
+            if (levelLabel) levelLabel.textContent = t['level-label'];
+            if (languageLabel) languageLabel.textContent = t['language-label'];
+            
+            // Update filter labels
+            const filterLabels = document.querySelectorAll('.filter-group label');
+            filterLabels.forEach(label => {
+                const forAttr = label.getAttribute('for');
+                if (forAttr === 'level') label.textContent = t['level'];
+                else if (forAttr === 'language') label.textContent = t['language'];
+                else if (forAttr === 'search') label.textContent = t['search'];
+                else if (forAttr === 'category') label.textContent = t['category'];
+                else if (forAttr === 'semester') label.textContent = t['semester'];
+            });
+            
+            // Update search placeholder
+            const searchInput = document.getElementById('search');
+            if (searchInput) searchInput.placeholder = t['search-placeholder'];
+            
+            // Update dropdown options
+            const headerLevel = document.getElementById('header-level');
+            if (headerLevel) {
+                const options = headerLevel.querySelectorAll('option');
+                if (options.length >= 2) {
+                    options[0].textContent = t['school'];
+                    options[1].textContent = t['university'];
+                }
+            }
+            
+            const headerLanguage = document.getElementById('header-language');
+            if (headerLanguage) {
+                const options = headerLanguage.querySelectorAll('option');
+                if (options.length >= 2) {
+                    options[0].textContent = t['english'];
+                    options[1].textContent = t['russian'];
+                }
+            }
+            
+            const filterLevel = document.getElementById('level');
+            if (filterLevel) {
+                const options = filterLevel.querySelectorAll('option');
+                if (options.length >= 2) {
+                    options[0].textContent = t['school'];
+                    options[1].textContent = t['university'];
+                }
+            }
+            
+            const filterLanguage = document.getElementById('language');
+            if (filterLanguage) {
+                const options = filterLanguage.querySelectorAll('option');
+                if (options.length >= 2) {
+                    options[0].textContent = t['english'];
+                    options[1].textContent = t['russian'];
+                }
+            }
+            
+            // Update category and semester dropdowns
+            const categorySelect = document.getElementById('category');
+            if (categorySelect && categorySelect.options.length > 0) {
+                categorySelect.options[0].textContent = t['all-categories'];
+            }
+            
+            const semesterSelect = document.getElementById('semester');
+            if (semesterSelect && semesterSelect.options.length > 0) {
+                semesterSelect.options[0].textContent = t['all-semesters'];
+            }
+            
+            // Update Apply Filters button
+            const applyBtn = document.querySelector('button.btn-primary');
+            if (applyBtn) applyBtn.textContent = t['apply-filters'];
+            
+            // Update navigation links
+            const navHome = document.getElementById('nav-home');
+            const navAlgorithmIndex = document.getElementById('nav-algorithm-index');
+            const navSandbox = document.getElementById('nav-sandbox');
+            const navTestReports = document.getElementById('nav-test-reports');
+            if (navHome) navHome.textContent = t['nav-home'];
+            if (navAlgorithmIndex) navAlgorithmIndex.textContent = t['nav-algorithm-index'];
+            if (navSandbox) navSandbox.textContent = t['nav-sandbox'];
+            if (navTestReports) navTestReports.textContent = t['nav-test-reports'];
+        }
+        
+        // Global language change function
+        function setGlobalLanguage(language) {
+            // Save to localStorage for persistence across pages
+            localStorage.setItem('preferred_language', language);
+            
+            // Save to server preferences
+            saveUserPreferences();
+            
+            // Update UI language
+            console.log('setGlobalLanguage: Updating UI language to:', language);
+            updateUILanguage(language);
+            
+            // Trigger language change event for other pages
+            window.dispatchEvent(new CustomEvent('languageChanged', { 
+                detail: { language: language } 
+            }));
+            
+            // Reload algorithms
+            loadAlgorithms(1);
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            loadUserPreferences().then(() => {
+                // Load language from localStorage if available, default to 'en'
+                const savedLanguage = localStorage.getItem('preferred_language') || 'en';
+                const headerLanguage = document.getElementById('header-language');
+                const filterLanguage = document.getElementById('language');
+                if (headerLanguage) headerLanguage.value = savedLanguage;
+                if (filterLanguage) filterLanguage.value = savedLanguage;
+                
+                // Update UI language
+                updateUILanguage(savedLanguage);
+                
+                // Set default level to 'school' if not set
+                const headerLevel = document.getElementById('header-level');
+                const filterLevel = document.getElementById('level');
+                if (headerLevel && !headerLevel.value) {
+                    headerLevel.value = 'school';
+                }
+                if (filterLevel && !filterLevel.value) {
+                    filterLevel.value = 'school';
+                }
+                
+                // Load algorithms after preferences are set
+                loadAlgorithms();
+            });
+            
+            loadFilters();
+            
+            // Auto-load when header level changes
+            const headerLevel = document.getElementById('header-level');
+            if (headerLevel) {
+                headerLevel.addEventListener('change', () => {
+                    saveUserPreferences();
+                    loadAlgorithms(1);
+                });
+            }
+            
+            // Auto-load when header language changes
+            const headerLanguage = document.getElementById('header-language');
+            if (headerLanguage) {
+                headerLanguage.addEventListener('change', (e) => {
+                    const language = e.target.value;
+                    console.log('Header language changed to:', language);
+                    setGlobalLanguage(language);
+                });
+            }
+            
+            // Auto-load when level, language, category, or semester changes
+            const filterLevel = document.getElementById('level');
+            if (filterLevel) {
+                filterLevel.addEventListener('change', () => {
+                    saveUserPreferences();
+                    loadAlgorithms(1);
+                });
+            }
+            
+            const filterLanguage = document.getElementById('language');
+            if (filterLanguage) {
+                filterLanguage.addEventListener('change', (e) => {
+                    const language = e.target.value;
+                    setGlobalLanguage(language);
+                });
+            }
+            
+            document.getElementById('category').addEventListener('change', () => {
+                loadAlgorithms(1);
+            });
+            
+            document.getElementById('semester').addEventListener('change', () => {
+                loadAlgorithms(1);
+            });
+            
+            // Search on Enter
+            document.getElementById('search').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    loadAlgorithms(1);
+                }
+            });
+            
+            // Listen for global language changes from other pages
+            window.addEventListener('languageChanged', (e) => {
+                const language = e.detail.language;
+                const headerLanguage = document.getElementById('header-language');
+                const filterLanguage = document.getElementById('language');
+                if (headerLanguage) headerLanguage.value = language;
+                if (filterLanguage) filterLanguage.value = language;
+                updateUILanguage(language);
+                loadAlgorithms(1);
+            });
+        });
+    </script>
+</body>
+</html>
+

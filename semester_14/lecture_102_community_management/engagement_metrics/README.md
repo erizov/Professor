@@ -1,14 +1,13 @@
 # Community Engagement Metrics
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Community Engagement Metrics Flowchart:
@@ -43,9 +42,7 @@ Community Engagement Metrics Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Community Engagement Metrics Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_14/lecture_102_community_management/engagement_metrics/algorithm.py)
 - [Java Implementation](/code/semester_14/lecture_102_community_management/engagement_metrics/Algorithm.java)
 - [Python Tests](/code/semester_14/lecture_102_community_management/engagement_metrics/test_algorithm.py)
-
-
-   Community Engagement Metrics
 
 What problem does it solve? (1 sentence)  
    Measures and tracks community engagement through metrics like active users, participation rates, content creation, response times, and sentiment to assess community health and guide engagement strategies.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a fitness tracker for communities: Engagement metrics are like a fitness tracker - you measure various activities (posts, replies, participation), track trends (increasing/decreasing), and assess health (engagement score) - just as a fitness tracker monitors your activity, engagement metrics monitor community activity.
 
 Inputs & Outputs  
-   - Input: Community activity data, member data, content data, time periods, metric definitions, analysis parameters.  
-   - Output: Engagement metrics, participation rates, activity trends, health scores, engagement reports, recommendations.
+
+  - Input: Community activity data, member data, content data, time periods, metric definitions, analysis parameters.  
+  - Output: Engagement metrics, participation rates, activity trends, health scores, engagement reports, recommendations.
 
 Step-by-step description (5–10 lines max)  
 Define: define engagement metrics and KPIs.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Engagement Metrics: define (DAU, posts, replies) → collect → calculate (1000 DAU, 500 posts/day) → track → analyze → compare → score (7.5/10) → report → recommend → Engagement Metrics successful.
 
 Time & Space Complexity  
-   - Time: O(d * c) where d is data volume, c is calculation complexity (metrics complexity).  
-   - Space: O(d + m) where d is data, m is metrics (metrics storage).
+
+  - Time: O(d * c) where d is data volume, c is calculation complexity (metrics complexity).  
+  - Space: O(d + m) where d is data, m is metrics (metrics storage).
 
 Strengths  
+
 - Measurement: provides quantitative measurement of engagement.
 - Insights: reveals engagement patterns and trends.
 - Optimization: helps optimize engagement strategies.
 
 Weaknesses / limitations  
+
 - Interpretation: requires careful interpretation of metrics.
 - Privacy: raises privacy concerns about data collection.
 - Completeness: may not capture all aspects of engagement.

@@ -1,14 +1,13 @@
 # Threat Modeling
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Threat Modeling Flowchart:
@@ -43,9 +42,7 @@ Threat Modeling Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Threat Modeling Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_73_security_devops/threat_modeling/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_73_security_devops/threat_modeling/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_73_security_devops/threat_modeling/test_algorithm.py)
-
-
-   Threat Modeling
 
 What problem does it solve? (1 sentence)  
    Systematically identifies, analyzes, and mitigates security threats to applications and systems by modeling potential attacks and vulnerabilities.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like risk assessment: Threat Modeling is like a risk assessment for security - you think like an attacker (identify threats), analyze what could go wrong (vulnerabilities), and plan defenses (mitigations) - just as risk assessments help prevent accidents, threat modeling helps prevent security breaches by thinking ahead.
 
 Inputs & Outputs  
-   - Input: System architecture, data flows, trust boundaries, threat databases, attack patterns, security requirements.  
-   - Output: Threat models, threat catalogs, risk assessments, mitigation strategies, security requirements.
+
+  - Input: System architecture, data flows, trust boundaries, threat databases, attack patterns, security requirements.  
+  - Output: Threat models, threat catalogs, risk assessments, mitigation strategies, security requirements.
 
 Step-by-step description (5–10 lines max)  
 Model system: model system architecture and data flows.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Threat Modeling: system: e-commerce app → assets: customer data, payment info → threats: data breach, SQL injection, XSS → analyze: high risk for data breach → mitigate: encryption, access controls → validate: mitigations tested → Threat Modeling complete.
 
 Time & Space Complexity  
-   - Time: O(a·t) where a is assets, t is threats (analysis and modeling time).  
-   - Space: O(m + d) where m is model storage, d is documentation size.
+
+  - Time: O(a·t) where a is assets, t is threats (analysis and modeling time).  
+  - Space: O(m + d) where m is model storage, d is documentation size.
 
 Strengths  
+
 - Proactive: identifies threats before they're exploited.
 - Systematic: provides systematic approach to security.
 - Comprehensive: covers multiple threat dimensions.
 
 Weaknesses / limitations  
+
 - Time: threat modeling can be time-consuming.
 - Expertise: requires security expertise.
 - Coverage: may not identify all possible threats.

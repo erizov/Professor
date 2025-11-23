@@ -1,14 +1,13 @@
 # Blue-Green ML Deployment
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Blue-Green ML Deployment Flowchart:
@@ -43,9 +42,7 @@ Blue-Green ML Deployment Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Blue-Green ML Deployment Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_06/lecture_35_deployment_patterns/blue_green_ml/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_35_deployment_patterns/blue_green_ml/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_35_deployment_patterns/blue_green_ml/test_algorithm.py)
-

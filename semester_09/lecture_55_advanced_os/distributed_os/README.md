@@ -1,14 +1,13 @@
 # Distributed Operating Systems
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Distributed Operating Systems Flowchart:
@@ -43,9 +42,7 @@ Distributed Operating Systems Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Distributed Operating Systems Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_55_advanced_os/distributed_os/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_55_advanced_os/distributed_os/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_55_advanced_os/distributed_os/test_algorithm.py)
-
-
-   Distributed Operating Systems
 
 What problem does it solve? (1 sentence)  
    Manages resources and provides services across multiple networked computers, presenting them as a single unified system to users and applications.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a distributed company: distributed operating systems are like a company with offices in multiple cities - each office (computer) has its own resources (employees, equipment), but they all work together as one company (unified system) - you can access resources from any office (any computer), and the system handles coordination behind the scenes (like company-wide communication) - to users, it looks like one big system, even though it's actually many computers working together.
 
 Inputs & Outputs  
-   - Input: Networked computers, distributed resources, user requests, application processes.  
-   - Output: Unified system view, distributed services, resource sharing, fault tolerance.
+
+  - Input: Networked computers, distributed resources, user requests, application processes.  
+  - Output: Unified system view, distributed services, resource sharing, fault tolerance.
 
 Step-by-step description (5–10 lines max)  
 Network nodes: connect multiple computers via network.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Distributed OS: 5 computers connected → unified file system: files stored across nodes, accessed transparently → process migration: move processes between nodes for load balancing → resource sharing: CPU, memory, storage shared across network → fault tolerance: if node fails, services continue on other nodes → transparency: user sees single system → distributed OS operational.
 
 Time & Space Complexity  
-   - Time: O(n) for coordination where n is number of nodes, O(log n) for resource lookup with distributed algorithms.  
-   - Space: O(n) where n is number of nodes (distributed state management).
+
+  - Time: O(n) for coordination where n is number of nodes, O(log n) for resource lookup with distributed algorithms.  
+  - Space: O(n) where n is number of nodes (distributed state management).
 
 Strengths  
+
 - Scalability: can scale by adding more nodes.
 - Fault tolerance: system continues operating if nodes fail.
 - Resource sharing: enables efficient resource utilization across nodes.
 
 Weaknesses / limitations  
+
 - Complexity: managing distributed systems is complex.
 - Network latency: communication between nodes introduces latency.
 - Consistency: maintaining consistency across nodes is challenging.

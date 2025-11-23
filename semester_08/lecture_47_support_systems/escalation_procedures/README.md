@@ -1,14 +1,13 @@
 # Escalation Procedures
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Escalation Procedures Flowchart:
@@ -43,9 +42,7 @@ Escalation Procedures Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Escalation Procedures Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_47_support_systems/escalation_procedures/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_47_support_systems/escalation_procedures/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_47_support_systems/escalation_procedures/test_algorithm.py)
-
-
-   Escalation Procedures
 
 What problem does it solve? (1 sentence)  
    Defines systematic process for routing unresolved or complex support issues to appropriate personnel or teams, ensuring timely resolution and proper handling of critical problems.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a hospital triage system: when a patient arrives, nurses assess severity and route to appropriate specialist (emergency, general doctor, specialist) - escalation procedures do the same for support tickets: assess complexity/urgency and route to right person or team (L1 → L2 → L3, or support → engineering → management).
 
 Inputs & Outputs  
-   - Input: Support ticket, issue details, customer priority, escalation rules, team availability.  
-   - Output: Escalated ticket, assigned agent/team, escalation path, priority level.
+
+  - Input: Support ticket, issue details, customer priority, escalation rules, team availability.  
+  - Output: Escalated ticket, assigned agent/team, escalation path, priority level.
 
 Step-by-step description (5–10 lines max)  
 Assess issue: evaluate ticket complexity, urgency, and customer priority.
@@ -113,15 +106,18 @@ Tiny example (hand-simulated)
    Customer reports critical bug → L1 support attempts fix → unable to resolve → escalates to L2 (engineering) → engineering identifies root cause → fixes bug → updates customer → ticket resolved → escalation time: 2 hours → total resolution: 4 hours.
 
 Time & Space Complexity  
-   - Time: O(1) for routing decision, O(e) where e is escalation depth (number of levels).  
-   - Space: O(t) where t is number of tickets in escalation queue.
+
+  - Time: O(1) for routing decision, O(e) where e is escalation depth (number of levels).  
+  - Space: O(t) where t is number of tickets in escalation queue.
 
 Strengths  
+
 - Proper routing: ensures issues reach right expertise level.
 - Accountability: tracks who handles what and when.
 - Efficiency: prevents issues from getting stuck at wrong level.
 
 Weaknesses / limitations  
+
 - Delays: escalation adds time to resolution.
 - Complexity: requires well-defined escalation rules and processes.
 - Over-escalation: may escalate issues that could be resolved at lower level.

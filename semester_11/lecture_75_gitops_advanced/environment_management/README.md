@@ -1,14 +1,13 @@
 # Environment Management
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Environment Management Flowchart:
@@ -43,9 +42,7 @@ Environment Management Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Environment Management Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_75_gitops_advanced/environment_management/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_75_gitops_advanced/environment_management/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_75_gitops_advanced/environment_management/test_algorithm.py)
-
-
-   Environment Management
 
 What problem does it solve? (1 sentence)  
    Manages multiple deployment environments (dev, staging, prod) consistently through GitOps, ensuring environments are reproducible, versioned, and aligned with infrastructure as code.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like managing multiple branches: Environment Management is like managing multiple branches of a store - you have dev (test store), staging (pilot store), and prod (real store), and you want them all to be consistent and managed the same way - GitOps ensures all environments are defined in code and managed consistently, like having the same blueprint for all stores.
 
 Inputs & Outputs  
-   - Input: Environment definitions, Git repositories, configuration files, infrastructure code, environment policies.  
-   - Output: Managed environments, consistent configurations, versioned infrastructure, reproducible environments, environment state.
+
+  - Input: Environment definitions, Git repositories, configuration files, infrastructure code, environment policies.  
+  - Output: Managed environments, consistent configurations, versioned infrastructure, reproducible environments, environment state.
 
 Step-by-step description (5–10 lines max)  
 Define: define environments in Git (dev, staging, prod).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Environment Management: Git: environment configs → dev: auto-sync on commit → staging: manual approval → prod: approval + tests → sync: GitOps syncs to environments → result: all environments consistent → Environment Management operational.
 
 Time & Space Complexity  
-   - Time: O(e·s) where e is number of environments, s is sync time per environment (GitOps sync).  
-   - Space: O(c + s) where c is configuration storage, s is state storage (environment state).
+
+  - Time: O(e·s) where e is number of environments, s is sync time per environment (GitOps sync).  
+  - Space: O(c + s) where c is configuration storage, s is state storage (environment state).
 
 Strengths  
+
 - Consistency: ensures environments are consistent and reproducible.
 - Versioning: environments are versioned in Git.
 - Automation: automates environment provisioning and updates.
 
 Weaknesses / limitations  
+
 - Complexity: managing multiple environments can be complex.
 - Drift: environments may drift from Git state.
 - Coordination: requires coordination across environments.

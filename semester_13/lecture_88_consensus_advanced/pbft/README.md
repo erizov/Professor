@@ -1,14 +1,13 @@
 # PBFT (Practical Byzantine Fault Tolerance)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 PBFT (Practical Byzantine Fault Tolerance) Flowchart:
@@ -43,9 +42,7 @@ PBFT (Practical Byzantine Fault Tolerance) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 PBFT (Practical Byzantine Fault Tolerance) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_88_consensus_advanced/pbft/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_88_consensus_advanced/pbft/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_88_consensus_advanced/pbft/test_algorithm.py)
-
 
    PBFT (Practical Byzantine Fault Tolerance)
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like agreement despite liars: PBFT is like reaching agreement even when some people lie (Byzantine failures) - you need 2/3 honest nodes to agree, and you can tolerate up to 1/3 liars - just as you can reach consensus despite some dishonest participants, PBFT reaches consensus despite Byzantine failures.
 
 Inputs & Outputs  
-   - Input: Transactions, validators, consensus parameters, Byzantine fault tolerance, network messages.  
-   - Output: Consensus decisions, finalized blocks, fast finality, high throughput, secure blockchain.
+
+  - Input: Transactions, validators, consensus parameters, Byzantine fault tolerance, network messages.  
+  - Output: Consensus decisions, finalized blocks, fast finality, high throughput, secure blockchain.
 
 Step-by-step description (5–10 lines max)  
 Request: client sends request to primary.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    PBFT: validators: 4 validators (tolerates 1 Byzantine) → request: client request → pre-prepare: primary broadcasts → prepare: 3 validators prepare → commit: 3 validators commit → result: consensus reached, block finalized → PBFT successful.
 
 Time & Space Complexity  
-   - Time: O(n²) where n is validators (message complexity, but fast in practice).  
-   - Space: O(n) where n is validators (validator storage, message logs).
+
+  - Time: O(n²) where n is validators (message complexity, but fast in practice).  
+  - Space: O(n) where n is validators (validator storage, message logs).
 
 Strengths  
+
 - Finality: provides fast finality.
 - Throughput: high transaction throughput.
 - Security: Byzantine fault tolerant.
 
 Weaknesses / limitations  
+
 - Scalability: O(n²) message complexity limits scalability.
 - Primary: requires trusted primary (view-change handles failures).
 - Network: requires reliable network.

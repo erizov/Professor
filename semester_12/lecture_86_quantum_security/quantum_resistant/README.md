@@ -1,14 +1,13 @@
 # Quantum Resistant
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Resistant Flowchart:
@@ -43,9 +42,7 @@ Quantum Resistant Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Resistant Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_86_quantum_security/quantum_resistant/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_86_quantum_security/quantum_resistant/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_86_quantum_security/quantum_resistant/test_algorithm.py)
-
-
-   Quantum Resistant
 
 What problem does it solve? (1 sentence)  
    Implements quantum-resistant cryptographic algorithms and systems that remain secure against attacks from both classical and quantum computers, ensuring long-term security.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like future-proof security: Quantum Resistant is like future-proof security - you use encryption that resists quantum attacks (quantum computers can't break it) - just as you prepare for future threats, quantum-resistant crypto prepares for quantum threats.
 
 Inputs & Outputs  
-   - Input: Data, quantum-resistant algorithms, key material, security parameters, implementation requirements.  
-   - Output: Quantum-resistant encryption, secure systems, protected data, future-proof security, resistant cryptography.
+
+  - Input: Data, quantum-resistant algorithms, key material, security parameters, implementation requirements.  
+  - Output: Quantum-resistant encryption, secure systems, protected data, future-proof security, resistant cryptography.
 
 Step-by-step description (5–10 lines max)  
 Select: select quantum-resistant algorithm (lattice, code-based, hash-based, etc.).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Resistant: algorithm: CRYSTALS-Kyber (lattice-based) → implement: implement in system → generate: generate keys → encrypt: encrypt data → result: data secure against quantum attacks → Quantum Resistant operational.
 
 Time & Space Complexity  
-   - Time: O(n) where n is data size (varies by algorithm, typically polynomial).  
-   - Space: O(n) where n is key/data size (algorithm-dependent).
+
+  - Time: O(n) where n is data size (varies by algorithm, typically polynomial).  
+  - Space: O(n) where n is key/data size (algorithm-dependent).
 
 Strengths  
+
 - Security: secure against quantum attacks.
 - Future-proof: ensures long-term security.
 - Standards: NIST standardized algorithms available.
 
 Weaknesses / limitations  
+
 - Performance: may be slower than classical crypto.
 - Migration: migration can be complex.
 - Maturity: field is still evolving.

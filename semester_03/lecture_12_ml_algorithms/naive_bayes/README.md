@@ -1,14 +1,13 @@
 # Naive Bayes
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Naive Bayes Flowchart:
@@ -43,9 +42,7 @@ Naive Bayes Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Naive Bayes Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_03/lecture_12_ml_algorithms/naive_bayes/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_12_ml_algorithms/naive_bayes/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_12_ml_algorithms/naive_bayes/test_algorithm.py)
-

@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 04 Searching — searching algorithms - demonstration. this lecture covers various searching algorithms including linear search, binary search, and interpolation search.
+Лекция 04 Searching — searching algorithms - demonstration. this лекция covers various searching algorithms including linear поиск, binary поиск, and interpolation поиск.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 04 Searching — searching algorithms - demonstration. this lecture cove
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 04 searching:
+Рассмотрим конкретный пример работы лекция 04 searching:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -45,15 +45,15 @@ Lecture 04 Searching — searching algorithms - demonstration. this lecture cove
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 04 searching.
+Выполни простую операцию с алгоритмом лекция 04 searching.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 04 searching к более сложному набору данных.
+Примени алгоритм лекция 04 searching к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 04 searching на языке программирования.
+Напиши реализацию алгоритма лекция 04 searching на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

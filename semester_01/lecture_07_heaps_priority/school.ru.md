@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 07 Heaps Priority — trees - demonstration. this lecture covers tree data structures including binary trees, binary search trees, and avl trees.
+Лекция 07 Heaps Priority — trees - demonstration. this лекция covers дерево данные structures including binary trees, binary поиск trees, and avl trees.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 07 Heaps Priority — trees - demonstration. this lecture covers tree da
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 07 heaps priority:
+Рассмотрим конкретный пример работы лекция 07 heaps priority:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 07 Heaps Priority — trees - demonstration. this lecture covers tree da
 
 ### Базовые
 
-1. Что делает алгоритм lecture 07 heaps priority?
-2. В каких ситуациях используется lecture 07 heaps priority?
+1. Что делает алгоритм лекция 07 heaps priority?
+2. В каких ситуациях используется лекция 07 heaps priority?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 07 heaps priority обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 07 heaps priority?
-3. Можно ли улучшить работу lecture 07 heaps priority?
+1. Как лекция 07 heaps priority обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 07 heaps priority?
+3. Можно ли улучшить работу лекция 07 heaps priority?
 
 ### Сложные
 
-1. Какова временная сложность lecture 07 heaps priority?
-2. Как lecture 07 heaps priority работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 07 heaps priority?
+1. Какова временная сложность лекция 07 heaps priority?
+2. Как лекция 07 heaps priority работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 07 heaps priority?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 07 heaps priority.
+Выполни простую операцию с алгоритмом лекция 07 heaps priority.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 07 heaps priority к более сложному набору данных.
+Примени алгоритм лекция 07 heaps priority к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 07 heaps priority на языке программирования.
+Напиши реализацию алгоритма лекция 07 heaps priority на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

@@ -1,14 +1,13 @@
 # Model Registry
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Model Registry Flowchart:
@@ -43,9 +42,7 @@ Model Registry Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Model Registry Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_70_ai_governance/model_registry/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_70_ai_governance/model_registry/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_70_ai_governance/model_registry/test_algorithm.py)
-
-
-   Model Registry
 
 What problem does it solve? (1 sentence)  
    Provides a centralized repository for storing, versioning, and managing AI models, enabling model discovery, tracking, and lifecycle management.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a library catalog: Model Registry is like a library catalog for AI models - it stores information about all models (metadata, versions), makes them discoverable (search, browse), and tracks their history (versions, usage) - just as a library catalog helps you find and track books, a model registry helps you find and track AI models.
 
 Inputs & Outputs  
-   - Input: Model artifacts, model metadata, version information, performance metrics, deployment status.  
-   - Output: Registered models, model versions, searchable catalog, model metadata, lifecycle tracking.
+
+  - Input: Model artifacts, model metadata, version information, performance metrics, deployment status.  
+  - Output: Registered models, model versions, searchable catalog, model metadata, lifecycle tracking.
 
 Step-by-step description (5–10 lines max)  
 Register: register models with metadata (name, version, description).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Model Registry: model: sentiment-analysis-v1.2 → register: metadata, artifacts → version: track v1.0, v1.1, v1.2 → tag: production, NLP → search: find by tag or name → link: to training dataset → track: deployed in 3 environments → compare: v1.2 vs v1.1 performance → Model Registry operational.
 
 Time & Space Complexity  
-   - Time: O(1) for registration, O(log n) for search where n is number of models.  
-   - Space: O(m + a) where m is metadata storage, a is artifact storage (model files).
+
+  - Time: O(1) for registration, O(log n) for search where n is number of models.  
+  - Space: O(m + a) where m is metadata storage, a is artifact storage (model files).
 
 Strengths  
+
 - Organization: organizes and centralizes model management.
 - Discovery: enables easy discovery of models.
 - Tracking: tracks model lifecycle and usage.
 
 Weaknesses / limitations  
+
 - Storage: requires storage for model artifacts.
 - Maintenance: requires maintenance and curation.
 - Complexity: can become complex with many models.

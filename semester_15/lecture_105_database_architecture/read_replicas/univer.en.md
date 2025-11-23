@@ -1,0 +1,63 @@
+# Read Replicas
+
+**Algorithm:** read_replicas  
+**Discipline:** Data Engineering / Data Governance
+
+## Algorithm Definition
+
+Read Replicas is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+
+## Technical Description
+
+Read Replicas is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+
+## Application in Data Engineering / Data Governance
+
+1. applying read replicas to solve specific tasks in read
+2. using read replicas in production systems for replicas
+3. integrating read replicas into data pipelines for process automation
+
+## Step-by-Step Scenario
+
+**Input Data:**
+[Specific input data for read replicas]
+
+**Step 1:** [Specific algorithm action]
+**Step 2:** [Next action]
+**Step 3:** [Continuation of processing]
+...
+
+**Final Result:**
+[Specific result of the algorithm's work]
+
+## Self-Check Questions
+
+### Basic Level
+
+1. Describe the main stages of the read replicas algorithm. What data structures are used?
+2. What are the time and space complexity of read replicas? Justify your answer.
+
+### Intermediate Level
+
+1. In what cases is the read replicas algorithm most effective? When is its use not advisable?
+2. How can read replicas be optimized? Suggest specific improvements.
+
+### Advanced Level
+
+1. Compare read replicas with alternative approaches. Under what conditions is each preferable?
+2. Analyze edge cases and implementation errors of read replicas. How to ensure algorithm correctness?
+
+## Practical Tasks
+
+### Level 1 — Basic
+
+Implement a basic version of the read replicas algorithm in a programming language. Add edge case handling and tests.
+
+### Level 2 — Applied
+
+Create a full implementation of read replicas with error handling, logging, and testing. Apply to real data and analyze results.
+
+### Level 3 — Research
+
+Conduct a research analysis of read replicas: compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
+

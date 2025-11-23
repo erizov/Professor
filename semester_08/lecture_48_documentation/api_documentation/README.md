@@ -1,14 +1,13 @@
 # API Documentation
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 API Documentation Flowchart:
@@ -43,9 +42,7 @@ API Documentation Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 API Documentation Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_48_documentation/api_documentation/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_48_documentation/api_documentation/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_48_documentation/api_documentation/test_algorithm.py)
-
 
    API Documentation
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a restaurant menu: API documentation lists all available 'dishes' (endpoints), what ingredients they need (parameters), what you'll get (responses), and how to order (authentication) - without good documentation, developers are like diners trying to guess what's available and how to order.
 
 Inputs & Outputs  
-   - Input: API endpoints, request/response schemas, authentication methods, code examples, API specification.  
-   - Output: Structured API documentation, interactive docs, code samples, reference guides.
+
+  - Input: API endpoints, request/response schemas, authentication methods, code examples, API specification.  
+  - Output: Structured API documentation, interactive docs, code samples, reference guides.
 
 Step-by-step description (5–10 lines max)  
 Identify endpoints: list all API endpoints and their purposes.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    API endpoint: GET /users/{id} → document: retrieves user by ID → parameters: id (required, integer) → response: {id, name, email} → authentication: Bearer token → example: curl -H 'Authorization: Bearer token' https://api.example.com/users/123 → response: 200 OK with user data.
 
 Time & Space Complexity  
-   - Time: O(1) to read documentation, O(n) to generate where n is number of endpoints.  
-   - Space: O(e) where e is number of endpoints and their documentation size.
+
+  - Time: O(1) to read documentation, O(n) to generate where n is number of endpoints.  
+  - Space: O(e) where e is number of endpoints and their documentation size.
 
 Strengths  
+
 - Developer experience: enables quick API integration and adoption.
 - Reduces support: good docs reduce support requests.
 - Standardization: consistent format helps developers understand APIs.
 
 Weaknesses / limitations  
+
 - Maintenance: requires updates when API changes.
 - Completeness: incomplete docs frustrate developers.
 - Clarity: poorly written docs can confuse rather than help.

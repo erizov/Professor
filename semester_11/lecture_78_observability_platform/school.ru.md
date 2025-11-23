@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 78 Observability Platform — observability - demonstration. this lecture covers observability patterns and monitoring.
+Лекция 78 Observability Platform — observability - demonstration. this лекция covers observability patterns and monitoring.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 78 Observability Platform — observability - demonstration. this lectur
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 78 observability platform:
+Рассмотрим конкретный пример работы лекция 78 observability platform:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 78 Observability Platform — observability - demonstration. this lectur
 
 ### Базовые
 
-1. Что делает алгоритм lecture 78 observability platform?
-2. В каких ситуациях используется lecture 78 observability platform?
+1. Что делает алгоритм лекция 78 observability platform?
+2. В каких ситуациях используется лекция 78 observability platform?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 78 observability platform обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 78 observability platform?
-3. Можно ли улучшить работу lecture 78 observability platform?
+1. Как лекция 78 observability platform обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 78 observability platform?
+3. Можно ли улучшить работу лекция 78 observability platform?
 
 ### Сложные
 
-1. Какова временная сложность lecture 78 observability platform?
-2. Как lecture 78 observability platform работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 78 observability platform?
+1. Какова временная сложность лекция 78 observability platform?
+2. Как лекция 78 observability platform работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 78 observability platform?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 78 observability platform.
+Выполни простую операцию с алгоритмом лекция 78 observability platform.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 78 observability platform к более сложному набору данных.
+Примени алгоритм лекция 78 observability platform к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 78 observability platform на языке программирования.
+Напиши реализацию алгоритма лекция 78 observability platform на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

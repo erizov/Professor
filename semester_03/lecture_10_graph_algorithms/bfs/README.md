@@ -1,14 +1,13 @@
 # Breadth-First Search (BFS)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Breadth-First Search (BFS) Flowchart:
@@ -43,9 +42,7 @@ Breadth-First Search (BFS) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Breadth-First Search (BFS) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_03/lecture_10_graph_algorithms/bfs/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_10_graph_algorithms/bfs/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_10_graph_algorithms/bfs/test_algorithm.py)
-

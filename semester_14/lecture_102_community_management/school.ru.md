@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 102 Community Management — community management - demonstration. this lecture covers community management and engagement.
+Лекция 102 Community Management — community management - demonstration. this лекция covers community management and engagement.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 102 Community Management — community management - demonstration. this 
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 102 community management:
+Рассмотрим конкретный пример работы лекция 102 community management:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 102 Community Management — community management - demonstration. this 
 
 ### Базовые
 
-1. Что делает алгоритм lecture 102 community management?
-2. В каких ситуациях используется lecture 102 community management?
+1. Что делает алгоритм лекция 102 community management?
+2. В каких ситуациях используется лекция 102 community management?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 102 community management обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 102 community management?
-3. Можно ли улучшить работу lecture 102 community management?
+1. Как лекция 102 community management обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 102 community management?
+3. Можно ли улучшить работу лекция 102 community management?
 
 ### Сложные
 
-1. Какова временная сложность lecture 102 community management?
-2. Как lecture 102 community management работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 102 community management?
+1. Какова временная сложность лекция 102 community management?
+2. Как лекция 102 community management работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 102 community management?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 102 community management.
+Выполни простую операцию с алгоритмом лекция 102 community management.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 102 community management к более сложному набору данных.
+Примени алгоритм лекция 102 community management к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 102 community management на языке программирования.
+Напиши реализацию алгоритма лекция 102 community management на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

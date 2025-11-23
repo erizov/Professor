@@ -1,14 +1,13 @@
 # Root Cause Analysis (RCA)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Root Cause Analysis (RCA) Flowchart:
@@ -43,9 +42,7 @@ Root Cause Analysis (RCA) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Root Cause Analysis (RCA) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_78_observability_platform/root_cause_analysis/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_78_observability_platform/root_cause_analysis/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_78_observability_platform/root_cause_analysis/test_algorithm.py)
-
 
    Root Cause Analysis (RCA)
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like detective work: Root Cause Analysis is like detective work for incidents - you investigate clues (logs, metrics), trace back to find the real cause (root cause), not just the symptoms - just as detectives solve crimes by finding the real culprit, RCA solves incidents by finding the real cause.
 
 Inputs & Outputs  
-   - Input: Incident data, logs, metrics, traces, system state, timeline, team knowledge.  
-   - Output: Root cause identification, incident analysis, improvement recommendations, permanent fixes, prevention measures.
+
+  - Input: Incident data, logs, metrics, traces, system state, timeline, team knowledge.  
+  - Output: Root cause identification, incident analysis, improvement recommendations, permanent fixes, prevention measures.
 
 Step-by-step description (5–10 lines max)  
 Gather data: gather all relevant data (logs, metrics, traces).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Root Cause Analysis: incident: service outage → gather: logs, metrics, traces → timeline: database connection pool exhausted → analyze: connection leak in code → identify: root cause: missing connection cleanup → fix: add connection cleanup → prevent: add monitoring → RCA successful.
 
 Time & Space Complexity  
-   - Time: O(g + a + i) where g is data gathering time, a is analysis time, i is investigation time (hours to days).  
-   - Space: O(d + a) where d is data storage, a is analysis storage (RCA documents).
+
+  - Time: O(g + a + i) where g is data gathering time, a is analysis time, i is investigation time (hours to days).  
+  - Space: O(d + a) where d is data storage, a is analysis storage (RCA documents).
 
 Strengths  
+
 - Permanent fixes: enables permanent fixes rather than workarounds.
 - Prevention: prevents recurrence of incidents.
 - Learning: provides deep learning about system behavior.
 
 Weaknesses / limitations  
+
 - Time: thorough RCA takes significant time.
 - Complexity: complex incidents may have multiple root causes.
 - Skills: requires analytical and investigative skills.

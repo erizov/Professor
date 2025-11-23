@@ -31,7 +31,7 @@ def list_users():
     users = conn.execute(
         """
         SELECT id, username, email, full_name, role, is_active,
-               created_at, last_login
+               created_at, last_login, preferred_language, preferred_level
         FROM users
         ORDER BY created_at DESC
         """
@@ -115,6 +115,16 @@ def update_user(user_id: int):
     if "password" in data:
         fields.append("password_hash = ?")
         params.append(hash_password(data["password"]))
+    
+    if "preferred_language" in data:
+        if data["preferred_language"] in ("en", "ru"):
+            fields.append("preferred_language = ?")
+            params.append(data["preferred_language"])
+    
+    if "preferred_level" in data:
+        if data["preferred_level"] in ("school", "university"):
+            fields.append("preferred_level = ?")
+            params.append(data["preferred_level"])
 
     if not fields:
         return jsonify({"error": "No fields to update"}), 400

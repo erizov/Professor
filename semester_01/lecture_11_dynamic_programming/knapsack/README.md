@@ -1,14 +1,13 @@
 # 0/1 Knapsack
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 
@@ -48,9 +47,7 @@ Name of Algorithm
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 0/1 Knapsack Step-by-Step Execution:
@@ -69,9 +66,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -84,9 +79,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_01/lecture_11_dynamic_programming/knapsack/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_11_dynamic_programming/knapsack/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_11_dynamic_programming/knapsack/test_algorithm.py)
-

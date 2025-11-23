@@ -1,14 +1,13 @@
 # Pipeline Templates
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Pipeline Templates Flowchart:
@@ -43,9 +42,7 @@ Pipeline Templates Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Pipeline Templates Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_71_cicd_advanced/pipeline_templates/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_71_cicd_advanced/pipeline_templates/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_71_cicd_advanced/pipeline_templates/test_algorithm.py)
-
-
-   Pipeline Templates
 
 What problem does it solve? (1 sentence)  
    Provides reusable, parameterized pipeline templates that can be shared across projects, standardizing CI/CD workflows and reducing duplication while allowing customization.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like recipe templates: Pipeline Templates are like recipe templates - you have a basic recipe (template) that works for many dishes (projects), and you customize it with different ingredients (parameters) - just as recipe templates save time and ensure consistency, pipeline templates save time and ensure consistent CI/CD practices across projects.
 
 Inputs & Outputs  
-   - Input: Template definitions, parameters, project context, customization options, template library.  
-   - Output: Instantiated pipelines, standardized workflows, reusable templates, customized pipelines.
+
+  - Input: Template definitions, parameters, project context, customization options, template library.  
+  - Output: Instantiated pipelines, standardized workflows, reusable templates, customized pipelines.
 
 Step-by-step description (5–10 lines max)  
 Create template: create reusable pipeline template with parameters.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Pipeline Templates: template: Python CI/CD template → parameters: Python version, test command, deploy target → project: web-app → configure: Python 3.9, pytest, staging → instantiate: generate pipeline → execute: run pipeline → result: standardized workflow → Pipeline Templates successful.
 
 Time & Space Complexity  
-   - Time: O(i + e) where i is instantiation time, e is execution time (templates reduce setup time).  
-   - Space: O(t + p) where t is template storage, p is parameter storage.
+
+  - Time: O(i + e) where i is instantiation time, e is execution time (templates reduce setup time).  
+  - Space: O(t + p) where t is template storage, p is parameter storage.
 
 Strengths  
+
 - Reusability: templates can be reused across projects.
 - Standardization: ensures consistent CI/CD practices.
 - Efficiency: reduces pipeline setup time and effort.
 
 Weaknesses / limitations  
+
 - Flexibility: templates may be less flexible than custom pipelines.
 - Complexity: complex templates can be difficult to understand.
 - Maintenance: template updates affect all using projects.

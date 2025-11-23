@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 35 Deployment Patterns — ml deployment - demonstration. this lecture covers ml deployment design patterns and implementations.
+Лекция 35 Deployment Patterns — ml deployment - demonstration. this лекция covers ml deployment дизайн patterns and implementations.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 35 Deployment Patterns — ml deployment - demonstration. this lecture c
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 35 deployment patterns:
+Рассмотрим конкретный пример работы лекция 35 deployment patterns:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 35 Deployment Patterns — ml deployment - demonstration. this lecture c
 
 ### Базовые
 
-1. Что делает алгоритм lecture 35 deployment patterns?
-2. В каких ситуациях используется lecture 35 deployment patterns?
+1. Что делает алгоритм лекция 35 deployment patterns?
+2. В каких ситуациях используется лекция 35 deployment patterns?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 35 deployment patterns обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 35 deployment patterns?
-3. Можно ли улучшить работу lecture 35 deployment patterns?
+1. Как лекция 35 deployment patterns обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 35 deployment patterns?
+3. Можно ли улучшить работу лекция 35 deployment patterns?
 
 ### Сложные
 
-1. Какова временная сложность lecture 35 deployment patterns?
-2. Как lecture 35 deployment patterns работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 35 deployment patterns?
+1. Какова временная сложность лекция 35 deployment patterns?
+2. Как лекция 35 deployment patterns работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 35 deployment patterns?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 35 deployment patterns.
+Выполни простую операцию с алгоритмом лекция 35 deployment patterns.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 35 deployment patterns к более сложному набору данных.
+Примени алгоритм лекция 35 deployment patterns к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 35 deployment patterns на языке программирования.
+Напиши реализацию алгоритма лекция 35 deployment patterns на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

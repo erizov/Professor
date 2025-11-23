@@ -1,14 +1,13 @@
 # Tendermint
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Tendermint Flowchart:
@@ -43,9 +42,7 @@ Tendermint Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Tendermint Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_88_consensus_advanced/tendermint/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_88_consensus_advanced/tendermint/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_88_consensus_advanced/tendermint/test_algorithm.py)
-
-
-   Tendermint
 
 What problem does it solve? (1 sentence)  
 Implements Tendermint consensus algorithm, a Byzantine fault-tolerant consensus protocol designed for blockchains, providing fast finality and high throughput with a focus on application-agnostic consensus.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like efficient agreement: Tendermint is like efficient agreement protocols - validators agree on blocks efficiently through voting rounds - just as optimized voting reaches decisions, Tendermint reaches consensus efficiently.
 
 Inputs & Outputs  
-   - Input: Transactions, validators, voting power, consensus parameters, Byzantine fault tolerance.  
-   - Output: Consensus decisions, finalized blocks, fast finality, high throughput, secure blockchain.
+
+  - Input: Transactions, validators, voting power, consensus parameters, Byzantine fault tolerance.  
+  - Output: Consensus decisions, finalized blocks, fast finality, high throughput, secure blockchain.
 
 Step-by-step description (5–10 lines max)  
 Propose: proposer (selected by voting power) proposes block.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Tendermint: validators: 100 validators → propose: proposer proposes block → pre-vote: 67 validators pre-vote → pre-commit: 67 validators pre-commit → commit: block committed in <1 second → result: fast, secure consensus → Tendermint successful.
 
 Time & Space Complexity  
-   - Time: O(n) where n is validators (linear communication complexity).  
-   - Space: O(n + b) where n is validators, b is block size (validator and block storage).
+
+  - Time: O(n) where n is validators (linear communication complexity).  
+  - Space: O(n + b) where n is validators, b is block size (validator and block storage).
 
 Strengths  
+
 - Finality: provides instant finality (no forks).
 - Throughput: high transaction throughput.
 - Application-agnostic: works with any application logic.
 
 Weaknesses / limitations  
+
 - Validator set: requires known validator set.
 - Voting power: voting power distribution affects security.
 - Complexity: consensus protocol is complex.

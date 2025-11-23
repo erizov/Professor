@@ -1,0 +1,55 @@
+# Downsampling
+
+## Simple Explanation
+
+Downsampling is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+
+## Where It's Used
+
+- applying downsampling to solve specific tasks in downsampling;
+- using downsampling in production systems for data processing;
+- integrating downsampling into data pipelines for process automation;
+
+## Example
+
+Specific example of downsampling:
+
+1. Data preparation: input data for downsampling (specific format and structure)
+2. Algorithm application: sequence of steps of downsampling to process data
+3. Result: specific result of algorithm work with interpretation
+
+
+## Self-Check Questions
+
+### Basic
+
+1. What does the downsampling algorithm do?
+2. In what situations is downsampling used?
+3. What data is needed for the algorithm to work?
+
+### Intermediate
+
+1. How does downsampling handle edge cases?
+2. What are the advantages and disadvantages of downsampling?
+3. Can the performance of downsampling be improved?
+
+### Advanced
+
+1. What is the time complexity of downsampling?
+2. How does downsampling work with large volumes of data?
+3. How can downsampling be optimized?
+
+## Practical Tasks
+
+### Level 1 (Easy)
+
+Perform a simple operation with the downsampling algorithm. Use a small dataset (3-5 elements) and output the result.
+
+### Level 2 (Medium)
+
+Apply the downsampling algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+
+### Level 3 (Advanced)
+
+Write an implementation of the downsampling algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+

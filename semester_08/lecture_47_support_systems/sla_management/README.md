@@ -1,14 +1,13 @@
 # SLA Management
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 SLA Management Flowchart:
@@ -43,9 +42,7 @@ SLA Management Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 SLA Management Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_47_support_systems/sla_management/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_47_support_systems/sla_management/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_47_support_systems/sla_management/test_algorithm.py)
-
 
    SLA Management
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a delivery guarantee: when you order pizza, they promise delivery in 30 minutes (SLA) - if late, you get a discount (penalty). SLA management tracks if support meets promises (respond in 1 hour, resolve in 24 hours) and alerts when at risk of missing targets, ensuring customers get promised service quality.
 
 Inputs & Outputs  
-   - Input: SLA definitions, ticket timestamps, resolution times, customer priority, SLA rules.  
-   - Output: SLA compliance status, alerts, performance metrics, reports.
+
+  - Input: SLA definitions, ticket timestamps, resolution times, customer priority, SLA rules.  
+  - Output: SLA compliance status, alerts, performance metrics, reports.
 
 Step-by-step description (5–10 lines max)  
 Define SLAs: establish service level agreements (response time, resolution time, uptime, etc.).
@@ -112,15 +107,18 @@ Tiny example (hand-simulated)
    SLA: respond within 1 hour, resolve within 24 hours → ticket created at 10:00 AM → first response at 10:45 AM (within SLA) → ticket unresolved at 11:00 AM next day → SLA breached → alert sent → escalation triggered → ticket prioritized → resolved at 12:00 PM → SLA report: 95% compliance.
 
 Time & Space Complexity  
-   - Time: O(1) for SLA checks per ticket, O(n) for reporting where n is number of tickets.  
-   - Space: O(s) where s is number of SLA definitions, O(t) for ticket tracking.
+
+  - Time: O(1) for SLA checks per ticket, O(n) for reporting where n is number of tickets.  
+  - Space: O(s) where s is number of SLA definitions, O(t) for ticket tracking.
 
 Strengths  
+
 - Accountability: ensures support meets commitments.
 - Customer satisfaction: meeting SLAs improves customer experience.
 - Visibility: provides clear metrics on support performance.
 
 Weaknesses / limitations  
+
 - Pressure: can create stress for support teams.
 - Gaming: teams may prioritize SLA metrics over actual problem resolution.
 - Complexity: managing multiple SLAs for different customer tiers can be complex.

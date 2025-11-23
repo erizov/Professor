@@ -1,14 +1,13 @@
 # Blockchain Anomaly Detection
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Blockchain Anomaly Detection Flowchart:
@@ -43,9 +42,7 @@ Blockchain Anomaly Detection Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Blockchain Anomaly Detection Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_94_blockchain_analytics/anomaly_detection_blockchain/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_94_blockchain_analytics/anomaly_detection_blockchain/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_94_blockchain_analytics/anomaly_detection_blockchain/test_algorithm.py)
-
-
-   Blockchain Anomaly Detection
 
 What problem does it solve? (1 sentence)  
    Identifies unusual patterns, suspicious activities, and potential security threats in blockchain transactions by analyzing transaction behavior, network patterns, and statistical deviations.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a security alarm system: Blockchain anomaly detection is like a security alarm system - you monitor normal behavior (typical transaction patterns), and when something unusual happens (anomalies like large transfers, rapid movements, suspicious patterns), the alarm goes off - this helps detect fraud, attacks, or suspicious activities early.
 
 Inputs & Outputs  
-   - Input: Blockchain transactions, historical data, network metrics, behavioral patterns, detection rules, machine learning models.  
-   - Output: Anomaly alerts, suspicious transactions, risk scores, detection reports, pattern analysis.
+
+  - Input: Blockchain transactions, historical data, network metrics, behavioral patterns, detection rules, machine learning models.  
+  - Output: Anomaly alerts, suspicious transactions, risk scores, detection reports, pattern analysis.
 
 Step-by-step description (5–10 lines max)  
 Collect: collect blockchain transaction and network data.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Anomaly Detection: collect data → baseline → analyze → detect large transfer (1000 ETH) → score high risk → alert → investigate → confirm suspicious → Anomaly Detection successful.
 
 Time & Space Complexity  
-   - Time: O(n * d) where n is transactions, d is detection complexity (anomaly detection complexity).  
-   - Space: O(n + m) where n is transaction data, m is model storage (detection storage).
+
+  - Time: O(n * d) where n is transactions, d is detection complexity (anomaly detection complexity).  
+  - Space: O(n + m) where n is transaction data, m is model storage (detection storage).
 
 Strengths  
+
 - Security: helps detect fraud and attacks early.
 - Automation: automates threat detection.
 - Insights: provides insights into network behavior.
 
 Weaknesses / limitations  
+
 - False positives: may generate false alarms.
 - Complexity: requires sophisticated detection algorithms.
 - Privacy: raises privacy concerns.

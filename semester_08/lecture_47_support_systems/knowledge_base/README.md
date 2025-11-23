@@ -1,14 +1,13 @@
 # Knowledge Base
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Knowledge Base Flowchart:
@@ -43,9 +42,7 @@ Knowledge Base Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Knowledge Base Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_47_support_systems/knowledge_base/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_47_support_systems/knowledge_base/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_47_support_systems/knowledge_base/test_algorithm.py)
-
-
-   Knowledge Base
 
 What problem does it solve? (1 sentence)  
    Centralizes and organizes information, documentation, and solutions to enable self-service support and provide quick answers to common questions, reducing support load and improving customer satisfaction.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a library reference desk: instead of asking a librarian every time (support agent), customers can look up answers in organized books (knowledge base) - articles, FAQs, guides are indexed and searchable, so customers find answers themselves (faster, cheaper) and only ask librarians for complex questions.
 
 Inputs & Outputs  
-   - Input: Documentation, FAQs, solutions, articles, search queries, user feedback.  
-   - Output: Searchable knowledge base, relevant articles, solutions, updated content.
+
+  - Input: Documentation, FAQs, solutions, articles, search queries, user feedback.  
+  - Output: Searchable knowledge base, relevant articles, solutions, updated content.
 
 Step-by-step description (5–10 lines max)  
 Collect content: gather documentation, FAQs, solutions, guides.
@@ -112,15 +105,18 @@ Tiny example (hand-simulated)
    Customer searches: 'how to cancel subscription' → knowledge base searches → finds article 'Canceling Your Subscription' → displays step-by-step guide → customer follows guide → cancels subscription → no support ticket needed → self-service success.
 
 Time & Space Complexity  
-   - Time: O(log n) for indexed search, O(n) for full-text search where n is content size.  
-   - Space: O(c) where c is content size, O(i) for search index.
+
+  - Time: O(log n) for indexed search, O(n) for full-text search where n is content size.  
+  - Space: O(c) where c is content size, O(i) for search index.
 
 Strengths  
+
 - Self-service: enables customers to find answers independently.
 - Reduces load: decreases number of support tickets.
 - Consistency: provides standardized, accurate information.
 
 Weaknesses / limitations  
+
 - Maintenance: requires ongoing updates to stay current.
 - Search quality: poor search can frustrate users.
 - Content quality: outdated or incorrect content causes problems.

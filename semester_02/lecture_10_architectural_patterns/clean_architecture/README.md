@@ -1,14 +1,13 @@
 # Clean Architecture
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Clean Architecture Flowchart:
@@ -43,9 +42,7 @@ Clean Architecture Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Clean Architecture Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_02/lecture_10_architectural_patterns/clean_architecture/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_10_architectural_patterns/clean_architecture/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_10_architectural_patterns/clean_architecture/test_algorithm.py)
-

@@ -1,14 +1,13 @@
 # Infrastructure Monitoring
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Infrastructure Monitoring Flowchart:
@@ -43,9 +42,7 @@ Infrastructure Monitoring Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Infrastructure Monitoring Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_72_infrastructure_advanced/infrastructure_monitoring/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_72_infrastructure_advanced/infrastructure_monitoring/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_72_infrastructure_advanced/infrastructure_monitoring/test_algorithm.py)
-
-
-   Infrastructure Monitoring
 
 What problem does it solve? (1 sentence)  
    Continuously monitors infrastructure health, performance, and availability through metrics, logs, and alerts, enabling proactive issue detection and resolution.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like health monitoring: Infrastructure Monitoring is like health monitoring for infrastructure - you continuously check vital signs (metrics), watch for problems (alerts), and track history (logs) - just as health monitoring keeps you healthy, infrastructure monitoring keeps infrastructure healthy.
 
 Inputs & Outputs  
-   - Input: Infrastructure components, metrics, logs, events, monitoring tools, alert rules, dashboards.  
-   - Output: Monitoring data, alerts, dashboards, performance metrics, health status, incident detection, trend analysis.
+
+  - Input: Infrastructure components, metrics, logs, events, monitoring tools, alert rules, dashboards.  
+  - Output: Monitoring data, alerts, dashboards, performance metrics, health status, incident detection, trend analysis.
 
 Step-by-step description (5–10 lines max)  
 Instrument: instrument infrastructure with monitoring.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Infrastructure Monitoring: infrastructure: 100 servers → collect: CPU, memory, disk metrics → visualize: dashboards → alert: CPU > 80% → detect: anomaly detected → notify: alert team → result: proactive issue resolution → Infrastructure Monitoring operational.
 
 Time & Space Complexity  
-   - Time: O(c + a) where c is collection time, a is analysis time (continuous, real-time).  
-   - Space: O(m + l) where m is metrics storage, l is log storage (time-series data).
+
+  - Time: O(c + a) where c is collection time, a is analysis time (continuous, real-time).  
+  - Space: O(m + l) where m is metrics storage, l is log storage (time-series data).
 
 Strengths  
+
 - Visibility: provides visibility into infrastructure health.
 - Proactive: enables proactive issue detection.
 - Reliability: improves infrastructure reliability.
 
 Weaknesses / limitations  
+
 - Overhead: monitoring adds some overhead.
 - Noise: too many alerts can cause alert fatigue.
 - Complexity: comprehensive monitoring can be complex.

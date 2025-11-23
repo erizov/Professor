@@ -1,14 +1,13 @@
 # Advanced CPU Scheduling
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Advanced CPU Scheduling Flowchart:
@@ -43,9 +42,7 @@ Advanced CPU Scheduling Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Advanced CPU Scheduling Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_56_os_performance/cpu_scheduling_advanced/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_56_os_performance/cpu_scheduling_advanced/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_56_os_performance/cpu_scheduling_advanced/test_algorithm.py)
-
 
    Advanced CPU Scheduling
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a smart traffic management system: advanced CPU scheduling is like a sophisticated traffic management system that doesn't just use simple rules (like first-come-first-served) but adapts dynamically - it has multiple lanes (priority queues) for different types of traffic (process types), adjusts priorities based on behavior (interactive processes get priority boost), prevents starvation (aging), and optimizes for multiple goals (fast response for users, high throughput for batch jobs, energy efficiency for mobile devices).
 
 Inputs & Outputs  
-   - Input: Processes with priorities, scheduling policies, CPU cores, workload characteristics, performance goals.  
-   - Output: Scheduled processes, optimized CPU utilization, balanced load, improved performance metrics.
+
+  - Input: Processes with priorities, scheduling policies, CPU cores, workload characteristics, performance goals.  
+  - Output: Scheduled processes, optimized CPU utilization, balanced load, improved performance metrics.
 
 Step-by-step description (5–10 lines max)  
 Classify processes: categorize processes by type (interactive, batch, real-time).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Advanced CPU scheduling: CFS (Completely Fair Scheduler) → processes in red-black tree by virtual runtime → interactive process (browser) gets priority boost → batch process (compiler) runs in background → real-time process (audio) gets guaranteed CPU → load balancing: distribute across 8 CPU cores → fairness: all processes get fair share → performance: low latency for interactive, high throughput for batch → advanced scheduling operational.
 
 Time & Space Complexity  
-   - Time: O(log n) for CFS where n is number of processes, O(1) for O(1) scheduler.  
-   - Space: O(n) where n is number of processes (scheduling data structures).
+
+  - Time: O(log n) for CFS where n is number of processes, O(1) for O(1) scheduler.  
+  - Space: O(n) where n is number of processes (scheduling data structures).
 
 Strengths  
+
 - Optimization: optimizes for multiple objectives (latency, throughput, fairness).
 - Adaptability: adapts to different workload characteristics.
 - Scalability: handles large numbers of processes efficiently.
 
 Weaknesses / limitations  
+
 - Complexity: more complex than simple scheduling algorithms.
 - Tuning: requires careful tuning for optimal performance.
 - Overhead: scheduling overhead may be higher than simple algorithms.

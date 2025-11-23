@@ -1,14 +1,13 @@
 # Lending Protocols
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Lending Protocols Flowchart:
@@ -43,9 +42,7 @@ Lending Protocols Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Lending Protocols Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_89_defi/lending_protocols/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_89_defi/lending_protocols/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_89_defi/lending_protocols/test_algorithm.py)
-
-
-   Lending Protocols
 
 What problem does it solve? (1 sentence)  
    Implements decentralized lending protocols that enable users to lend and borrow cryptocurrencies without intermediaries, using smart contracts to manage loans, collateral, and interest rates algorithmically.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like banks but decentralized: Lending Protocols are like banks but on blockchain - you deposit crypto (like depositing money) to earn interest, or borrow crypto (like taking loans) by providing collateral - just as banks facilitate lending, DeFi lending protocols facilitate decentralized lending.
 
 Inputs & Outputs  
-   - Input: Deposits, borrows, collateral, interest rates, liquidation parameters, loan terms.  
-   - Output: Loans, interest payments, liquidations, collateral management, yield, borrowing capacity.
+
+  - Input: Deposits, borrows, collateral, interest rates, liquidation parameters, loan terms.  
+  - Output: Loans, interest payments, liquidations, collateral management, yield, borrowing capacity.
 
 Step-by-step description (5–10 lines max)  
 Deposit: lenders deposit assets to earn interest.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Lending Protocols: deposit: user deposits 100 ETH → borrow: user borrows 50,000 USDC (collateralized) → interest: pays 5% APY → repay: repays loan + interest → withdraw: withdraws ETH + earned interest → result: lending/borrowing successful → Lending Protocols operational.
 
 Time & Space Complexity  
-   - Time: O(1) for loan operations (constant time smart contract operations).  
-   - Space: O(l + d) where l is loans, d is deposits (loan and deposit storage).
+
+  - Time: O(1) for loan operations (constant time smart contract operations).  
+  - Space: O(l + d) where l is loans, d is deposits (loan and deposit storage).
 
 Strengths  
+
 - Accessibility: accessible to anyone with crypto.
 - Transparency: transparent interest rates and terms.
 - Efficiency: automated, no intermediaries.
 
 Weaknesses / limitations  
+
 - Risk: smart contract risks, liquidation risks.
 - Volatility: crypto volatility affects collateral value.
 - Regulation: regulatory uncertainty.

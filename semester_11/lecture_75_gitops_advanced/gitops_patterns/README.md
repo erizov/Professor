@@ -1,14 +1,13 @@
 # GitOps Patterns
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 GitOps Patterns Flowchart:
@@ -43,9 +42,7 @@ GitOps Patterns Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 GitOps Patterns Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_75_gitops_advanced/gitops_patterns/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_75_gitops_advanced/gitops_patterns/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_75_gitops_advanced/gitops_patterns/test_algorithm.py)
-
 
    GitOps Patterns
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like design patterns: GitOps Patterns are like design patterns for GitOps - they provide proven ways (patterns) to structure GitOps workflows (push-based, pull-based, multi-repo, mono-repo) - just as design patterns help you build better software, GitOps patterns help you build better GitOps workflows.
 
 Inputs & Outputs  
-   - Input: GitOps requirements, repository structure, deployment needs, team structure, scalability requirements.  
-   - Output: Pattern-based GitOps, consistent workflows, scalable architecture, best practices, proven solutions.
+
+  - Input: GitOps requirements, repository structure, deployment needs, team structure, scalability requirements.  
+  - Output: Pattern-based GitOps, consistent workflows, scalable architecture, best practices, proven solutions.
 
 Step-by-step description (5–10 lines max)  
 Assess: assess requirements and constraints.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    GitOps Patterns: requirement: multiple teams, separate repos → pattern: multi-repo pattern → design: each team has own Git repo → implement: GitOps syncs from each repo → result: scalable, team-autonomous GitOps → GitOps Patterns successful.
 
 Time & Space Complexity  
-   - Time: O(d + i) where d is design time, i is implementation time (patterns reduce design time).  
-   - Space: O(r + c) where r is repository storage, c is configuration storage.
+
+  - Time: O(d + i) where d is design time, i is implementation time (patterns reduce design time).  
+  - Space: O(r + c) where r is repository storage, c is configuration storage.
 
 Strengths  
+
 - Proven: patterns are proven solutions to common problems.
 - Consistency: ensures consistent GitOps implementation.
 - Scalability: patterns support scalable GitOps adoption.
 
 Weaknesses / limitations  
+
 - Flexibility: patterns may be less flexible than custom solutions.
 - Learning: requires understanding of patterns.
 - Context: patterns must be adapted to specific contexts.

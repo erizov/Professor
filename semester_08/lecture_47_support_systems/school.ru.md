@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 47 Support Systems — support systems - demonstration. this lecture covers customer support systems and automation.
+Лекция 47 Support Systems — support systems - demonstration. this лекция covers customer support systems and automation.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 47 Support Systems — support systems - demonstration. this lecture cov
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 47 support systems:
+Рассмотрим конкретный пример работы лекция 47 support systems:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 47 Support Systems — support systems - demonstration. this lecture cov
 
 ### Базовые
 
-1. Что делает алгоритм lecture 47 support systems?
-2. В каких ситуациях используется lecture 47 support systems?
+1. Что делает алгоритм лекция 47 support systems?
+2. В каких ситуациях используется лекция 47 support systems?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 47 support systems обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 47 support systems?
-3. Можно ли улучшить работу lecture 47 support systems?
+1. Как лекция 47 support systems обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 47 support systems?
+3. Можно ли улучшить работу лекция 47 support systems?
 
 ### Сложные
 
-1. Какова временная сложность lecture 47 support systems?
-2. Как lecture 47 support systems работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 47 support systems?
+1. Какова временная сложность лекция 47 support systems?
+2. Как лекция 47 support systems работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 47 support systems?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 47 support systems.
+Выполни простую операцию с алгоритмом лекция 47 support systems.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 47 support systems к более сложному набору данных.
+Примени алгоритм лекция 47 support systems к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 47 support systems на языке программирования.
+Напиши реализацию алгоритма лекция 47 support systems на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

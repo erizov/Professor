@@ -1,14 +1,13 @@
 # Database Performance Tuning
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Database Performance Tuning Flowchart:
@@ -43,9 +42,7 @@ Database Performance Tuning Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Database Performance Tuning Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_53_database_operations/performance_tuning/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_53_database_operations/performance_tuning/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_53_database_operations/performance_tuning/test_algorithm.py)
-
-
-   Database Performance Tuning
 
 What problem does it solve? (1 sentence)  
    Optimizes database performance by identifying bottlenecks, tuning configuration, optimizing queries, and adjusting resources to improve response times and throughput.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like tuning a car engine: database performance tuning is like tuning a car for better performance - you identify what's slowing it down (bottlenecks like slow queries, missing indexes), adjust settings (configuration like memory, cache), optimize components (queries, indexes), and test improvements (benchmarking) - the goal is to make the database run faster and more efficiently, like tuning a car to go faster and use less fuel.
 
 Inputs & Outputs  
-   - Input: Performance metrics, slow queries, configuration settings, resource usage, workload patterns.  
-   - Output: Optimized database, improved performance, tuned configuration, optimized queries.
+
+  - Input: Performance metrics, slow queries, configuration settings, resource usage, workload patterns.  
+  - Output: Optimized database, improved performance, tuned configuration, optimized queries.
 
 Step-by-step description (5–10 lines max)  
 Measure baseline: establish current performance baseline (response times, throughput).
@@ -113,15 +106,18 @@ Tiny example (hand-simulated)
    Performance tuning: database slow (avg query time: 2s) → identify: query scanning 10M rows → optimize: add index on WHERE clause column → query time: 0.01s (200x faster) → identify: memory too low → increase buffer pool → cache hit rate improves → overall performance: 10x improvement → database tuned.
 
 Time & Space Complexity  
-   - Time: O(1) for configuration changes, O(q) for query optimization where q is number of queries, O(n) for index creation where n is table size.  
-   - Space: O(i) where i is index size, O(m) for memory allocation.
+
+  - Time: O(1) for configuration changes, O(q) for query optimization where q is number of queries, O(n) for index creation where n is table size.  
+  - Space: O(i) where i is index size, O(m) for memory allocation.
 
 Strengths  
+
 - Performance improvement: can dramatically improve database performance.
 - Cost-effective: often improves performance without hardware upgrades.
 - User experience: faster queries improve application responsiveness.
 
 Weaknesses / limitations  
+
 - Time-consuming: requires analysis, testing, and iteration.
 - Complexity: performance tuning can be complex and requires expertise.
 - Diminishing returns: further optimizations may have limited impact.

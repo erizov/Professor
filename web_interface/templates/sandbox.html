@@ -293,28 +293,28 @@
 <body>
     <div class="container">
         <div class="header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-            <h1 style="margin: 0 0 10px 0; font-size: 2rem;">Algorithm Sandbox</h1>
-            <p class="subtitle" style="opacity: 0.9; margin: 0 0 10px 0;">Create your own copy of an algorithm and experiment with it</p>
+            <h1 id="page-title" style="margin: 0 0 10px 0; font-size: 2rem;">Algorithm Sandbox</h1>
+            <p id="page-subtitle" class="subtitle" style="opacity: 0.9; margin: 0 0 10px 0;">Create your own copy of an algorithm and experiment with it</p>
             <div class="nav-menu" style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
-                <a href="/" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Home</a>
-                <a href="/algorithm-executor" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Algorithm Executor</a>
-                <a href="/test-reports" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Test Results</a>
-                <a href="/sandbox" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Sandbox</a>
+                <a href="/" id="nav-home" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Home</a>
+                <a href="/algorithm-executor" id="nav-executor" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Algorithm Executor</a>
+                <a href="/test-reports" id="nav-test-results" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Test Results</a>
+                <a href="/sandbox" id="nav-sandbox" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Sandbox</a>
             </div>
         </div>
         
         <div id="status-message" style="display: none;"></div>
         
         <div id="sandbox-info" class="sandbox-info" style="display: none;">
-            <h3>Current Sandbox</h3>
+            <h3 id="current-sandbox-title">Current Sandbox</h3>
             <p id="sandbox-details"></p>
         </div>
         
         {% if not read_only %}
         <div id="sandbox-list-section" class="sandbox-list-section" style="display: none; margin-bottom: 20px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                <h3 style="margin: 0; color: #333;">My Sandboxes</h3>
-                <button onclick="toggleSandboxList()" style="background: #6c757d; color: white; border: none; padding: 5px 15px; border-radius: 4px; cursor: pointer;">Hide</button>
+                <h3 id="my-sandboxes-title" style="margin: 0; color: #333;">My Sandboxes</h3>
+                <button id="hide-sandbox-btn" onclick="toggleSandboxList()" style="background: #6c757d; color: white; border: none; padding: 5px 15px; border-radius: 4px; cursor: pointer;">Hide</button>
             </div>
             <div id="sandbox-list-container" style="max-height: 300px; overflow-y: auto; border: 1px solid #ddd; border-radius: 4px; padding: 10px; background: #f8f9fa;">
                 <div id="sandbox-list-content">
@@ -326,14 +326,14 @@
         
         <div class="controls">
             <div class="control-group">
-                <label for="algorithm-select">Algorithm</label>
+                <label id="algorithm-label" for="algorithm-select">Algorithm</label>
                 <select id="algorithm-select" onchange="onAlgorithmSelect()">
-                    <option value="">Select Algorithm...</option>
+                    <option value="" id="select-algorithm-option">Select Algorithm...</option>
                 </select>
             </div>
             
             <div class="control-group">
-                <label for="language-select">Language</label>
+                <label id="language-label" for="language-select">Language</label>
                 <select id="language-select" onchange="onAlgorithmSelect()">
                     <option value="python">Python</option>
                     <option value="java">Java</option>
@@ -362,7 +362,7 @@
             </div>
             {% else %}
             <div class="control-group" style="grid-column: span 6;">
-                <p style="color: #666; font-style: italic;">Please log in to access sandbox features.</p>
+                <p id="login-message" style="color: #666; font-style: italic;">Please log in to access sandbox features.</p>
             </div>
             {% endif %}
         </div>
@@ -379,7 +379,7 @@
         
         <div class="output-section">
             <div class="output-header">
-                <span class="output-title">Output</span>
+                <span id="output-title" class="output-title">Output</span>
                 <span id="execution-time" style="color: #666; font-size: 14px;"></span>
             </div>
             <div class="output-box" id="output">Output will appear here after running your code...</div>
@@ -649,7 +649,8 @@
         
         async function loadSandboxList() {
             const container = document.getElementById('sandbox-list-content');
-            container.innerHTML = '<p style="color: #666; text-align: center;">Loading sandboxes...</p>';
+            const t = getTranslations();
+            container.innerHTML = `<p style="color: #666; text-align: center;">${t['loading-sandboxes']}</p>`;
             
             try {
                 const response = await fetch('/api/sandbox/list');
@@ -657,7 +658,7 @@
                 
                 if (data.success) {
                     if (data.sandboxes.length === 0) {
-                        container.innerHTML = '<p style="color: #666; text-align: center; padding: 20px;">You have no sandboxes yet. Create one to get started!</p>';
+                        container.innerHTML = `<p style="color: #666; text-align: center; padding: 20px;">${t['no-sandboxes']}</p>`;
                     } else {
                         container.innerHTML = data.sandboxes.map(sandbox => `
                             <div class="sandbox-item" id="sandbox-item-${sandbox.id}">
@@ -667,23 +668,23 @@
                                         <span class="sandbox-item-language ${sandbox.language}">${sandbox.language}</span>
                                     </div>
                                     <div class="sandbox-item-meta">
-                                        <span>Version: ${sandbox.latest_version}</span>
-                                        <span>Modified: ${new Date(sandbox.last_modified).toLocaleString()}</span>
+                                        <span>${t['version']} ${sandbox.latest_version}</span>
+                                        <span>${t['modified']} ${new Date(sandbox.last_modified).toLocaleString()}</span>
                                     </div>
                                 </div>
                                 <div class="sandbox-item-actions">
-                                    <button class="btn-delete-sandbox" onclick="event.stopPropagation(); deleteSandbox(${sandbox.id}, '${sandbox.algorithm_path}')" title="Delete sandbox">
-                                        Delete
+                                    <button class="btn-delete-sandbox" onclick="event.stopPropagation(); deleteSandbox(${sandbox.id}, '${sandbox.algorithm_path}')" title="${t['delete']}">
+                                        ${t['delete']}
                                     </button>
                                 </div>
                             </div>
                         `).join('');
                     }
                 } else {
-                    container.innerHTML = '<p style="color: #dc3545; text-align: center;">Error loading sandboxes</p>';
+                    container.innerHTML = `<p style="color: #dc3545; text-align: center;">${t['error-loading']}</p>`;
                 }
             } catch (error) {
-                container.innerHTML = `<p style="color: #dc3545; text-align: center;">Error: ${error.message}</p>`;
+                container.innerHTML = `<p style="color: #dc3545; text-align: center;">${t['error-loading']}: ${error.message}</p>`;
             }
         }
         
@@ -783,6 +784,165 @@
         // Load algorithms on page load for authenticated users
         loadAlgorithms();
         {% endif %}
+        
+        // Get current language
+        function getCurrentLanguage() {
+            return localStorage.getItem('preferred_language') || 'en';
+        }
+        
+        // Get translations
+        function getTranslations() {
+            const language = getCurrentLanguage();
+            const normalizedLang = (language === 'ru' || language === 'en') ? language : 
+                                  (language === 'russian' ? 'ru' : (language === 'english' ? 'en' : 'en'));
+            const translations = {
+                en: {
+                    'page-title': 'Algorithm Sandbox',
+                    'page-subtitle': 'Create your own copy of an algorithm and experiment with it',
+                    'nav-home': 'Home',
+                    'nav-executor': 'Algorithm Executor',
+                    'nav-test-results': 'Test Results',
+                    'nav-sandbox': 'Sandbox',
+                    'current-sandbox-title': 'Current Sandbox',
+                    'my-sandboxes-title': 'My Sandboxes',
+                    'hide-sandbox-btn': 'Hide',
+                    'show-sandbox-btn': 'Show',
+                    'algorithm-label': 'Algorithm',
+                    'language-label': 'Language',
+                    'select-algorithm-option': 'Select Algorithm...',
+                    'create-btn': 'Create Sandbox',
+                    'save-btn': 'Save',
+                    'run-btn': 'Run',
+                    'load-btn': 'My Sandboxes',
+                    'login-message': 'Please log in to access sandbox features.',
+                    'output-title': 'Output',
+                    'output-placeholder': 'Output will appear here after running your code...',
+                    'loading-sandboxes': 'Loading sandboxes...',
+                    'delete': 'Delete',
+                    'select-algorithm-placeholder': 'Select an algorithm and create a sandbox to start editing...',
+                    'readonly-placeholder': 'Please log in to create and edit sandboxes...',
+                    'no-sandboxes': 'You have no sandboxes yet. Create one to get started!',
+                    'error-loading': 'Error loading sandboxes',
+                    'version': 'Version:',
+                    'modified': 'Modified:'
+                },
+                ru: {
+                    'page-title': 'Песочница алгоритмов',
+                    'page-subtitle': 'Создайте свою копию алгоритма и экспериментируйте с ней',
+                    'nav-home': 'Главная',
+                    'nav-executor': 'Исполнитель алгоритмов',
+                    'nav-test-results': 'Результаты тестов',
+                    'nav-sandbox': 'Песочница',
+                    'current-sandbox-title': 'Текущая песочница',
+                    'my-sandboxes-title': 'Мои песочницы',
+                    'hide-sandbox-btn': 'Скрыть',
+                    'show-sandbox-btn': 'Показать',
+                    'algorithm-label': 'Алгоритм',
+                    'language-label': 'Язык',
+                    'select-algorithm-option': 'Выберите алгоритм...',
+                    'create-btn': 'Создать песочницу',
+                    'save-btn': 'Сохранить',
+                    'run-btn': 'Запустить',
+                    'load-btn': 'Мои песочницы',
+                    'login-message': 'Пожалуйста, войдите в систему для доступа к функциям песочницы.',
+                    'output-title': 'Вывод',
+                    'output-placeholder': 'Вывод появится здесь после запуска вашего кода...',
+                    'loading-sandboxes': 'Загрузка песочниц...',
+                    'delete': 'Удалить',
+                    'select-algorithm-placeholder': 'Выберите алгоритм и создайте песочницу для начала редактирования...',
+                    'readonly-placeholder': 'Пожалуйста, войдите в систему для создания и редактирования песочниц...',
+                    'no-sandboxes': 'У вас пока нет песочниц. Создайте одну, чтобы начать!',
+                    'error-loading': 'Ошибка загрузки песочниц',
+                    'version': 'Версия:',
+                    'modified': 'Изменено:'
+                }
+            };
+            return translations[normalizedLang] || translations.en;
+        }
+        
+        // Update UI language
+        function updateUILanguage(language) {
+            const normalizedLang = (language === 'ru' || language === 'en') ? language : 
+                                  (language === 'russian' ? 'ru' : (language === 'english' ? 'en' : 'en'));
+            const t = getTranslations();
+            
+            // Update page title and subtitle
+            const pageTitle = document.getElementById('page-title');
+            const pageSubtitle = document.getElementById('page-subtitle');
+            if (pageTitle) pageTitle.textContent = t['page-title'];
+            if (pageSubtitle) pageSubtitle.textContent = t['page-subtitle'];
+            
+            // Update navigation links
+            const navHome = document.getElementById('nav-home');
+            const navExecutor = document.getElementById('nav-executor');
+            const navTestResults = document.getElementById('nav-test-results');
+            const navSandbox = document.getElementById('nav-sandbox');
+            if (navHome) navHome.textContent = t['nav-home'];
+            if (navExecutor) navExecutor.textContent = t['nav-executor'];
+            if (navTestResults) navTestResults.textContent = t['nav-test-results'];
+            if (navSandbox) navSandbox.textContent = t['nav-sandbox'];
+            
+            // Update other elements
+            const currentSandboxTitle = document.getElementById('current-sandbox-title');
+            const mySandboxesTitle = document.getElementById('my-sandboxes-title');
+            const hideSandboxBtn = document.getElementById('hide-sandbox-btn');
+            const algorithmLabel = document.getElementById('algorithm-label');
+            const languageLabel = document.getElementById('language-label');
+            const selectAlgorithmOption = document.getElementById('select-algorithm-option');
+            const createBtn = document.getElementById('create-btn');
+            const saveBtn = document.getElementById('save-btn');
+            const runBtn = document.getElementById('run-btn');
+            const loadBtn = document.getElementById('load-btn');
+            const loginMessage = document.getElementById('login-message');
+            const outputTitle = document.getElementById('output-title');
+            const outputBox = document.getElementById('output');
+            const codeEditor = document.getElementById('code-editor');
+            
+            if (currentSandboxTitle) currentSandboxTitle.textContent = t['current-sandbox-title'];
+            if (mySandboxesTitle) mySandboxesTitle.textContent = t['my-sandboxes-title'];
+            if (hideSandboxBtn) hideSandboxBtn.textContent = t['hide-sandbox-btn'];
+            if (algorithmLabel) algorithmLabel.textContent = t['algorithm-label'];
+            if (languageLabel) languageLabel.textContent = t['language-label'];
+            if (selectAlgorithmOption) selectAlgorithmOption.textContent = t['select-algorithm-option'];
+            if (createBtn) createBtn.textContent = t['create-btn'];
+            if (saveBtn) saveBtn.textContent = t['save-btn'];
+            if (runBtn) runBtn.textContent = t['run-btn'];
+            if (loadBtn) loadBtn.textContent = t['load-btn'];
+            if (loginMessage) loginMessage.textContent = t['login-message'];
+            if (outputTitle) outputTitle.textContent = t['output-title'];
+            if (outputBox && outputBox.textContent.includes('Output will appear')) {
+                outputBox.textContent = t['output-placeholder'];
+            }
+            if (codeEditor) {
+                const placeholder = codeEditor.getAttribute('placeholder');
+                if (placeholder && placeholder.includes('Select an algorithm')) {
+                    codeEditor.setAttribute('placeholder', t['select-algorithm-placeholder']);
+                } else if (placeholder && placeholder.includes('Please log in')) {
+                    codeEditor.setAttribute('placeholder', t['readonly-placeholder']);
+                }
+            }
+        }
+        
+        // Global language change function
+        function setGlobalLanguage(language) {
+            localStorage.setItem('preferred_language', language);
+            updateUILanguage(language);
+            window.dispatchEvent(new CustomEvent('languageChanged', { 
+                detail: { language: language } 
+            }));
+        }
+        
+        // Listen for global language changes from other pages
+        window.addEventListener('languageChanged', (e) => {
+            const language = e.detail.language;
+            updateUILanguage(language);
+        });
+        
+        // Load language from localStorage on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLanguage = localStorage.getItem('preferred_language') || 'en';
+            updateUILanguage(savedLanguage);
+        });
     </script>
 </body>
 </html>

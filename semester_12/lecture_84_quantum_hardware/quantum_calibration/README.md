@@ -1,14 +1,13 @@
 # Quantum Calibration
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Calibration Flowchart:
@@ -43,9 +42,7 @@ Quantum Calibration Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Calibration Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_84_quantum_hardware/quantum_calibration/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_84_quantum_hardware/quantum_calibration/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_84_quantum_hardware/quantum_calibration/test_algorithm.py)
-
-
-   Quantum Calibration
 
 What problem does it solve? (1 sentence)  
 Calibrates quantum hardware to optimize gate fidelities, reduce errors, and maintain system performance, ensuring quantum computers operate at peak performance.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like tuning instruments: Quantum Calibration is like tuning musical instruments - you adjust parameters (like tuning pegs) to make the instrument (quantum computer) perform correctly - just as instruments need tuning, quantum computers need calibration to work accurately.
 
 Inputs & Outputs  
-   - Input: Quantum hardware, calibration protocols, target fidelities, measurement data, calibration parameters.  
-   - Output: Calibrated hardware, optimized parameters, improved fidelities, calibration reports, system performance.
+
+  - Input: Quantum hardware, calibration protocols, target fidelities, measurement data, calibration parameters.  
+  - Output: Calibrated hardware, optimized parameters, improved fidelities, calibration reports, system performance.
 
 Step-by-step description (5–10 lines max)  
 Measure: measure current gate fidelities.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Calibration: measure: gate fidelity 95% → tune: adjust control parameters → test: measure new fidelity → optimize: improve to 99.5% → validate: confirm improvement → result: calibrated quantum computer → Quantum Calibration successful.
 
 Time & Space Complexity  
-   - Time: O(m·t) where m is measurements, t is tuning time (calibration process).  
-   - Space: O(p) where p is calibration parameters (parameter storage).
+
+  - Time: O(m·t) where m is measurements, t is tuning time (calibration process).  
+  - Space: O(p) where p is calibration parameters (parameter storage).
 
 Strengths  
+
 - Performance: improves quantum computer performance.
 - Fidelity: increases gate fidelities.
 - Reliability: improves system reliability.
 
 Weaknesses / limitations  
+
 - Time: calibration takes time.
 - Drift: calibration drifts over time.
 - Complexity: calibration can be complex.

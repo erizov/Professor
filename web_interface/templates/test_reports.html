@@ -296,41 +296,41 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>📊 Test Results Report</h1>
-            <p>Comprehensive algorithm test results with search, sorting, and state change tracking</p>
+            <h1 id="page-title">📊 Test Results Report</h1>
+            <p id="page-subtitle">Comprehensive algorithm test results with search, sorting, and state change tracking</p>
             <div class="nav-menu">
-                <a href="/">Home</a>
-                <a href="/algorithm-executor">Algorithm Executor</a>
-                <a href="/test-reports">Test Results</a>
-                <a href="/sandbox">Sandbox</a>
+                <a href="/" id="nav-home">Home</a>
+                <a href="/algorithm-executor" id="nav-executor">Algorithm Executor</a>
+                <a href="/test-reports" id="nav-test-results">Test Results</a>
+                <a href="/sandbox" id="nav-sandbox">Sandbox</a>
             </div>
         </div>
 
         <div class="filters">
             <div class="filter-row">
                 <div class="filter-group">
-                    <label for="search">Search Algorithm:</label>
+                    <label id="search-label" for="search">Search Algorithm:</label>
                     <input type="text" id="search" placeholder="Type to search...">
                 </div>
                 <div class="filter-group">
-                    <label for="status-filter">Status:</label>
+                    <label id="status-label" for="status-filter">Status:</label>
                     <select id="status-filter">
-                        <option value="">All Statuses</option>
-                        <option value="success">Success</option>
-                        <option value="failure">Failure/Error</option>
-                        <option value="timeout">Timeout</option>
+                        <option value="" id="all-statuses-option">All Statuses</option>
+                        <option value="success" id="success-option">Success</option>
+                        <option value="failure" id="failure-option">Failure/Error</option>
+                        <option value="timeout" id="timeout-option">Timeout</option>
                     </select>
                 </div>
                 <div class="filter-group">
-                    <label for="language-filter">Language:</label>
+                    <label id="language-filter-label" for="language-filter">Language:</label>
                     <select id="language-filter">
-                        <option value="">All Languages</option>
+                        <option value="" id="all-languages-option">All Languages</option>
                         <option value="python">Python</option>
                         <option value="java">Java</option>
                     </select>
                 </div>
                 <div class="filter-group">
-                    <label for="algorithm-type-filter">Algorithm Type:</label>
+                    <label id="algorithm-type-label" for="algorithm-type-filter">Algorithm Type:</label>
                     <select id="algorithm-type-filter">
                         {% for algo_type in algorithm_types %}
                         <option value="{{ algo_type if algo_type != 'All Types' else '' }}">{{ algo_type }}</option>
@@ -342,23 +342,23 @@
 
         <div class="statistics" id="statistics">
             <div class="stat-card">
-                <h3>Total Tests</h3>
+                <h3 id="total-tests-title">Total Tests</h3>
                 <div class="value" id="total-tests">-</div>
             </div>
             <div class="stat-card success">
-                <h3>Success</h3>
+                <h3 id="success-title">Success</h3>
                 <div class="value" id="success-count">-</div>
             </div>
             <div class="stat-card failure">
-                <h3>Failure/Error</h3>
+                <h3 id="failure-title">Failure/Error</h3>
                 <div class="value" id="failure-count">-</div>
             </div>
             <div class="stat-card timeout">
-                <h3>Timeout</h3>
+                <h3 id="timeout-title">Timeout</h3>
                 <div class="value" id="timeout-count">-</div>
             </div>
             <div class="stat-card">
-                <h3>State Changes (24h)</h3>
+                <h3 id="state-changes-title">State Changes (24h)</h3>
                 <div class="value" id="recent-changes">-</div>
             </div>
         </div>
@@ -367,18 +367,18 @@
             <table>
                 <thead>
                     <tr>
-                        <th class="sortable" data-sort="algorithm_path">Algorithm Path</th>
-                        <th class="sortable" data-sort="language">Language</th>
-                        <th>Algorithm Type</th>
-                        <th class="sortable" data-sort="status">Status</th>
-                        <th class="sortable" data-sort="duration">Duration (s)</th>
-                        <th class="sortable" data-sort="timestamp">Last Test</th>
-                        <th>History</th>
+                        <th class="sortable" data-sort="algorithm_path" id="th-algorithm-path">Algorithm Path</th>
+                        <th class="sortable" data-sort="language" id="th-language">Language</th>
+                        <th id="th-algorithm-type">Algorithm Type</th>
+                        <th class="sortable" data-sort="status" id="th-status">Status</th>
+                        <th class="sortable" data-sort="duration" id="th-duration">Duration (s)</th>
+                        <th class="sortable" data-sort="timestamp" id="th-last-test">Last Test</th>
+                        <th id="th-history">History</th>
                     </tr>
                 </thead>
                 <tbody id="results-body">
                     <tr>
-                        <td colspan="7" class="loading">Loading test results...</td>
+                        <td colspan="7" class="loading" id="loading-results">Loading test results...</td>
                     </tr>
                 </tbody>
             </table>
@@ -463,11 +463,12 @@
                 }
 
                 if (!data.results || data.results.length === 0) {
+                    const t = getTranslations();
                     const noResultsRow = document.createElement('tr');
                     const noResultsCell = document.createElement('td');
                     noResultsCell.colSpan = 7;
                     noResultsCell.className = 'no-results';
-                    noResultsCell.textContent = 'No test results found';
+                    noResultsCell.textContent = t['no-results'] || 'No test results found';
                     noResultsRow.appendChild(noResultsCell);
                     tbody.appendChild(noResultsRow);
                     return;
@@ -663,7 +664,8 @@
                 const errorCell = document.createElement('td');
                 errorCell.colSpan = 7;
                 errorCell.className = 'no-results';
-                errorCell.textContent = 'Error loading test results: ' + error.message;
+                const t = getTranslations();
+                errorCell.textContent = (t['error-loading'] || 'Error loading test results') + ': ' + error.message;
                 errorRow.appendChild(errorCell);
                 tbody.appendChild(errorRow);
             }
@@ -734,6 +736,185 @@
             loadStatistics();
             loadResults();
         }, 30000);
+        
+        // Get current language
+        function getCurrentLanguage() {
+            return localStorage.getItem('preferred_language') || 'en';
+        }
+        
+        // Get translations
+        function getTranslations() {
+            const language = getCurrentLanguage();
+            const normalizedLang = (language === 'ru' || language === 'en') ? language : 
+                                  (language === 'russian' ? 'ru' : (language === 'english' ? 'en' : 'en'));
+            const translations = {
+                en: {
+                    'page-title': '📊 Test Results Report',
+                    'page-subtitle': 'Comprehensive algorithm test results with search, sorting, and state change tracking',
+                    'nav-home': 'Home',
+                    'nav-executor': 'Algorithm Executor',
+                    'nav-test-results': 'Test Results',
+                    'nav-sandbox': 'Sandbox',
+                    'search-label': 'Search Algorithm:',
+                    'search-placeholder': 'Type to search...',
+                    'status-label': 'Status:',
+                    'language-filter-label': 'Language:',
+                    'algorithm-type-label': 'Algorithm Type:',
+                    'all-statuses': 'All Statuses',
+                    'success': 'Success',
+                    'failure': 'Failure/Error',
+                    'timeout': 'Timeout',
+                    'all-languages': 'All Languages',
+                    'total-tests': 'Total Tests',
+                    'state-changes': 'State Changes (24h)',
+                    'th-algorithm-path': 'Algorithm Path',
+                    'th-language': 'Language',
+                    'th-algorithm-type': 'Algorithm Type',
+                    'th-status': 'Status',
+                    'th-duration': 'Duration (s)',
+                    'th-last-test': 'Last Test',
+                    'th-history': 'History',
+                    'loading-results': 'Loading test results...',
+                    'no-results': 'No test results found',
+                    'error-loading': 'Error loading test results'
+                },
+                ru: {
+                    'page-title': '📊 Отчет о результатах тестов',
+                    'page-subtitle': 'Подробные результаты тестирования алгоритмов с поиском, сортировкой и отслеживанием изменений состояния',
+                    'nav-home': 'Главная',
+                    'nav-executor': 'Исполнитель алгоритмов',
+                    'nav-test-results': 'Результаты тестов',
+                    'nav-sandbox': 'Песочница',
+                    'search-label': 'Поиск алгоритма:',
+                    'search-placeholder': 'Введите для поиска...',
+                    'status-label': 'Статус:',
+                    'language-filter-label': 'Язык:',
+                    'algorithm-type-label': 'Тип алгоритма:',
+                    'all-statuses': 'Все статусы',
+                    'success': 'Успешно',
+                    'failure': 'Ошибка/Сбой',
+                    'timeout': 'Таймаут',
+                    'all-languages': 'Все языки',
+                    'total-tests': 'Всего тестов',
+                    'state-changes': 'Изменения состояния (24ч)',
+                    'th-algorithm-path': 'Путь алгоритма',
+                    'th-language': 'Язык',
+                    'th-algorithm-type': 'Тип алгоритма',
+                    'th-status': 'Статус',
+                    'th-duration': 'Длительность (с)',
+                    'th-last-test': 'Последний тест',
+                    'th-history': 'История',
+                    'loading-results': 'Загрузка результатов тестов...',
+                    'no-results': 'Результаты тестов не найдены',
+                    'error-loading': 'Ошибка загрузки результатов тестов'
+                }
+            };
+            return translations[normalizedLang] || translations.en;
+        }
+        
+        // Update UI language
+        function updateUILanguage(language) {
+            const normalizedLang = (language === 'ru' || language === 'en') ? language : 
+                                  (language === 'russian' ? 'ru' : (language === 'english' ? 'en' : 'en'));
+            const t = getTranslations();
+            
+            // Update page title and subtitle
+            const pageTitle = document.getElementById('page-title');
+            const pageSubtitle = document.getElementById('page-subtitle');
+            if (pageTitle) pageTitle.textContent = t['page-title'];
+            if (pageSubtitle) pageSubtitle.textContent = t['page-subtitle'];
+            
+            // Update navigation links
+            const navHome = document.getElementById('nav-home');
+            const navExecutor = document.getElementById('nav-executor');
+            const navTestResults = document.getElementById('nav-test-results');
+            const navSandbox = document.getElementById('nav-sandbox');
+            if (navHome) navHome.textContent = t['nav-home'];
+            if (navExecutor) navExecutor.textContent = t['nav-executor'];
+            if (navTestResults) navTestResults.textContent = t['nav-test-results'];
+            if (navSandbox) navSandbox.textContent = t['nav-sandbox'];
+            
+            // Update labels
+            const searchLabel = document.getElementById('search-label');
+            const statusLabel = document.getElementById('status-label');
+            const languageFilterLabel = document.getElementById('language-filter-label');
+            const algorithmTypeLabel = document.getElementById('algorithm-type-label');
+            if (searchLabel) searchLabel.textContent = t['search-label'];
+            if (statusLabel) statusLabel.textContent = t['status-label'];
+            if (languageFilterLabel) languageFilterLabel.textContent = t['language-filter-label'];
+            if (algorithmTypeLabel) algorithmTypeLabel.textContent = t['algorithm-type-label'];
+            
+            // Update search placeholder
+            const searchInput = document.getElementById('search');
+            if (searchInput) searchInput.placeholder = t['search-placeholder'];
+            
+            // Update dropdown options
+            const allStatusesOption = document.getElementById('all-statuses-option');
+            const successOption = document.getElementById('success-option');
+            const failureOption = document.getElementById('failure-option');
+            const timeoutOption = document.getElementById('timeout-option');
+            const allLanguagesOption = document.getElementById('all-languages-option');
+            if (allStatusesOption) allStatusesOption.textContent = t['all-statuses'];
+            if (successOption) successOption.textContent = t['success'];
+            if (failureOption) failureOption.textContent = t['failure'];
+            if (timeoutOption) timeoutOption.textContent = t['timeout'];
+            if (allLanguagesOption) allLanguagesOption.textContent = t['all-languages'];
+            
+            // Update statistics titles
+            const totalTestsTitle = document.getElementById('total-tests-title');
+            const successTitle = document.getElementById('success-title');
+            const failureTitle = document.getElementById('failure-title');
+            const timeoutTitle = document.getElementById('timeout-title');
+            const stateChangesTitle = document.getElementById('state-changes-title');
+            if (totalTestsTitle) totalTestsTitle.textContent = t['total-tests'];
+            if (successTitle) successTitle.textContent = t['success'];
+            if (failureTitle) failureTitle.textContent = t['failure'];
+            if (timeoutTitle) timeoutTitle.textContent = t['timeout'];
+            if (stateChangesTitle) stateChangesTitle.textContent = t['state-changes'];
+            
+            // Update table headers
+            const thAlgorithmPath = document.getElementById('th-algorithm-path');
+            const thLanguage = document.getElementById('th-language');
+            const thAlgorithmType = document.getElementById('th-algorithm-type');
+            const thStatus = document.getElementById('th-status');
+            const thDuration = document.getElementById('th-duration');
+            const thLastTest = document.getElementById('th-last-test');
+            const thHistory = document.getElementById('th-history');
+            if (thAlgorithmPath) thAlgorithmPath.textContent = t['th-algorithm-path'];
+            if (thLanguage) thLanguage.textContent = t['th-language'];
+            if (thAlgorithmType) thAlgorithmType.textContent = t['th-algorithm-type'];
+            if (thStatus) thStatus.textContent = t['th-status'];
+            if (thDuration) thDuration.textContent = t['th-duration'];
+            if (thLastTest) thLastTest.textContent = t['th-last-test'];
+            if (thHistory) thHistory.textContent = t['th-history'];
+            
+            // Update loading message
+            const loadingResults = document.getElementById('loading-results');
+            if (loadingResults && loadingResults.textContent.includes('Loading')) {
+                loadingResults.textContent = t['loading-results'];
+            }
+        }
+        
+        // Global language change function
+        function setGlobalLanguage(language) {
+            localStorage.setItem('preferred_language', language);
+            updateUILanguage(language);
+            window.dispatchEvent(new CustomEvent('languageChanged', { 
+                detail: { language: language } 
+            }));
+        }
+        
+        // Listen for global language changes from other pages
+        window.addEventListener('languageChanged', (e) => {
+            const language = e.detail.language;
+            updateUILanguage(language);
+        });
+        
+        // Load language from localStorage on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLanguage = localStorage.getItem('preferred_language') || 'en';
+            updateUILanguage(savedLanguage);
+        });
     </script>
 </body>
 </html>

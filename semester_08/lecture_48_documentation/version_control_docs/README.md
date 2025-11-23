@@ -1,14 +1,13 @@
 # Version Control Documentation
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Version Control Documentation Flowchart:
@@ -43,9 +42,7 @@ Version Control Documentation Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Version Control Documentation Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_48_documentation/version_control_docs/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_48_documentation/version_control_docs/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_48_documentation/version_control_docs/test_algorithm.py)
-
-
-   Version Control Documentation
 
 What problem does it solve? (1 sentence)  
    Manages documentation changes using version control systems, enabling collaboration, tracking history, and maintaining documentation alongside code in a unified workflow.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like version control for code, but for documentation: just as code is stored in Git with history and collaboration (like a shared document with change tracking), version control docs stores documentation in Git - you can see who changed what, when, and why, and collaborate on docs just like code.
 
 Inputs & Outputs  
-   - Input: Documentation files (Markdown, reStructuredText, etc.), version control system (Git), collaboration workflow.  
-   - Output: Version-controlled documentation, change history, collaborative editing, documentation branches.
+
+  - Input: Documentation files (Markdown, reStructuredText, etc.), version control system (Git), collaboration workflow.  
+  - Output: Version-controlled documentation, change history, collaborative editing, documentation branches.
 
 Step-by-step description (5–10 lines max)  
 Store in repository: place documentation files in version control repository.
@@ -113,15 +106,18 @@ Tiny example (hand-simulated)
    Documentation in Git repo → writer creates branch 'update-api-docs' → edits README.md → commits changes → creates pull request → reviewer checks changes → approves → merges to main → documentation deployed → version tagged v2.0 → docs match code version.
 
 Time & Space Complexity  
-   - Time: O(1) for version control operations, O(n) for merge conflicts where n is conflict size.  
-   - Space: O(d) where d is documentation size plus version history.
+
+  - Time: O(1) for version control operations, O(n) for merge conflicts where n is conflict size.  
+  - Space: O(d) where d is documentation size plus version history.
 
 Strengths  
+
 - Collaboration: enables multiple authors to work together.
 - History: tracks all changes and allows rollback.
 - Integration: keeps documentation with code in same workflow.
 
 Weaknesses / limitations  
+
 - Learning curve: requires understanding version control.
 - Merge conflicts: can have conflicts when multiple people edit.
 - Tool dependency: requires version control system and workflow.

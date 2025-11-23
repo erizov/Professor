@@ -1,14 +1,13 @@
 # Quantum Security Protocols
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Security Protocols Flowchart:
@@ -43,9 +42,7 @@ Quantum Security Protocols Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Security Protocols Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_86_quantum_security/quantum_security_protocols/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_86_quantum_security/quantum_security_protocols/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_86_quantum_security/quantum_security_protocols/test_algorithm.py)
-
-
-   Quantum Security Protocols
 
 What problem does it solve? (1 sentence)  
    Implements security protocols that leverage quantum mechanics for secure communication, authentication, and cryptographic operations, providing provably secure protocols based on quantum principles.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like security protocols using quantum: Quantum Security Protocols are like security protocols but using quantum mechanics - you use quantum properties (like entanglement, no-cloning) to create secure protocols - just as security protocols protect communication, quantum security protocols protect using quantum mechanics.
 
 Inputs & Outputs  
-   - Input: Communication channels, quantum states, protocols, authentication requirements, security parameters.  
-   - Output: Secure quantum protocols, authenticated communication, quantum-secure operations, protocol implementations.
+
+  - Input: Communication channels, quantum states, protocols, authentication requirements, security parameters.  
+  - Output: Secure quantum protocols, authenticated communication, quantum-secure operations, protocol implementations.
 
 Step-by-step description (5–10 lines max)  
 Design: design quantum security protocol.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Security Protocols: protocol: BB84 QKD → implement: implement quantum key distribution → authenticate: quantum authentication → encrypt: use quantum keys → result: provably secure communication → Quantum Security Protocols operational.
 
 Time & Space Complexity  
-   - Time: O(p) where p is protocol execution time (varies by protocol).  
-   - Space: O(q + s) where q is quantum state storage, s is protocol state storage.
+
+  - Time: O(p) where p is protocol execution time (varies by protocol).  
+  - Space: O(q + s) where q is quantum state storage, s is protocol state storage.
 
 Strengths  
+
 - Security: provably secure based on quantum mechanics.
 - Detection: automatically detects attacks.
 - Future-proof: secure against quantum computers.
 
 Weaknesses / limitations  
+
 - Infrastructure: requires quantum infrastructure.
 - Complexity: quantum protocols are complex.
 - Distance: limited by quantum channel distance.

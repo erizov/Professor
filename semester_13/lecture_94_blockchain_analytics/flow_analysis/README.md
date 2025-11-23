@@ -1,14 +1,13 @@
 # Blockchain Flow Analysis
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Blockchain Flow Analysis Flowchart:
@@ -43,9 +42,7 @@ Blockchain Flow Analysis Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Blockchain Flow Analysis Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_94_blockchain_analytics/flow_analysis/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_94_blockchain_analytics/flow_analysis/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_94_blockchain_analytics/flow_analysis/test_algorithm.py)
-
-
-   Blockchain Flow Analysis
 
 What problem does it solve? (1 sentence)  
    Tracks and visualizes the movement of funds through blockchain networks by analyzing transaction flows, identifying fund sources and destinations, and mapping money movement patterns.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like tracking money through a bank: Blockchain flow analysis is like tracking money through a bank - you follow transactions (money movements) from source to destination, identify patterns (where money goes), and visualize the flow (money trail) - this helps understand fund movements, detect money laundering, or trace stolen funds.
 
 Inputs & Outputs  
-   - Input: Blockchain transactions, addresses, transaction graphs, time windows, analysis parameters, visualization settings.  
-   - Output: Flow graphs, fund trails, source/destination analysis, flow patterns, visualization diagrams.
+
+  - Input: Blockchain transactions, addresses, transaction graphs, time windows, analysis parameters, visualization settings.  
+  - Output: Flow graphs, fund trails, source/destination analysis, flow patterns, visualization diagrams.
 
 Step-by-step description (5–10 lines max)  
 Collect: collect blockchain transaction data.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Flow Analysis: collect tx → build graph → trace 100 ETH from address A → follow through 5 addresses → identify destination B → visualize path → Flow Analysis successful.
 
 Time & Space Complexity  
-   - Time: O(n * d) where n is transactions, d is graph depth (flow analysis complexity).  
-   - Space: O(n + e) where n is transactions, e is edges (graph storage).
+
+  - Time: O(n * d) where n is transactions, d is graph depth (flow analysis complexity).  
+  - Space: O(n + e) where n is transactions, e is edges (graph storage).
 
 Strengths  
+
 - Transparency: provides transparency into fund movements.
 - Tracing: enables fund tracing and investigation.
 - Insights: reveals flow patterns and behaviors.
 
 Weaknesses / limitations  
+
 - Privacy: raises privacy concerns.
 - Complexity: complex flows can be hard to analyze.
 - Scale: large-scale analysis is computationally expensive.

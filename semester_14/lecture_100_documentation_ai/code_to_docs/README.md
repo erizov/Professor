@@ -1,14 +1,13 @@
 # Code-to-Documentation Conversion
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Code-to-Documentation Conversion Flowchart:
@@ -43,9 +42,7 @@ Code-to-Documentation Conversion Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Code-to-Documentation Conversion Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_14/lecture_100_documentation_ai/code_to_docs/algorithm.py)
 - [Java Implementation](/code/semester_14/lecture_100_documentation_ai/code_to_docs/Algorithm.java)
 - [Python Tests](/code/semester_14/lecture_100_documentation_ai/code_to_docs/test_algorithm.py)
-
 
    Code-to-Documentation Conversion
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like translating code to English: Code-to-docs conversion is like translating code (a foreign language) to English (documentation) - you read the code, understand what it does, and write an explanation in plain language - this helps developers who aren't familiar with the code understand it quickly.
 
 Inputs & Outputs  
-   - Input: Source code, code structure, comments, analysis tools, documentation templates, conversion rules.  
-   - Output: Documentation files, code explanations, function descriptions, usage examples, API references.
+
+  - Input: Source code, code structure, comments, analysis tools, documentation templates, conversion rules.  
+  - Output: Documentation files, code explanations, function descriptions, usage examples, API references.
 
 Step-by-step description (5–10 lines max)  
 Parse: parse source code into abstract syntax tree.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Code-to-Docs: parse Python file → extract functions → analyze logic → generate docstrings → format as Markdown → enhance with examples → export → Code-to-Docs successful.
 
 Time & Space Complexity  
-   - Time: O(c * p) where c is code size, p is parsing complexity (conversion complexity).  
-   - Space: O(c + d) where c is code, d is documentation (conversion storage).
+
+  - Time: O(c * p) where c is code size, p is parsing complexity (conversion complexity).  
+  - Space: O(c + d) where c is code, d is documentation (conversion storage).
 
 Strengths  
+
 - Automation: automates documentation creation.
 - Accuracy: documentation matches code structure.
 - Maintenance: easier to keep docs in sync with code.
 
 Weaknesses / limitations  
+
 - Depth: may lack deep explanations of logic.
 - Context: may miss project-specific context.
 - Quality: may require human refinement.

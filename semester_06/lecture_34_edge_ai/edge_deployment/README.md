@@ -1,14 +1,13 @@
 # Edge Deployment
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Edge Deployment Flowchart:
@@ -43,9 +42,7 @@ Edge Deployment Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Edge Deployment Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_06/lecture_34_edge_ai/edge_deployment/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_34_edge_ai/edge_deployment/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_34_edge_ai/edge_deployment/test_algorithm.py)
-

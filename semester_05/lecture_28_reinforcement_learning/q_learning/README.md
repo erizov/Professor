@@ -1,14 +1,13 @@
 # Q-Learning
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Q-Learning Flowchart:
@@ -43,9 +42,7 @@ Q-Learning Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Q-Learning Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_05/lecture_28_reinforcement_learning/q_learning/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_28_reinforcement_learning/q_learning/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_28_reinforcement_learning/q_learning/test_algorithm.py)
-

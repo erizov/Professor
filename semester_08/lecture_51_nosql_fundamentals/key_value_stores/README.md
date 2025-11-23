@@ -1,14 +1,13 @@
 # Key-Value Stores
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Key-Value Stores Flowchart:
@@ -43,9 +42,7 @@ Key-Value Stores Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Key-Value Stores Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_51_nosql_fundamentals/key_value_stores/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_51_nosql_fundamentals/key_value_stores/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_51_nosql_fundamentals/key_value_stores/test_algorithm.py)
-
 
    Key-Value Stores
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a dictionary or phone book: key-value stores are like a simple lookup table where you have a key (like a name) and a value (like a phone number) - you look up the key and get the value instantly. It's the simplest database model: just keys and values, no complex relationships or queries.
 
 Inputs & Outputs  
-   - Input: Key-value pairs, key (unique identifier), value (data to store), operations (get, put, delete).  
-   - Output: Stored key-value pairs, retrieved values, fast lookups, scalable storage.
+
+  - Input: Key-value pairs, key (unique identifier), value (data to store), operations (get, put, delete).  
+  - Output: Stored key-value pairs, retrieved values, fast lookups, scalable storage.
 
 Step-by-step description (5–10 lines max)  
 Store value: associate value with unique key (put operation).
@@ -112,15 +107,18 @@ Tiny example (hand-simulated)
    Store: put('user:123', '{"name": "John", "email": "john@example.com"}') → hash key → store in node → retrieve: get('user:123') → hash key → find node → return value → fast lookup: O(1) average time.
 
 Time & Space Complexity  
-   - Time: O(1) average for get/put/delete operations (hash-based lookup), O(n) worst case for hash collisions.  
-   - Space: O(n) where n is number of key-value pairs.
+
+  - Time: O(1) average for get/put/delete operations (hash-based lookup), O(n) worst case for hash collisions.  
+  - Space: O(n) where n is number of key-value pairs.
 
 Strengths  
+
 - Simplicity: simple data model, easy to understand and use.
 - Performance: extremely fast read/write operations.
 - Scalability: easily scales horizontally across multiple nodes.
 
 Weaknesses / limitations  
+
 - Limited queries: no complex queries, only key-based lookups.
 - No relationships: cannot model relationships between data.
 - Value limitations: values are opaque (no querying within values).

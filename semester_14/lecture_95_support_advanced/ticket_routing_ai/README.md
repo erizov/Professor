@@ -1,14 +1,13 @@
 # AI-Powered Ticket Routing
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 AI-Powered Ticket Routing Flowchart:
@@ -43,9 +42,7 @@ AI-Powered Ticket Routing Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 AI-Powered Ticket Routing Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_14/lecture_95_support_advanced/ticket_routing_ai/algorithm.py)
 - [Java Implementation](/code/semester_14/lecture_95_support_advanced/ticket_routing_ai/Algorithm.java)
 - [Python Tests](/code/semester_14/lecture_95_support_advanced/ticket_routing_ai/test_algorithm.py)
-
 
    AI-Powered Ticket Routing
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
 Like a smart dispatcher: AI ticket routing is like a smart dispatcher - you analyze the request (ticket content), know who's available (agent workload), match expertise (agent skills), and route efficiently (optimal assignment) - just as a dispatcher routes calls, AI routes tickets to the right person.
 
 Inputs & Outputs  
-   - Input: Support tickets, ticket content, agent profiles, agent workload, historical performance, routing rules, priority levels.  
-   - Output: Routed tickets, routing decisions, agent assignments, routing confidence scores, routing metrics, optimization recommendations.
+
+  - Input: Support tickets, ticket content, agent profiles, agent workload, historical performance, routing rules, priority levels.  
+  - Output: Routed tickets, routing decisions, agent assignments, routing confidence scores, routing metrics, optimization recommendations.
 
 Step-by-step description (5–10 lines max)  
 Receive: receive incoming support ticket.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Ticket Routing: receive ticket → analyze (billing issue) → classify → match to billing expert → check availability → route → learn → optimize → Ticket Routing successful.
 
 Time & Space Complexity  
-   - Time: O(t * r) where t is ticket processing, r is routing complexity (routing complexity).  
-   - Space: O(a + h) where a is agent data, h is history (routing storage).
+
+  - Time: O(t * r) where t is ticket processing, r is routing complexity (routing complexity).  
+  - Space: O(a + h) where a is agent data, h is history (routing storage).
 
 Strengths  
+
 - Efficiency: improves routing efficiency and speed.
 - Accuracy: routes tickets to appropriate agents.
 - Optimization: optimizes agent workload distribution.
 
 Weaknesses / limitations  
+
 - Complexity: requires sophisticated AI and training.
 - Accuracy: may have limitations in complex scenarios.
 - Maintenance: requires ongoing training and maintenance.

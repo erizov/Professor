@@ -1,14 +1,13 @@
 # GitOps
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 GitOps Flowchart:
@@ -43,9 +42,7 @@ GitOps Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 GitOps Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_07/lecture_43_ci_cd_advanced/gitops/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_43_ci_cd_advanced/gitops/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_43_ci_cd_advanced/gitops/test_algorithm.py)
-

@@ -1,14 +1,13 @@
 # Conflict-Free Replicated Data Types (CRDTs)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Conflict-Free Replicated Data Types (CRDTs) Flowchart:
@@ -43,9 +42,7 @@ Conflict-Free Replicated Data Types (CRDTs) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Conflict-Free Replicated Data Types (CRDTs) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_59_distributed_systems_advanced/crdt/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_59_distributed_systems_advanced/crdt/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_59_distributed_systems_advanced/crdt/test_algorithm.py)
-
 
    Conflict-Free Replicated Data Types (CRDTs)
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a shared document that auto-merges: CRDTs are like a shared document where multiple people can edit simultaneously, and the system automatically merges changes without conflicts - even if two people edit the same paragraph at the same time, the CRDT ensures both edits are preserved and merged correctly - it's like having a smart merge that always works, no matter what order changes arrive in, because the operations are designed to be commutative (order doesn't matter).
 
 Inputs & Outputs  
-   - Input: Operations (add, remove, update), replicas, operation timestamps, vector clocks.  
-   - Output: Merged state, conflict-free replication, eventual consistency, convergent data.
+
+  - Input: Operations (add, remove, update), replicas, operation timestamps, vector clocks.  
+  - Output: Merged state, conflict-free replication, eventual consistency, convergent data.
 
 Step-by-step description (5–10 lines max)  
 Define CRDT: choose appropriate CRDT type (G-Counter, PN-Counter, G-Set, OR-Set, etc.).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    CRDT: G-Counter (grow-only counter) → replica A: increment by 5 → replica B: increment by 3 → merge: A gets +3, B gets +5 → both converge to 8 → commutative: order doesn't matter → conflict-free: no coordination needed → CRDT ensures consistency.
 
 Time & Space Complexity  
-   - Time: O(1) for operations, O(n) for merge where n is number of replicas or operations.  
-   - Space: O(r) or O(o) depending on CRDT type where r is replicas, o is operations (metadata overhead).
+
+  - Time: O(1) for operations, O(n) for merge where n is number of replicas or operations.  
+  - Space: O(r) or O(o) depending on CRDT type where r is replicas, o is operations (metadata overhead).
 
 Strengths  
+
 - No coordination: operations don't require coordination between replicas.
 - Automatic merge: conflicts resolved automatically without manual intervention.
 - Low latency: local operations are immediate (no network wait).
 
 Weaknesses / limitations  
+
 - Limited operations: not all operations can be expressed as CRDTs.
 - Metadata overhead: CRDTs may require metadata (timestamps, vector clocks).
 - Complexity: some CRDT types are complex to understand and implement.

@@ -1,14 +1,13 @@
 # Security Testing
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Security Testing Flowchart:
@@ -43,9 +42,7 @@ Security Testing Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Security Testing Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_73_security_devops/security_testing/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_73_security_devops/security_testing/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_73_security_devops/security_testing/test_algorithm.py)
-
-
-   Security Testing
 
 What problem does it solve? (1 sentence)  
    Tests applications and infrastructure for security vulnerabilities through automated and manual testing techniques, ensuring security before deployment.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like safety testing: Security Testing is like safety testing for cars - you test the car (application) to make sure it's safe (secure) before people use it - just as safety tests find problems before cars are sold, security testing finds vulnerabilities before applications are deployed.
 
 Inputs & Outputs  
-   - Input: Applications, infrastructure, test cases, attack scenarios, security requirements, testing tools.  
-   - Output: Security test results, vulnerability reports, risk assessments, remediation recommendations, test coverage.
+
+  - Input: Applications, infrastructure, test cases, attack scenarios, security requirements, testing tools.  
+  - Output: Security test results, vulnerability reports, risk assessments, remediation recommendations, test coverage.
 
 Step-by-step description (5–10 lines max)  
 Plan: plan security testing strategy and scope.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Security Testing: app: web application → static: code analysis → dynamic: runtime tests → penetration: simulated attacks → findings: SQL injection vulnerability → report: security test report → remediate: fix vulnerability → Security Testing complete.
 
 Time & Space Complexity  
-   - Time: O(t + a) where t is testing time, a is analysis time (varies by test type and scope).  
-   - Space: O(r + d) where r is result storage, d is test data storage.
+
+  - Time: O(t + a) where t is testing time, a is analysis time (varies by test type and scope).  
+  - Space: O(r + d) where r is result storage, d is test data storage.
 
 Strengths  
+
 - Comprehensive: tests multiple security aspects.
 - Early detection: finds vulnerabilities before production.
 - Quality: improves application security quality.
 
 Weaknesses / limitations  
+
 - Time: security testing can be time-consuming.
 - Coverage: may not test all attack vectors.
 - Expertise: requires security expertise for effective testing.

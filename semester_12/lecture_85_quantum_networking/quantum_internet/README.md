@@ -1,14 +1,13 @@
 # Quantum Internet
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Internet Flowchart:
@@ -43,9 +42,7 @@ Quantum Internet Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Internet Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_85_quantum_networking/quantum_internet/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_85_quantum_networking/quantum_internet/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_85_quantum_networking/quantum_internet/test_algorithm.py)
-
-
-   Quantum Internet
 
 What problem does it solve? (1 sentence)  
    Builds global quantum network infrastructure connecting quantum computers and devices, enabling distributed quantum computing, quantum communication, and quantum applications over long distances.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like internet but quantum: Quantum Internet is like the internet but for quantum information - you connect quantum devices (like connecting computers) to share quantum information and compute together over long distances - just as the internet connects computers globally, quantum internet connects quantum devices globally.
 
 Inputs & Outputs  
-   - Input: Quantum nodes, quantum channels, entanglement distribution, quantum repeaters, network protocols, quantum applications.  
-   - Output: Quantum network, distributed quantum systems, quantum communication, entangled states, network connectivity, quantum services.
+
+  - Input: Quantum nodes, quantum channels, entanglement distribution, quantum repeaters, network protocols, quantum applications.  
+  - Output: Quantum network, distributed quantum systems, quantum communication, entangled states, network connectivity, quantum services.
 
 Step-by-step description (5–10 lines max)  
 Deploy: deploy quantum nodes globally.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Internet: nodes: quantum computers in 3 cities → connect: quantum fiber links → distribute: create entanglement → route: route qubits → teleport: teleport quantum states → result: global quantum network → Quantum Internet operational.
 
 Time & Space Complexity  
-   - Time: O(d + r + t) where d is distance, r is routing time, t is teleportation time (network operations).  
-   - Space: O(n) where n is number of nodes (network topology, entanglement storage).
+
+  - Time: O(d + r + t) where d is distance, r is routing time, t is teleportation time (network operations).  
+  - Space: O(n) where n is number of nodes (network topology, entanglement storage).
 
 Strengths  
+
 - Global: enables global quantum connectivity.
 - Distributed: enables distributed quantum computing.
 - Secure: enables secure quantum communication.
 
 Weaknesses / limitations  
+
 - Infrastructure: requires extensive quantum infrastructure.
 - Distance: limited by quantum channel distance and loss.
 - Complexity: quantum internet is complex to build.

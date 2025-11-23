@@ -1,14 +1,13 @@
 # Liquidity Pools
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Liquidity Pools Flowchart:
@@ -43,9 +42,7 @@ Liquidity Pools Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Liquidity Pools Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_89_defi/liquidity_pools/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_89_defi/liquidity_pools/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_89_defi/liquidity_pools/test_algorithm.py)
-
-
-   Liquidity Pools
 
 What problem does it solve? (1 sentence)  
    Implements liquidity pools, reserves of token pairs locked in smart contracts that provide liquidity for decentralized exchanges and enable automated trading through AMMs.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like shared reserves: Liquidity Pools are like shared reserves of tokens - multiple people contribute tokens (like contributing to a shared fund) that others can trade against - just as shared reserves enable trading, liquidity pools enable decentralized trading.
 
 Inputs & Outputs  
-   - Input: Token pairs, liquidity deposits, trading requests, AMM formulas, fee parameters.  
-   - Output: Liquidity pools, LP tokens, trading liquidity, price discovery, trading fees, yield.
+
+  - Input: Token pairs, liquidity deposits, trading requests, AMM formulas, fee parameters.  
+  - Output: Liquidity pools, LP tokens, trading liquidity, price discovery, trading fees, yield.
 
 Step-by-step description (5–10 lines max)  
 Create: create liquidity pool for token pair.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Liquidity Pools: pool: ETH/USDC → deposit: LP deposits 10 ETH + 20,000 USDC → receive: LP tokens → trade: user swaps 1 ETH → update: pool now 11 ETH, 18,182 USDC → fee: 0.3% fee collected → result: LP earns fees → Liquidity Pools operational.
 
 Time & Space Complexity  
-   - Time: O(1) for pool operations (constant time AMM calculations).  
-   - Space: O(p) where p is number of pools (pool storage).
+
+  - Time: O(1) for pool operations (constant time AMM calculations).  
+  - Space: O(p) where p is number of pools (pool storage).
 
 Strengths  
+
 - Liquidity: provides constant liquidity for trading.
 - Accessibility: easy to provide liquidity.
 - Yield: LPs earn trading fees.
 
 Weaknesses / limitations  
+
 - Impermanent loss: LPs face impermanent loss risk.
 - Slippage: large trades cause slippage.
 - Concentration: liquidity may be concentrated in few pools.

@@ -1,14 +1,13 @@
 # Rabin-Karp
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Rabin-Karp Flowchart:
@@ -43,9 +42,7 @@ Rabin-Karp Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Rabin-Karp Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_03/lecture_14_string_algorithms/rabin_karp/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_14_string_algorithms/rabin_karp/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_14_string_algorithms/rabin_karp/test_algorithm.py)
-

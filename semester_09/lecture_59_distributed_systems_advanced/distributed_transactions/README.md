@@ -1,14 +1,13 @@
 # Distributed Transactions
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Distributed Transactions Flowchart:
@@ -43,9 +42,7 @@ Distributed Transactions Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Distributed Transactions Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_59_distributed_systems_advanced/distributed_transactions/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_59_distributed_systems_advanced/distributed_transactions/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_59_distributed_systems_advanced/distributed_transactions/test_algorithm.py)
-
-
-   Distributed Transactions
 
 What problem does it solve? (1 sentence)  
    Ensures atomicity and consistency of transactions that span multiple distributed databases or services, coordinating commit or abort decisions across all participants.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a group purchase: distributed transactions are like a group purchase where everyone must agree - if you're buying something that requires payment from multiple people (distributed resources), either everyone pays (commit) or no one pays (abort) - you can't have a situation where some pay and others don't (partial commit) - the transaction coordinator ensures all participants agree before finalizing the transaction.
 
 Inputs & Outputs  
-   - Input: Transaction operations, distributed resources, participants, coordinator, transaction ID.  
-   - Output: Committed or aborted transaction, consistent state across all participants, transaction result.
+
+  - Input: Transaction operations, distributed resources, participants, coordinator, transaction ID.  
+  - Output: Committed or aborted transaction, consistent state across all participants, transaction result.
 
 Step-by-step description (5–10 lines max)  
 Begin: start distributed transaction, assign transaction ID.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Distributed transaction: transfer $100 from Bank A to Bank B → begin transaction → debit $100 from Bank A → credit $100 to Bank B → prepare: both banks vote commit → decide: coordinator decides commit → commit: both banks commit → result: $100 transferred atomically → if Bank B fails: abort, Bank A rollback → atomicity maintained.
 
 Time & Space Complexity  
-   - Time: O(n) where n is number of participants (message rounds: prepare, commit/abort).  
-   - Space: O(n) where n is number of participants (transaction state per participant).
+
+  - Time: O(n) where n is number of participants (message rounds: prepare, commit/abort).  
+  - Space: O(n) where n is number of participants (transaction state per participant).
 
 Strengths  
+
 - Atomicity: ensures all-or-nothing execution across distributed resources.
 - Consistency: maintains consistency across distributed systems.
 - Reliability: provides strong guarantees for distributed operations.
 
 Weaknesses / limitations  
+
 - Latency: high latency due to multiple message rounds.
 - Blocking: participants may block waiting for coordinator.
 - Complexity: handling failures and recovery is complex.

@@ -1,14 +1,13 @@
 # Quantum Error Correction
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Error Correction Flowchart:
@@ -43,9 +42,7 @@ Quantum Error Correction Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Error Correction Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_79_quantum_algorithms_advanced/quantum_error_correction/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_79_quantum_algorithms_advanced/quantum_error_correction/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_79_quantum_algorithms_advanced/quantum_error_correction/test_algorithm.py)
-
-
-   Quantum Error Correction
 
 What problem does it solve? (1 sentence)  
    Protects quantum information from errors caused by decoherence and noise by encoding quantum states redundantly and detecting/correcting errors without destroying quantum superposition.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like error correction for quantum: Quantum Error Correction is like error correction codes for quantum information - you encode quantum data redundantly (like RAID for qubits), detect errors, and fix them - just as error correction protects digital data, quantum error correction protects quantum information from noise and decoherence.
 
 Inputs & Outputs  
-   - Input: Logical qubits, error syndromes, quantum codes, ancilla qubits, error models.  
-   - Output: Error-corrected qubits, error syndromes, corrected quantum states, fault-tolerant operations.
+
+  - Input: Logical qubits, error syndromes, quantum codes, ancilla qubits, error models.  
+  - Output: Error-corrected qubits, error syndromes, corrected quantum states, fault-tolerant operations.
 
 Step-by-step description (5–10 lines max)  
 Encode: encode logical qubit into physical qubits (quantum code).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Error Correction: logical qubit: |ψ⟩ → encode: encode into 3 physical qubits → detect: measure syndrome → error: bit-flip detected → correct: apply X gate → verify: syndrome cleared → decode: recover |ψ⟩ → Quantum Error Correction successful.
 
 Time & Space Complexity  
-   - Time: O(d) where d is code distance (error correction overhead).  
-   - Space: O(n·d) where n is logical qubits, d is code distance (physical qubits needed).
+
+  - Time: O(d) where d is code distance (error correction overhead).  
+  - Space: O(n·d) where n is logical qubits, d is code distance (physical qubits needed).
 
 Strengths  
+
 - Protection: protects quantum information from errors.
 - Fault-tolerance: enables fault-tolerant quantum computation.
 - Scalability: enables scaling to larger quantum systems.
 
 Weaknesses / limitations  
+
 - Overhead: requires many physical qubits per logical qubit.
 - Complexity: quantum error correction is complex.
 - Threshold: requires error rates below threshold.

@@ -1,14 +1,13 @@
 # Quantum Simulation
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Simulation Flowchart:
@@ -43,9 +42,7 @@ Quantum Simulation Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Simulation Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_79_quantum_algorithms_advanced/quantum_simulation/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_79_quantum_algorithms_advanced/quantum_simulation/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_79_quantum_algorithms_advanced/quantum_simulation/test_algorithm.py)
-
-
-   Quantum Simulation
 
 What problem does it solve? (1 sentence)  
    Simulates quantum systems (molecules, materials, quantum many-body systems) using quantum computers, providing exponential speedup over classical simulation for quantum chemistry and physics.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like simulating quantum with quantum: Quantum Simulation is like using quantum computers to simulate quantum systems - it's natural because quantum computers are quantum systems themselves - just as you'd use a weather simulator to simulate weather, you use quantum computers to simulate quantum systems, and they're much better at it than classical computers.
 
 Inputs & Outputs  
-   - Input: Quantum system Hamiltonian, initial quantum state, simulation parameters, quantum gates, time evolution.  
-   - Output: Simulated quantum states, energy eigenvalues, molecular properties, quantum dynamics, simulation results.
+
+  - Input: Quantum system Hamiltonian, initial quantum state, simulation parameters, quantum gates, time evolution.  
+  - Output: Simulated quantum states, energy eigenvalues, molecular properties, quantum dynamics, simulation results.
 
 Step-by-step description (5–10 lines max)  
 Model: model quantum system (molecule, material).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Simulation: molecule: H2O → Hamiltonian: construct molecular Hamiltonian → encode: map to qubits → evolve: simulate time evolution → measure: measure energy → result: ground state energy calculated → Quantum Simulation successful.
 
 Time & Space Complexity  
-   - Time: O(poly(n)·t) where n is system size, t is simulation time (exponential speedup over classical).  
-   - Space: O(n) where n is number of qubits (logarithmic in system size).
+
+  - Time: O(poly(n)·t) where n is system size, t is simulation time (exponential speedup over classical).  
+  - Space: O(n) where n is number of qubits (logarithmic in system size).
 
 Strengths  
+
 - Speedup: exponential speedup over classical simulation.
 - Accuracy: can simulate quantum systems accurately.
 - Applications: enables drug discovery, material design.
 
 Weaknesses / limitations  
+
 - Noise: quantum noise affects simulation accuracy.
 - Scaling: scaling to large systems is challenging.
 - Hardware: requires quantum hardware.

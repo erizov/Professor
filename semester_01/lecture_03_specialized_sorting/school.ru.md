@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 03 Specialized Sorting — efficient sorting - demonstration. this lecture covers efficient sorting algorithms including merge sort, quick sort, and heap sort.
+Лекция 03 Specialized Сортировка — efficient сортировка - demonstration. this лекция covers efficient сортировка algorithms including объединить сортировка, quick сортировка, and heap сортировка.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 03 Specialized Sorting — efficient sorting - demonstration. this lectu
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 03 specialized sorting:
+Рассмотрим конкретный пример работы лекция 03 specialized сортировка:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -45,15 +45,15 @@ Lecture 03 Specialized Sorting — efficient sorting - demonstration. this lectu
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 03 specialized sorting.
+Выполни простую операцию с алгоритмом лекция 03 specialized сортировка.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 03 specialized sorting к более сложному набору данных.
+Примени алгоритм лекция 03 specialized сортировка к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 03 specialized sorting на языке программирования.
+Напиши реализацию алгоритма лекция 03 specialized сортировка на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

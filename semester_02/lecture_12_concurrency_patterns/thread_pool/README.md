@@ -1,14 +1,13 @@
 # Thread Pool
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Thread Pool Flowchart:
@@ -43,9 +42,7 @@ Thread Pool Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Thread Pool Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_02/lecture_12_concurrency_patterns/thread_pool/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_12_concurrency_patterns/thread_pool/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_12_concurrency_patterns/thread_pool/test_algorithm.py)
-

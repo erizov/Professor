@@ -1,14 +1,13 @@
 # Hybrid Cloud
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Hybrid Cloud Flowchart:
@@ -43,9 +42,7 @@ Hybrid Cloud Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Hybrid Cloud Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_72_infrastructure_advanced/hybrid_cloud/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_72_infrastructure_advanced/hybrid_cloud/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_72_infrastructure_advanced/hybrid_cloud/test_algorithm.py)
-
-
-   Hybrid Cloud
 
 What problem does it solve? (1 sentence)  
    Combines on-premises infrastructure with public and private cloud services, enabling organizations to leverage benefits of both while maintaining control over sensitive data and meeting compliance requirements.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a hybrid approach: Hybrid Cloud is like using both your own facilities and rented space - you keep some things on-premises (like sensitive data in your own building) and use cloud for other things (like scalable compute in rented space) - just as hybrid approaches give you flexibility, hybrid cloud gives you the best of both worlds.
 
 Inputs & Outputs  
-   - Input: On-premises infrastructure, cloud services, workloads, data, compliance requirements, integration needs.  
-   - Output: Hybrid infrastructure, integrated systems, flexible deployments, optimized costs, compliance, seamless operations.
+
+  - Input: On-premises infrastructure, cloud services, workloads, data, compliance requirements, integration needs.  
+  - Output: Hybrid infrastructure, integrated systems, flexible deployments, optimized costs, compliance, seamless operations.
 
 Step-by-step description (5–10 lines max)  
 Assess: assess workloads and requirements.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Hybrid Cloud: sensitive data: on-premises → compute: public cloud → integrate: hybrid architecture → sync: data synchronization → result: security of on-premises + scalability of cloud → Hybrid Cloud operational.
 
 Time & Space Complexity  
-   - Time: O(d + i + m) where d is deployment time, i is integration time, m is migration time (varies by workload).  
-   - Space: O(o + c) where o is on-premises storage, c is cloud storage (distributed storage).
+
+  - Time: O(d + i + m) where d is deployment time, i is integration time, m is migration time (varies by workload).  
+  - Space: O(o + c) where o is on-premises storage, c is cloud storage (distributed storage).
 
 Strengths  
+
 - Flexibility: provides flexibility to use best environment for each workload.
 - Control: maintains control over sensitive data.
 - Compliance: helps meet compliance requirements.
 
 Weaknesses / limitations  
+
 - Complexity: managing hybrid cloud is complex.
 - Integration: integrating on-premises and cloud can be challenging.
 - Cost: may have higher costs due to maintaining both.

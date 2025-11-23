@@ -1,14 +1,13 @@
 # DAO Governance
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 DAO Governance Flowchart:
@@ -43,9 +42,7 @@ DAO Governance Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 DAO Governance Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_93_blockchain_governance/dao_governance/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_93_blockchain_governance/dao_governance/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_93_blockchain_governance/dao_governance/test_algorithm.py)
-
 
    DAO Governance
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like democratic organization: DAO Governance is like democratic organization - token holders vote (like shareholders voting) to make decisions about the organization - just as democracy enables collective decision-making, DAO governance enables decentralized organizational management.
 
 Inputs & Outputs  
-   - Input: Governance proposals, token holdings, voting power, quorum requirements, execution parameters, DAO rules.  
-   - Output: DAO decisions, executed proposals, treasury management, protocol updates, organizational direction, governance outcomes.
+
+  - Input: Governance proposals, token holdings, voting power, quorum requirements, execution parameters, DAO rules.  
+  - Output: DAO decisions, executed proposals, treasury management, protocol updates, organizational direction, governance outcomes.
 
 Step-by-step description (5–10 lines max)  
 Propose: submit governance proposal.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    DAO Governance: proposal: increase protocol fee → discuss: community discussion → vote: 70% vote yes, 30% vote no → quorum: quorum reached → execute: proposal executed → result: fee increased → DAO Governance successful.
 
 Time & Space Complexity  
-   - Time: O(v) where v is voters (voting and counting time).  
-   - Space: O(p + v + t) where p is proposals, v is votes, t is treasury (governance data storage).
+
+  - Time: O(v) where v is voters (voting and counting time).  
+  - Space: O(p + v + t) where p is proposals, v is votes, t is treasury (governance data storage).
 
 Strengths  
+
 - Decentralization: enables decentralized organizational management.
 - Participation: enables token holder participation.
 - Transparency: transparent voting and execution.
 
 Weaknesses / limitations  
+
 - Participation: low voter participation common.
 - Complexity: governance can be complex.
 - Manipulation: potential for vote manipulation.

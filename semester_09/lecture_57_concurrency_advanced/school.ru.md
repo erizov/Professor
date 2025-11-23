@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 57 Concurrency Advanced — concurrency - demonstration. this lecture covers concurrent programming algorithms and patterns.
+Лекция 57 Concurrency Продвинутый — concurrency - demonstration. this лекция covers concurrent программирование algorithms and patterns.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 57 Concurrency Advanced — concurrency - demonstration. this lecture co
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 57 concurrency advanced:
+Рассмотрим конкретный пример работы лекция 57 concurrency продвинутый:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 57 Concurrency Advanced — concurrency - demonstration. this lecture co
 
 ### Базовые
 
-1. Что делает алгоритм lecture 57 concurrency advanced?
-2. В каких ситуациях используется lecture 57 concurrency advanced?
+1. Что делает алгоритм лекция 57 concurrency продвинутый?
+2. В каких ситуациях используется лекция 57 concurrency продвинутый?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 57 concurrency advanced обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 57 concurrency advanced?
-3. Можно ли улучшить работу lecture 57 concurrency advanced?
+1. Как лекция 57 concurrency продвинутый обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 57 concurrency продвинутый?
+3. Можно ли улучшить работу лекция 57 concurrency продвинутый?
 
 ### Сложные
 
-1. Какова временная сложность lecture 57 concurrency advanced?
-2. Как lecture 57 concurrency advanced работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 57 concurrency advanced?
+1. Какова временная сложность лекция 57 concurrency продвинутый?
+2. Как лекция 57 concurrency продвинутый работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 57 concurrency продвинутый?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 57 concurrency advanced.
+Выполни простую операцию с алгоритмом лекция 57 concurrency продвинутый.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 57 concurrency advanced к более сложному набору данных.
+Примени алгоритм лекция 57 concurrency продвинутый к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 57 concurrency advanced на языке программирования.
+Напиши реализацию алгоритма лекция 57 concurrency продвинутый на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

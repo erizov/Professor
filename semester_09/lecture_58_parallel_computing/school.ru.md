@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 58 Parallel Computing — parallel computing - demonstration. this lecture covers parallel computing algorithms and techniques.
+Лекция 58 Parallel Computing — parallel computing - demonstration. this лекция covers parallel computing algorithms and techniques.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 58 Parallel Computing — parallel computing - demonstration. this lectu
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 58 parallel computing:
+Рассмотрим конкретный пример работы лекция 58 parallel computing:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 58 Parallel Computing — parallel computing - demonstration. this lectu
 
 ### Базовые
 
-1. Что делает алгоритм lecture 58 parallel computing?
-2. В каких ситуациях используется lecture 58 parallel computing?
+1. Что делает алгоритм лекция 58 parallel computing?
+2. В каких ситуациях используется лекция 58 parallel computing?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 58 parallel computing обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 58 parallel computing?
-3. Можно ли улучшить работу lecture 58 parallel computing?
+1. Как лекция 58 parallel computing обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 58 parallel computing?
+3. Можно ли улучшить работу лекция 58 parallel computing?
 
 ### Сложные
 
-1. Какова временная сложность lecture 58 parallel computing?
-2. Как lecture 58 parallel computing работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 58 parallel computing?
+1. Какова временная сложность лекция 58 parallel computing?
+2. Как лекция 58 parallel computing работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 58 parallel computing?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 58 parallel computing.
+Выполни простую операцию с алгоритмом лекция 58 parallel computing.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 58 parallel computing к более сложному набору данных.
+Примени алгоритм лекция 58 parallel computing к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 58 parallel computing на языке программирования.
+Напиши реализацию алгоритма лекция 58 parallel computing на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

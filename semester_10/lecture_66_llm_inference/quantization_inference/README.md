@@ -1,14 +1,13 @@
 # Quantization for Inference
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantization for Inference Flowchart:
@@ -43,9 +42,7 @@ Quantization for Inference Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantization for Inference Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_66_llm_inference/quantization_inference/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_66_llm_inference/quantization_inference/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_66_llm_inference/quantization_inference/test_algorithm.py)
-
 
    Quantization for Inference
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like using a simpler measuring tool: quantization for inference is like using a ruler with fewer markings (INT8) instead of a precise caliper (FP32) - the simpler ruler (lower precision) is faster to use and takes less space, and for most measurements (inference), it's accurate enough - you trade a tiny bit of precision for much better speed and efficiency, making measurements (inference) much faster.
 
 Inputs & Outputs  
-   - Input: FP32 model, target precision, calibration data, quantization scheme, hardware support.  
-   - Output: Quantized model, reduced precision, faster inference, smaller model, optimized deployment.
+
+  - Input: FP32 model, target precision, calibration data, quantization scheme, hardware support.  
+  - Output: Quantized model, reduced precision, faster inference, smaller model, optimized deployment.
 
 Step-by-step description (5–10 lines max)  
 Calibrate: calibrate quantization parameters using representative data.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Quantization: GPT-3 (FP32, 700GB) → INT8 quantization → calibrate: determine scaling factors → quantize: convert weights to INT8 → result: 175GB (4x smaller), 2-4x faster inference, 99% accuracy (vs 100% FP32) → quantized model deployable on INT8 hardware.
 
 Time & Space Complexity  
-   - Time: O(m) for quantization where m is model size, O(1) per operation (faster with INT8 operations).  
-   - Space: O(m/p) where m is FP32 model size, p is precision reduction factor (4x for INT8, 8x for INT4).
+
+  - Time: O(m) for quantization where m is model size, O(1) per operation (faster with INT8 operations).  
+  - Space: O(m/p) where m is FP32 model size, p is precision reduction factor (4x for INT8, 8x for INT4).
 
 Strengths  
+
 - Speed: 2-4x faster inference on supported hardware.
 - Size: 4x smaller model (INT8) or 8x smaller (INT4).
 - Efficiency: better energy efficiency and lower memory bandwidth.
 
 Weaknesses / limitations  
+
 - Hardware: requires hardware support for low-precision operations.
 - Accuracy: may have slight accuracy degradation.
 - Calibration: requires calibration data and careful tuning.

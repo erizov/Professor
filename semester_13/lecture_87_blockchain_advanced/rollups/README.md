@@ -1,14 +1,13 @@
 # Rollups
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Rollups Flowchart:
@@ -43,9 +42,7 @@ Rollups Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Rollups Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_87_blockchain_advanced/rollups/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_87_blockchain_advanced/rollups/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_87_blockchain_advanced/rollups/test_algorithm.py)
-
-
-   Rollups
 
 What problem does it solve? (1 sentence)  
    Scales blockchain by executing transactions off-chain, batching them, and submitting compressed transaction data and state roots to the main chain, achieving high throughput with main chain security.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a shipping container: Rollups are like shipping containers - instead of shipping items individually (expensive), you pack many items into a container (batch transactions), compress it (compress data), and ship the container (submit to main chain) - this reduces shipping costs (fees) while maintaining security (main chain validation).
 
 Inputs & Outputs  
+
 - Input: Transactions, rollup sequencer, compression algorithm, state transitions, validity proofs (optional).
-   - Output: Rollup blocks, compressed transaction data, state roots, validity proofs (ZK-Rollups), fraud proofs (Optimistic Rollups).
+  - Output: Rollup blocks, compressed transaction data, state roots, validity proofs (ZK-Rollups), fraud proofs (Optimistic Rollups).
 
 Step-by-step description (5–10 lines max)  
 Collect: collect transactions from users.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Rollup: collect 1000 tx → execute off-chain → batch → compress 1000 tx to 10KB → compute root → submit to main chain → verify → finalize → Rollup successful (100x cheaper).
 
 Time & Space Complexity  
-   - Time: O(b + v) where b is batch processing time, v is verification time (rollup operations).  
-   - Space: O(c + s) where c is compressed data, s is state storage (rollup storage).
+
+  - Time: O(b + v) where b is batch processing time, v is verification time (rollup operations).  
+  - Space: O(c + s) where c is compressed data, s is state storage (rollup storage).
 
 Strengths  
+
 - Scalability: 10-100x throughput improvement.
 - Security: inherits main chain security.
 - Cost: significantly reduces transaction fees.
 
 Weaknesses / limitations  
+
 - Latency: some delay for finality (especially Optimistic).
 - Complexity: requires sophisticated compression and proof systems.
 - Centralization: sequencer can be centralized point of failure.

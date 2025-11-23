@@ -1,14 +1,13 @@
 # Chaos Experiments
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Chaos Experiments Flowchart:
@@ -43,9 +42,7 @@ Chaos Experiments Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Chaos Experiments Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_77_chaos_engineering_advanced/chaos_experiments/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_77_chaos_engineering_advanced/chaos_experiments/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_77_chaos_engineering_advanced/chaos_experiments/test_algorithm.py)
-
-
-   Chaos Experiments
 
 What problem does it solve? (1 sentence)  
    Designs and executes controlled experiments that inject failures into systems to test resilience, identify weaknesses, and validate recovery mechanisms.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like fire drills: Chaos Experiments are like fire drills for systems - you intentionally create problems (inject failures) to test if your systems can handle them (resilience) - just as fire drills prepare you for real fires, chaos experiments prepare systems for real failures.
 
 Inputs & Outputs  
-   - Input: System architecture, failure scenarios, experiment hypotheses, safety rules, monitoring tools, rollback procedures.  
-   - Output: Chaos experiments, resilience insights, failure points, recovery validation, improvement recommendations.
+
+  - Input: System architecture, failure scenarios, experiment hypotheses, safety rules, monitoring tools, rollback procedures.  
+  - Output: Chaos experiments, resilience insights, failure points, recovery validation, improvement recommendations.
 
 Step-by-step description (5–10 lines max)  
 Hypothesize: form hypothesis about system behavior under failure.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Chaos Experiments: hypothesis: system recovers from database failure → inject: kill database pod → observe: system switches to replica in 10s → measure: 10s downtime → analyze: hypothesis validated, recovery works → improve: reduce recovery time → Chaos Experiments successful.
 
 Time & Space Complexity  
-   - Time: O(d + e + a) where d is design time, e is execution time, a is analysis time (varies by experiment).  
-   - Space: O(e + r) where e is experiment storage, r is result storage (experiment data).
+
+  - Time: O(d + e + a) where d is design time, e is execution time, a is analysis time (varies by experiment).  
+  - Space: O(e + r) where e is experiment storage, r is result storage (experiment data).
 
 Strengths  
+
 - Validation: validates system resilience in controlled manner.
 - Learning: reveals system weaknesses before production failures.
 - Confidence: builds confidence in system resilience.
 
 Weaknesses / limitations  
+
 - Risk: experiments can cause production issues if not careful.
 - Time: designing and executing experiments takes time.
 - Coverage: may not test all failure scenarios.

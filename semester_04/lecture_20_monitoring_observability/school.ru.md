@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 20 Мониторинг Observability — monitoring - demonstration. this lecture covers monitoring design patterns and implementations.
+Лекция 20 Мониторинг Observability — monitoring - demonstration. this лекция covers monitoring дизайн patterns and implementations.
 
 ## Где применяется
 

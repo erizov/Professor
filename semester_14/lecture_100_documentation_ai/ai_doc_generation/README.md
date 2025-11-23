@@ -1,14 +1,13 @@
 # AI-Powered Documentation Generation
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 AI-Powered Documentation Generation Flowchart:
@@ -43,9 +42,7 @@ AI-Powered Documentation Generation Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 AI-Powered Documentation Generation Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_14/lecture_100_documentation_ai/ai_doc_generation/algorithm.py)
 - [Java Implementation](/code/semester_14/lecture_100_documentation_ai/ai_doc_generation/Algorithm.java)
 - [Python Tests](/code/semester_14/lecture_100_documentation_ai/ai_doc_generation/test_algorithm.py)
-
 
    AI-Powered Documentation Generation
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like an AI technical writer: AI doc generation is like having an AI technical writer - you give it code (source material), and it reads the code, understands what it does, and writes documentation (explanation) - just as a human writer would, but faster and more consistently - it can generate API docs, tutorials, and explanations automatically.
 
 Inputs & Outputs  
-   - Input: Source code, code comments, project context, documentation templates, AI models, generation parameters.  
-   - Output: Generated documentation, API references, code explanations, tutorials, documentation updates.
+
+  - Input: Source code, code comments, project context, documentation templates, AI models, generation parameters.  
+  - Output: Generated documentation, API references, code explanations, tutorials, documentation updates.
 
 Step-by-step description (5–10 lines max)  
 Parse: parse source code and extract structure.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    AI Doc Gen: parse code → analyze function signatures → extract docstrings → generate API docs → format → review → publish → AI Doc Gen successful.
 
 Time & Space Complexity  
-   - Time: O(c * g) where c is code size, g is generation complexity (doc generation complexity).  
-   - Space: O(c + d) where c is code, d is documentation (doc storage).
+
+  - Time: O(c * g) where c is code size, g is generation complexity (doc generation complexity).  
+  - Space: O(c + d) where c is code, d is documentation (doc storage).
 
 Strengths  
+
 - Automation: automates documentation generation.
 - Consistency: ensures consistent documentation style.
 - Speed: generates documentation quickly.
 
 Weaknesses / limitations  
+
 - Quality: may require human review and refinement.
 - Context: may miss project-specific context.
 - Maintenance: requires maintenance as code evolves.

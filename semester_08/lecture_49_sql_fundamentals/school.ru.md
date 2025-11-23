@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 49 Sql Fundamentals — sql - demonstration. this lecture covers sql query optimization and advanced features.
+Лекция 49 Sql Fundamentals — sql - demonstration. this лекция covers sql запрос оптимизация and продвинутый features.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 49 Sql Fundamentals — sql - demonstration. this lecture covers sql que
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 49 sql fundamentals:
+Рассмотрим конкретный пример работы лекция 49 sql fundamentals:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 49 Sql Fundamentals — sql - demonstration. this lecture covers sql que
 
 ### Базовые
 
-1. Что делает алгоритм lecture 49 sql fundamentals?
-2. В каких ситуациях используется lecture 49 sql fundamentals?
+1. Что делает алгоритм лекция 49 sql fundamentals?
+2. В каких ситуациях используется лекция 49 sql fundamentals?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 49 sql fundamentals обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 49 sql fundamentals?
-3. Можно ли улучшить работу lecture 49 sql fundamentals?
+1. Как лекция 49 sql fundamentals обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 49 sql fundamentals?
+3. Можно ли улучшить работу лекция 49 sql fundamentals?
 
 ### Сложные
 
-1. Какова временная сложность lecture 49 sql fundamentals?
-2. Как lecture 49 sql fundamentals работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 49 sql fundamentals?
+1. Какова временная сложность лекция 49 sql fundamentals?
+2. Как лекция 49 sql fundamentals работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 49 sql fundamentals?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 49 sql fundamentals.
+Выполни простую операцию с алгоритмом лекция 49 sql fundamentals.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 49 sql fundamentals к более сложному набору данных.
+Примени алгоритм лекция 49 sql fundamentals к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 49 sql fundamentals на языке программирования.
+Напиши реализацию алгоритма лекция 49 sql fundamentals на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

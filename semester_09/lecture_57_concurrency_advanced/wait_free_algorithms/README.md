@@ -1,14 +1,13 @@
 # Wait-Free Algorithms
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Wait-Free Algorithms Flowchart:
@@ -43,9 +42,7 @@ Wait-Free Algorithms Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Wait-Free Algorithms Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_57_concurrency_advanced/wait_free_algorithms/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_57_concurrency_advanced/wait_free_algorithms/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_57_concurrency_advanced/wait_free_algorithms/test_algorithm.py)
-
 
    Wait-Free Algorithms
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a guaranteed service counter: wait-free algorithms are like a service counter where every customer (thread) is guaranteed to be served within a fixed number of steps, no matter how busy it is or what other customers are doing - unlike a regular counter where you might wait indefinitely if someone ahead is slow (blocking), or a self-service where you might retry many times (lock-free), wait-free guarantees you'll finish in a predictable, bounded time - it's the strongest guarantee for concurrent operations.
 
 Inputs & Outputs  
-   - Input: Concurrent operations, thread identifiers, operation parameters, progress guarantees.  
-   - Output: Wait-free operations, bounded completion time, guaranteed progress, high reliability.
+
+  - Input: Concurrent operations, thread identifiers, operation parameters, progress guarantees.  
+  - Output: Wait-free operations, bounded completion time, guaranteed progress, high reliability.
 
 Step-by-step description (5–10 lines max)  
 Design algorithm: design algorithm with bounded steps guarantee.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Wait-free queue: enqueue operation → use fetch-and-add to get ticket number → each thread gets unique position → complete operation in bounded steps (no waiting for other threads) → dequeue: similar approach → guarantee: every operation completes in O(1) steps regardless of other threads → wait-free → strongest progress guarantee → real-time systems benefit.
 
 Time & Space Complexity  
-   - Time: O(1) or O(log n) bounded steps where n is data structure size (guaranteed, not expected).  
-   - Space: O(n·t) where n is data structure size, t is number of threads (may need per-thread storage).
+
+  - Time: O(1) or O(log n) bounded steps where n is data structure size (guaranteed, not expected).  
+  - Space: O(n·t) where n is data structure size, t is number of threads (may need per-thread storage).
 
 Strengths  
+
 - Strong guarantee: strongest progress guarantee (bounded completion time).
 - Real-time: suitable for real-time systems with timing requirements.
 - No starvation: guarantees no thread starves.
 
 Weaknesses / limitations  
+
 - Complexity: wait-free algorithms are very complex to design.
 - Overhead: may have higher overhead than lock-free or lock-based approaches.
 - Space: may require more memory (per-thread storage, helping structures).

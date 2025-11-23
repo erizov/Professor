@@ -1,14 +1,13 @@
 # NoSQL Migration
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 NoSQL Migration Flowchart:
@@ -43,9 +42,7 @@ NoSQL Migration Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 NoSQL Migration Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_52_nosql_advanced/nosql_migration/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_52_nosql_advanced/nosql_migration/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_52_nosql_advanced/nosql_migration/test_algorithm.py)
-
 
    NoSQL Migration
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like moving to a new house: NoSQL migration is like moving all your belongings from one house to another - you need to pack everything (extract data), transport it safely (transform and load), set it up in the new house (configure new database), and make sure everything works (validate) - the goal is to move everything without losing anything and with minimal disruption to your daily life (application downtime).
 
 Inputs & Outputs  
-   - Input: Source database, target database, data schema, migration strategy, application code.  
-   - Output: Migrated data, updated applications, new database system, migration validation.
+
+  - Input: Source database, target database, data schema, migration strategy, application code.  
+  - Output: Migrated data, updated applications, new database system, migration validation.
 
 Step-by-step description (5–10 lines max)  
 Assess: analyze source database structure, data volume, and application dependencies.
@@ -116,15 +111,18 @@ Tiny example (hand-simulated)
    MongoDB migration: source: PostgreSQL (relational) → target: MongoDB (document) → extract: export PostgreSQL tables → transform: convert rows to JSON documents → load: import into MongoDB collections → update: modify application queries from SQL to MongoDB queries → test: validate all functionality → cutover: switch production → migration complete.
 
 Time & Space Complexity  
-   - Time: O(d) where d is data size (extraction, transformation, loading).  
-   - Space: O(d) where d is data size (temporary storage during migration).
+
+  - Time: O(d) where d is data size (extraction, transformation, loading).  
+  - Space: O(d) where d is data size (temporary storage during migration).
 
 Strengths  
+
 - Flexibility: enables moving to better-suited database systems.
 - Modernization: allows adopting modern NoSQL technologies.
 - Scalability: can migrate to more scalable database solutions.
 
 Weaknesses / limitations  
+
 - Complexity: migration can be complex and time-consuming.
 - Downtime: may require application downtime during cutover.
 - Risk: data loss or corruption if migration fails.

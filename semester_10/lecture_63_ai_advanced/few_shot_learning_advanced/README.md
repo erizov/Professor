@@ -1,14 +1,13 @@
 # Advanced Few-Shot Learning
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Advanced Few-Shot Learning Flowchart:
@@ -43,9 +42,7 @@ Advanced Few-Shot Learning Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Advanced Few-Shot Learning Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_63_ai_advanced/few_shot_learning_advanced/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_63_ai_advanced/few_shot_learning_advanced/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_63_ai_advanced/few_shot_learning_advanced/test_algorithm.py)
-
 
    Advanced Few-Shot Learning
 
@@ -95,7 +89,8 @@ Intuition (plain-language explanation)
    Like learning from one example: Advanced Few-Shot Learning is like learning to recognize a new animal from just one picture - you use your general knowledge about animals (pre-trained knowledge) and the one example to quickly understand the new animal - advanced few-shot learning does this for AI: it uses pre-trained knowledge and sophisticated learning techniques to learn new tasks from just a few examples.
 
 Inputs & Outputs  
-   - Input: Few examples (1-5), pre-trained model, task description, learning strategy, support set.  
+
+  - Input: Few examples (1-5), pre-trained model, task description, learning strategy, support set.  
 - Output: Learned task, adapted model, few-shot predictions, efficient learning, data-efficient system.
 
 Step-by-step description (5–10 lines max)  
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Advanced Few-Shot Learning: pre-train: on many classification tasks → new task: classify 3 types of flowers → examples: 1 example per flower (3 total) → encode: encode examples → compare: compare with learned patterns → adapt: quickly adapt model → predict: classify new flower images → result: 85% accuracy with just 3 examples → Advanced Few-Shot Learning successful.
 
 Time & Space Complexity  
-   - Time: O(e + a) where e is encoding time, a is adaptation time (much faster than full training).  
-   - Space: O(m + p) where m is model size, p is prototype/embedding storage.
+
+  - Time: O(e + a) where e is encoding time, a is adaptation time (much faster than full training).  
+  - Space: O(m + p) where m is model size, p is prototype/embedding storage.
 
 Strengths  
+
 - Data efficiency: learns from very few examples.
 - Speed: fast adaptation to new tasks.
 - Flexibility: handles diverse tasks with minimal data.
 
 Weaknesses / limitations  
+
 - Pre-training: requires extensive pre-training on diverse tasks.
 - Task similarity: performance depends on similarity to pre-training tasks.
 - Limitations: may struggle with very different or complex tasks.

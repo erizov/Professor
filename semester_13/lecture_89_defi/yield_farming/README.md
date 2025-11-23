@@ -1,14 +1,13 @@
 # Yield Farming
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Yield Farming Flowchart:
@@ -43,9 +42,7 @@ Yield Farming Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Yield Farming Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_89_defi/yield_farming/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_89_defi/yield_farming/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_89_defi/yield_farming/test_algorithm.py)
-
-
-   Yield Farming
 
 What problem does it solve? (1 sentence)  
    Implements yield farming strategies that maximize returns by moving assets between different DeFi protocols to earn the highest yields, incentivizing liquidity provision and protocol usage.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like optimizing returns: Yield Farming is like optimizing investment returns - you move money between different investments (DeFi protocols) to earn the highest interest - just as you optimize investment returns, yield farmers optimize DeFi returns.
 
 Inputs & Outputs  
-   - Input: Assets, DeFi protocols, yield rates, liquidity pools, farming strategies, reward tokens.  
-   - Output: Optimized yields, farming rewards, LP tokens, protocol tokens, maximized returns, compound yields.
+
+  - Input: Assets, DeFi protocols, yield rates, liquidity pools, farming strategies, reward tokens.  
+  - Output: Optimized yields, farming rewards, LP tokens, protocol tokens, maximized returns, compound yields.
 
 Step-by-step description (5–10 lines max)  
 Analyze: analyze yield rates across protocols.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Yield Farming: analyze: Protocol A: 10% APY, Protocol B: 15% APY → deposit: deposit into Protocol B → farm: earn 15% APY + rewards → compound: reinvest rewards → result: optimized yield → Yield Farming successful.
 
 Time & Space Complexity  
-   - Time: O(p) where p is protocols (analysis and optimization time).  
-   - Space: O(a + p) where a is assets, p is positions (asset and position storage).
+
+  - Time: O(p) where p is protocols (analysis and optimization time).  
+  - Space: O(a + p) where a is assets, p is positions (asset and position storage).
 
 Strengths  
+
 - Returns: maximizes returns through optimization.
 - Incentives: incentivizes protocol usage.
 - Flexibility: flexible farming strategies.
 
 Weaknesses / limitations  
+
 - Risk: high risk, smart contract risks.
 - Gas: gas costs for frequent reallocation.
 - Complexity: requires understanding multiple protocols.

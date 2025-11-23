@@ -1,14 +1,13 @@
 # Disaster Recovery
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Disaster Recovery Flowchart:
@@ -43,9 +42,7 @@ Disaster Recovery Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Disaster Recovery Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_53_database_operations/disaster_recovery/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_53_database_operations/disaster_recovery/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_53_database_operations/disaster_recovery/test_algorithm.py)
-
-
-   Disaster Recovery
 
 What problem does it solve? (1 sentence)  
    Provides procedures and infrastructure to restore database operations after catastrophic failures, natural disasters, or major outages, minimizing downtime and data loss.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a disaster evacuation plan: disaster recovery is like having an evacuation plan for a building - you have backup locations (disaster recovery site), procedures to follow (recovery plan), and ways to restore operations (backup systems) - when disaster strikes (fire, earthquake, cyber attack), you follow the plan to quickly restore operations at the backup location, minimizing disruption.
 
 Inputs & Outputs  
-   - Input: Backup systems, disaster recovery site, recovery procedures, RTO/RPO requirements, failover configuration.  
-   - Output: Disaster recovery plan, backup infrastructure, recovery procedures, restored operations.
+
+  - Input: Backup systems, disaster recovery site, recovery procedures, RTO/RPO requirements, failover configuration.  
+  - Output: Disaster recovery plan, backup infrastructure, recovery procedures, restored operations.
 
 Step-by-step description (5–10 lines max)  
 Assess risks: identify potential disasters and their impact (natural, cyber, hardware failures).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Disaster recovery: primary database in New York → replicate to DR site in London → RTO: 4 hours, RPO: 1 hour → earthquake hits New York → primary site down → execute failover → switch to London DR site → restore from replication → operations resume in 2 hours → data loss: < 1 hour → business continuity maintained.
 
 Time & Space Complexity  
-   - Time: O(1) for failover trigger, O(r) for recovery where r is recovery steps, O(d) for data restoration where d is data size.  
-   - Space: O(d) where d is database size (DR site storage requirements).
+
+  - Time: O(1) for failover trigger, O(r) for recovery where r is recovery steps, O(d) for data restoration where d is data size.  
+  - Space: O(d) where d is database size (DR site storage requirements).
 
 Strengths  
+
 - Business continuity: enables rapid recovery from disasters.
 - Data protection: minimizes data loss through replication and backups.
 - Risk mitigation: reduces business risk from catastrophic failures.
 
 Weaknesses / limitations  
+
 - Cost: maintaining DR infrastructure is expensive.
 - Complexity: requires careful planning and regular testing.
 - RTO/RPO: achieving very low RTO/RPO can be challenging and costly.

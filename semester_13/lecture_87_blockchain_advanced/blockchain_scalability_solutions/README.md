@@ -1,14 +1,13 @@
 # Blockchain Scalability Solutions
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Blockchain Scalability Solutions Flowchart:
@@ -43,9 +42,7 @@ Blockchain Scalability Solutions Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Blockchain Scalability Solutions Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_87_blockchain_advanced/blockchain_scalability_solutions/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_87_blockchain_advanced/blockchain_scalability_solutions/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_87_blockchain_advanced/blockchain_scalability_solutions/test_algorithm.py)
-
-
-   Blockchain Scalability Solutions
 
 What problem does it solve? (1 sentence)  
    Addresses blockchain throughput limitations by implementing Layer 2 solutions, sharding, and optimization techniques that increase transaction processing capacity while maintaining security and decentralization.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like adding lanes to a highway: Blockchain scalability solutions are like adding lanes to a congested highway - instead of one slow lane (main chain), you add multiple lanes (Layer 2, sharding) that process transactions in parallel, or you optimize the existing lane (optimizations) - the goal is to handle more traffic (transactions) without compromising safety (security) or accessibility (decentralization).
 
 Inputs & Outputs  
-   - Input: Transactions, scalability requirements, security constraints, decentralization goals, network topology, consensus mechanism.  
-   - Output: Scaled blockchain, increased throughput, maintained security, preserved decentralization, optimized performance.
+
+  - Input: Transactions, scalability requirements, security constraints, decentralization goals, network topology, consensus mechanism.  
+  - Output: Scaled blockchain, increased throughput, maintained security, preserved decentralization, optimized performance.
 
 Step-by-step description (5–10 lines max)  
 Analyze: analyze current bottlenecks and limitations.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Scalability: analyze → identify bottleneck (15 tx/s) → choose rollups → design → implement → optimize → test → deploy → monitor → 1000 tx/s → Scalability successful.
 
 Time & Space Complexity  
-   - Time: Varies by solution: O(t/s) for sharding, O(b) for rollups where t is transactions, s is shards, b is batch size (scalability complexity).  
-   - Space: Varies by solution: O(n/s) for sharding, O(c) for rollups where n is state, s is shards, c is compressed data (scalability storage).
+
+  - Time: Varies by solution: O(t/s) for sharding, O(b) for rollups where t is transactions, s is shards, b is batch size (scalability complexity).  
+  - Space: Varies by solution: O(n/s) for sharding, O(c) for rollups where n is state, s is shards, c is compressed data (scalability storage).
 
 Strengths  
+
 - Throughput: significantly increases transaction throughput.
 - Flexibility: multiple approaches for different use cases.
 - Compatibility: can maintain main chain security.
 
 Weaknesses / limitations  
+
 - Complexity: adds complexity to system architecture.
 - Trade-offs: may trade off some security or decentralization.
 - Coordination: requires careful coordination and testing.

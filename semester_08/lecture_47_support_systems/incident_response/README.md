@@ -1,14 +1,13 @@
 # Incident Response
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Incident Response Flowchart:
@@ -43,9 +42,7 @@ Incident Response Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Incident Response Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_47_support_systems/incident_response/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_47_support_systems/incident_response/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_47_support_systems/incident_response/test_algorithm.py)
-
-
-   Incident Response
 
 What problem does it solve? (1 sentence)  
    Provides structured approach to detect, respond to, and recover from security incidents, system outages, or critical failures, minimizing impact and restoring service quickly.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a fire department response: when a fire (incident) is detected, firefighters follow a systematic process (assess → contain → extinguish → investigate) - incident response does the same for IT incidents: detect → assess → contain → mitigate → recover → learn, ensuring quick, organized response.
 
 Inputs & Outputs  
-   - Input: Incident alerts, system logs, monitoring data, incident response plan, team members.  
-   - Output: Contained incident, restored service, incident report, lessons learned.
+
+  - Input: Incident alerts, system logs, monitoring data, incident response plan, team members.  
+  - Output: Contained incident, restored service, incident report, lessons learned.
 
 Step-by-step description (5–10 lines max)  
 Detect: identify incident through monitoring, alerts, or reports.
@@ -113,15 +106,18 @@ Tiny example (hand-simulated)
    Security alert: suspicious login attempts → incident detected → assess: potential breach → classify: security incident → contain: disable affected accounts → investigate: find compromised credentials → mitigate: reset passwords, enable 2FA → recover: restore access for legitimate users → document: create incident report → post-mortem: improve monitoring.
 
 Time & Space Complexity  
-   - Time: O(1) for detection, O(n) for investigation where n is system size, O(r) for recovery where r is recovery steps.  
-   - Space: O(l) where l is log data size, O(i) for incident documentation.
+
+  - Time: O(1) for detection, O(n) for investigation where n is system size, O(r) for recovery where r is recovery steps.  
+  - Space: O(l) where l is log data size, O(i) for incident documentation.
 
 Strengths  
+
 - Structured response: ensures systematic, thorough incident handling.
 - Minimizes impact: quick containment reduces damage.
 - Continuous improvement: post-mortems improve future responses.
 
 Weaknesses / limitations  
+
 - Time pressure: requires quick decisions under stress.
 - Resource intensive: may require significant team effort.
 - Complexity: incidents can be multifaceted and difficult to resolve.

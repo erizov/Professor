@@ -1,14 +1,13 @@
 # Post-Quantum Cryptography
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Post-Quantum Cryptography Flowchart:
@@ -43,9 +42,7 @@ Post-Quantum Cryptography Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Post-Quantum Cryptography Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_86_quantum_security/post_quantum_cryptography/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_86_quantum_security/post_quantum_cryptography/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_86_quantum_security/post_quantum_cryptography/test_algorithm.py)
-
 
    Post-Quantum Cryptography
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like future-proof security: Post-Quantum Cryptography is like future-proof security - you use encryption that works even when quantum computers exist (which can break current encryption) - just as you prepare for future threats, post-quantum crypto prepares for quantum threats.
 
 Inputs & Outputs  
-   - Input: Classical data, post-quantum algorithms, key material, security parameters, implementation requirements.  
-   - Output: Post-quantum secure encryption, quantum-resistant keys, secure communication, future-proof security.
+
+  - Input: Classical data, post-quantum algorithms, key material, security parameters, implementation requirements.  
+  - Output: Post-quantum secure encryption, quantum-resistant keys, secure communication, future-proof security.
 
 Step-by-step description (5–10 lines max)  
 Select: select post-quantum algorithm (lattice, code-based, etc.).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Post-Quantum Cryptography: algorithm: CRYSTALS-Kyber → generate: post-quantum keys → encrypt: encrypt message → result: secure against quantum attacks → Post-Quantum Cryptography operational.
 
 Time & Space Complexity  
-   - Time: O(n) where n is data size (varies by algorithm, typically polynomial).  
-   - Space: O(n) where n is key/data size (algorithm-dependent).
+
+  - Time: O(n) where n is data size (varies by algorithm, typically polynomial).  
+  - Space: O(n) where n is key/data size (algorithm-dependent).
 
 Strengths  
+
 - Security: secure against quantum attacks.
 - Future-proof: ensures long-term security.
 - Standards: NIST standardized algorithms available.
 
 Weaknesses / limitations  
+
 - Performance: may be slower than classical crypto.
 - Migration: requires migration from classical crypto.
 - Maturity: field is still evolving.

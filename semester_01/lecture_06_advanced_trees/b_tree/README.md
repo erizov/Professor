@@ -1,14 +1,13 @@
 # B-Tree
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 B-Tree Flowchart:
@@ -49,9 +48,7 @@ B-Tree Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 B-Tree Step-by-Step Execution:
@@ -70,9 +67,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -85,9 +80,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_01/lecture_06_advanced_trees/b_tree/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_06_advanced_trees/b_tree/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_06_advanced_trees/b_tree/test_algorithm.py)
-

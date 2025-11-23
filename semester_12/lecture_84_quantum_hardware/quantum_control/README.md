@@ -1,14 +1,13 @@
 # Quantum Control
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Control Flowchart:
@@ -43,9 +42,7 @@ Quantum Control Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Control Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_84_quantum_hardware/quantum_control/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_84_quantum_hardware/quantum_control/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_84_quantum_hardware/quantum_control/test_algorithm.py)
-
-
-   Quantum Control
 
 What problem does it solve? (1 sentence)  
    Controls and manipulates quantum systems (qubits) precisely using control pulses, gates, and feedback, enabling accurate quantum operations and maintaining quantum coherence.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like controlling quantum systems: Quantum Control is like controlling quantum systems precisely - you send control signals (pulses) to qubits to perform operations (gates) accurately - just as you control machines with signals, you control qubits with quantum control signals.
 
 Inputs & Outputs  
-   - Input: Control pulses, gate specifications, qubit states, control parameters, feedback signals.  
-   - Output: Controlled quantum operations, gate fidelities, quantum states, control sequences, optimized pulses.
+
+  - Input: Control pulses, gate specifications, qubit states, control parameters, feedback signals.  
+  - Output: Controlled quantum operations, gate fidelities, quantum states, control sequences, optimized pulses.
 
 Step-by-step description (5–10 lines max)  
 Specify: specify desired quantum operation.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Control: operation: CNOT gate → design: control pulse sequence → calibrate: adjust parameters → apply: send pulses → monitor: measure fidelity → optimize: improve pulses → result: 99.9% gate fidelity → Quantum Control successful.
 
 Time & Space Complexity  
-   - Time: O(p) where p is pulse duration (control operation time).  
-   - Space: O(1) per qubit (control signal storage).
+
+  - Time: O(p) where p is pulse duration (control operation time).  
+  - Space: O(1) per qubit (control signal storage).
 
 Strengths  
+
 - Precision: enables precise quantum operations.
 - Fidelity: improves gate fidelities.
 - Flexibility: flexible control for different operations.
 
 Weaknesses / limitations  
+
 - Complexity: quantum control is complex.
 - Noise: control noise affects operations.
 - Calibration: requires careful calibration.

@@ -12,6 +12,9 @@ from pathlib import Path
 import json
 import markdown
 import os
+import sys
+import subprocess
+import threading
 
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "database" / "algorithms.db"
@@ -25,6 +28,12 @@ app = Flask(__name__, template_folder='templates', static_folder='static')
 app.secret_key = "your-secret-key-here"  # Change in production
 CORS(app)
 
+
+@app.route('/favicon.ico')
+def favicon():
+    """Handle favicon requests to avoid 404 errors."""
+    return '', 204  # Return No Content status
+
 # Register blueprints
 # Use relative imports when running from web_interface directory
 try:
@@ -37,6 +46,7 @@ try:
     from web_interface.algorithm_executor_bp import algorithm_executor_bp
     from web_interface.sandbox_bp import sandbox_bp
     from web_interface.user_admin_bp import user_admin_bp
+    from web_interface.algorithm_index_bp import algorithm_index_bp
 except ImportError:
     # Fallback to relative imports when running from web_interface directory
     from dashboard import dashboard_bp
@@ -47,6 +57,7 @@ except ImportError:
     from java_executor_bp import java_executor_bp
     from sandbox_bp import sandbox_bp
     from user_admin_bp import user_admin_bp
+    from algorithm_index_bp import algorithm_index_bp
 
 app.register_blueprint(dashboard_bp)
 app.register_blueprint(auth_bp)
@@ -57,6 +68,7 @@ app.register_blueprint(java_executor_bp)
 app.register_blueprint(algorithm_executor_bp)
 app.register_blueprint(sandbox_bp)
 app.register_blueprint(user_admin_bp)
+app.register_blueprint(algorithm_index_bp)
 
 
 # Login route
@@ -156,6 +168,8 @@ def get_algorithms():
 
     # Get query parameters
     search = request.args.get("search", "").strip()
+    level = request.args.get("level", "").strip()  # school, univer
+    language = request.args.get("language", "").strip()  # ru, en
     category = request.args.get("category", "")
     semester = request.args.get("semester", "")
     sort_by = request.args.get("sort", "name")  # name, semester, category, complexity
@@ -193,6 +207,10 @@ def get_algorithms():
     """
 
     params = []
+    
+    # If level is "school", filter out advanced algorithms (semesters 9-16)
+    if level == "school":
+        query += " AND (a.semester_number IS NULL OR a.semester_number <= 8)"
 
     if search:
         query += " AND (a.name LIKE ? OR a.display_name LIKE ? OR a.description LIKE ?)"
@@ -224,6 +242,50 @@ def get_algorithms():
     # Execute query
     cursor = conn.execute(query, params)
     all_algorithms = cursor.fetchall()
+
+    # Filter by level and language (check if MD files exist)
+    # Ensure same number of algorithms are shown regardless of language choice
+    if level or language:
+        filtered_algorithms = []
+        for algo in all_algorithms:
+            folder_path = Path(ROOT / algo['folder_path']) if algo['folder_path'] else None
+            
+            if folder_path and folder_path.exists():
+                # Check if required MD file exists
+                if level and language:
+                    # First, check for specific level.language.md file
+                    md_file = folder_path / f"{level}.{language}.md"
+                    if md_file.exists():
+                        filtered_algorithms.append(algo)
+                    else:
+                        # If specific language file doesn't exist, check if any language file exists for this level
+                        # This ensures same algorithms are shown regardless of language choice
+                        ru_file = folder_path / f"{level}.ru.md"
+                        en_file = folder_path / f"{level}.en.md"
+                        if ru_file.exists() or en_file.exists():
+                            filtered_algorithms.append(algo)
+                elif level:
+                    # Check if any language file exists for this level
+                    # This ensures same algorithms are shown regardless of language choice
+                    ru_file = folder_path / f"{level}.ru.md"
+                    en_file = folder_path / f"{level}.en.md"
+                    if ru_file.exists() or en_file.exists():
+                        filtered_algorithms.append(algo)
+                elif language:
+                    # Check if any level file exists for this language
+                    # This ensures same algorithms are shown regardless of level choice
+                    school_file = folder_path / f"school.{language}.md"
+                    univer_file = folder_path / f"univer.{language}.md"
+                    if school_file.exists() or univer_file.exists():
+                        filtered_algorithms.append(algo)
+            else:
+                # If folder doesn't exist, don't include algorithm when filtering by level/language
+                pass
+        
+        all_algorithms = filtered_algorithms
+    else:
+        # If no level and no language filter, show all algorithms (but still respect school level semester filter from SQL)
+        pass
 
     # Pagination
     total = len(all_algorithms)
@@ -327,6 +389,99 @@ def get_semesters():
     return jsonify([s["semester_number"] for s in semesters])
 
 
+@app.route("/api/user/preferences", methods=["GET", "POST"])
+def user_preferences():
+    """Get or set user preferences for language and level."""
+    if "user_id" not in session:
+        # Return defaults if not authenticated
+        if request.method == "GET":
+            return jsonify({"language": "en", "level": "school"})
+        return jsonify({"error": "Not authenticated"}), 401
+    
+    conn = get_db_connection()
+    user_id = session["user_id"]
+    
+    if request.method == "GET":
+        # Get preferences from database
+        user = conn.execute(
+            "SELECT preferred_language, preferred_level FROM users WHERE id = ?",
+            (user_id,)
+        ).fetchone()
+        
+        if user:
+            preferences = {
+                "language": user["preferred_language"] or "en",
+                "level": user["preferred_level"] or "school"
+            }
+            # Also update session
+            session["preferred_language"] = preferences["language"]
+            session["preferred_level"] = preferences["level"]
+        else:
+            preferences = {
+                "language": "en",
+                "level": "school"
+            }
+        
+        conn.close()
+        return jsonify(preferences)
+    
+    else:  # POST
+        data = request.get_json()
+        language = data.get("language", "en")
+        level = data.get("level", "school")
+        
+        # Validate
+        if language not in ["en", "ru"]:
+            language = "en"
+        if level not in ["school", "univer", "university"]:
+            level = "school"
+        
+        # Normalize level
+        if level == "university":
+            level = "univer"
+        
+        # Update database
+        conn.execute(
+            """
+            UPDATE users 
+            SET preferred_language = ?, preferred_level = ?
+            WHERE id = ?
+            """,
+            (language, level, user_id)
+        )
+        conn.commit()
+        conn.close()
+        
+        # Update session
+        session["preferred_language"] = language
+        session["preferred_level"] = level
+        
+        # Update README.md files for the chosen language (in background)
+        # This ensures all README files show links for the chosen language
+        try:
+            script_path = ROOT / "scripts" / "update_readme_educational_materials.py"
+            if script_path.exists():
+                def update_readmes():
+                    try:
+                        subprocess.run(
+                            [sys.executable, str(script_path), language],
+                            cwd=str(ROOT),
+                            capture_output=True,
+                            timeout=300
+                        )
+                    except Exception as e:
+                        print(f"Error updating README files: {e}")
+                
+                # Run in background thread
+                thread = threading.Thread(target=update_readmes, daemon=True)
+                thread.start()
+        except Exception as e:
+            # Log error but don't fail the request
+            print(f"Error starting README update thread: {e}")
+        
+        return jsonify({"success": True, "language": language, "level": level})
+
+
 @app.route("/api/statistics")
 def get_statistics():
     """Get overall statistics."""
@@ -388,9 +543,100 @@ def serve_readme(file_path):
         if not readme_path.exists() or not readme_path.is_file():
             return jsonify({"error": f"File not found: {file_path}"}), 404
         
+        # Get user's preferred language
+        user_language = 'en'
+        if "user_id" in session:
+            conn = get_db_connection()
+            user = conn.execute(
+                "SELECT preferred_language FROM users WHERE id = ?",
+                (session["user_id"],)
+            ).fetchone()
+            if user and user["preferred_language"]:
+                user_language = user["preferred_language"]
+            conn.close()
+        else:
+            # Check query parameter or use default
+            user_language = request.args.get('lang', 'en')
+        
         # Read and render markdown
         with open(readme_path, 'r', encoding='utf-8') as f:
             md_content = f.read()
+        
+        # Update Educational Materials section based on user language
+        folder_path = readme_path.parent
+        has_ru_school = (folder_path / "school.ru.md").exists()
+        has_ru_univer = (folder_path / "univer.ru.md").exists()
+        has_en_school = (folder_path / "school.en.md").exists()
+        has_en_univer = (folder_path / "univer.en.md").exists()
+        
+        # Update Educational Materials section with language-specific links
+        import re
+        pattern = r'(## Educational Materials / Учебные материалы\s*\n\n|## Учебные материалы\s*\n\n|## Educational Materials\s*\n\n)(.*?)(?=\n##|\Z)'
+        
+        def replace_section(match):
+            if user_language == 'ru':
+                header = "## Учебные материалы\n\n"
+                links = []
+                if has_ru_school:
+                    links.append("- [Школьный уровень](school.ru.md)")
+                if has_ru_univer:
+                    links.append("- [Университетский уровень](univer.ru.md)")
+                if not links:
+                    content = "*Учебные материалы недоступны.*\n"
+                else:
+                    content = '\n'.join(links) + '\n'
+            else:  # en
+                header = "## Educational Materials\n\n"
+                links = []
+                if has_en_school:
+                    links.append("- [School Level](school.en.md)")
+                if has_en_univer:
+                    links.append("- [University Level](univer.en.md)")
+                if not links:
+                    content = "*No educational materials available.*\n"
+                else:
+                    content = '\n'.join(links) + '\n'
+            return header + content + '\n'
+        
+        md_content = re.sub(pattern, replace_section, md_content, flags=re.DOTALL)
+        
+        # Update Educational Materials section based on user language
+        folder_path = readme_path.parent
+        has_ru_school = (folder_path / "school.ru.md").exists()
+        has_ru_univer = (folder_path / "univer.ru.md").exists()
+        has_en_school = (folder_path / "school.en.md").exists()
+        has_en_univer = (folder_path / "univer.en.md").exists()
+        
+        # Update Educational Materials section with language-specific links
+        import re
+        pattern = r'(## Educational Materials / Учебные материалы\s*\n\n|## Учебные материалы\s*\n\n|## Educational Materials\s*\n\n)(.*?)(?=\n##|\Z)'
+        
+        def replace_section(match):
+            if user_language == 'ru':
+                header = "## Учебные материалы\n\n"
+                links = []
+                if has_ru_school:
+                    links.append("- [Школьный уровень](school.ru.md)")
+                if has_ru_univer:
+                    links.append("- [Университетский уровень](univer.ru.md)")
+                if not links:
+                    content = "*Учебные материалы недоступны.*\n"
+                else:
+                    content = '\n'.join(links) + '\n'
+            else:  # en
+                header = "## Educational Materials\n\n"
+                links = []
+                if has_en_school:
+                    links.append("- [School Level](school.en.md)")
+                if has_en_univer:
+                    links.append("- [University Level](univer.en.md)")
+                if not links:
+                    content = "*No educational materials available.*\n"
+                else:
+                    content = '\n'.join(links) + '\n'
+            return header + content + '\n'
+        
+        md_content = re.sub(pattern, replace_section, md_content, flags=re.DOTALL)
         
         # Convert markdown to HTML
         html_content = markdown.markdown(

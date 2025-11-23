@@ -28,6 +28,8 @@ def create_user_schema(cursor):
             full_name TEXT,
             role TEXT NOT NULL DEFAULT 'reader',
             is_active INTEGER DEFAULT 1,
+            preferred_language TEXT DEFAULT 'en',
+            preferred_level TEXT DEFAULT 'school',
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             last_login TIMESTAMP,

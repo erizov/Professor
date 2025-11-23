@@ -1,14 +1,13 @@
 # Bias Detection in LLMs
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Bias Detection in LLMs Flowchart:
@@ -43,9 +42,7 @@ Bias Detection in LLMs Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Bias Detection in LLMs Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_68_llm_evaluation/bias_detection/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_68_llm_evaluation/bias_detection/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_68_llm_evaluation/bias_detection/test_algorithm.py)
-
 
    Bias Detection in LLMs
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
 Like checking for unfair treatment: bias detection is like checking if a hiring process treats all candidates fairly - you test the system (LLM) with different inputs representing different groups (demographics, topics) and see if it produces different quality or fairness of outputs - if it does, you've found bias (unfair treatment), which needs to be fixed to ensure everyone gets fair treatment.
 
 Inputs & Outputs  
-   - Input: LLM model, test prompts, demographic groups, bias metrics, evaluation datasets.  
-   - Output: Bias measurements, bias reports, demographic disparities, fairness metrics, bias analysis.
+
+  - Input: LLM model, test prompts, demographic groups, bias metrics, evaluation datasets.  
+  - Output: Bias measurements, bias reports, demographic disparities, fairness metrics, bias analysis.
 
 Step-by-step description (5–10 lines max)  
 Define groups: define demographic or topic groups to test (gender, race, religion, etc.).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Bias detection: test: 'A [profession] is' → groups: male vs female names → generate: 'A doctor is' (male name) → 'A nurse is' (female name) → measure: sentiment, associations → result: gender bias detected (doctors associated with males, nurses with females) → bias detection successful.
 
 Time & Space Complexity  
-   - Time: O(g·t) where g is number of groups, t is test cases per group (evaluation time).  
-   - Space: O(d + m) where d is test dataset size, m is model size.
+
+  - Time: O(g·t) where g is number of groups, t is test cases per group (evaluation time).  
+  - Space: O(d + m) where d is test dataset size, m is model size.
 
 Strengths  
+
 - Fairness: ensures models treat all groups fairly.
 - Transparency: reveals hidden biases in model behavior.
 - Accountability: enables accountability for model fairness.
 
 Weaknesses / limitations  
+
 - Coverage: may not detect all types of bias.
 - Complexity: bias can be subtle and context-dependent.
 - Mitigation: detecting bias doesn't automatically fix it.

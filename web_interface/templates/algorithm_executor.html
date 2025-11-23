@@ -224,44 +224,44 @@
 <body>
     <div class="container">
         <div class="header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-            <h1 style="margin: 0 0 10px 0; font-size: 2rem;">Algorithm Executor <span class="language-badge java">Java</span><span class="language-badge python">Python</span></h1>
-            <p class="subtitle" style="opacity: 0.9; margin: 0 0 10px 0;">Execute any Java or Python algorithm from a unified interface</p>
+            <h1 id="page-title" style="margin: 0 0 10px 0; font-size: 2rem;">Algorithm Executor <span class="language-badge java">Java</span><span class="language-badge python">Python</span></h1>
+            <p id="page-subtitle" class="subtitle" style="opacity: 0.9; margin: 0 0 10px 0;">Execute any Java or Python algorithm from a unified interface</p>
             <div class="nav-menu" style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
-                <a href="/" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Home</a>
-                <a href="/algorithm-executor" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Algorithm Executor</a>
-                <a href="/test-reports" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Test Results</a>
-                <a href="/sandbox" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Sandbox</a>
+                <a href="/" id="nav-home" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Home</a>
+                <a href="/algorithm-executor" id="nav-executor" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Algorithm Executor</a>
+                <a href="/test-reports" id="nav-test-results" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Test Results</a>
+                <a href="/sandbox" id="nav-sandbox" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 4px; transition: background 0.3s;">Sandbox</a>
             </div>
         </div>
         
         <div class="controls">
             <div class="control-group">
-                <label for="language">Language</label>
+                <label id="language-label" for="language">Language</label>
                 <select id="language" onchange="onLanguageChange()">
-                    <option value="">All Languages</option>
+                    <option value="" id="all-languages-option">All Languages</option>
                     <option value="java">Java</option>
                     <option value="python">Python</option>
                 </select>
             </div>
             
             <div class="control-group">
-                <label for="semester">Semester</label>
+                <label id="semester-label" for="semester">Semester</label>
                 <select id="semester">
-                    <option value="">All Semesters</option>
+                    <option value="" id="all-semesters-option">All Semesters</option>
                 </select>
             </div>
             
             <div class="control-group">
-                <label for="lecture">Lecture</label>
+                <label id="lecture-label" for="lecture">Lecture</label>
                 <select id="lecture">
-                    <option value="">All Lectures</option>
+                    <option value="" id="all-lectures-option">All Lectures</option>
                 </select>
             </div>
             
             <div class="control-group">
-                <label for="algorithm">Algorithm</label>
+                <label id="algorithm-label" for="algorithm">Algorithm</label>
                 <select id="algorithm">
-                    <option value="">Select Algorithm</option>
+                    <option value="" id="select-algorithm-option">Select Algorithm</option>
                 </select>
             </div>
             
@@ -274,17 +274,17 @@
         <div class="main-content">
             <div class="code-viewer">
                 <div class="code-viewer-header">
-                    <span class="code-viewer-title">Source Code</span>
+                    <span id="source-code-title" class="code-viewer-title">Source Code</span>
                     <span class="code-viewer-path" id="codePath"></span>
                 </div>
                 <div class="code-box" id="codeViewer">
-                    <span style="color: #6a9955;">// Select an algorithm to view its source code</span>
+                    <span id="select-algorithm-hint" style="color: #6a9955;">// Select an algorithm to view its source code</span>
                 </div>
             </div>
             
             <div class="output-section">
                 <div class="output-header">
-                    <span class="output-title">Output</span>
+                    <span id="output-title" class="output-title">Output</span>
                     <span class="execution-time" id="executionTime"></span>
                 </div>
                 <div class="output-box" id="output">Select an algorithm and click Execute to run it.</div>
@@ -315,9 +315,10 @@
         
         function onLanguageChange() {
             algorithms = [];
-            document.getElementById('semester').innerHTML = '<option value="">All Semesters</option>';
-            document.getElementById('lecture').innerHTML = '<option value="">All Lectures</option>';
-            document.getElementById('algorithm').innerHTML = '<option value="">Select Algorithm</option>';
+            const t = getTranslations();
+            document.getElementById('semester').innerHTML = `<option value="">${t['all-semesters']}</option>`;
+            document.getElementById('lecture').innerHTML = `<option value="">${t['all-lectures']}</option>`;
+            document.getElementById('algorithm').innerHTML = `<option value="">${t['select-algorithm']}</option>`;
             loadAlgorithms();
         }
         
@@ -370,7 +371,8 @@
             const lecture = document.getElementById('lecture').value;
             const language = document.getElementById('language').value;
             const algorithmSelect = document.getElementById('algorithm');
-            algorithmSelect.innerHTML = '<option value="">Select Algorithm</option>';
+            const t = getTranslations();
+            algorithmSelect.innerHTML = `<option value="">${t['select-algorithm']}</option>`;
             
             const filtered = algorithms.filter(a => {
                 if (semester && a.semester !== semester) return false;
@@ -492,6 +494,148 @@
         
         // Load algorithms on page load
         loadAlgorithms();
+        
+        // Get current language
+        function getCurrentLanguage() {
+            return localStorage.getItem('preferred_language') || 'en';
+        }
+        
+        // Get translations
+        function getTranslations() {
+            const language = getCurrentLanguage();
+            const normalizedLang = (language === 'ru' || language === 'en') ? language : 
+                                  (language === 'russian' ? 'ru' : (language === 'english' ? 'en' : 'en'));
+            const translations = {
+                en: {
+                    'page-title': 'Algorithm Executor',
+                    'page-subtitle': 'Execute any Java or Python algorithm from a unified interface',
+                    'nav-home': 'Home',
+                    'nav-executor': 'Algorithm Executor',
+                    'nav-test-results': 'Test Results',
+                    'nav-sandbox': 'Sandbox',
+                    'language-label': 'Language',
+                    'semester-label': 'Semester',
+                    'lecture-label': 'Lecture',
+                    'algorithm-label': 'Algorithm',
+                    'all-languages': 'All Languages',
+                    'all-semesters': 'All Semesters',
+                    'all-lectures': 'All Lectures',
+                    'select-algorithm': 'Select Algorithm',
+                    'execute-btn': 'Execute',
+                    'source-code-title': 'Source Code',
+                    'select-algorithm-hint': '// Select an algorithm to view its source code',
+                    'output-title': 'Output',
+                    'output-placeholder': 'Select an algorithm and click Execute to run it.'
+                },
+                ru: {
+                    'page-title': 'Исполнитель алгоритмов',
+                    'page-subtitle': 'Выполняйте любые алгоритмы на Java или Python из единого интерфейса',
+                    'nav-home': 'Главная',
+                    'nav-executor': 'Исполнитель алгоритмов',
+                    'nav-test-results': 'Результаты тестов',
+                    'nav-sandbox': 'Песочница',
+                    'language-label': 'Язык',
+                    'semester-label': 'Семестр',
+                    'lecture-label': 'Лекция',
+                    'algorithm-label': 'Алгоритм',
+                    'all-languages': 'Все языки',
+                    'all-semesters': 'Все семестры',
+                    'all-lectures': 'Все лекции',
+                    'select-algorithm': 'Выберите алгоритм',
+                    'execute-btn': 'Выполнить',
+                    'source-code-title': 'Исходный код',
+                    'select-algorithm-hint': '// Выберите алгоритм для просмотра исходного кода',
+                    'output-title': 'Вывод',
+                    'output-placeholder': 'Выберите алгоритм и нажмите Выполнить для запуска.'
+                }
+            };
+            return translations[normalizedLang] || translations.en;
+        }
+        
+        // Update UI language
+        function updateUILanguage(language) {
+            const normalizedLang = (language === 'ru' || language === 'en') ? language : 
+                                  (language === 'russian' ? 'ru' : (language === 'english' ? 'en' : 'en'));
+            const t = getTranslations();
+            
+            // Update page title and subtitle
+            const pageTitle = document.getElementById('page-title');
+            const pageSubtitle = document.getElementById('page-subtitle');
+            if (pageTitle) {
+                const badges = pageTitle.querySelectorAll('.language-badge');
+                const titleText = t['page-title'];
+                pageTitle.innerHTML = titleText;
+                badges.forEach(badge => pageTitle.appendChild(badge));
+            }
+            if (pageSubtitle) pageSubtitle.textContent = t['page-subtitle'];
+            
+            // Update navigation links
+            const navHome = document.getElementById('nav-home');
+            const navExecutor = document.getElementById('nav-executor');
+            const navTestResults = document.getElementById('nav-test-results');
+            const navSandbox = document.getElementById('nav-sandbox');
+            if (navHome) navHome.textContent = t['nav-home'];
+            if (navExecutor) navExecutor.textContent = t['nav-executor'];
+            if (navTestResults) navTestResults.textContent = t['nav-test-results'];
+            if (navSandbox) navSandbox.textContent = t['nav-sandbox'];
+            
+            // Update labels
+            const languageLabel = document.getElementById('language-label');
+            const semesterLabel = document.getElementById('semester-label');
+            const lectureLabel = document.getElementById('lecture-label');
+            const algorithmLabel = document.getElementById('algorithm-label');
+            if (languageLabel) languageLabel.textContent = t['language-label'];
+            if (semesterLabel) semesterLabel.textContent = t['semester-label'];
+            if (lectureLabel) lectureLabel.textContent = t['lecture-label'];
+            if (algorithmLabel) algorithmLabel.textContent = t['algorithm-label'];
+            
+            // Update dropdown options
+            const allLanguagesOption = document.getElementById('all-languages-option');
+            const allSemestersOption = document.getElementById('all-semesters-option');
+            const allLecturesOption = document.getElementById('all-lectures-option');
+            const selectAlgorithmOption = document.getElementById('select-algorithm-option');
+            if (allLanguagesOption) allLanguagesOption.textContent = t['all-languages'];
+            if (allSemestersOption) allSemestersOption.textContent = t['all-semesters'];
+            if (allLecturesOption) allLecturesOption.textContent = t['all-lectures'];
+            if (selectAlgorithmOption) selectAlgorithmOption.textContent = t['select-algorithm'];
+            
+            // Update buttons
+            const executeBtn = document.getElementById('executeBtn');
+            if (executeBtn) executeBtn.textContent = t['execute-btn'];
+            
+            // Update other elements
+            const sourceCodeTitle = document.getElementById('source-code-title');
+            const selectAlgorithmHint = document.getElementById('select-algorithm-hint');
+            const outputTitle = document.getElementById('output-title');
+            const outputBox = document.getElementById('output');
+            if (sourceCodeTitle) sourceCodeTitle.textContent = t['source-code-title'];
+            if (selectAlgorithmHint) selectAlgorithmHint.textContent = t['select-algorithm-hint'];
+            if (outputTitle) outputTitle.textContent = t['output-title'];
+            if (outputBox && outputBox.textContent.includes('Select an algorithm')) {
+                outputBox.textContent = t['output-placeholder'];
+            }
+        }
+        
+        // Global language change function
+        function setGlobalLanguage(language) {
+            localStorage.setItem('preferred_language', language);
+            updateUILanguage(language);
+            window.dispatchEvent(new CustomEvent('languageChanged', { 
+                detail: { language: language } 
+            }));
+        }
+        
+        // Listen for global language changes from other pages
+        window.addEventListener('languageChanged', (e) => {
+            const language = e.detail.language;
+            updateUILanguage(language);
+        });
+        
+        // Load language from localStorage on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLanguage = localStorage.getItem('preferred_language') || 'en';
+            updateUILanguage(savedLanguage);
+        });
     </script>
 </body>
 </html>

@@ -1,14 +1,13 @@
 # Batch Inference
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Batch Inference Flowchart:
@@ -43,9 +42,7 @@ Batch Inference Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Batch Inference Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_66_llm_inference/batch_inference/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_66_llm_inference/batch_inference/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_66_llm_inference/batch_inference/test_algorithm.py)
-
-
-   Batch Inference
 
 What problem does it solve? (1 sentence)  
    Processes multiple inference requests together in batches, improving GPU utilization and throughput by amortizing computation overhead across multiple requests.
@@ -95,7 +87,8 @@ Intuition (plain-language explanation)
 Like processing multiple orders at once: batch inference is like a restaurant preparing multiple orders together - instead of cooking one meal at a time (one request at a time), you prepare several meals simultaneously (batch requests) - you use the same kitchen (GPU) more efficiently, and even though individual meals might take slightly longer, you serve more meals per hour (higher throughput) - it's more efficient to use the oven (GPU) for multiple items at once.
 
 Inputs & Outputs  
-   - Input: Multiple inference requests, batch size, model, batching strategy, request queue.  
+
+  - Input: Multiple inference requests, batch size, model, batching strategy, request queue.  
 - Output: Batch predictions, improved throughput, efficient GPU utilization, batched results.
 
 Step-by-step description (5–10 lines max)  
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Batch inference: 10 requests arrive → form batch: batch size 10 → pad: pad to max length → process: single forward pass processes all 10 → GPU utilization: 90% (vs 20% for individual) → throughput: 100 requests/sec (vs 20 requests/sec) → latency: 50ms per request (vs 40ms individual, but 5x throughput) → batch inference efficient.
 
 Time & Space Complexity  
-   - Time: O(b·n) where b is batch size, n is sequence length (amortized overhead per request).  
-   - Space: O(b·n) where b is batch size, n is sequence length (batch storage).
+
+  - Time: O(b·n) where b is batch size, n is sequence length (amortized overhead per request).  
+  - Space: O(b·n) where b is batch size, n is sequence length (batch storage).
 
 Strengths  
+
 - Throughput: significantly improves inference throughput.
 - Efficiency: better GPU utilization and compute efficiency.
 - Cost: reduces cost per inference through better resource utilization.
 
 Weaknesses / limitations  
+
 - Latency: may increase latency due to batching delay.
 - Padding: variable-length sequences require padding (waste computation).
 - Complexity: requires batching logic and queue management.

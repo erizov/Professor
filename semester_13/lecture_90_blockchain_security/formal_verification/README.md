@@ -1,14 +1,13 @@
 # Formal Verification
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Formal Verification Flowchart:
@@ -43,9 +42,7 @@ Formal Verification Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Formal Verification Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_90_blockchain_security/formal_verification/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_90_blockchain_security/formal_verification/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_90_blockchain_security/formal_verification/test_algorithm.py)
-
-
-   Formal Verification
 
 What problem does it solve? (1 sentence)  
    Uses mathematical methods to formally prove correctness and security properties of smart contracts, providing mathematical guarantees that contracts behave as specified and are free from certain classes of bugs.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like mathematical proof: Formal Verification is like mathematical proof - you prove mathematically (like proving theorems) that code is correct - just as mathematical proofs guarantee truth, formal verification guarantees code correctness.
 
 Inputs & Outputs  
-   - Input: Smart contracts, specifications, formal models, verification tools, proof systems, properties to verify.  
-   - Output: Formal proofs, verified contracts, correctness guarantees, security properties, verification reports.
+
+  - Input: Smart contracts, specifications, formal models, verification tools, proof systems, properties to verify.  
+  - Output: Formal proofs, verified contracts, correctness guarantees, security properties, verification reports.
 
 Step-by-step description (5–10 lines max)  
 Specify: specify contract requirements formally.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Formal Verification: contract: token contract → specify: total supply invariant → model: formal model → prove: prove total supply never exceeds max → verify: verification tool confirms → result: contract formally verified → Formal Verification successful.
 
 Time & Space Complexity  
-   - Time: O(v + p) where v is verification time, p is proof time (varies by complexity, can be exponential).  
-   - Space: O(m + p) where m is model storage, p is proof storage (formal models and proofs).
+
+  - Time: O(v + p) where v is verification time, p is proof time (varies by complexity, can be exponential).  
+  - Space: O(m + p) where m is model storage, p is proof storage (formal models and proofs).
 
 Strengths  
+
 - Correctness: provides mathematical guarantees of correctness.
 - Security: proves security properties.
 - Reliability: increases contract reliability.
 
 Weaknesses / limitations  
+
 - Complexity: formal verification is complex.
 - Time: verification can be time-consuming.
 - Coverage: may not verify all properties.

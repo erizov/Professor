@@ -1,14 +1,13 @@
 # Process Scheduling
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Process Scheduling Flowchart:
@@ -43,9 +42,7 @@ Process Scheduling Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Process Scheduling Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_07/lecture_39_operating_systems/process_scheduling/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_39_operating_systems/process_scheduling/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_39_operating_systems/process_scheduling/test_algorithm.py)
-

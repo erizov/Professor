@@ -1,14 +1,13 @@
 # YOLO (You Only Look Once)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 YOLO (You Only Look Once) Flowchart:
@@ -43,9 +42,7 @@ YOLO (You Only Look Once) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 YOLO (You Only Look Once) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_05/lecture_23_object_detection/yolo/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_23_object_detection/yolo/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_23_object_detection/yolo/test_algorithm.py)
-

@@ -1,14 +1,13 @@
 # GPU Computing
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 GPU Computing Flowchart:
@@ -43,9 +42,7 @@ GPU Computing Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 GPU Computing Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_58_parallel_computing/gpu_computing/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_58_parallel_computing/gpu_computing/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_58_parallel_computing/gpu_computing/test_algorithm.py)
-
 
    GPU Computing
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a factory with many workers: GPU computing is like a factory with thousands of workers (GPU cores) that can all work on similar tasks simultaneously - instead of one expert worker (CPU) doing complex tasks sequentially, you have many workers doing simple, similar tasks in parallel (like processing pixels in an image, or matrix multiplications) - GPUs excel at doing the same operation on lots of data at once (data parallelism), making them perfect for tasks like image processing, machine learning, and scientific simulations.
 
 Inputs & Outputs  
-   - Input: Data-parallel workloads, GPU kernels, data arrays, computation patterns, GPU memory.  
-   - Output: Parallel computation results, accelerated processing, high throughput, GPU-optimized output.
+
+  - Input: Data-parallel workloads, GPU kernels, data arrays, computation patterns, GPU memory.  
+  - Output: Parallel computation results, accelerated processing, high throughput, GPU-optimized output.
 
 Step-by-step description (5–10 lines max)  
 Identify parallelism: identify data-parallel operations in workload.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    GPU computing: image processing → 4K image (3840×2160 pixels) → CPU: process sequentially, 1 second → GPU: launch kernel with 8M threads (one per pixel) → all pixels processed in parallel → execution time: 0.01 seconds → 100x speedup → GPU excels at data-parallel tasks → GPU computing.
 
 Time & Space Complexity  
-   - Time: O(n/p) where n is problem size, p is number of parallel threads (theoretical), actual speedup depends on memory bandwidth and computation intensity.  
-   - Space: O(d) where d is data size (GPU memory requirements).
+
+  - Time: O(n/p) where n is problem size, p is number of parallel threads (theoretical), actual speedup depends on memory bandwidth and computation intensity.  
+  - Space: O(d) where d is data size (GPU memory requirements).
 
 Strengths  
+
 - Performance: massive parallelism provides huge speedups for data-parallel workloads.
 - Throughput: high throughput for parallelizable computations.
 - Cost-effective: GPUs provide high performance per dollar for suitable workloads.
 
 Weaknesses / limitations  
+
 - Suitability: only effective for data-parallel, compute-intensive workloads.
 - Memory: limited GPU memory and bandwidth can be bottlenecks.
 - Complexity: GPU programming requires specialized knowledge and tools.

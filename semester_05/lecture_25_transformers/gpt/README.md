@@ -1,14 +1,13 @@
 # GPT (Generative Pre-trained Transformer)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 GPT (Generative Pre-trained Transformer) Flowchart:
@@ -43,9 +42,7 @@ GPT (Generative Pre-trained Transformer) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 GPT (Generative Pre-trained Transformer) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_05/lecture_25_transformers/gpt/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_25_transformers/gpt/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_25_transformers/gpt/test_algorithm.py)
-

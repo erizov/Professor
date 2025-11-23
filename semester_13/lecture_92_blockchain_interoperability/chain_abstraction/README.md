@@ -1,14 +1,13 @@
 # Chain Abstraction
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Chain Abstraction Flowchart:
@@ -43,9 +42,7 @@ Chain Abstraction Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Chain Abstraction Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_92_blockchain_interoperability/chain_abstraction/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_92_blockchain_interoperability/chain_abstraction/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_92_blockchain_interoperability/chain_abstraction/test_algorithm.py)
-
-
-   Chain Abstraction
 
 What problem does it solve? (1 sentence)  
    Implements chain abstraction layers that hide blockchain complexity from users and applications, enabling seamless interaction with multiple blockchains through unified interfaces without needing to understand underlying chain differences.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like abstraction layers: Chain Abstraction is like abstraction layers in programming - you hide complexity (like hiding hardware details) so users don't need to know which blockchain they're using - just as abstraction simplifies programming, chain abstraction simplifies blockchain interaction.
 
 Inputs & Outputs  
-   - Input: Blockchain operations, user requests, multiple chains, abstraction layer, unified interfaces.  
-   - Output: Abstracted operations, unified interactions, seamless multi-chain access, simplified blockchain usage.
+
+  - Input: Blockchain operations, user requests, multiple chains, abstraction layer, unified interfaces.  
+  - Output: Abstracted operations, unified interactions, seamless multi-chain access, simplified blockchain usage.
 
 Step-by-step description (5–10 lines max)  
 Request: user makes request through abstraction layer.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Chain Abstraction: request: send payment → route: route to Ethereum → translate: translate to Ethereum format → execute: execute transaction → result: payment sent, user didn't need to know chain details → Chain Abstraction successful.
 
 Time & Space Complexity  
-   - Time: O(r + e) where r is routing time, e is execution time (abstraction overhead).  
-   - Space: O(a + c) where a is abstraction layer storage, c is chain data storage.
+
+  - Time: O(r + e) where r is routing time, e is execution time (abstraction overhead).  
+  - Space: O(a + c) where a is abstraction layer storage, c is chain data storage.
 
 Strengths  
+
 - Simplicity: simplifies blockchain interaction for users.
 - Flexibility: enables easy switching between chains.
 - Accessibility: makes blockchain more accessible.
 
 Weaknesses / limitations  
+
 - Complexity: abstraction layer adds complexity.
 - Overhead: abstraction adds overhead.
 - Limitations: may not support all chain features.

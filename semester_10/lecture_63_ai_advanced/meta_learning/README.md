@@ -1,14 +1,13 @@
 # Meta-Learning (Learning to Learn)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Meta-Learning (Learning to Learn) Flowchart:
@@ -43,9 +42,7 @@ Meta-Learning (Learning to Learn) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Meta-Learning (Learning to Learn) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_63_ai_advanced/meta_learning/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_63_ai_advanced/meta_learning/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_63_ai_advanced/meta_learning/test_algorithm.py)
-
 
    Meta-Learning (Learning to Learn)
 
@@ -95,6 +89,7 @@ Intuition (plain-language explanation)
    Like learning study techniques: Meta-Learning is like learning how to study effectively - once you know good study techniques (meta-knowledge), you can quickly learn any new subject - meta-learning does this for AI: it learns general learning strategies from many tasks, then uses those strategies to quickly learn new tasks with little data.
 
 Inputs & Outputs  
+
 - Input: Multiple training tasks, few examples per task, meta-learning algorithm, adaptation mechanism.
 - Output: Meta-learned model, fast adaptation, learning strategies, few-shot capability, efficient learner.
 
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Meta-Learning: tasks: 100 different classification tasks → learn: learn general learning strategy → new task: classify 5 types of birds with 1 example each → adapt: use learned strategy to adapt quickly → predict: classify new bird images → result: 90% accuracy with 5 examples → Meta-Learning successful.
 
 Time & Space Complexity  
-   - Time: O(t·(n + a)) where t is number of tasks, n is training time per task, a is adaptation time (meta-training phase).  
-   - Space: O(m + s) where m is model size, s is strategy storage (meta-parameters).
+
+  - Time: O(t·(n + a)) where t is number of tasks, n is training time per task, a is adaptation time (meta-training phase).  
+  - Space: O(m + s) where m is model size, s is strategy storage (meta-parameters).
 
 Strengths  
+
 - Fast adaptation: enables rapid adaptation to new tasks.
 - Data efficiency: learns from few examples using prior experience.
 - Generalization: learns generalizable learning strategies.
 
 Weaknesses / limitations  
+
 - Pre-training: requires extensive pre-training on many tasks.
 - Task distribution: performance depends on similarity of new tasks to training tasks.
 - Complexity: meta-learning algorithms can be complex to design and train.

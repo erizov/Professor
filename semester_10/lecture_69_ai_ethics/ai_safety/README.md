@@ -1,14 +1,13 @@
 # AI Safety
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 AI Safety Flowchart:
@@ -43,9 +42,7 @@ AI Safety Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 AI Safety Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_69_ai_ethics/ai_safety/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_69_ai_ethics/ai_safety/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_69_ai_ethics/ai_safety/test_algorithm.py)
-
 
    AI Safety
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
 Like safety systems for AI: AI Safety is like safety systems for powerful machines - you add safeguards (safety mechanisms) to prevent accidents (harmful behaviors), ensure the machine does what you want (alignment), and can be stopped if needed (control) - just as safety systems protect people from machine accidents, AI safety protects people from AI accidents.
 
 Inputs & Outputs  
-   - Input: AI systems, safety requirements, alignment goals, control mechanisms, monitoring systems, human oversight.  
-   - Output: Safe AI systems, safety mechanisms, alignment verification, control systems, safety reports, validated safety.
+
+  - Input: AI systems, safety requirements, alignment goals, control mechanisms, monitoring systems, human oversight.  
+  - Output: Safe AI systems, safety mechanisms, alignment verification, control systems, safety reports, validated safety.
 
 Step-by-step description (5–10 lines max)  
 Identify: identify potential safety risks and failure modes.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    AI Safety: system: autonomous vehicle AI → risks: identify failure modes → safety: implement safety constraints → align: align with traffic safety → control: emergency stop mechanism → monitor: continuous monitoring → result: safe, reliable AI system → AI Safety operational.
 
 Time & Space Complexity  
-   - Time: O(d + t + m) where d is design time, t is testing time, m is monitoring time (ongoing process).  
-   - Space: O(s + m) where s is safety system storage, m is monitoring storage (safety data).
+
+  - Time: O(d + t + m) where d is design time, t is testing time, m is monitoring time (ongoing process).  
+  - Space: O(s + m) where s is safety system storage, m is monitoring storage (safety data).
 
 Strengths  
+
 - Safety: prevents harmful AI behaviors.
 - Trust: increases trust in AI systems.
 - Responsibility: ensures responsible AI development.
 
 Weaknesses / limitations  
+
 - Complexity: AI safety is complex and challenging.
 - Trade-offs: safety measures may limit AI capabilities.
 - Unknown: some safety risks may be unknown.

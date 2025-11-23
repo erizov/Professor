@@ -1,14 +1,13 @@
 # Serverless Architecture
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Serverless Architecture Flowchart:
@@ -43,9 +42,7 @@ Serverless Architecture Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Serverless Architecture Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_61_cloud_native/serverless_architecture/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_61_cloud_native/serverless_architecture/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_61_cloud_native/serverless_architecture/test_algorithm.py)
-
-
-   Serverless Architecture
 
 What problem does it solve? (1 sentence)  
    Builds applications using serverless computing services (FaaS, managed databases, event-driven services) where developers don't manage servers, and the cloud provider handles infrastructure, scaling, and resource management automatically.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a fully managed restaurant: serverless architecture is like a fully managed restaurant where you just provide recipes (code) and ingredients (data), and the restaurant (cloud provider) handles everything else - cooking (execution), serving (scaling), cleaning (resource management), and maintenance (infrastructure) - you don't need to hire chefs, waiters, or manage the kitchen (servers) - you just focus on the food (business logic) and pay for what you serve (usage-based pricing).
 
 Inputs & Outputs  
-   - Input: Application code, event triggers, data, business logic, resource requirements.  
-   - Output: Serverless application, auto-scaled services, managed infrastructure, event-driven system.
+
+  - Input: Application code, event triggers, data, business logic, resource requirements.  
+  - Output: Serverless application, auto-scaled services, managed infrastructure, event-driven system.
 
 Step-by-step description (5–10 lines max)  
 Design: design application using serverless services (functions, managed databases, event streams).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Serverless architecture: e-commerce app → API Gateway (managed) → Lambda functions (FaaS) → DynamoDB (managed database) → S3 (managed storage) → EventBridge (managed events) → no servers to manage → auto-scales: 10 requests → 10 functions, 1000 requests → 1000 functions → pay: only for actual usage → serverless architecture.
 
 Time & Space Complexity  
-   - Time: O(f) where f is function execution time (varies by business logic).  
-   - Space: O(d) where d is data size (managed by cloud provider, no persistent server storage).
+
+  - Time: O(f) where f is function execution time (varies by business logic).  
+  - Space: O(d) where d is data size (managed by cloud provider, no persistent server storage).
 
 Strengths  
+
 - No infrastructure: eliminates server management overhead.
 - Auto-scaling: automatically scales to any load.
 - Cost-effective: pay only for actual usage.
 
 Weaknesses / limitations  
+
 - Vendor lock-in: applications depend on cloud provider services.
 - Cold starts: first invocation may have latency.
 - Debugging: debugging distributed serverless applications can be challenging.

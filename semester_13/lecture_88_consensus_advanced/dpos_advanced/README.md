@@ -1,14 +1,13 @@
 # Delegated Proof of Stake (DPoS) Advanced
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Delegated Proof of Stake (DPoS) Advanced Flowchart:
@@ -43,9 +42,7 @@ Delegated Proof of Stake (DPoS) Advanced Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Delegated Proof of Stake (DPoS) Advanced Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_88_consensus_advanced/dpos_advanced/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_88_consensus_advanced/dpos_advanced/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_88_consensus_advanced/dpos_advanced/test_algorithm.py)
-
 
    Delegated Proof of Stake (DPoS) Advanced
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like an improved representative democracy: Advanced DPoS is like improving representative democracy - instead of static representatives (basic DPoS), you add features like vote decay (representatives lose support over time if inactive), proxy voting (delegating votes to trusted proxies), flexible scheduling (adaptive block production), and governance (voting on proposals) - this makes the system more dynamic, responsive, and decentralized.
 
 Inputs & Outputs  
-   - Input: Stake, delegate votes, vote decay parameters, proxy settings, block production schedule, governance proposals.  
-   - Output: Elected delegates, block production schedule, governance decisions, network parameters, consensus blocks.
+
+  - Input: Stake, delegate votes, vote decay parameters, proxy settings, block production schedule, governance proposals.  
+  - Output: Elected delegates, block production schedule, governance decisions, network parameters, consensus blocks.
 
 Step-by-step description (5–10 lines max)  
 Vote: stakeholders vote for delegates (with optional proxy).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    DPoS Advanced: vote for delegates → decay reduces inactive votes → elect top 21 → flexible schedule → produce blocks → governance proposal → vote → update parameters → DPoS Advanced successful.
 
 Time & Space Complexity  
-   - Time: O(d) for delegate election, O(1) for block production where d is delegates (DPoS complexity).  
-   - Space: O(d + v) where d is delegates, v is votes (DPoS storage).
+
+  - Time: O(d) for delegate election, O(1) for block production where d is delegates (DPoS complexity).  
+  - Space: O(d + v) where d is delegates, v is votes (DPoS storage).
 
 Strengths  
+
 - Efficiency: fast block times and high throughput.
 - Governance: built-in on-chain governance mechanisms.
 - Flexibility: adaptive block production and parameters.
 
 Weaknesses / limitations  
+
 - Centralization: risk of delegate cartels.
 - Complexity: more complex than basic DPoS.
 - Vote decay: requires careful parameter tuning.

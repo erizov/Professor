@@ -1,14 +1,13 @@
 # Quantum Database
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Database Flowchart:
@@ -43,9 +42,7 @@ Quantum Database Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Database Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_81_quantum_applications/quantum_database/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_81_quantum_applications/quantum_database/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_81_quantum_applications/quantum_database/test_algorithm.py)
-
-
-   Quantum Database
 
 What problem does it solve? (1 sentence)  
    Uses quantum algorithms to accelerate database operations like search, query processing, and data retrieval, potentially providing speedups for certain database queries.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like quantum search for databases: Quantum Database uses quantum algorithms to search databases faster - quantum superposition lets you search many records simultaneously, then amplify the correct result - just as quantum search finds items faster, quantum databases can find data faster.
 
 Inputs & Outputs  
-   - Input: Database queries, quantum algorithms, data, search criteria, quantum circuits.  
-   - Output: Query results, retrieved data, search results, optimized queries, quantum-accelerated operations.
+
+  - Input: Database queries, quantum algorithms, data, search criteria, quantum circuits.  
+  - Output: Query results, retrieved data, search results, optimized queries, quantum-accelerated operations.
 
 Step-by-step description (5–10 lines max)  
 Encode: encode database into quantum format.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Database: database: 1M records → query: find record with ID=12345 → encode: encode into qubits → search: Grover's algorithm → execute: run on quantum computer → result: found in √N time (vs N time) → Quantum Database successful.
 
 Time & Space Complexity  
-   - Time: O(√N) where N is database size (quadratic speedup for unstructured search).  
-   - Space: O(log N) where N is database size (qubits needed).
+
+  - Time: O(√N) where N is database size (quadratic speedup for unstructured search).  
+  - Space: O(log N) where N is database size (qubits needed).
 
 Strengths  
+
 - Speedup: potential speedup for certain queries.
 - Search: efficient for unstructured search.
 - Novel: enables new database approaches.
 
 Weaknesses / limitations  
+
 - Limited: speedups limited to specific query types.
 - Hardware: requires quantum hardware.
 - Encoding: encoding databases into quantum format is challenging.

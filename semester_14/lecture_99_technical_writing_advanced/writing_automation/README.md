@@ -1,14 +1,13 @@
 # Writing Automation
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Writing Automation Flowchart:
@@ -43,9 +42,7 @@ Writing Automation Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Writing Automation Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_14/lecture_99_technical_writing_advanced/writing_automation/algorithm.py)
 - [Java Implementation](/code/semester_14/lecture_99_technical_writing_advanced/writing_automation/Algorithm.java)
 - [Python Tests](/code/semester_14/lecture_99_technical_writing_advanced/writing_automation/test_algorithm.py)
-
-
-   Writing Automation
 
 What problem does it solve? (1 sentence)  
 Implements writing automation algorithm.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Writing Automation is a fundamental algorithm in computer science.
 
 Inputs & Outputs  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+
+  - Input: Algorithm-specific inputs  
+  - Output: Algorithm-specific outputs
 
 Step-by-step description (5–10 lines max)  
 Initialize data structures
@@ -107,13 +100,16 @@ Tiny example (hand-simulated)
    Example: Writing Automation applied to sample data.
 
 Time & Space Complexity  
-   - Time: Varies  
-   - Space: Varies
+
+  - Time: Varies  
+  - Space: Varies
 
 Strengths  
+
 - Efficient for specific use cases
 
 Weaknesses / limitations  
+
 - May have limitations in certain scenarios
 
 Compare with alternatives  

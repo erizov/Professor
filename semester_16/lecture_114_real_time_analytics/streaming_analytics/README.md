@@ -1,14 +1,13 @@
 # Streaming Analytics
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Streaming Analytics Flowchart:
@@ -43,9 +42,7 @@ Streaming Analytics Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Streaming Analytics Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_16/lecture_114_real_time_analytics/streaming_analytics/algorithm.py)
 - [Java Implementation](/code/semester_16/lecture_114_real_time_analytics/streaming_analytics/Algorithm.java)
 - [Python Tests](/code/semester_16/lecture_114_real_time_analytics/streaming_analytics/test_algorithm.py)
-
-
-   Streaming Analytics
 
 What problem does it solve? (1 sentence)  
 Implements streaming analytics algorithm.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Streaming Analytics is a fundamental algorithm in computer science.
 
 Inputs & Outputs  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+
+  - Input: Algorithm-specific inputs  
+  - Output: Algorithm-specific outputs
 
 Step-by-step description (5–10 lines max)  
 Initialize data structures
@@ -107,13 +100,16 @@ Tiny example (hand-simulated)
    Example: Streaming Analytics applied to sample data.
 
 Time & Space Complexity  
-   - Time: Varies  
-   - Space: Varies
+
+  - Time: Varies  
+  - Space: Varies
 
 Strengths  
+
 - Efficient for specific use cases
 
 Weaknesses / limitations  
+
 - May have limitations in certain scenarios
 
 Compare with alternatives  

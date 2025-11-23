@@ -1,14 +1,13 @@
 # Treasury Management
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Treasury Management Flowchart:
@@ -43,9 +42,7 @@ Treasury Management Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Treasury Management Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_93_blockchain_governance/treasury_management/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_93_blockchain_governance/treasury_management/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_93_blockchain_governance/treasury_management/test_algorithm.py)
-
-
-   Treasury Management
 
 What problem does it solve? (1 sentence)  
    Implements treasury management systems for blockchain protocols and DAOs, managing protocol funds, allocating resources, and making financial decisions through governance mechanisms.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like managing organization funds: Treasury Management is like managing organization funds - you manage money (like managing a budget) for the protocol or DAO - just as organizations manage finances, treasury management manages blockchain protocol finances.
 
 Inputs & Outputs  
-   - Input: Treasury funds, allocation requests, governance proposals, financial parameters, spending rules, investment strategies.  
-   - Output: Managed treasury, fund allocations, financial decisions, resource distribution, treasury reports, optimized finances.
+
+  - Input: Treasury funds, allocation requests, governance proposals, financial parameters, spending rules, investment strategies.  
+  - Output: Managed treasury, fund allocations, financial decisions, resource distribution, treasury reports, optimized finances.
 
 Step-by-step description (5–10 lines max)  
 Collect: collect protocol fees and revenue.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Treasury Management: treasury: 1M tokens → propose: allocate 100k for development → vote: proposal passes → allocate: allocate 100k tokens → result: funds allocated for development → Treasury Management operational.
 
 Time & Space Complexity  
-   - Time: O(a + g) where a is allocation time, g is governance time (treasury operations).  
-   - Space: O(t + a) where t is treasury storage, a is allocation storage (treasury and allocation data).
+
+  - Time: O(a + g) where a is allocation time, g is governance time (treasury operations).  
+  - Space: O(t + a) where t is treasury storage, a is allocation storage (treasury and allocation data).
 
 Strengths  
+
 - Transparency: transparent treasury management.
 - Governance: governed by token holders.
 - Sustainability: supports protocol sustainability.
 
 Weaknesses / limitations  
+
 - Complexity: treasury management can be complex.
 - Decisions: requires good governance decisions.
 - Risk: treasury management has risks.

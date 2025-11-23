@@ -1,14 +1,13 @@
 # Quantum Communication
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Communication Flowchart:
@@ -43,9 +42,7 @@ Quantum Communication Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Communication Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_85_quantum_networking/quantum_communication/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_85_quantum_networking/quantum_communication/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_85_quantum_networking/quantum_communication/test_algorithm.py)
-
-
-   Quantum Communication
 
 What problem does it solve? (1 sentence)  
    Transmits quantum information between distant locations using quantum channels, enabling secure quantum communication, quantum teleportation, and quantum networks.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like communication but quantum: Quantum Communication is like communication but for quantum information - you send quantum states (qubits) through quantum channels instead of classical bits - just as you send messages classically, you send quantum information using quantum communication.
 
 Inputs & Outputs  
-   - Input: Quantum states, quantum channels, entanglement, classical communication, protocols.  
-   - Output: Transmitted quantum states, secure communication, quantum keys, teleported states, network connectivity.
+
+  - Input: Quantum states, quantum channels, entanglement, classical communication, protocols.  
+  - Output: Transmitted quantum states, secure communication, quantum keys, teleported states, network connectivity.
 
 Step-by-step description (5–10 lines max)  
 Prepare: prepare quantum state to transmit.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Communication: state: |ψ⟩ → encode: encode message → transmit: send through fiber → protect: error correction → receive: receive state → decode: decode message → verify: verify integrity → result: secure quantum communication → Quantum Communication successful.
 
 Time & Space Complexity  
-   - Time: O(d + t) where d is distance, t is transmission time (varies by channel).  
-   - Space: O(n) where n is number of qubits (quantum state storage).
+
+  - Time: O(d + t) where d is distance, t is transmission time (varies by channel).  
+  - Space: O(n) where n is number of qubits (quantum state storage).
 
 Strengths  
+
 - Security: enables secure quantum communication.
 - Teleportation: enables quantum teleportation.
 - Networking: foundation for quantum networks.
 
 Weaknesses / limitations  
+
 - Distance: limited by channel distance and loss.
 - Noise: quantum noise affects transmission.
 - Infrastructure: requires quantum communication infrastructure.

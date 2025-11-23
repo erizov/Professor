@@ -1,14 +1,13 @@
 # Quantum Architectures
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Architectures Flowchart:
@@ -43,9 +42,7 @@ Quantum Architectures Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Architectures Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_80_quantum_computing_advanced/quantum_architectures/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_80_quantum_computing_advanced/quantum_architectures/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_80_quantum_computing_advanced/quantum_architectures/test_algorithm.py)
-
-
-   Quantum Architectures
 
 What problem does it solve? (1 sentence)  
    Designs and implements hardware architectures for quantum computers, including qubit technologies, connectivity, control systems, and error correction integration.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like computer architecture for quantum: Quantum Architectures is like computer architecture but for quantum computers - you design how qubits are arranged (layout), how they connect (topology), and how they're controlled (gates) - just as computer architecture designs CPUs, quantum architecture designs quantum processors.
 
 Inputs & Outputs  
-   - Input: Qubit technologies, connectivity requirements, gate sets, error rates, scalability goals, control systems.  
-   - Output: Quantum architectures, qubit layouts, connectivity topologies, gate implementations, control designs, scalable systems.
+
+  - Input: Qubit technologies, connectivity requirements, gate sets, error rates, scalability goals, control systems.  
+  - Output: Quantum architectures, qubit layouts, connectivity topologies, gate implementations, control designs, scalable systems.
 
 Step-by-step description (5–10 lines max)  
 Select: select qubit technology (superconducting, trapped ions, etc.).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Architectures: technology: superconducting qubits → layout: 2D grid → connectivity: nearest-neighbor → gates: implement CNOT, single-qubit gates → control: microwave pulses → error correction: integrate surface code → result: scalable quantum architecture → Quantum Architectures successful.
 
 Time & Space Complexity  
-   - Time: O(1) for gate operations (varies by architecture, typically constant per gate).  
-   - Space: O(n) where n is number of qubits (physical qubit layout).
+
+  - Time: O(1) for gate operations (varies by architecture, typically constant per gate).  
+  - Space: O(n) where n is number of qubits (physical qubit layout).
 
 Strengths  
+
 - Scalability: enables scaling to larger quantum systems.
 - Performance: optimized architectures improve performance.
 - Flexibility: different architectures for different applications.
 
 Weaknesses / limitations  
+
 - Complexity: designing quantum architectures is complex.
 - Technology: limited by qubit technology constraints.
 - Noise: architecture affects error rates.

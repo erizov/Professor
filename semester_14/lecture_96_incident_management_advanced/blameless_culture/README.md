@@ -1,14 +1,13 @@
 # Blameless Postmortem Culture
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Blameless Postmortem Culture Flowchart:
@@ -43,9 +42,7 @@ Blameless Postmortem Culture Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Blameless Postmortem Culture Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_14/lecture_96_incident_management_advanced/blameless_culture/algorithm.py)
 - [Java Implementation](/code/semester_14/lecture_96_incident_management_advanced/blameless_culture/Algorithm.java)
 - [Python Tests](/code/semester_14/lecture_96_incident_management_advanced/blameless_culture/test_algorithm.py)
-
-
-   Blameless Postmortem Culture
 
 What problem does it solve? (1 sentence)  
    Establishes a culture and process for conducting blameless postmortems that focus on learning from incidents, improving systems, and preventing recurrence rather than assigning blame.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a learning-focused investigation: Blameless culture is like a learning-focused investigation - when something goes wrong (incident), you investigate to learn (root cause), improve (fixes), and prevent (changes) - you don't blame people, you fix systems - just as a safety investigation focuses on prevention, blameless culture focuses on improvement.
 
 Inputs & Outputs  
-   - Input: Incident data, timeline information, system logs, team input, postmortem templates, improvement tracking, culture guidelines.  
-   - Output: Postmortem reports, root cause analysis, improvement actions, prevention measures, culture guidelines, learning outcomes.
+
+  - Input: Incident data, timeline information, system logs, team input, postmortem templates, improvement tracking, culture guidelines.  
+  - Output: Postmortem reports, root cause analysis, improvement actions, prevention measures, culture guidelines, learning outcomes.
 
 Step-by-step description (5–10 lines max)  
 Prepare: prepare for postmortem meeting.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Blameless Culture: prepare → gather data → conduct meeting (focus on system, not people) → analyze root cause → document → action items → implement → track → Blameless Culture successful.
 
 Time & Space Complexity  
-   - Time: O(i * p) where i is incident complexity, p is postmortem process time (postmortem complexity).  
-   - Space: O(d + r) where d is documentation, r is reports (postmortem storage).
+
+  - Time: O(i * p) where i is incident complexity, p is postmortem process time (postmortem complexity).  
+  - Space: O(d + r) where d is documentation, r is reports (postmortem storage).
 
 Strengths  
+
 - Learning: promotes learning and improvement.
 - Culture: builds positive, learning-focused culture.
 - Prevention: helps prevent future incidents.
 
 Weaknesses / limitations  
+
 - Culture: requires cultural change and buy-in.
 - Time: requires time investment for postmortems.
 - Execution: requires careful execution to maintain blameless focus.

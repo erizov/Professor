@@ -1,14 +1,13 @@
 # Advanced Support Vector Machine
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Advanced Support Vector Machine Flowchart:
@@ -43,9 +42,7 @@ Advanced Support Vector Machine Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Advanced Support Vector Machine Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_03/lecture_16_advanced_ml/svm/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_16_advanced_ml/svm/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_16_advanced_ml/svm/test_algorithm.py)
-

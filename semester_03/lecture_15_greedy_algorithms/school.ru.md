@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 15 Greedy Algorithms — greedy algorithms - demonstration. this lecture covers greedy algorithms including activity selection, fractional knapsack, and huffman coding.
+Лекция 15 Greedy Algorithms — greedy algorithms - demonstration. this лекция covers greedy algorithms including активность selection, fractional knapsack, and huffman coding.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 15 Greedy Algorithms — greedy algorithms - demonstration. this lecture
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 15 greedy algorithms:
+Рассмотрим конкретный пример работы лекция 15 greedy algorithms:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 15 Greedy Algorithms — greedy algorithms - demonstration. this lecture
 
 ### Базовые
 
-1. Что делает алгоритм lecture 15 greedy algorithms?
-2. В каких ситуациях используется lecture 15 greedy algorithms?
+1. Что делает алгоритм лекция 15 greedy algorithms?
+2. В каких ситуациях используется лекция 15 greedy algorithms?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 15 greedy algorithms обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 15 greedy algorithms?
-3. Можно ли улучшить работу lecture 15 greedy algorithms?
+1. Как лекция 15 greedy algorithms обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 15 greedy algorithms?
+3. Можно ли улучшить работу лекция 15 greedy algorithms?
 
 ### Сложные
 
-1. Какова временная сложность lecture 15 greedy algorithms?
-2. Как lecture 15 greedy algorithms работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 15 greedy algorithms?
+1. Какова временная сложность лекция 15 greedy algorithms?
+2. Как лекция 15 greedy algorithms работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 15 greedy algorithms?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 15 greedy algorithms.
+Выполни простую операцию с алгоритмом лекция 15 greedy algorithms.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 15 greedy algorithms к более сложному набору данных.
+Примени алгоритм лекция 15 greedy algorithms к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 15 greedy algorithms на языке программирования.
+Напиши реализацию алгоритма лекция 15 greedy algorithms на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

@@ -1,14 +1,13 @@
 # Multi-Hop RAG
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Multi-Hop RAG Flowchart:
@@ -43,9 +42,7 @@ Multi-Hop RAG Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Multi-Hop RAG Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_67_rag_advanced/multi_hop_rag/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_67_rag_advanced/multi_hop_rag/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_67_rag_advanced/multi_hop_rag/test_algorithm.py)
-
 
    Multi-Hop RAG
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like following a chain of clues: multi-hop RAG is like solving a mystery by following clues - you start with the question (initial query), find the first clue (retrieve first document), which leads you to the next clue (refined query based on first document), you follow that (retrieve second document), and continue until you have enough information to solve the mystery (answer the question) - each step (hop) builds on the previous one, allowing you to reason across multiple sources of information.
 
 Inputs & Outputs  
-   - Input: Complex query, knowledge base, retrieval system, reasoning capability, hop limit.  
-   - Output: Multi-hop answer, retrieved document chain, reasoning path, comprehensive response.
+
+  - Input: Complex query, knowledge base, retrieval system, reasoning capability, hop limit.  
+  - Output: Multi-hop answer, retrieved document chain, reasoning path, comprehensive response.
 
 Step-by-step description (5–10 lines max)  
 Initial retrieval: retrieve initial documents based on original query.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Multi-hop RAG: query: 'What did the CEO say about the company's expansion plans?' → hop 1: retrieve CEO's recent statements → find: mentions 'Asian markets' → hop 2: retrieve company's Asia expansion documents → find: specific plans → hop 3: retrieve financial reports on Asia → combine: CEO statement + expansion plans + financials → answer: comprehensive response → multi-hop RAG successful.
 
 Time & Space Complexity  
-   - Time: O(h·r) where h is number of hops, r is retrieval time per hop (iterative retrieval).  
-   - Space: O(h·d) where h is hops, d is documents per hop (accumulated retrieved documents).
+
+  - Time: O(h·r) where h is number of hops, r is retrieval time per hop (iterative retrieval).  
+  - Space: O(h·d) where h is hops, d is documents per hop (accumulated retrieved documents).
 
 Strengths  
+
 - Complex queries: handles queries requiring information from multiple sources.
 - Reasoning: enables reasoning across multiple documents.
 - Comprehensiveness: produces more comprehensive answers.
 
 Weaknesses / limitations  
+
 - Latency: multiple hops increase response time.
 - Error propagation: errors in early hops can affect later hops.
 - Complexity: more complex than single-hop RAG.

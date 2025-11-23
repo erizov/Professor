@@ -1,14 +1,13 @@
 # Long Context Models
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Long Context Models Flowchart:
@@ -43,9 +42,7 @@ Long Context Models Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Long Context Models Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_64_llm_architecture_advanced/long_context_models/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_64_llm_architecture_advanced/long_context_models/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_64_llm_architecture_advanced/long_context_models/test_algorithm.py)
-
-
-   Long Context Models
 
 What problem does it solve? (1 sentence)  
 Enables language models to process and understand very long sequences (tens of thousands to millions of tokens) through efficient attention mechanisms, context compression, and memory management techniques.
@@ -95,7 +87,8 @@ Intuition (plain-language explanation)
 Like reading a very long book: long context models are like being able to read and remember an entire book at once - instead of only remembering the last few pages (short context), you can remember and reference information from hundreds of pages ago (long context) - this is achieved through efficient memory systems (like bookmarks and summaries) that let you quickly find and use information from anywhere in the book without re-reading everything.
 
 Inputs & Outputs  
-   - Input: Long sequences, context window, attention mechanism, memory systems, compression techniques.  
+
+  - Input: Long sequences, context window, attention mechanism, memory systems, compression techniques.  
 - Output: Long-context understanding, extended memory, efficient processing, context-aware generation.
 
 Step-by-step description (5–10 lines max)  
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Long context model: input: 100K token document → architecture: sparse attention (attend to 2K tokens) → memory: compress first 98K tokens to summary → process: attend to summary + recent 2K tokens → generate: answer question using full context → context: 100K tokens processed efficiently → long context model operational.
 
 Time & Space Complexity  
-   - Time: O(n·d) with sparse attention where n is sequence length, d is attention window (much better than O(n²) full attention).  
-   - Space: O(n) where n is context length (may use compression to reduce to O(k) where k << n).
+
+  - Time: O(n·d) with sparse attention where n is sequence length, d is attention window (much better than O(n²) full attention).  
+  - Space: O(n) where n is context length (may use compression to reduce to O(k) where k << n).
 
 Strengths  
+
 - Long context: enables processing of very long documents and conversations.
 - Efficiency: efficient attention mechanisms make long contexts feasible.
 - Understanding: better understanding through access to full context.
 
 Weaknesses / limitations  
+
 - Complexity: long context models are more complex to design and train.
 - Memory: still requires significant memory for very long contexts.
 - Quality: context compression may lose some information.

@@ -1,14 +1,13 @@
 # Universal Protocols
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Universal Protocols Flowchart:
@@ -43,9 +42,7 @@ Universal Protocols Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Universal Protocols Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_92_blockchain_interoperability/universal_protocols/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_92_blockchain_interoperability/universal_protocols/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_92_blockchain_interoperability/universal_protocols/test_algorithm.py)
-
-
-   Universal Protocols
 
 What problem does it solve? (1 sentence)  
    Implements universal protocols that work across all blockchains, providing standardized interfaces and operations that enable seamless interaction with any blockchain through a single protocol.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like universal standards: Universal Protocols are like universal standards - you create one protocol (like universal standards) that works with all blockchains - just as universal standards work everywhere, universal protocols work with all blockchains.
 
 Inputs & Outputs  
-   - Input: Blockchain operations, universal protocol messages, any blockchain, standardized interfaces, protocol adapters.  
-   - Output: Universal blockchain access, standardized operations, protocol compliance, seamless interaction, unified protocols.
+
+  - Input: Blockchain operations, universal protocol messages, any blockchain, standardized interfaces, protocol adapters.  
+  - Output: Universal blockchain access, standardized operations, protocol compliance, seamless interaction, unified protocols.
 
 Step-by-step description (5–10 lines max)  
 Define: define universal protocol standards.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Universal Protocols: protocol: universal DeFi protocol → implement: adapters for Ethereum, Polygon, BSC → operate: use same interface for all chains → result: universal DeFi access → Universal Protocols operational.
 
 Time & Space Complexity  
-   - Time: O(p + t) where p is protocol overhead, t is translation time (varies by chain).  
-   - Space: O(p + a) where p is protocol storage, a is adapter storage (protocol and adapters).
+
+  - Time: O(p + t) where p is protocol overhead, t is translation time (varies by chain).  
+  - Space: O(p + a) where p is protocol storage, a is adapter storage (protocol and adapters).
 
 Strengths  
+
 - Universality: works with all blockchains.
 - Simplicity: provides simple, unified interface.
 - Extensibility: easily extends to new chains.
 
 Weaknesses / limitations  
+
 - Complexity: universal protocols are complex.
 - Limitations: may not support all chain features.
 - Adoption: requires adoption across ecosystem.

@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 42 Ci Cd Fundamentals — ci/cd - demonstration. this lecture covers continuous integration and continuous deployment.
+Лекция 42 Ci Cd Fundamentals — ci/cd - demonstration. this лекция covers continuous integration and continuous deployment.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 42 Ci Cd Fundamentals — ci/cd - demonstration. this lecture covers con
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 42 ci cd fundamentals:
+Рассмотрим конкретный пример работы лекция 42 ci cd fundamentals:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 42 Ci Cd Fundamentals — ci/cd - demonstration. this lecture covers con
 
 ### Базовые
 
-1. Что делает алгоритм lecture 42 ci cd fundamentals?
-2. В каких ситуациях используется lecture 42 ci cd fundamentals?
+1. Что делает алгоритм лекция 42 ci cd fundamentals?
+2. В каких ситуациях используется лекция 42 ci cd fundamentals?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 42 ci cd fundamentals обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 42 ci cd fundamentals?
-3. Можно ли улучшить работу lecture 42 ci cd fundamentals?
+1. Как лекция 42 ci cd fundamentals обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 42 ci cd fundamentals?
+3. Можно ли улучшить работу лекция 42 ci cd fundamentals?
 
 ### Сложные
 
-1. Какова временная сложность lecture 42 ci cd fundamentals?
-2. Как lecture 42 ci cd fundamentals работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 42 ci cd fundamentals?
+1. Какова временная сложность лекция 42 ci cd fundamentals?
+2. Как лекция 42 ci cd fundamentals работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 42 ci cd fundamentals?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 42 ci cd fundamentals.
+Выполни простую операцию с алгоритмом лекция 42 ci cd fundamentals.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 42 ci cd fundamentals к более сложному набору данных.
+Примени алгоритм лекция 42 ci cd fundamentals к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 42 ci cd fundamentals на языке программирования.
+Напиши реализацию алгоритма лекция 42 ci cd fundamentals на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

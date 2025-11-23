@@ -1,14 +1,13 @@
 # Audit Techniques
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Audit Techniques Flowchart:
@@ -43,9 +42,7 @@ Audit Techniques Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Audit Techniques Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_90_blockchain_security/audit_techniques/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_90_blockchain_security/audit_techniques/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_90_blockchain_security/audit_techniques/test_algorithm.py)
-
-
-   Audit Techniques
 
 What problem does it solve? (1 sentence)  
    Implements smart contract audit techniques and methodologies to identify security vulnerabilities, code issues, and potential exploits in blockchain smart contracts before deployment.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like code review for security: Audit Techniques are like thorough code reviews but focused on security - you examine smart contracts (like reviewing code) to find bugs and vulnerabilities before they're exploited - just as code reviews catch bugs, audits catch security issues.
 
 Inputs & Outputs  
-   - Input: Smart contracts, code, audit checklists, security standards, vulnerability databases, analysis tools.  
-   - Output: Audit reports, vulnerability findings, security recommendations, risk assessments, remediation guidance.
+
+  - Input: Smart contracts, code, audit checklists, security standards, vulnerability databases, analysis tools.  
+  - Output: Audit reports, vulnerability findings, security recommendations, risk assessments, remediation guidance.
 
 Step-by-step description (5–10 lines max)  
 Review: review smart contract code.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Audit Techniques: contract: DeFi lending contract → review: code review → analyze: check for reentrancy → test: test edge cases → identify: reentrancy vulnerability found → recommend: add reentrancy guard → result: vulnerability fixed → Audit Techniques successful.
 
 Time & Space Complexity  
-   - Time: O(c + a) where c is code size, a is analysis time (varies by contract complexity).  
-   - Space: O(c + r) where c is code storage, r is report storage (code and audit data).
+
+  - Time: O(c + a) where c is code size, a is analysis time (varies by contract complexity).  
+  - Space: O(c + r) where c is code storage, r is report storage (code and audit data).
 
 Strengths  
+
 - Security: identifies security vulnerabilities before deployment.
 - Prevention: prevents exploits and hacks.
 - Trust: increases trust in smart contracts.
 
 Weaknesses / limitations  
+
 - Time: audits take time and resources.
 - Coverage: may not catch all vulnerabilities.
 - Cost: professional audits can be expensive.

@@ -1,14 +1,13 @@
 # Quantum Switching
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Switching Flowchart:
@@ -43,9 +42,7 @@ Quantum Switching Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Switching Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_85_quantum_networking/quantum_switching/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_85_quantum_networking/quantum_switching/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_85_quantum_networking/quantum_switching/test_algorithm.py)
-
-
-   Quantum Switching
 
 What problem does it solve? (1 sentence)  
 Switches and routes quantum information between quantum channels and nodes in quantum networks, enabling efficient quantum communication and network management.
@@ -95,7 +87,8 @@ Intuition (plain-language explanation)
    Like network switches for quantum: Quantum Switching is like network switches but for quantum information - you switch quantum signals (like switching network packets) between quantum channels to route quantum information - just as network switches route internet traffic, quantum switches route quantum information.
 
 Inputs & Outputs  
-   - Input: Quantum signals, switching configurations, routing tables, quantum channels, control signals.  
+
+  - Input: Quantum signals, switching configurations, routing tables, quantum channels, control signals.  
 - Output: Switched quantum information, routed quantum signals, network connectivity, efficient switching, quantum data flow.
 
 Step-by-step description (5–10 lines max)  
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Switching: signal: quantum state on channel A → route: determine output channel B → switch: switch to channel B → preserve: maintain quantum state → forward: forward to destination → result: quantum signal switched → Quantum Switching successful.
 
 Time & Space Complexity  
-   - Time: O(1) for switching operation (constant time per switch).  
-   - Space: O(n) where n is number of channels (switching table storage).
+
+  - Time: O(1) for switching operation (constant time per switch).  
+  - Space: O(n) where n is number of channels (switching table storage).
 
 Strengths  
+
 - Efficiency: enables efficient quantum network routing.
 - Flexibility: supports flexible network topologies.
 - Scalability: enables scaling quantum networks.
 
 Weaknesses / limitations  
+
 - Complexity: quantum switching is complex.
 - Loss: quantum information loss during switching.
 - Noise: switching noise affects quantum states.

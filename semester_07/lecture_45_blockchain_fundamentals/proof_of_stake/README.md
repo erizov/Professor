@@ -1,14 +1,13 @@
 # Proof of Stake (PoS)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Proof of Stake (PoS) Flowchart:
@@ -43,9 +42,7 @@ Proof of Stake (PoS) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Proof of Stake (PoS) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_07/lecture_45_blockchain_fundamentals/proof_of_stake/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_45_blockchain_fundamentals/proof_of_stake/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_45_blockchain_fundamentals/proof_of_stake/test_algorithm.py)
-
 
    Proof of Stake (PoS)
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a weighted lottery: instead of solving puzzles (expensive), validators 'stake' their coins as collateral - the more coins you stake, the higher your chance of being selected to validate blocks. If you validate incorrectly, you lose your stake (economic penalty), so validators are incentivized to be honest.
 
 Inputs & Outputs  
+
 - Input: Staked cryptocurrency, validator selection algorithm, block candidate, validator's stake amount.
-   - Output: Validated block, validator rewards, updated stake balances.
+  - Output: Validated block, validator rewards, updated stake balances.
 
 Step-by-step description (5–10 lines max)  
 Stake coins: validators lock cryptocurrency as stake (collateral).
@@ -112,15 +107,18 @@ Tiny example (hand-simulated)
    Validator stakes 1000 ETH → selected to validate block (probability proportional to stake) → proposes block → other validators verify → 2/3 approve → block finalized → validator earns 0.1 ETH reward → stake increases to 1000.1 ETH. If malicious: stake slashed, lose 100 ETH.
 
 Time & Space Complexity  
-   - Time: O(1) to select validator (deterministic/random selection), O(1) to validate block.  
-   - Space: O(v) where v is number of validators (track stake amounts).
+
+  - Time: O(1) to select validator (deterministic/random selection), O(1) to validate block.  
+  - Space: O(v) where v is number of validators (track stake amounts).
 
 Strengths  
+
 - Energy efficient: requires minimal computational resources (no mining).
 - Fast: enables faster block times and higher throughput.
 - Economic security: validators have financial stake in network security.
 
 Weaknesses / limitations  
+
 - Wealth concentration: those with more stake have more influence.
 - Nothing at stake: validators might validate on multiple chains (addressed by slashing).
 - Complexity: more complex validator selection and slashing mechanisms.

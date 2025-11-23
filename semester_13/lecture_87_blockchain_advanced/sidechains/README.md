@@ -1,14 +1,13 @@
 # Sidechains
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Sidechains Flowchart:
@@ -43,9 +42,7 @@ Sidechains Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Sidechains Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_87_blockchain_advanced/sidechains/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_87_blockchain_advanced/sidechains/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_87_blockchain_advanced/sidechains/test_algorithm.py)
-
-
-   Sidechains
 
 What problem does it solve? (1 sentence)  
    Enables blockchain interoperability and scaling by creating separate blockchains (sidechains) that are pegged to the main chain, allowing assets and data to move between chains.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like connected islands: Sidechains are like islands connected by bridges to the mainland (main chain) - you can move between islands (sidechains) and the mainland, each island can have different rules (consensus, features), but they're all connected - this allows experimentation and scaling while maintaining connection to the main chain.
 
 Inputs & Outputs  
-   - Input: Assets to transfer, sidechain configuration, peg mechanism, validators, consensus parameters.  
-   - Output: Sidechain blocks, pegged assets, cross-chain transfers, sidechain state.
+
+  - Input: Assets to transfer, sidechain configuration, peg mechanism, validators, consensus parameters.  
+  - Output: Sidechain blocks, pegged assets, cross-chain transfers, sidechain state.
 
 Step-by-step description (5–10 lines max)  
 Create: create sidechain with its own consensus and rules.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Sidechain: create sidechain → establish peg → lock 10 ETH on main chain → transfer 10 ETH to sidechain → process tx on sidechain → transfer back → unlock on main chain → Sidechain successful.
 
 Time & Space Complexity  
-   - Time: O(t + p) where t is transaction time, p is peg operation time (sidechain operations).  
-   - Space: O(s + m) where s is sidechain state, m is main chain state (sidechain storage).
+
+  - Time: O(t + p) where t is transaction time, p is peg operation time (sidechain operations).  
+  - Space: O(s + m) where s is sidechain state, m is main chain state (sidechain storage).
 
 Strengths  
+
 - Flexibility: allows experimentation with different consensus and features.
 - Interoperability: enables asset and data transfer between chains.
 - Scalability: offloads transactions from main chain.
 
 Weaknesses / limitations  
+
 - Security: sidechain security is independent (weaker than main chain).
 - Peg: two-way peg can be complex and risky.
 - Trust: may require trusted validators for peg.

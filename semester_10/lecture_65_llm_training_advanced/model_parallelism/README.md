@@ -1,14 +1,13 @@
 # Model Parallelism for LLMs
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Model Parallelism for LLMs Flowchart:
@@ -43,9 +42,7 @@ Model Parallelism for LLMs Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Model Parallelism for LLMs Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_65_llm_training_advanced/model_parallelism/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_65_llm_training_advanced/model_parallelism/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_65_llm_training_advanced/model_parallelism/test_algorithm.py)
-
 
    Model Parallelism for LLMs
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like splitting a large painting across multiple canvases: model parallelism is like painting a huge mural by splitting it across multiple canvases - each artist (GPU) works on their section of the painting (model partition), and they pass their work to the next artist (communication) who continues - the final painting (model) is complete only when all sections are done together - this allows creating much larger paintings (models) than any single canvas (GPU) could hold.
 
 Inputs & Outputs  
-   - Input: Large model, multiple GPUs, partitioning strategy, communication pattern, model architecture.  
-   - Output: Partitioned model, distributed computation, scaled model capacity, trained model.
+
+  - Input: Large model, multiple GPUs, partitioning strategy, communication pattern, model architecture.  
+  - Output: Partitioned model, distributed computation, scaled model capacity, trained model.
 
 Step-by-step description (5–10 lines max)  
 Analyze model: analyze model structure and memory requirements.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Model parallelism: GPT-3 (175B params) → 8 GPUs → tensor parallelism: split attention and FFN across GPUs → GPU 0-3: first half of layers → GPU 4-7: second half → forward: activations flow GPU 0→1→2→...→7 → backward: gradients flow GPU 7→6→...→0 → communication: all-reduce for synchronization → model parallel training operational.
 
 Time & Space Complexity  
-   - Time: O(n/p + c) where n is sequential time, p is parallelism degree, c is communication overhead.  
-   - Space: O(m/p) per GPU where m is model size, p is number of GPUs (model partitioned).
+
+  - Time: O(n/p + c) where n is sequential time, p is parallelism degree, c is communication overhead.  
+  - Space: O(m/p) per GPU where m is model size, p is number of GPUs (model partitioned).
 
 Strengths  
+
 - Scalability: enables training models larger than single GPU memory.
 - Efficiency: better memory utilization across multiple GPUs.
 - Feasibility: makes training very large models feasible.
 
 Weaknesses / limitations  
+
 - Communication: communication overhead can be significant.
 - Complexity: model parallelism is complex to implement and debug.
 - Load balancing: requires careful load balancing across partitions.

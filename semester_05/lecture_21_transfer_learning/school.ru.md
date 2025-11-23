@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 21 Transfer Learning — transfer learning - demonstration. this lecture covers transfer learning algorithms and techniques.
+Лекция 21 Transfer Обучение — transfer обучение - demonstration. this лекция covers transfer обучение algorithms and techniques.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 21 Transfer Learning — transfer learning - demonstration. this lecture
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 21 transfer learning:
+Рассмотрим конкретный пример работы лекция 21 transfer обучение:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 21 Transfer Learning — transfer learning - demonstration. this lecture
 
 ### Базовые
 
-1. Что делает алгоритм lecture 21 transfer learning?
-2. В каких ситуациях используется lecture 21 transfer learning?
+1. Что делает алгоритм лекция 21 transfer обучение?
+2. В каких ситуациях используется лекция 21 transfer обучение?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 21 transfer learning обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 21 transfer learning?
-3. Можно ли улучшить работу lecture 21 transfer learning?
+1. Как лекция 21 transfer обучение обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 21 transfer обучение?
+3. Можно ли улучшить работу лекция 21 transfer обучение?
 
 ### Сложные
 
-1. Какова временная сложность lecture 21 transfer learning?
-2. Как lecture 21 transfer learning работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 21 transfer learning?
+1. Какова временная сложность лекция 21 transfer обучение?
+2. Как лекция 21 transfer обучение работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 21 transfer обучение?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 21 transfer learning.
+Выполни простую операцию с алгоритмом лекция 21 transfer обучение.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 21 transfer learning к более сложному набору данных.
+Примени алгоритм лекция 21 transfer обучение к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 21 transfer learning на языке программирования.
+Напиши реализацию алгоритма лекция 21 transfer обучение на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

@@ -1,14 +1,13 @@
 # Chaos Engineering
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Chaos Engineering Flowchart:
@@ -43,9 +42,7 @@ Chaos Engineering Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Chaos Engineering Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_07/lecture_43_ci_cd_advanced/chaos_engineering/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_43_ci_cd_advanced/chaos_engineering/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_43_ci_cd_advanced/chaos_engineering/test_algorithm.py)
-

@@ -1,14 +1,13 @@
 # Binary Search Tree
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Binary Search Tree Flowchart:
@@ -49,9 +48,7 @@ Binary Search Tree Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Binary Search Tree Step-by-Step Execution:
@@ -75,9 +72,7 @@ Step 3: Check remaining (index 3, value 7)
 Found! Index 3
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -90,9 +85,8 @@ flowchart TD
     More -->|No| NotFound([Not Found])
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_01/lecture_05_trees/binary_search_tree/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_05_trees/binary_search_tree/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_05_trees/binary_search_tree/test_algorithm.py)
-

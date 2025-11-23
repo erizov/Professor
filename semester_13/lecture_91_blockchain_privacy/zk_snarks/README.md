@@ -1,14 +1,13 @@
 # ZK-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 ZK-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge) Flowchart:
@@ -43,9 +42,7 @@ ZK-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge) Flowc
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 ZK-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_91_blockchain_privacy/zk_snarks/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_91_blockchain_privacy/zk_snarks/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_91_blockchain_privacy/zk_snarks/test_algorithm.py)
-
 
    ZK-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge)
 
@@ -95,7 +89,8 @@ Intuition (plain-language explanation)
 Like compact private proofs: ZK-SNARKs are like compact private proofs - you prove something privately (like ZK proofs) but the proof is small and doesn't require interaction - just as compact proofs are efficient, ZK-SNARKs provide efficient private proofs.
 
 Inputs & Outputs  
-   - Input: Secret witness, public statement, circuit, trusted setup, proving key, verification key.  
+
+  - Input: Secret witness, public statement, circuit, trusted setup, proving key, verification key.  
 - Output: ZK-SNARK proofs, succinct proofs, verifiable proofs, private verification, efficient proofs.
 
 Step-by-step description (5–10 lines max)  
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    ZK-SNARKs: statement: transaction valid → circuit: represent as circuit → prove: generate ZK-SNARK → verify: verify in milliseconds → result: valid transaction, private details hidden → ZK-SNARKs successful.
 
 Time & Space Complexity  
-   - Time: O(c) where c is circuit size (proof generation), O(1) for verification (constant time).  
-   - Space: O(1) for proof size (succinct, constant size regardless of witness size).
+
+  - Time: O(c) where c is circuit size (proof generation), O(1) for verification (constant time).  
+  - Space: O(1) for proof size (succinct, constant size regardless of witness size).
 
 Strengths  
+
 - Succinct: very small proof size.
 - Fast: fast verification (constant time).
 - Privacy: enables strong privacy.
 
 Weaknesses / limitations  
+
 - Setup: requires trusted setup ceremony.
 - Complexity: circuit design is complex.
 - Trust: trusted setup requires trust.

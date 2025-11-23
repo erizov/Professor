@@ -1,14 +1,13 @@
 # bcrypt Password Hashing
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 
@@ -48,9 +47,7 @@ bcrypt Password Hashing Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 bcrypt Password Hashing Step-by-Step Execution:
@@ -69,9 +66,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -84,9 +79,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_04/lecture_18_crypto_algorithms/bcrypt/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_18_crypto_algorithms/bcrypt/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_18_crypto_algorithms/bcrypt/test_algorithm.py)
-

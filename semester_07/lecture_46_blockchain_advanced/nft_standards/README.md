@@ -1,14 +1,13 @@
 # NFT Standards
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 NFT Standards Flowchart:
@@ -43,9 +42,7 @@ NFT Standards Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 NFT Standards Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_07/lecture_46_blockchain_advanced/nft_standards/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_46_blockchain_advanced/nft_standards/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_46_blockchain_advanced/nft_standards/test_algorithm.py)
-
 
    NFT Standards
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like product barcodes: NFTs need standard formats (like barcodes on products) so different systems can understand and trade them - NFT standards define how to create, transfer, and query NFTs, ensuring they work the same way everywhere (like how all barcodes follow the same format).
 
 Inputs & Outputs  
-   - Input: NFT metadata, token ID, owner address, standard interface (ERC-721, ERC-1155, etc.).  
-   - Output: Standardized NFT contract, token with unique ID, metadata URI, transferable asset.
+
+  - Input: NFT metadata, token ID, owner address, standard interface (ERC-721, ERC-1155, etc.).  
+  - Output: Standardized NFT contract, token with unique ID, metadata URI, transferable asset.
 
 Step-by-step description (5–10 lines max)  
 Choose standard: select NFT standard (ERC-721 for unique, ERC-1155 for semi-fungible).
@@ -112,15 +107,18 @@ Tiny example (hand-simulated)
    Create NFT collection → implement ERC-721 standard → mint token #1 with metadata (name: 'Cool Art', image: ipfs://.../art1.png) → assign to user → user transfers to marketplace → marketplace reads standard interface → displays NFT → user sells → buyer receives NFT → all using standard functions.
 
 Time & Space Complexity  
-   - Time: O(1) for standard operations (mint, transfer, query), O(1) for metadata retrieval.  
-   - Space: O(1) per NFT (token ID and owner), O(m) for metadata where m is metadata size.
+
+  - Time: O(1) for standard operations (mint, transfer, query), O(1) for metadata retrieval.  
+  - Space: O(1) per NFT (token ID and owner), O(m) for metadata where m is metadata size.
 
 Strengths  
+
 - Interoperability: NFTs work across all compatible marketplaces and wallets.
 - Composability: standard interface enables building on top of NFTs.
 - Consistency: predictable behavior across different implementations.
 
 Weaknesses / limitations  
+
 - Flexibility: standards may limit customization options.
 - Evolution: standards evolve, requiring updates for new features.
 - Metadata: off-chain metadata may become unavailable if storage fails.

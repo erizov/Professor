@@ -1,14 +1,13 @@
 # Partitioning Strategies
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Partitioning Strategies Flowchart:
@@ -43,9 +42,7 @@ Partitioning Strategies Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Partitioning Strategies Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_15/lecture_104_database_performance/partitioning_strategies/algorithm.py)
 - [Java Implementation](/code/semester_15/lecture_104_database_performance/partitioning_strategies/Algorithm.java)
 - [Python Tests](/code/semester_15/lecture_104_database_performance/partitioning_strategies/test_algorithm.py)
-
-
-   Partitioning Strategies
 
 What problem does it solve? (1 sentence)  
 Implements partitioning strategies algorithm.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Partitioning Strategies is a fundamental algorithm in computer science.
 
 Inputs & Outputs  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+
+  - Input: Algorithm-specific inputs  
+  - Output: Algorithm-specific outputs
 
 Step-by-step description (5–10 lines max)  
 Initialize data structures
@@ -107,13 +100,16 @@ Tiny example (hand-simulated)
    Example: Partitioning Strategies applied to sample data.
 
 Time & Space Complexity  
-   - Time: Varies  
-   - Space: Varies
+
+  - Time: Varies  
+  - Space: Varies
 
 Strengths  
+
 - Efficient for specific use cases
 
 Weaknesses / limitations  
+
 - May have limitations in certain scenarios
 
 Compare with alternatives  

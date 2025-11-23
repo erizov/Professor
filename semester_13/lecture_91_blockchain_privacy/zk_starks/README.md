@@ -1,14 +1,13 @@
 # ZK-STARKs (Zero-Knowledge Scalable Transparent Arguments of Knowledge)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 ZK-STARKs (Zero-Knowledge Scalable Transparent Arguments of Knowledge) Flowchart:
@@ -43,9 +42,7 @@ ZK-STARKs (Zero-Knowledge Scalable Transparent Arguments of Knowledge) Flowchart
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 ZK-STARKs (Zero-Knowledge Scalable Transparent Arguments of Knowledge) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_91_blockchain_privacy/zk_starks/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_91_blockchain_privacy/zk_starks/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_91_blockchain_privacy/zk_starks/test_algorithm.py)
-
 
    ZK-STARKs (Zero-Knowledge Scalable Transparent Arguments of Knowledge)
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like transparent private proofs: ZK-STARKs are like transparent private proofs - you prove something privately (like ZK proofs) but without needing trusted setup (transparent) - just as transparent processes don't need trust, ZK-STARKs don't need trusted setup.
 
 Inputs & Outputs  
-   - Input: Secret witness, public statement, computation, transparent setup, proof parameters.  
-   - Output: ZK-STARK proofs, transparent proofs, verifiable proofs, private verification, scalable proofs.
+
+  - Input: Secret witness, public statement, computation, transparent setup, proof parameters.  
+  - Output: ZK-STARK proofs, transparent proofs, verifiable proofs, private verification, scalable proofs.
 
 Step-by-step description (5–10 lines max)  
 Setup: perform transparent setup (no trust needed).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    ZK-STARKs: statement: computation result correct → compute: represent computation → prove: generate ZK-STARK → verify: verify transparently → result: computation verified, inputs private → ZK-STARKs successful.
 
 Time & Space Complexity  
-   - Time: O(n log n) where n is computation size (proof generation), O(log n) for verification.  
-   - Space: O(log n) where n is computation size (proof size, logarithmic).
+
+  - Time: O(n log n) where n is computation size (proof generation), O(log n) for verification.  
+  - Space: O(log n) where n is computation size (proof size, logarithmic).
 
 Strengths  
+
 - Transparency: no trusted setup required.
 - Scalability: efficient for large computations.
 - Security: post-quantum secure.
 
 Weaknesses / limitations  
+
 - Proof size: larger proof size than SNARKs.
 - Complexity: STARK construction is complex.
 - Verification: verification time is logarithmic (vs constant for SNARKs).

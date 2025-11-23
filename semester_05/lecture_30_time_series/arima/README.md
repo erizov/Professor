@@ -1,14 +1,13 @@
 # ARIMA (AutoRegressive Integrated Moving Average)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 ARIMA (AutoRegressive Integrated Moving Average) Flowchart:
@@ -43,9 +42,7 @@ ARIMA (AutoRegressive Integrated Moving Average) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 ARIMA (AutoRegressive Integrated Moving Average) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_05/lecture_30_time_series/arima/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_30_time_series/arima/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_30_time_series/arima/test_algorithm.py)
-

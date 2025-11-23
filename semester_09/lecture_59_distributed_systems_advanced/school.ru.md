@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 59 Distributed Systems Advanced — distributed systems - demonstration. this lecture covers distributed systems algorithms and consensus.
+Лекция 59 Distributed Systems Продвинутый — distributed systems - demonstration. this лекция covers distributed systems algorithms and consensus.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 59 Distributed Systems Advanced — distributed systems - demonstration.
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 59 distributed systems advanced:
+Рассмотрим конкретный пример работы лекция 59 distributed systems продвинутый:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 59 Distributed Systems Advanced — distributed systems - demonstration.
 
 ### Базовые
 
-1. Что делает алгоритм lecture 59 distributed systems advanced?
-2. В каких ситуациях используется lecture 59 distributed systems advanced?
+1. Что делает алгоритм лекция 59 distributed systems продвинутый?
+2. В каких ситуациях используется лекция 59 distributed systems продвинутый?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 59 distributed systems advanced обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 59 distributed systems advanced?
-3. Можно ли улучшить работу lecture 59 distributed systems advanced?
+1. Как лекция 59 distributed systems продвинутый обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 59 distributed systems продвинутый?
+3. Можно ли улучшить работу лекция 59 distributed systems продвинутый?
 
 ### Сложные
 
-1. Какова временная сложность lecture 59 distributed systems advanced?
-2. Как lecture 59 distributed systems advanced работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 59 distributed systems advanced?
+1. Какова временная сложность лекция 59 distributed systems продвинутый?
+2. Как лекция 59 distributed systems продвинутый работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 59 distributed systems продвинутый?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 59 distributed systems advanced.
+Выполни простую операцию с алгоритмом лекция 59 distributed systems продвинутый.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 59 distributed systems advanced к более сложному набору данных.
+Примени алгоритм лекция 59 distributed systems продвинутый к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 59 distributed systems advanced на языке программирования.
+Напиши реализацию алгоритма лекция 59 distributed systems продвинутый на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

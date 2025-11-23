@@ -1,14 +1,13 @@
 # Parallel Prefix (Scan)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Parallel Prefix (Scan) Flowchart:
@@ -43,9 +42,7 @@ Parallel Prefix (Scan) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Parallel Prefix (Scan) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_58_parallel_computing/parallel_prefix/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_58_parallel_computing/parallel_prefix/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_58_parallel_computing/parallel_prefix/test_algorithm.py)
-
 
    Parallel Prefix (Scan)
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like calculating running totals in parallel: parallel prefix is like calculating running totals for a list of numbers, but doing it in parallel - instead of calculating each total sequentially (1, 1+2, 1+2+3, ...), you use a tree structure where you combine results at different levels, allowing multiple calculations to happen simultaneously - it's like having multiple people calculate different parts of the running totals and then combining their results.
 
 Inputs & Outputs  
-   - Input: Array of values, associative binary operation (addition, multiplication, maximum, etc.), number of processors.  
-   - Output: Prefix array (scan results), parallel computation, cumulative values.
+
+  - Input: Array of values, associative binary operation (addition, multiplication, maximum, etc.), number of processors.  
+  - Output: Prefix array (scan results), parallel computation, cumulative values.
 
 Step-by-step description (5–10 lines max)  
 Up-sweep: build binary tree, compute partial results bottom-up (upward pass).
@@ -113,15 +108,18 @@ Tiny example (hand-simulated)
    Parallel prefix: array [1, 2, 3, 4, 5] → up-sweep: build tree, compute sums → level 1: 1, 2, 3, 4, 5 → level 2: 3, 7, 5 → level 3: 10, 5 → root: 15 → down-sweep: propagate → prefix sums: [1, 3, 6, 10, 15] → parallel execution → O(log n) time with n processors.
 
 Time & Space Complexity  
-   - Time: O(log n) with n processors, O(n) with single processor where n is array size.  
-   - Space: O(n) where n is array size (tree structure and output array).
+
+  - Time: O(log n) with n processors, O(n) with single processor where n is array size.  
+  - Space: O(n) where n is array size (tree structure and output array).
 
 Strengths  
+
 - Efficiency: O(log n) parallel time complexity.
 - Versatility: works with any associative operation.
 - Scalability: scales well with number of processors.
 
 Weaknesses / limitations  
+
 - Complexity: algorithm is more complex than sequential scan.
 - Overhead: tree construction and communication overhead.
 - Associativity: requires associative operation (not all operations are associative).

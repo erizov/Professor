@@ -1,14 +1,13 @@
 # Smart Contracts
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Smart Contracts Flowchart:
@@ -43,9 +42,7 @@ Smart Contracts Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Smart Contracts Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_07/lecture_45_blockchain_fundamentals/smart_contracts/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_45_blockchain_fundamentals/smart_contracts/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_45_blockchain_fundamentals/smart_contracts/test_algorithm.py)
-
-
-   Smart Contracts
 
 What problem does it solve? (1 sentence)  
    Executes programmable code automatically on blockchain when conditions are met, enabling trustless automation of agreements and decentralized applications without intermediaries.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a vending machine: you put in money (send transaction) and select a product (call function) - the machine automatically gives you the product (executes code) without needing a cashier. Smart contracts are like vending machines on blockchain: code that automatically executes when conditions are met, with no one able to stop or change it once deployed.
 
 Inputs & Outputs  
-   - Input: Contract code, function calls, transaction data, blockchain state, gas (execution fee).  
-   - Output: Contract execution results, state changes, events, transaction receipts.
+
+  - Input: Contract code, function calls, transaction data, blockchain state, gas (execution fee).  
+  - Output: Contract execution results, state changes, events, transaction receipts.
 
 Step-by-step description (5–10 lines max)  
 Deploy contract: developer writes and deploys smart contract code to blockchain.
@@ -113,15 +106,18 @@ Tiny example (hand-simulated)
    Deploy 'Token' contract → user calls transfer(recipient, amount) → contract checks sender balance → if sufficient, deducts from sender, adds to recipient → emits Transfer event → transaction recorded → balance updated on blockchain → no intermediary needed.
 
 Time & Space Complexity  
-   - Time: O(1) per operation typically, but depends on contract complexity (gas limits prevent infinite loops).  
-   - Space: O(1) per contract variable, O(n) for arrays/mappings where n is data size.
+
+  - Time: O(1) per operation typically, but depends on contract complexity (gas limits prevent infinite loops).  
+  - Space: O(1) per contract variable, O(n) for arrays/mappings where n is data size.
 
 Strengths  
+
 - Trustless: code executes automatically without trusted third party.
 - Transparent: contract code and execution visible to all.
 - Immutable: once deployed, contract cannot be changed (unless designed to be upgradeable).
 
 Weaknesses / limitations  
+
 - Irreversible: bugs cannot be fixed easily (code is immutable).
 - Gas costs: execution requires payment (can be expensive for complex operations).
 - Limited expressiveness: constrained by blockchain's computational model.

@@ -1,14 +1,13 @@
 # Multi Chain Apps
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Multi Chain Apps Flowchart:
@@ -43,9 +42,7 @@ Multi Chain Apps Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Multi Chain Apps Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_92_blockchain_interoperability/multi_chain_apps/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_92_blockchain_interoperability/multi_chain_apps/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_92_blockchain_interoperability/multi_chain_apps/test_algorithm.py)
-
-
-   Multi Chain Apps
 
 What problem does it solve? (1 sentence)  
    Implements applications that operate across multiple blockchains simultaneously, leveraging different chains for different purposes and providing unified user experiences across chains.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like apps on multiple platforms: Multi Chain Apps are like apps that work on multiple platforms - you build one app (like a cross-platform app) that works on multiple blockchains - just as cross-platform apps work everywhere, multi-chain apps work across blockchains.
 
 Inputs & Outputs  
-   - Input: User requests, multiple blockchains, app logic, chain selection, cross-chain operations.  
-   - Output: Multi-chain applications, unified experiences, cross-chain functionality, optimized operations, seamless apps.
+
+  - Input: User requests, multiple blockchains, app logic, chain selection, cross-chain operations.  
+  - Output: Multi-chain applications, unified experiences, cross-chain functionality, optimized operations, seamless apps.
 
 Step-by-step description (5–10 lines max)  
 Design: design app for multiple chains.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Multi Chain Apps: app: DeFi protocol → deploy: deploy on Ethereum, Polygon, Arbitrum → route: route transactions to cheapest chain → execute: execute on selected chain → result: unified DeFi experience across chains → Multi Chain Apps successful.
 
 Time & Space Complexity  
-   - Time: O(r + e) where r is routing time, e is execution time (varies by chain selection).  
-   - Space: O(a + c) where a is app storage, c is chain storage (app and chain data).
+
+  - Time: O(r + e) where r is routing time, e is execution time (varies by chain selection).  
+  - Space: O(a + c) where a is app storage, c is chain storage (app and chain data).
 
 Strengths  
+
 - Flexibility: leverages strengths of different chains.
 - User experience: provides unified user experience.
 - Optimization: optimizes for cost and performance.
 
 Weaknesses / limitations  
+
 - Complexity: multi-chain apps are complex.
 - State: managing state across chains is challenging.
 - Testing: testing across chains is complex.

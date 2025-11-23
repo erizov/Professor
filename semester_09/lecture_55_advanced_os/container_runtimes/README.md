@@ -1,14 +1,13 @@
 # Container Runtimes
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Container Runtimes Flowchart:
@@ -43,9 +42,7 @@ Container Runtimes Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Container Runtimes Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_55_advanced_os/container_runtimes/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_55_advanced_os/container_runtimes/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_55_advanced_os/container_runtimes/test_algorithm.py)
-
-
-   Container Runtimes
 
 What problem does it solve? (1 sentence)  
    Manages the execution and lifecycle of containers, providing isolation, resource management, and low-level container operations for containerized applications.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a container ship's engine room: container runtimes are like the engine room that powers container ships (containers) - they handle the low-level operations like starting containers (starting engines), managing resources (fuel allocation), providing isolation (separate engine rooms), and stopping containers (shutting down engines) - they're the foundation that makes containers work, similar to how an engine room makes a ship move.
 
 Inputs & Outputs  
-   - Input: Container images, runtime configuration, resource limits, network settings, storage mounts.  
-   - Output: Running containers, isolated processes, managed resources, container lifecycle.
+
+  - Input: Container images, runtime configuration, resource limits, network settings, storage mounts.  
+  - Output: Running containers, isolated processes, managed resources, container lifecycle.
 
 Step-by-step description (5–10 lines max)  
 Pull image: download container image from registry.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Container runtime: Docker → pull image: docker pull nginx:latest → create container: docker create --name web --memory 512m nginx → start: docker start web → container running with isolation → manage: monitor CPU, memory usage → stop: docker stop web → remove: docker rm web → container lifecycle managed.
 
 Time & Space Complexity  
-   - Time: O(1) for container operations (start, stop), O(i) for image operations where i is image size.  
-   - Space: O(i + r) where i is image size, r is runtime overhead per container.
+
+  - Time: O(1) for container operations (start, stop), O(i) for image operations where i is image size.  
+  - Space: O(i + r) where i is image size, r is runtime overhead per container.
 
 Strengths  
+
 - Isolation: provides strong process and resource isolation.
 - Portability: containers run consistently across different environments.
 - Efficiency: lightweight compared to virtual machines.
 
 Weaknesses / limitations  
+
 - Security: containers share host kernel (less isolation than VMs).
 - Complexity: managing container runtimes and orchestration can be complex.
 - Resource limits: requires careful resource management to prevent resource exhaustion.

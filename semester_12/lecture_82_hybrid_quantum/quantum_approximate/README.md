@@ -1,14 +1,13 @@
 # Quantum Approximate Optimization Algorithm (QAOA)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Approximate Optimization Algorithm (QAOA) Flowchart:
@@ -43,9 +42,7 @@ Quantum Approximate Optimization Algorithm (QAOA) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Approximate Optimization Algorithm (QAOA) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_82_hybrid_quantum/quantum_approximate/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_82_hybrid_quantum/quantum_approximate/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_82_hybrid_quantum/quantum_approximate/test_algorithm.py)
-
 
 Quantum Approximate Optimization Algorithm (QAOA)
 
@@ -95,6 +89,7 @@ Intuition (plain-language explanation)
 Like a quantum-classical dance: QAOA is like a dance between quantum and classical computers - the quantum computer explores the solution space using quantum superposition (trying many solutions at once), while the classical computer fine-tunes the quantum operations (adjusting the dance steps) - together they find good approximate solutions to hard optimization problems.
 
 Inputs & Outputs  
+
 - Input: Optimization problem (cost function, constraints), number of layers (p), initial parameters, quantum device, classical optimizer.
 - Output: Approximate optimal solution, optimized parameters, solution quality, convergence metrics.
 
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    QAOA for MaxCut: encode graph as Hamiltonian → initialize superposition → apply 2 layers (p=2) → measure → get cut value 3 → optimize parameters → repeat → converge → best cut value 4 → QAOA successful.
 
 Time & Space Complexity  
-   - Time: O(p * (q + c)) where p is layers, q is quantum evolution time, c is classical optimization time (hybrid complexity).  
-   - Space: O(n) qubits for n-variable problem (quantum state space).
+
+  - Time: O(p * (q + c)) where p is layers, q is quantum evolution time, c is classical optimization time (hybrid complexity).  
+  - Space: O(n) qubits for n-variable problem (quantum state space).
 
 Strengths  
+
 - Hybrid: combines quantum and classical advantages.
 - Flexible: works for various optimization problems.
 - Near-term: suitable for near-term quantum devices.
 
 Weaknesses / limitations  
+
 - Approximate: provides approximate solutions, not exact.
 - Parameters: requires careful parameter tuning.
 - Scaling: performance depends on problem structure.

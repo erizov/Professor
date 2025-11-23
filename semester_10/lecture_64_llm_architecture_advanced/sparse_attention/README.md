@@ -1,14 +1,13 @@
 # Sparse Attention
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Sparse Attention Flowchart:
@@ -43,9 +42,7 @@ Sparse Attention Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Sparse Attention Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_64_llm_architecture_advanced/sparse_attention/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_64_llm_architecture_advanced/sparse_attention/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_64_llm_architecture_advanced/sparse_attention/test_algorithm.py)
-
-
-   Sparse Attention
 
 What problem does it solve? (1 sentence)  
 Reduces the quadratic complexity of attention mechanisms by computing attention only over a sparse subset of positions, enabling efficient processing of long sequences while maintaining model performance.
@@ -95,7 +87,8 @@ Intuition (plain-language explanation)
    Like selective reading: sparse attention is like reading a book but only paying close attention to important pages - instead of reading every word carefully (full attention, O(n²)), you skim most pages and focus on key sections (sparse attention, O(n√n) or O(n log n)) - you still understand the book, but much faster, and you can handle much longer books (sequences) this way.
 
 Inputs & Outputs  
-   - Input: Query, key, value matrices, attention pattern, sparsity strategy, sequence length.  
+
+  - Input: Query, key, value matrices, attention pattern, sparsity strategy, sequence length.  
 - Output: Sparse attention output, efficient computation, reduced memory, long sequence processing.
 
 Step-by-step description (5–10 lines max)  
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Sparse attention: sequence length 10K → full attention: 10K×10K = 100M operations → sparse: local window (512) + strided (every 64th) → attend to: 512 + 156 = 668 positions → operations: 10K×668 = 6.68M (15x reduction) → performance: 95% of full attention → sparse attention efficient.
 
 Time & Space Complexity  
-   - Time: O(n·k) where n is sequence length, k is sparse attention size (k << n), vs O(n²) for full attention.  
-   - Space: O(n·k) where k is sparse attention size (much less than O(n²) for full attention matrix).
+
+  - Time: O(n·k) where n is sequence length, k is sparse attention size (k << n), vs O(n²) for full attention.  
+  - Space: O(n·k) where k is sparse attention size (much less than O(n²) for full attention matrix).
 
 Strengths  
+
 - Efficiency: dramatically reduces computational and memory requirements.
 - Scalability: enables processing of much longer sequences.
 - Performance: can maintain good performance with careful pattern design.
 
 Weaknesses / limitations  
+
 - Pattern design: requires careful design of attention patterns.
 - Information loss: may miss some long-range dependencies.
 - Complexity: implementing efficient sparse attention can be complex.

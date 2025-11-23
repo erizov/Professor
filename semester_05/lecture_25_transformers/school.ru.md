@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 25 Transformers — transformers - demonstration. this lecture covers transformers algorithms and techniques.
+Лекция 25 Transformers — transformers - demonstration. this лекция covers transformers algorithms and techniques.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 25 Transformers — transformers - demonstration. this lecture covers tr
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 25 transformers:
+Рассмотрим конкретный пример работы лекция 25 transformers:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 25 Transformers — transformers - demonstration. this lecture covers tr
 
 ### Базовые
 
-1. Что делает алгоритм lecture 25 transformers?
-2. В каких ситуациях используется lecture 25 transformers?
+1. Что делает алгоритм лекция 25 transformers?
+2. В каких ситуациях используется лекция 25 transformers?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 25 transformers обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 25 transformers?
-3. Можно ли улучшить работу lecture 25 transformers?
+1. Как лекция 25 transformers обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 25 transformers?
+3. Можно ли улучшить работу лекция 25 transformers?
 
 ### Сложные
 
-1. Какова временная сложность lecture 25 transformers?
-2. Как lecture 25 transformers работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 25 transformers?
+1. Какова временная сложность лекция 25 transformers?
+2. Как лекция 25 transformers работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 25 transformers?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 25 transformers.
+Выполни простую операцию с алгоритмом лекция 25 transformers.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 25 transformers к более сложному набору данных.
+Примени алгоритм лекция 25 transformers к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 25 transformers на языке программирования.
+Напиши реализацию алгоритма лекция 25 transformers на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

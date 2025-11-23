@@ -1,14 +1,13 @@
 # Workflow Automation
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Workflow Automation Flowchart:
@@ -43,9 +42,7 @@ Workflow Automation Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Workflow Automation Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_74_automation_advanced/workflow_automation/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_74_automation_advanced/workflow_automation/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_74_automation_advanced/workflow_automation/test_algorithm.py)
-
-
-   Workflow Automation
 
 What problem does it solve? (1 sentence)  
    Automates complex business and technical workflows by orchestrating multiple steps, tasks, and systems, reducing manual effort and improving efficiency and consistency.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a production line: Workflow Automation is like an automated production line - instead of workers manually doing each step (manual workflow), machines do the steps automatically in sequence (automated workflow) - just as production lines make manufacturing faster and more consistent, workflow automation makes business processes faster and more reliable.
 
 Inputs & Outputs  
-   - Input: Workflow definitions, tasks, triggers, conditions, data, system integrations.  
-   - Output: Automated workflows, executed tasks, workflow results, efficiency gains, consistent processes.
+
+  - Input: Workflow definitions, tasks, triggers, conditions, data, system integrations.  
+  - Output: Automated workflows, executed tasks, workflow results, efficiency gains, consistent processes.
 
 Step-by-step description (5–10 lines max)  
 Define workflow: define workflow steps and dependencies.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Workflow Automation: trigger: new order → step 1: validate order → step 2: check inventory → step 3: process payment → step 4: send confirmation → step 5: update inventory → result: order processed automatically → Workflow Automation successful.
 
 Time & Space Complexity  
-   - Time: O(s·t) where s is number of steps, t is time per step (varies by workflow complexity).  
-   - Space: O(w + d) where w is workflow definition storage, d is data storage (workflow state).
+
+  - Time: O(s·t) where s is number of steps, t is time per step (varies by workflow complexity).  
+  - Space: O(w + d) where w is workflow definition storage, d is data storage (workflow state).
 
 Strengths  
+
 - Efficiency: automates repetitive tasks, saving time.
 - Consistency: ensures consistent process execution.
 - Reliability: reduces human error through automation.
 
 Weaknesses / limitations  
+
 - Complexity: complex workflows can be difficult to design.
 - Flexibility: may be less flexible than manual processes.
 - Maintenance: workflows require maintenance and updates.

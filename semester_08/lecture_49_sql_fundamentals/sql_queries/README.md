@@ -1,14 +1,13 @@
 # SQL Queries
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 SQL Queries Flowchart:
@@ -43,9 +42,7 @@ SQL Queries Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 SQL Queries Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_49_sql_fundamentals/sql_queries/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_49_sql_fundamentals/sql_queries/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_49_sql_fundamentals/sql_queries/test_algorithm.py)
-
 
    SQL Queries
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Describe the desired result set while the optimizer chooses an execution plan.
 
 Inputs & Outputs  
-   - Input: SQL statement (SELECT/INSERT/UPDATE/DELETE) plus database schema/data.  
-   - Output: Result set, affected row count, or updated storage state.
+
+  - Input: SQL statement (SELECT/INSERT/UPDATE/DELETE) plus database schema/data.  
+  - Output: Result set, affected row count, or updated storage state.
 
 Step-by-step description (5–10 lines max)  
 Parse the SQL statement.
@@ -109,14 +104,17 @@ Tiny example (hand-simulated)
    SELECT name FROM customers WHERE country='Canada'; returns matching customer names.
 
 Time & Space Complexity  
-   - Time: Varies; indexed lookups approach O(log n), full scans O(n).  
-   - Space: Driven by execution plan (temporary joins, sorting buffers).
+
+  - Time: Varies; indexed lookups approach O(log n), full scans O(n).  
+  - Space: Driven by execution plan (temporary joins, sorting buffers).
 
 Strengths  
+
 - Declarative syntax hides implementation details.
 - Mature optimizers leverage indexes and caches.
 
 Weaknesses / limitations  
+
 - Poorly written queries can degrade to full scans.
 - Requires understanding of indexes and statistics for tuning.
 

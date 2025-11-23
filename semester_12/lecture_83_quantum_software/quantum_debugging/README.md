@@ -1,14 +1,13 @@
 # Quantum Debugging
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Debugging Flowchart:
@@ -43,9 +42,7 @@ Quantum Debugging Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Debugging Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_83_quantum_software/quantum_debugging/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_83_quantum_software/quantum_debugging/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_83_quantum_software/quantum_debugging/test_algorithm.py)
-
-
-   Quantum Debugging
 
 What problem does it solve? (1 sentence)  
    Debugs quantum programs and circuits by identifying errors, analyzing quantum state evolution, and validating quantum operations, addressing unique challenges of quantum computing like superposition and measurement.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like debugging for quantum: Quantum Debugging is like debugging but for quantum programs - you find bugs (errors) in quantum circuits, but it's harder because quantum states are probabilistic and measurement destroys them - just as you debug classical programs, you debug quantum programs, but with quantum-specific challenges.
 
 Inputs & Outputs  
-   - Input: Quantum programs, circuits, expected behavior, quantum states, measurement results, error models.  
-   - Output: Debugged programs, error identification, corrected circuits, validation results, debugging reports.
+
+  - Input: Quantum programs, circuits, expected behavior, quantum states, measurement results, error models.  
+  - Output: Debugged programs, error identification, corrected circuits, validation results, debugging reports.
 
 Step-by-step description (5–10 lines max)  
 Identify: identify unexpected behavior or errors.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Debugging: program: Grover's algorithm not working → analyze: circuit structure → simulate: trace state evolution → identify: oracle error → fix: correct oracle → validate: algorithm works → result: debugged quantum program → Quantum Debugging successful.
 
 Time & Space Complexity  
-   - Time: O(d + s + a) where d is debugging time, s is simulation time, a is analysis time (varies by complexity).  
-   - Space: O(n + d) where n is qubits, d is debugging data storage (state snapshots, traces).
+
+  - Time: O(d + s + a) where d is debugging time, s is simulation time, a is analysis time (varies by complexity).  
+  - Space: O(n + d) where n is qubits, d is debugging data storage (state snapshots, traces).
 
 Strengths  
+
 - Error detection: helps identify errors in quantum programs.
 - Validation: validates quantum program correctness.
 - Learning: helps understand quantum program behavior.
 
 Weaknesses / limitations  
+
 - Measurement: measurement destroys quantum states (challenge).
 - Probabilistic: probabilistic results complicate debugging.
 - Complexity: debugging quantum programs is complex.

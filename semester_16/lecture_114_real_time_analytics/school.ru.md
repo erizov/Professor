@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 114 Real Time Analytics — data engineering - demonstration. this lecture covers data engineering patterns and pipelines.
+Лекция 114 Real Время Analytics — инженерия данных - demonstration. this лекция covers инженерия данных patterns and pipelines.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 114 Real Time Analytics — data engineering - demonstration. this lectu
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 114 real time analytics:
+Рассмотрим конкретный пример работы лекция 114 real время analytics:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 114 Real Time Analytics — data engineering - demonstration. this lectu
 
 ### Базовые
 
-1. Что делает алгоритм lecture 114 real time analytics?
-2. В каких ситуациях используется lecture 114 real time analytics?
+1. Что делает алгоритм лекция 114 real время analytics?
+2. В каких ситуациях используется лекция 114 real время analytics?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 114 real time analytics обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 114 real time analytics?
-3. Можно ли улучшить работу lecture 114 real time analytics?
+1. Как лекция 114 real время analytics обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 114 real время analytics?
+3. Можно ли улучшить работу лекция 114 real время analytics?
 
 ### Сложные
 
-1. Какова временная сложность lecture 114 real time analytics?
-2. Как lecture 114 real time analytics работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 114 real time analytics?
+1. Какова временная сложность лекция 114 real время analytics?
+2. Как лекция 114 real время analytics работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 114 real время analytics?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 114 real time analytics.
+Выполни простую операцию с алгоритмом лекция 114 real время analytics.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 114 real time analytics к более сложному набору данных.
+Примени алгоритм лекция 114 real время analytics к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 114 real time analytics на языке программирования.
+Напиши реализацию алгоритма лекция 114 real время analytics на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

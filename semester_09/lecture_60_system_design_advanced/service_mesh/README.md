@@ -1,14 +1,13 @@
 # Service Mesh
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Service Mesh Flowchart:
@@ -43,9 +42,7 @@ Service Mesh Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Service Mesh Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_60_system_design_advanced/service_mesh/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_60_system_design_advanced/service_mesh/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_60_system_design_advanced/service_mesh/test_algorithm.py)
-
-
-   Service Mesh
 
 What problem does it solve? (1 sentence)  
    Provides a dedicated infrastructure layer for handling service-to-service communication, managing traffic, security, and observability without modifying application code.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a traffic management system: Service Mesh is like a traffic management system for services - instead of each service handling its own traffic rules (routing, security, monitoring), there's a dedicated system (mesh) that manages all service-to-service communication - just as traffic lights and signs manage road traffic, a service mesh manages service traffic, making it easier to control, secure, and monitor all service communications.
 
 Inputs & Outputs  
-   - Input: Service deployments, traffic policies, security policies, routing rules, observability config.  
-   - Output: Managed service communication, secured traffic, observable traffic, load-balanced requests, resilient connections.
+
+  - Input: Service deployments, traffic policies, security policies, routing rules, observability config.  
+  - Output: Managed service communication, secured traffic, observable traffic, load-balanced requests, resilient connections.
 
 Step-by-step description (5–10 lines max)  
 Deploy: deploy services with sidecar proxies (service mesh).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Service Mesh: service A → sidecar proxy → mesh → sidecar proxy → service B → mesh: routes, secures (mTLS), load balances, retries, monitors → services: focus on business logic → Service Mesh operational.
 
 Time & Space Complexity  
-   - Time: O(1) for routing per request, O(n) for policy evaluation where n is policy rules.  
-   - Space: O(p + s) where p is proxy overhead per service, s is mesh control plane storage.
+
+  - Time: O(1) for routing per request, O(n) for policy evaluation where n is policy rules.  
+  - Space: O(p + s) where p is proxy overhead per service, s is mesh control plane storage.
 
 Strengths  
+
 - Separation: separates communication concerns from business logic.
 - Consistency: consistent communication patterns across services.
 - Observability: built-in observability for all service communication.
 
 Weaknesses / limitations  
+
 - Overhead: adds latency and resource overhead (sidecar proxies).
 - Complexity: service mesh itself adds operational complexity.
 - Learning curve: requires understanding mesh concepts and tools.

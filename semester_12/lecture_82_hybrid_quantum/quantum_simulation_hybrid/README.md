@@ -1,14 +1,13 @@
 # Quantum Simulation Hybrid
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Simulation Hybrid Flowchart:
@@ -43,9 +42,7 @@ Quantum Simulation Hybrid Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Simulation Hybrid Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_82_hybrid_quantum/quantum_simulation_hybrid/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_82_hybrid_quantum/quantum_simulation_hybrid/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_82_hybrid_quantum/quantum_simulation_hybrid/test_algorithm.py)
-
-
-   Quantum Simulation Hybrid
 
 What problem does it solve? (1 sentence)  
 Combines quantum simulation with classical simulation, using quantum computers for quantum parts of systems while classical computers simulate classical parts, enabling efficient simulation of hybrid quantum-classical systems.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like hybrid simulation: Quantum Simulation Hybrid combines quantum and classical simulation - you simulate quantum parts on quantum computers, and classical parts on classical computers - just as hybrid approaches combine strengths, quantum simulation hybrid combines quantum and classical simulation strengths.
 
 Inputs & Outputs  
-   - Input: Hybrid systems, quantum Hamiltonians, classical models, simulation parameters, coupling terms.  
-   - Output: Hybrid simulation results, quantum states, classical states, coupled dynamics, simulation data.
+
+  - Input: Hybrid systems, quantum Hamiltonians, classical models, simulation parameters, coupling terms.  
+  - Output: Hybrid simulation results, quantum states, classical states, coupled dynamics, simulation data.
 
 Step-by-step description (5–10 lines max)  
 Decompose: decompose system into quantum and classical parts.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Simulation Hybrid: system: molecule + environment → quantum: simulate molecule → classical: simulate environment → couple: exchange energy → evolve: time evolution → result: accurate hybrid simulation → Quantum Simulation Hybrid successful.
 
 Time & Space Complexity  
-   - Time: O(q·c·t) where q is quantum simulation time, c is classical time, t is time steps (varies by system).  
-   - Space: O(n + m) where n is qubits, m is classical state storage (hybrid storage).
+
+  - Time: O(q·c·t) where q is quantum simulation time, c is classical time, t is time steps (varies by system).  
+  - Space: O(n + m) where n is qubits, m is classical state storage (hybrid storage).
 
 Strengths  
+
 - Efficiency: enables efficient simulation of hybrid systems.
 - Accuracy: provides accurate simulation of quantum-classical coupling.
 - Practical: enables practical simulation of complex systems.
 
 Weaknesses / limitations  
+
 - Complexity: hybrid simulation is complex to design.
 - Coupling: quantum-classical coupling can be challenging.
 - Synchronization: requires synchronization between simulations.

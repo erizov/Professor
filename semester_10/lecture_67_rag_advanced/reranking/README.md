@@ -1,14 +1,13 @@
 # Re-ranking for RAG
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Re-ranking for RAG Flowchart:
@@ -43,9 +42,7 @@ Re-ranking for RAG Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Re-ranking for RAG Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_67_rag_advanced/reranking/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_67_rag_advanced/reranking/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_67_rag_advanced/reranking/test_algorithm.py)
-
 
    Re-ranking for RAG
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
 Like a second opinion: re-ranking is like getting a second opinion on search results - the initial search (first-stage retrieval) finds many potentially relevant documents quickly, then a more careful reviewer (re-ranker) looks at each document more closely in relation to your query and puts the best matches at the top - it's like having a fast initial filter (retrieval) followed by careful evaluation (re-ranking) to ensure the best results are first.
 
 Inputs & Outputs  
-   - Input: Initial retrieval results, query, re-ranking model, document texts, ranking criteria.  
-   - Output: Re-ranked results, improved ranking, top relevant documents, optimized retrieval.
+
+  - Input: Initial retrieval results, query, re-ranking model, document texts, ranking criteria.  
+  - Output: Re-ranked results, improved ranking, top relevant documents, optimized retrieval.
 
 Step-by-step description (5–10 lines max)  
 Initial retrieval: perform fast first-stage retrieval (BM25, dense retrieval).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Re-ranking: query: 'Python machine learning tutorial' → initial retrieval: BM25 finds 100 documents → re-ranker: cross-encoder scores each query-doc pair → rank: re-ranks by relevance score → result: top 10 documents are most relevant → re-ranking improves precision@10 from 60% to 85% → re-ranking successful.
 
 Time & Space Complexity  
-   - Time: O(k·r) where k is number of candidates, r is re-ranking time per document (slower than retrieval, but only on k documents).  
-   - Space: O(m) where m is re-ranker model size (cross-encoder or LLM for re-ranking).
+
+  - Time: O(k·r) where k is number of candidates, r is re-ranking time per document (slower than retrieval, but only on k documents).  
+  - Space: O(m) where m is re-ranker model size (cross-encoder or LLM for re-ranking).
 
 Strengths  
+
 - Quality: significantly improves retrieval quality and precision.
 - Precision: better precision at top-k results.
 - Flexibility: can use sophisticated models for re-ranking.
 
 Weaknesses / limitations  
+
 - Latency: re-ranking adds latency (slower than retrieval alone).
 - Cost: re-ranking with LLMs can be expensive.
 - Scalability: re-ranking many candidates can be slow.

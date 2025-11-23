@@ -1,14 +1,13 @@
 # Actor-Critic
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Actor-Critic Flowchart:
@@ -43,9 +42,7 @@ Actor-Critic Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Actor-Critic Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_05/lecture_28_reinforcement_learning/actor_critic/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_28_reinforcement_learning/actor_critic/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_28_reinforcement_learning/actor_critic/test_algorithm.py)
-

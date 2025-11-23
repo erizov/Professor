@@ -1,14 +1,13 @@
 # Natural Language Documentation
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Natural Language Documentation Flowchart:
@@ -43,9 +42,7 @@ Natural Language Documentation Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Natural Language Documentation Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_14/lecture_100_documentation_ai/natural_language_docs/algorithm.py)
 - [Java Implementation](/code/semester_14/lecture_100_documentation_ai/natural_language_docs/Algorithm.java)
 - [Python Tests](/code/semester_14/lecture_100_documentation_ai/natural_language_docs/test_algorithm.py)
-
-
-   Natural Language Documentation
 
 What problem does it solve? (1 sentence)  
    Creates documentation written in natural, conversational language that is easy to understand for developers of all skill levels, using AI to translate technical concepts into accessible explanations.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like explaining to a friend: Natural language docs are like explaining code to a friend - you use simple, conversational language (not technical jargon), give examples (real-world analogies), and make it easy to understand - this makes documentation accessible to beginners and experienced developers alike.
 
 Inputs & Outputs  
-   - Input: Technical content, documentation goals, target audience, tone preferences, examples, AI models.  
-   - Output: Natural language documentation, conversational explanations, accessible tutorials, clear examples, readable guides.
+
+  - Input: Technical content, documentation goals, target audience, tone preferences, examples, AI models.  
+  - Output: Natural language documentation, conversational explanations, accessible tutorials, clear examples, readable guides.
 
 Step-by-step description (5–10 lines max)  
 Analyze: analyze technical content and concepts.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Natural Language Docs: analyze API → simplify 'asynchronous' to 'non-blocking' → explain with analogy (like ordering food) → structure → format → review → Natural Language Docs successful.
 
 Time & Space Complexity  
-   - Time: O(c * t) where c is content size, t is translation complexity (doc generation complexity).  
-   - Space: O(c + d) where c is content, d is documentation (doc storage).
+
+  - Time: O(c * t) where c is content size, t is translation complexity (doc generation complexity).  
+  - Space: O(c + d) where c is content, d is documentation (doc storage).
 
 Strengths  
+
 - Accessibility: makes documentation accessible to all skill levels.
 - Clarity: improves clarity and understanding.
 - Engagement: more engaging than technical jargon.
 
 Weaknesses / limitations  
+
 - Precision: may lose some technical precision.
 - Length: natural language can be more verbose.
 - Maintenance: requires careful maintenance of tone.

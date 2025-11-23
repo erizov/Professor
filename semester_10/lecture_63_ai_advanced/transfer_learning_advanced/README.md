@@ -1,14 +1,13 @@
 # Advanced Transfer Learning
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Advanced Transfer Learning Flowchart:
@@ -43,9 +42,7 @@ Advanced Transfer Learning Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Advanced Transfer Learning Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_63_ai_advanced/transfer_learning_advanced/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_63_ai_advanced/transfer_learning_advanced/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_63_ai_advanced/transfer_learning_advanced/test_algorithm.py)
-
-
-   Advanced Transfer Learning
 
 What problem does it solve? (1 sentence)  
    Applies sophisticated transfer learning techniques including domain adaptation, multi-task transfer, and progressive transfer to leverage knowledge from source domains and tasks for improved performance on target tasks.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like learning from related experiences: advanced transfer learning is like a doctor who learned general medicine and then specializes - they transfer their general knowledge (source domain) to their specialty (target domain), adapting what's relevant and learning what's new - advanced transfer learning does this systematically: it identifies what knowledge transfers well, adapts it to the new domain, and progressively refines it, making learning much more efficient than starting from scratch.
 
 Inputs & Outputs  
-   - Input: Source model, source data, target data, domain adaptation strategies, transfer techniques.  
-   - Output: Transferred model, adapted knowledge, improved target task performance, domain-aligned model.
+
+  - Input: Source model, source data, target data, domain adaptation strategies, transfer techniques.  
+  - Output: Transferred model, adapted knowledge, improved target task performance, domain-aligned model.
 
 Step-by-step description (5–10 lines max)  
 Select source: choose pre-trained source model on related task or domain.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Advanced transfer learning: source: ImageNet pre-trained ResNet → target: medical X-ray classification → domain gap: natural images vs medical images → strategy: domain adaptation + fine-tuning → adapt: use adversarial domain adaptation → fine-tune: on X-ray dataset → result: 90% accuracy vs 60% from scratch → advanced transfer learning successful.
 
 Time & Space Complexity  
-   - Time: O(n_t) for fine-tuning where n_t is target data size (much less than training from scratch).  
-   - Space: O(m) where m is model size (same as source model, may add adaptation layers).
+
+  - Time: O(n_t) for fine-tuning where n_t is target data size (much less than training from scratch).  
+  - Space: O(m) where m is model size (same as source model, may add adaptation layers).
 
 Strengths  
+
 - Efficiency: requires much less target data than training from scratch.
 - Performance: often achieves better performance with less data.
 - Flexibility: supports various transfer strategies for different scenarios.
 
 Weaknesses / limitations  
+
 - Domain gap: large domain gaps may limit transfer effectiveness.
 - Negative transfer: inappropriate source may hurt performance.
 - Complexity: advanced techniques add complexity to training.

@@ -1,14 +1,13 @@
 # Transformer Optimization
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Transformer Optimization Flowchart:
@@ -43,9 +42,7 @@ Transformer Optimization Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Transformer Optimization Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_64_llm_architecture_advanced/transformer_optimization/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_64_llm_architecture_advanced/transformer_optimization/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_64_llm_architecture_advanced/transformer_optimization/test_algorithm.py)
-
-
-   Transformer Optimization
 
 What problem does it solve? (1 sentence)  
    Optimizes transformer architectures for efficiency, speed, and scalability through architectural improvements, algorithmic optimizations, and hardware-aware design while maintaining model quality.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like optimizing a car engine: transformer optimization is like optimizing a car engine for better performance and fuel efficiency - you improve the engine design (architecture), use better fuel (algorithms), and tune it for the road conditions (hardware) - the goal is to make the transformer faster, use less memory, and scale better while still delivering the same quality (like a car that goes faster, uses less fuel, but still drives smoothly).
 
 Inputs & Outputs  
-   - Input: Transformer model, optimization objectives, hardware constraints, performance requirements, quality targets.  
-   - Output: Optimized transformer, improved efficiency, faster inference, reduced memory, maintained quality.
+
+  - Input: Transformer model, optimization objectives, hardware constraints, performance requirements, quality targets.  
+  - Output: Optimized transformer, improved efficiency, faster inference, reduced memory, maintained quality.
 
 Step-by-step description (5–10 lines max)  
 Analyze: analyze transformer bottlenecks (attention, feedforward, memory).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Transformer optimization: GPT-3 → Flash Attention: 2x faster attention → gradient checkpointing: 50% memory reduction → INT8 quantization: 4x model size reduction → optimized kernels: 1.5x speedup → result: 3x faster inference, 8x smaller model, 95% quality → transformer optimized.
 
 Time & Space Complexity  
-   - Time: O(n²/d) or O(n log n) with optimizations where n is sequence length, d is optimization factor (improved from O(n²)).  
-   - Space: O(n/d) where d is memory optimization factor (reduced from O(n) through checkpointing, quantization).
+
+  - Time: O(n²/d) or O(n log n) with optimizations where n is sequence length, d is optimization factor (improved from O(n²)).  
+  - Space: O(n/d) where d is memory optimization factor (reduced from O(n) through checkpointing, quantization).
 
 Strengths  
+
 - Efficiency: significantly improves inference speed and reduces memory.
 - Scalability: enables larger models and longer sequences.
 - Deployability: makes transformers practical for resource-constrained deployments.
 
 Weaknesses / limitations  
+
 - Complexity: optimization techniques add implementation complexity.
 - Trade-offs: some optimizations may have quality trade-offs.
 - Hardware-specific: some optimizations are hardware-specific.

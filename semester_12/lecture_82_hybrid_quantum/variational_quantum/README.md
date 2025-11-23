@@ -1,14 +1,13 @@
 # Variational Quantum Algorithms (VQA)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Variational Quantum Algorithms (VQA) Flowchart:
@@ -43,9 +42,7 @@ Variational Quantum Algorithms (VQA) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Variational Quantum Algorithms (VQA) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_82_hybrid_quantum/variational_quantum/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_82_hybrid_quantum/variational_quantum/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_82_hybrid_quantum/variational_quantum/test_algorithm.py)
-
 
    Variational Quantum Algorithms (VQA)
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like training a quantum neural network: Variational quantum algorithms are like training a neural network, but the network is quantum - you have a quantum circuit with adjustable parameters (like weights), you run it on a quantum computer to get results, then use a classical computer to adjust the parameters to minimize a cost function - repeat until you find the best parameters.
 
 Inputs & Outputs  
-   - Input: Cost function, variational circuit ansatz, initial parameters, quantum device, classical optimizer, convergence criteria.  
-   - Output: Optimized parameters, minimum cost value, optimized quantum state, convergence history.
+
+  - Input: Cost function, variational circuit ansatz, initial parameters, quantum device, classical optimizer, convergence criteria.  
+  - Output: Optimized parameters, minimum cost value, optimized quantum state, convergence history.
 
 Step-by-step description (5–10 lines max)  
 Design: design variational circuit ansatz (parameterized circuit).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    VQE: design ansatz → initialize parameters → prepare |ψ(θ)⟩ → measure energy ⟨H⟩ → evaluate E(θ) = 2.5 → optimize θ → update → repeat → converge → E(θ*) = 1.8 → VQE successful.
 
 Time & Space Complexity  
-   - Time: O(i * (q + c)) where i is optimization iterations, q is quantum evaluation time, c is classical optimization time (variational complexity).  
-   - Space: O(n) qubits for n-qubit variational circuit (quantum state space).
+
+  - Time: O(i * (q + c)) where i is optimization iterations, q is quantum evaluation time, c is classical optimization time (variational complexity).  
+  - Space: O(n) qubits for n-qubit variational circuit (quantum state space).
 
 Strengths  
+
 - Near-term: suitable for noisy intermediate-scale quantum (NISQ) devices.
 - Flexible: applicable to optimization, ML, and chemistry problems.
 - Hybrid: leverages both quantum and classical advantages.
 
 Weaknesses / limitations  
+
 - Barren plateaus: optimization can get stuck in flat regions.
 - Expressibility: ansatz design is crucial and problem-dependent.
 - Convergence: may require many iterations to converge.

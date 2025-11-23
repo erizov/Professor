@@ -1,9 +1,9 @@
 # Bubble Sort
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
@@ -57,7 +57,6 @@ Bubble Sort Flowchart:
 
 ### Step-by-Step Execution
 
-
 ```
 Bubble Sort Step-by-Step Execution:
 
@@ -93,9 +92,7 @@ Result: [2, 3, 1, 5, 8]
 Final: [1, 2, 3, 5, 8]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -109,9 +106,8 @@ flowchart TD
     Sorted -->|Yes| End([End])
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_01/lecture_01_sorting_fundamentals/bubble_sort/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_01_sorting_fundamentals/bubble_sort/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_01_sorting_fundamentals/bubble_sort/test_algorithm.py)
-

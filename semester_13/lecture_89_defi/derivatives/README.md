@@ -1,14 +1,13 @@
 # Derivatives (DeFi)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Derivatives (DeFi) Flowchart:
@@ -43,9 +42,7 @@ Derivatives (DeFi) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Derivatives (DeFi) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_89_defi/derivatives/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_89_defi/derivatives/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_89_defi/derivatives/test_algorithm.py)
-
 
    Derivatives (DeFi)
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like derivatives but decentralized: DeFi Derivatives are like traditional derivatives (futures, options) but on blockchain - you trade contracts (like betting on future prices) without brokers - just as traditional derivatives enable price speculation, DeFi derivatives enable decentralized speculation.
 
 Inputs & Outputs  
-   - Input: Derivative contracts, collateral, positions, prices, liquidation parameters, margin requirements.  
-   - Output: Derivative positions, PnL, liquidations, settlements, margin calls, trading fees.
+
+  - Input: Derivative contracts, collateral, positions, prices, liquidation parameters, margin requirements.  
+  - Output: Derivative positions, PnL, liquidations, settlements, margin calls, trading fees.
 
 Step-by-step description (5–10 lines max)  
 Create: create derivative contract (futures, options).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Derivatives: contract: ETH perpetual futures → deposit: 1000 USDC collateral → open: long position 10 ETH → price: ETH price increases → result: profit, position value increases → Derivatives successful.
 
 Time & Space Complexity  
-   - Time: O(1) for position operations (constant time contract operations).  
-   - Space: O(p + c) where p is positions, c is contracts (position and contract storage).
+
+  - Time: O(1) for position operations (constant time contract operations).  
+  - Space: O(p + c) where p is positions, c is contracts (position and contract storage).
 
 Strengths  
+
 - Accessibility: accessible to anyone with crypto.
 - Transparency: transparent and auditable.
 - Innovation: enables new derivative products.
 
 Weaknesses / limitations  
+
 - Risk: high risk, potential for large losses.
 - Liquidation: liquidation risk if price moves against position.
 - Oracles: depends on reliable price oracles.

@@ -1,14 +1,13 @@
 # Multi-Armed Bandit (MAB) for ML
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Multi-Armed Bandit (MAB) for ML Flowchart:
@@ -43,9 +42,7 @@ Multi-Armed Bandit (MAB) for ML Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Multi-Armed Bandit (MAB) for ML Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_06/lecture_35_deployment_patterns/multi_armed_bandit/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_35_deployment_patterns/multi_armed_bandit/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_35_deployment_patterns/multi_armed_bandit/test_algorithm.py)
-

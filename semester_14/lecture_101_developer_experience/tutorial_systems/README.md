@@ -1,14 +1,13 @@
 # Interactive Tutorial Systems
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Interactive Tutorial Systems Flowchart:
@@ -43,9 +42,7 @@ Interactive Tutorial Systems Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Interactive Tutorial Systems Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_14/lecture_101_developer_experience/tutorial_systems/algorithm.py)
 - [Java Implementation](/code/semester_14/lecture_101_developer_experience/tutorial_systems/Algorithm.java)
 - [Python Tests](/code/semester_14/lecture_101_developer_experience/tutorial_systems/test_algorithm.py)
-
-
-   Interactive Tutorial Systems
 
 What problem does it solve? (1 sentence)  
    Creates interactive, step-by-step tutorials that guide developers through learning APIs, tools, and concepts with hands-on exercises, code examples, and progress tracking.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like an interactive textbook: Tutorial systems are like an interactive textbook - you read (instructions), do exercises (hands-on), get feedback (validation), and track progress (checklist) - just as a textbook guides learning, tutorials guide developers through learning.
 
 Inputs & Outputs  
-   - Input: Tutorial content, code examples, exercises, validation rules, progress tracking, completion criteria, learning paths.  
-   - Output: Interactive tutorials, code exercises, validation feedback, progress tracking, completion certificates, learning analytics.
+
+  - Input: Tutorial content, code examples, exercises, validation rules, progress tracking, completion criteria, learning paths.  
+  - Output: Interactive tutorials, code exercises, validation feedback, progress tracking, completion certificates, learning analytics.
 
 Step-by-step description (5–10 lines max)  
 Design: design tutorial structure and content.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Tutorial: design 10-step tutorial → create exercises → validate code → track progress → present → guide → validate step 3 → feedback → complete → Tutorial successful.
 
 Time & Space Complexity  
-   - Time: O(t * e) where t is tutorial steps, e is exercise complexity (tutorial complexity).  
-   - Space: O(c + p) where c is content, p is progress (tutorial storage).
+
+  - Time: O(t * e) where t is tutorial steps, e is exercise complexity (tutorial complexity).  
+  - Space: O(c + p) where c is content, p is progress (tutorial storage).
 
 Strengths  
+
 - Learning: improves learning effectiveness.
 - Engagement: increases developer engagement.
 - Progress: tracks learning progress.
 
 Weaknesses / limitations  
+
 - Creation: requires time to create quality tutorials.
 - Maintenance: requires maintenance as APIs change.
 - Flexibility: may not fit all learning styles.

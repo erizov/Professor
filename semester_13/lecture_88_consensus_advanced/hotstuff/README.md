@@ -1,14 +1,13 @@
 # HotStuff
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 HotStuff Flowchart:
@@ -43,9 +42,7 @@ HotStuff Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 HotStuff Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_88_consensus_advanced/hotstuff/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_88_consensus_advanced/hotstuff/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_88_consensus_advanced/hotstuff/test_algorithm.py)
-
 
    HotStuff
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
 Like an efficient assembly line: HotStuff is like an efficient assembly line with a rotating supervisor (leader) - instead of stopping the line for each decision (expensive), the line keeps moving (pipelining) while the supervisor coordinates (three-phase consensus) - if the supervisor is slow, you rotate to a new one (leader change) - this enables fast, optimized consensus even with leader failures.
 
 Inputs & Outputs  
-   - Input: Transactions, leader rotation, replicas, consensus messages, timeout mechanisms.  
-   - Output: Committed blocks, consensus certificates, leader decisions, pipelined proposals.
+
+  - Input: Transactions, leader rotation, replicas, consensus messages, timeout mechanisms.  
+  - Output: Committed blocks, consensus certificates, leader decisions, pipelined proposals.
 
 Step-by-step description (5–10 lines max)  
 Propose: leader proposes block with sequence number.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    HotStuff: leader proposes block 100 → prepare votes → pre-commit → commit → pipeline block 101 → commit block 100 → HotStuff successful (linear messages, fast).
 
 Time & Space Complexity  
-   - Time: O(n) message complexity, O(1) latency in optimistic case where n is replicas (HotStuff complexity).  
-   - Space: O(n) for replica state, O(b) for pipelined blocks (HotStuff storage).
+
+  - Time: O(n) message complexity, O(1) latency in optimistic case where n is replicas (HotStuff complexity).  
+  - Space: O(n) for replica state, O(b) for pipelined blocks (HotStuff storage).
 
 Strengths  
+
 - Efficiency: linear message complexity (O(n) vs O(n²)).
 - Speed: fast consensus with optimistic responsiveness.
 - Robustness: handles leader failures gracefully.
 
 Weaknesses / limitations  
+
 - Complexity: more complex than basic BFT protocols.
 - Leader: performance depends on leader quality.
 - Pipelining: requires careful synchronization.

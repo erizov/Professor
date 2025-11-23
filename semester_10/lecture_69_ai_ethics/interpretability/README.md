@@ -1,14 +1,13 @@
 # Interpretability
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Interpretability Flowchart:
@@ -43,9 +42,7 @@ Interpretability Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Interpretability Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_69_ai_ethics/interpretability/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_69_ai_ethics/interpretability/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_69_ai_ethics/interpretability/test_algorithm.py)
-
-
-   Interpretability
 
 What problem does it solve? (1 sentence)  
    Makes AI models and their internal workings understandable to humans, enabling users to understand how models work, why they make specific predictions, and how to improve them.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like understanding how something works: Interpretability is like understanding how a machine works - instead of a black box (you don't know how it works), you can see inside (understand the mechanism) and understand why it does what it does - just as understanding machines helps you use and fix them, interpretability helps you understand and improve AI models.
 
 Inputs & Outputs  
-   - Input: AI models, model internals, predictions, interpretability methods, analysis tools.  
-   - Output: Interpretable models, model insights, feature importance, decision paths, interpretability reports.
+
+  - Input: AI models, model internals, predictions, interpretability methods, analysis tools.  
+  - Output: Interpretable models, model insights, feature importance, decision paths, interpretability reports.
 
 Step-by-step description (5–10 lines max)  
 Analyze: analyze model architecture and internals.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Interpretability: model: neural network → analyze: examine layers → visualize: feature importance → explain: 'Model uses age, income, credit score' → identify: age is most important → result: model behavior understood → Interpretability successful.
 
 Time & Space Complexity  
-   - Time: O(a + v + e) where a is analysis time, v is visualization time, e is explanation time (varies by method).  
-   - Space: O(m + i) where m is model storage, i is interpretability data storage (visualizations, explanations).
+
+  - Time: O(a + v + e) where a is analysis time, v is visualization time, e is explanation time (varies by method).  
+  - Space: O(m + i) where m is model storage, i is interpretability data storage (visualizations, explanations).
 
 Strengths  
+
 - Understanding: enables understanding of model behavior.
 - Debugging: helps debug and improve models.
 - Trust: increases trust through transparency.
 
 Weaknesses / limitations  
+
 - Complexity: interpreting complex models is challenging.
 - Accuracy: interpretations may not be perfectly accurate.
 - Trade-offs: may require trade-offs with model complexity.

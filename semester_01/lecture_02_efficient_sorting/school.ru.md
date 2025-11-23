@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 02 Efficient Sorting — efficient sorting - demonstration. this lecture covers efficient sorting algorithms including merge sort, quick sort, and heap sort.
+Лекция 02 Efficient Сортировка — efficient сортировка - demonstration. this лекция covers efficient сортировка algorithms including объединить сортировка, quick сортировка, and heap сортировка.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 02 Efficient Sorting — efficient sorting - demonstration. this lecture
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 02 efficient sorting:
+Рассмотрим конкретный пример работы лекция 02 efficient сортировка:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -45,15 +45,15 @@ Lecture 02 Efficient Sorting — efficient sorting - demonstration. this lecture
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 02 efficient sorting.
+Выполни простую операцию с алгоритмом лекция 02 efficient сортировка.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 02 efficient sorting к более сложному набору данных.
+Примени алгоритм лекция 02 efficient сортировка к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 02 efficient sorting на языке программирования.
+Напиши реализацию алгоритма лекция 02 efficient сортировка на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

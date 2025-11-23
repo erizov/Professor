@@ -1,14 +1,13 @@
 # Quantum Processors
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Processors Flowchart:
@@ -43,9 +42,7 @@ Quantum Processors Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Processors Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_84_quantum_hardware/quantum_processors/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_84_quantum_hardware/quantum_processors/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_84_quantum_hardware/quantum_processors/test_algorithm.py)
-
-
-   Quantum Processors
 
 What problem does it solve? (1 sentence)  
    Designs and implements quantum processors (quantum processing units), the hardware that executes quantum algorithms, managing qubits, gates, and quantum operations.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like CPUs for quantum: Quantum Processors are like CPUs but for quantum computing - they're the hardware that runs quantum programs (like CPUs run programs), execute quantum gates (like CPUs execute instructions), and process quantum information - just as CPUs are the heart of classical computers, quantum processors are the heart of quantum computers.
 
 Inputs & Outputs  
-   - Input: Qubit technologies, gate specifications, connectivity requirements, control systems, quantum algorithms.  
-   - Output: Quantum processors, qubit arrays, gate implementations, quantum operations, processed quantum states.
+
+  - Input: Qubit technologies, gate specifications, connectivity requirements, control systems, quantum algorithms.  
+  - Output: Quantum processors, qubit arrays, gate implementations, quantum operations, processed quantum states.
 
 Step-by-step description (5–10 lines max)  
 Design: design quantum processor architecture.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Processors: design: 5-qubit processor → fabricate: superconducting qubits → initialize: |0⟩ states → execute: quantum gates → measure: quantum states → result: quantum processor operational → Quantum Processors successful.
 
 Time & Space Complexity  
-   - Time: O(g) where g is number of gates (gate execution time, typically O(1) per gate).  
-   - Space: O(n) where n is number of qubits (quantum state space, exponential in qubits).
+
+  - Time: O(g) where g is number of gates (gate execution time, typically O(1) per gate).  
+  - Space: O(n) where n is number of qubits (quantum state space, exponential in qubits).
 
 Strengths  
+
 - Execution: enables execution of quantum algorithms.
 - Scalability: can scale to larger processors.
 - Flexibility: supports various quantum algorithms.
 
 Weaknesses / limitations  
+
 - Noise: quantum noise limits processor performance.
 - Coherence: limited coherence times.
 - Scaling: scaling to many qubits is challenging.

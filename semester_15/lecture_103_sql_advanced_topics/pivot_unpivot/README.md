@@ -1,14 +1,13 @@
 # Pivot Unpivot
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Pivot Unpivot Flowchart:
@@ -43,9 +42,7 @@ Pivot Unpivot Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Pivot Unpivot Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_15/lecture_103_sql_advanced_topics/pivot_unpivot/algorithm.py)
 - [Java Implementation](/code/semester_15/lecture_103_sql_advanced_topics/pivot_unpivot/Algorithm.java)
 - [Python Tests](/code/semester_15/lecture_103_sql_advanced_topics/pivot_unpivot/test_algorithm.py)
-
-
-   Pivot Unpivot
 
 What problem does it solve? (1 sentence)  
 Implements pivot unpivot algorithm.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Pivot Unpivot is a fundamental algorithm in computer science.
 
 Inputs & Outputs  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+
+  - Input: Algorithm-specific inputs  
+  - Output: Algorithm-specific outputs
 
 Step-by-step description (5–10 lines max)  
 Initialize data structures
@@ -107,13 +100,16 @@ Tiny example (hand-simulated)
    Example: Pivot Unpivot applied to sample data.
 
 Time & Space Complexity  
-   - Time: Varies  
-   - Space: Varies
+
+  - Time: Varies  
+  - Space: Varies
 
 Strengths  
+
 - Efficient for specific use cases
 
 Weaknesses / limitations  
+
 - May have limitations in certain scenarios
 
 Compare with alternatives  

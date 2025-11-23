@@ -1,14 +1,13 @@
 # Benchmark Suites for LLM Evaluation
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Benchmark Suites for LLM Evaluation Flowchart:
@@ -43,9 +42,7 @@ Benchmark Suites for LLM Evaluation Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Benchmark Suites for LLM Evaluation Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_68_llm_evaluation/benchmark_suites/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_68_llm_evaluation/benchmark_suites/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_68_llm_evaluation/benchmark_suites/test_algorithm.py)
-
 
    Benchmark Suites for LLM Evaluation
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like standardized tests: benchmark suites are like standardized tests (SAT, GRE) for LLMs - they provide the same questions (test cases) for all models, allowing fair comparison of performance - just as students take the same test to compare their knowledge, LLMs are evaluated on the same benchmarks to compare their capabilities, making it clear which models perform better and where improvements are needed.
 
 Inputs & Outputs  
-   - Input: LLM model, benchmark suite, evaluation tasks, test datasets, evaluation metrics.  
-   - Output: Performance scores, task-specific metrics, comparative rankings, evaluation reports.
+
+  - Input: LLM model, benchmark suite, evaluation tasks, test datasets, evaluation metrics.  
+  - Output: Performance scores, task-specific metrics, comparative rankings, evaluation reports.
 
 Step-by-step description (5–10 lines max)  
 Select benchmark: select appropriate benchmark suite for evaluation task.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Benchmark suite: GLUE benchmark → tasks: 9 NLP tasks (sentiment, NLI, etc.) → evaluate: GPT-3.5 on all tasks → score: average 85.2 (vs GPT-3: 80.1) → compare: state-of-the-art: 90.5 → report: GPT-3.5 improved but below SOTA → benchmark evaluation complete.
 
 Time & Space Complexity  
-   - Time: O(t·n) where t is number of tasks, n is test cases per task (evaluation time).  
-   - Space: O(d + m) where d is benchmark dataset size, m is model size.
+
+  - Time: O(t·n) where t is number of tasks, n is test cases per task (evaluation time).  
+  - Space: O(d + m) where d is benchmark dataset size, m is model size.
 
 Strengths  
+
 - Standardization: enables fair comparison across models.
 - Comprehensive: covers diverse tasks and capabilities.
 - Tracking: tracks progress in the field over time.
 
 Weaknesses / limitations  
+
 - Limitations: benchmarks may not capture all real-world scenarios.
 - Overfitting: models may overfit to benchmark datasets.
 - Evolution: benchmarks need updates as capabilities evolve.

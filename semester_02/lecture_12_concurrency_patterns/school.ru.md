@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 12 Concurrency Patterns - Demonstration. This lecture covers lecture 12 concurrency patterns.
+Лекция 12 Concurrency Patterns - Demonstration. This лекция covers лекция 12 concurrency patterns.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 12 Concurrency Patterns - Demonstration. This lecture covers lecture 12 
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 12 concurrency patterns:
+Рассмотрим конкретный пример работы лекция 12 concurrency patterns:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 12 Concurrency Patterns - Demonstration. This lecture covers lecture 12 
 
 ### Базовые
 
-1. Что делает алгоритм lecture 12 concurrency patterns?
-2. В каких ситуациях используется lecture 12 concurrency patterns?
+1. Что делает алгоритм лекция 12 concurrency patterns?
+2. В каких ситуациях используется лекция 12 concurrency patterns?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 12 concurrency patterns обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 12 concurrency patterns?
-3. Можно ли улучшить работу lecture 12 concurrency patterns?
+1. Как лекция 12 concurrency patterns обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 12 concurrency patterns?
+3. Можно ли улучшить работу лекция 12 concurrency patterns?
 
 ### Сложные
 
-1. Какова временная сложность lecture 12 concurrency patterns?
-2. Как lecture 12 concurrency patterns работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 12 concurrency patterns?
+1. Какова временная сложность лекция 12 concurrency patterns?
+2. Как лекция 12 concurrency patterns работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 12 concurrency patterns?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 12 concurrency patterns.
+Выполни простую операцию с алгоритмом лекция 12 concurrency patterns.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 12 concurrency patterns к более сложному набору данных.
+Примени алгоритм лекция 12 concurrency patterns к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 12 concurrency patterns на языке программирования.
+Напиши реализацию алгоритма лекция 12 concurrency patterns на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

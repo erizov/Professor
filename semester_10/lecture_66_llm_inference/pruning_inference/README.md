@@ -1,14 +1,13 @@
 # Pruning for Inference
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Pruning for Inference Flowchart:
@@ -43,9 +42,7 @@ Pruning for Inference Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Pruning for Inference Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_66_llm_inference/pruning_inference/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_66_llm_inference/pruning_inference/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_66_llm_inference/pruning_inference/test_algorithm.py)
-
 
    Pruning for Inference
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
 Like trimming a tree: pruning for inference is like trimming a tree to keep only the essential branches - you remove branches (weights/neurons) that don't contribute much to the tree's health (model accuracy), making the tree (model) smaller and easier to manage (faster inference) - the tree still functions well (maintains accuracy) but is more efficient (smaller, faster).
 
 Inputs & Outputs  
-   - Input: Trained model, pruning strategy, importance criteria, target sparsity, accuracy requirements.  
-   - Output: Pruned model, reduced size, faster inference, maintained accuracy, optimized model.
+
+  - Input: Trained model, pruning strategy, importance criteria, target sparsity, accuracy requirements.  
+  - Output: Pruned model, reduced size, faster inference, maintained accuracy, optimized model.
 
 Step-by-step description (5–10 lines max)  
 Evaluate importance: evaluate importance of weights or neurons (magnitude, gradient, activation).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Pruning: BERT model (110M params) → evaluate: identify 50% least important weights → prune: remove 50% weights → fine-tune: recover accuracy → result: 55M params (50% reduction), 2x faster inference, 98% accuracy (vs 99% original) → pruned model deployable.
 
 Time & Space Complexity  
-   - Time: O(m) for pruning where m is model size, O(n) for fine-tuning where n is fine-tuning data size.  
-   - Space: O(m·s) where m is model size, s is sparsity factor (reduced from O(m) full model).
+
+  - Time: O(m) for pruning where m is model size, O(n) for fine-tuning where n is fine-tuning data size.  
+  - Space: O(m·s) where m is model size, s is sparsity factor (reduced from O(m) full model).
 
 Strengths  
+
 - Efficiency: reduces model size and inference time.
 - Deployability: enables deployment on resource-constrained devices.
 - Maintains accuracy: can maintain good accuracy with proper pruning.
 
 Weaknesses / limitations  
+
 - Accuracy: may have some accuracy degradation.
 - Fine-tuning: requires fine-tuning to recover accuracy.
 - Sparsity: unstructured pruning may not speed up on all hardware.

@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 09 Behavioral Patterns - Demonstration. This lecture covers lecture 09 behavioral patterns.
+Лекция 09 Behavioral Patterns - Demonstration. This лекция covers лекция 09 behavioral patterns.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 09 Behavioral Patterns - Demonstration. This lecture covers lecture 09 b
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 09 behavioral patterns:
+Рассмотрим конкретный пример работы лекция 09 behavioral patterns:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 09 Behavioral Patterns - Demonstration. This lecture covers lecture 09 b
 
 ### Базовые
 
-1. Что делает алгоритм lecture 09 behavioral patterns?
-2. В каких ситуациях используется lecture 09 behavioral patterns?
+1. Что делает алгоритм лекция 09 behavioral patterns?
+2. В каких ситуациях используется лекция 09 behavioral patterns?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 09 behavioral patterns обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 09 behavioral patterns?
-3. Можно ли улучшить работу lecture 09 behavioral patterns?
+1. Как лекция 09 behavioral patterns обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 09 behavioral patterns?
+3. Можно ли улучшить работу лекция 09 behavioral patterns?
 
 ### Сложные
 
-1. Какова временная сложность lecture 09 behavioral patterns?
-2. Как lecture 09 behavioral patterns работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 09 behavioral patterns?
+1. Какова временная сложность лекция 09 behavioral patterns?
+2. Как лекция 09 behavioral patterns работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 09 behavioral patterns?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 09 behavioral patterns.
+Выполни простую операцию с алгоритмом лекция 09 behavioral patterns.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 09 behavioral patterns к более сложному набору данных.
+Примени алгоритм лекция 09 behavioral patterns к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 09 behavioral patterns на языке программирования.
+Напиши реализацию алгоритма лекция 09 behavioral patterns на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

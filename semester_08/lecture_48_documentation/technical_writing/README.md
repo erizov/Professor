@@ -1,14 +1,13 @@
 # Technical Writing
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Technical Writing Flowchart:
@@ -43,9 +42,7 @@ Technical Writing Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Technical Writing Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_48_documentation/technical_writing/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_48_documentation/technical_writing/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_48_documentation/technical_writing/test_algorithm.py)
-
-
-   Technical Writing
 
 What problem does it solve? (1 sentence)  
    Creates clear, accurate, and accessible technical documentation that explains complex concepts, procedures, and systems to both technical and non-technical audiences.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like translating technical jargon into plain language: technical writing takes complex technical information (like a foreign language) and translates it into clear, understandable documentation (like a translation) - good technical writing is like a good teacher: explains complex things simply, with examples and structure.
 
 Inputs & Outputs  
-   - Input: Technical information, target audience, documentation requirements, style guides.  
-   - Output: Clear technical documentation, user guides, tutorials, reference materials.
+
+  - Input: Technical information, target audience, documentation requirements, style guides.  
+  - Output: Clear technical documentation, user guides, tutorials, reference materials.
 
 Step-by-step description (5–10 lines max)  
 Understand audience: identify target audience (developers, end users, administrators).
@@ -113,15 +106,18 @@ Tiny example (hand-simulated)
    Write deployment guide → audience: DevOps engineers → structure: prerequisites → installation → configuration → verification → troubleshooting → include: commands, config examples, diagrams → test: follow guide step-by-step → verify: all steps work → publish: clear, accurate deployment guide.
 
 Time & Space Complexity  
-   - Time: O(c) where c is content complexity (writing and editing time).  
-   - Space: O(d) where d is documentation size (text, images, examples).
+
+  - Time: O(c) where c is content complexity (writing and editing time).  
+  - Space: O(d) where d is documentation size (text, images, examples).
 
 Strengths  
+
 - Clarity: makes complex topics accessible to readers.
 - Accuracy: ensures information is correct and up-to-date.
 - Usability: helps users accomplish tasks effectively.
 
 Weaknesses / limitations  
+
 - Time consuming: requires significant time and effort.
 - Skill required: needs technical writing expertise.
 - Maintenance: requires updates as technology evolves.

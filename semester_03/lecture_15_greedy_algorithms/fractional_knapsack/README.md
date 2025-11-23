@@ -1,14 +1,13 @@
 # Fractional Knapsack
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Fractional Knapsack Flowchart:
@@ -43,9 +42,7 @@ Fractional Knapsack Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Fractional Knapsack Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_03/lecture_15_greedy_algorithms/fractional_knapsack/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_15_greedy_algorithms/fractional_knapsack/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_15_greedy_algorithms/fractional_knapsack/test_algorithm.py)
-

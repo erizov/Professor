@@ -1,14 +1,13 @@
 # Distributed Tracing
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Distributed Tracing Flowchart:
@@ -43,9 +42,7 @@ Distributed Tracing Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Distributed Tracing Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_62_observability_advanced/distributed_tracing/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_62_observability_advanced/distributed_tracing/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_62_observability_advanced/distributed_tracing/test_algorithm.py)
-
-
-   Distributed Tracing
 
 What problem does it solve? (1 sentence)  
    Tracks requests as they flow through distributed systems, creating end-to-end traces that show the complete path of a request across multiple services, enabling debugging and performance optimization.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a package tracking system: distributed tracing is like tracking a package as it moves through a shipping network - you get a tracking number (trace ID) that follows the package (request) as it goes through different facilities (services) - you can see exactly where it is at each step (spans), how long it spends at each facility (timing), and if there are any delays (bottlenecks) - this helps you understand the complete journey and find where things slow down or fail.
 
 Inputs & Outputs  
-   - Input: Requests, trace IDs, span data, service interactions, timing information.  
-   - Output: Distributed traces, request flows, performance insights, debugging information.
+
+  - Input: Requests, trace IDs, span data, service interactions, timing information.  
+  - Output: Distributed traces, request flows, performance insights, debugging information.
 
 Step-by-step description (5–10 lines max)  
 Generate trace: generate unique trace ID for incoming request.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Distributed tracing: user request → trace ID: abc123 → frontend: span 1 (10ms) → API gateway: span 2 (5ms) → user-service: span 3 (50ms) → database: span 4 (30ms) → order-service: span 5 (200ms) → payment-service: span 6 (150ms) → trace: shows complete flow → identify: order-service is slow → optimize: add caching → trace: order-service 200ms → 50ms → distributed tracing guides optimization.
 
 Time & Space Complexity  
-   - Time: O(1) per span creation, O(s) for trace assembly where s is number of spans.  
-   - Space: O(t·s) where t is number of traces, s is average spans per trace (trace storage).
+
+  - Time: O(1) per span creation, O(s) for trace assembly where s is number of spans.  
+  - Space: O(t·s) where t is number of traces, s is average spans per trace (trace storage).
 
 Strengths  
+
 - Visibility: provides complete visibility into request flows.
 - Debugging: enables debugging of complex distributed systems.
 - Performance: identifies performance bottlenecks across services.
 
 Weaknesses / limitations  
+
 - Overhead: tracing adds overhead to application performance.
 - Storage: storing traces requires significant storage.
 - Sampling: may need to sample traces to manage volume.

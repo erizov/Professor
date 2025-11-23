@@ -1,14 +1,13 @@
 # Advanced Chaos Engineering
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Advanced Chaos Engineering Flowchart:
@@ -43,9 +42,7 @@ Advanced Chaos Engineering Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Advanced Chaos Engineering Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_62_observability_advanced/chaos_engineering_advanced/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_62_observability_advanced/chaos_engineering_advanced/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_62_observability_advanced/chaos_engineering_advanced/test_algorithm.py)
-
-
-   Advanced Chaos Engineering
 
 What problem does it solve? (1 sentence)  
    Systematically experiments on distributed systems by injecting failures and disruptions to test resilience, identify weaknesses, and improve system reliability through controlled chaos experiments.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like stress testing for systems: advanced chaos engineering is like stress testing a building by simulating earthquakes - you intentionally create controlled failures (like turning off a server, adding network latency, or corrupting data) to see how the system handles it - if the system breaks, you've found a weakness before real disasters happen - the goal is to make systems so resilient that they can handle any failure gracefully, like a building designed to withstand earthquakes.
 
 Inputs & Outputs  
-   - Input: System components, failure scenarios, experiment hypotheses, safety measures, monitoring tools.  
-   - Output: Chaos experiments, resilience insights, system improvements, failure handling validation.
+
+  - Input: System components, failure scenarios, experiment hypotheses, safety measures, monitoring tools.  
+  - Output: Chaos experiments, resilience insights, system improvements, failure handling validation.
 
 Step-by-step description (5–10 lines max)  
 Define hypothesis: define what you expect to happen during experiment.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Chaos engineering: hypothesis: system handles database failure gracefully → experiment: kill database primary → observe: system switches to replica in 5s → measure: availability: 99.9% (target: 99.95%) → analyze: switchover too slow → improve: optimize failover → repeat: test again → resilience improved → chaos engineering successful.
 
 Time & Space Complexity  
-   - Time: O(e) where e is experiment duration (varies by experiment type).  
-   - Space: O(m) where m is monitoring data size (metrics, logs during experiment).
+
+  - Time: O(e) where e is experiment duration (varies by experiment type).  
+  - Space: O(m) where m is monitoring data size (metrics, logs during experiment).
 
 Strengths  
+
 - Resilience: improves system resilience through systematic testing.
 - Proactive: finds weaknesses before real failures occur.
 - Confidence: builds confidence in system reliability.
 
 Weaknesses / limitations  
+
 - Risk: experiments can cause real outages if not carefully controlled.
 - Complexity: designing and running experiments requires expertise.
 - Resource intensive: requires dedicated time and resources.

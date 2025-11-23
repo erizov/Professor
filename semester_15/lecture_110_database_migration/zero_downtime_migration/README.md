@@ -1,14 +1,13 @@
 # Zero Downtime Migration
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Zero Downtime Migration Flowchart:
@@ -43,9 +42,7 @@ Zero Downtime Migration Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Zero Downtime Migration Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_15/lecture_110_database_migration/zero_downtime_migration/algorithm.py)
 - [Java Implementation](/code/semester_15/lecture_110_database_migration/zero_downtime_migration/Algorithm.java)
 - [Python Tests](/code/semester_15/lecture_110_database_migration/zero_downtime_migration/test_algorithm.py)
-
-
-   Zero Downtime Migration
 
 What problem does it solve? (1 sentence)  
 Implements zero downtime migration algorithm.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Zero Downtime Migration is a fundamental algorithm in computer science.
 
 Inputs & Outputs  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+
+  - Input: Algorithm-specific inputs  
+  - Output: Algorithm-specific outputs
 
 Step-by-step description (5–10 lines max)  
 Initialize data structures
@@ -107,13 +100,16 @@ Tiny example (hand-simulated)
    Example: Zero Downtime Migration applied to sample data.
 
 Time & Space Complexity  
-   - Time: Varies  
-   - Space: Varies
+
+  - Time: Varies  
+  - Space: Varies
 
 Strengths  
+
 - Efficient for specific use cases
 
 Weaknesses / limitations  
+
 - May have limitations in certain scenarios
 
 Compare with alternatives  

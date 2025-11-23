@@ -1,14 +1,13 @@
 # Speculative Decoding
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Speculative Decoding Flowchart:
@@ -43,9 +42,7 @@ Speculative Decoding Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Speculative Decoding Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_66_llm_inference/speculative_decoding/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_66_llm_inference/speculative_decoding/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_66_llm_inference/speculative_decoding/test_algorithm.py)
-
-
-   Speculative Decoding
 
 What problem does it solve? (1 sentence)  
    Accelerates LLM generation by using a smaller draft model to generate multiple tokens speculatively, then verifying them with the larger target model in parallel, accepting correct tokens and regenerating incorrect ones.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a fast draft and careful review: speculative decoding is like writing a document - you quickly draft multiple paragraphs (small fast model generates tokens speculatively), then have an editor review them all at once (large model verifies in parallel) - if the draft is good, you keep it (accept tokens), if not, you fix it (regenerate) - this is faster than writing and reviewing one paragraph at a time (sequential generation) because you can review multiple paragraphs simultaneously.
 
 Inputs & Outputs  
-   - Input: Target model, draft model, prompt, generation parameters, verification strategy.  
-   - Output: Accelerated generation, verified tokens, improved throughput, speculative predictions.
+
+  - Input: Target model, draft model, prompt, generation parameters, verification strategy.  
+  - Output: Accelerated generation, verified tokens, improved throughput, speculative predictions.
 
 Step-by-step description (5–10 lines max)  
 Generate draft: small draft model generates γ tokens speculatively (draft sequence).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Speculative decoding: target model (GPT-4, slow) → draft model (GPT-3.5, fast) → draft: generates 4 tokens speculatively → verify: GPT-4 verifies all 4 in parallel → accept: 3 tokens match → reject: token 4 differs → regenerate: GPT-4 generates from token 4 → speedup: 2-3x faster → speculative decoding successful.
 
 Time & Space Complexity  
-   - Time: O(γ·t_d + t_t) where γ is speculative tokens, t_d is draft time, t_t is target verification time (vs O(γ·t_t) sequential).  
-   - Space: O(m_t + m_d) where m_t is target model size, m_d is draft model size (both models needed).
+
+  - Time: O(γ·t_d + t_t) where γ is speculative tokens, t_d is draft time, t_t is target verification time (vs O(γ·t_t) sequential).  
+  - Space: O(m_t + m_d) where m_t is target model size, m_d is draft model size (both models needed).
 
 Strengths  
+
 - Speed: 2-3x faster generation for compatible models.
 - Quality: maintains target model quality (verification ensures correctness).
 - Efficiency: better GPU utilization through parallel verification.
 
 Weaknesses / limitations  
+
 - Draft quality: requires good draft model (high acceptance rate).
 - Memory: requires storing both draft and target models.
 - Complexity: more complex than standard generation.

@@ -1,14 +1,13 @@
 # A B Testing Ml
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 A B Testing Ml Flowchart:
@@ -43,9 +42,7 @@ A B Testing Ml Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 A B Testing Ml Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_16/lecture_117_ml_ops_advanced/a_b_testing_ml/algorithm.py)
 - [Java Implementation](/code/semester_16/lecture_117_ml_ops_advanced/a_b_testing_ml/Algorithm.java)
 - [Python Tests](/code/semester_16/lecture_117_ml_ops_advanced/a_b_testing_ml/test_algorithm.py)
-
 
    A B Testing Ml
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
 A B Testing Ml is a fundamental algorithm in computer science.
 
 Inputs & Outputs  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+
+  - Input: Algorithm-specific inputs  
+  - Output: Algorithm-specific outputs
 
 Step-by-step description (5–10 lines max)  
 Initialize data structures
@@ -107,13 +102,16 @@ Tiny example (hand-simulated)
    Example: A B Testing Ml applied to sample data.
 
 Time & Space Complexity  
-   - Time: Varies  
-   - Space: Varies
+
+  - Time: Varies  
+  - Space: Varies
 
 Strengths  
+
 - Efficient for specific use cases
 
 Weaknesses / limitations  
+
 - May have limitations in certain scenarios
 
 Compare with alternatives  

@@ -1,14 +1,13 @@
 # Data Governance for AI
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Data Governance for AI Flowchart:
@@ -43,9 +42,7 @@ Data Governance for AI Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Data Governance for AI Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_70_ai_governance/data_governance_ai/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_70_ai_governance/data_governance_ai/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_70_ai_governance/data_governance_ai/test_algorithm.py)
-
 
    Data Governance for AI
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
 Like a library system: Data Governance for AI is like a library system for data - it defines rules for how data is organized (cataloging), who can access it (access control), how it's maintained (quality, updates), and how it's protected (security) - just as libraries ensure books are organized, accessible, and protected, data governance ensures AI data is managed properly throughout its lifecycle.
 
 Inputs & Outputs  
-   - Input: Data assets, governance policies, data quality rules, privacy requirements, access controls.  
-   - Output: Governed data, data catalogs, quality metrics, access policies, compliance reports.
+
+  - Input: Data assets, governance policies, data quality rules, privacy requirements, access controls.  
+  - Output: Governed data, data catalogs, quality metrics, access policies, compliance reports.
 
 Step-by-step description (5–10 lines max)  
 Catalog: catalog all AI data assets (datasets, sources).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Data Governance: dataset: customer data → catalog: register in data catalog → classify: PII (sensitive) → policy: GDPR compliance, quality standards → control: access control, encryption → monitor: data quality metrics → audit: compliance audit → Data Governance operational.
 
 Time & Space Complexity  
-   - Time: O(d·p) where d is data assets, p is policy checks (cataloging and governance).  
-   - Space: O(c + m) where c is catalog size, m is metadata storage.
+
+  - Time: O(d·p) where d is data assets, p is policy checks (cataloging and governance).  
+  - Space: O(c + m) where c is catalog size, m is metadata storage.
 
 Strengths  
+
 - Quality: ensures data quality for AI systems.
 - Compliance: supports regulatory compliance (GDPR, etc.).
 - Trust: builds trust through proper data management.
 
 Weaknesses / limitations  
+
 - Overhead: data governance adds overhead to data operations.
 - Complexity: can be complex to implement and maintain.
 - Balance: balancing governance with agility can be challenging.

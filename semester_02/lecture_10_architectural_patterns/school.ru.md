@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 10 Architectural Patterns - Demonstration. This lecture covers lecture 10 architectural patterns.
+Лекция 10 Architectural Patterns - Demonstration. This лекция covers лекция 10 architectural patterns.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 10 Architectural Patterns - Demonstration. This lecture covers lecture 1
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 10 architectural patterns:
+Рассмотрим конкретный пример работы лекция 10 architectural patterns:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 10 Architectural Patterns - Demonstration. This lecture covers lecture 1
 
 ### Базовые
 
-1. Что делает алгоритм lecture 10 architectural patterns?
-2. В каких ситуациях используется lecture 10 architectural patterns?
+1. Что делает алгоритм лекция 10 architectural patterns?
+2. В каких ситуациях используется лекция 10 architectural patterns?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 10 architectural patterns обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 10 architectural patterns?
-3. Можно ли улучшить работу lecture 10 architectural patterns?
+1. Как лекция 10 architectural patterns обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 10 architectural patterns?
+3. Можно ли улучшить работу лекция 10 architectural patterns?
 
 ### Сложные
 
-1. Какова временная сложность lecture 10 architectural patterns?
-2. Как lecture 10 architectural patterns работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 10 architectural patterns?
+1. Какова временная сложность лекция 10 architectural patterns?
+2. Как лекция 10 architectural patterns работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 10 architectural patterns?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 10 architectural patterns.
+Выполни простую операцию с алгоритмом лекция 10 architectural patterns.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 10 architectural patterns к более сложному набору данных.
+Примени алгоритм лекция 10 architectural patterns к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 10 architectural patterns на языке программирования.
+Напиши реализацию алгоритма лекция 10 architectural patterns на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

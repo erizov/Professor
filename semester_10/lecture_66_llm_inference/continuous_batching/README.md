@@ -1,14 +1,13 @@
 # Continuous Batching (Iteration-Level Batching)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Continuous Batching (Iteration-Level Batching) Flowchart:
@@ -43,9 +42,7 @@ Continuous Batching (Iteration-Level Batching) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Continuous Batching (Iteration-Level Batching) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_66_llm_inference/continuous_batching/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_66_llm_inference/continuous_batching/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_66_llm_inference/continuous_batching/test_algorithm.py)
-
 
    Continuous Batching (Iteration-Level Batching)
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a revolving door: continuous batching is like a revolving door where people (requests) can enter and exit at any time - instead of waiting for everyone to finish before letting new people in (static batching), new people can join the door (batch) as soon as there's space, and people who finish can leave immediately - the door (GPU) stays busy all the time, maximizing throughput while minimizing wait time for everyone.
 
 Inputs & Outputs  
-   - Input: Incoming requests, active batch, generation states, completion status, batch capacity.  
-   - Output: Continuous batch processing, high GPU utilization, low latency, improved throughput.
+
+  - Input: Incoming requests, active batch, generation states, completion status, batch capacity.  
+  - Output: Continuous batch processing, high GPU utilization, low latency, improved throughput.
 
 Step-by-step description (5–10 lines max)  
 Maintain active batch: maintain active batch of requests being processed.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Continuous batching: batch capacity 8 → 5 requests generating → 3 new requests arrive → add to batch: now 8 requests → generate token → 2 requests complete → remove: batch now 6 → add 2 new requests: batch 8 again → continue → GPU utilization: 95% (vs 60% static) → latency: low (no waiting for batch) → continuous batching efficient.
 
 Time & Space Complexity  
-   - Time: O(b·n) per iteration where b is active batch size, n is sequence length (dynamic batching).  
-   - Space: O(b_max·n) where b_max is maximum batch size, n is sequence length (active batch storage).
+
+  - Time: O(b·n) per iteration where b is active batch size, n is sequence length (dynamic batching).  
+  - Space: O(b_max·n) where b_max is maximum batch size, n is sequence length (active batch storage).
 
 Strengths  
+
 - Efficiency: maximizes GPU utilization (near 100%).
 - Latency: low latency for requests (no waiting for batch completion).
 - Throughput: high throughput through continuous processing.
 
 Weaknesses / limitations  
+
 - Complexity: more complex than static batching (dynamic management).
 - Memory: requires managing variable batch sizes and generation states.
 - Scheduling: requires efficient scheduling of requests.

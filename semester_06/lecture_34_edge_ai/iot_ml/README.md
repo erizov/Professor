@@ -1,14 +1,13 @@
 # IoT ML (Internet of Things Machine Learning)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 IoT ML (Internet of Things Machine Learning) Flowchart:
@@ -43,9 +42,7 @@ IoT ML (Internet of Things Machine Learning) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 IoT ML (Internet of Things Machine Learning) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_06/lecture_34_edge_ai/iot_ml/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_34_edge_ai/iot_ml/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_34_edge_ai/iot_ml/test_algorithm.py)
-

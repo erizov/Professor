@@ -1,14 +1,13 @@
 # Advanced CQRS (Command Query Responsibility Segregation)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Advanced CQRS (Command Query Responsibility Segregation) Flowchart:
@@ -43,9 +42,7 @@ Advanced CQRS (Command Query Responsibility Segregation) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Advanced CQRS (Command Query Responsibility Segregation) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_60_system_design_advanced/cqrs_advanced/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_60_system_design_advanced/cqrs_advanced/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_60_system_design_advanced/cqrs_advanced/test_algorithm.py)
-
 
    Advanced CQRS (Command Query Responsibility Segregation)
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like separate libraries: Advanced CQRS is like having separate libraries for reading and writing - the reading library (query side) is optimized for fast lookups with indexes and denormalized data, while the writing library (command side) is optimized for data integrity and business rules - they're separate but synchronized, allowing each to be optimized for its purpose without compromising the other.
 
 Inputs & Outputs  
-   - Input: Commands (writes), queries (reads), domain events, read models, write models, synchronization mechanisms.  
-   - Output: Separated read/write models, optimized queries, validated commands, synchronized data, scalable architecture.
+
+  - Input: Commands (writes), queries (reads), domain events, read models, write models, synchronization mechanisms.  
+  - Output: Separated read/write models, optimized queries, validated commands, synchronized data, scalable architecture.
 
 Step-by-step description (5–10 lines max)  
 Separate models: create separate read and write models.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Advanced CQRS: command: CreateOrder → command handler: validate, execute → write model: update order aggregate → event: OrderCreated → query side: project event → read model: update order view (denormalized) → query: GetOrders → query handler: read from optimized read model → result: fast queries, optimized writes → Advanced CQRS operational.
 
 Time & Space Complexity  
-   - Time: O(1) for writes (command), O(log n) or O(1) for reads (optimized query models).  
-   - Space: O(w + r) where w is write model size, r is read model size (separate storage).
+
+  - Time: O(1) for writes (command), O(log n) or O(1) for reads (optimized query models).  
+  - Space: O(w + r) where w is write model size, r is read model size (separate storage).
 
 Strengths  
+
 - Scalability: enables independent scaling of read and write operations.
 - Optimization: allows optimization of each side for its purpose.
 - Flexibility: read models can be optimized for specific queries.
 
 Weaknesses / limitations  
+
 - Complexity: more complex than traditional CRUD architecture.
 - Consistency: eventual consistency between read and write models.
 - Synchronization: requires event handling and synchronization logic.

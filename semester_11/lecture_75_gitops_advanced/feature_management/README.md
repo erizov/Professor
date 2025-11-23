@@ -1,14 +1,13 @@
 # Feature Management in GitOps
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Feature Management in GitOps Flowchart:
@@ -43,9 +42,7 @@ Feature Management in GitOps Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Feature Management in GitOps Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_75_gitops_advanced/feature_management/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_75_gitops_advanced/feature_management/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_75_gitops_advanced/feature_management/test_algorithm.py)
-
 
    Feature Management in GitOps
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a light switch: Feature Management in GitOps is like having light switches (feature flags) that you control through a central panel (Git) - you can turn features on/off (enable/disable flags) for different groups (environments, users) by changing the panel settings (Git config) - just as a central panel controls all lights, Git controls all feature flags.
 
 Inputs & Outputs  
-   - Input: Feature flags, Git repositories, rollout policies, target groups, feature configurations.  
-   - Output: Managed feature flags, controlled rollouts, A/B test configurations, feature state, rollout status.
+
+  - Input: Feature flags, Git repositories, rollout policies, target groups, feature configurations.  
+  - Output: Managed feature flags, controlled rollouts, A/B test configurations, feature state, rollout status.
 
 Step-by-step description (5–10 lines max)  
 Define flags: define feature flags in Git configuration.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Feature Management: feature: new UI → flag: new-ui-enabled → Git: configure flag → deploy: GitOps deploys flag → enable: 10% users → monitor: metrics look good → promote: 50% users → result: controlled rollout → Feature Management successful.
 
 Time & Space Complexity  
-   - Time: O(f + d) where f is flag deployment time, d is decision time (GitOps sync).  
-   - Space: O(c + s) where c is configuration storage, s is state storage (flag state).
+
+  - Time: O(f + d) where f is flag deployment time, d is decision time (GitOps sync).  
+  - Space: O(c + s) where c is configuration storage, s is state storage (flag state).
 
 Strengths  
+
 - Control: enables controlled feature rollouts.
 - Safety: allows quick feature disabling if issues occur.
 - Testing: supports A/B testing and gradual rollouts.
 
 Weaknesses / limitations  
+
 - Complexity: managing many feature flags can be complex.
 - Coordination: requires coordination between code and flags.
 - Testing: requires testing flag combinations.

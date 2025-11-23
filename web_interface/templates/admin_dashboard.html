@@ -180,6 +180,8 @@
                         <th>Name</th>
                         <th>Role</th>
                         <th>Status</th>
+                        <th>Language</th>
+                        <th>Level</th>
                         <th>Last Login</th>
                         <th>Actions</th>
                     </tr>
@@ -239,8 +241,11 @@
                         <td><span class="${user.is_active ? 'status-active' : 'status-inactive'}">
                             ${user.is_active ? 'Active' : 'Inactive'}
                         </span></td>
+                        <td>${user.preferred_language || 'en'}</td>
+                        <td>${user.preferred_level || 'school'}</td>
                         <td>${user.last_login ? new Date(user.last_login).toLocaleString() : 'Never'}</td>
                         <td>
+                            <button class="btn btn-outline" onclick="editUserPreferences(${user.id}, '${user.preferred_language || 'en'}', '${user.preferred_level || 'school'}')">Edit</button>
                             <button class="btn btn-outline" onclick="toggleUser(${user.id}, ${user.is_active})">
                                 ${user.is_active ? 'Deactivate' : 'Activate'}
                             </button>
@@ -266,6 +271,44 @@
             } catch {
                 showToast('Failed to update user', false);
             }
+        }
+        
+        function editUserPreferences(userId, currentLanguage, currentLevel) {
+            const language = prompt('Preferred Language (en/ru):', currentLanguage || 'en');
+            if (language === null) return;
+            
+            const level = prompt('Preferred Level (school/university):', currentLevel || 'school');
+            if (level === null) return;
+            
+            if (language !== 'en' && language !== 'ru') {
+                showToast('Invalid language. Use "en" or "ru"', false);
+                return;
+            }
+            
+            if (level !== 'school' && level !== 'university') {
+                showToast('Invalid level. Use "school" or "university"', false);
+                return;
+            }
+            
+            fetch(`/admin/users/${userId}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    preferred_language: language,
+                    preferred_level: level
+                })
+            })
+            .then(response => {
+                if (response.ok) {
+                    showToast('User preferences updated');
+                    fetchUsers();
+                } else {
+                    throw new Error();
+                }
+            })
+            .catch(() => {
+                showToast('Failed to update preferences', false);
+            });
         }
 
         document.getElementById('create-user-form').addEventListener('submit', async (e) => {

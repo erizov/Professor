@@ -1,14 +1,13 @@
 # Progressive Delivery
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Progressive Delivery Flowchart:
@@ -43,9 +42,7 @@ Progressive Delivery Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Progressive Delivery Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_75_gitops_advanced/progressive_delivery/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_75_gitops_advanced/progressive_delivery/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_75_gitops_advanced/progressive_delivery/test_algorithm.py)
-
-
-   Progressive Delivery
 
 What problem does it solve? (1 sentence)  
    Deploys new versions gradually to users through techniques like canary deployments, feature flags, and A/B testing, reducing deployment risk and enabling data-driven rollouts.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a gradual rollout: Progressive Delivery is like gradually introducing a new product - instead of launching everywhere at once (risky), you start with a small group (canary), then expand gradually based on feedback - just as gradual product launches reduce risk, progressive delivery reduces deployment risk by testing with small groups first.
 
 Inputs & Outputs  
-   - Input: New version, deployment strategy, metrics, analysis criteria, rollout policies, target groups.  
-   - Output: Progressive rollout, canary deployments, feature flags, A/B tests, deployment decisions, risk reduction.
+
+  - Input: New version, deployment strategy, metrics, analysis criteria, rollout policies, target groups.  
+  - Output: Progressive rollout, canary deployments, feature flags, A/B tests, deployment decisions, risk reduction.
 
 Step-by-step description (5–10 lines max)  
 Deploy canary: deploy new version to small percentage (canary).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Progressive Delivery: version: v2.0 → canary: 5% users → monitor: metrics good → expand: 25% users → analyze: still good → expand: 50% users → promote: 100% users → result: safe, gradual rollout → Progressive Delivery successful.
 
 Time & Space Complexity  
-   - Time: O(d + m + a) where d is deployment time, m is monitoring time, a is analysis time (gradual process).  
-   - Space: O(c + m) where c is configuration storage, m is metric storage (monitoring data).
+
+  - Time: O(d + m + a) where d is deployment time, m is monitoring time, a is analysis time (gradual process).  
+  - Space: O(c + m) where c is configuration storage, m is metric storage (monitoring data).
 
 Strengths  
+
 - Risk reduction: reduces deployment risk through gradual rollouts.
 - Data-driven: makes decisions based on actual metrics.
 - Flexibility: allows quick rollback if issues detected.
 
 Weaknesses / limitations  
+
 - Time: progressive delivery takes longer than immediate deployment.
 - Complexity: managing progressive rollouts can be complex.
 - Metrics: requires good metrics and monitoring.

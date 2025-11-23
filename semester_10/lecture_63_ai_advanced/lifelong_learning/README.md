@@ -1,14 +1,13 @@
 # Lifelong Learning
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Lifelong Learning Flowchart:
@@ -43,9 +42,7 @@ Lifelong Learning Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Lifelong Learning Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_63_ai_advanced/lifelong_learning/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_63_ai_advanced/lifelong_learning/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_63_ai_advanced/lifelong_learning/test_algorithm.py)
-
-
-   Lifelong Learning
 
 What problem does it solve? (1 sentence)  
    Enables AI systems to learn continuously throughout their operational lifetime, accumulating knowledge from multiple tasks and experiences while maintaining performance on previously learned tasks.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like human learning: Lifelong Learning is like how humans learn throughout life - you learn math in school, then programming, then new technologies, and you remember and use all of it - lifelong learning does this for AI: it learns new tasks continuously, remembers old tasks, and uses all knowledge together, creating systems that grow smarter over time.
 
 Inputs & Outputs  
-   - Input: Continuous data streams, multiple tasks, previous knowledge, memory systems, learning mechanisms.  
-   - Output: Accumulated knowledge, multi-task capability, adaptive system, lifelong learner, growing intelligence.
+
+  - Input: Continuous data streams, multiple tasks, previous knowledge, memory systems, learning mechanisms.  
+  - Output: Accumulated knowledge, multi-task capability, adaptive system, lifelong learner, growing intelligence.
 
 Step-by-step description (5–10 lines max)  
 Learn task 1: learn first task and store knowledge.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Lifelong Learning: task 1: image classification → task 2: object detection → task 3: image segmentation → learn: each task sequentially → protect: prevent forgetting → transfer: use classification knowledge for detection → consolidate: shared visual features → result: system knows all 3 tasks → Lifelong Learning successful.
 
 Time & Space Complexity  
-   - Time: O(Σn_i + r) where n_i is data per task, r is replay overhead (accumulated learning).  
-   - Space: O(m + k) where m is model size, k is knowledge base size (grows over time).
+
+  - Time: O(Σn_i + r) where n_i is data per task, r is replay overhead (accumulated learning).  
+  - Space: O(m + k) where m is model size, k is knowledge base size (grows over time).
 
 Strengths  
+
 - Accumulation: accumulates knowledge over time.
 - Efficiency: reuses knowledge across tasks.
 - Adaptability: adapts to new tasks continuously.
 
 Weaknesses / limitations  
+
 - Forgetting: risk of catastrophic forgetting.
 - Scalability: knowledge base grows over time.
 - Complexity: managing multiple tasks is complex.

@@ -1,14 +1,13 @@
 # Hash Table
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Hash Table Flowchart:
@@ -43,9 +42,7 @@ Hash Table Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Hash Table Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_01/lecture_08_hash_tables/hash_table/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_08_hash_tables/hash_table/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_08_hash_tables/hash_table/test_algorithm.py)
-

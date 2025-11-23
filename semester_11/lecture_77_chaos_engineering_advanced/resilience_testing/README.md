@@ -1,14 +1,13 @@
 # Resilience Testing
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Resilience Testing Flowchart:
@@ -43,9 +42,7 @@ Resilience Testing Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Resilience Testing Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_77_chaos_engineering_advanced/resilience_testing/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_77_chaos_engineering_advanced/resilience_testing/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_77_chaos_engineering_advanced/resilience_testing/test_algorithm.py)
-
-
-   Resilience Testing
 
 What problem does it solve? (1 sentence)  
    Tests system resilience by subjecting systems to various failure conditions and measuring their ability to maintain functionality, recover, and degrade gracefully.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like durability testing: Resilience Testing is like durability testing for products - you test how well something handles stress and damage (failures) - just as durability tests ensure products last, resilience tests ensure systems handle failures well.
 
 Inputs & Outputs  
-   - Input: System under test, failure scenarios, test cases, resilience criteria, monitoring tools, recovery procedures.  
-   - Output: Resilience test results, recovery measurements, failure handling validation, resilience scores, improvement recommendations.
+
+  - Input: System under test, failure scenarios, test cases, resilience criteria, monitoring tools, recovery procedures.  
+  - Output: Resilience test results, recovery measurements, failure handling validation, resilience scores, improvement recommendations.
 
 Step-by-step description (5–10 lines max)  
 Define criteria: define resilience criteria and success metrics.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Resilience Testing: test: database failure → inject: kill database → measure: system switches to replica in 10s, 99.5% availability maintained → assess: meets resilience criteria → document: test passed → Resilience Testing successful.
 
 Time & Space Complexity  
-   - Time: O(d + e + a) where d is design time, e is execution time, a is analysis time (varies by test scope).  
-   - Space: O(t + r) where t is test storage, r is result storage (test data).
+
+  - Time: O(d + e + a) where d is design time, e is execution time, a is analysis time (varies by test scope).  
+  - Space: O(t + r) where t is test storage, r is result storage (test data).
 
 Strengths  
+
 - Validation: validates system resilience systematically.
 - Coverage: tests multiple failure scenarios.
 - Improvement: identifies areas for resilience improvement.
 
 Weaknesses / limitations  
+
 - Time: comprehensive resilience testing takes time.
 - Coverage: may not test all possible failure scenarios.
 - Environment: requires appropriate test environment.

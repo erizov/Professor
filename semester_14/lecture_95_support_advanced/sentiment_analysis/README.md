@@ -1,14 +1,13 @@
 # Sentiment Analysis for Support
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Sentiment Analysis for Support Flowchart:
@@ -43,9 +42,7 @@ Sentiment Analysis for Support Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Sentiment Analysis for Support Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_14/lecture_95_support_advanced/sentiment_analysis/algorithm.py)
 - [Java Implementation](/code/semester_14/lecture_95_support_advanced/sentiment_analysis/Algorithm.java)
 - [Python Tests](/code/semester_14/lecture_95_support_advanced/sentiment_analysis/test_algorithm.py)
-
 
    Sentiment Analysis for Support
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
 Like reading emotions: Sentiment analysis is like reading emotions - you analyze text (customer messages) to understand feelings (positive, negative, neutral), identify urgency (frustrated customers), and respond appropriately (prioritize, route) - just as you read someone's emotions, sentiment analysis reads customer emotions.
 
 Inputs & Outputs  
-   - Input: Customer messages, support tickets, conversation history, sentiment models, classification rules, context information.  
-   - Output: Sentiment scores, emotion classifications, urgency flags, routing recommendations, sentiment trends, support insights.
+
+  - Input: Customer messages, support tickets, conversation history, sentiment models, classification rules, context information.  
+  - Output: Sentiment scores, emotion classifications, urgency flags, routing recommendations, sentiment trends, support insights.
 
 Step-by-step description (5–10 lines max)  
 Collect: collect customer messages and interactions.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Sentiment Analysis: collect messages → preprocess → analyze → classify (negative) → score (-0.8) → flag urgent → route to senior agent → Sentiment Analysis successful.
 
 Time & Space Complexity  
-   - Time: O(m * s) where m is messages, s is sentiment analysis complexity (sentiment analysis complexity).  
-   - Space: O(m + m) where m is messages, m is models (sentiment storage).
+
+  - Time: O(m * s) where m is messages, s is sentiment analysis complexity (sentiment analysis complexity).  
+  - Space: O(m + m) where m is messages, m is models (sentiment storage).
 
 Strengths  
+
 - Understanding: provides emotional understanding of customers.
 - Prioritization: helps prioritize urgent cases.
 - Quality: improves support quality and customer satisfaction.
 
 Weaknesses / limitations  
+
 - Accuracy: may have limitations in accuracy.
 - Context: may miss context and sarcasm.
 - Bias: may have cultural or linguistic bias.

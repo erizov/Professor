@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 38 Мониторинг Production — production monitoring - demonstration. this lecture covers production monitoring design patterns and implementations.
+Лекция 38 Мониторинг Production — production monitoring - demonstration. this лекция covers production monitoring дизайн patterns and implementations.
 
 ## Где применяется
 

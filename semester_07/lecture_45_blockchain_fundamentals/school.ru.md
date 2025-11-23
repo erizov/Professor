@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 45 Blockchain Fundamentals — blockchain - demonstration. this lecture covers blockchain algorithms and consensus mechanisms.
+Лекция 45 Блокчейн Fundamentals — блокчейн - demonstration. this лекция covers блокчейн algorithms and consensus mechanisms.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 45 Blockchain Fundamentals — blockchain - demonstration. this lecture 
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 45 blockchain fundamentals:
+Рассмотрим конкретный пример работы лекция 45 блокчейн fundamentals:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,37 +25,37 @@ Lecture 45 Blockchain Fundamentals — blockchain - demonstration. this lecture 
 
 ### Базовые
 
-1. Что делает алгоритм lecture 45 blockchain fundamentals?
-2. В каких ситуациях используется lecture 45 blockchain fundamentals?
+1. Что делает алгоритм лекция 45 блокчейн fundamentals?
+2. В каких ситуациях используется лекция 45 блокчейн fundamentals?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 45 blockchain fundamentals обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 45 blockchain fundamentals?
-3. Можно ли улучшить работу lecture 45 blockchain fundamentals?
+1. Как лекция 45 блокчейн fundamentals обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 45 блокчейн fundamentals?
+3. Можно ли улучшить работу лекция 45 блокчейн fundamentals?
 
 ### Сложные
 
-1. Какова временная сложность lecture 45 blockchain fundamentals?
-2. Как lecture 45 blockchain fundamentals работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 45 blockchain fundamentals?
+1. Какова временная сложность лекция 45 блокчейн fundamentals?
+2. Как лекция 45 блокчейн fundamentals работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 45 блокчейн fundamentals?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 45 blockchain fundamentals.
+Выполни простую операцию с алгоритмом лекция 45 блокчейн fundamentals.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 45 blockchain fundamentals к более сложному набору данных.
+Примени алгоритм лекция 45 блокчейн fundamentals к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 45 blockchain fundamentals на языке программирования.
+Напиши реализацию алгоритма лекция 45 блокчейн fundamentals на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
 
 ---

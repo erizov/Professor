@@ -1,14 +1,13 @@
 # Fault Injection
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Fault Injection Flowchart:
@@ -43,9 +42,7 @@ Fault Injection Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Fault Injection Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_77_chaos_engineering_advanced/fault_injection/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_77_chaos_engineering_advanced/fault_injection/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_77_chaos_engineering_advanced/fault_injection/test_algorithm.py)
-
-
-   Fault Injection
 
 What problem does it solve? (1 sentence)  
    Intentionally injects faults (failures, errors, delays) into systems to test resilience, validate error handling, and identify failure modes.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like stress testing: Fault Injection is like stress testing for systems - you intentionally create problems (inject faults) to see how the system handles them - just as stress tests reveal weaknesses, fault injection reveals how systems handle failures.
 
 Inputs & Outputs  
-   - Input: System components, fault types, injection points, fault parameters, monitoring tools, safety rules.  
-   - Output: Injected faults, system behavior, error handling validation, failure modes, resilience insights.
+
+  - Input: System components, fault types, injection points, fault parameters, monitoring tools, safety rules.  
+  - Output: Injected faults, system behavior, error handling validation, failure modes, resilience insights.
 
 Step-by-step description (5–10 lines max)  
 Identify targets: identify components to inject faults into.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Fault Injection: target: database service → fault: network delay 5s → inject: delay database requests → observe: system times out, retries, uses cache → measure: 5s delay, graceful degradation → analyze: good error handling → Fault Injection successful.
 
 Time & Space Complexity  
-   - Time: O(i + o + a) where i is injection time, o is observation time, a is analysis time (varies by fault type).  
-   - Space: O(f + d) where f is fault configuration storage, d is data storage (injection logs).
+
+  - Time: O(i + o + a) where i is injection time, o is observation time, a is analysis time (varies by fault type).  
+  - Space: O(f + d) where f is fault configuration storage, d is data storage (injection logs).
 
 Strengths  
+
 - Testing: enables testing of error handling and recovery.
 - Discovery: discovers failure modes before production.
 - Validation: validates system resilience under faults.
 
 Weaknesses / limitations  
+
 - Risk: fault injection can cause production issues.
 - Coverage: may not cover all fault types.
 - Complexity: requires understanding of system architecture.

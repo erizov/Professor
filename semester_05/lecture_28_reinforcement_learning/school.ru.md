@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 28 Reinforcement Learning — reinforcement learning - demonstration. this lecture covers reinforcement learning algorithms and techniques.
+Лекция 28 Reinforcement Обучение — reinforcement обучение - demonstration. this лекция covers reinforcement обучение algorithms and techniques.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 28 Reinforcement Learning — reinforcement learning - demonstration. th
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 28 reinforcement learning:
+Рассмотрим конкретный пример работы лекция 28 reinforcement обучение:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,37 +25,37 @@ Lecture 28 Reinforcement Learning — reinforcement learning - demonstration. th
 
 ### Базовые
 
-1. Что делает алгоритм lecture 28 reinforcement learning?
-2. В каких ситуациях используется lecture 28 reinforcement learning?
+1. Что делает алгоритм лекция 28 reinforcement обучение?
+2. В каких ситуациях используется лекция 28 reinforcement обучение?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 28 reinforcement learning обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 28 reinforcement learning?
-3. Можно ли улучшить работу lecture 28 reinforcement learning?
+1. Как лекция 28 reinforcement обучение обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 28 reinforcement обучение?
+3. Можно ли улучшить работу лекция 28 reinforcement обучение?
 
 ### Сложные
 
-1. Какова временная сложность lecture 28 reinforcement learning?
-2. Как lecture 28 reinforcement learning работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 28 reinforcement learning?
+1. Какова временная сложность лекция 28 reinforcement обучение?
+2. Как лекция 28 reinforcement обучение работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 28 reinforcement обучение?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 28 reinforcement learning.
+Выполни простую операцию с алгоритмом лекция 28 reinforcement обучение.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 28 reinforcement learning к более сложному набору данных.
+Примени алгоритм лекция 28 reinforcement обучение к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 28 reinforcement learning на языке программирования.
+Напиши реализацию алгоритма лекция 28 reinforcement обучение на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
 
 ---

@@ -1,14 +1,13 @@
 # Risk Assessment for AI Systems
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Risk Assessment for AI Systems Flowchart:
@@ -43,9 +42,7 @@ Risk Assessment for AI Systems Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Risk Assessment for AI Systems Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_70_ai_governance/risk_assessment/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_70_ai_governance/risk_assessment/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_70_ai_governance/risk_assessment/test_algorithm.py)
-
 
    Risk Assessment for AI Systems
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
 Like a safety inspection: Risk Assessment for AI is like a safety inspection - you identify potential hazards (risks), assess how likely and severe they are (risk analysis), and determine what to do about them (mitigation) - just as safety inspections prevent accidents, risk assessments prevent AI failures and harms.
 
 Inputs & Outputs  
-   - Input: AI systems, risk categories, risk factors, impact assessments, likelihood estimates.  
-   - Output: Risk assessments, risk registers, risk scores, mitigation plans, risk reports.
+
+  - Input: AI systems, risk categories, risk factors, impact assessments, likelihood estimates.  
+  - Output: Risk assessments, risk registers, risk scores, mitigation plans, risk reports.
 
 Step-by-step description (5–10 lines max)  
 Identify: identify potential risks (bias, security, performance, ethical).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Risk Assessment: AI system: loan approval → identify: bias risk (high), security risk (medium) → analyze: bias likelihood = high, impact = high → score: 9/10 (critical) → mitigate: bias testing, fairness constraints → monitor: ongoing risk monitoring → Risk Assessment operational.
 
 Time & Space Complexity  
-   - Time: O(r·f) where r is risks, f is risk factors (assessment and analysis).  
-   - Space: O(r + d) where r is risk register size, d is documentation size.
+
+  - Time: O(r·f) where r is risks, f is risk factors (assessment and analysis).  
+  - Space: O(r + d) where r is risk register size, d is documentation size.
 
 Strengths  
+
 - Proactive: enables proactive risk management.
 - Comprehensive: covers multiple risk dimensions.
 - Prioritization: helps prioritize risk mitigation efforts.
 
 Weaknesses / limitations  
+
 - Subjectivity: risk assessment can be subjective.
 - Evolving: risks evolve as systems and contexts change.
 - Coverage: may not identify all possible risks.

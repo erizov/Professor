@@ -1,14 +1,13 @@
 # Memory Management
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Memory Management Flowchart:
@@ -43,9 +42,7 @@ Memory Management Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Memory Management Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_07/lecture_39_operating_systems/memory_management/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_39_operating_systems/memory_management/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_39_operating_systems/memory_management/test_algorithm.py)
-

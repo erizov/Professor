@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 88 Consensus Advanced — blockchain - demonstration. this lecture covers blockchain algorithms and consensus mechanisms.
+Лекция 88 Consensus Продвинутый — блокчейн - demonstration. this лекция covers блокчейн algorithms and consensus mechanisms.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 88 Consensus Advanced — blockchain - demonstration. this lecture cover
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 88 consensus advanced:
+Рассмотрим конкретный пример работы лекция 88 consensus продвинутый:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 88 Consensus Advanced — blockchain - demonstration. this lecture cover
 
 ### Базовые
 
-1. Что делает алгоритм lecture 88 consensus advanced?
-2. В каких ситуациях используется lecture 88 consensus advanced?
+1. Что делает алгоритм лекция 88 consensus продвинутый?
+2. В каких ситуациях используется лекция 88 consensus продвинутый?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 88 consensus advanced обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 88 consensus advanced?
-3. Можно ли улучшить работу lecture 88 consensus advanced?
+1. Как лекция 88 consensus продвинутый обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 88 consensus продвинутый?
+3. Можно ли улучшить работу лекция 88 consensus продвинутый?
 
 ### Сложные
 
-1. Какова временная сложность lecture 88 consensus advanced?
-2. Как lecture 88 consensus advanced работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 88 consensus advanced?
+1. Какова временная сложность лекция 88 consensus продвинутый?
+2. Как лекция 88 consensus продвинутый работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 88 consensus продвинутый?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 88 consensus advanced.
+Выполни простую операцию с алгоритмом лекция 88 consensus продвинутый.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 88 consensus advanced к более сложному набору данных.
+Примени алгоритм лекция 88 consensus продвинутый к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 88 consensus advanced на языке программирования.
+Напиши реализацию алгоритма лекция 88 consensus продвинутый на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

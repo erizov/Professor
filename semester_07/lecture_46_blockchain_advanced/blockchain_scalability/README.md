@@ -1,14 +1,13 @@
 # Blockchain Scalability
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Blockchain Scalability Flowchart:
@@ -43,9 +42,7 @@ Blockchain Scalability Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Blockchain Scalability Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_07/lecture_46_blockchain_advanced/blockchain_scalability/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_46_blockchain_advanced/blockchain_scalability/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_46_blockchain_advanced/blockchain_scalability/test_algorithm.py)
-
-
-   Blockchain Scalability
 
 What problem does it solve? (1 sentence)  
    Addresses blockchain's limited transaction throughput and high latency by implementing solutions that increase transactions per second while maintaining decentralization and security.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a highway bottleneck: blockchain can only process a few transactions per second (like a single-lane road) - scalability solutions add more lanes (layer 2), faster processing (sharding), or off-ramps (sidechains) to handle more traffic without compromising security or decentralization.
 
 Inputs & Outputs  
+
 - Input: Blockchain transactions, scalability solution type (layer 2, sharding, sidechains, etc.), network capacity.
-   - Output: Increased transaction throughput, reduced latency, maintained security and decentralization.
+  - Output: Increased transaction throughput, reduced latency, maintained security and decentralization.
 
 Step-by-step description (5–10 lines max)  
 Identify bottleneck: analyze current blockchain limitations (throughput, latency, cost).
@@ -112,15 +105,18 @@ Tiny example (hand-simulated)
    Ethereum: 15 TPS → implement Layer 2 rollup → batch 1000 transactions off-chain → process in rollup → commit single proof to Ethereum → effectively 2000+ TPS → 100x improvement while maintaining security.
 
 Time & Space Complexity  
-   - Time: Varies by solution: O(1) per transaction in layer 2 (batched), O(n) for sharding where n is shard size.  
-   - Space: O(b) where b is batch size (layer 2), O(s) for sharding where s is number of shards.
+
+  - Time: Varies by solution: O(1) per transaction in layer 2 (batched), O(n) for sharding where n is shard size.  
+  - Space: O(b) where b is batch size (layer 2), O(s) for sharding where s is number of shards.
 
 Strengths  
+
 - Higher throughput: enables thousands of transactions per second.
 - Lower costs: reduces transaction fees through batching and off-chain processing.
 - Faster confirmation: reduces transaction confirmation time.
 
 Weaknesses / limitations  
+
 - Complexity: adds complexity to blockchain architecture.
 - Trade-offs: may require trade-offs between security, decentralization, and scalability.
 - Compatibility: requires coordination between main chain and scalability solution.

@@ -1,14 +1,13 @@
 # Database Design
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Database Design Flowchart:
@@ -43,9 +42,7 @@ Database Design Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Database Design Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_50_sql_advanced/database_design/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_50_sql_advanced/database_design/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_50_sql_advanced/database_design/test_algorithm.py)
-
-
-   Database Design
 
 What problem does it solve? (1 sentence)  
 Creates efficient, normalized database schemas that model real-world entities and relationships, ensuring data integrity, minimizing redundancy, and optimizing for query performance.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like designing a building blueprint: database design is like creating an architectural blueprint for data - you identify what entities exist (like rooms in a building), how they relate (like how rooms connect), and design the structure (like floor plan) to be efficient, organized, and easy to navigate - good design makes the database easy to use, maintain, and query.
 
 Inputs & Outputs  
-   - Input: Business requirements, entities, relationships, data constraints, access patterns.  
-   - Output: Database schema, entity-relationship model, normalized tables, optimized design.
+
+  - Input: Business requirements, entities, relationships, data constraints, access patterns.  
+  - Output: Database schema, entity-relationship model, normalized tables, optimized design.
 
 Step-by-step description (5–10 lines max)  
 Gather requirements: understand business needs, data, and access patterns.
@@ -113,15 +106,18 @@ Tiny example (hand-simulated)
    E-commerce database design: entities: customers, orders, products, order_items → relationships: customer has many orders, order has many order_items, order_item belongs to product → normalize: separate tables for each entity → foreign keys link relationships → indexes on frequently queried fields → efficient, maintainable database design.
 
 Time & Space Complexity  
-   - Time: O(e·r) where e is number of entities, r is number of relationships (design phase).  
-   - Space: O(t) where t is number of tables and their schema size.
+
+  - Time: O(e·r) where e is number of entities, r is number of relationships (design phase).  
+  - Space: O(t) where t is number of tables and their schema size.
 
 Strengths  
+
 - Data integrity: well-designed schema ensures data consistency.
 - Efficiency: optimized design supports fast queries.
 - Maintainability: clear structure makes database easy to maintain and extend.
 
 Weaknesses / limitations  
+
 - Complexity: good design requires careful analysis and planning.
 - Trade-offs: may need to balance normalization with performance.
 - Evolution: schema changes can be complex as requirements evolve.

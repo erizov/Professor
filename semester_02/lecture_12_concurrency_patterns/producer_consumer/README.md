@@ -1,14 +1,13 @@
 # Producer-Consumer Pattern
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Producer-Consumer Pattern Flowchart:
@@ -43,9 +42,7 @@ Producer-Consumer Pattern Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Producer-Consumer Pattern Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_02/lecture_12_concurrency_patterns/producer_consumer/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_12_concurrency_patterns/producer_consumer/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_12_concurrency_patterns/producer_consumer/test_algorithm.py)
-

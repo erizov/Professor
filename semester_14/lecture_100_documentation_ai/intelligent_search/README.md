@@ -1,14 +1,13 @@
 # Intelligent Documentation Search
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Intelligent Documentation Search Flowchart:
@@ -49,9 +48,7 @@ Intelligent Documentation Search Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Intelligent Documentation Search Step-by-Step Execution:
@@ -75,9 +72,7 @@ Step 3: Check remaining (index 3, value 7)
 Found! Index 3
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -90,14 +85,11 @@ flowchart TD
     More -->|No| NotFound([Not Found])
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_14/lecture_100_documentation_ai/intelligent_search/algorithm.py)
 - [Java Implementation](/code/semester_14/lecture_100_documentation_ai/intelligent_search/Algorithm.java)
 - [Python Tests](/code/semester_14/lecture_100_documentation_ai/intelligent_search/test_algorithm.py)
-
-
-   Intelligent Documentation Search
 
 What problem does it solve? (1 sentence)  
    Enables semantic and intelligent search over documentation by understanding user intent, using natural language processing, and returning relevant results even when exact keywords don't match.
@@ -106,8 +98,9 @@ Intuition (plain-language explanation)
    Like a smart librarian: Intelligent search is like a smart librarian - you ask a question in natural language (not exact keywords), and they understand what you mean (semantic understanding) and find relevant books (documentation) even if your words don't exactly match the book titles - this makes finding information much easier.
 
 Inputs & Outputs  
-   - Input: Search queries, documentation corpus, semantic models, search parameters, user preferences, ranking algorithms.  
-   - Output: Relevant search results, ranked documentation, query suggestions, related content, search analytics.
+
+  - Input: Search queries, documentation corpus, semantic models, search parameters, user preferences, ranking algorithms.  
+  - Output: Relevant search results, ranked documentation, query suggestions, related content, search analytics.
 
 Step-by-step description (5–10 lines max)  
 Parse: parse user search query.
@@ -125,15 +118,18 @@ Tiny example (hand-simulated)
    Intelligent Search: query 'how to handle errors' → understand intent → embed → search semantically → find 'error handling' docs → rank → present top 5 results → Intelligent Search successful.
 
 Time & Space Complexity  
-   - Time: O(q + d * s) where q is query processing, d is documentation size, s is search complexity (search complexity).  
-   - Space: O(d + e) where d is documentation, e is embeddings (search storage).
+
+  - Time: O(q + d * s) where q is query processing, d is documentation size, s is search complexity (search complexity).  
+  - Space: O(d + e) where d is documentation, e is embeddings (search storage).
 
 Strengths  
+
 - Semantic: understands user intent, not just keywords.
 - Relevance: returns highly relevant results.
 - Natural: supports natural language queries.
 
 Weaknesses / limitations  
+
 - Complexity: requires sophisticated NLP and embeddings.
 - Quality: depends on documentation quality and structure.
 - Performance: semantic search can be slower than keyword search.

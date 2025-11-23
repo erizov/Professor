@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 72 Infrastructure Advanced — infrastructure - demonstration. this lecture covers infrastructure patterns and optimization.
+Лекция 72 Infrastructure Продвинутый — infrastructure - demonstration. this лекция covers infrastructure patterns and оптимизация.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 72 Infrastructure Advanced — infrastructure - demonstration. this lect
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 72 infrastructure advanced:
+Рассмотрим конкретный пример работы лекция 72 infrastructure продвинутый:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 72 Infrastructure Advanced — infrastructure - demonstration. this lect
 
 ### Базовые
 
-1. Что делает алгоритм lecture 72 infrastructure advanced?
-2. В каких ситуациях используется lecture 72 infrastructure advanced?
+1. Что делает алгоритм лекция 72 infrastructure продвинутый?
+2. В каких ситуациях используется лекция 72 infrastructure продвинутый?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 72 infrastructure advanced обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 72 infrastructure advanced?
-3. Можно ли улучшить работу lecture 72 infrastructure advanced?
+1. Как лекция 72 infrastructure продвинутый обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 72 infrastructure продвинутый?
+3. Можно ли улучшить работу лекция 72 infrastructure продвинутый?
 
 ### Сложные
 
-1. Какова временная сложность lecture 72 infrastructure advanced?
-2. Как lecture 72 infrastructure advanced работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 72 infrastructure advanced?
+1. Какова временная сложность лекция 72 infrastructure продвинутый?
+2. Как лекция 72 infrastructure продвинутый работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 72 infrastructure продвинутый?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 72 infrastructure advanced.
+Выполни простую операцию с алгоритмом лекция 72 infrastructure продвинутый.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 72 infrastructure advanced к более сложному набору данных.
+Примени алгоритм лекция 72 infrastructure продвинутый к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 72 infrastructure advanced на языке программирования.
+Напиши реализацию алгоритма лекция 72 infrastructure продвинутый на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

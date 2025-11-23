@@ -1,14 +1,13 @@
 # Community Knowledge Sharing
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Community Knowledge Sharing Flowchart:
@@ -43,9 +42,7 @@ Community Knowledge Sharing Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Community Knowledge Sharing Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_14/lecture_102_community_management/knowledge_sharing/algorithm.py)
 - [Java Implementation](/code/semester_14/lecture_102_community_management/knowledge_sharing/Algorithm.java)
 - [Python Tests](/code/semester_14/lecture_102_community_management/knowledge_sharing/test_algorithm.py)
-
-
-   Community Knowledge Sharing
 
 What problem does it solve? (1 sentence)  
    Facilitates knowledge sharing within developer communities by providing platforms, tools, and incentives for sharing expertise, best practices, and solutions.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a knowledge library: Knowledge sharing is like a knowledge library - community members contribute knowledge (books), organize it (catalog), and share it (lending) - just as a library facilitates knowledge access, knowledge sharing facilitates community learning.
 
 Inputs & Outputs  
-   - Input: Knowledge content, contributor information, organization schemes, search capabilities, sharing incentives, quality criteria.  
-   - Output: Knowledge base, organized content, searchable resources, contributor recognition, quality ratings, sharing metrics.
+
+  - Input: Knowledge content, contributor information, organization schemes, search capabilities, sharing incentives, quality criteria.  
+  - Output: Knowledge base, organized content, searchable resources, contributor recognition, quality ratings, sharing metrics.
 
 Step-by-step description (5–10 lines max)  
 Create: create knowledge sharing platform.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Knowledge Sharing: create platform → organize (10 categories) → contribute (100 articles) → curate → search → share → recognize top contributors → update → Knowledge Sharing successful.
 
 Time & Space Complexity  
-   - Time: O(c * q) where c is content, q is quality check time (knowledge sharing complexity).  
-   - Space: O(k + m) where k is knowledge, m is metadata (knowledge storage).
+
+  - Time: O(c * q) where c is content, q is quality check time (knowledge sharing complexity).  
+  - Space: O(k + m) where k is knowledge, m is metadata (knowledge storage).
 
 Strengths  
+
 - Learning: facilitates community learning.
 - Efficiency: reduces duplicate questions and answers.
 - Value: creates valuable community resource.
 
 Weaknesses / limitations  
+
 - Quality: requires quality control and curation.
 - Maintenance: requires ongoing maintenance.
 - Participation: depends on community participation.

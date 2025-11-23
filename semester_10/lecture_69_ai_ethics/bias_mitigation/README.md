@@ -1,14 +1,13 @@
 # Bias Mitigation
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Bias Mitigation Flowchart:
@@ -43,9 +42,7 @@ Bias Mitigation Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Bias Mitigation Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_69_ai_ethics/bias_mitigation/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_69_ai_ethics/bias_mitigation/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_69_ai_ethics/bias_mitigation/test_algorithm.py)
-
-
-   Bias Mitigation
 
 What problem does it solve? (1 sentence)  
    Identifies and reduces bias in machine learning models and datasets, ensuring fair and equitable AI systems that don't discriminate against protected groups or perpetuate harmful stereotypes.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like removing bias from decisions: Bias Mitigation is like removing bias from human decisions - you identify where bias exists (in data, models), understand how it affects outcomes (unfair treatment), and fix it (mitigation techniques) - just as we work to remove human bias, we work to remove AI bias to ensure fairness.
 
 Inputs & Outputs  
-   - Input: Training data, models, bias metrics, fairness criteria, demographic data, mitigation techniques.  
-   - Output: Debiased models, fair predictions, reduced bias metrics, fairness reports, equitable AI systems.
+
+  - Input: Training data, models, bias metrics, fairness criteria, demographic data, mitigation techniques.  
+  - Output: Debiased models, fair predictions, reduced bias metrics, fairness reports, equitable AI systems.
 
 Step-by-step description (5–10 lines max)  
 Detect: detect bias in data and models.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Bias Mitigation: data: hiring dataset → detect: gender bias detected → measure: 30% gender gap → mitigate: apply fairness constraints → train: train fair model → evaluate: gender gap reduced to 5% → result: fair hiring model → Bias Mitigation successful.
 
 Time & Space Complexity  
-   - Time: O(d + t + e) where d is detection time, t is training time, e is evaluation time (varies by technique).  
-   - Space: O(m + d) where m is model storage, d is data storage (training data, demographic data).
+
+  - Time: O(d + t + e) where d is detection time, t is training time, e is evaluation time (varies by technique).  
+  - Space: O(m + d) where m is model storage, d is data storage (training data, demographic data).
 
 Strengths  
+
 - Fairness: improves fairness and equity in AI systems.
 - Compliance: helps meet fairness and anti-discrimination requirements.
 - Trust: increases trust in AI systems.
 
 Weaknesses / limitations  
+
 - Trade-offs: may trade accuracy for fairness.
 - Complexity: bias mitigation can be complex.
 - Definition: defining fairness can be challenging.

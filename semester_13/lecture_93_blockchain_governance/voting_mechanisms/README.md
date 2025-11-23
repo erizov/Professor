@@ -1,14 +1,13 @@
 # Blockchain Voting Mechanisms
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Blockchain Voting Mechanisms Flowchart:
@@ -43,9 +42,7 @@ Blockchain Voting Mechanisms Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Blockchain Voting Mechanisms Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_93_blockchain_governance/voting_mechanisms/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_93_blockchain_governance/voting_mechanisms/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_93_blockchain_governance/voting_mechanisms/test_algorithm.py)
-
-
-   Blockchain Voting Mechanisms
 
 What problem does it solve? (1 sentence)  
    Enables decentralized decision-making by implementing secure, transparent, and verifiable voting systems that allow token holders to participate in governance decisions with cryptographic guarantees.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a secure digital ballot box: Blockchain voting mechanisms are like a secure digital ballot box - you cast your vote (weighted by tokens), it's recorded immutably on the blockchain (transparent and verifiable), and the results are calculated automatically (no manipulation) - everyone can verify the votes and results, ensuring fair and transparent governance.
 
 Inputs & Outputs  
-   - Input: Voting proposals, token holdings, vote choices (for/against/abstain), voting period, quorum requirements, delegation options.  
-   - Output: Vote records, voting results, executed decisions, governance history, verification proofs.
+
+  - Input: Voting proposals, token holdings, vote choices (for/against/abstain), voting period, quorum requirements, delegation options.  
+  - Output: Vote records, voting results, executed decisions, governance history, verification proofs.
 
 Step-by-step description (5–10 lines max)  
 Propose: submit governance proposal for voting.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Voting: propose 'Increase fee to 0.3%' → announce 3-day vote → cast votes (60% yes, 30% no) → record on-chain → count → verify → execute → Voting successful.
 
 Time & Space Complexity  
-   - Time: O(v) for vote counting where v is voters, O(1) for verification (voting complexity).  
-   - Space: O(v + p) where v is votes, p is proposals (voting storage).
+
+  - Time: O(v) for vote counting where v is voters, O(1) for verification (voting complexity).  
+  - Space: O(v + p) where v is votes, p is proposals (voting storage).
 
 Strengths  
+
 - Transparency: all votes are publicly verifiable.
 - Security: cryptographic guarantees prevent manipulation.
 - Decentralization: enables decentralized decision-making.
 
 Weaknesses / limitations  
+
 - Participation: low voter participation is common.
 - Complexity: complex proposals may be hard to evaluate.
 - Sybil: requires mechanisms to prevent Sybil attacks.

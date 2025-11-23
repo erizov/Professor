@@ -1,14 +1,13 @@
 # Alert Fatigue Reduction
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Alert Fatigue Reduction Flowchart:
@@ -43,9 +42,7 @@ Alert Fatigue Reduction Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Alert Fatigue Reduction Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_14/lecture_96_incident_management_advanced/alert_fatigue_reduction/algorithm.py)
 - [Java Implementation](/code/semester_14/lecture_96_incident_management_advanced/alert_fatigue_reduction/Algorithm.java)
 - [Python Tests](/code/semester_14/lecture_96_incident_management_advanced/alert_fatigue_reduction/test_algorithm.py)
-
-
-   Alert Fatigue Reduction
 
 What problem does it solve? (1 sentence)  
 Reduces alert fatigue by filtering, prioritizing, grouping, and intelligently managing alerts to ensure operators focus on critical issues without being overwhelmed by noise.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like a smart filter for alerts: Alert fatigue reduction is like a smart filter for alerts - you filter out noise (false positives, low priority), prioritize important ones (critical alerts), group related ones (similar alerts), and present only what matters - just as a spam filter reduces email noise, alert reduction reduces alert noise.
 
 Inputs & Outputs  
-   - Input: Alerts, alert metadata, historical data, priority rules, grouping criteria, filtering rules, context information.  
-   - Output: Filtered alerts, prioritized alerts, grouped alerts, reduced alert volume, alert summaries, fatigue metrics.
+
+  - Input: Alerts, alert metadata, historical data, priority rules, grouping criteria, filtering rules, context information.  
+  - Output: Filtered alerts, prioritized alerts, grouped alerts, reduced alert volume, alert summaries, fatigue metrics.
 
 Step-by-step description (5–10 lines max)  
 Collect: collect all incoming alerts.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Alert Reduction: collect 1000 alerts → filter (remove 600 false positives) → prioritize → group (200 into 20 groups) → present 50 critical → Alert Reduction successful (95% reduction).
 
 Time & Space Complexity  
-   - Time: O(a * f) where a is alerts, f is filtering complexity (alert reduction complexity).  
-   - Space: O(a + r) where a is alerts, r is rules (alert storage).
+
+  - Time: O(a * f) where a is alerts, f is filtering complexity (alert reduction complexity).  
+  - Space: O(a + r) where a is alerts, r is rules (alert storage).
 
 Strengths  
+
 - Focus: helps operators focus on critical issues.
 - Efficiency: reduces time spent on non-critical alerts.
 - Quality: improves alert quality and relevance.
 
 Weaknesses / limitations  
+
 - Risk: may filter out important alerts if not careful.
 - Complexity: requires sophisticated filtering algorithms.
 - Tuning: requires careful tuning of rules and thresholds.

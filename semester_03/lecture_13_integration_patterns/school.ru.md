@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 13 Integration Patterns — integration patterns - demonstration. this lecture covers integration patterns design patterns and implementations.
+Лекция 13 Integration Patterns — integration patterns - demonstration. this лекция covers integration patterns дизайн patterns and implementations.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 13 Integration Patterns — integration patterns - demonstration. this l
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 13 integration patterns:
+Рассмотрим конкретный пример работы лекция 13 integration patterns:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,35 +25,35 @@ Lecture 13 Integration Patterns — integration patterns - demonstration. this l
 
 ### Базовые
 
-1. Что делает алгоритм lecture 13 integration patterns?
-2. В каких ситуациях используется lecture 13 integration patterns?
+1. Что делает алгоритм лекция 13 integration patterns?
+2. В каких ситуациях используется лекция 13 integration patterns?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 13 integration patterns обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 13 integration patterns?
-3. Можно ли улучшить работу lecture 13 integration patterns?
+1. Как лекция 13 integration patterns обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 13 integration patterns?
+3. Можно ли улучшить работу лекция 13 integration patterns?
 
 ### Сложные
 
-1. Какова временная сложность lecture 13 integration patterns?
-2. Как lecture 13 integration patterns работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 13 integration patterns?
+1. Какова временная сложность лекция 13 integration patterns?
+2. Как лекция 13 integration patterns работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 13 integration patterns?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 13 integration patterns.
+Выполни простую операцию с алгоритмом лекция 13 integration patterns.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 13 integration patterns к более сложному набору данных.
+Примени алгоритм лекция 13 integration patterns к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 13 integration patterns на языке программирования.
+Напиши реализацию алгоритма лекция 13 integration patterns на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

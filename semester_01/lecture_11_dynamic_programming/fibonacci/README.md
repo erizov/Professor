@@ -1,14 +1,13 @@
 # Dynamic Programming Fibonacci
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Dynamic Programming Fibonacci Flowchart:
@@ -43,9 +42,7 @@ Dynamic Programming Fibonacci Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Dynamic Programming Fibonacci Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_01/lecture_11_dynamic_programming/fibonacci/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_11_dynamic_programming/fibonacci/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_11_dynamic_programming/fibonacci/test_algorithm.py)
-

@@ -1,14 +1,13 @@
 # SIMD Optimization
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 SIMD Optimization Flowchart:
@@ -43,9 +42,7 @@ SIMD Optimization Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 SIMD Optimization Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_58_parallel_computing/simd_optimization/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_58_parallel_computing/simd_optimization/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_58_parallel_computing/simd_optimization/test_algorithm.py)
-
 
    SIMD Optimization
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a production line: SIMD optimization is like a production line where one instruction (like 'add 5') is applied to multiple items (data elements) simultaneously - instead of adding 5 to each number one by one (scalar), you load 8 numbers into a wide register (vector), add 5 to all 8 at once (SIMD instruction), and get 8 results - it's like having a wide paintbrush that paints 8 pixels at once instead of painting them one by one.
 
 Inputs & Outputs  
-   - Input: Vector data, SIMD instructions, data alignment, vector width, computation patterns.  
-   - Output: Vectorized computation, accelerated processing, improved throughput, optimized performance.
+
+  - Input: Vector data, SIMD instructions, data alignment, vector width, computation patterns.  
+  - Output: Vectorized computation, accelerated processing, improved throughput, optimized performance.
 
 Step-by-step description (5–10 lines max)  
 Identify vectorization: identify operations that can be vectorized (same operation on multiple elements).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    SIMD optimization: add arrays A + B = C, 1000 elements → scalar: loop 1000 times, 1 add per iteration → SIMD: load 8 elements of A and B into 256-bit registers → add 8 elements at once → store 8 results → repeat 125 times (1000/8) → remainder: process last 0 elements → speedup: 6-8x faster → SIMD optimization.
 
 Time & Space Complexity  
-   - Time: O(n/v) where n is data size, v is vector width (theoretical), actual depends on memory bandwidth and instruction throughput.  
-   - Space: O(n) where n is data size (same as scalar, but may require alignment padding).
+
+  - Time: O(n/v) where n is data size, v is vector width (theoretical), actual depends on memory bandwidth and instruction throughput.  
+  - Space: O(n) where n is data size (same as scalar, but may require alignment padding).
 
 Strengths  
+
 - Performance: significant speedup for vectorizable operations (4-8x typical).
 - Efficiency: better utilization of CPU execution units.
 - Widely available: SIMD instructions available on most modern CPUs.
 
 Weaknesses / limitations  
+
 - Suitability: only effective for data-parallel, regular computations.
 - Alignment: requires data alignment which may add complexity.
 - Portability: SIMD code may not be portable across different CPU architectures.

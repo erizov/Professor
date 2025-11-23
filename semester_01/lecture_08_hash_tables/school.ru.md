@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Хеш-таблица — searching algorithms - demonstration. this lecture covers various searching algorithms including linear search, binary search, and interpolation search.
+Хеш-таблица — searching algorithms - demonstration. this лекция covers various searching algorithms including linear поиск, binary поиск, and interpolation поиск.
 
 ## Где применяется
 

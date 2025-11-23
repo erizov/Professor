@@ -1,14 +1,13 @@
 # Advanced Log Aggregation
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Advanced Log Aggregation Flowchart:
@@ -43,9 +42,7 @@ Advanced Log Aggregation Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Advanced Log Aggregation Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_62_observability_advanced/log_aggregation_advanced/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_62_observability_advanced/log_aggregation_advanced/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_62_observability_advanced/log_aggregation_advanced/test_algorithm.py)
-
-
-   Advanced Log Aggregation
 
 What problem does it solve? (1 sentence)  
    Collects, centralizes, indexes, and analyzes logs from multiple distributed services, enabling search, correlation, and real-time analysis of application and system logs.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a central library for logs: advanced log aggregation is like a central library that collects books (logs) from many different sources (services), organizes them (indexes), and makes them searchable (search engine) - instead of searching through individual libraries (service logs), you go to the central library (log aggregator) and search across all books (all services) at once - you can also see patterns across books (correlation) and get alerts when certain books appear (real-time alerts).
 
 Inputs & Outputs  
-   - Input: Logs from services, log formats, timestamps, log levels, metadata.  
-   - Output: Aggregated logs, searchable index, correlated events, log analytics, alerts.
+
+  - Input: Logs from services, log formats, timestamps, log levels, metadata.  
+  - Output: Aggregated logs, searchable index, correlated events, log analytics, alerts.
 
 Step-by-step description (5–10 lines max)  
 Collect: collect logs from all services (agents, forwarders, APIs).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Log aggregation: 10 microservices → each produces logs → log forwarders: collect logs → aggregator: centralizes → parse: extract structured fields → index: Elasticsearch indexes → search: 'error' across all services → find: 50 errors in last hour → correlate: all from user-service → analyze: database connection timeout → alert: error rate > threshold → log aggregation operational.
 
 Time & Space Complexity  
-   - Time: O(n) for collection where n is log volume, O(log m) for search where m is indexed logs.  
-   - Space: O(l) where l is total log volume (storage for aggregated logs).
+
+  - Time: O(n) for collection where n is log volume, O(log m) for search where m is indexed logs.  
+  - Space: O(l) where l is total log volume (storage for aggregated logs).
 
 Strengths  
+
 - Centralization: centralizes logs from all services.
 - Searchability: enables fast search across all logs.
 - Correlation: enables correlation of events across services.
 
 Weaknesses / limitations  
+
 - Storage: requires significant storage for large log volumes.
 - Cost: log aggregation systems can be expensive.
 - Complexity: managing log aggregation infrastructure is complex.

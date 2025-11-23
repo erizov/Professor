@@ -1,14 +1,13 @@
 # RLHF (Reinforcement Learning from Human Feedback)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 RLHF (Reinforcement Learning from Human Feedback) Flowchart:
@@ -43,9 +42,7 @@ RLHF (Reinforcement Learning from Human Feedback) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 RLHF (Reinforcement Learning from Human Feedback) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_07/lecture_41_llm_advanced/reinforcement_learning_hf/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_41_llm_advanced/reinforcement_learning_hf/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_41_llm_advanced/reinforcement_learning_hf/test_algorithm.py)
-

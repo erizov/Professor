@@ -1,16 +1,15 @@
 # Data Observability
 
-Name of Algorithm  
+## Educational Materials
 
-## Code Files
-
+- [School Level](school.en.md)
+- [University Level](univer.en.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
 
-
-```
+```text
 Data Observability Flowchart:
 
 ┌─────────────┐
@@ -43,11 +42,9 @@ Data Observability Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
 
-
-```
+```text
 Data Observability Step-by-Step Execution:
 
 Input: [example data]
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_16/lecture_116_data_ops/data_observability/algorithm.py)
 - [Java Implementation](/code/semester_16/lecture_116_data_ops/data_observability/Algorithm.java)
 - [Python Tests](/code/semester_16/lecture_116_data_ops/data_observability/test_algorithm.py)
-
-
-   Data Observability
 
 What problem does it solve? (1 sentence)  
 Implements data observability algorithm.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Data Observability is a fundamental algorithm in computer science.
 
 Inputs & Outputs  
-   - Input: Algorithm-specific inputs  
-   - Output: Algorithm-specific outputs
+
+  - Input: Algorithm-specific inputs  
+  - Output: Algorithm-specific outputs
 
 Step-by-step description (5–10 lines max)  
 Initialize data structures
@@ -107,13 +100,16 @@ Tiny example (hand-simulated)
    Example: Data Observability applied to sample data.
 
 Time & Space Complexity  
-   - Time: Varies  
-   - Space: Varies
+
+  - Time: Varies  
+  - Space: Varies
 
 Strengths  
+
 - Efficient for specific use cases
 
 Weaknesses / limitations  
+
 - May have limitations in certain scenarios
 
 Compare with alternatives  

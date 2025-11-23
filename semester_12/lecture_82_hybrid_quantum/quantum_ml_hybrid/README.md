@@ -1,14 +1,13 @@
 # Quantum ML Hybrid
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum ML Hybrid Flowchart:
@@ -43,9 +42,7 @@ Quantum ML Hybrid Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum ML Hybrid Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_82_hybrid_quantum/quantum_ml_hybrid/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_82_hybrid_quantum/quantum_ml_hybrid/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_82_hybrid_quantum/quantum_ml_hybrid/test_algorithm.py)
-
 
    Quantum ML Hybrid
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like hybrid ML: Quantum ML Hybrid combines quantum and classical ML - you use quantum algorithms for what they're good at (quantum tasks), and classical ML for the rest - just as hybrid approaches combine strengths, quantum ML hybrid combines quantum and classical ML strengths.
 
 Inputs & Outputs  
-   - Input: ML tasks, quantum ML models, classical ML models, training data, hybrid workflow, optimization objectives.  
-   - Output: Hybrid ML models, quantum-classical predictions, optimized parameters, combined ML results, enhanced ML capabilities.
+
+  - Input: ML tasks, quantum ML models, classical ML models, training data, hybrid workflow, optimization objectives.  
+  - Output: Hybrid ML models, quantum-classical predictions, optimized parameters, combined ML results, enhanced ML capabilities.
 
 Step-by-step description (5–10 lines max)  
 Decompose: decompose ML task into quantum and classical parts.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Quantum ML Hybrid: task: classification → quantum: quantum feature map → classical: classical classifier → train: train both → combine: ensemble predictions → result: better accuracy than pure classical → Quantum ML Hybrid successful.
 
 Time & Space Complexity  
-   - Time: O(q·c·t) where q is quantum time, c is classical time, t is training time (varies by task).  
-   - Space: O(n + m) where n is qubits, m is classical model storage (hybrid storage).
+
+  - Time: O(q·c·t) where q is quantum time, c is classical time, t is training time (varies by task).  
+  - Space: O(n + m) where n is qubits, m is classical model storage (hybrid storage).
 
 Strengths  
+
 - Practical: enables practical quantum ML on NISQ hardware.
 - Flexibility: leverages strengths of both quantum and classical ML.
 - Performance: can outperform pure classical or quantum approaches.
 
 Weaknesses / limitations  
+
 - Complexity: hybrid ML systems are complex to design.
 - Coordination: requires coordination between quantum and classical.
 - Overhead: communication overhead between systems.

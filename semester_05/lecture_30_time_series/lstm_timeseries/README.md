@@ -1,14 +1,13 @@
 # LSTM for Time Series
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 LSTM for Time Series Flowchart:
@@ -43,9 +42,7 @@ LSTM for Time Series Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 LSTM for Time Series Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_05/lecture_30_time_series/lstm_timeseries/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_30_time_series/lstm_timeseries/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_30_time_series/lstm_timeseries/test_algorithm.py)
-

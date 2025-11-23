@@ -1,14 +1,13 @@
 # I/O Scheduling
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 I/O Scheduling Flowchart:
@@ -43,9 +42,7 @@ I/O Scheduling Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 I/O Scheduling Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_56_os_performance/io_scheduling/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_56_os_performance/io_scheduling/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_56_os_performance/io_scheduling/test_algorithm.py)
-
 
    I/O Scheduling
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
 Like organizing errands efficiently: I/O scheduling is like planning your errands to minimize travel time - instead of going to stores in random order (random I/O), you group nearby stores together (elevator algorithm - serve requests in one direction), or prioritize urgent errands (deadline scheduling), or ensure everyone gets their turn fairly (fair queuing) - the goal is to minimize disk head movement (travel time) and maximize throughput (errands completed per hour).
 
 Inputs & Outputs  
-   - Input: I/O requests, disk geometry, request priorities, deadlines, I/O patterns.  
-   - Output: Optimized I/O order, reduced seek time, improved throughput, fair I/O access.
+
+  - Input: I/O requests, disk geometry, request priorities, deadlines, I/O patterns.  
+  - Output: Optimized I/O order, reduced seek time, improved throughput, fair I/O access.
 
 Step-by-step description (5–10 lines max)  
 Queue requests: collect I/O requests from processes in I/O queue.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    I/O scheduling: 10 I/O requests to disk → requests at sectors: 100, 50, 200, 150, 25 → FCFS: serve in order (100→50→200→150→25) → seek time: high → SSTF: serve nearest first (100→150→200→50→25) → seek time: lower → SCAN: elevator algorithm (100→150→200→end→50→25) → seek time: lowest → throughput: 2x improvement → I/O scheduling optimized.
 
 Time & Space Complexity  
-   - Time: O(n log n) for sorting requests where n is queue size, O(1) for simple algorithms.  
-   - Space: O(n) where n is number of queued I/O requests.
+
+  - Time: O(n log n) for sorting requests where n is queue size, O(1) for simple algorithms.  
+  - Space: O(n) where n is number of queued I/O requests.
 
 Strengths  
+
 - Performance: significantly improves I/O throughput and reduces latency.
 - Efficiency: minimizes disk head movement and seek time.
 - Fairness: ensures fair access to I/O resources.
 
 Weaknesses / limitations  
+
 - Complexity: more complex algorithms add overhead.
 - Starvation: some algorithms may cause request starvation.
 - Device-specific: optimal algorithm depends on storage device type.

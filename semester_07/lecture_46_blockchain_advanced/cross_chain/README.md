@@ -1,14 +1,13 @@
 # Cross-Chain Interoperability
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Cross-Chain Interoperability Flowchart:
@@ -43,9 +42,7 @@ Cross-Chain Interoperability Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Cross-Chain Interoperability Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_07/lecture_46_blockchain_advanced/cross_chain/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_46_blockchain_advanced/cross_chain/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_46_blockchain_advanced/cross_chain/test_algorithm.py)
-
 
    Cross-Chain Interoperability
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like international banking: different blockchains are like different countries with their own currencies - cross-chain solutions are like currency exchanges and international wire transfers, allowing you to move value and data between blockchains (like converting dollars to euros and sending them).
 
 Inputs & Outputs  
-   - Input: Source blockchain, target blockchain, assets to transfer, cross-chain protocol.  
-   - Output: Assets transferred to target blockchain, cross-chain transaction proof, interoperability achieved.
+
+  - Input: Source blockchain, target blockchain, assets to transfer, cross-chain protocol.  
+  - Output: Assets transferred to target blockchain, cross-chain transaction proof, interoperability achieved.
 
 Step-by-step description (5–10 lines max)  
 Lock assets: lock assets on source blockchain (prevent double-spending).
@@ -112,15 +107,18 @@ Tiny example (hand-simulated)
    User wants to use Ethereum DApp but has Bitcoin → lock 1 BTC on Bitcoin → generate proof → relay to Ethereum → verify proof → mint 1 WBTC (wrapped Bitcoin) on Ethereum → use WBTC in Ethereum DApp → later, burn WBTC on Ethereum → unlock BTC on Bitcoin.
 
 Time & Space Complexity  
-   - Time: O(1) per transaction, but includes relay time between chains (minutes to hours depending on block times).  
-   - Space: O(1) per cross-chain transaction (proofs stored on both chains).
+
+  - Time: O(1) per transaction, but includes relay time between chains (minutes to hours depending on block times).  
+  - Space: O(1) per cross-chain transaction (proofs stored on both chains).
 
 Strengths  
+
 - Interoperability: enables seamless interaction between different blockchains.
 - Liquidity: allows assets to move between chains, increasing liquidity.
 - Flexibility: users can choose best blockchain for each use case.
 
 Weaknesses / limitations  
+
 - Security risks: bridges and cross-chain protocols are attack targets.
 - Complexity: requires coordination between multiple blockchains.
 - Trust: some solutions require trusted intermediaries or validators.

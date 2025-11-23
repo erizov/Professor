@@ -1,14 +1,13 @@
 # Database Monitoring
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Database Monitoring Flowchart:
@@ -43,9 +42,7 @@ Database Monitoring Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Database Monitoring Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_53_database_operations/database_monitoring/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_53_database_operations/database_monitoring/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_53_database_operations/database_monitoring/test_algorithm.py)
-
-
-   Database Monitoring
 
 What problem does it solve? (1 sentence)  
    Continuously tracks database performance, health, and resource usage through metrics, logs, and alerts, enabling proactive issue detection and performance optimization.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a health monitor for databases: database monitoring is like a fitness tracker for your database - it continuously measures vital signs (CPU, memory, disk, queries) and alerts you when something's wrong (like a heart rate monitor alerting if heart rate is too high) - you can see trends over time (like fitness progress) and catch problems early before they become critical.
 
 Inputs & Outputs  
-   - Input: Database metrics, performance counters, logs, monitoring tools, alert thresholds.  
-   - Output: Performance metrics, health status, alerts, dashboards, optimization insights.
+
+  - Input: Database metrics, performance counters, logs, monitoring tools, alert thresholds.  
+  - Output: Performance metrics, health status, alerts, dashboards, optimization insights.
 
 Step-by-step description (5–10 lines max)  
 Define metrics: identify key metrics to monitor (CPU, memory, disk I/O, query performance, connections).
@@ -113,15 +106,18 @@ Tiny example (hand-simulated)
    Database monitoring: track CPU (currently 45%), memory (60%), disk I/O (high), slow queries (5 queries > 1s) → alert: disk I/O > 90% → investigate: find I/O-intensive query → optimize: add index → disk I/O drops to 30% → proactive monitoring → prevented performance degradation.
 
 Time & Space Complexity  
-   - Time: O(1) per metric collection, O(m) for analysis where m is number of metrics.  
-   - Space: O(m·t) where m is metrics count, t is time period (time-series data storage).
+
+  - Time: O(1) per metric collection, O(m) for analysis where m is number of metrics.  
+  - Space: O(m·t) where m is metrics count, t is time period (time-series data storage).
 
 Strengths  
+
 - Proactive: detects issues before they impact users.
 - Visibility: provides clear view of database health and performance.
 - Optimization: enables data-driven performance optimization.
 
 Weaknesses / limitations  
+
 - Overhead: monitoring adds some overhead to database operations.
 - Alert fatigue: too many alerts can desensitize administrators.
 - Tool dependency: requires monitoring tools and infrastructure.

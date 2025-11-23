@@ -1,14 +1,13 @@
 # Quantum Finance
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Finance Flowchart:
@@ -43,9 +42,7 @@ Quantum Finance Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Finance Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_81_quantum_applications/quantum_finance/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_81_quantum_applications/quantum_finance/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_81_quantum_applications/quantum_finance/test_algorithm.py)
-
-
-   Quantum Finance
 
 What problem does it solve? (1 sentence)  
    Applies quantum computing to financial problems like portfolio optimization, risk analysis, option pricing, and fraud detection, potentially providing speedups for complex financial calculations.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like quantum computing for finance: Quantum Finance uses quantum computers to solve financial problems faster - quantum algorithms can explore many investment combinations simultaneously (superposition) and find optimal portfolios - just as quantum search finds items faster, quantum finance finds optimal financial solutions faster.
 
 Inputs & Outputs  
-   - Input: Financial data, portfolio constraints, risk parameters, market models, optimization objectives.  
-   - Output: Optimized portfolios, risk assessments, option prices, fraud detection results, financial predictions.
+
+  - Input: Financial data, portfolio constraints, risk parameters, market models, optimization objectives.  
+  - Output: Optimized portfolios, risk assessments, option prices, fraud detection results, financial predictions.
 
 Step-by-step description (5–10 lines max)  
 Formulate: formulate financial problem (portfolio optimization, pricing).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Finance: problem: portfolio optimization → encode: QUBO formulation → QAOA: quantum optimization → execute: run on quantum computer → result: optimal portfolio with 15% better risk-return → Quantum Finance successful.
 
 Time & Space Complexity  
-   - Time: O(p·m·k) where p is parameters, m is measurements, k is layers (varies by problem).  
-   - Space: O(n) where n is problem size (qubits needed).
+
+  - Time: O(p·m·k) where p is parameters, m is measurements, k is layers (varies by problem).  
+  - Space: O(n) where n is problem size (qubits needed).
 
 Strengths  
+
 - Speedup: potential speedup for complex financial problems.
 - Optimization: can find better solutions than classical methods.
 - Applications: applicable to many financial problems.
 
 Weaknesses / limitations  
+
 - Early: field is still in early stages.
 - Hardware: requires quantum hardware.
 - Validation: requires validation against classical methods.

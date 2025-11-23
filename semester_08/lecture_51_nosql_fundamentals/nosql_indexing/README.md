@@ -1,14 +1,13 @@
 # NoSQL Indexing
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 NoSQL Indexing Flowchart:
@@ -43,9 +42,7 @@ NoSQL Indexing Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 NoSQL Indexing Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_51_nosql_fundamentals/nosql_indexing/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_51_nosql_fundamentals/nosql_indexing/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_51_nosql_fundamentals/nosql_indexing/test_algorithm.py)
-
 
    NoSQL Indexing
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like an index in a book, but for NoSQL: NoSQL indexing creates lookup structures (like book indexes) that map field values to document/row locations - instead of scanning every document (like reading every page), you look up the value in the index (like using a book index) and jump directly to the right documents (like jumping to the right pages), making queries much faster.
 
 Inputs & Outputs  
-   - Input: Field names, index type, collection/table, index configuration.  
-   - Output: Index structures, faster queries, improved search performance.
+
+  - Input: Field names, index type, collection/table, index configuration.  
+  - Output: Index structures, faster queries, improved search performance.
 
 Step-by-step description (5–10 lines max)  
 Identify fields: determine which fields are frequently queried.
@@ -112,15 +107,18 @@ Tiny example (hand-simulated)
    MongoDB collection: users (1M documents) → query: find users where age = 25 → without index: scans 1M documents (slow) → create index on age → with index: lookup age=25 in index → find document locations → retrieve documents → query time: 0.01s vs 1s (100x faster).
 
 Time & Space Complexity  
-   - Time: O(log n) for B-tree indexes, O(1) for hash indexes, O(n) for collection scans without index.  
-   - Space: O(n) where n is number of indexed documents/rows (additional storage for index).
+
+  - Time: O(log n) for B-tree indexes, O(1) for hash indexes, O(n) for collection scans without index.  
+  - Space: O(n) where n is number of indexed documents/rows (additional storage for index).
 
 Strengths  
+
 - Query performance: dramatically speeds up queries on indexed fields.
 - Flexible: supports various index types (single field, compound, text, geospatial).
 - Scalable: indexes can be distributed across nodes in distributed systems.
 
 Weaknesses / limitations  
+
 - Storage overhead: indexes require additional storage space.
 - Write overhead: INSERT/UPDATE/DELETE operations must update indexes.
 - Index maintenance: requires monitoring and optimization.

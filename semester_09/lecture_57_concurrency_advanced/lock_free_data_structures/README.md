@@ -1,14 +1,13 @@
 # Lock-Free Data Structures
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Lock-Free Data Structures Flowchart:
@@ -43,9 +42,7 @@ Lock-Free Data Structures Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Lock-Free Data Structures Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_57_concurrency_advanced/lock_free_data_structures/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_57_concurrency_advanced/lock_free_data_structures/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_57_concurrency_advanced/lock_free_data_structures/test_algorithm.py)
-
 
    Lock-Free Data Structures
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
 Like a self-service system: lock-free data structures are like a self-service checkout where multiple people can use it simultaneously without a cashier (lock) - the system uses smart mechanisms (atomic operations) that ensure if one person's transaction conflicts with another, at least one will succeed (progress guarantee) - people retry if their operation fails (optimistic concurrency), but the system never gets stuck waiting for a lock (no deadlocks).
 
 Inputs & Outputs  
-   - Input: Concurrent operations, atomic operations (CAS, load-linked/store-conditional), retry logic, memory ordering.  
-   - Output: Lock-free operations, progress guarantee, thread-safe data structure, high concurrency performance.
+
+  - Input: Concurrent operations, atomic operations (CAS, load-linked/store-conditional), retry logic, memory ordering.  
+  - Output: Lock-free operations, progress guarantee, thread-safe data structure, high concurrency performance.
 
 Step-by-step description (5–10 lines max)  
 Design algorithm: design data structure operations using atomic operations.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Lock-free stack: push operation → read head pointer → create new node → set new node.next = head → CAS: compare head with read value, swap to new node → if CAS succeeds: done → if CAS fails: retry (another thread modified head) → no locks → high concurrency → progress guarantee: at least one push succeeds → lock-free.
 
 Time & Space Complexity  
-   - Time: O(1) expected for operations, O(k) worst case where k is number of retries (usually small).  
-   - Space: O(n) where n is data structure size (minimal overhead for lock-free).
+
+  - Time: O(1) expected for operations, O(k) worst case where k is number of retries (usually small).  
+  - Space: O(n) where n is data structure size (minimal overhead for lock-free).
 
 Strengths  
+
 - Performance: high performance under high concurrency (no lock contention).
 - Progress: guarantees progress (no deadlocks, livelocks rare).
 - Scalability: scales well with number of threads.
 
 Weaknesses / limitations  
+
 - Complexity: lock-free algorithms are complex to design and verify.
 - ABA problem: requires careful handling of ABA problem.
 - Correctness: proving correctness is challenging.

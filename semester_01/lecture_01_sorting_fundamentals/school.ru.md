@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 01: Sorting Fundamentals — introduction to sorting algorithms and their importance in computer science. this lecture covers basic comparison-based sorting algorithms.
+Лекция 01: Сортировка Fundamentals — introduction to сортировка algorithms and their importance в информатике. this лекция covers базовый comparison-based сортировка algorithms.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 01: Sorting Fundamentals — introduction to sorting algorithms and thei
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 01: sorting fundamentals:
+Рассмотрим конкретный пример работы лекция 01: сортировка fundamentals:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -45,15 +45,15 @@ Lecture 01: Sorting Fundamentals — introduction to sorting algorithms and thei
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 01: sorting fundamentals.
+Выполни простую операцию с алгоритмом лекция 01: сортировка fundamentals.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 01: sorting fundamentals к более сложному набору данных.
+Примени алгоритм лекция 01: сортировка fundamentals к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 01: sorting fundamentals на языке программирования.
+Напиши реализацию алгоритма лекция 01: сортировка fundamentals на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.

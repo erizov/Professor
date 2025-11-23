@@ -1,14 +1,13 @@
 # Infrastructure Patterns
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Infrastructure Patterns Flowchart:
@@ -43,9 +42,7 @@ Infrastructure Patterns Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Infrastructure Patterns Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_72_infrastructure_advanced/infrastructure_patterns/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_72_infrastructure_advanced/infrastructure_patterns/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_72_infrastructure_advanced/infrastructure_patterns/test_algorithm.py)
-
-
-   Infrastructure Patterns
 
 What problem does it solve? (1 sentence)  
    Provides proven, reusable patterns for designing and organizing infrastructure components, enabling consistent, scalable, and maintainable infrastructure architectures.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like architectural blueprints: Infrastructure Patterns are like architectural blueprints for buildings - they provide proven designs (patterns) that work well for specific needs (scalability, high availability) - just as architects use blueprints to design buildings consistently, infrastructure patterns help design infrastructure consistently and effectively.
 
 Inputs & Outputs  
-   - Input: Infrastructure requirements, scalability needs, availability requirements, pattern definitions, best practices.  
-   - Output: Pattern-based infrastructure, scalable architecture, maintainable design, proven solutions, consistent structure.
+
+  - Input: Infrastructure requirements, scalability needs, availability requirements, pattern definitions, best practices.  
+  - Output: Pattern-based infrastructure, scalable architecture, maintainable design, proven solutions, consistent structure.
 
 Step-by-step description (5–10 lines max)  
 Identify requirements: identify infrastructure requirements (scalability, availability, performance).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Infrastructure Patterns: requirement: high availability web service → patterns: load balancer + auto-scaling + multi-AZ deployment → apply: implement patterns → result: scalable, highly available infrastructure → Infrastructure Patterns successful.
 
 Time & Space Complexity  
-   - Time: O(d + i) where d is design time, i is implementation time (patterns reduce design time).  
-   - Space: O(p + c) where p is pattern definitions, c is configuration storage.
+
+  - Time: O(d + i) where d is design time, i is implementation time (patterns reduce design time).  
+  - Space: O(p + c) where p is pattern definitions, c is configuration storage.
 
 Strengths  
+
 - Proven: patterns are proven solutions to common problems.
 - Consistency: ensures consistent infrastructure design.
 - Efficiency: reduces design time and effort.
 
 Weaknesses / limitations  
+
 - Flexibility: patterns may be less flexible than custom designs.
 - Complexity: complex patterns can be difficult to understand.
 - Context: patterns must be adapted to specific contexts.

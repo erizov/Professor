@@ -1,14 +1,13 @@
 # Quantum Programming
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Programming Flowchart:
@@ -43,9 +42,7 @@ Quantum Programming Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Programming Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_83_quantum_software/quantum_programming/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_83_quantum_software/quantum_programming/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_83_quantum_software/quantum_programming/test_algorithm.py)
-
-
-   Quantum Programming
 
 What problem does it solve? (1 sentence)  
    Develops software and algorithms for quantum computers using quantum programming languages and frameworks, enabling developers to write, test, and execute quantum programs.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like programming for quantum: Quantum Programming is like programming but for quantum computers - you write code (quantum circuits) using quantum languages (like Qiskit, Cirq) that run on quantum hardware - just as you program classical computers, you program quantum computers with quantum code.
 
 Inputs & Outputs  
-   - Input: Quantum algorithms, programming language, quantum circuits, gates, measurements.  
-   - Output: Quantum programs, compiled circuits, executable code, quantum results, optimized programs.
+
+  - Input: Quantum algorithms, programming language, quantum circuits, gates, measurements.  
+  - Output: Quantum programs, compiled circuits, executable code, quantum results, optimized programs.
 
 Step-by-step description (5–10 lines max)  
 Design: design quantum algorithm.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Programming: algorithm: Grover's search → code: Qiskit program → compile: to gates → simulate: test on simulator → execute: run on quantum computer → measure: get result → result: search successful → Quantum Programming successful.
 
 Time & Space Complexity  
-   - Time: O(d) where d is circuit depth (program execution time).  
-   - Space: O(n) where n is number of qubits (quantum register size).
+
+  - Time: O(d) where d is circuit depth (program execution time).  
+  - Space: O(n) where n is number of qubits (quantum register size).
 
 Strengths  
+
 - Abstraction: provides high-level abstraction for quantum computing.
 - Portability: programs can run on different quantum hardware.
 - Ecosystem: growing ecosystem of tools and libraries.
 
 Weaknesses / limitations  
+
 - Learning: requires learning quantum concepts.
 - Hardware: limited by quantum hardware availability.
 - Debugging: debugging quantum programs is challenging.

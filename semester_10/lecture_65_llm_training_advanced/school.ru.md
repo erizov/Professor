@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 65 Llm Training Advanced — llm algorithms - demonstration. this lecture covers large language model algorithms and techniques.
+Лекция 65 Llm Training Продвинутый — llm algorithms - demonstration. this лекция covers large язык model algorithms and techniques.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 65 Llm Training Advanced — llm algorithms - demonstration. this lectur
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 65 llm training advanced:
+Рассмотрим конкретный пример работы лекция 65 llm training продвинутый:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,37 +25,37 @@ Lecture 65 Llm Training Advanced — llm algorithms - demonstration. this lectur
 
 ### Базовые
 
-1. Что делает алгоритм lecture 65 llm training advanced?
-2. В каких ситуациях используется lecture 65 llm training advanced?
+1. Что делает алгоритм лекция 65 llm training продвинутый?
+2. В каких ситуациях используется лекция 65 llm training продвинутый?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 65 llm training advanced обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 65 llm training advanced?
-3. Можно ли улучшить работу lecture 65 llm training advanced?
+1. Как лекция 65 llm training продвинутый обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 65 llm training продвинутый?
+3. Можно ли улучшить работу лекция 65 llm training продвинутый?
 
 ### Сложные
 
-1. Какова временная сложность lecture 65 llm training advanced?
-2. Как lecture 65 llm training advanced работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 65 llm training advanced?
+1. Какова временная сложность лекция 65 llm training продвинутый?
+2. Как лекция 65 llm training продвинутый работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 65 llm training продвинутый?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 65 llm training advanced.
+Выполни простую операцию с алгоритмом лекция 65 llm training продвинутый.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 65 llm training advanced к более сложному набору данных.
+Примени алгоритм лекция 65 llm training продвинутый к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 65 llm training advanced на языке программирования.
+Напиши реализацию алгоритма лекция 65 llm training продвинутый на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
 
 ---

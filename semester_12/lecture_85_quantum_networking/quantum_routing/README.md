@@ -1,14 +1,13 @@
 # Quantum Routing
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Quantum Routing Flowchart:
@@ -43,9 +42,7 @@ Quantum Routing Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Quantum Routing Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_12/lecture_85_quantum_networking/quantum_routing/algorithm.py)
 - [Java Implementation](/code/semester_12/lecture_85_quantum_networking/quantum_routing/Algorithm.java)
 - [Python Tests](/code/semester_12/lecture_85_quantum_networking/quantum_routing/test_algorithm.py)
-
-
-   Quantum Routing
 
 What problem does it solve? (1 sentence)  
    Routes quantum information through quantum networks, determining optimal paths for quantum communication and managing quantum data flow in distributed quantum systems.
@@ -95,7 +87,8 @@ Intuition (plain-language explanation)
    Like routing for quantum: Quantum Routing is like network routing but for quantum information - you find the best path (like routing packets) to send quantum information through a quantum network - just as routers route internet traffic, quantum routers route quantum information.
 
 Inputs & Outputs  
-   - Input: Quantum networks, routing tables, network topology, quantum data, routing algorithms, path metrics.  
+
+  - Input: Quantum networks, routing tables, network topology, quantum data, routing algorithms, path metrics.  
 - Output: Routed quantum information, optimal paths, network connectivity, efficient routing, quantum data delivery.
 
 Step-by-step description (5–10 lines max)  
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Quantum Routing: network: 5 quantum nodes → topology: discover connections → calculate: shortest path → route: route qubit from A to E via B, C, D → teleport: teleport at each hop → result: qubit routed successfully → Quantum Routing successful.
 
 Time & Space Complexity  
-   - Time: O(n² + r) where n is nodes, r is routing time (path calculation and routing).  
-   - Space: O(n + r) where n is network topology, r is routing tables (routing data).
+
+  - Time: O(n² + r) where n is nodes, r is routing time (path calculation and routing).  
+  - Space: O(n + r) where n is network topology, r is routing tables (routing data).
 
 Strengths  
+
 - Efficiency: enables efficient quantum communication.
 - Scalability: supports scalable quantum networks.
 - Flexibility: adapts to network conditions.
 
 Weaknesses / limitations  
+
 - Complexity: quantum routing is complex.
 - Loss: quantum information loss affects routing.
 - Topology: network topology affects routing efficiency.

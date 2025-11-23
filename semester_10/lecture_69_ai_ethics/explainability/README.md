@@ -1,14 +1,13 @@
 # Explainability
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Explainability Flowchart:
@@ -43,9 +42,7 @@ Explainability Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Explainability Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_69_ai_ethics/explainability/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_69_ai_ethics/explainability/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_69_ai_ethics/explainability/test_algorithm.py)
-
-
-   Explainability
 
 What problem does it solve? (1 sentence)  
    Makes AI model decisions understandable and interpretable to humans, providing explanations for predictions and enabling users to understand, trust, and debug AI systems.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like explaining decisions: Explainability is like explaining your decisions to someone - instead of just saying 'I decided X' (black box), you explain why (reasons, factors) so they understand - just as people explain their decisions, AI systems should explain their predictions so users can understand and trust them.
 
 Inputs & Outputs  
-   - Input: AI models, predictions, input data, explanation methods, user queries, explanation requirements.  
-   - Output: Explanations, interpretable predictions, feature importance, decision rationales, explanation reports.
+
+  - Input: AI models, predictions, input data, explanation methods, user queries, explanation requirements.  
+  - Output: Explanations, interpretable predictions, feature importance, decision rationales, explanation reports.
 
 Step-by-step description (5–10 lines max)  
 Predict: make model prediction.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Explainability: model: loan approval → predict: loan denied → explain: 'Denied due to: low credit score (600), high debt-to-income ratio (45%), recent late payments' → result: user understands decision → Explainability successful.
 
 Time & Space Complexity  
-   - Time: O(m + e) where m is model inference time, e is explanation generation time (varies by method).  
-   - Space: O(m + e) where m is model storage, e is explanation storage (explanation data).
+
+  - Time: O(m + e) where m is model inference time, e is explanation generation time (varies by method).  
+  - Space: O(m + e) where m is model storage, e is explanation storage (explanation data).
 
 Strengths  
+
 - Trust: increases trust in AI systems through transparency.
 - Debugging: enables debugging of AI models.
 - Compliance: helps meet explainability requirements.
 
 Weaknesses / limitations  
+
 - Accuracy: explanations may not always be perfectly accurate.
 - Complexity: explaining complex models is challenging.
 - Trade-offs: may require trade-offs with model performance.

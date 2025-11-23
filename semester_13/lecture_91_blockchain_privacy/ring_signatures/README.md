@@ -1,14 +1,13 @@
 # Ring Signatures
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Ring Signatures Flowchart:
@@ -43,9 +42,7 @@ Ring Signatures Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Ring Signatures Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_91_blockchain_privacy/ring_signatures/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_91_blockchain_privacy/ring_signatures/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_91_blockchain_privacy/ring_signatures/test_algorithm.py)
-
-
-   Ring Signatures
 
 What problem does it solve? (1 sentence)  
    Implements ring signatures, cryptographic signatures that provide signer anonymity by allowing a signer to sign on behalf of a group (ring) without revealing which member signed, enabling anonymous transactions.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like anonymous group signatures: Ring Signatures are like anonymous group signatures - you sign as part of a group (like signing as 'one of us') without revealing who you are - just as you can sign anonymously in a group, ring signatures provide anonymity.
 
 Inputs & Outputs  
-   - Input: Message, ring members, private key, public keys, signature parameters.  
-   - Output: Ring signatures, anonymous signatures, verifiable signatures, transaction anonymity.
+
+  - Input: Message, ring members, private key, public keys, signature parameters.  
+  - Output: Ring signatures, anonymous signatures, verifiable signatures, transaction anonymity.
 
 Step-by-step description (5–10 lines max)  
 Select: select ring of public keys.
@@ -114,14 +107,17 @@ Tiny example (hand-simulated)
    Ring Signatures: message: transaction → ring: 10 public keys → sign: generate ring signature → verify: signature valid, signer unknown → result: anonymous transaction → Ring Signatures successful.
 
 Time & Space Complexity  
-   - Time: O(n) where n is ring size (signature generation and verification).  
-   - Space: O(n) where n is ring size (ring signature storage).
+
+  - Time: O(n) where n is ring size (signature generation and verification).  
+  - Space: O(n) where n is ring size (ring signature storage).
 
 Strengths  
+
 - Anonymity: provides signer anonymity.
 - Privacy: enables private transactions.
 
 Weaknesses / limitations  
+
 - Ring size: larger rings provide better anonymity but more overhead.
 - Complexity: ring signatures are complex.
 - Linkability: may have linkability issues.

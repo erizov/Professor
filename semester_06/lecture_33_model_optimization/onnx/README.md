@@ -1,14 +1,13 @@
 # ONNX (Open Neural Network Exchange)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 ONNX (Open Neural Network Exchange) Flowchart:
@@ -43,9 +42,7 @@ ONNX (Open Neural Network Exchange) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 ONNX (Open Neural Network Exchange) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_06/lecture_33_model_optimization/onnx/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_33_model_optimization/onnx/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_33_model_optimization/onnx/test_algorithm.py)
-

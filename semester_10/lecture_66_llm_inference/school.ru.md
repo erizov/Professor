@@ -2,7 +2,7 @@
 
 ## Простое объяснение
 
-Lecture 66 Llm Inference — llm algorithms - demonstration. this lecture covers large language model algorithms and techniques.
+Лекция 66 Llm Inference — llm algorithms - demonstration. this лекция covers large язык model algorithms and techniques.
 
 ## Где применяется
 
@@ -13,7 +13,7 @@ Lecture 66 Llm Inference — llm algorithms - demonstration. this lecture covers
 
 ## Пример
 
-Рассмотрим конкретный пример работы lecture 66 llm inference:
+Рассмотрим конкретный пример работы лекция 66 llm inference:
 
 1. Подготовка данных: [конкретные входные данные]
 2. Применение алгоритма: [конкретные шаги]
@@ -25,37 +25,37 @@ Lecture 66 Llm Inference — llm algorithms - demonstration. this lecture covers
 
 ### Базовые
 
-1. Что делает алгоритм lecture 66 llm inference?
-2. В каких ситуациях используется lecture 66 llm inference?
+1. Что делает алгоритм лекция 66 llm inference?
+2. В каких ситуациях используется лекция 66 llm inference?
 3. Какие данные нужны для работы алгоритма?
 
 ### Средние
 
-1. Как lecture 66 llm inference обрабатывает граничные случаи?
-2. Какие преимущества и недостатки у lecture 66 llm inference?
-3. Можно ли улучшить работу lecture 66 llm inference?
+1. Как лекция 66 llm inference обрабатывает граничные случаи?
+2. Какие преимущества и недостатки у лекция 66 llm inference?
+3. Можно ли улучшить работу лекция 66 llm inference?
 
 ### Сложные
 
-1. Какова временная сложность lecture 66 llm inference?
-2. Как lecture 66 llm inference работает с большими объёмами данных?
-3. Как можно оптимизировать lecture 66 llm inference?
+1. Какова временная сложность лекция 66 llm inference?
+2. Как лекция 66 llm inference работает с большими объёмами данных?
+3. Как можно оптимизировать лекция 66 llm inference?
 
 ## Практические задания
 
 ### Уровень 1 (Лёгкий)
 
-Выполни простую операцию с алгоритмом lecture 66 llm inference.
+Выполни простую операцию с алгоритмом лекция 66 llm inference.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
 ### Уровень 2 (Средний)
 
-Примени алгоритм lecture 66 llm inference к более сложному набору данных.
+Примени алгоритм лекция 66 llm inference к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
 ### Уровень 3 (Продвинутый)
 
-Напиши реализацию алгоритма lecture 66 llm inference на языке программирования.
+Напиши реализацию алгоритма лекция 66 llm inference на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
 
 ---

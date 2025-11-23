@@ -1,14 +1,13 @@
 # Compliance Frameworks for AI
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Compliance Frameworks for AI Flowchart:
@@ -43,9 +42,7 @@ Compliance Frameworks for AI Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Compliance Frameworks for AI Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_70_ai_governance/compliance_frameworks/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_70_ai_governance/compliance_frameworks/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_70_ai_governance/compliance_frameworks/test_algorithm.py)
-
 
    Compliance Frameworks for AI
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like building codes: Compliance Frameworks for AI are like building codes for construction - they define rules and standards (regulations, ethical guidelines) that must be followed, and provide ways to check compliance (audits, assessments) - just as buildings must meet codes to be safe and legal, AI systems must meet compliance frameworks to be ethical, legal, and trustworthy.
 
 Inputs & Outputs  
-   - Input: Regulatory requirements, industry standards, ethical guidelines, AI systems, compliance policies.  
-   - Output: Compliance assessments, compliance reports, policy implementations, control measures, certification.
+
+  - Input: Regulatory requirements, industry standards, ethical guidelines, AI systems, compliance policies.  
+  - Output: Compliance assessments, compliance reports, policy implementations, control measures, certification.
 
 Step-by-step description (5–10 lines max)  
 Identify: identify applicable regulations and standards (GDPR, HIPAA, AI ethics).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Compliance Frameworks: regulation: GDPR → assess: data privacy compliance → implement: data minimization, consent management → monitor: continuous compliance monitoring → audit: annual compliance audit → report: compliance report → certify: GDPR compliant → Compliance Frameworks operational.
 
 Time & Space Complexity  
-   - Time: O(r·s) where r is regulations, s is system components (assessment and implementation).  
-   - Space: O(p + d) where p is policy storage, d is documentation size.
+
+  - Time: O(r·s) where r is regulations, s is system components (assessment and implementation).  
+  - Space: O(p + d) where p is policy storage, d is documentation size.
 
 Strengths  
+
 - Legal: ensures legal compliance with regulations.
 - Trust: builds trust through demonstrated compliance.
 - Risk mitigation: reduces legal and reputational risks.
 
 Weaknesses / limitations  
+
 - Complexity: compliance can be complex and resource-intensive.
 - Evolving: regulations evolve, requiring continuous updates.
 - Trade-offs: compliance may impact system functionality.

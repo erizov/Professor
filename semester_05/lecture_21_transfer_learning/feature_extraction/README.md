@@ -1,14 +1,13 @@
 # Feature Extraction
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Feature Extraction Flowchart:
@@ -43,9 +42,7 @@ Feature Extraction Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Feature Extraction Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_05/lecture_21_transfer_learning/feature_extraction/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_21_transfer_learning/feature_extraction/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_21_transfer_learning/feature_extraction/test_algorithm.py)
-

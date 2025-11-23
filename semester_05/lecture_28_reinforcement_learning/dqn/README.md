@@ -1,14 +1,13 @@
 # Deep Q-Network (DQN)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Deep Q-Network (DQN) Flowchart:
@@ -43,9 +42,7 @@ Deep Q-Network (DQN) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Deep Q-Network (DQN) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_05/lecture_28_reinforcement_learning/dqn/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_28_reinforcement_learning/dqn/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_28_reinforcement_learning/dqn/test_algorithm.py)
-

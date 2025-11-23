@@ -1,14 +1,13 @@
 # Boyer-Moore
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Boyer-Moore Flowchart:
@@ -43,9 +42,7 @@ Boyer-Moore Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Boyer-Moore Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_03/lecture_14_string_algorithms/boyer_moore/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_14_string_algorithms/boyer_moore/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_14_string_algorithms/boyer_moore/test_algorithm.py)
-

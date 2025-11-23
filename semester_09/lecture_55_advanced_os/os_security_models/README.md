@@ -1,14 +1,13 @@
 # OS Security Models
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 OS Security Models Flowchart:
@@ -43,9 +42,7 @@ OS Security Models Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 OS Security Models Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_09/lecture_55_advanced_os/os_security_models/algorithm.py)
 - [Java Implementation](/code/semester_09/lecture_55_advanced_os/os_security_models/Algorithm.java)
 - [Python Tests](/code/semester_09/lecture_55_advanced_os/os_security_models/test_algorithm.py)
-
 
    OS Security Models
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a building's security system: OS security models are like a building's comprehensive security system - you have access control (who can enter which rooms), authentication (checking IDs at the entrance), authorization (what each person is allowed to do), and monitoring (security cameras) - the security model defines the rules (like 'only employees can access the server room') and the mechanisms (like keycards and cameras) that enforce those rules to protect the building (operating system).
 
 Inputs & Outputs  
-   - Input: User credentials, access requests, security policies, system resources, audit logs.  
-   - Output: Access control decisions, security enforcement, audit trails, protected system.
+
+  - Input: User credentials, access requests, security policies, system resources, audit logs.  
+  - Output: Access control decisions, security enforcement, audit trails, protected system.
 
 Step-by-step description (5–10 lines max)  
 Define model: choose security model (DAC, MAC, RBAC, etc.).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    OS security model: RBAC (Role-Based Access Control) → roles: admin, user, guest → permissions: admin (full access), user (read/write own files), guest (read only) → authenticate: user logs in → authorize: check user role → enforce: user tries to delete system file → denied (not admin) → audit: log access attempt → security enforced.
 
 Time & Space Complexity  
-   - Time: O(1) for access control checks, O(u) for authentication where u is user database size.  
-   - Space: O(p + a) where p is policy size, a is audit log size.
+
+  - Time: O(1) for access control checks, O(u) for authentication where u is user database size.  
+  - Space: O(p + a) where p is policy size, a is audit log size.
 
 Strengths  
+
 - Protection: protects system from unauthorized access and attacks.
 - Flexibility: supports various security models (DAC, MAC, RBAC).
 - Auditability: provides audit trails for security monitoring.
 
 Weaknesses / limitations  
+
 - Complexity: implementing comprehensive security can be complex.
 - Performance: security checks add overhead to system operations.
 - Usability: strict security may impact user experience.

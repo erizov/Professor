@@ -1,14 +1,13 @@
 # Multi-Stage Pipelines
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Multi-Stage Pipelines Flowchart:
@@ -43,9 +42,7 @@ Multi-Stage Pipelines Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Multi-Stage Pipelines Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_71_cicd_advanced/multi_stage_pipelines/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_71_cicd_advanced/multi_stage_pipelines/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_71_cicd_advanced/multi_stage_pipelines/test_algorithm.py)
-
 
    Multi-Stage Pipelines
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a production line: Multi-Stage Pipelines are like a production line with multiple stations - code goes through stages: first it's built (compiled), then tested (quality check), then deployed (shipped) - each stage must complete successfully before moving to the next, ensuring quality and control - just as products go through quality gates in production, code goes through stages in CI/CD.
 
 Inputs & Outputs  
-   - Input: Pipeline stages, stage definitions, dependencies, gates, approval requirements, artifacts.  
-   - Output: Staged execution, controlled deployments, phased releases, organized workflows.
+
+  - Input: Pipeline stages, stage definitions, dependencies, gates, approval requirements, artifacts.  
+  - Output: Staged execution, controlled deployments, phased releases, organized workflows.
 
 Step-by-step description (5–10 lines max)  
 Define stages: define pipeline stages (build, test, deploy, etc.).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Multi-Stage Pipelines: stage 1: build → compile code → gate: build success? → stage 2: test → run tests → gate: tests pass? → stage 3: deploy-staging → deploy to staging → gate: staging OK? → stage 4: deploy-prod → deploy to production → result: controlled deployment → Multi-Stage Pipelines successful.
 
 Time & Space Complexity  
-   - Time: O(Σs_i) where s_i is time for stage i (sequential stages).  
-   - Space: O(a + c) where a is artifact storage, c is configuration storage.
+
+  - Time: O(Σs_i) where s_i is time for stage i (sequential stages).  
+  - Space: O(a + c) where a is artifact storage, c is configuration storage.
 
 Strengths  
+
 - Organization: organizes complex workflows into clear stages.
 - Control: provides control through gates and approvals.
 - Quality: ensures quality through staged validation.
 
 Weaknesses / limitations  
+
 - Time: sequential stages can increase total pipeline time.
 - Complexity: managing multiple stages adds complexity.
 - Dependencies: stage dependencies must be managed carefully.

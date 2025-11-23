@@ -364,16 +364,34 @@
 <body>
     <div class="header">
         <div class="container">
-            <h1>Algorithms and Design Patterns Course</h1>
-            <p>Comprehensive collection of 600+ algorithms with implementations, tests, and framework examples</p>
+            <h1 id="main-title">Algorithms and Design Patterns Course</h1>
+            <p id="main-description">Comprehensive collection of 600+ algorithms with implementations, tests, and framework examples</p>
+            
             <div class="nav-menu">
-                <a href="/">Home</a>
-                <a href="/algorithm-executor">Algorithm Executor</a>
-                <a href="/test-reports">Test Results</a>
-                <a href="/sandbox">Sandbox</a>
+                <a href="/" id="nav-home">Home</a>
+                <a href="/algorithm-executor" id="nav-executor">Algorithm Executor</a>
+                <a href="/test-reports" id="nav-test-results">Test Results</a>
+                <a href="/sandbox" id="nav-sandbox">Sandbox</a>
                 <span id="user-admin-link" style="display: none;">
-                    <a href="/user-admin">User Admin</a>
+                    <a href="/user-admin" id="nav-user-admin">User Admin</a>
                 </span>
+                
+                <!-- Language and Level controls in nav-menu -->
+                <div style="display: flex; gap: 0.5rem; align-items: center; margin-left: auto;">
+                    <label for="header-level" style="color: white; font-weight: 600; margin-right: 0.25rem;">Level:</label>
+                    <select id="header-level" style="padding: 0.5rem; border-radius: 4px; border: none; font-size: 0.9rem; background: white;">
+                        <option value="">All Levels</option>
+                        <option value="school">School</option>
+                        <option value="univer">University</option>
+                    </select>
+                    
+                    <label for="header-language" style="color: white; font-weight: 600; margin-left: 1rem; margin-right: 0.25rem;">Language:</label>
+                    <select id="header-language" style="padding: 0.5rem; border-radius: 4px; border: none; font-size: 0.9rem; background: white;">
+                        <option value="">All Languages</option>
+                        <option value="ru">Russian</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
             </div>
         </div>
     </div>
@@ -394,11 +412,16 @@
             </div>
             <div class="stat-item">
                 <div class="value" id="total-semesters">-</div>
-                <div class="label">Semesters</div>
+                <div class="label">Years</div>
             </div>
         </div>
         
         <div class="quick-links">
+            <a href="/algorithm-index" class="quick-link-card">
+                <div class="icon">📚</div>
+                <h3>Algorithm Index</h3>
+                <p>Browse algorithms by level (School/University) and language (English/Russian). Filter and search through all available algorithms.</p>
+            </a>
             <a href="/sandbox" class="quick-link-card">
                 <div class="icon">🧪</div>
                 <h3>Algorithm Sandbox</h3>
@@ -428,16 +451,16 @@
                 </select>
             </div>
             <div class="filter-group">
-                <label for="semester">Semester</label>
+                <label for="semester">Year</label>
                 <select id="semester">
-                    <option value="">All Semesters</option>
+                    <option value="">All Years</option>
                 </select>
             </div>
             <div class="filter-group">
                 <label for="sort">Sort By</label>
                 <select id="sort">
                     <option value="name">Name</option>
-                    <option value="semester">Semester</option>
+                    <option value="semester">Year</option>
                     <option value="category">Category</option>
                     <option value="complexity">Complexity</option>
                 </select>
@@ -448,10 +471,6 @@
                     <option value="asc">Ascending</option>
                     <option value="desc">Descending</option>
                 </select>
-            </div>
-            <div class="filter-group">
-                <label>&nbsp;</label>
-                <button class="btn btn-primary" onclick="loadAlgorithms()">Apply Filters</button>
             </div>
         </div>
         
@@ -521,7 +540,9 @@
                 semesters.forEach(sem => {
                     const option = document.createElement('option');
                     option.value = sem;
-                    option.textContent = `Semester ${sem}`;
+                    // Convert semester to year: semester 1-2 = Year 1, 3-4 = Year 2, etc.
+                    const year = Math.ceil(sem / 2);
+                    option.textContent = `Year ${year}`;
                     semesterSelect.appendChild(option);
                 });
             } catch (error) {
@@ -535,6 +556,19 @@
             container.innerHTML = '<div class="loading">Loading algorithms...</div>';
             
             const search = document.getElementById('search').value;
+            // Get level and language from header dropdowns (or fallback to filter dropdowns)
+            const headerLevel = document.getElementById('header-level');
+            const headerLanguage = document.getElementById('header-language');
+            let level = headerLevel ? headerLevel.value : (document.getElementById('level')?.value || '');
+            let language = headerLanguage ? headerLanguage.value : (document.getElementById('language')?.value || localStorage.getItem('preferred_language') || '');
+            
+            // If level is set, always send it (even if language is empty)
+            // If level is "school" and language is empty, don't set language - let server handle it
+            // If no level and no language, set default language
+            if (!level && !language) {
+                language = 'en';  // Default language only when no filters are set
+            }
+            
             const category = document.getElementById('category').value;
             const semester = document.getElementById('semester').value;
             const sort = document.getElementById('sort').value;
@@ -550,15 +584,28 @@
                 order: order
             });
             
+            // Only add level and language if they are set
+            if (level) {
+                params.append('level', level);
+            }
+            if (language) {
+                params.append('language', language);
+            }
+            
             try {
                 const response = await fetch(`/api/algorithms?${params}`);
                 const data = await response.json();
                 
-                currentPage = page;
-                currentFilters = { search, category, semester, sort, order };
+                console.log('Algorithms loaded:', data.algorithms?.length || 0, 'Total:', data.pagination?.total || 0);
                 
-                if (data.algorithms.length === 0) {
-                    container.innerHTML = '<div class="loading">No algorithms found.</div>';
+                currentPage = page;
+                currentFilters = { search, level, language, category, semester, sort, order };
+                
+                if (!data.algorithms || data.algorithms.length === 0) {
+                    const noResultsText = language === 'ru' 
+                        ? 'Алгоритмы не найдены. Попробуйте изменить фильтры Уровня или Языка.' 
+                        : 'No algorithms found. Try changing Level or Language filters.';
+                    container.innerHTML = `<div class="loading">${noResultsText}</div>`;
                     return;
                 }
                 
@@ -577,10 +624,14 @@
                     const normalizedPath = algo.folder_path ? algo.folder_path.replace(/\\/g, '/') : '';
                     const readmeLink = normalizedPath ? `/readme/${normalizedPath}/README.md` : '';
                     
+                    // Convert semester to year
+                    const semester = algo.semester_number;
+                    const yearDisplay = semester ? `Year ${Math.ceil(semester / 2)}` : '';
+                    
                     card.innerHTML = `
                         <h3>${algo.display_name}</h3>
                         <div class="meta">
-                            ${algo.semester_number ? `<span>Semester ${algo.semester_number}</span>` : ''}
+                            ${yearDisplay ? `<span>${yearDisplay}</span>` : ''}
                             ${algo.category ? `<span>${algo.category}</span>` : ''}
                             ${algo.time_complexity ? `<span>${algo.time_complexity}</span>` : ''}
                         </div>
@@ -668,7 +719,7 @@
                     <h2>${algo.display_name || algo.name}</h2>
                     <div class="preview-section">
                         <h4>Basic Information</h4>
-                        <p><strong>Semester:</strong> ${algo.semester_number || 'N/A'}</p>
+                        <p><strong>Year:</strong> ${algo.semester_number ? `Year ${Math.ceil(algo.semester_number / 2)}` : 'N/A'}</p>
                         <p><strong>Lecture:</strong> ${algo.lecture_name || 'N/A'}</p>
                         <p><strong>Category:</strong> ${algo.category || 'N/A'}</p>
                         <p><strong>Time Complexity:</strong> ${algo.time_complexity || 'N/A'}</p>
@@ -860,10 +911,355 @@ save_results(processed)</code></pre>
             }
         }
         
+        // Load user preferences for level and language
+        async function loadUserPreferences() {
+            try {
+                const response = await fetch('/api/user/preferences');
+                if (response.ok) {
+                    const prefs = await response.json();
+                    if (prefs.level) {
+                        // Normalize level value
+                        const levelValue = prefs.level === 'university' ? 'univer' : prefs.level;
+                        const headerLevel = document.getElementById('header-level');
+                        const filterLevel = document.getElementById('level');
+                        if (headerLevel) headerLevel.value = levelValue;
+                        if (filterLevel) filterLevel.value = levelValue;
+                    }
+                    if (prefs.language) {
+                        const headerLanguage = document.getElementById('header-language');
+                        const filterLanguage = document.getElementById('language');
+                        if (headerLanguage) headerLanguage.value = prefs.language;
+                        if (filterLanguage) filterLanguage.value = prefs.language;
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading user preferences:', error);
+            }
+        }
+        
+        // Update UI language
+        function updateUILanguage(language) {
+            const translations = {
+                en: {
+                    'main-title': 'Algorithms and Design Patterns Course',
+                    'main-description': 'Comprehensive collection of 600+ algorithms with implementations, tests, and framework examples',
+                    'level-label': 'Level:',
+                    'language-label': 'Language:',
+                    'total-algorithms': 'Total Algorithms',
+                    'test-files': 'Test Files',
+                    'framework-examples': 'Framework Examples',
+                    'years': 'Years',
+                    'search-placeholder': 'Search algorithms...',
+                    'loading': 'Loading algorithms...',
+                    'no-results': 'No algorithms found. Try changing Level or Language filters.',
+                    'all-levels': 'All Levels',
+                    'all-languages': 'All Languages',
+                    'school': 'School',
+                    'university': 'University',
+                    'russian': 'Russian',
+                    'english': 'English',
+                    'algorithm-index-title': 'Algorithm Index',
+                    'algorithm-index-desc': 'Browse algorithms by level (School/University) and language (English/Russian). Filter and search through all available algorithms.',
+                    'algorithm-sandbox-title': 'Algorithm Sandbox',
+                    'algorithm-sandbox-desc': 'Create your own copy of algorithms and experiment with them. Test your modifications in a safe environment.',
+                    'algorithm-executor-title': 'Algorithm Executor',
+                    'algorithm-executor-desc': 'Execute any Java or Python algorithm from a unified interface. View source code and run algorithms instantly.',
+                    'test-results-title': 'Test Results',
+                    'test-results-desc': 'View comprehensive test results for all algorithms. Track success rates, failures, and recent changes.',
+                    'nav-home': 'Home',
+                    'nav-executor': 'Algorithm Executor',
+                    'nav-test-results': 'Test Results',
+                    'nav-sandbox': 'Sandbox',
+                    'nav-user-admin': 'User Admin'
+                },
+                ru: {
+                    'main-title': 'Курс алгоритмов и паттернов проектирования',
+                    'main-description': 'Обширная коллекция из 600+ алгоритмов с реализациями, тестами и примерами использования фреймворков',
+                    'level-label': 'Уровень:',
+                    'language-label': 'Язык:',
+                    'total-algorithms': 'Всего алгоритмов',
+                    'test-files': 'Тестовых файлов',
+                    'framework-examples': 'Примеров фреймворков',
+                    'years': 'Лет',
+                    'search-placeholder': 'Поиск алгоритмов...',
+                    'loading': 'Загрузка алгоритмов...',
+                    'no-results': 'Алгоритмы не найдены. Попробуйте изменить фильтры Уровня или Языка.',
+                    'all-levels': 'Все уровни',
+                    'all-languages': 'Все языки',
+                    'school': 'Школа',
+                    'university': 'Университет',
+                    'russian': 'Русский',
+                    'english': 'Английский',
+                    'algorithm-index-title': 'Индекс алгоритмов',
+                    'algorithm-index-desc': 'Просмотр алгоритмов по уровню (Школа/Университет) и языку (Английский/Русский). Фильтрация и поиск по всем доступным алгоритмам.',
+                    'algorithm-sandbox-title': 'Песочница алгоритмов',
+                    'algorithm-sandbox-desc': 'Создайте свою копию алгоритмов и экспериментируйте с ними. Тестируйте свои модификации в безопасной среде.',
+                    'algorithm-executor-title': 'Исполнитель алгоритмов',
+                    'algorithm-executor-desc': 'Выполняйте любые алгоритмы на Java или Python из единого интерфейса. Просматривайте исходный код и запускайте алгоритмы мгновенно.',
+                    'test-results-title': 'Результаты тестов',
+                    'test-results-desc': 'Просматривайте подробные результаты тестов для всех алгоритмов. Отслеживайте показатели успешности, ошибки и последние изменения.',
+                    'nav-home': 'Главная',
+                    'nav-executor': 'Исполнитель алгоритмов',
+                    'nav-test-results': 'Результаты тестов',
+                    'nav-sandbox': 'Песочница',
+                    'nav-user-admin': 'Администрирование пользователей'
+                }
+            };
+            
+            // Normalize language value (russian -> ru, english -> en)
+            const normalizedLang = (language === 'ru' || language === 'en') ? language : 
+                                  (language === 'russian' ? 'ru' : (language === 'english' ? 'en' : 'en'));
+            const t = translations[normalizedLang] || translations.en;
+            
+            console.log('updateUILanguage: language=', language, 'normalized=', normalizedLang);
+            
+            // Update main title and description
+            const mainTitle = document.getElementById('main-title');
+            const mainDescription = document.getElementById('main-description');
+            if (mainTitle) mainTitle.textContent = t['main-title'];
+            if (mainDescription) mainDescription.textContent = t['main-description'];
+            
+            // Update labels
+            const levelLabel = document.querySelector('label[for="header-level"]');
+            const languageLabel = document.querySelector('label[for="header-language"]');
+            if (levelLabel) levelLabel.textContent = t['level-label'];
+            if (languageLabel) languageLabel.textContent = t['language-label'];
+            
+            // Update statistics labels
+            const statsLabels = document.querySelectorAll('.stat-item .label');
+            if (statsLabels.length >= 4) {
+                statsLabels[0].textContent = t['total-algorithms'];
+                statsLabels[1].textContent = t['test-files'];
+                statsLabels[2].textContent = t['framework-examples'];
+                statsLabels[3].textContent = t['years'];
+            }
+            
+            // Update search placeholder
+            const searchInput = document.getElementById('search');
+            if (searchInput) searchInput.placeholder = t['search-placeholder'];
+            
+            // Update dropdown options
+            const headerLevel = document.getElementById('header-level');
+            if (headerLevel) {
+                const options = headerLevel.querySelectorAll('option');
+                if (options.length >= 3) {
+                    options[0].textContent = t['all-levels'];
+                    options[1].textContent = t['school'];
+                    options[2].textContent = t['university'];
+                }
+            }
+            
+            const headerLanguage = document.getElementById('header-language');
+            if (headerLanguage) {
+                const options = headerLanguage.querySelectorAll('option');
+                if (options.length >= 3) {
+                    options[0].textContent = t['all-languages'];
+                    options[1].textContent = t['russian'];
+                    options[2].textContent = t['english'];
+                }
+            }
+            
+            // Update navigation links
+            const navHome = document.getElementById('nav-home');
+            const navExecutor = document.getElementById('nav-executor');
+            const navTestResults = document.getElementById('nav-test-results');
+            const navSandbox = document.getElementById('nav-sandbox');
+            const navUserAdmin = document.getElementById('nav-user-admin');
+            if (navHome) navHome.textContent = t['nav-home'];
+            if (navExecutor) navExecutor.textContent = t['nav-executor'];
+            if (navTestResults) navTestResults.textContent = t['nav-test-results'];
+            if (navSandbox) navSandbox.textContent = t['nav-sandbox'];
+            if (navUserAdmin) navUserAdmin.textContent = t['nav-user-admin'];
+            
+            // Update quick link cards
+            const quickLinks = document.querySelectorAll('.quick-link-card');
+            quickLinks.forEach(card => {
+                const h3 = card.querySelector('h3');
+                const p = card.querySelector('p');
+                if (h3 && p) {
+                    // Match by href or text content
+                    const href = card.getAttribute('href');
+                    if (href === '/algorithm-index') {
+                        h3.textContent = t['algorithm-index-title'];
+                        p.textContent = t['algorithm-index-desc'];
+                    } else if (href === '/sandbox') {
+                        h3.textContent = t['algorithm-sandbox-title'];
+                        p.textContent = t['algorithm-sandbox-desc'];
+                    } else if (href === '/algorithm-executor') {
+                        h3.textContent = t['algorithm-executor-title'];
+                        p.textContent = t['algorithm-executor-desc'];
+                    } else if (href === '/test-reports') {
+                        h3.textContent = t['test-results-title'];
+                        p.textContent = t['test-results-desc'];
+                    }
+                }
+            });
+        }
+        
+        // Global language change function
+        function setGlobalLanguage(language) {
+            // Save to localStorage for persistence across pages
+            localStorage.setItem('preferred_language', language);
+            
+            // Save to server preferences
+            saveUserPreferences();
+            
+            // Update UI language
+            updateUILanguage(language);
+            
+            // Trigger language change event for other pages
+            window.dispatchEvent(new CustomEvent('languageChanged', { 
+                detail: { language: language } 
+            }));
+            
+            // Reload current page to apply language changes
+            loadAlgorithms(1);
+        }
+        
+        // Save user preferences when dropdowns change
+        function setupPreferenceSaving() {
+            // Use header dropdowns (primary controls)
+            const headerLevel = document.getElementById('header-level');
+            const headerLanguage = document.getElementById('header-language');
+            
+            // Also check for filter dropdowns (if they exist)
+            const filterLevel = document.getElementById('level');
+            const filterLanguage = document.getElementById('language');
+            
+            // Setup header level dropdown
+            if (headerLevel) {
+                headerLevel.addEventListener('change', async () => {
+                    await saveUserPreferences();
+                    loadAlgorithms(1);
+                });
+            }
+            
+            // Setup header language dropdown
+            if (headerLanguage) {
+                headerLanguage.addEventListener('change', async (e) => {
+                    const language = e.target.value;
+                    setGlobalLanguage(language);
+                });
+            }
+            
+            // Setup filter level dropdown (if exists)
+            if (filterLevel) {
+                filterLevel.addEventListener('change', async () => {
+                    await saveUserPreferences();
+                    loadAlgorithms(1);
+                });
+            }
+            
+            // Setup filter language dropdown (if exists)
+            if (filterLanguage) {
+                filterLanguage.addEventListener('change', async (e) => {
+                    const language = e.target.value;
+                    setGlobalLanguage(language);
+                });
+            }
+        }
+        
+        async function saveUserPreferences() {
+            const headerLevel = document.getElementById('header-level');
+            const headerLanguage = document.getElementById('header-language');
+            const level = headerLevel ? headerLevel.value : (document.getElementById('level')?.value || '');
+            const language = headerLanguage ? headerLanguage.value : (document.getElementById('language')?.value || '');
+            
+            try {
+                const response = await fetch('/api/user/preferences', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        level: level,
+                        language: language
+                    })
+                });
+                
+                if (response.ok) {
+                    console.log('Preferences saved');
+                }
+            } catch (error) {
+                console.error('Error saving preferences:', error);
+            }
+        }
+        
         loadStatistics();
         loadFilters();
-        loadAlgorithms();
+        loadUserPreferences().then(() => {
+            // Load language from localStorage if available, default to 'en'
+            const savedLanguage = localStorage.getItem('preferred_language') || 'en';
+            const headerLanguage = document.getElementById('header-language');
+            const filterLanguage = document.getElementById('language');
+            if (headerLanguage) headerLanguage.value = savedLanguage;
+            if (filterLanguage) filterLanguage.value = savedLanguage;
+            
+            // Update UI language
+            updateUILanguage(savedLanguage);
+            
+            // Set default level to 'school' if not set
+            const headerLevel = document.getElementById('header-level');
+            const filterLevel = document.getElementById('level');
+            if (headerLevel && !headerLevel.value) {
+                headerLevel.value = 'school';
+            }
+            if (filterLevel && !filterLevel.value) {
+                filterLevel.value = 'school';
+            }
+            
+            loadAlgorithms();
+        });
+        // Auto-update when filters change
+        function setupAutoUpdate() {
+            // Header level dropdown
+            const headerLevel = document.getElementById('header-level');
+            if (headerLevel) {
+                headerLevel.addEventListener('change', () => {
+                    saveUserPreferences();
+                    loadAlgorithms(1);
+                });
+            }
+            
+            // Filter level dropdown (if exists)
+            const filterLevel = document.getElementById('level');
+            if (filterLevel) {
+                filterLevel.addEventListener('change', () => {
+                    saveUserPreferences();
+                    loadAlgorithms(1);
+                });
+            }
+            
+            document.getElementById('category').addEventListener('change', () => {
+                loadAlgorithms(1);
+            });
+            
+            document.getElementById('semester').addEventListener('change', () => {
+                loadAlgorithms(1);
+            });
+            
+            document.getElementById('sort').addEventListener('change', () => {
+                loadAlgorithms(1);
+            });
+            
+            document.getElementById('order').addEventListener('change', () => {
+                loadAlgorithms(1);
+            });
+        }
+        
+        setupPreferenceSaving();
+        setupAutoUpdate();
         checkUserRole();
+        
+        // Listen for global language changes from other pages
+        window.addEventListener('languageChanged', (e) => {
+            const language = e.detail.language;
+            const headerLanguage = document.getElementById('header-language');
+            const filterLanguage = document.getElementById('language');
+            if (headerLanguage) headerLanguage.value = language;
+            if (filterLanguage) filterLanguage.value = language;
+            loadAlgorithms(1);
+        });
     </script>
 </body>
 </html>

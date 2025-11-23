@@ -1,14 +1,13 @@
 # Chaos Metrics
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Chaos Metrics Flowchart:
@@ -43,9 +42,7 @@ Chaos Metrics Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Chaos Metrics Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_77_chaos_engineering_advanced/chaos_metrics/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_77_chaos_engineering_advanced/chaos_metrics/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_77_chaos_engineering_advanced/chaos_metrics/test_algorithm.py)
-
-
-   Chaos Metrics
 
 What problem does it solve? (1 sentence)  
    Defines and tracks metrics to measure system resilience during chaos experiments, enabling quantitative assessment of system behavior under failure conditions.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like health metrics: Chaos Metrics are like health metrics during exercise - you measure heart rate, recovery time, etc. to see how your body handles stress - similarly, chaos metrics measure how systems handle failures (error rates, recovery time) to assess resilience.
 
 Inputs & Outputs  
-   - Input: System metrics, chaos experiment data, baseline metrics, resilience criteria, monitoring data.  
-   - Output: Chaos metrics, resilience scores, recovery measurements, system health indicators, quantitative assessments.
+
+  - Input: System metrics, chaos experiment data, baseline metrics, resilience criteria, monitoring data.  
+  - Output: Chaos metrics, resilience scores, recovery measurements, system health indicators, quantitative assessments.
 
 Step-by-step description (5–10 lines max)  
 Define metrics: define metrics to measure resilience (MTTR, error rate, availability).
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Chaos Metrics: baseline: 99.9% availability → chaos: inject failure → metrics: availability drops to 99.5%, MTTR 30s → compare: 0.4% drop, recovery in 30s → assess: good resilience → report: resilience score 8/10 → Chaos Metrics operational.
 
 Time & Space Complexity  
-   - Time: O(c + a) where c is collection time, a is analysis time (continuous during experiments).  
-   - Space: O(m + h) where m is metric storage, h is historical data storage (time-series metrics).
+
+  - Time: O(c + a) where c is collection time, a is analysis time (continuous during experiments).  
+  - Space: O(m + h) where m is metric storage, h is historical data storage (time-series metrics).
 
 Strengths  
+
 - Quantitative: provides quantitative assessment of resilience.
 - Objective: enables objective comparison of system resilience.
 - Tracking: enables tracking of resilience improvements over time.
 
 Weaknesses / limitations  
+
 - Metrics: selecting right metrics can be challenging.
 - Baseline: requires good baseline metrics for comparison.
 - Interpretation: metrics require interpretation and context.

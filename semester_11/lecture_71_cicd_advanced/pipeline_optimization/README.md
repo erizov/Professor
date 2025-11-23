@@ -1,14 +1,13 @@
 # Pipeline Optimization
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Pipeline Optimization Flowchart:
@@ -43,9 +42,7 @@ Pipeline Optimization Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Pipeline Optimization Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_71_cicd_advanced/pipeline_optimization/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_71_cicd_advanced/pipeline_optimization/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_71_cicd_advanced/pipeline_optimization/test_algorithm.py)
-
-
-   Pipeline Optimization
 
 What problem does it solve? (1 sentence)  
    Improves CI/CD pipeline performance, efficiency, and cost through techniques like caching, parallelization, step optimization, and resource management, reducing build times and costs.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like optimizing a factory: Pipeline Optimization is like optimizing a factory production line - you cache materials (dependency caching), run processes in parallel (parallelization), eliminate waste (unnecessary steps), and use resources efficiently - just as factory optimization makes production faster and cheaper, pipeline optimization makes CI/CD faster and more cost-effective.
 
 Inputs & Outputs  
-   - Input: Pipeline configuration, performance metrics, resource usage, cost data, optimization strategies.  
-   - Output: Optimized pipelines, reduced execution time, lower costs, improved efficiency, better resource usage.
+
+  - Input: Pipeline configuration, performance metrics, resource usage, cost data, optimization strategies.  
+  - Output: Optimized pipelines, reduced execution time, lower costs, improved efficiency, better resource usage.
 
 Step-by-step description (5–10 lines max)  
 Analyze: analyze current pipeline performance and bottlenecks.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Pipeline Optimization: baseline: 30 minutes, $5 per run → cache: dependencies → parallelize: tests → optimize: faster build tools → result: 10 minutes, $2 per run → 3x faster, 60% cost reduction → Pipeline Optimization successful.
 
 Time & Space Complexity  
-   - Time: O(o) where o is optimized execution time (reduced from baseline).  
-   - Space: O(c + a) where c is cache storage, a is artifact storage.
+
+  - Time: O(o) where o is optimized execution time (reduced from baseline).  
+  - Space: O(c + a) where c is cache storage, a is artifact storage.
 
 Strengths  
+
 - Performance: significantly improves pipeline speed.
 - Cost: reduces CI/CD costs through efficiency.
 - Resource efficiency: better utilization of resources.
 
 Weaknesses / limitations  
+
 - Complexity: optimization adds complexity to pipelines.
 - Trade-offs: some optimizations may have trade-offs.
 - Maintenance: optimized pipelines require maintenance.

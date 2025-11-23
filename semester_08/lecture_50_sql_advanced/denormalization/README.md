@@ -1,14 +1,13 @@
 # Database Denormalization
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Database Denormalization Flowchart:
@@ -43,9 +42,7 @@ Database Denormalization Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Database Denormalization Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_50_sql_advanced/denormalization/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_50_sql_advanced/denormalization/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_50_sql_advanced/denormalization/test_algorithm.py)
-
-
-   Database Denormalization
 
 What problem does it solve? (1 sentence)  
    Intentionally introduces data redundancy by storing duplicate data across tables to improve query performance, trading storage space and update complexity for faster reads.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
 Like keeping copies for convenience: denormalization is like keeping a copy of important information in multiple places for quick access - instead of always looking it up (JOIN), you store it where you need it (like keeping a phone number in both your contacts and on a sticky note) - it uses more space and you must update multiple places, but it's faster to access.
 
 Inputs & Outputs  
-   - Input: Normalized database schema, query patterns, performance requirements, storage constraints.  
-   - Output: Denormalized schema, improved query performance, increased storage, update complexity.
+
+  - Input: Normalized database schema, query patterns, performance requirements, storage constraints.  
+  - Output: Denormalized schema, improved query performance, increased storage, update complexity.
 
 Step-by-step description (5–10 lines max)  
 Analyze queries: identify frequently executed queries with multiple JOINs.
@@ -112,15 +105,18 @@ Tiny example (hand-simulated)
    Normalized: orders table references customers table → query orders with customer names requires JOIN → denormalize: add customer_name column to orders table → query orders with names: no JOIN needed → faster query → trade-off: must update customer_name in orders when customer name changes.
 
 Time & Space Complexity  
-   - Time: O(1) for reads (no JOINs), O(u) for updates where u is number of redundant copies to update.  
-   - Space: O(d·r) where d is data size, r is redundancy factor (more storage for duplicates).
+
+  - Time: O(1) for reads (no JOINs), O(u) for updates where u is number of redundant copies to update.  
+  - Space: O(d·r) where d is data size, r is redundancy factor (more storage for duplicates).
 
 Strengths  
+
 - Query performance: eliminates JOINs, dramatically improving read speed.
 - Simpler queries: queries become simpler without complex JOINs.
 - Reduced load: fewer JOINs reduce database load.
 
 Weaknesses / limitations  
+
 - Storage overhead: requires additional storage for duplicate data.
 - Update complexity: must update redundant data in multiple places.
 - Data inconsistency: risk of inconsistent data if updates fail.

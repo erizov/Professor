@@ -1,14 +1,13 @@
 # User Guides
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 User Guides Flowchart:
@@ -43,9 +42,7 @@ User Guides Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 User Guides Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_08/lecture_48_documentation/user_guides/algorithm.py)
 - [Java Implementation](/code/semester_08/lecture_48_documentation/user_guides/Algorithm.java)
 - [Python Tests](/code/semester_08/lecture_48_documentation/user_guides/test_algorithm.py)
-
-
-   User Guides
 
 What problem does it solve? (1 sentence)  
    Provides step-by-step instructions and explanations to help end users learn and use software applications effectively, reducing support burden and improving user satisfaction.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like a user manual for a car: user guides explain how to use software (like a car manual explains how to drive) - they provide step-by-step instructions, explain features, and help users accomplish tasks (like 'how to change a tire' in a car manual).
 
 Inputs & Outputs  
-   - Input: Software features, user workflows, screenshots, step-by-step procedures, use cases.  
-   - Output: User-friendly guides, tutorials, how-to articles, getting started guides.
+
+  - Input: Software features, user workflows, screenshots, step-by-step procedures, use cases.  
+  - Output: User-friendly guides, tutorials, how-to articles, getting started guides.
 
 Step-by-step description (5–10 lines max)  
 Identify user tasks: determine common tasks users need to accomplish.
@@ -113,15 +106,18 @@ Tiny example (hand-simulated)
    User guide: 'How to Create an Account' → step 1: go to website → step 2: click 'Sign Up' → step 3: enter email and password → step 4: verify email → step 5: complete profile → includes: screenshots, tips, troubleshooting → user follows guide → successfully creates account.
 
 Time & Space Complexity  
-   - Time: O(t) where t is number of tasks and their complexity.  
-   - Space: O(g) where g is guide size (text, images, examples).
+
+  - Time: O(t) where t is number of tasks and their complexity.  
+  - Space: O(g) where g is guide size (text, images, examples).
 
 Strengths  
+
 - User empowerment: enables users to help themselves.
 - Reduces support: decreases support requests and tickets.
 - Better experience: improves user satisfaction and adoption.
 
 Weaknesses / limitations  
+
 - Maintenance: requires updates when software changes.
 - Completeness: covering all features can be extensive.
 - User engagement: some users may not read guides.

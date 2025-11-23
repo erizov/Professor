@@ -1,14 +1,13 @@
 # Zero-Shot Learning
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Zero-Shot Learning Flowchart:
@@ -43,9 +42,7 @@ Zero-Shot Learning Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Zero-Shot Learning Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_63_ai_advanced/zero_shot_learning/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_63_ai_advanced/zero_shot_learning/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_63_ai_advanced/zero_shot_learning/test_algorithm.py)
-
 
    Zero-Shot Learning
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like recognizing something you've never seen: zero-shot learning is like recognizing a new animal you've never seen before by describing it - if someone says 'it's like a cat but bigger with stripes' (semantic description), you can identify it as a tiger even though you've never seen one - zero-shot learning does this for AI: it uses descriptions, attributes, or relationships (like 'tiger is a big cat with stripes') to recognize new classes without training examples.
 
 Inputs & Outputs  
-   - Input: Unseen class descriptions, semantic embeddings, attribute vectors, text descriptions, seen class knowledge.  
-   - Output: Predictions for unseen classes, generalized classification, zero-shot recognition.
+
+  - Input: Unseen class descriptions, semantic embeddings, attribute vectors, text descriptions, seen class knowledge.  
+  - Output: Predictions for unseen classes, generalized classification, zero-shot recognition.
 
 Step-by-step description (5–10 lines max)  
 Train on seen: train model on seen classes with descriptions/attributes.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Zero-shot learning: train on: cats, dogs, birds (seen classes) → learn: visual features and semantic attributes (furry, has wings, etc.) → unseen: tiger (never seen) → description: 'big cat with stripes, furry' → match: test image features to semantic description → predict: tiger → zero-shot learning successful.
 
 Time & Space Complexity  
-   - Time: O(n_s) for training on seen classes where n_s is seen class data, O(1) for zero-shot inference.  
-   - Space: O(m + a) where m is model size, a is attribute/semantic space size.
+
+  - Time: O(n_s) for training on seen classes where n_s is seen class data, O(1) for zero-shot inference.  
+  - Space: O(m + a) where m is model size, a is attribute/semantic space size.
 
 Strengths  
+
 - Generalization: enables recognition of classes without training examples.
 - Scalability: can handle many unseen classes without retraining.
 - Flexibility: works with various semantic representations (attributes, text, embeddings).
 
 Weaknesses / limitations  
+
 - Semantic gap: semantic descriptions may not capture all visual characteristics.
 - Performance: typically lower accuracy than supervised learning.
 - Dependency: requires good semantic representations for unseen classes.

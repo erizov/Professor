@@ -1,14 +1,13 @@
 # Self-Healing Systems
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Self-Healing Systems Flowchart:
@@ -43,9 +42,7 @@ Self-Healing Systems Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Self-Healing Systems Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_74_automation_advanced/self_healing_systems/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_74_automation_advanced/self_healing_systems/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_74_automation_advanced/self_healing_systems/test_algorithm.py)
-
 
    Self-Healing Systems
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
 Like the human immune system: Self-Healing Systems are like the human immune system - when you get sick (system failure), your body detects it (monitoring), identifies the problem (diagnosis), and fixes it (healing) automatically - just as your immune system keeps you healthy, self-healing systems keep infrastructure healthy by automatically fixing problems.
 
 Inputs & Outputs  
-   - Input: System metrics, health checks, failure patterns, healing strategies, recovery procedures, automation scripts.  
-   - Output: Healed systems, recovered services, reduced downtime, improved reliability, healing logs.
+
+  - Input: System metrics, health checks, failure patterns, healing strategies, recovery procedures, automation scripts.  
+  - Output: Healed systems, recovered services, reduced downtime, improved reliability, healing logs.
 
 Step-by-step description (5–10 lines max)  
 Monitor: continuously monitor system health and metrics.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Self-Healing Systems: monitor: service health checks → detect: service unhealthy → diagnose: memory leak → plan: restart strategy → isolate: route traffic away → repair: restart service → verify: service healthy → restore: route traffic back → result: auto-recovered in 3 minutes → Self-Healing Systems operational.
 
 Time & Space Complexity  
-   - Time: O(d + di + r) where d is detection time, di is diagnosis time, r is repair time (automated, fast).  
-   - Space: O(s + l) where s is strategy storage, l is log storage (healing history).
+
+  - Time: O(d + di + r) where d is detection time, di is diagnosis time, r is repair time (automated, fast).  
+  - Space: O(s + l) where s is strategy storage, l is log storage (healing history).
 
 Strengths  
+
 - Reliability: improves system reliability through automatic recovery.
 - Downtime: reduces downtime by quick automatic fixes.
 - Efficiency: reduces need for manual intervention.
 
 Weaknesses / limitations  
+
 - Complexity: self-healing systems are complex to design.
 - Coverage: may not handle all types of failures.
 - Safety: healing actions must be carefully designed.

@@ -1,14 +1,13 @@
 # Query Expansion for RAG
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Query Expansion for RAG Flowchart:
@@ -43,9 +42,7 @@ Query Expansion for RAG Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Query Expansion for RAG Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_67_rag_advanced/query_expansion/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_67_rag_advanced/query_expansion/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_67_rag_advanced/query_expansion/test_algorithm.py)
-
 
    Query Expansion for RAG
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like adding synonyms to your search: query expansion is like searching for 'car' and also searching for 'automobile', 'vehicle', 'auto' - you expand your search terms to include related words, making it more likely to find what you're looking for even if the documents use different words - it's like speaking the same language as the documents, increasing the chances of finding relevant information.
 
 Inputs & Outputs  
-   - Input: Original query, synonym dictionaries, related terms, expansion methods, expansion parameters.  
-   - Output: Expanded query, improved retrieval, diverse search terms, better document matching.
+
+  - Input: Original query, synonym dictionaries, related terms, expansion methods, expansion parameters.  
+  - Output: Expanded query, improved retrieval, diverse search terms, better document matching.
 
 Step-by-step description (5–10 lines max)  
 Analyze query: analyze original query to identify key terms.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Query expansion: query: 'machine learning' → expand: add 'ML', 'artificial intelligence', 'AI algorithms', 'deep learning' → retrieve: finds documents with any of these terms → result: 50% more relevant documents → query expansion improves retrieval.
 
 Time & Space Complexity  
-   - Time: O(t·e) where t is number of terms, e is expansion time per term (synonym lookup, embedding search).  
-   - Space: O(s) where s is synonym/embedding dictionary size (expansion resources).
+
+  - Time: O(t·e) where t is number of terms, e is expansion time per term (synonym lookup, embedding search).  
+  - Space: O(s) where s is synonym/embedding dictionary size (expansion resources).
 
 Strengths  
+
 - Coverage: improves retrieval coverage by matching more document variations.
 - Robustness: more robust to vocabulary mismatches between query and documents.
 - Quality: can improve retrieval quality for ambiguous or short queries.
 
 Weaknesses / limitations  
+
 - Noise: may introduce irrelevant terms and noise.
 - Precision: may reduce precision if expansion is too broad.
 - Tuning: requires careful tuning of expansion parameters.

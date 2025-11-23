@@ -1,14 +1,13 @@
 # Edge Computing
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Edge Computing Flowchart:
@@ -43,9 +42,7 @@ Edge Computing Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Edge Computing Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_72_infrastructure_advanced/edge_computing/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_72_infrastructure_advanced/edge_computing/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_72_infrastructure_advanced/edge_computing/test_algorithm.py)
-
-
-   Edge Computing
 
 What problem does it solve? (1 sentence)  
    Processes data and runs applications closer to data sources (at the edge) rather than in centralized cloud data centers, reducing latency, bandwidth usage, and enabling real-time processing.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like local processing: Edge Computing is like processing things locally instead of sending everything to a central location - instead of sending all data to the cloud (like mailing everything to headquarters), you process it locally (at the edge, like local offices) - just as local processing is faster, edge computing reduces latency and bandwidth.
 
 Inputs & Outputs  
-   - Input: Data sources, edge devices, applications, processing requirements, network conditions, latency constraints.  
-   - Output: Edge-processed data, reduced latency, lower bandwidth usage, real-time responses, distributed processing, edge deployments.
+
+  - Input: Data sources, edge devices, applications, processing requirements, network conditions, latency constraints.  
+  - Output: Edge-processed data, reduced latency, lower bandwidth usage, real-time responses, distributed processing, edge deployments.
 
 Step-by-step description (5–10 lines max)  
 Identify: identify workloads suitable for edge.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Edge Computing: workload: video analytics → deploy: deploy to edge cameras → process: analyze video locally → filter: send only alerts to cloud → result: 10ms latency (vs 200ms cloud), 90% bandwidth reduction → Edge Computing successful.
 
 Time & Space Complexity  
-   - Time: O(p) where p is processing time (reduced due to local processing).  
-   - Space: O(e + c) where e is edge storage, c is cache storage (distributed storage).
+
+  - Time: O(p) where p is processing time (reduced due to local processing).  
+  - Space: O(e + c) where e is edge storage, c is cache storage (distributed storage).
 
 Strengths  
+
 - Latency: significantly reduces latency.
 - Bandwidth: reduces bandwidth usage.
 - Real-time: enables real-time processing.
 
 Weaknesses / limitations  
+
 - Management: managing edge infrastructure is complex.
 - Resources: edge devices have limited resources.
 - Security: edge devices may be less secure.

@@ -1,14 +1,13 @@
 # Attention Mechanism
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Attention Mechanism Flowchart:
@@ -43,9 +42,7 @@ Attention Mechanism Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Attention Mechanism Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_05/lecture_25_transformers/attention/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_25_transformers/attention/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_25_transformers/attention/test_algorithm.py)
-

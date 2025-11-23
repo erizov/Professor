@@ -1,14 +1,13 @@
 # Advanced Auto-Scaling
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Advanced Auto-Scaling Flowchart:
@@ -43,9 +42,7 @@ Advanced Auto-Scaling Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Advanced Auto-Scaling Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_74_automation_advanced/auto_scaling_advanced/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_74_automation_advanced/auto_scaling_advanced/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_74_automation_advanced/auto_scaling_advanced/test_algorithm.py)
-
 
    Advanced Auto-Scaling
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a smart thermostat: Advanced Auto-Scaling is like a smart thermostat that learns your patterns - it doesn't just react to temperature (current load), it predicts when you'll need heating/cooling (predictive scaling) and adjusts proactively - just as a smart thermostat saves energy and keeps you comfortable, advanced auto-scaling saves costs and maintains performance.
 
 Inputs & Outputs  
-   - Input: Metrics (CPU, memory, custom), scaling policies, predictive models, historical data, cost constraints.  
-   - Output: Scaled resources, optimized capacity, cost savings, performance maintenance, adaptive infrastructure.
+
+  - Input: Metrics (CPU, memory, custom), scaling policies, predictive models, historical data, cost constraints.  
+  - Output: Scaled resources, optimized capacity, cost savings, performance maintenance, adaptive infrastructure.
 
 Step-by-step description (5–10 lines max)  
 Monitor: monitor multiple metrics (CPU, memory, queue depth, custom).
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Advanced Auto-Scaling: metrics: CPU, memory, request rate → predict: traffic spike in 10 minutes → scale: preemptively scale up → result: handle spike without performance degradation → scale down: reduce after spike → cost: 30% savings vs fixed capacity → Advanced Auto-Scaling successful.
 
 Time & Space Complexity  
-   - Time: O(m + p + s) where m is monitoring time, p is prediction time, s is scaling time (continuous).  
-   - Space: O(d + c) where d is data storage (metrics, history), c is configuration storage.
+
+  - Time: O(m + p + s) where m is monitoring time, p is prediction time, s is scaling time (continuous).  
+  - Space: O(d + c) where d is data storage (metrics, history), c is configuration storage.
 
 Strengths  
+
 - Efficiency: optimizes resource usage and costs.
 - Performance: maintains performance under varying load.
 - Intelligence: uses predictive scaling for proactive adjustments.
 
 Weaknesses / limitations  
+
 - Complexity: advanced scaling can be complex to configure.
 - Prediction: predictions may not always be accurate.
 - Overscaling: may scale more than necessary.

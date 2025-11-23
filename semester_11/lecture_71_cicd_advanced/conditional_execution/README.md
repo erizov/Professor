@@ -1,14 +1,13 @@
 # Conditional Execution in CI/CD
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Conditional Execution in CI/CD Flowchart:
@@ -43,9 +42,7 @@ Conditional Execution in CI/CD Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Conditional Execution in CI/CD Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_71_cicd_advanced/conditional_execution/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_71_cicd_advanced/conditional_execution/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_71_cicd_advanced/conditional_execution/test_algorithm.py)
-
 
    Conditional Execution in CI/CD
 
@@ -95,7 +89,8 @@ Intuition (plain-language explanation)
 Like conditional statements: Conditional Execution in CI/CD is like if-else statements in code - you only run certain steps if conditions are met (like 'only run tests on main branch' or 'only deploy if tests pass') - this makes pipelines smarter and more efficient, skipping unnecessary steps and adapting to different scenarios.
 
 Inputs & Outputs  
-   - Input: Pipeline steps, conditions, branch information, file changes, environment variables, custom logic.  
+
+  - Input: Pipeline steps, conditions, branch information, file changes, environment variables, custom logic.  
 - Output: Conditionally executed steps, efficient pipelines, flexible workflows, optimized builds.
 
 Step-by-step description (5–10 lines max)  
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Conditional Execution: branch: feature-branch → condition: only run tests if Python files changed → check: Python files changed? → yes: run tests → condition: only deploy if on main branch → check: main branch? → no: skip deployment → result: efficient pipeline → Conditional Execution successful.
 
 Time & Space Complexity  
-   - Time: O(c + s) where c is condition evaluation time, s is step execution time (only executed steps).  
-   - Space: O(p + v) where p is pipeline definition, v is variable storage.
+
+  - Time: O(c + s) where c is condition evaluation time, s is step execution time (only executed steps).  
+  - Space: O(p + v) where p is pipeline definition, v is variable storage.
 
 Strengths  
+
 - Efficiency: skips unnecessary steps, saving time and resources.
 - Flexibility: adapts pipeline behavior to different scenarios.
 - Cost: reduces CI/CD costs by avoiding unnecessary executions.
 
 Weaknesses / limitations  
+
 - Complexity: conditional logic can become complex.
 - Debugging: conditional execution can make debugging harder.
 - Testing: requires testing all conditional paths.

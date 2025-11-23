@@ -1,14 +1,13 @@
 # NAS (Neural Architecture Search)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 NAS (Neural Architecture Search) Flowchart:
@@ -43,9 +42,7 @@ NAS (Neural Architecture Search) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 NAS (Neural Architecture Search) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,9 +74,8 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_06/lecture_33_model_optimization/nas/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_33_model_optimization/nas/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_33_model_optimization/nas/test_algorithm.py)
-

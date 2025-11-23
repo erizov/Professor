@@ -1,14 +1,13 @@
 # Hybrid Search for RAG
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Hybrid Search for RAG Flowchart:
@@ -49,9 +48,7 @@ Hybrid Search for RAG Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Hybrid Search for RAG Step-by-Step Execution:
@@ -75,9 +72,7 @@ Step 3: Check remaining (index 3, value 7)
 Found! Index 3
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -90,12 +85,11 @@ flowchart TD
     More -->|No| NotFound([Not Found])
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_67_rag_advanced/hybrid_search/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_67_rag_advanced/hybrid_search/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_67_rag_advanced/hybrid_search/test_algorithm.py)
-
 
    Hybrid Search for RAG
 
@@ -106,8 +100,9 @@ Intuition (plain-language explanation)
    Like using multiple search tools: hybrid search is like using both a library catalog (keyword search) and asking a librarian (semantic search) - the catalog is great for exact matches (keywords), while the librarian understands meaning (semantics) - by combining both, you get better results: you find documents with exact terms (keyword) and documents that mean the same thing even with different words (semantic) - it's like having multiple ways to find information, making your search more comprehensive and accurate.
 
 Inputs & Outputs  
-   - Input: Query, knowledge base, keyword index, semantic embeddings, search methods, fusion strategy.  
-   - Output: Hybrid search results, combined rankings, improved retrieval, diverse document set.
+
+  - Input: Query, knowledge base, keyword index, semantic embeddings, search methods, fusion strategy.  
+  - Output: Hybrid search results, combined rankings, improved retrieval, diverse document set.
 
 Step-by-step description (5–10 lines max)  
 Keyword search: perform keyword/BM25 search on query.
@@ -125,15 +120,18 @@ Tiny example (hand-simulated)
    Hybrid search: query: 'machine learning algorithms' → keyword: finds docs with exact terms → semantic: finds docs about 'ML methods', 'AI techniques' → combine: weighted sum (0.4 keyword + 0.6 semantic) → rank: hybrid ranking → result: 10 diverse, relevant documents → hybrid search improves retrieval.
 
 Time & Space Complexity  
-   - Time: O(k + s) where k is keyword search time, s is semantic search time (parallel or sequential).  
-   - Space: O(i + e) where i is keyword index size, e is embedding index size (both indices needed).
+
+  - Time: O(k + s) where k is keyword search time, s is semantic search time (parallel or sequential).  
+  - Space: O(i + e) where i is keyword index size, e is embedding index size (both indices needed).
 
 Strengths  
+
 - Quality: improves retrieval quality by combining methods.
 - Robustness: more robust to query variations and document styles.
 - Coverage: retrieves both exact matches and semantically similar documents.
 
 Weaknesses / limitations  
+
 - Complexity: more complex than single-method search.
 - Cost: requires maintaining multiple indices.
 - Tuning: requires tuning fusion weights and parameters.

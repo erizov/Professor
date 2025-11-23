@@ -1,14 +1,13 @@
 # Internal Developer Platforms (IDP)
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Internal Developer Platforms (IDP) Flowchart:
@@ -43,9 +42,7 @@ Internal Developer Platforms (IDP) Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Internal Developer Platforms (IDP) Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_11/lecture_76_platform_engineering/internal_developer_platforms/algorithm.py)
 - [Java Implementation](/code/semester_11/lecture_76_platform_engineering/internal_developer_platforms/Algorithm.java)
 - [Python Tests](/code/semester_11/lecture_76_platform_engineering/internal_developer_platforms/test_algorithm.py)
-
 
    Internal Developer Platforms (IDP)
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like a simplified control panel: Internal Developer Platforms are like a simplified control panel for complex machinery - instead of developers needing to understand all the machinery (infrastructure), they use a simple control panel (platform) that handles the complexity - just as a control panel makes complex machinery easy to use, an IDP makes complex infrastructure easy to use.
 
 Inputs & Outputs  
-   - Input: Infrastructure resources, platform services, developer requests, application requirements, platform APIs.  
-   - Output: Self-service platform, abstracted infrastructure, deployed applications, managed services, developer productivity.
+
+  - Input: Infrastructure resources, platform services, developer requests, application requirements, platform APIs.  
+  - Output: Self-service platform, abstracted infrastructure, deployed applications, managed services, developer productivity.
 
 Step-by-step description (5–10 lines max)  
 Abstract: abstract infrastructure complexity behind platform APIs.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    Internal Developer Platform: developer: needs database → platform: self-service database provisioning → deploy: one-click deployment → scale: auto-scaling → monitor: built-in monitoring → result: developer deploys without ops knowledge → IDP successful.
 
 Time & Space Complexity  
-   - Time: O(p + d) where p is platform operation time, d is deployment time (abstracted, faster).  
-   - Space: O(s + c) where s is service storage, c is configuration storage (platform state).
+
+  - Time: O(p + d) where p is platform operation time, d is deployment time (abstracted, faster).  
+  - Space: O(s + c) where s is service storage, c is configuration storage (platform state).
 
 Strengths  
+
 - Productivity: significantly improves developer productivity.
 - Abstraction: abstracts infrastructure complexity.
 - Self-service: enables self-service resource provisioning.
 
 Weaknesses / limitations  
+
 - Complexity: building and maintaining IDPs is complex.
 - Investment: requires significant investment in platform development.
 - Balance: balancing abstraction with flexibility.

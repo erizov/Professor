@@ -1,14 +1,13 @@
 # LLM Compression
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 LLM Compression Flowchart:
@@ -43,9 +42,7 @@ LLM Compression Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 LLM Compression Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,12 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_10/lecture_64_llm_architecture_advanced/llm_compression/algorithm.py)
 - [Java Implementation](/code/semester_10/lecture_64_llm_architecture_advanced/llm_compression/Algorithm.java)
 - [Python Tests](/code/semester_10/lecture_64_llm_architecture_advanced/llm_compression/test_algorithm.py)
-
 
    LLM Compression
 
@@ -95,8 +89,9 @@ Intuition (plain-language explanation)
    Like compressing a large file: LLM compression is like compressing a large file to make it smaller and faster to use - you can reduce file size (model size) by removing unnecessary parts (pruning), using less precise numbers (quantization), or creating a smaller summary version (distillation) - the compressed version is much smaller and faster, but still contains the essential information, making it practical to deploy on devices with limited resources.
 
 Inputs & Outputs  
-   - Input: Large language model, compression technique, target size, performance requirements, deployment constraints.  
-   - Output: Compressed model, reduced size, faster inference, maintained performance.
+
+  - Input: Large language model, compression technique, target size, performance requirements, deployment constraints.  
+  - Output: Compressed model, reduced size, faster inference, maintained performance.
 
 Step-by-step description (5–10 lines max)  
 Analyze model: analyze model structure, parameters, and importance.
@@ -114,15 +109,18 @@ Tiny example (hand-simulated)
    LLM compression: GPT-3 (175B parameters, 700GB) → quantization: FP32 → INT8 → size: 175GB (4x reduction) → pruning: remove 50% weights → size: 87.5GB (8x reduction) → distillation: train 7B student → size: 14GB (50x reduction) → performance: 95% of original → compressed model deployable.
 
 Time & Space Complexity  
-   - Time: O(m) for compression where m is model size, O(n) for fine-tuning where n is fine-tuning data size.  
-   - Space: O(c) where c is compressed model size (significantly smaller than original).
+
+  - Time: O(m) for compression where m is model size, O(n) for fine-tuning where n is fine-tuning data size.  
+  - Space: O(c) where c is compressed model size (significantly smaller than original).
 
 Strengths  
+
 - Efficiency: dramatically reduces model size and inference cost.
 - Deployability: enables deployment on resource-constrained devices.
 - Speed: faster inference due to smaller model and lower precision.
 
 Weaknesses / limitations  
+
 - Performance: may have some performance degradation.
 - Complexity: compression techniques can be complex to apply.
 - Trade-offs: requires balancing compression ratio and performance.

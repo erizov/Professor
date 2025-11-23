@@ -1,14 +1,13 @@
 # Blockchain Sharding
 
-Name of Algorithm  
+## Учебные материалы
 
-## Code Files
-
+- [Школьный уровень](school.ru.md)
+- [Университетский уровень](univer.ru.md)
 
 ## Algorithm Visualization
 
 ### Flowchart (ASCII)
-
 
 ```
 Blockchain Sharding Flowchart:
@@ -43,9 +42,7 @@ Blockchain Sharding Flowchart:
 └─────────────┘
 ```
 
-
 ### Step-by-Step Execution
-
 
 ```
 Blockchain Sharding Step-by-Step Execution:
@@ -64,9 +61,7 @@ State: [final state]
 Result: [output]
 ```
 
-
 ### Interactive Flowchart (Mermaid)
-
 
 ```mermaid
 flowchart TD
@@ -79,14 +74,11 @@ flowchart TD
     Process -->|False| End
 ```
 
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
 - [Python Implementation](/code/semester_13/lecture_87_blockchain_advanced/sharding_blockchain/algorithm.py)
 - [Java Implementation](/code/semester_13/lecture_87_blockchain_advanced/sharding_blockchain/Algorithm.java)
 - [Python Tests](/code/semester_13/lecture_87_blockchain_advanced/sharding_blockchain/test_algorithm.py)
-
-
-   Blockchain Sharding
 
 What problem does it solve? (1 sentence)  
    Scales blockchain by partitioning the network into multiple shards that process transactions in parallel, each maintaining its own state and transaction history, enabling horizontal scaling.
@@ -95,8 +87,9 @@ Intuition (plain-language explanation)
    Like dividing a library into sections: Blockchain sharding is like dividing a library into sections (shards) - instead of everyone using one catalog (single chain), each section has its own catalog (shard) - people can use different sections simultaneously (parallel processing), and the library (network) can handle more visitors (transactions) overall.
 
 Inputs & Outputs  
-   - Input: Transactions, shard assignment, validators, cross-shard communication, consensus mechanism.  
-   - Output: Shard blocks, cross-shard transactions, aggregated state, network-wide consensus.
+
+  - Input: Transactions, shard assignment, validators, cross-shard communication, consensus mechanism.  
+  - Output: Shard blocks, cross-shard transactions, aggregated state, network-wide consensus.
 
 Step-by-step description (5–10 lines max)  
 Partition: partition network into multiple shards.
@@ -114,15 +107,18 @@ Tiny example (hand-simulated)
    Sharding: partition into 4 shards → assign validators → route tx to shard 2 → process in parallel → consensus in shard 2 → cross-shard tx to shard 3 → aggregate → Sharding successful (4x throughput).
 
 Time & Space Complexity  
-   - Time: O(t/s + c) where t is transactions, s is shards, c is cross-shard overhead (sharded complexity).  
-   - Space: O(n/s) per shard where n is total state, s is shards (sharded storage).
+
+  - Time: O(t/s + c) where t is transactions, s is shards, c is cross-shard overhead (sharded complexity).  
+  - Space: O(n/s) per shard where n is total state, s is shards (sharded storage).
 
 Strengths  
+
 - Scalability: linear scaling with number of shards.
 - Parallelism: enables parallel transaction processing.
 - Efficiency: reduces storage and processing per node.
 
 Weaknesses / limitations  
+
 - Complexity: complex cross-shard communication and consensus.
 - Security: smaller shards may be more vulnerable to attacks.
 - Synchronization: requires careful state synchronization.
