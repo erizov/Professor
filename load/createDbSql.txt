@@ -1,0 +1,73 @@
+CREATE TYPE edu_level AS ENUM ('school', 'university');
+CREATE TYPE lang_code AS ENUM ('en', 'ru');
+
+CREATE TABLE algorithms (
+  algorithm_name TEXT PRIMARY KEY,
+  canonical_label TEXT,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT now()
+);
+
+CREATE TABLE algorithm_descriptions (
+  id SERIAL PRIMARY KEY,
+  algorithm_name TEXT NOT NULL REFERENCES algorithms(algorithm_name) ON DELETE CASCADE,
+  language lang_code NOT NULL,
+  level edu_level NOT NULL,
+  title TEXT,
+  short_description TEXT,
+  long_description TEXT,
+  example_snippet TEXT,
+  source_url TEXT,
+  source_site TEXT,
+  fetched_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  quality_score REAL DEFAULT 0.0,
+  UNIQUE (algorithm_name, language, level)
+);
+
+CREATE TABLE algorithm_aliases (
+  id SERIAL PRIMARY KEY,
+  algorithm_name TEXT NOT NULL REFERENCES algorithms(algorithm_name) ON DELETE CASCADE,
+  alias TEXT NOT NULL,
+  language lang_code,
+  source_url TEXT
+);
+
+CREATE TABLE fetch_logs (
+  id SERIAL PRIMARY KEY,
+  algorithm_name TEXT,
+  language lang_code,
+  level edu_level,
+  status TEXT,
+  message TEXT,
+  fetched_at TIMESTAMP WITH TIME ZONE DEFAULT now()
+);
+
+-- 1. Add new text columns for structured chapters
+-- University level fields
+ALTER TABLE algorithm_descriptions
+  ADD COLUMN IF NOT EXISTS discipline TEXT,
+  ADD COLUMN IF NOT EXISTS algorithm_definition TEXT,
+  ADD COLUMN IF NOT EXISTS technical_description TEXT,
+  ADD COLUMN IF NOT EXISTS application TEXT,
+  ADD COLUMN IF NOT EXISTS step_by_step TEXT,
+  ADD COLUMN IF NOT EXISTS self_check_basic TEXT,
+  ADD COLUMN IF NOT EXISTS self_check_intermediate TEXT,
+  ADD COLUMN IF NOT EXISTS self_check_advanced TEXT,
+  ADD COLUMN IF NOT EXISTS practical_tasks_basic TEXT,
+  ADD COLUMN IF NOT EXISTS practical_tasks_applied TEXT,
+  ADD COLUMN IF NOT EXISTS practical_tasks_research TEXT,
+  ADD COLUMN IF NOT EXISTS ethical_reasoning TEXT,
+  ADD COLUMN IF NOT EXISTS example_result TEXT;
+
+-- School level specific fields
+ALTER TABLE algorithm_descriptions
+  ADD COLUMN IF NOT EXISTS simple_explanation TEXT,
+  ADD COLUMN IF NOT EXISTS where_its_used TEXT,
+  ADD COLUMN IF NOT EXISTS example TEXT;
+
+-- 2. Add a JSONB column for any additional sections and metadata
+ALTER TABLE algorithm_descriptions
+  ADD COLUMN IF NOT EXISTS extra_chapters JSONB DEFAULT '{}'::jsonb;
+
+-- 3. Optional: index discipline for queries
+CREATE INDEX IF NOT EXISTS idx_algorithm_descriptions_discipline ON algorithm_descriptions(discipline);
