@@ -307,20 +307,6 @@
     <div class="container">
         <div class="filters">
             <div class="filter-group">
-                <label for="level">Level</label>
-                <select id="level">
-                    <option value="school" {{ 'selected' if preferred_level == 'school' else '' }}>School</option>
-                    <option value="univer" {{ 'selected' if preferred_level == 'university' or preferred_level == 'univer' else '' }}>University</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="language">Language</label>
-                <select id="language">
-                    <option value="en" {{ 'selected' if preferred_language == 'en' else '' }}>English</option>
-                    <option value="ru" {{ 'selected' if preferred_language == 'ru' else '' }}>Russian</option>
-                </select>
-            </div>
-            <div class="filter-group">
                 <label for="search">Search</label>
                 <input type="text" id="search" placeholder="Search algorithms...">
             </div>
@@ -367,8 +353,10 @@
                 const response = await fetch('/algorithm-index/api/preferences');
                 if (response.ok) {
                     const prefs = await response.json();
-                    document.getElementById('level').value = prefs.level || 'school';
-                    document.getElementById('language').value = prefs.language || 'en';
+                    const headerLevel = document.getElementById('header-level');
+                    const headerLanguage = document.getElementById('header-language');
+                    if (headerLevel) headerLevel.value = prefs.level || 'school';
+                    if (headerLanguage) headerLanguage.value = prefs.language || 'en';
                 }
             } catch (error) {
                 console.error('Error loading preferences:', error);
@@ -377,8 +365,10 @@
         
         // Save user preferences
         async function saveUserPreferences() {
-            const level = document.getElementById('level').value;
-            const language = document.getElementById('language').value;
+            const headerLevel = document.getElementById('header-level');
+            const headerLanguage = document.getElementById('header-language');
+            const level = headerLevel ? headerLevel.value : 'school';
+            const language = headerLanguage ? headerLanguage.value : 'en';
             
             try {
                 const response = await fetch('/algorithm-index/api/preferences', {
@@ -402,11 +392,11 @@
         
         // Load algorithms
         async function loadAlgorithms(page = 1) {
-            // Get level and language from header dropdowns (or fallback to filter dropdowns)
+            // Get level and language from header dropdowns
             const headerLevel = document.getElementById('header-level');
             const headerLanguage = document.getElementById('header-language');
-            let level = headerLevel ? headerLevel.value : (document.getElementById('level')?.value || 'school');
-            let language = headerLanguage ? headerLanguage.value : (document.getElementById('language')?.value || 'en');
+            let level = headerLevel ? headerLevel.value : 'school';
+            let language = headerLanguage ? headerLanguage.value : 'en';
             
             // Normalize level value (university -> univer)
             if (level === 'university') {
@@ -416,12 +406,6 @@
             // Ensure level and language are not empty
             if (!level) level = 'school';
             if (!language) language = 'en';
-            
-            // Sync filter dropdowns with header dropdowns
-            const filterLevel = document.getElementById('level');
-            const filterLanguage = document.getElementById('language');
-            if (filterLevel) filterLevel.value = level === 'univer' ? 'univer' : level;
-            if (filterLanguage) filterLanguage.value = language;
             
             const search = document.getElementById('search').value;
             const category = document.getElementById('category').value;
@@ -455,7 +439,7 @@
                 currentPage = data.page;
             } catch (error) {
                 console.error('Error loading algorithms:', error);
-                const language = document.getElementById('header-language')?.value || document.getElementById('language')?.value || 'en';
+                const language = document.getElementById('header-language')?.value || 'en';
                 const errorText = language === 'ru' ? 'Ошибка загрузки алгоритмов' : 'Error loading algorithms';
                 document.getElementById('algorithms-container').innerHTML = 
                     `<div class="loading">${errorText}</div>`;
@@ -547,7 +531,7 @@
             modal.style.display = 'block';
             
             try {
-                const level = document.getElementById('header-level')?.value || document.getElementById('level')?.value || 'school';
+                const level = document.getElementById('header-level')?.value || 'school';
                 const lang = document.getElementById('header-language')?.value || document.getElementById('language')?.value || 'en';
                 const response = await fetch(
                     `/algorithm-index/api/md-file?path=${encodeURIComponent(algo.folder_path)}&level=${level}&language=${lang}`
@@ -729,9 +713,7 @@
             const filterLabels = document.querySelectorAll('.filter-group label');
             filterLabels.forEach(label => {
                 const forAttr = label.getAttribute('for');
-                if (forAttr === 'level') label.textContent = t['level'];
-                else if (forAttr === 'language') label.textContent = t['language'];
-                else if (forAttr === 'search') label.textContent = t['search'];
+                if (forAttr === 'search') label.textContent = t['search'];
                 else if (forAttr === 'category') label.textContent = t['category'];
                 else if (forAttr === 'semester') label.textContent = t['semester'];
             });
@@ -759,23 +741,6 @@
                 }
             }
             
-            const filterLevel = document.getElementById('level');
-            if (filterLevel) {
-                const options = filterLevel.querySelectorAll('option');
-                if (options.length >= 2) {
-                    options[0].textContent = t['school'];
-                    options[1].textContent = t['university'];
-                }
-            }
-            
-            const filterLanguage = document.getElementById('language');
-            if (filterLanguage) {
-                const options = filterLanguage.querySelectorAll('option');
-                if (options.length >= 2) {
-                    options[0].textContent = t['english'];
-                    options[1].textContent = t['russian'];
-                }
-            }
             
             // Update category and semester dropdowns
             const categorySelect = document.getElementById('category');
@@ -829,21 +794,15 @@
                 // Load language from localStorage if available, default to 'en'
                 const savedLanguage = localStorage.getItem('preferred_language') || 'en';
                 const headerLanguage = document.getElementById('header-language');
-                const filterLanguage = document.getElementById('language');
                 if (headerLanguage) headerLanguage.value = savedLanguage;
-                if (filterLanguage) filterLanguage.value = savedLanguage;
                 
                 // Update UI language
                 updateUILanguage(savedLanguage);
                 
                 // Set default level to 'school' if not set
                 const headerLevel = document.getElementById('header-level');
-                const filterLevel = document.getElementById('level');
                 if (headerLevel && !headerLevel.value) {
                     headerLevel.value = 'school';
-                }
-                if (filterLevel && !filterLevel.value) {
-                    filterLevel.value = 'school';
                 }
                 
                 // Load algorithms after preferences are set
@@ -852,8 +811,10 @@
             
             loadFilters();
             
-            // Auto-load when header level changes
+            // Setup header dropdowns event listeners
             const headerLevel = document.getElementById('header-level');
+            const headerLanguage = document.getElementById('header-language');
+            
             if (headerLevel) {
                 headerLevel.addEventListener('change', () => {
                     saveUserPreferences();
@@ -861,8 +822,6 @@
                 });
             }
             
-            // Auto-load when header language changes
-            const headerLanguage = document.getElementById('header-language');
             if (headerLanguage) {
                 headerLanguage.addEventListener('change', (e) => {
                     const language = e.target.value;
@@ -871,23 +830,7 @@
                 });
             }
             
-            // Auto-load when level, language, category, or semester changes
-            const filterLevel = document.getElementById('level');
-            if (filterLevel) {
-                filterLevel.addEventListener('change', () => {
-                    saveUserPreferences();
-                    loadAlgorithms(1);
-                });
-            }
-            
-            const filterLanguage = document.getElementById('language');
-            if (filterLanguage) {
-                filterLanguage.addEventListener('change', (e) => {
-                    const language = e.target.value;
-                    setGlobalLanguage(language);
-                });
-            }
-            
+            // Auto-load when category or semester changes
             document.getElementById('category').addEventListener('change', () => {
                 loadAlgorithms(1);
             });
@@ -906,10 +849,7 @@
             // Listen for global language changes from other pages
             window.addEventListener('languageChanged', (e) => {
                 const language = e.detail.language;
-                const headerLanguage = document.getElementById('header-language');
-                const filterLanguage = document.getElementById('language');
                 if (headerLanguage) headerLanguage.value = language;
-                if (filterLanguage) filterLanguage.value = language;
                 updateUILanguage(language);
                 loadAlgorithms(1);
             });
