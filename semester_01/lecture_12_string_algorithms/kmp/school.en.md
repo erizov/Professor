@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Kmp is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Knuth-Morris-Pratt (KMP) is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

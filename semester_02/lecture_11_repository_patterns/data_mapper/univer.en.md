@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Data Mapper is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Data Mapper is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Data Mapper is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Data Mapper works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Data Engineering / Data Governance
 
@@ -20,15 +22,15 @@ Data Mapper is a specific algorithm/technique used for [specific purpose]. It wo
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for data mapper]
+[Specific input data for Data Mapper]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

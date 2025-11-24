@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Composite is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Composite Pattern is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Composite is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Composite Pattern works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,15 @@ Composite is a specific algorithm/technique used for [specific purpose]. It work
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for composite]
+[Specific input data for Composite Pattern]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

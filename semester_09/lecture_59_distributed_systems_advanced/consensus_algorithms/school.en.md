@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Consensus Algorithms is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Consensus Algorithms is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

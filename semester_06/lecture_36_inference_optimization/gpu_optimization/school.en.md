@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Gpu Optimization is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+GPU Optimization for ML Inference is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Feature Extraction is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Feature Extraction is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

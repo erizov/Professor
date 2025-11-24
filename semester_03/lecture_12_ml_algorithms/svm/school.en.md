@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Svm is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Support Vector Machine (SVM) is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

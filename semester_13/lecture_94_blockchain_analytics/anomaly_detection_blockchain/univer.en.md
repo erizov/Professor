@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Anomaly Detection Blockchain is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Blockchain Anomaly Detection is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Anomaly Detection Blockchain is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Blockchain Anomaly Detection works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Machine Learning / AI
 
@@ -20,15 +22,15 @@ Anomaly Detection Blockchain is a specific algorithm/technique used for [specifi
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for anomaly detection blockchain]
+[Specific input data for Blockchain Anomaly Detection]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

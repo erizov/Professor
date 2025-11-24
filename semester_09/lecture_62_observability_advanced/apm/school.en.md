@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Apm is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Application Performance Monitoring (APM) is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

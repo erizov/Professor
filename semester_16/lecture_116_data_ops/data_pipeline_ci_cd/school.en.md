@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Data Pipeline Ci Cd is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Data Pipeline Ci Cd is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

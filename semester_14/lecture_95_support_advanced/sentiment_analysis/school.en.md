@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Sentiment Analysis is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Sentiment Analysis for Support is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Unet is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+U-Net is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Unet is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+U-Net works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,15 @@ Unet is a specific algorithm/technique used for [specific purpose]. It works by 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for unet]
+[Specific input data for U-Net]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

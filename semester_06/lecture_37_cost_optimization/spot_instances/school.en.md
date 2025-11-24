@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Spot Instances is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Spot Instances is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

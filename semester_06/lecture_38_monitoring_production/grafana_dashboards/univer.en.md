@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Grafana Dashboards is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Grafana Dashboards is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Grafana Dashboards is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Grafana Dashboards works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Monitoring & Security
 
@@ -20,15 +22,15 @@ Grafana Dashboards is a specific algorithm/technique used for [specific purpose]
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for grafana dashboards]
+[Specific input data for Grafana Dashboards]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

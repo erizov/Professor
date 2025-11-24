@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Multi Stage Pipelines is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Multi-Stage Pipelines is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

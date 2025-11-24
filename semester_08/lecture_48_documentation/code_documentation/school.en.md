@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Code Documentation is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Code Documentation is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

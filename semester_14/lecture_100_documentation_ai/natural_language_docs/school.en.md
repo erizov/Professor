@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Natural Language Docs is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Natural Language Documentation is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Multi Hop Rag is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Multi-Hop RAG is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Multi Hop Rag is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Multi-Hop RAG works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,15 @@ Multi Hop Rag is a specific algorithm/technique used for [specific purpose]. It 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for multi hop rag]
+[Specific input data for Multi-Hop RAG]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

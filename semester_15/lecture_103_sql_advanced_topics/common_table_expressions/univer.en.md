@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Common Table Expressions is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Common Table Expressions is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Common Table Expressions is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Common Table Expressions works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,15 @@ Common Table Expressions is a specific algorithm/technique used for [specific pu
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for common table expressions]
+[Specific input data for Common Table Expressions]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

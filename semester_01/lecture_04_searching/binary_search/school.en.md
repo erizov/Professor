@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Binary Search is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Binary Search is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Time Series Storage is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Time Series Storage is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Time Series Storage is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Time Series Storage works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Data Engineering / Data Governance
 
@@ -20,15 +22,15 @@ Time Series Storage is a specific algorithm/technique used for [specific purpose
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for time series storage]
+[Specific input data for Time Series Storage]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

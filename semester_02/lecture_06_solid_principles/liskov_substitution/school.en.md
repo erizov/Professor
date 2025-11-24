@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Liskov Substitution is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Liskov Substitution Principle is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

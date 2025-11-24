@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Knn is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+K-Nearest Neighbors (KNN) is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Bridge is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Bridge Pattern is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

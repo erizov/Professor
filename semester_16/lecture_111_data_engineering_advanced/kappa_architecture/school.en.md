@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Kappa Architecture is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Kappa Architecture is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

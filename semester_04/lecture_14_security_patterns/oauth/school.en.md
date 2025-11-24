@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Oauth is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+OAuth 2.0 is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

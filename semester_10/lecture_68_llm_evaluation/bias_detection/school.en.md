@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Bias Detection is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Bias Detection in LLMs is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

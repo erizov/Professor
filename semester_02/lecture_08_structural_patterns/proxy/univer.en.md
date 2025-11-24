@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Proxy is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Proxy Pattern is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Proxy is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Proxy Pattern works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,15 @@ Proxy is a specific algorithm/technique used for [specific purpose]. It works by
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for proxy]
+[Specific input data for Proxy Pattern]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

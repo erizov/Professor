@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Longest Common Subsequence is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Longest Common Subsequence (LCS) is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Longest Common Subsequence is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Longest Common Subsequence (LCS) works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,15 @@ Longest Common Subsequence is a specific algorithm/technique used for [specific 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for longest common subsequence]
+[Specific input data for Longest Common Subsequence (LCS)]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

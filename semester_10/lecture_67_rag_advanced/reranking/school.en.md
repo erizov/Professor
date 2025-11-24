@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Reranking is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Re-ranking for RAG is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Event Sourcing Advanced is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Advanced Event Sourcing is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

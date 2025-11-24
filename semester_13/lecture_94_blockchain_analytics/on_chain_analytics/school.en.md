@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-On Chain Analytics is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+On-Chain Analytics is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Upgrade Mechanisms is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Blockchain Upgrade Mechanisms is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

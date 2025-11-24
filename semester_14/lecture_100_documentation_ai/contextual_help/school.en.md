@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Contextual Help is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Contextual Documentation Help is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

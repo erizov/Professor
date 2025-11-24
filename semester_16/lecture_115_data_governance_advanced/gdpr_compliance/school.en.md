@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Gdpr Compliance is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Gdpr Compliance is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

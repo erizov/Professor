@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Layer2 Solutions is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Layer 2 Solutions is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

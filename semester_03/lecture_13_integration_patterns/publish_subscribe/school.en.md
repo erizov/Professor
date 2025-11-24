@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Publish Subscribe is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Publish-Subscribe (Pub/Sub) is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

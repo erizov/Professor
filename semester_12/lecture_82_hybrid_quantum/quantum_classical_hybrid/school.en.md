@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Quantum Classical Hybrid is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Quantum-Classical Hybrid Algorithms is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

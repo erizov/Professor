@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Query Hints is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Query Hints is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

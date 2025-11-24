@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Raft Blockchain is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Raft Blockchain is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Raft Blockchain is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Raft Blockchain works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Machine Learning / AI
 
@@ -20,15 +22,15 @@ Raft Blockchain is a specific algorithm/technique used for [specific purpose]. I
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for raft blockchain]
+[Specific input data for Raft Blockchain]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

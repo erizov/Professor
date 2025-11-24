@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Sha256 is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+SHA-256 Hash Function is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

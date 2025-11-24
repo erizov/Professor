@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Streaming Analytics is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Streaming Analytics is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Streaming Analytics is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Streaming Analytics works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,15 @@ Streaming Analytics is a specific algorithm/technique used for [specific purpose
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for streaming analytics]
+[Specific input data for Streaming Analytics]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

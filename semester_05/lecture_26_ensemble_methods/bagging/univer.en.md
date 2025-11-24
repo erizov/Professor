@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Bagging is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Bagging (Bootstrap Aggregating) is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Bagging is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Bagging (Bootstrap Aggregating) works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,15 @@ Bagging is a specific algorithm/technique used for [specific purpose]. It works 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for bagging]
+[Specific input data for Bagging (Bootstrap Aggregating)]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

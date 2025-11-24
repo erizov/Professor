@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Transfer Learning Advanced is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Advanced Transfer Learning is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

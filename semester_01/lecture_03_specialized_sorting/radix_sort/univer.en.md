@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Radix Sort is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Radix Sort is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Radix Sort is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Radix Sort works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,23 @@ Radix Sort is a specific algorithm/technique used for [specific purpose]. It wor
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for radix sort]
+Array of numbers: [170, 45, 75, 90, 2, 802, 24, 66]
 
-**Step 1:** [Specific algorithm action]
-**Step 2:** [Next action]
-**Step 3:** [Continuation of processing]
-...
+**Step 1:** Sort by least significant digit (ones)
+Group numbers by last digit: [170, 90], [802, 2], [24], [45, 75], [66]
+Result: [170, 90, 802, 2, 24, 45, 75, 66]
+
+**Step 2:** Sort by second digit (tens)
+Group by second digit: [802, 2], [24], [45], [66], [170, 75], [90]
+Result: [802, 2, 24, 45, 66, 170, 75, 90]
+
+**Step 3:** Sort by most significant digit (hundreds)
+Group by first digit: [2, 24, 45, 66, 75, 90], [170], [802]
+Result: [2, 24, 45, 66, 75, 90, 170, 802]
 
 **Final Result:**
-[Specific result of the algorithm's work]
+Sorted array: [2, 24, 45, 66, 75, 90, 170, 802]
+
 
 ## Self-Check Questions
 

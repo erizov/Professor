@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Prototype is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Prototype Pattern is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

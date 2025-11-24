@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Customer Support Automation is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Customer Support Automation is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Batch Inference is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Batch Inference is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

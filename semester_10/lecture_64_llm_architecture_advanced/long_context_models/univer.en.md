@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Long Context Models is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Long Context Models is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Long Context Models is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Long Context Models works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,15 @@ Long Context Models is a specific algorithm/technique used for [specific purpose
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for long context models]
+[Specific input data for Long Context Models]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

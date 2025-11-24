@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Zk Snarks is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+ZK-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge) is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Quantum Control is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Quantum Control is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Quantum Control is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Quantum Control works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,15 @@ Quantum Control is a specific algorithm/technique used for [specific purpose]. I
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for quantum control]
+[Specific input data for Quantum Control]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

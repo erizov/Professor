@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Data Testing is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Data Testing is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

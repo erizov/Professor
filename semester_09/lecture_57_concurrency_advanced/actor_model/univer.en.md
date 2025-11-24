@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Actor Model is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Actor Model is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Actor Model is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Actor Model works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,15 @@ Actor Model is a specific algorithm/technique used for [specific purpose]. It wo
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for actor model]
+[Specific input data for Actor Model]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

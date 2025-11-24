@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Time Series Queries is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Time Series Queries is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

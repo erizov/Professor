@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Complex Event Processing is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Complex Event Processing is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

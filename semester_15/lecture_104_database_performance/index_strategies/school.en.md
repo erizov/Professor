@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Index Strategies is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Index Strategies is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

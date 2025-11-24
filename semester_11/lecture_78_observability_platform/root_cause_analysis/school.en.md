@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Root Cause Analysis is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Root Cause Analysis (RCA) is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

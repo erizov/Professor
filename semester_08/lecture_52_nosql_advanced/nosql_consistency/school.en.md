@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Nosql Consistency is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+NoSQL Consistency Models is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

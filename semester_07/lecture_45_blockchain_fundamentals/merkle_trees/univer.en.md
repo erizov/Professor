@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Merkle Trees is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Merkle Trees is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Merkle Trees is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Merkle Trees works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,15 @@ Merkle Trees is a specific algorithm/technique used for [specific purpose]. It w
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for merkle trees]
+[Specific input data for Merkle Trees]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

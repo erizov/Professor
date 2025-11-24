@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Csp Model is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Communicating Sequential Processes (CSP) is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

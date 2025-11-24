@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Quantum Attacks is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Quantum Attacks is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 

@@ -5,11 +5,13 @@
 
 ## Algorithm Definition
 
-Bayesian Optimization is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Bayesian Optimization is an algorithm used to solve specific problems in computer science.
+
 
 ## Technical Description
 
-Bayesian Optimization is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Bayesian Optimization works by processing data sequentially according to specific rules and algorithms.
+
 
 ## Application in Computer Science
 
@@ -20,15 +22,15 @@ Bayesian Optimization is a specific algorithm/technique used for [specific purpo
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for bayesian optimization]
+[Specific input data for Bayesian Optimization]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
-...
 
 **Final Result:**
 [Specific result of the algorithm's work]
+
 
 ## Self-Check Questions
 

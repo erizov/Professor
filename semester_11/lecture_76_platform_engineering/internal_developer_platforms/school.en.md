@@ -2,7 +2,8 @@
 
 ## Simple Explanation
 
-Internal Developer Platforms is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
+Internal Developer Platforms (IDP) is an algorithm used to solve specific problems in computer science.
+
 
 ## Where It's Used
 
