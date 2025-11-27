@@ -130,3 +130,23 @@ Compare with alternatives
     Implements zero-knowledge proofs that allow one party to prove knowledge of information to another party without revealing the information itself, enabling privacy-preserving blockchain applications.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Zero-knowledge proof](https://en.wikipedia.org/wiki/Zero-knowledge_proof) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+## Historical Context
+
+The intuition behind the nontriviality of zero-knowledge proofs is that it is trivial to prove possession of the relevant information simply by revealing it; the hard part is to prove this possession without revealing this information

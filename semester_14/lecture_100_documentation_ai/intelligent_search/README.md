@@ -141,3 +141,8 @@ Compare with alternatives
     Semantic search systems that understand user intent and return relevant documentation results using natural language processing and embeddings.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Intelligent Search - Wikipedia](https://en.wikipedia.org/wiki/Intelligent%20Search)

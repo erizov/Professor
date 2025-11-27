@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_11_repository_patterns/data_mapper/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_11_repository_patterns/data_mapper/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_11_repository_patterns/data_mapper/test_algorithm.py)
+
+
+## References
+
+- [Data Mapper - Wikipedia](https://en.wikipedia.org/wiki/Data%20Mapper)

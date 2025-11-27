@@ -132,3 +132,8 @@ Compare with alternatives
     Distributes workloads and services across multiple cloud providers, reducing vendor lock-in, improving resilience, and optimizing costs and performance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Multi Cloud Strategies - Wikipedia](https://en.wikipedia.org/wiki/Multi%20Cloud%20Strategies)

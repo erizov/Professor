@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_07_creational_patterns/prototype/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_07_creational_patterns/prototype/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_07_creational_patterns/prototype/test_algorithm.py)
+
+
+## References
+
+- [Prototype](https://en.wikipedia.org/wiki/Prototype) - Wikipedia
+
+
+## Historical Context
+
+A prototype is generally used to evaluate a new design to enhance precision by system analysts and users

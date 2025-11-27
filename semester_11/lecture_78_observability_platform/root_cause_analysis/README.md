@@ -132,3 +132,8 @@ Compare with alternatives
     Systematically identifies the underlying root cause of incidents and problems, enabling permanent fixes rather than temporary workarounds and preventing recurrence.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Root-cause analysis](https://en.wikipedia.org/wiki/Root-cause_analysis) - Wikipedia

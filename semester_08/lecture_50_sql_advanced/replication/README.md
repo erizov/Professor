@@ -128,3 +128,8 @@ Compare with alternatives
 30-second explanation (your own words)  
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Replication](https://en.wikipedia.org/wiki/Replication) - Wikipedia

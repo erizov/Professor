@@ -130,3 +130,20 @@ Compare with alternatives
     Makes AI model decisions understandable and interpretable to humans, providing explanations for predictions and enabling users to understand, trust, and debug AI systems.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Explainable artificial intelligence](https://en.wikipedia.org/wiki/Explainable_artificial_intelligence) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+## Historical Context
+
+The main focus is on the reasoning behind the decisions or predictions made by the AI algorithms, to make them more understandable and transparent

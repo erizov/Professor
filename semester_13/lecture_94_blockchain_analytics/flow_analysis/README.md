@@ -130,3 +130,23 @@ Compare with alternatives
     Techniques for tracking and visualizing the movement of funds through blockchain networks to understand transaction flows and patterns.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data-flow analysis](https://en.wikipedia.org/wiki/Data-flow_analysis) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+## Historical Context
+
+The information gathered is often used by compilers when optimizing a program

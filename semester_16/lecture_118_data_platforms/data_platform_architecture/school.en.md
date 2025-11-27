@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Data Platform Architecture is an algorithm used to solve specific problems in computer science.
-
+Data Platform Architecture is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying data platform architecture to solve specific tasks in data;
-- using data platform architecture in production systems for architecture;
-- integrating data platform architecture into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of data platform architecture:
+Consider a specific example of how data platform architecture works:
 
-1. Data preparation: input data for data platform architecture (specific format and structure)
-2. Algorithm application: sequence of steps of data platform architecture to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

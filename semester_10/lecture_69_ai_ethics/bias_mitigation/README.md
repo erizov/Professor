@@ -130,3 +130,8 @@ Compare with alternatives
     Identifies and reduces bias in machine learning models and datasets, ensuring fair and equitable AI systems that don't discriminate against protected groups or perpetuate harmful stereotypes.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Bias Mitigation - Wikipedia](https://en.wikipedia.org/wiki/Bias%20Mitigation)

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_38_monitoring_production/performance_profiling/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_38_monitoring_production/performance_profiling/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_38_monitoring_production/performance_profiling/test_algorithm.py)
+
+
+## References
+
+- [Performance Profiling - Wikipedia](https://en.wikipedia.org/wiki/Performance%20Profiling)

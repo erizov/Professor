@@ -130,3 +130,8 @@ Compare with alternatives
     Automatically locates and connects to service instances in a distributed system, handling dynamic service registration, health checking, and load balancing without hardcoded service addresses.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Service discovery](https://en.wikipedia.org/wiki/Service_discovery) - Wikipedia

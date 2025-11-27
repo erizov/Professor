@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_12_ml_algorithms/naive_bayes/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_12_ml_algorithms/naive_bayes/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_12_ml_algorithms/naive_bayes/test_algorithm.py)
+
+
+## References
+
+- [Naive Bayes classifier](https://en.wikipedia.org/wiki/Naive_Bayes_classifier) - Wikipedia
+
+
+## Historical Context
+
+In other words, a naive Bayes model assumes the information about the class provided by each variable is unrelated to the information from the others, with no information shared between the predictors

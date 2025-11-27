@@ -119,3 +119,8 @@ Compare with alternatives
     Data Pipelines Advanced solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data Pipelines Advanced - Wikipedia](https://en.wikipedia.org/wiki/Data%20Pipelines%20Advanced)

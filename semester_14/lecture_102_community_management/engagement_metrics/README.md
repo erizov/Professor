@@ -130,3 +130,8 @@ Compare with alternatives
     Metrics and systems for measuring and tracking community engagement to assess health and guide engagement strategies.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Engagement Metrics - Wikipedia](https://en.wikipedia.org/wiki/Engagement%20Metrics)

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_16_advanced_ml/gradient_descent/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_16_advanced_ml/gradient_descent/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_16_advanced_ml/gradient_descent/test_algorithm.py)
+
+
+## References
+
+- [Gradient descent](https://en.wikipedia.org/wiki/Gradient_descent) - Wikipedia

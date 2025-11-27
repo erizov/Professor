@@ -119,3 +119,8 @@ Compare with alternatives
     Style Guides solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Style guide](https://en.wikipedia.org/wiki/Style_guide) - Wikipedia

@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Security Scanning is an algorithm used to solve specific problems in computer science.
-
+Security Scanning is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying security scanning to solve specific tasks in security;
-- using security scanning in production systems for scanning;
-- integrating security scanning into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of security scanning:
+Consider a specific example of how security scanning works:
 
-1. Data preparation: input data for security scanning (specific format and structure)
-2. Algorithm application: sequence of steps of security scanning to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

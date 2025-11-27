@@ -119,3 +119,8 @@ Compare with alternatives
     Data Reliability solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data reliability](https://en.wikipedia.org/wiki/Data_reliability) - Wikipedia

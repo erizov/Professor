@@ -132,3 +132,8 @@ Compare with alternatives
     AI-enhanced customer support systems that use chatbots, intelligent routing, and automation to improve support efficiency and quality.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Ai Powered Support - Wikipedia](https://en.wikipedia.org/wiki/Ai%20Powered%20Support)

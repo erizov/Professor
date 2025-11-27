@@ -1,56 +1,57 @@
-# Attention
+# Attention Mechanism
 
 ## Simple Explanation
 
-Attention Mechanism is an algorithm used to solve specific problems in computer science.
-
+Attention Mechanism is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying attention to solve specific tasks in attention;
-- using attention in production systems for data processing;
-- integrating attention into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of attention:
+Consider a specific example of how attention mechanism works:
 
-1. Data preparation: input data for attention (specific format and structure)
-2. Algorithm application: sequence of steps of attention to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the attention algorithm do?
-2. In what situations is attention used?
+1. What does the attention mechanism algorithm do?
+2. In what situations is attention mechanism used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does attention handle edge cases?
-2. What are the advantages and disadvantages of attention?
-3. Can the performance of attention be improved?
+1. How does attention mechanism handle edge cases?
+2. What are the advantages and disadvantages of attention mechanism?
+3. Can the performance of attention mechanism be improved?
 
 ### Advanced
 
-1. What is the time complexity of attention?
-2. How does attention work with large volumes of data?
-3. How can attention be optimized?
+1. What is the time complexity of attention mechanism?
+2. How does attention mechanism work with large volumes of data?
+3. How can attention mechanism be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the attention algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the attention mechanism algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the attention algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the attention mechanism algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the attention algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the attention mechanism algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

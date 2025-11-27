@@ -119,3 +119,8 @@ Compare with alternatives
     Encryption At Rest solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Encryption At Rest - Wikipedia](https://en.wikipedia.org/wiki/Encryption%20At%20Rest)

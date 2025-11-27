@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_32_distributed_ml/federated_learning/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_32_distributed_ml/federated_learning/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_32_distributed_ml/federated_learning/test_algorithm.py)
+
+
+## References
+
+- [Federated learning](https://en.wikipedia.org/wiki/Federated_learning) - Wikipedia
+
+
+## Historical Context
+
+Because client data is decentralized, data samples held by each client may not be independently and identically distributed

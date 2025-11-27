@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_26_ensemble_methods/boosting/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_26_ensemble_methods/boosting/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_26_ensemble_methods/boosting/test_algorithm.py)
+
+
+## References
+
+- [Boost](https://en.wikipedia.org/wiki/Boost) - Wikipedia

@@ -127,3 +127,8 @@ Compare with alternatives
 30-second explanation (your own words)  
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Stored procedure](https://en.wikipedia.org/wiki/Stored_procedure) - Wikipedia

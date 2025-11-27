@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_33_model_optimization/quantization/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_33_model_optimization/quantization/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_33_model_optimization/quantization/test_algorithm.py)
+
+
+## References
+
+- [Quantization](https://en.wikipedia.org/wiki/Quantization) - Wikipedia

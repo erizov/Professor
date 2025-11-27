@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_25_transformers/attention/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_25_transformers/attention/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_25_transformers/attention/test_algorithm.py)
+
+
+## References
+
+- [Attention](https://en.wikipedia.org/wiki/Attention) - Wikipedia

@@ -130,3 +130,8 @@ Compare with alternatives
     Generates and modifies CI/CD pipelines dynamically at runtime based on code changes, configuration, or external factors, enabling adaptive and context-aware pipeline execution.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Dynamic Pipelines - Wikipedia](https://en.wikipedia.org/wiki/Dynamic%20Pipelines)

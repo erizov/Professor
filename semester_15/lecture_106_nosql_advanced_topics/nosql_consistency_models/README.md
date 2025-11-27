@@ -119,3 +119,8 @@ Compare with alternatives
     Nosql Consistency Models solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Nosql Consistency Models - Wikipedia](https://en.wikipedia.org/wiki/Nosql%20Consistency%20Models)

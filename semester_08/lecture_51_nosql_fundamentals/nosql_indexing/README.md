@@ -130,3 +130,8 @@ Compare with alternatives
     Creates indexes on NoSQL database fields to accelerate queries and searches, enabling fast data retrieval without scanning entire collections or tables.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Nosql Indexing - Wikipedia](https://en.wikipedia.org/wiki/Nosql%20Indexing)

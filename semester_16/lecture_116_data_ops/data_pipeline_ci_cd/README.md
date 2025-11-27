@@ -119,3 +119,8 @@ Compare with alternatives
     Data Pipeline Ci Cd solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data Pipeline Ci Cd - Wikipedia](https://en.wikipedia.org/wiki/Data%20Pipeline%20Ci%20Cd)

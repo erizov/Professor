@@ -119,3 +119,8 @@ Compare with alternatives
     Incident Prediction solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Incident Prediction - Wikipedia](https://en.wikipedia.org/wiki/Incident%20Prediction)

@@ -132,3 +132,8 @@ Compare with alternatives
 Identifies and measures biases in LLM outputs across demographic groups, topics, and contexts, helping ensure fair and equitable model behavior.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Bias Detection - Wikipedia](https://en.wikipedia.org/wiki/Bias%20Detection)

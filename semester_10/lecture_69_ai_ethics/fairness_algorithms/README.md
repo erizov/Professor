@@ -130,3 +130,8 @@ Compare with alternatives
 Implements algorithms and techniques to ensure AI systems make fair decisions, treating different groups equitably and avoiding discrimination based on protected attributes.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Fairness Algorithms - Wikipedia](https://en.wikipedia.org/wiki/Fairness%20Algorithms)

@@ -119,3 +119,8 @@ Compare with alternatives
     Database Federation solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Database Federation - Wikipedia](https://en.wikipedia.org/wiki/Database%20Federation)

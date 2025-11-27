@@ -130,3 +130,13 @@ Compare with alternatives
     Combines on-premises infrastructure with public and private cloud services, enabling organizations to leverage benefits of both while maintaining control over sensitive data and meeting compliance requirements.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Cloud computing](https://en.wikipedia.org/wiki/Cloud_computing) - Wikipedia
+
+
+## Historical Context
+
+Cloud computing is defined by the ISO as "a paradigm for enabling network access to a scalable and elastic pool of shareable physical or virtual resources with self-service provisioning and administration on demand"

@@ -119,3 +119,8 @@ Compare with alternatives
     Interactive Docs solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Interactive Docs - Wikipedia](https://en.wikipedia.org/wiki/Interactive%20Docs)

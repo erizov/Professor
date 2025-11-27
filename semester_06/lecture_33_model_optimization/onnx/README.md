@@ -79,3 +79,17 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_33_model_optimization/onnx/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_33_model_optimization/onnx/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_33_model_optimization/onnx/test_algorithm.py)
+
+
+## References
+
+- [Open Neural Network Exchange](https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups

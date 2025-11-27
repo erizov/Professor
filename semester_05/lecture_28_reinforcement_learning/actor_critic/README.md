@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_28_reinforcement_learning/actor_critic/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_28_reinforcement_learning/actor_critic/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_28_reinforcement_learning/actor_critic/test_algorithm.py)
+
+
+## References
+
+- [Actor-critic algorithm](https://en.wikipedia.org/wiki/Actor-critic_algorithm) - Wikipedia

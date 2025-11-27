@@ -1,65 +1,75 @@
-# Multimodal Llms
+# Multimodal Large Language Models
 
 **Algorithm:** multimodal_llms  
 **Discipline:** Computer Science
 
 ## Algorithm Definition
 
-Multimodal Large Language Models is an algorithm used to solve specific problems in computer science.
-
+Multimodal Large Language Models is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
 
 ## Technical Description
 
-Multimodal Large Language Models works by processing data sequentially according to specific rules and algorithms.
+### What the Algorithm Does
 
+Multimodal Large Language Models is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
+
+**Key Steps:**
+1. Data input and validation
+2. Algorithm execution
+3. Result processing and output
+
+**Key Data Structures:**
+- Arrays or lists for data storage
+- Variables for intermediate results
+- Control structures for flow management
 
 ## Application in Computer Science
 
-1. applying multimodal llms to solve specific tasks in multimodal
-2. using multimodal llms in production systems for llms
-3. integrating multimodal llms into data pipelines for process automation
+1. Data classification: applying the algorithm to predict object categories based on features
+2. Regression analysis: building a model to predict continuous values
+3. Clustering: grouping similar objects without prior labels
 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for Multimodal Large Language Models]
+[Specific input data for multimodal large language models]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
+...
 
 **Final Result:**
 [Specific result of the algorithm's work]
-
 
 ## Self-Check Questions
 
 ### Basic Level
 
-1. Describe the main stages of the multimodal llms algorithm. What data structures are used?
-2. What are the time and space complexity of multimodal llms? Justify your answer.
+1. Describe the main stages of the multimodal large language models algorithm. What data structures are used?
+2. What are the time and space complexity of multimodal large language models? Justify your answer.
 
 ### Intermediate Level
 
-1. In what cases is the multimodal llms algorithm most effective? When is its use not advisable?
-2. How can multimodal llms be optimized? Suggest specific improvements.
+1. In what cases is the multimodal large language models algorithm most effective? When is its use not advisable?
+2. How can multimodal large language models be optimized? Suggest specific improvements.
 
 ### Advanced Level
 
-1. Compare multimodal llms with alternative approaches. Under what conditions is each preferable?
-2. Analyze edge cases and implementation errors of multimodal llms. How to ensure algorithm correctness?
+1. Compare multimodal large language models with alternative approaches. Under what conditions is each preferable?
+2. Analyze edge cases and implementation errors of multimodal large language models. How to ensure algorithm correctness?
 
 ## Practical Tasks
 
 ### Level 1 — Basic
 
-Implement a basic version of the multimodal llms algorithm in a programming language. Add edge case handling and tests.
+Implement a basic version of the multimodal large language models algorithm in a programming language. Add edge case handling and tests.
 
 ### Level 2 — Applied
 
-Create a full implementation of multimodal llms with error handling, logging, and testing. Apply to real data and analyze results.
+Create a full implementation of multimodal large language models with error handling, logging, and testing. Apply to real data and analyze results.
 
 ### Level 3 — Research
 
-Conduct a research analysis of multimodal llms: compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
+Conduct a research analysis of multimodal large language models: compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
 

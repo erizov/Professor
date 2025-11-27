@@ -107,3 +107,17 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_01_sorting_fundamentals/selection_sort/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_01_sorting_fundamentals/selection_sort/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_01_sorting_fundamentals/selection_sort/test_algorithm.py)
+
+
+## References
+
+- [Selection sort](https://en.wikipedia.org/wiki/Selection_sort) - Wikipedia
+
+
+## Real-World Applications
+
+- Database query optimization
+- Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling

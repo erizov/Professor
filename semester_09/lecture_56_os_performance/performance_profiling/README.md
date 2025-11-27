@@ -130,3 +130,8 @@ Compare with alternatives
     Analyzes application and system performance to identify bottlenecks, measure resource usage, and guide optimization efforts through instrumentation and sampling.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Performance Profiling - Wikipedia](https://en.wikipedia.org/wiki/Performance%20Profiling)

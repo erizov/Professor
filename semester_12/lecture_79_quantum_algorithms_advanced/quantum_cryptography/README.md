@@ -130,3 +130,20 @@ Compare with alternatives
     Uses quantum mechanical properties to provide secure communication protocols that are theoretically unbreakable, even against quantum computers, based on the laws of physics rather than computational complexity.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum cryptography](https://en.wikipedia.org/wiki/Quantum_cryptography) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation

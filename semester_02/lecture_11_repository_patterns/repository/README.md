@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_11_repository_patterns/repository/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_11_repository_patterns/repository/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_11_repository_patterns/repository/test_algorithm.py)
+
+
+## References
+
+- [Repository](https://en.wikipedia.org/wiki/Repository) - Wikipedia

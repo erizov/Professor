@@ -107,3 +107,20 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_03_specialized_sorting/bucket_sort/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_03_specialized_sorting/bucket_sort/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_03_specialized_sorting/bucket_sort/test_algorithm.py)
+
+
+## References
+
+- [Bucket sort](https://en.wikipedia.org/wiki/Bucket_sort) - Wikipedia
+
+
+## Real-World Applications
+
+- Database query optimization
+- Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling
+## Historical Context
+
+Bucket sort, or bin sort, is a sorting algorithm that works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm

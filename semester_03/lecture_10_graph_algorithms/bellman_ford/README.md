@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_10_graph_algorithms/bellman_ford/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_10_graph_algorithms/bellman_ford/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_10_graph_algorithms/bellman_ford/test_algorithm.py)
+
+
+## References
+
+- [Bellman Ford - Wikipedia](https://en.wikipedia.org/wiki/Bellman%20Ford)

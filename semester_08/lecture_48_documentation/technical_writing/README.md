@@ -129,3 +129,20 @@ Compare with alternatives
     Creates clear, accurate, and accessible technical documentation that explains complex concepts, procedures, and systems to both technical and non-technical audiences.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Technical writing](https://en.wikipedia.org/wiki/Technical_writing) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+## Historical Context
+
+Technical writing is a specialized form of communication used by industrial and scientific organizations to clearly and accurately convey complex information to customers, employees, assembly workers, engineers, scientists and other users who may reference this form of content to complete a task or research a subject. Most technical writing relies on plain language (PL), supported by easy-to-under

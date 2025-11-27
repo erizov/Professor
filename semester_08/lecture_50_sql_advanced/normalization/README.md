@@ -128,3 +128,8 @@ Compare with alternatives
     Organizes database tables to eliminate data redundancy and dependency issues, ensuring data integrity and reducing storage requirements through structured table design.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Normalization](https://en.wikipedia.org/wiki/Normalization) - Wikipedia

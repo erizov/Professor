@@ -119,3 +119,8 @@ Compare with alternatives
     Warehouse Architecture solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Warehouse Architecture - Wikipedia](https://en.wikipedia.org/wiki/Warehouse%20Architecture)

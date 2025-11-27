@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_26_ensemble_methods/stacking/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_26_ensemble_methods/stacking/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_26_ensemble_methods/stacking/test_algorithm.py)
+
+
+## References
+
+- [Stacking](https://en.wikipedia.org/wiki/Stacking) - Wikipedia

@@ -142,3 +142,8 @@ Compare with alternatives
 30-second explanation (your own words)  
     Combines multiple search methods (keyword search, semantic search, dense retrieval) to improve retrieval quality by leveraging strengths of different approaches and compensating for their weaknesses.
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Hybrid Search - Wikipedia](https://en.wikipedia.org/wiki/Hybrid%20Search)

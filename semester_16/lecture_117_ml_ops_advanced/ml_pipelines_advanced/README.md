@@ -119,3 +119,8 @@ Compare with alternatives
     Ml Pipelines Advanced solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Ml Pipelines Advanced - Wikipedia](https://en.wikipedia.org/wiki/Ml%20Pipelines%20Advanced)

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_33_model_optimization/nas/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_33_model_optimization/nas/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_33_model_optimization/nas/test_algorithm.py)
+
+
+## References
+
+- [Nas](https://en.wikipedia.org/wiki/Nas) - Wikipedia

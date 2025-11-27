@@ -119,3 +119,8 @@ Compare with alternatives
     Model Monitoring Advanced solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Model Monitoring Advanced - Wikipedia](https://en.wikipedia.org/wiki/Model%20Monitoring%20Advanced)

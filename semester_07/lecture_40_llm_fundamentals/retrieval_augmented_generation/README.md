@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_40_llm_fundamentals/retrieval_augmented_generation/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_40_llm_fundamentals/retrieval_augmented_generation/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_40_llm_fundamentals/retrieval_augmented_generation/test_algorithm.py)
+
+
+## References
+
+- [Retrieval-augmented generation](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) - Wikipedia

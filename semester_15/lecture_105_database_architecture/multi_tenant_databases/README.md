@@ -119,3 +119,8 @@ Compare with alternatives
     Multi Tenant Databases solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Multi Tenant Databases - Wikipedia](https://en.wikipedia.org/wiki/Multi%20Tenant%20Databases)

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/continuous_deployment/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/continuous_deployment/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_42_ci_cd_fundamentals/continuous_deployment/test_algorithm.py)
+
+
+## References
+
+- [Continuous deployment](https://en.wikipedia.org/wiki/Continuous_deployment) - Wikipedia

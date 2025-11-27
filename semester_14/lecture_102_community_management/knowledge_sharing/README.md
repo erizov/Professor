@@ -130,3 +130,8 @@ Compare with alternatives
     Platforms and processes for facilitating knowledge sharing within developer communities to enable learning and collaboration.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Knowledge sharing](https://en.wikipedia.org/wiki/Knowledge_sharing) - Wikipedia

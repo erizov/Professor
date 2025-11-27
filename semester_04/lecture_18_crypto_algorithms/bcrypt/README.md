@@ -84,3 +84,22 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_18_crypto_algorithms/bcrypt/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_18_crypto_algorithms/bcrypt/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_18_crypto_algorithms/bcrypt/test_algorithm.py)
+
+
+## Historical Context
+
+bcrypt is a password-hashing function designed by Niels Provos and David Mazières. It is based on the Blowfish cipher and presented at USENIX in 1999. Besides incorporating a salt to protect against rainbow table attacks, bcrypt is an adaptive function: over time, the iteration count can be increase
+
+
+## References
+
+- [Bcrypt](https://en.wikipedia.org/wiki/Bcrypt) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups

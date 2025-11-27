@@ -130,3 +130,8 @@ Compare with alternatives
     Improves CI/CD pipeline performance, efficiency, and cost through techniques like caching, parallelization, step optimization, and resource management, reducing build times and costs.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Pipeline Optimization - Wikipedia](https://en.wikipedia.org/wiki/Pipeline%20Optimization)

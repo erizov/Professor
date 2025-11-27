@@ -130,3 +130,8 @@ Compare with alternatives
     Establishes policies, processes, and standards for managing data assets, ensuring data quality, security, compliance, and proper usage across an organization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data governance](https://en.wikipedia.org/wiki/Data_governance) - Wikipedia

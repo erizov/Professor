@@ -128,3 +128,8 @@ Compare with alternatives
     Computes a single aggregate value (sum, product, maximum, etc.) from an array by combining all elements using an associative operation, executing the reduction in parallel across multiple processors.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Parallel Reduction - Wikipedia](https://en.wikipedia.org/wiki/Parallel%20Reduction)

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_31_mlops/feature_store/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_31_mlops/feature_store/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_31_mlops/feature_store/test_algorithm.py)
+
+
+## References
+
+- [Feature Store - Wikipedia](https://en.wikipedia.org/wiki/Feature%20Store)

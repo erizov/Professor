@@ -130,3 +130,8 @@ Compare with alternatives
 Reduces the quadratic complexity of attention mechanisms by computing attention only over a sparse subset of positions, enabling efficient processing of long sequences while maintaining model performance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Sparse Attention - Wikipedia](https://en.wikipedia.org/wiki/Sparse%20Attention)

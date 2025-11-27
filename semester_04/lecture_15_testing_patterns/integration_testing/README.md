@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_15_testing_patterns/integration_testing/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_15_testing_patterns/integration_testing/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_15_testing_patterns/integration_testing/test_algorithm.py)
+
+
+## References
+
+- [Integration testing](https://en.wikipedia.org/wiki/Integration_testing) - Wikipedia

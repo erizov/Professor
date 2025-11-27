@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Infrastructure Patterns is an algorithm used to solve specific problems in computer science.
-
+Infrastructure Patterns is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying infrastructure patterns to solve specific tasks in infrastructure;
-- using infrastructure patterns in production systems for patterns;
-- integrating infrastructure patterns into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of infrastructure patterns:
+Consider a specific example of how infrastructure patterns works:
 
-1. Data preparation: input data for infrastructure patterns (specific format and structure)
-2. Algorithm application: sequence of steps of infrastructure patterns to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

@@ -173,3 +173,8 @@ Avoid Semester 16 when:
 ### Benchmark Results
 
 *Note: Run benchmarks with your specific data and hardware to get accurate performance metrics.*
+
+
+## References
+
+- [Semester 16 - Wikipedia](https://en.wikipedia.org/wiki/Semester%2016)

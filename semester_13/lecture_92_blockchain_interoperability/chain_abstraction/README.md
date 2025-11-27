@@ -130,3 +130,8 @@ Compare with alternatives
     Implements chain abstraction layers that hide blockchain complexity from users and applications, enabling seamless interaction with multiple blockchains through unified interfaces without needing to understand underlying chain differences.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Chain Abstraction - Wikipedia](https://en.wikipedia.org/wiki/Chain%20Abstraction)

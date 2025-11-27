@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Decision Tree is an algorithm used to solve specific problems in computer science.
-
+Decision Tree is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying decision tree to solve specific tasks in decision;
-- using decision tree in production systems for tree;
-- integrating decision tree into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of decision tree:
+Consider a specific example of how decision tree works:
 
-1. Data preparation: input data for decision tree (specific format and structure)
-2. Algorithm application: sequence of steps of decision tree to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

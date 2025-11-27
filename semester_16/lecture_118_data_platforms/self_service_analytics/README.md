@@ -119,3 +119,8 @@ Compare with alternatives
     Self Service Analytics solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Self Service Analytics - Wikipedia](https://en.wikipedia.org/wiki/Self%20Service%20Analytics)

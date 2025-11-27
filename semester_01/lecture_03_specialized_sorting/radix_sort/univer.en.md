@@ -5,40 +5,42 @@
 
 ## Algorithm Definition
 
-Radix Sort is an algorithm used to solve specific problems in computer science.
-
+Radix Sort is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
 
 ## Technical Description
 
-Radix Sort works by processing data sequentially according to specific rules and algorithms.
+### What the Algorithm Does
 
+Radix Sort is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
+
+**Key Steps:**
+1. Data input and validation
+2. Algorithm execution
+3. Result processing and output
+
+**Key Data Structures:**
+- Arrays or lists for data storage
+- Variables for intermediate results
+- Control structures for flow management
 
 ## Application in Computer Science
 
-1. applying radix sort to solve specific tasks in radix
-2. using radix sort in production systems for sort
-3. integrating radix sort into data pipelines for process automation
+1. Data classification: applying the algorithm to predict object categories based on features
+2. Regression analysis: building a model to predict continuous values
+3. Clustering: grouping similar objects without prior labels
 
 ## Step-by-Step Scenario
 
 **Input Data:**
-Array of numbers: [170, 45, 75, 90, 2, 802, 24, 66]
+[Specific input data for radix sort]
 
-**Step 1:** Sort by least significant digit (ones)
-Group numbers by last digit: [170, 90], [802, 2], [24], [45, 75], [66]
-Result: [170, 90, 802, 2, 24, 45, 75, 66]
-
-**Step 2:** Sort by second digit (tens)
-Group by second digit: [802, 2], [24], [45], [66], [170, 75], [90]
-Result: [802, 2, 24, 45, 66, 170, 75, 90]
-
-**Step 3:** Sort by most significant digit (hundreds)
-Group by first digit: [2, 24, 45, 66, 75, 90], [170], [802]
-Result: [2, 24, 45, 66, 75, 90, 170, 802]
+**Step 1:** [Specific algorithm action]
+**Step 2:** [Next action]
+**Step 3:** [Continuation of processing]
+...
 
 **Final Result:**
-Sorted array: [2, 24, 45, 66, 75, 90, 170, 802]
-
+[Specific result of the algorithm's work]
 
 ## Self-Check Questions
 

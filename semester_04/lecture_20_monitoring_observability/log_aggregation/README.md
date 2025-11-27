@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_20_monitoring_observability/log_aggregation/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_20_monitoring_observability/log_aggregation/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_20_monitoring_observability/log_aggregation/test_algorithm.py)
+
+
+## References
+
+- [Log Aggregation - Wikipedia](https://en.wikipedia.org/wiki/Log%20Aggregation)

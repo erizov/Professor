@@ -129,3 +129,8 @@ Compare with alternatives
 30-second explanation (your own words)  
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Processors - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Processors)

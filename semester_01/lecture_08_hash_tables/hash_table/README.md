@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_08_hash_tables/hash_table/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_08_hash_tables/hash_table/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_08_hash_tables/hash_table/test_algorithm.py)
+
+
+## References
+
+- [Hash table](https://en.wikipedia.org/wiki/Hash_table) - Wikipedia
+
+
+## Historical Context
+
+A map implemented by a hash table is called a hash map

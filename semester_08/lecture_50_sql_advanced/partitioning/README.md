@@ -128,3 +128,8 @@ Compare with alternatives
     Divides large tables into smaller, manageable partitions based on partition key, improving query performance, maintenance operations, and enabling partition pruning.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Partition](https://en.wikipedia.org/wiki/Partition) - Wikipedia

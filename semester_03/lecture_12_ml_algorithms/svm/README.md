@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_12_ml_algorithms/svm/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_12_ml_algorithms/svm/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_12_ml_algorithms/svm/test_algorithm.py)
+
+
+## References
+
+- [SVM](https://en.wikipedia.org/wiki/SVM) - Wikipedia

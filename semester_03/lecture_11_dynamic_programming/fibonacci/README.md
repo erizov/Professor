@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_11_dynamic_programming/fibonacci/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_11_dynamic_programming/fibonacci/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_11_dynamic_programming/fibonacci/test_algorithm.py)
+
+
+## References
+
+- [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci) - Wikipedia

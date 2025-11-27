@@ -119,3 +119,13 @@ Compare with alternatives
     Lambda Architecture solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## Historical Context
+
+Lambda architecture is a data-processing architecture designed to handle massive quantities of data by taking advantage of both batch and stream-processing methods. This approach to architecture attempts to balance latency, throughput, and fault-tolerance by using batch processing to provide compreh
+
+
+## References
+
+- [Lambda architecture](https://en.wikipedia.org/wiki/Lambda_architecture) - Wikipedia

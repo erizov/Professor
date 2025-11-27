@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_15_testing_patterns/mocking/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_15_testing_patterns/mocking/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_15_testing_patterns/mocking/test_algorithm.py)
+
+
+## References
+
+- [Mockery](https://en.wikipedia.org/wiki/Mockery) - Wikipedia
+
+
+## Historical Context
+
+Mockery or mocking is the act of insulting or making light of a person or other thing, sometimes merely by taunting, but often by making a caricature, purporting to engage in imitation in a way that highlights unflattering characteristics

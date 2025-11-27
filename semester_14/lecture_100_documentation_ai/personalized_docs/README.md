@@ -130,3 +130,8 @@ Compare with alternatives
     Documentation systems that customize content, examples, and recommendations based on individual user profiles, preferences, and learning history.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Personalized Docs - Wikipedia](https://en.wikipedia.org/wiki/Personalized%20Docs)

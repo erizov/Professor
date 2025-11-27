@@ -119,3 +119,8 @@ Compare with alternatives
     Encryption In Transit solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Encryption In Transit - Wikipedia](https://en.wikipedia.org/wiki/Encryption%20In%20Transit)

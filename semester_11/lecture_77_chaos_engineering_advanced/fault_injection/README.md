@@ -130,3 +130,13 @@ Compare with alternatives
     Intentionally injects faults (failures, errors, delays) into systems to test resilience, validate error handling, and identify failure modes.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Fault injection](https://en.wikipedia.org/wiki/Fault_injection) - Wikipedia
+
+
+## Historical Context
+
+By exposing components to conditions beyond their intended operating limits, computing systems can be coerced into mis-executing instructions and corrupting critical data

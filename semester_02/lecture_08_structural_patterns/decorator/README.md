@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_08_structural_patterns/decorator/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_08_structural_patterns/decorator/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_08_structural_patterns/decorator/test_algorithm.py)
+
+
+## References
+
+- [Decorator](https://en.wikipedia.org/wiki/Decorator) - Wikipedia

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_45_blockchain_fundamentals/consensus_mechanisms/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_45_blockchain_fundamentals/consensus_mechanisms/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_45_blockchain_fundamentals/consensus_mechanisms/test_algorithm.py)
+
+
+## References
+
+- [Consensus Mechanisms - Wikipedia](https://en.wikipedia.org/wiki/Consensus%20Mechanisms)

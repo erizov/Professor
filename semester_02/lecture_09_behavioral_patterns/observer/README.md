@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_09_behavioral_patterns/observer/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_09_behavioral_patterns/observer/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_09_behavioral_patterns/observer/test_algorithm.py)
+
+
+## References
+
+- [Observer](https://en.wikipedia.org/wiki/Observer) - Wikipedia

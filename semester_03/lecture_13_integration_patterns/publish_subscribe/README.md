@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_13_integration_patterns/publish_subscribe/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_13_integration_patterns/publish_subscribe/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_13_integration_patterns/publish_subscribe/test_algorithm.py)
+
+
+## References
+
+- [Publish–subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) - Wikipedia

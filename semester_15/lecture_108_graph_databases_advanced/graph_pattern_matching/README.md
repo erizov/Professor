@@ -119,3 +119,8 @@ Compare with alternatives
     Graph Pattern Matching solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Graph Pattern Matching - Wikipedia](https://en.wikipedia.org/wiki/Graph%20Pattern%20Matching)

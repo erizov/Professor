@@ -119,3 +119,8 @@ Compare with alternatives
     Data Lineage Tracking solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data Lineage Tracking - Wikipedia](https://en.wikipedia.org/wiki/Data%20Lineage%20Tracking)

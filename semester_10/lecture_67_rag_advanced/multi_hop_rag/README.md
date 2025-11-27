@@ -132,3 +132,8 @@ Compare with alternatives
     Answers complex queries requiring information from multiple documents through iterative retrieval, where each retrieval step uses information from previous steps to refine the search, enabling reasoning across multiple knowledge sources.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Multi Hop Rag - Wikipedia](https://en.wikipedia.org/wiki/Multi%20Hop%20Rag)

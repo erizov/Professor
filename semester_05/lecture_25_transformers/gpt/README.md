@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_25_transformers/gpt/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_25_transformers/gpt/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_25_transformers/gpt/test_algorithm.py)
+
+
+## References
+
+- [GPT](https://en.wikipedia.org/wiki/GPT) - Wikipedia

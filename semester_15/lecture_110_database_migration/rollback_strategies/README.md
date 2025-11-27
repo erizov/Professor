@@ -119,3 +119,8 @@ Compare with alternatives
     Rollback Strategies solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Rollback Strategies - Wikipedia](https://en.wikipedia.org/wiki/Rollback%20Strategies)

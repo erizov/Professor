@@ -119,3 +119,8 @@ Compare with alternatives
     Knowledge Extraction solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Knowledge extraction](https://en.wikipedia.org/wiki/Knowledge_extraction) - Wikipedia

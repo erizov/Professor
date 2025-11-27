@@ -130,3 +130,8 @@ Compare with alternatives
 Enables language models to process and understand very long sequences (tens of thousands to millions of tokens) through efficient attention mechanisms, context compression, and memory management techniques.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Long Context Models - Wikipedia](https://en.wikipedia.org/wiki/Long%20Context%20Models)

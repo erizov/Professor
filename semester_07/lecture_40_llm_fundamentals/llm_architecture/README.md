@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_40_llm_fundamentals/llm_architecture/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_40_llm_fundamentals/llm_architecture/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_40_llm_fundamentals/llm_architecture/test_algorithm.py)
+
+
+## References
+
+- [Llm Architecture - Wikipedia](https://en.wikipedia.org/wiki/Llm%20Architecture)

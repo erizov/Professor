@@ -119,3 +119,8 @@ Compare with alternatives
     Time Series Compression solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Time Series Compression - Wikipedia](https://en.wikipedia.org/wiki/Time%20Series%20Compression)

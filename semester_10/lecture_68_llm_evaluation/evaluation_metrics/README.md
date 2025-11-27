@@ -132,3 +132,8 @@ Compare with alternatives
     Provides quantitative measures to assess LLM performance across different tasks, enabling objective comparison and tracking of model capabilities and improvements.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Evaluation Metrics - Wikipedia](https://en.wikipedia.org/wiki/Evaluation%20Metrics)

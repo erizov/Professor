@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_23_object_detection/rcnn/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_23_object_detection/rcnn/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_23_object_detection/rcnn/test_algorithm.py)
+
+
+## References
+
+- [Rcnn - Wikipedia](https://en.wikipedia.org/wiki/Rcnn)

@@ -130,3 +130,8 @@ Compare with alternatives
     Uses quantum computers to simulate molecular systems and solve quantum chemistry problems, enabling accurate calculation of molecular properties, reaction mechanisms, and material design.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum chemistry](https://en.wikipedia.org/wiki/Quantum_chemistry) - Wikipedia

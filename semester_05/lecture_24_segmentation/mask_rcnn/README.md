@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_24_segmentation/mask_rcnn/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_24_segmentation/mask_rcnn/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_24_segmentation/mask_rcnn/test_algorithm.py)
+
+
+## References
+
+- [Mask Rcnn - Wikipedia](https://en.wikipedia.org/wiki/Mask%20Rcnn)

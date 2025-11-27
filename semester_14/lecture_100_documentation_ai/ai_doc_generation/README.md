@@ -132,3 +132,8 @@ Compare with alternatives
     AI-powered systems that automatically generate technical documentation from source code, comments, and project context.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Ai Doc Generation - Wikipedia](https://en.wikipedia.org/wiki/Ai%20Doc%20Generation)

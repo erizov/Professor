@@ -130,3 +130,8 @@ Compare with alternatives
     Makes machine learning models resistant to adversarial attacks by training models to recognize and defend against malicious inputs designed to fool the model, ensuring reliable and secure AI systems.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Adversarial Robustness - Wikipedia](https://en.wikipedia.org/wiki/Adversarial%20Robustness)

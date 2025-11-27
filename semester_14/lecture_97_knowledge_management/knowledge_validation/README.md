@@ -119,3 +119,8 @@ Compare with alternatives
     Knowledge Validation solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Knowledge Validation - Wikipedia](https://en.wikipedia.org/wiki/Knowledge%20Validation)

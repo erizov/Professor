@@ -119,3 +119,8 @@ Compare with alternatives
     Data Marketplace solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data Marketplace - Wikipedia](https://en.wikipedia.org/wiki/Data%20Marketplace)

@@ -132,3 +132,20 @@ Compare with alternatives
     Distributes cryptographic keys securely using quantum mechanics, providing provably secure key exchange that detects any eavesdropping attempts, enabling unbreakable encryption.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation

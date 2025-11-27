@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_07_creational_patterns/builder/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_07_creational_patterns/builder/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_07_creational_patterns/builder/test_algorithm.py)
+
+
+## References
+
+- [Builder](https://en.wikipedia.org/wiki/Builder) - Wikipedia

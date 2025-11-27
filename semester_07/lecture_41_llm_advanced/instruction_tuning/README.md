@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_41_llm_advanced/instruction_tuning/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_41_llm_advanced/instruction_tuning/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_41_llm_advanced/instruction_tuning/test_algorithm.py)
+
+
+## Historical Context
+
+A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation. The largest and most capable LLMs are generative pre-trained transformers (GPTs) and provide the co
+
+
+## References
+
+- [Large language model](https://en.wikipedia.org/wiki/Large_language_model) - Wikipedia

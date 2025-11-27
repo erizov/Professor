@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Document Databases is an algorithm used to solve specific problems in computer science.
-
+Document Databases is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying document databases to solve specific tasks in document;
-- using document databases in production systems for databases;
-- integrating document databases into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of document databases:
+Consider a specific example of how document databases works:
 
-1. Data preparation: input data for document databases (specific format and structure)
-2. Algorithm application: sequence of steps of document databases to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

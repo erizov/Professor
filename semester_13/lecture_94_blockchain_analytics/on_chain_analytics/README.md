@@ -132,3 +132,8 @@ Compare with alternatives
 Implements on-chain analytics systems that analyze blockchain data to extract insights, trends, and patterns, providing valuable information about blockchain usage, token flows, and network activity.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [On Chain Analytics - Wikipedia](https://en.wikipedia.org/wiki/On%20Chain%20Analytics)

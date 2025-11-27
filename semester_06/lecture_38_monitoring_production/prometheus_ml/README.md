@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_38_monitoring_production/prometheus_ml/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_38_monitoring_production/prometheus_ml/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_38_monitoring_production/prometheus_ml/test_algorithm.py)
+
+
+## References
+
+- [Prometheus Ml - Wikipedia](https://en.wikipedia.org/wiki/Prometheus%20Ml)

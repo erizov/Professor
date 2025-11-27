@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_12_concurrency_patterns/producer_consumer/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_12_concurrency_patterns/producer_consumer/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_12_concurrency_patterns/producer_consumer/test_algorithm.py)
+
+
+## References
+
+- [Producer Consumer - Wikipedia](https://en.wikipedia.org/wiki/Producer%20Consumer)

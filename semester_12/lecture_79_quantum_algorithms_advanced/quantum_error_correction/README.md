@@ -129,3 +129,13 @@ Compare with alternatives
 30-second explanation (your own words)  
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum error correction](https://en.wikipedia.org/wiki/Quantum_error_correction) - Wikipedia
+
+
+## Historical Context
+
+QEC schemes that employ codewords stabilized by a set of commuting operators are known as stabilizer codes, and the corresponding codewords are referred to as quantum error-correcting codes (QECCs)

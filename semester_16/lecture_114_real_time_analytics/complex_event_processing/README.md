@@ -119,3 +119,13 @@ Compare with alternatives
     Complex Event Processing solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## Historical Context
+
+Event processing is a method of tracking and analyzing (processing) streams of information (data) about things that happen (events), and deriving a conclusion from them. Complex event processing (CEP) consists of a set of concepts and techniques developed in the early 1990s for processing real-time 
+
+
+## References
+
+- [Complex event processing](https://en.wikipedia.org/wiki/Complex_event_processing) - Wikipedia

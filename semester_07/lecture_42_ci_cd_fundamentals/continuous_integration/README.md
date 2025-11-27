@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/continuous_integration/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/continuous_integration/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_42_ci_cd_fundamentals/continuous_integration/test_algorithm.py)
+
+
+## References
+
+- [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) - Wikipedia
+
+
+## Historical Context
+
+Grady Booch first proposed the term CI in 1991, although he did not advocate integrating multiple times a day, but later, CI came to include that aspect

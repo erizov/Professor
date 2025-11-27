@@ -119,3 +119,8 @@ Compare with alternatives
     Model Registry Advanced solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Model Registry Advanced - Wikipedia](https://en.wikipedia.org/wiki/Model%20Registry%20Advanced)

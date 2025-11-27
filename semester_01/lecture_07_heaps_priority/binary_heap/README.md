@@ -79,3 +79,22 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_07_heaps_priority/binary_heap/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_07_heaps_priority/binary_heap/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_07_heaps_priority/binary_heap/test_algorithm.py)
+
+
+## Historical Context
+
+A binary heap is a heap data structure that takes the form of a binary tree. Binary heaps are a common way of implementing priority queues. The binary heap was introduced by J. W. J. Williams in 1964 as a data structure for implementing heapsort.
+
+
+## References
+
+- [Binary heap](https://en.wikipedia.org/wiki/Binary_heap) - Wikipedia
+
+
+## Real-World Applications
+
+- Database query optimization
+- Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling

@@ -119,3 +119,8 @@ Compare with alternatives
     Recursive Queries solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Recursive Queries - Wikipedia](https://en.wikipedia.org/wiki/Recursive%20Queries)

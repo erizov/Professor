@@ -1,9 +1,8 @@
-# Hotstuff
+# HotStuff
 
 ## Simple Explanation
 
-HotStuff is an algorithm used to solve specific problems in computer science.
-
+Hotstuff is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
 
 ## Where It's Used
 
@@ -18,7 +17,6 @@ Specific example of hotstuff:
 1. Data preparation: input data for hotstuff (specific format and structure)
 2. Algorithm application: sequence of steps of hotstuff to process data
 3. Result: specific result of algorithm work with interpretation
-
 
 ## Self-Check Questions
 
@@ -44,13 +42,18 @@ Specific example of hotstuff:
 
 ### Level 1 (Easy)
 
+(Easy)
+
 Perform a simple operation with the hotstuff algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
+
+(Medium)
 
 Apply the hotstuff algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the hotstuff algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+(Advanced)
 
+Write an implementation of the hotstuff algorithm in a programming language. Add error handling, input validation, tests, and documentation.

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_23_object_detection/yolo/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_23_object_detection/yolo/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_23_object_detection/yolo/test_algorithm.py)
+
+
+## References
+
+- [Yolo](https://en.wikipedia.org/wiki/Yolo) - Wikipedia

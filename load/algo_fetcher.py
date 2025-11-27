@@ -19,15 +19,17 @@ Usage:
 Configure DATABASE_URL at top to point to your Postgres or SQLite DB.
 """
 
+from __future__ import annotations
+
 import re
 import time
 import json
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional, List, Dict, Tuple
 from urllib.parse import urlencode, quote_plus
 
 import requests
-from bs4 import BeautifulSoup
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
 from sqlalchemy import (
@@ -36,9 +38,17 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
 import enum
-from datetime import datetime
+from datetime import datetime, timezone
 
 from markdown_parser import parse_markdown_file, ParsedMarkdown
+from text_utils import (
+    PLACEHOLDER_PATTERNS,
+    contains_placeholder,
+    sanitize_text_field,
+    html_to_plain_text,
+    is_content_duplicate,
+    validate_algorithm_match,
+)
 
 # -----------------------
 # Config
@@ -49,18 +59,423 @@ REQUEST_HEADERS = {"User-Agent": USER_AGENT}
 WIKIPEDIA_API_URL = "https://{lang}.wikipedia.org/w/api.php"
 DEFAULT_RATE_SLEEP = 1.0  # seconds between requests to avoid hammering servers
 
-# -----------------------
-# SQLAlchemy models
-# -----------------------
-Base = declarative_base()
+CURATED_SUMMARIES_PATH = Path(__file__).with_name("curated_summaries.json")
 
+# -----------------------
+# Enums
+# -----------------------
 class LangCode(enum.Enum):
     en = "en"
     ru = "ru"
 
+
 class EduLevel(enum.Enum):
     school = "school"
     university = "university"
+
+
+RU_SECTION_TITLES = [
+    "Алгоритм",
+    "Простой алгоритм",
+    "Реализация",
+    "Реализация на Java",
+    "Анализ",
+    "Пример работы алгоритма",
+    "Пример реализации",
+    "Ссылки",
+    "См. также",
+    "Примечания",
+    "Литература",
+]
+
+
+def _match_section_index(sections: List[dict], target: str) -> Optional[str]:
+    """Find section index by matching heading text."""
+    target_lower = target.lower()
+    for sec in sections:
+        line = (sec.get("line") or "").strip()
+        if not line:
+            continue
+        if line.lower() == target_lower:
+            return sec.get("index")
+    for sec in sections:
+        line = (sec.get("line") or "").strip()
+        if not line:
+            continue
+        if target_lower in line.lower():
+            return sec.get("index")
+    return None
+
+
+def fetch_ru_wiki_sections(title: str) -> Dict[str, str]:
+    """Fetch specific Russian Wikipedia sections for structured content."""
+    sections_content: Dict[str, str] = {}
+    try:
+        meta = mediawiki_query(
+            {"action": "parse", "page": title, "prop": "sections", "format": "json"},
+            lang="ru",
+        )
+        parse_data = meta.get("parse")
+        if not parse_data:
+            return sections_content
+        sections = parse_data.get("sections", [])
+        for name in RU_SECTION_TITLES:
+            idx = _match_section_index(sections, name)
+            if not idx:
+                continue
+            section_resp = mediawiki_query(
+                {
+                    "action": "parse",
+                    "page": title,
+                    "prop": "text",
+                    "format": "json",
+                    "section": idx,
+                    "formatversion": 2,
+                },
+                lang="ru",
+            )
+            html = section_resp.get("parse", {}).get("text", "")
+            text = sanitize_text_field(html_to_plain_text(html))
+            if text:
+                sections_content[name] = text
+    except Exception:
+        # Silently ignore parsing issues; fallback to extract
+        return sections_content
+    return sections_content
+
+
+def remove_duplicate_structured_fields(desc: "AlgorithmDescription", level: "EduLevel"):
+    """Remove duplicate content across structured fields, keeping higher priority values."""
+    if level == EduLevel.school:
+        field_priority = {
+            'simple_explanation': 5,
+            'where_its_used': 4,
+            'example': 3,
+            'long_description': 2,
+            'short_description': 1,
+        }
+        fields_to_check = [
+            ('simple_explanation', desc.simple_explanation),
+            ('where_its_used', desc.where_its_used),
+            ('example', desc.example),
+            ('long_description', desc.long_description),
+            ('short_description', desc.short_description),
+        ]
+    else:
+        field_priority = {
+            'algorithm_definition': 6,
+            'technical_description': 5,
+            'application': 4,
+            'step_by_step': 3,
+            'example': 2,
+            'long_description': 1,
+            'short_description': 0,
+        }
+        fields_to_check = [
+            ('algorithm_definition', desc.algorithm_definition),
+            ('technical_description', desc.technical_description),
+            ('application', desc.application),
+            ('step_by_step', desc.step_by_step),
+            ('example', desc.example),
+            ('long_description', desc.long_description),
+            ('short_description', desc.short_description),
+        ]
+
+    fields_to_check = [(name, val) for name, val in fields_to_check if val]
+    to_clear = set()
+
+    for i, (name1, val1) in enumerate(fields_to_check):
+        if name1 in to_clear:
+            continue
+        for name2, val2 in fields_to_check[i + 1:]:
+            if name2 in to_clear:
+                continue
+            if is_content_duplicate(val1, val2):
+                priority1 = field_priority.get(name1, 0)
+                priority2 = field_priority.get(name2, 0)
+
+                if priority1 > priority2:
+                    to_clear.add(name2)
+                elif priority2 > priority1:
+                    to_clear.add(name1)
+                    break
+                else:
+                    if len(val1) >= len(val2):
+                        to_clear.add(name2)
+                    else:
+                        to_clear.add(name1)
+                        break
+
+    for field_name in to_clear:
+        setattr(desc, field_name, None)
+
+
+def apply_source_result(desc: "AlgorithmDescription", result: SourceResult, level: EduLevel):
+    """Apply adapter result to an AlgorithmDescription instance."""
+    if result.title:
+        desc.title = sanitize_text_field(result.title) or result.title
+
+    long_text = result.sections.get("long_description") or result.long_summary
+    short_text = result.sections.get("short_description") or result.short_summary
+
+    if long_text:
+        desc.long_description = sanitize_text_field(long_text) or long_text
+    if short_text:
+        desc.short_description = sanitize_text_field(short_text) or short_text
+
+    structured_fields = {
+        'simple_explanation', 'where_its_used', 'example',
+        'algorithm_definition', 'technical_description',
+        'application', 'step_by_step', 'discipline',
+        'ethical_reasoning', 'extra_chapters',
+        'self_check_basic', 'self_check_intermediate', 'self_check_advanced',
+        'practical_tasks_basic', 'practical_tasks_applied', 'practical_tasks_research',
+    }
+
+    for field, value in result.sections.items():
+        if field in {'long_description', 'short_description'}:
+            continue
+        if field not in structured_fields:
+            continue
+        if value:
+            setattr(desc, field, sanitize_text_field(value) or value)
+
+    desc.source_url = result.source_url
+    desc.source_site = result.source_site
+    desc.fetched_at = datetime.now(timezone.utc)
+    desc.quality_score = 0.9
+
+@dataclass
+class SourceResult:
+    title: str
+    short_summary: str
+    long_summary: str
+    sections: Dict[str, str]
+    source_url: str
+    source_site: str
+
+
+class BaseAdapter:
+    """Base class for enrichment adapters."""
+
+    def fetch(self, algorithm_name: str, lang: LangCode, level: EduLevel) -> Optional[SourceResult]:
+        raise NotImplementedError
+
+
+class CuratedSummaryAdapter(BaseAdapter):
+    """Adapter that loads curated summaries from JSON."""
+
+    _cache: Optional[Dict[str, Dict[str, Dict[str, Dict[str, str]]]]] = None
+
+    @classmethod
+    def _load_cache(cls) -> Dict[str, Dict[str, Dict[str, Dict[str, str]]]]:
+        if cls._cache is not None:
+            return cls._cache
+        if not CURATED_SUMMARIES_PATH.exists():
+            cls._cache = {}
+        else:
+            with CURATED_SUMMARIES_PATH.open("r", encoding="utf-8") as fp:
+                cls._cache = json.load(fp)
+        return cls._cache
+
+    def fetch(self, algorithm_name: str, lang: LangCode, level: EduLevel) -> Optional[SourceResult]:
+        data = self._load_cache()
+        key = normalize_algorithm_name(algorithm_name)
+        lang_data = data.get(key, {}).get(lang.value)
+        if not lang_data:
+            return None
+        entry = lang_data.get(level.value)
+        if not entry:
+            return None
+
+        title = entry.get("title") or algorithm_name
+        sections = {k: v for k, v in entry.items() if k not in {"title", "short_summary", "long_summary"}}
+        long_summary = entry.get("long_summary") or sections.get("long_description")
+        short_summary = entry.get("short_summary") or sections.get("short_description")
+        if not long_summary:
+            return None
+
+        return SourceResult(
+            title=title,
+            short_summary=short_summary or tune_summary_for_level(long_summary, level),
+            long_summary=long_summary,
+            sections=sections,
+            source_url="curated://summaries",
+            source_site="curated",
+        )
+
+
+class WikipediaAdapter(BaseAdapter):
+    """Adapter that fetches data from Wikipedia."""
+
+    def fetch(self, algorithm_name: str, lang: LangCode, level: EduLevel) -> Optional[SourceResult]:
+        resolved = resolve_wiki_for_query(algorithm_name, lang=lang.value)
+        if not resolved:
+            return None
+
+        title, extract, fullurl = resolved
+        if not extract or len(extract.strip()) < 50:
+            return None
+        if contains_placeholder(extract):
+            return None
+        if not validate_algorithm_match(algorithm_name, title, extract):
+            return None
+
+        short = tune_summary_for_level(extract, level)
+        sections: Dict[str, str] = {
+            "long_description": extract,
+            "short_description": short,
+        }
+
+        if lang == LangCode.ru:
+            ru_sections = fetch_ru_wiki_sections(title)
+        else:
+            ru_sections = {}
+
+        def pick_ru_section(*names: str) -> Optional[str]:
+            for name in names:
+                value = ru_sections.get(name)
+                if value and not contains_placeholder(value):
+                    return value
+            return None
+
+        if level == EduLevel.school:
+            ru_simple = pick_ru_section("Простой алгоритм", "Алгоритм")
+            if ru_simple:
+                sections["simple_explanation"] = ru_simple
+            ru_usage = pick_ru_section("Анализ")
+            if ru_usage:
+                sections["where_its_used"] = ru_usage
+            ru_example = pick_ru_section("Пример работы алгоритма", "Пример реализации")
+            if ru_example:
+                sections["example"] = ru_example
+        else:
+            ru_definition = pick_ru_section("Алгоритм")
+            if ru_definition:
+                sections["algorithm_definition"] = ru_definition
+            ru_realization = [pick_ru_section("Реализация"), pick_ru_section("Реализация на Java")]
+            realization_text = "\n\n".join([part for part in ru_realization if part])
+            if realization_text:
+                sections["technical_description"] = realization_text
+            ru_application = pick_ru_section("Анализ")
+            if ru_application:
+                sections["application"] = ru_application
+            ru_steps = pick_ru_section("Пример работы алгоритма")
+            if ru_steps:
+                sections["step_by_step"] = ru_steps
+            ru_example_uni = pick_ru_section("Пример реализации")
+            if ru_example_uni:
+                sections["example"] = ru_example_uni
+
+        return SourceResult(
+            title=title,
+            short_summary=short,
+            long_summary=extract,
+            sections=sections,
+            source_url=fullurl,
+            source_site=f"wikipedia.{lang.value}",
+        )
+
+
+class EMaxxAdapter(BaseAdapter):
+    """Adapter that fetches Russian summaries from e-maxx.ru."""
+
+    def fetch(self, algorithm_name: str, lang: LangCode, level: EduLevel) -> Optional[SourceResult]:
+        if lang != LangCode.ru:
+            return None
+
+        em = fetch_emaxx_page(algorithm_name)
+        if not em:
+            return None
+        title, extract, url = em
+        if not extract or len(extract.strip()) < 50:
+            return None
+        if contains_placeholder(extract):
+            return None
+
+        short = tune_summary_for_level(extract, level)
+        sections = {
+            "long_description": extract,
+            "short_description": short,
+        }
+        return SourceResult(
+            title=title,
+            short_summary=short,
+            long_summary=extract,
+            sections=sections,
+            source_url=url,
+            source_site="e-maxx.ru",
+        )
+
+
+def get_source_adapters(lang: LangCode, prefer_ru_emaxx: bool = True) -> List[BaseAdapter]:
+    adapters: List[BaseAdapter] = [
+        CuratedSummaryAdapter(),
+        WikipediaAdapter(),
+    ]
+    if lang == LangCode.ru and prefer_ru_emaxx:
+        adapters.append(EMaxxAdapter())
+    return adapters
+
+
+def clear_placeholder_fields(desc: "AlgorithmDescription") -> bool:
+    """
+    Remove placeholder text from all known fields.
+    Returns True if any field was modified.
+    """
+    target_attrs = [
+        "simple_explanation",
+        "where_its_used",
+        "example",
+        "algorithm_definition",
+        "technical_description",
+        "application",
+        "step_by_step",
+        "long_description",
+        "short_description",
+        "title",
+        "discipline",
+        "ethical_reasoning",
+        "extra_chapters",
+    ]
+    changed = False
+    for attr in target_attrs:
+        value = getattr(desc, attr, None)
+        if not value:
+            continue
+        if attr == "extra_chapters":
+            try:
+                data = json.loads(value) if isinstance(value, str) else value
+            except Exception:
+                setattr(desc, attr, None)
+                changed = True
+                continue
+            if not isinstance(data, dict):
+                setattr(desc, attr, None)
+                changed = True
+                continue
+            filtered = {k: v for k, v in data.items() if sanitize_text_field(v)}
+            if filtered:
+                if filtered != data:
+                    setattr(desc, attr, json.dumps(filtered, ensure_ascii=False))
+                    changed = True
+            else:
+                setattr(desc, attr, None)
+                changed = True
+            continue
+        sanitized = sanitize_text_field(value)
+        if sanitized is None:
+            setattr(desc, attr, None)
+            changed = True
+        elif sanitized != value:
+            setattr(desc, attr, sanitized)
+            changed = True
+    return changed
+
+# -----------------------
+# SQLAlchemy models
+# -----------------------
+Base = declarative_base()
 
 class Algorithm(Base):
     __tablename__ = "algorithms"
@@ -223,6 +638,99 @@ def is_disambiguation_page(page: dict) -> bool:
             return True
     return False
 
+def is_algorithm_related(page: dict, extract: str) -> bool:
+    """
+    Check if a Wikipedia page is algorithm-related.
+    Filters out cars, organizations, people, etc.
+    """
+    title = page.get("title", "").lower()
+    extract_lower = extract.lower()
+    
+    # Non-algorithm keywords to filter out
+    non_algorithm_keywords = [
+        # Vehicles
+        'jaguar', 'xk140', 'car', 'automobile', 'автомобиль', 'машина',
+        # Organizations/Politics
+        'taliban', 'талибан', 'pakistan', 'пакистан', 'organization', 'организация',
+        'political', 'политический', 'party', 'партия',
+        # People
+        'person', 'человек', 'biography', 'биография',
+        # Medical terms
+        'инфаркт', 'миокарда', 'myocardial', 'infarction', 'медицин', 'medical',
+        'болезнь', 'disease', 'лечение', 'treatment', 'терапия', 'therapy',
+        'хирургия', 'surgery', 'диагностика', 'diagnosis', 'сердце', 'heart',
+        'кровь', 'blood', 'артерия', 'artery', 'вена', 'vein',
+        # Other non-algorithm topics
+        'movie', 'фильм', 'song', 'песня', 'book', 'книга',
+        'история', 'history', 'география', 'geography', 'философия', 'philosophy'
+    ]
+    
+    # Check title for non-algorithm terms
+    if any(keyword in title for keyword in non_algorithm_keywords):
+        # Allow only if it's clearly about algorithms (e.g., "algorithm for medical diagnosis")
+        if 'алгоритм' not in title and 'algorithm' not in title:
+            return False
+    
+    # Check extract for algorithm-related terms
+    algorithm_keywords = [
+        'algorithm', 'алгоритм', 'computing', 'вычисление', 'data structure',
+        'структура данных', 'programming', 'программирование', 'complexity',
+        'сложность', 'sort', 'сортировка', 'search', 'поиск', 'graph',
+        'граф', 'tree', 'дерево', 'array', 'массив'
+    ]
+    
+    # Must have at least one algorithm-related keyword
+    has_algorithm_keyword = any(keyword in extract_lower for keyword in algorithm_keywords)
+    
+    # Check for medical/health terms in extract - if present without algorithm context, reject
+    medical_terms = ['инфаркт', 'миокарда', 'myocardial', 'infarction', 'сердце', 'heart',
+                     'кровь', 'blood', 'артерия', 'artery', 'вена', 'vein', 'болезнь', 'disease']
+    has_medical_terms = any(term in extract_lower for term in medical_terms)
+    
+    if has_medical_terms and not has_algorithm_keyword:
+        return False
+    
+    # Check categories if available
+    categories = page.get("categories", [])
+    category_titles = [cat.get("title", "").lower() for cat in categories]
+    
+    algorithm_categories = [
+        'algorithm', 'алгоритм', 'computer science', 'информатика',
+        'data structure', 'структура данных', 'computing', 'вычисление',
+        'programming', 'программирование'
+    ]
+    
+    non_algorithm_categories = [
+        'medicine', 'медицина', 'health', 'здоровье', 'disease', 'болезнь',
+        'biology', 'биология', 'anatomy', 'анатомия', 'physiology', 'физиология',
+        'cardiology', 'кардиология', 'pathology', 'патология'
+    ]
+    
+    has_algorithm_category = any(
+        any(alg_cat in cat_title for alg_cat in algorithm_categories)
+        for cat_title in category_titles
+    )
+    
+    has_non_algorithm_category = any(
+        any(non_cat in cat_title for non_cat in non_algorithm_categories)
+        for cat_title in category_titles
+    )
+    
+    # If it has non-algorithm category and no algorithm category, reject
+    if has_non_algorithm_category and not has_algorithm_category:
+        return False
+    
+    # If it has algorithm category, it's likely an algorithm
+    if has_algorithm_category:
+        return True
+    
+    # If no algorithm keywords, reject
+    if not has_algorithm_keyword:
+        return False
+    
+    return True
+
+
 def extract_from_wiki_title(candidate_title: str, lang: str = "en") -> Optional[Tuple[str,str,str]]:
     """
     Try to get extract and URL for a candidate title in a given language.
@@ -235,6 +743,11 @@ def extract_from_wiki_title(candidate_title: str, lang: str = "en") -> Optional[
         return {"disambiguation": True, "page": page}
     title = page.get("title")
     extract = page.get("extract", "") or ""
+    
+    # Check if this is algorithm-related
+    if not is_algorithm_related(page, extract):
+        return None  # Skip non-algorithm pages
+    
     fullurl = page.get("fullurl", f"https://{lang}.wikipedia.org/wiki/{quote_plus(title.replace(' ', '_'))}")
     return (title, extract, fullurl)
 
@@ -382,7 +895,7 @@ def upsert_description(session, algo_key: str, lang: LangCode, level: EduLevel, 
         existing.long_description = long_desc
         existing.source_url = source_url
         existing.source_site = source_site
-        existing.fetched_at = datetime.utcnow()
+        existing.fetched_at = datetime.now(timezone.utc)
         existing.quality_score = quality
         
         # Update parsed markdown fields if provided
@@ -397,7 +910,7 @@ def upsert_description(session, algo_key: str, lang: LangCode, level: EduLevel, 
         existing.long_description = long_desc
         existing.source_url = source_url
         existing.source_site = source_site
-        existing.fetched_at = datetime.utcnow()
+        existing.fetched_at = datetime.now(timezone.utc)
         existing.quality_score = quality
         
         # Update parsed markdown fields if provided
@@ -504,6 +1017,7 @@ def load_from_markdown_files(session, algorithm_folder: Path,
                              algorithm_name: Optional[str] = None) -> bool:
     """
     Load algorithm descriptions from local markdown files.
+    Ensures all 4 combinations (2 languages × 2 levels) are created for each algorithm.
     
     Args:
         session: Database session
@@ -533,7 +1047,7 @@ def load_from_markdown_files(session, algorithm_folder: Path,
     
     algo_key = upsert_algorithm(session, algorithm_name)
     
-    # Map of file patterns to (level, language)
+    # Map of file patterns to (level, language) - ALL 4 combinations required
     file_patterns = [
         ("school.en.md", EduLevel.school, LangCode.en),
         ("school.ru.md", EduLevel.school, LangCode.ru),
@@ -542,31 +1056,47 @@ def load_from_markdown_files(session, algorithm_folder: Path,
     ]
     
     loaded_count = 0
+    created_count = 0
     
+    # Process all 4 combinations - create entry even if file doesn't exist
     for filename, level, lang in file_patterns:
         markdown_path = algorithm_folder / filename
-        if not markdown_path.exists():
-            continue
+        parsed = None
+        title = algorithm_name
+        short_desc = ""
+        long_desc = ""
+        source_url = None
+        source_site = "local_markdown"
+        quality = 0.5  # Lower quality if file doesn't exist
         
-        try:
-            parsed = parse_markdown_file(markdown_path)
-            if not parsed:
+        # Try to load and parse if file exists
+        if markdown_path.exists():
+            try:
+                parsed = parse_markdown_file(markdown_path)
+                if parsed:
+                    # Use parsed title or algorithm name
+                    title = parsed.title or algorithm_name
+                    
+                    # Create short and long descriptions
+                    if level == EduLevel.school:
+                        short_desc = parsed.simple_explanation[:200] if parsed.simple_explanation else ""
+                        long_desc = parsed.simple_explanation or ""
+                    else:
+                        short_desc = parsed.algorithm_definition[:200] if parsed.algorithm_definition else ""
+                        long_desc = parsed.algorithm_definition or ""
+                    
+                    source_url = f"file://{markdown_path.absolute()}"
+                    quality = 1.0  # High quality for existing files
+                    loaded_count += 1
+                else:
+                    log_fetch(session, algo_key, lang, level, "error", 
+                             f"Failed to parse {filename}")
+            except Exception as e:
                 log_fetch(session, algo_key, lang, level, "error", 
-                         f"Failed to parse {filename}")
-                continue
-            
-            # Use parsed title or algorithm name
-            title = parsed.title or algorithm_name
-            
-            # Create short and long descriptions
-            if level == EduLevel.school:
-                short_desc = parsed.simple_explanation[:200] if parsed.simple_explanation else ""
-                long_desc = parsed.simple_explanation or ""
-            else:
-                short_desc = parsed.algorithm_definition[:200] if parsed.algorithm_definition else ""
-                long_desc = parsed.algorithm_definition or ""
-            
-            # Store description
+                         f"Error loading {filename}: {str(e)}")
+        
+        # Always create/update the entry (even if file doesn't exist)
+        try:
             upsert_description(
                 session=session,
                 algo_key=algo_key,
@@ -575,22 +1105,26 @@ def load_from_markdown_files(session, algorithm_folder: Path,
                 title=title,
                 short=short_desc,
                 long_desc=long_desc,
-                source_url=f"file://{markdown_path.absolute()}",
-                source_site="local_markdown",
-                quality=1.0,  # Local files are high quality
+                source_url=source_url,
+                source_site=source_site,
+                quality=quality,
                 parsed_md=parsed
             )
             
-            log_fetch(session, algo_key, lang, level, "ok", 
-                     f"Loaded from {filename}")
-            loaded_count += 1
-            
+            if markdown_path.exists() and parsed:
+                log_fetch(session, algo_key, lang, level, "ok", 
+                         f"Loaded from {filename}")
+            else:
+                log_fetch(session, algo_key, lang, level, "created", 
+                         f"Created entry for {filename} (file not found)")
+                created_count += 1
         except Exception as e:
             log_fetch(session, algo_key, lang, level, "error", 
-                     f"Error loading {filename}: {str(e)}")
+                     f"Error creating entry for {filename}: {str(e)}")
             continue
     
-    return loaded_count > 0
+    # Return True if at least one file was loaded, or if all 4 entries were created
+    return loaded_count > 0 or created_count == 4
 
 
 def load_all_from_markdown_files(session, base_path: Path = None, 
@@ -696,11 +1230,7 @@ def fetch_and_store(session, algorithm_query: str,
                         continue
                 
                 # Check for placeholder text - skip if found
-                placeholder_patterns = [
-                    r'\[specific purpose\]', r'\[specific mechanism\]', r'\[конкретная цель\]',
-                    r'\[конкретный механизм\]', r'placeholder', r'заполнитель'
-                ]
-                if any(re.search(pattern, extract, re.IGNORECASE) for pattern in placeholder_patterns):
+                if contains_placeholder(extract):
                     stats['skipped'] += 1
                     log_fetch(session, algo_key, lang_enum, lvl_enum, "skipped", 
                              f"Placeholder text detected in extract")
@@ -761,18 +1291,184 @@ def print_status(session, stats_label: str = ""):
 
 
 # -----------------------
+# Web enrichment for existing database entries
+# -----------------------
+def has_main_description_without_placeholders(desc: "AlgorithmDescription", level: EduLevel) -> bool:
+    """
+    Check if at least one main description field is present and no placeholders exist.
+    
+    Args:
+        desc: AlgorithmDescription instance
+        level: Education level (school or university)
+    
+    Returns:
+        True if at least one main description field is filled and no placeholders exist
+    """
+    # Main description fields for school level
+    if level == EduLevel.school:
+        main_fields = [
+            'simple_explanation',
+            'where_its_used',
+            'example',
+            'long_description',
+            'short_description',
+        ]
+    else:
+        # Main description fields for university level
+        main_fields = [
+            'algorithm_definition',
+            'technical_description',
+            'application',
+            'step_by_step',
+            'example',
+            'long_description',
+            'short_description',
+        ]
+    
+    # Check if at least one main field is filled
+    has_main_field = False
+    for field_name in main_fields:
+        value = getattr(desc, field_name, None)
+        if value and value.strip():
+            has_main_field = True
+            break
+    
+    if not has_main_field:
+        return False
+    
+    # Check ALL text fields for placeholders (comprehensive check)
+    all_text_fields = [
+        'title', 'short_description', 'long_description',
+        'simple_explanation', 'where_its_used', 'example',
+        'algorithm_definition', 'technical_description',
+        'application', 'step_by_step', 'discipline',
+        'ethical_reasoning', 'example_result', 'example_snippet',
+        'self_check_basic', 'self_check_intermediate', 'self_check_advanced',
+        'practical_tasks_basic', 'practical_tasks_applied', 'practical_tasks_research',
+    ]
+    
+    for field_name in all_text_fields:
+        value = getattr(desc, field_name, None)
+        if value and contains_placeholder(value):
+            return False
+    
+    # Also check extra_chapters if it's a JSON string
+    if desc.extra_chapters:
+        try:
+            extra_data = json.loads(desc.extra_chapters) if isinstance(desc.extra_chapters, str) else desc.extra_chapters
+            if isinstance(extra_data, dict):
+                for key, value in extra_data.items():
+                    if isinstance(value, str) and contains_placeholder(value):
+                        return False
+        except Exception:
+            # If parsing fails, check as string
+            if isinstance(desc.extra_chapters, str) and contains_placeholder(desc.extra_chapters):
+                return False
+    
+    return True
+
+
+def enrich_description_from_web(session, algo_key: str, lang: LangCode, level: EduLevel,
+                                algorithm_name: str, prefer_ru_emaxx: bool = True) -> Dict[str, any]:
+    """
+    Enrich a specific (algorithm, language, level) entry with web data.
+    Uses adapter pipeline to gather candidate content.
+    Skips enrichment if at least one main description is already present and contains no placeholders.
+    """
+    # First, check if description already exists and is complete
+    existing = session.query(AlgorithmDescription).filter_by(
+        algorithm_name=algo_key, language=lang, level=level
+    ).one_or_none()
+
+    if not existing:
+        return {'status': 'failed', 'reason': 'Description not found in database'}
+    
+    # Skip if already enriched from web (not local_markdown)
+    if existing.source_site and existing.source_site != "local_markdown":
+        # Check if it has main description and no placeholders
+        if has_main_description_without_placeholders(existing, level):
+            return {
+                'status': 'skipped', 
+                'reason': f'Already enriched from {existing.source_site} and no placeholders for {algorithm_name} ({lang.value}, {level.value})'
+            }
+    
+    # Check if at least one main description is present and no placeholders exist
+    should_skip = has_main_description_without_placeholders(existing, level)
+    if should_skip:
+        return {
+            'status': 'skipped', 
+            'reason': f'Main description already present and no placeholders for {algorithm_name} ({lang.value}, {level.value})'
+        }
+    
+    # Debug: if not skipping, log why (for troubleshooting)
+    # This helps understand why certain algorithms aren't being skipped
+    if existing.source_site == "local_markdown":
+        # Check which main fields are missing
+        if level == EduLevel.school:
+            main_fields = ['simple_explanation', 'where_its_used', 'example', 'long_description', 'short_description']
+        else:
+            main_fields = ['algorithm_definition', 'technical_description', 'application', 'step_by_step', 'example', 'long_description', 'short_description']
+        
+        filled_fields = [f for f in main_fields if getattr(existing, f, None) and getattr(existing, f, '').strip()]
+        if not filled_fields:
+            log_fetch(session, algo_key, lang, level, "debug", 
+                     f"Not skipping: No main fields filled for {algorithm_name}")
+        else:
+            # Check for placeholders in filled fields
+            placeholder_fields = []
+            for f in filled_fields:
+                val = getattr(existing, f, None)
+                if val and contains_placeholder(val):
+                    placeholder_fields.append(f)
+            if placeholder_fields:
+                log_fetch(session, algo_key, lang, level, "debug", 
+                         f"Not skipping: Placeholders found in {', '.join(placeholder_fields)} for {algorithm_name}")
+    
+    try:
+        adapters = get_source_adapters(lang, prefer_ru_emaxx=prefer_ru_emaxx)
+        result: Optional[SourceResult] = None
+        for adapter in adapters:
+            try:
+                result = adapter.fetch(algorithm_name, lang, level)
+            except Exception as adapter_error:
+                continue
+            if result:
+                break
+
+        if not result:
+            return {'status': 'skipped', 'reason': f'No source found for {algorithm_name} ({lang.value})'}
+
+        apply_source_result(existing, result, level)
+        remove_duplicate_structured_fields(existing, level)
+        clear_placeholder_fields(existing)
+
+        session.add(existing)
+        session.commit()
+
+        add_alias(session, algo_key, result.title, lang, source_url=result.source_url)
+
+        log_fetch(session, algo_key, lang, level, "ok", f"Enriched from {result.source_site}: {result.source_url}")
+        return {'status': 'success', 'source': result.source_site, 'url': result.source_url}
+
+    except Exception as e:
+        log_fetch(session, algo_key, lang, level, "error", str(e))
+        return {'status': 'failed', 'reason': str(e)}
+
+
+# -----------------------
 # Main processing function
 # -----------------------
-def process_all_algorithms(base_path: Path = None, status_interval: int = 300):
+def process_all_algorithms(base_path: Path = None, status_interval: int = 300, 
+                           target_algorithm_count: int = 700):
     """
     Process all algorithms: load from markdown, then enhance with web data.
     
     Args:
         base_path: Base path to search for algorithms
         status_interval: Status update interval in seconds (default 300 = 5 minutes)
+        target_algorithm_count: Expected number of algorithms (default 700)
     """
-    import threading
-    from datetime import datetime, timedelta
+    from datetime import datetime
     
     init_db()
     session = Session()
@@ -789,13 +1485,34 @@ def process_all_algorithms(base_path: Path = None, status_interval: int = 300):
     print(f"Loaded: {markdown_stats['loaded']}, Failed: {markdown_stats['failed']}, Total: {markdown_stats['total']}")
     print_status(session, "After loading from markdown")
     
-    # Step 2: Enhance with web data
+    # Wait until all algorithms are loaded (check for target count)
+    db_stats = get_db_statistics(session)
+    print(f"\nWaiting for all algorithms to be loaded...")
+    print(f"Current: {db_stats['total_algorithms']} algorithms, {db_stats['total_descriptions']} descriptions")
+    print(f"Expected: ~{target_algorithm_count} algorithms, ~{target_algorithm_count * 4} descriptions (4 per algorithm)")
+    
+    if db_stats['total_algorithms'] < target_algorithm_count * 0.9:  # Allow 10% variance
+        print(f"Warning: Only {db_stats['total_algorithms']} algorithms loaded, expected ~{target_algorithm_count}")
+        response = input("Continue with web enrichment anyway? (y/n): ")
+        if response.lower() != 'y':
+            print("Aborted.")
+            return
+    
+    # Step 2: Enhance existing database entries with web data
     print("\n" + "="*60)
-    print("STEP 2: Enhancing with web data...")
+    print("STEP 2: Enriching existing database with web data...")
+    print("="*60)
+    print("Using original English/Russian websites (no translation)")
+    print("Web data takes priority over local data")
+    print("Skipping if website doesn't answer (no generic placeholders)")
     print("="*60)
     
-    # Get algorithm names from database (those loaded from markdown)
-    algorithms_to_enhance = session.query(Algorithm).all()
+    # Get all existing descriptions from database
+    all_descriptions = session.query(AlgorithmDescription).filter_by(
+        source_site="local_markdown"
+    ).all()
+    
+    total_entries = len(all_descriptions)
     total_web_success = 0
     total_web_failed = 0
     total_web_skipped = 0
@@ -803,36 +1520,55 @@ def process_all_algorithms(base_path: Path = None, status_interval: int = 300):
     last_status_time = datetime.now()
     start_time = datetime.now()
     
-    for idx, algo in enumerate(algorithms_to_enhance, 1):
+    print(f"\nProcessing {total_entries} database entries for web enrichment...")
+    
+    for idx, desc in enumerate(all_descriptions, 1):
         # Check if we need to print status
         current_time = datetime.now()
         if (current_time - last_status_time).total_seconds() >= status_interval:
             elapsed = current_time - start_time
-            print_status(session, f"Progress: {idx}/{len(algorithms_to_enhance)} algorithms processed (Elapsed: {elapsed})")
+            print_status(session, f"Progress: {idx}/{total_entries} entries processed (Elapsed: {elapsed})")
             last_status_time = current_time
         
-        print(f"[{idx}/{len(algorithms_to_enhance)}] Enhancing: {algo.canonical_label}")
-        
-        try:
-            web_stats = fetch_and_store(session, algo.canonical_label, 
-                                       languages=("en", "ru"), 
-                                       levels=("school", "university"))
-            total_web_success += web_stats['success']
-            total_web_failed += web_stats['failed']
-            total_web_skipped += web_stats['skipped']
-        except Exception as e:
-            print(f"  Error: {e}")
-            total_web_failed += 1
+        # Get algorithm name
+        algo = session.get(Algorithm, desc.algorithm_name)
+        if not algo:
             continue
+        
+        algorithm_name = algo.canonical_label
+        
+        print(f"[{idx}/{total_entries}] Enriching: {algorithm_name} ({desc.language.value}, {desc.level.value})")
+        
+        # Enrich this specific entry
+        result = enrich_description_from_web(
+            session, 
+            desc.algorithm_name, 
+            desc.language, 
+            desc.level,
+            algorithm_name
+        )
+        
+        if result['status'] == 'success':
+            total_web_success += 1
+        elif result['status'] == 'skipped':
+            total_web_skipped += 1
+            print(f"  Skipped: {result.get('reason', 'Unknown reason')}")
+        else:
+            total_web_failed += 1
+            print(f"  Failed: {result.get('reason', 'Unknown error')}")
+        
+        # Rate limiting
+        time.sleep(DEFAULT_RATE_SLEEP)
     
     # Final status
     print("\n" + "="*60)
     print("FINAL STATUS")
     print("="*60)
-    print(f"Web enhancement stats:")
+    print(f"Web enrichment stats:")
     print(f"  - Success: {total_web_success}")
     print(f"  - Failed: {total_web_failed}")
     print(f"  - Skipped (no answer): {total_web_skipped}")
+    print(f"  - Total processed: {total_entries}")
     print_status(session, "Final")
 
 

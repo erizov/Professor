@@ -1,56 +1,57 @@
-# Mvc
+# Model-View-Controller (MVC)
 
 ## Simple Explanation
 
-Model-View-Controller (MVC) is an algorithm used to solve specific problems in computer science.
-
+Model-View-Controller (MVC) is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying mvc to solve specific tasks in mvc;
-- using mvc in production systems for data processing;
-- integrating mvc into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of mvc:
+Consider a specific example of how model-view-controller (mvc) works:
 
-1. Data preparation: input data for mvc (specific format and structure)
-2. Algorithm application: sequence of steps of mvc to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the mvc algorithm do?
-2. In what situations is mvc used?
+1. What does the model-view-controller (mvc) algorithm do?
+2. In what situations is model-view-controller (mvc) used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does mvc handle edge cases?
-2. What are the advantages and disadvantages of mvc?
-3. Can the performance of mvc be improved?
+1. How does model-view-controller (mvc) handle edge cases?
+2. What are the advantages and disadvantages of model-view-controller (mvc)?
+3. Can the performance of model-view-controller (mvc) be improved?
 
 ### Advanced
 
-1. What is the time complexity of mvc?
-2. How does mvc work with large volumes of data?
-3. How can mvc be optimized?
+1. What is the time complexity of model-view-controller (mvc)?
+2. How does model-view-controller (mvc) work with large volumes of data?
+3. How can model-view-controller (mvc) be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the mvc algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the model-view-controller (mvc) algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the mvc algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the model-view-controller (mvc) algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the mvc algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the model-view-controller (mvc) algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

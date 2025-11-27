@@ -130,3 +130,8 @@ Compare with alternatives
     Debugs quantum programs and circuits by identifying errors, analyzing quantum state evolution, and validating quantum operations, addressing unique challenges of quantum computing like superposition and measurement.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Debugging - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Debugging)

@@ -130,3 +130,8 @@ Compare with alternatives
     Implements privacy-focused cryptocurrencies that provide enhanced privacy and anonymity for transactions, hiding sender, receiver, and amount information through various cryptographic techniques.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Privacy Coins - Wikipedia](https://en.wikipedia.org/wiki/Privacy%20Coins)

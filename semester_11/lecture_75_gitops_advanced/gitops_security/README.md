@@ -132,3 +132,8 @@ Compare with alternatives
     Secures GitOps workflows through access controls, secret management, policy enforcement, and audit trails, ensuring secure infrastructure and application deployments.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Gitops Security - Wikipedia](https://en.wikipedia.org/wiki/Gitops%20Security)

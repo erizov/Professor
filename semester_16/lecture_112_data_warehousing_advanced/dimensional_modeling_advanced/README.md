@@ -119,3 +119,8 @@ Compare with alternatives
     Dimensional Modeling Advanced solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Dimensional Modeling Advanced - Wikipedia](https://en.wikipedia.org/wiki/Dimensional%20Modeling%20Advanced)

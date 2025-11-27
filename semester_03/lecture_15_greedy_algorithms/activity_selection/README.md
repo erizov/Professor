@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_15_greedy_algorithms/activity_selection/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_15_greedy_algorithms/activity_selection/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_15_greedy_algorithms/activity_selection/test_algorithm.py)
+
+
+## References
+
+- [Activity Selection - Wikipedia](https://en.wikipedia.org/wiki/Activity%20Selection)

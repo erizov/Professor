@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Edge Computing is an algorithm used to solve specific problems in computer science.
-
+Edge Computing is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying edge computing to solve specific tasks in edge;
-- using edge computing in production systems for computing;
-- integrating edge computing into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of edge computing:
+Consider a specific example of how edge computing works:
 
-1. Data preparation: input data for edge computing (specific format and structure)
-2. Algorithm application: sequence of steps of edge computing to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

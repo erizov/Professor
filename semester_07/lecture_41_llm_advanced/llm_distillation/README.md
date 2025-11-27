@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_41_llm_advanced/llm_distillation/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_41_llm_advanced/llm_distillation/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_41_llm_advanced/llm_distillation/test_algorithm.py)
+
+
+## References
+
+- [Llm Distillation - Wikipedia](https://en.wikipedia.org/wiki/Llm%20Distillation)

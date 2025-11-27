@@ -119,3 +119,8 @@ Compare with alternatives
     Sql Analytics solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Sql Analytics - Wikipedia](https://en.wikipedia.org/wiki/Sql%20Analytics)

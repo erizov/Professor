@@ -119,3 +119,13 @@ Compare with alternatives
     Downsampling solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Downsampling (signal processing)](https://en.wikipedia.org/wiki/Downsampling_(signal_processing)) - Wikipedia
+
+
+## Historical Context
+
+When the process is performed on a sequence of samples of a signal or a continuous function, it produces an approximation of the sequence that would have been obtained by sampling the signal at a lower rate

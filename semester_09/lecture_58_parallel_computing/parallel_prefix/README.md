@@ -131,3 +131,8 @@ Compare with alternatives
 Computes all prefix sums (or other associative operations) of an array in parallel, enabling efficient parallel computation of cumulative operations like running sums, maximums, or products.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Parallel Prefix - Wikipedia](https://en.wikipedia.org/wiki/Parallel%20Prefix)

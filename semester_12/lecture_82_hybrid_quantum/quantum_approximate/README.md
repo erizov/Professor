@@ -132,3 +132,8 @@ Compare with alternatives
 A quantum-classical hybrid algorithm that uses parameterized quantum circuits and classical optimization to solve combinatorial optimization problems approximately.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Approximate - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Approximate)

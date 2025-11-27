@@ -5,32 +5,42 @@
 
 ## Algorithm Definition
 
-Write Scaling is an algorithm used to solve specific problems in computer science.
-
+Write Scaling is an algorithm for solving problems in the field of data engineering / data governance, which performs a sequence of operations to process data and obtain results.
 
 ## Technical Description
 
-Write Scaling works by processing data sequentially according to specific rules and algorithms.
+### What the Algorithm Does
 
+Write Scaling is an algorithm for solving problems in the field of data engineering / data governance, which performs a sequence of operations to process data and obtain results.
+
+**Key Steps:**
+1. Data input and validation
+2. Algorithm execution
+3. Result processing and output
+
+**Key Data Structures:**
+- Arrays or lists for data storage
+- Variables for intermediate results
+- Control structures for flow management
 
 ## Application in Data Engineering / Data Governance
 
-1. applying write scaling to solve specific tasks in write
-2. using write scaling in production systems for scaling
-3. integrating write scaling into data pipelines for process automation
+1. ETL processes in banking systems: processing millions of transactions per day
+2. Report generation in corporate systems: daily processing of web server logs
+3. Image processing in social networks: batch processing of uploaded photos
 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for Write Scaling]
+[Specific input data for write scaling]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
+...
 
 **Final Result:**
 [Specific result of the algorithm's work]
-
 
 ## Self-Check Questions
 

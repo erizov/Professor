@@ -130,3 +130,8 @@ Compare with alternatives
     Uses quantum algorithms to accelerate database operations like search, query processing, and data retrieval, potentially providing speedups for certain database queries.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Database - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Database)

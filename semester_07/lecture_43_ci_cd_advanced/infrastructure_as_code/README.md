@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_43_ci_cd_advanced/infrastructure_as_code/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_43_ci_cd_advanced/infrastructure_as_code/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_43_ci_cd_advanced/infrastructure_as_code/test_algorithm.py)
+
+
+## References
+
+- [Infrastructure as code](https://en.wikipedia.org/wiki/Infrastructure_as_code) - Wikipedia
+
+
+## Historical Context
+
+The IT infrastructure managed by this process comprises both physical equipment, such as bare-metal servers, as well as virtual machines, and associated configuration resources

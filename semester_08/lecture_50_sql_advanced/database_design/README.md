@@ -129,3 +129,8 @@ Compare with alternatives
 Creates efficient, normalized database schemas that model real-world entities and relationships, ensuring data integrity, minimizing redundancy, and optimizing for query performance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Database design](https://en.wikipedia.org/wiki/Database_design) - Wikipedia

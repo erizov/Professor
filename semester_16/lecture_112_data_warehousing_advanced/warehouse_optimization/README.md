@@ -119,3 +119,8 @@ Compare with alternatives
     Warehouse Optimization solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Warehouse Optimization - Wikipedia](https://en.wikipedia.org/wiki/Warehouse%20Optimization)

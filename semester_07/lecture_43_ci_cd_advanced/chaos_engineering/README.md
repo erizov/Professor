@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_43_ci_cd_advanced/chaos_engineering/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_43_ci_cd_advanced/chaos_engineering/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_43_ci_cd_advanced/chaos_engineering/test_algorithm.py)
+
+
+## References
+
+- [Chaos engineering](https://en.wikipedia.org/wiki/Chaos_engineering) - Wikipedia

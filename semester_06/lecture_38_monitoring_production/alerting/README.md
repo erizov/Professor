@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_38_monitoring_production/alerting/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_38_monitoring_production/alerting/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_38_monitoring_production/alerting/test_algorithm.py)
+
+
+## References
+
+- [Alerting system](https://en.wikipedia.org/wiki/Alerting_system) - Wikipedia

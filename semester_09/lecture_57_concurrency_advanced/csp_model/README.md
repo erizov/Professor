@@ -132,3 +132,8 @@ Compare with alternatives
     Models concurrent systems using independent sequential processes that communicate through synchronous message passing over channels, providing deterministic concurrency and avoiding shared state.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Csp Model - Wikipedia](https://en.wikipedia.org/wiki/Csp%20Model)

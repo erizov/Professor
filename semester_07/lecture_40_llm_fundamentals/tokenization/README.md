@@ -79,3 +79,17 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_40_llm_fundamentals/tokenization/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_40_llm_fundamentals/tokenization/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_40_llm_fundamentals/tokenization/test_algorithm.py)
+
+
+## References
+
+- [Tokenization](https://en.wikipedia.org/wiki/Tokenization) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups

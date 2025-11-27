@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_31_mlops/data_drift/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_31_mlops/data_drift/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_31_mlops/data_drift/test_algorithm.py)
+
+
+## References
+
+- [Concept drift](https://en.wikipedia.org/wiki/Concept_drift) - Wikipedia

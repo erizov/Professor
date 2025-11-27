@@ -119,3 +119,8 @@ Compare with alternatives
     Knowledge Base Ai solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Knowledge Base Ai - Wikipedia](https://en.wikipedia.org/wiki/Knowledge%20Base%20Ai)

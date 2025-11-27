@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_35_deployment_patterns/canary_ml/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_35_deployment_patterns/canary_ml/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_35_deployment_patterns/canary_ml/test_algorithm.py)
+
+
+## References
+
+- [Canary Ml - Wikipedia](https://en.wikipedia.org/wiki/Canary%20Ml)

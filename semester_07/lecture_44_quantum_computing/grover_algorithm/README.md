@@ -79,3 +79,20 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_44_quantum_computing/grover_algorithm/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_44_quantum_computing/grover_algorithm/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_44_quantum_computing/grover_algorithm/test_algorithm.py)
+
+
+## References
+
+- [Grover](https://en.wikipedia.org/wiki/Grover) - Wikipedia
+
+
+## Real-World Applications
+
+- Database indexing
+- File system organization
+
+- Database indexing
+- File system organization
+## Historical Context
+
+Grover was originally performed by Frank Oz from his earliest appearances

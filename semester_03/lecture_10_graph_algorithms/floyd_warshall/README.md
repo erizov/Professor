@@ -79,3 +79,9 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_10_graph_algorithms/floyd_warshall/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_10_graph_algorithms/floyd_warshall/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_10_graph_algorithms/floyd_warshall/test_algorithm.py)
+
+
+## References
+
+- [floyd_warshall - Programiz](https://www.programiz.com/dsa/floyd-warshall) - Programiz
+- [floyd_warshall - TutorialsPoint](https://www.tutorialspoint.com/data_structures_algorithms/floyd_warshall_algorithm.htm) - TutorialsPoint

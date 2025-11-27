@@ -1,56 +1,57 @@
-# Transactions
+# SQL Transactions
 
 ## Simple Explanation
 
-SQL Transactions is an algorithm used to solve specific problems in computer science.
-
+SQL Transactions is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying transactions to solve specific tasks in transactions;
-- using transactions in production systems for data processing;
-- integrating transactions into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of transactions:
+Consider a specific example of how sql transactions works:
 
-1. Data preparation: input data for transactions (specific format and structure)
-2. Algorithm application: sequence of steps of transactions to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the transactions algorithm do?
-2. In what situations is transactions used?
+1. What does the sql transactions algorithm do?
+2. In what situations is sql transactions used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does transactions handle edge cases?
-2. What are the advantages and disadvantages of transactions?
-3. Can the performance of transactions be improved?
+1. How does sql transactions handle edge cases?
+2. What are the advantages and disadvantages of sql transactions?
+3. Can the performance of sql transactions be improved?
 
 ### Advanced
 
-1. What is the time complexity of transactions?
-2. How does transactions work with large volumes of data?
-3. How can transactions be optimized?
+1. What is the time complexity of sql transactions?
+2. How does sql transactions work with large volumes of data?
+3. How can sql transactions be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the transactions algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the sql transactions algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the transactions algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the sql transactions algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the transactions algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the sql transactions algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

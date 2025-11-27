@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_21_transfer_learning/feature_extraction/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_21_transfer_learning/feature_extraction/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_21_transfer_learning/feature_extraction/test_algorithm.py)
+
+
+## References
+
+- [Feature engineering](https://en.wikipedia.org/wiki/Feature_engineering) - Wikipedia
+
+
+## Historical Context
+
+By providing models with relevant information, feature engineering significantly enhances their predictive accuracy and decision-making capability

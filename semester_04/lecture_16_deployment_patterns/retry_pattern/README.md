@@ -79,3 +79,16 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_16_deployment_patterns/retry_pattern/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_16_deployment_patterns/retry_pattern/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_16_deployment_patterns/retry_pattern/test_algorithm.py)
+
+
+## Historical Context
+
+Retry may refer to:Retrial, in which a person is retried in court for various reasons
+Retry, another term for a single play-turn in a video game
+Retry , a former 2014 video game developed by Rovio
+Part of the DOS error message, Abort, Retry, Fail?
+
+
+## References
+
+- [Retry](https://en.wikipedia.org/wiki/Retry) - Wikipedia

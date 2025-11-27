@@ -129,3 +129,8 @@ Compare with alternatives
     Protects database systems from unauthorized access, data breaches, and attacks through authentication, authorization, encryption, and security best practices.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Database security](https://en.wikipedia.org/wiki/Database_security) - Wikipedia

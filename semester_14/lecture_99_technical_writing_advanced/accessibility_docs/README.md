@@ -119,3 +119,8 @@ Compare with alternatives
     Accessibility Docs solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Accessibility Docs - Wikipedia](https://en.wikipedia.org/wiki/Accessibility%20Docs)

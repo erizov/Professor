@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_10_graph_algorithms/dijkstra/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_10_graph_algorithms/dijkstra/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_10_graph_algorithms/dijkstra/test_algorithm.py)
+
+
+## References
+
+- [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra) - Wikipedia

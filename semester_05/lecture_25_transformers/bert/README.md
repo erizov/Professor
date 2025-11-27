@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_25_transformers/bert/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_25_transformers/bert/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_25_transformers/bert/test_algorithm.py)
+
+
+## References
+
+- [Bert](https://en.wikipedia.org/wiki/Bert) - Wikipedia

@@ -1,56 +1,57 @@
-# Single Responsibility
+# Single Responsibility Principle
 
 ## Simple Explanation
 
-Single Responsibility Principle is an algorithm used to solve specific problems in computer science.
-
+Single Responsibility Principle is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying single responsibility to solve specific tasks in single;
-- using single responsibility in production systems for responsibility;
-- integrating single responsibility into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of single responsibility:
+Consider a specific example of how single responsibility principle works:
 
-1. Data preparation: input data for single responsibility (specific format and structure)
-2. Algorithm application: sequence of steps of single responsibility to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the single responsibility algorithm do?
-2. In what situations is single responsibility used?
+1. What does the single responsibility principle algorithm do?
+2. In what situations is single responsibility principle used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does single responsibility handle edge cases?
-2. What are the advantages and disadvantages of single responsibility?
-3. Can the performance of single responsibility be improved?
+1. How does single responsibility principle handle edge cases?
+2. What are the advantages and disadvantages of single responsibility principle?
+3. Can the performance of single responsibility principle be improved?
 
 ### Advanced
 
-1. What is the time complexity of single responsibility?
-2. How does single responsibility work with large volumes of data?
-3. How can single responsibility be optimized?
+1. What is the time complexity of single responsibility principle?
+2. How does single responsibility principle work with large volumes of data?
+3. How can single responsibility principle be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the single responsibility algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the single responsibility principle algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the single responsibility algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the single responsibility principle algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the single responsibility algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the single responsibility principle algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

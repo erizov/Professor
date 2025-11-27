@@ -130,3 +130,8 @@ Compare with alternatives
 Provides tools and frameworks for quantum optimization, enabling developers to formulate, solve, and optimize problems using quantum algorithms like QAOA and quantum annealing.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Optimization Tools - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Optimization%20Tools)

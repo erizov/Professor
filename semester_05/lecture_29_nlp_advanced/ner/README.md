@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_29_nlp_advanced/ner/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_29_nlp_advanced/ner/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_29_nlp_advanced/ner/test_algorithm.py)
+
+
+## References
+
+- [Ner](https://en.wikipedia.org/wiki/Ner) - Wikipedia

@@ -130,3 +130,8 @@ Compare with alternatives
 Automates compliance checks, validation, and reporting to ensure infrastructure and applications meet regulatory requirements and security standards continuously.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Compliance Automation - Wikipedia](https://en.wikipedia.org/wiki/Compliance%20Automation)

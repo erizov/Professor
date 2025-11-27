@@ -184,3 +184,8 @@ Avoid Semester 1 when:
 ### Benchmark Results
 
 *Note: Run benchmarks with your specific data and hardware to get accurate performance metrics.*
+
+
+## References
+
+- [Semester 01 - Wikipedia](https://en.wikipedia.org/wiki/Semester%2001)

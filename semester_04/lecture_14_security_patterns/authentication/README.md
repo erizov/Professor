@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_14_security_patterns/authentication/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_14_security_patterns/authentication/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_14_security_patterns/authentication/test_algorithm.py)
+
+
+## References
+
+- [Authentication](https://en.wikipedia.org/wiki/Authentication) - Wikipedia

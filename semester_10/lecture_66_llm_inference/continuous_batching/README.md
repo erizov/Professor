@@ -132,3 +132,8 @@ Compare with alternatives
     Dynamically adds and removes requests from an active batch during generation, allowing new requests to join and completed requests to exit without waiting for the entire batch to finish, maximizing GPU utilization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Continuous Batching - Wikipedia](https://en.wikipedia.org/wiki/Continuous%20Batching)

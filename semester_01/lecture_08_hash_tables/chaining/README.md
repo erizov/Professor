@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_08_hash_tables/chaining/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_08_hash_tables/chaining/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_08_hash_tables/chaining/test_algorithm.py)
+
+
+## References
+
+- [Chaining](https://en.wikipedia.org/wiki/Chaining) - Wikipedia

@@ -132,3 +132,8 @@ Compare with alternatives
     Optimizes the storage and retrieval of key-value (KV) cache in transformer inference to reduce memory usage and improve generation speed by efficiently caching and reusing computed attention keys and values.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Kv Cache Optimization - Wikipedia](https://en.wikipedia.org/wiki/Kv%20Cache%20Optimization)

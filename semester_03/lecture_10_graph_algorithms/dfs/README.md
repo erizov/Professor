@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_10_graph_algorithms/dfs/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_10_graph_algorithms/dfs/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_10_graph_algorithms/dfs/test_algorithm.py)
+
+
+## References
+
+- [DFS](https://en.wikipedia.org/wiki/DFS) - Wikipedia

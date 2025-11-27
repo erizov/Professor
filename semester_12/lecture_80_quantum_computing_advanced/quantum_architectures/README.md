@@ -130,3 +130,8 @@ Compare with alternatives
     Designs and implements hardware architectures for quantum computers, including qubit technologies, connectivity, control systems, and error correction integration.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Architectures - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Architectures)

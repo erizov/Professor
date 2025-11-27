@@ -129,3 +129,8 @@ Compare with alternatives
     Explains code functionality, purpose, and usage through comments, docstrings, and inline documentation, helping developers understand and maintain code effectively.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Software documentation](https://en.wikipedia.org/wiki/Software_documentation) - Wikipedia

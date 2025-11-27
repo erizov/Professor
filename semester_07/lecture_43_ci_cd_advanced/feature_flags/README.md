@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_43_ci_cd_advanced/feature_flags/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_43_ci_cd_advanced/feature_flags/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_43_ci_cd_advanced/feature_flags/test_algorithm.py)
+
+
+## References
+
+- [Feature toggle](https://en.wikipedia.org/wiki/Feature_toggle) - Wikipedia

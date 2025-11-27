@@ -132,3 +132,8 @@ Compare with alternatives
     An enhanced DPoS consensus mechanism with vote decay, proxy voting, flexible block production, and governance features for improved decentralization and efficiency.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Dpos Advanced - Wikipedia](https://en.wikipedia.org/wiki/Dpos%20Advanced)

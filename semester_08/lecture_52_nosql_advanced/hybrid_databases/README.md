@@ -128,3 +128,8 @@ Compare with alternatives
     Combines multiple database models (relational, document, graph, key-value) in a single system, enabling applications to use the best database type for each use case while maintaining unified access.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Hybrid Databases - Wikipedia](https://en.wikipedia.org/wiki/Hybrid%20Databases)

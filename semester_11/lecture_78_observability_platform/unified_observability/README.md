@@ -130,3 +130,8 @@ Compare with alternatives
 Provides a single, unified view of system observability by integrating metrics, logs, traces, and events into one platform, enabling efficient troubleshooting and comprehensive system understanding.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Unified Observability - Wikipedia](https://en.wikipedia.org/wiki/Unified%20Observability)

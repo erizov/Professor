@@ -119,3 +119,8 @@ Compare with alternatives
     Multimedia Docs solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Multimedia Docs - Wikipedia](https://en.wikipedia.org/wiki/Multimedia%20Docs)

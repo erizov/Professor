@@ -130,3 +130,8 @@ Compare with alternatives
     Extends quantum communication distance by creating entanglement between distant nodes through intermediate nodes, enabling long-distance quantum communication and quantum networks.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Repeaters - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Repeaters)

@@ -130,3 +130,8 @@ Compare with alternatives
     Securely stores, manages, and distributes sensitive information (passwords, API keys, certificates, tokens) to applications, preventing secrets from being exposed in code or configuration files.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Secrets Management - Wikipedia](https://en.wikipedia.org/wiki/Secrets%20Management)

@@ -129,3 +129,8 @@ Compare with alternatives
     Provides step-by-step instructions and explanations to help end users learn and use software applications effectively, reducing support burden and improving user satisfaction.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [User Guides - Wikipedia](https://en.wikipedia.org/wiki/User%20Guides)

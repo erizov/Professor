@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_22_cnn_architectures/inception/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_22_cnn_architectures/inception/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_22_cnn_architectures/inception/test_algorithm.py)
+
+
+## References
+
+- [Inception](https://en.wikipedia.org/wiki/Inception) - Wikipedia
+
+
+## Historical Context
+
+Inception is a 2010 science fiction action film written and directed by Christopher Nolan, who also produced it with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets

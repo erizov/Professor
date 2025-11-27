@@ -130,3 +130,8 @@ Compare with alternatives
     Provides centralized portals where developers can discover, access, and manage services, APIs, documentation, and tools, improving developer productivity and self-service capabilities.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Developer Portals - Wikipedia](https://en.wikipedia.org/wiki/Developer%20Portals)

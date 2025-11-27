@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_20_monitoring_observability/metrics_collection/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_20_monitoring_observability/metrics_collection/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_20_monitoring_observability/metrics_collection/test_algorithm.py)
+
+
+## References
+
+- [Metrics Collection - Wikipedia](https://en.wikipedia.org/wiki/Metrics%20Collection)

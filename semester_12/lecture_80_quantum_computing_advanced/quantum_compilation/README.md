@@ -130,3 +130,8 @@ Compare with alternatives
     Compiles high-level quantum algorithms into optimized, hardware-specific quantum circuits that can be executed on quantum computers, optimizing for gate count, depth, and fidelity.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Compilation - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Compilation)

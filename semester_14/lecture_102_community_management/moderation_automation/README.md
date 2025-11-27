@@ -130,3 +130,8 @@ Compare with alternatives
     Automated systems that use AI and rules to moderate community content and behavior, maintaining quality at scale.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Moderation Automation - Wikipedia](https://en.wikipedia.org/wiki/Moderation%20Automation)

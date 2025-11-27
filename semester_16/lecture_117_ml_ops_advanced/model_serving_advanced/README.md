@@ -119,3 +119,8 @@ Compare with alternatives
     Model Serving Advanced solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Model Serving Advanced - Wikipedia](https://en.wikipedia.org/wiki/Model%20Serving%20Advanced)

@@ -119,3 +119,8 @@ Compare with alternatives
     Data Quality Frameworks solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data Quality Frameworks - Wikipedia](https://en.wikipedia.org/wiki/Data%20Quality%20Frameworks)

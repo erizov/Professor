@@ -119,3 +119,8 @@ Compare with alternatives
     Incident Correlation solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Incident Correlation - Wikipedia](https://en.wikipedia.org/wiki/Incident%20Correlation)

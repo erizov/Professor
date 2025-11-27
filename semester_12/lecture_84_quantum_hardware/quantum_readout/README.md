@@ -130,3 +130,8 @@ Compare with alternatives
     Reads out quantum states by measuring qubits, converting quantum information into classical information, enabling extraction of results from quantum computations.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum readout](https://en.wikipedia.org/wiki/Quantum_readout) - Wikipedia

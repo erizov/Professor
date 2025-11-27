@@ -130,3 +130,8 @@ Compare with alternatives
     Characterizes quantum hardware properties like gate fidelities, coherence times, and error rates, providing detailed understanding of quantum system performance and limitations.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Characterization - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Characterization)

@@ -119,3 +119,8 @@ Compare with alternatives
     Index Strategies solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Index Strategies - Wikipedia](https://en.wikipedia.org/wiki/Index%20Strategies)

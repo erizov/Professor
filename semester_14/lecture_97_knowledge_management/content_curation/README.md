@@ -119,3 +119,13 @@ Compare with alternatives
     Content Curation solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Content curation](https://en.wikipedia.org/wiki/Content_curation) - Wikipedia
+
+
+## Historical Context
+
+Curation services can be used by businesses as well as end users

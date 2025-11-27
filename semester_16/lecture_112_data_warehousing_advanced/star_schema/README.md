@@ -119,3 +119,8 @@ Compare with alternatives
     Star Schema solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Star schema](https://en.wikipedia.org/wiki/Star_schema) - Wikipedia

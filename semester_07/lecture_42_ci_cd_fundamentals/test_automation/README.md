@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/test_automation/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/test_automation/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_42_ci_cd_fundamentals/test_automation/test_algorithm.py)
+
+
+## References
+
+- [Test automation](https://en.wikipedia.org/wiki/Test_automation) - Wikipedia

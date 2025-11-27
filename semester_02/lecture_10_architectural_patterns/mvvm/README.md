@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_10_architectural_patterns/mvvm/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_10_architectural_patterns/mvvm/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_10_architectural_patterns/mvvm/test_algorithm.py)
+
+
+## References
+
+- [Mvvm - Wikipedia](https://en.wikipedia.org/wiki/Mvvm)

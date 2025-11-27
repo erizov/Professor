@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_30_time_series/lstm_timeseries/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_30_time_series/lstm_timeseries/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_30_time_series/lstm_timeseries/test_algorithm.py)
+
+
+## References
+
+- [Lstm Timeseries - Wikipedia](https://en.wikipedia.org/wiki/Lstm%20Timeseries)

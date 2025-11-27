@@ -1,56 +1,57 @@
-# Hybrid Search
+# Hybrid Search for RAG
 
 ## Simple Explanation
 
-Hybrid Search for RAG is an algorithm used to solve specific problems in computer science.
-
+Hybrid Search for RAG is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying hybrid search to solve specific tasks in hybrid;
-- using hybrid search in production systems for search;
-- integrating hybrid search into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of hybrid search:
+Consider a specific example of how hybrid search for rag works:
 
-1. Data preparation: input data for hybrid search (specific format and structure)
-2. Algorithm application: sequence of steps of hybrid search to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the hybrid search algorithm do?
-2. In what situations is hybrid search used?
+1. What does the hybrid search for rag algorithm do?
+2. In what situations is hybrid search for rag used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does hybrid search handle edge cases?
-2. What are the advantages and disadvantages of hybrid search?
-3. Can the performance of hybrid search be improved?
+1. How does hybrid search for rag handle edge cases?
+2. What are the advantages and disadvantages of hybrid search for rag?
+3. Can the performance of hybrid search for rag be improved?
 
 ### Advanced
 
-1. What is the time complexity of hybrid search?
-2. How does hybrid search work with large volumes of data?
-3. How can hybrid search be optimized?
+1. What is the time complexity of hybrid search for rag?
+2. How does hybrid search for rag work with large volumes of data?
+3. How can hybrid search for rag be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the hybrid search algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the hybrid search for rag algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the hybrid search algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the hybrid search for rag algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the hybrid search algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the hybrid search for rag algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

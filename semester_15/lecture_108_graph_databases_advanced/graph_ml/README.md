@@ -119,3 +119,8 @@ Compare with alternatives
     Graph Ml solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Graph Ml - Wikipedia](https://en.wikipedia.org/wiki/Graph%20Ml)

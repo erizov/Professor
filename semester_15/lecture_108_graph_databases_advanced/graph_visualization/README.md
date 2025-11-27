@@ -119,3 +119,23 @@ Compare with alternatives
     Graph Visualization solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Graph drawing](https://en.wikipedia.org/wiki/Graph_drawing) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation

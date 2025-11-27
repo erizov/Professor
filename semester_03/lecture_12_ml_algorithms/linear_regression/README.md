@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_12_ml_algorithms/linear_regression/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_12_ml_algorithms/linear_regression/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_12_ml_algorithms/linear_regression/test_algorithm.py)
+
+
+## References
+
+- [Linear regression](https://en.wikipedia.org/wiki/Linear_regression) - Wikipedia

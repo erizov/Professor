@@ -130,3 +130,8 @@ Compare with alternatives
 Calibrates quantum hardware to optimize gate fidelities, reduce errors, and maintain system performance, ensuring quantum computers operate at peak performance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Calibration - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Calibration)

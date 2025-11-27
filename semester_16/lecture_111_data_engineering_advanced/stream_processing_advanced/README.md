@@ -119,3 +119,8 @@ Compare with alternatives
     Stream Processing Advanced solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Stream Processing Advanced - Wikipedia](https://en.wikipedia.org/wiki/Stream%20Processing%20Advanced)

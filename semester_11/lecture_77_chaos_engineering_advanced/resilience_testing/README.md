@@ -130,3 +130,8 @@ Compare with alternatives
     Tests system resilience by subjecting systems to various failure conditions and measuring their ability to maintain functionality, recover, and degrade gracefully.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Resilience Testing - Wikipedia](https://en.wikipedia.org/wiki/Resilience%20Testing)

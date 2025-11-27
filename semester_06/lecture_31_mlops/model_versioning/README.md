@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_31_mlops/model_versioning/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_31_mlops/model_versioning/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_31_mlops/model_versioning/test_algorithm.py)
+
+
+## References
+
+- [Model Versioning - Wikipedia](https://en.wikipedia.org/wiki/Model%20Versioning)

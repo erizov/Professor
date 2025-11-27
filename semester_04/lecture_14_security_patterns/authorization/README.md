@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_14_security_patterns/authorization/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_14_security_patterns/authorization/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_14_security_patterns/authorization/test_algorithm.py)
+
+
+## References
+
+- [Authorization](https://en.wikipedia.org/wiki/Authorization) - Wikipedia
+
+
+## Historical Context
+
+Examples of resources include individual files or an item's data, computer programs, computer devices and functionality provided by computer applications

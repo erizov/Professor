@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Cross Chain Bridges is an algorithm used to solve specific problems in computer science.
-
+Cross Chain Bridges is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying cross chain bridges to solve specific tasks in cross;
-- using cross chain bridges in production systems for bridges;
-- integrating cross chain bridges into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of cross chain bridges:
+Consider a specific example of how cross chain bridges works:
 
-1. Data preparation: input data for cross chain bridges (specific format and structure)
-2. Algorithm application: sequence of steps of cross chain bridges to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

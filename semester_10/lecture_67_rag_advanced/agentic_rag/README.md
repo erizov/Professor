@@ -132,3 +132,8 @@ Compare with alternatives
     Enhances RAG systems with autonomous agents that can plan, reason, and iteratively retrieve and process information to answer complex queries, enabling multi-step reasoning and dynamic information gathering.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Agentic Rag - Wikipedia](https://en.wikipedia.org/wiki/Agentic%20Rag)

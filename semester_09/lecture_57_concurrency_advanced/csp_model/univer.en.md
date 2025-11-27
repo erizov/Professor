@@ -1,65 +1,75 @@
-# Csp Model
+# Communicating Sequential Processes (CSP)
 
 **Algorithm:** csp_model  
 **Discipline:** Computer Science
 
 ## Algorithm Definition
 
-Communicating Sequential Processes (CSP) is an algorithm used to solve specific problems in computer science.
-
+Communicating Sequential Processes (CSP) is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
 
 ## Technical Description
 
-Communicating Sequential Processes (CSP) works by processing data sequentially according to specific rules and algorithms.
+### What the Algorithm Does
 
+Communicating Sequential Processes (CSP) is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
+
+**Key Steps:**
+1. Data input and validation
+2. Algorithm execution
+3. Result processing and output
+
+**Key Data Structures:**
+- Arrays or lists for data storage
+- Variables for intermediate results
+- Control structures for flow management
 
 ## Application in Computer Science
 
-1. applying csp model to solve specific tasks in csp
-2. using csp model in production systems for model
-3. integrating csp model into data pipelines for process automation
+1. Data classification: applying the algorithm to predict object categories based on features
+2. Regression analysis: building a model to predict continuous values
+3. Clustering: grouping similar objects without prior labels
 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for Communicating Sequential Processes (CSP)]
+[Specific input data for communicating sequential processes (csp)]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
+...
 
 **Final Result:**
 [Specific result of the algorithm's work]
-
 
 ## Self-Check Questions
 
 ### Basic Level
 
-1. Describe the main stages of the csp model algorithm. What data structures are used?
-2. What are the time and space complexity of csp model? Justify your answer.
+1. Describe the main stages of the communicating sequential processes (csp) algorithm. What data structures are used?
+2. What are the time and space complexity of communicating sequential processes (csp)? Justify your answer.
 
 ### Intermediate Level
 
-1. In what cases is the csp model algorithm most effective? When is its use not advisable?
-2. How can csp model be optimized? Suggest specific improvements.
+1. In what cases is the communicating sequential processes (csp) algorithm most effective? When is its use not advisable?
+2. How can communicating sequential processes (csp) be optimized? Suggest specific improvements.
 
 ### Advanced Level
 
-1. Compare csp model with alternative approaches. Under what conditions is each preferable?
-2. Analyze edge cases and implementation errors of csp model. How to ensure algorithm correctness?
+1. Compare communicating sequential processes (csp) with alternative approaches. Under what conditions is each preferable?
+2. Analyze edge cases and implementation errors of communicating sequential processes (csp). How to ensure algorithm correctness?
 
 ## Practical Tasks
 
 ### Level 1 — Basic
 
-Implement a basic version of the csp model algorithm in a programming language. Add edge case handling and tests.
+Implement a basic version of the communicating sequential processes (csp) algorithm in a programming language. Add edge case handling and tests.
 
 ### Level 2 — Applied
 
-Create a full implementation of csp model with error handling, logging, and testing. Apply to real data and analyze results.
+Create a full implementation of communicating sequential processes (csp) with error handling, logging, and testing. Apply to real data and analyze results.
 
 ### Level 3 — Research
 
-Conduct a research analysis of csp model: compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
+Conduct a research analysis of communicating sequential processes (csp): compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
 

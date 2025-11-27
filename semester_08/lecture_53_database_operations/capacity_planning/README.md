@@ -129,3 +129,13 @@ Compare with alternatives
     Forecasts future database resource requirements (storage, compute, memory) based on growth trends and usage patterns, ensuring adequate capacity to meet future needs.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Capacity planning](https://en.wikipedia.org/wiki/Capacity_planning) - Wikipedia
+
+
+## Historical Context
+
+Capacity planning is the process of determining the production capacity needed by an organization to meet changing demands for its products

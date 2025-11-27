@@ -130,3 +130,8 @@ Compare with alternatives
     Collects, centralizes, indexes, and analyzes logs from multiple distributed services, enabling search, correlation, and real-time analysis of application and system logs.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Log Aggregation Advanced - Wikipedia](https://en.wikipedia.org/wiki/Log%20Aggregation%20Advanced)

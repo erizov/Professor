@@ -119,3 +119,8 @@ Compare with alternatives
     Data Collaboration solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data conferencing](https://en.wikipedia.org/wiki/Data_conferencing) - Wikipedia

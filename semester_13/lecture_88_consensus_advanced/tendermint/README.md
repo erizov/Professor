@@ -130,3 +130,8 @@ Compare with alternatives
 Implements Tendermint consensus algorithm, a Byzantine fault-tolerant consensus protocol designed for blockchains, providing fast finality and high throughput with a focus on application-agnostic consensus.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Tendermint - Wikipedia](https://en.wikipedia.org/wiki/Tendermint)

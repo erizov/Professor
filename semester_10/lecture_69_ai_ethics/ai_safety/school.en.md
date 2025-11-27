@@ -1,24 +1,25 @@
-# Ai Safety
+# AI Safety
 
 ## Simple Explanation
 
-AI Safety is an algorithm used to solve specific problems in computer science.
-
+AI Safety is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying ai safety to solve specific tasks in ai;
-- using ai safety in production systems for safety;
-- integrating ai safety into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of ai safety:
+Consider a specific example of how ai safety works:
 
-1. Data preparation: input data for ai safety (specific format and structure)
-2. Algorithm application: sequence of steps of ai safety to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

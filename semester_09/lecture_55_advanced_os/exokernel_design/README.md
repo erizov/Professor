@@ -128,3 +128,8 @@ Compare with alternatives
 Minimizes kernel functionality to provide only hardware abstraction and resource protection, allowing applications to implement their own OS abstractions for maximum performance and flexibility.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Exokernel Design - Wikipedia](https://en.wikipedia.org/wiki/Exokernel%20Design)

@@ -1,56 +1,57 @@
-# Query Expansion
+# Query Expansion for RAG
 
 ## Simple Explanation
 
-Query Expansion for RAG is an algorithm used to solve specific problems in computer science.
-
+Query Expansion for RAG is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying query expansion to solve specific tasks in query;
-- using query expansion in production systems for expansion;
-- integrating query expansion into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of query expansion:
+Consider a specific example of how query expansion for rag works:
 
-1. Data preparation: input data for query expansion (specific format and structure)
-2. Algorithm application: sequence of steps of query expansion to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the query expansion algorithm do?
-2. In what situations is query expansion used?
+1. What does the query expansion for rag algorithm do?
+2. In what situations is query expansion for rag used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does query expansion handle edge cases?
-2. What are the advantages and disadvantages of query expansion?
-3. Can the performance of query expansion be improved?
+1. How does query expansion for rag handle edge cases?
+2. What are the advantages and disadvantages of query expansion for rag?
+3. Can the performance of query expansion for rag be improved?
 
 ### Advanced
 
-1. What is the time complexity of query expansion?
-2. How does query expansion work with large volumes of data?
-3. How can query expansion be optimized?
+1. What is the time complexity of query expansion for rag?
+2. How does query expansion for rag work with large volumes of data?
+3. How can query expansion for rag be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the query expansion algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the query expansion for rag algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the query expansion algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the query expansion for rag algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the query expansion algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the query expansion for rag algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

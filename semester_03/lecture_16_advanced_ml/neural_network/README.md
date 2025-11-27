@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_16_advanced_ml/neural_network/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_16_advanced_ml/neural_network/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_16_advanced_ml/neural_network/test_algorithm.py)
+
+
+## References
+
+- [Neural network](https://en.wikipedia.org/wiki/Neural_network) - Wikipedia
+
+
+## Historical Context
+
+In neuroscience, a biological neural network is a physical structure found in brains and complex nervous systems – a population of nerve cells connected by synapses

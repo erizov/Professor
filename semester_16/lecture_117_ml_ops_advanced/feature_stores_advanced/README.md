@@ -119,3 +119,8 @@ Compare with alternatives
     Feature Stores Advanced solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Feature Stores Advanced - Wikipedia](https://en.wikipedia.org/wiki/Feature%20Stores%20Advanced)

@@ -130,3 +130,8 @@ Compare with alternatives
     Implements liquidity pools, reserves of token pairs locked in smart contracts that provide liquidity for decentralized exchanges and enable automated trading through AMMs.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Liquidity Pools - Wikipedia](https://en.wikipedia.org/wiki/Liquidity%20Pools)

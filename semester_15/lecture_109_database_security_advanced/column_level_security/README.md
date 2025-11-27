@@ -119,3 +119,8 @@ Compare with alternatives
     Column Level Security solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data control language](https://en.wikipedia.org/wiki/Data_control_language) - Wikipedia

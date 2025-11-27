@@ -130,3 +130,8 @@ Compare with alternatives
     Techniques for identifying unusual patterns and suspicious activities in blockchain transactions to detect fraud, attacks, and security threats.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Anomaly Detection Blockchain - Wikipedia](https://en.wikipedia.org/wiki/Anomaly%20Detection%20Blockchain)

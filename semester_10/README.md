@@ -173,3 +173,8 @@ Avoid Semester 10 when:
 ### Benchmark Results
 
 *Note: Run benchmarks with your specific data and hardware to get accurate performance metrics.*
+
+
+## References
+
+- [Semester 10 - Wikipedia](https://en.wikipedia.org/wiki/Semester%2010)

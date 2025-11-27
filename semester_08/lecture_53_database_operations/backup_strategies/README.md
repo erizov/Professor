@@ -128,3 +128,8 @@ Compare with alternatives
 30-second explanation (your own words)  
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Backup Strategies - Wikipedia](https://en.wikipedia.org/wiki/Backup%20Strategies)

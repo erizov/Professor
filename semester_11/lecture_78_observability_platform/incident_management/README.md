@@ -132,3 +132,13 @@ Compare with alternatives
     Manages the lifecycle of incidents from detection through resolution, coordinating response, communication, and post-incident analysis to minimize impact and improve system reliability.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Incident management](https://en.wikipedia.org/wiki/Incident_management) - Wikipedia
+
+
+## Historical Context
+
+These incidents within a structured organization are normally dealt with by either an incident response team (IRT), an incident management team (IMT), or Incident Command System (ICS)

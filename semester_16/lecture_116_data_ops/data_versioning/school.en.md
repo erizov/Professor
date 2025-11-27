@@ -2,26 +2,24 @@
 
 ## Simple Explanation
 
-Data Versioning is an algorithm used to solve specific problems in computer science.
-
+Data Versioning is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- tracking dataset versions in ML pipelines with DVC or Git LFS;
-- managing data versions for experiment reproducibility;
-- controlling schema and metadata changes;
-- versioning machine learning models;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Example of data versioning:
+Consider a specific example of how data versioning works:
 
-1. Repository initialization: creating DVC repository to track dataset versions
-2. Adding data: uploading dataset train.csv (10000 rows, version v1.0) to DVC storage
-3. Committing version: saving version metadata in Git with data hash and metadata (size, schema, date)
-4. Data changes: updating dataset to v1.1 (12000 rows, added 'category' field)
-5. Version comparison: analyzing differences between v1.0 and v1.1 (changes in size, schema, distribution)
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

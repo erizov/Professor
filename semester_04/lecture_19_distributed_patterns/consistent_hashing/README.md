@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_19_distributed_patterns/consistent_hashing/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_19_distributed_patterns/consistent_hashing/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_19_distributed_patterns/consistent_hashing/test_algorithm.py)
+
+
+## References
+
+- [Consistent hashing](https://en.wikipedia.org/wiki/Consistent_hashing) - Wikipedia
+
+
+## Historical Context
+
+In contrast, in most traditional hash tables, a change in the number of array slots causes nearly all keys to be remapped because the mapping between the keys and the slots is defined by a modular operation

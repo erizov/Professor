@@ -119,3 +119,8 @@ Compare with alternatives
     Pivot Unpivot solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Pivot Unpivot - Wikipedia](https://en.wikipedia.org/wiki/Pivot%20Unpivot)

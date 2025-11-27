@@ -90,3 +90,17 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_04_searching/binary_search/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_04_searching/binary_search/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_04_searching/binary_search/test_algorithm.py)
+
+
+## References
+
+- [Binary search](https://en.wikipedia.org/wiki/Binary_search) - Wikipedia
+
+
+## Real-World Applications
+
+- Database query optimization
+- Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling

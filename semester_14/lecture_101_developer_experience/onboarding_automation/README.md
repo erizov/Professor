@@ -130,3 +130,8 @@ Compare with alternatives
     Automated systems that guide developers through setup, configuration, and learning to reduce onboarding time and improve success rates.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Onboarding Automation - Wikipedia](https://en.wikipedia.org/wiki/Onboarding%20Automation)

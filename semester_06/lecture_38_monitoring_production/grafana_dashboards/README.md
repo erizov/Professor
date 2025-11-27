@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_38_monitoring_production/grafana_dashboards/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_38_monitoring_production/grafana_dashboards/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_38_monitoring_production/grafana_dashboards/test_algorithm.py)
+
+
+## References
+
+- [Grafana Dashboards - Wikipedia](https://en.wikipedia.org/wiki/Grafana%20Dashboards)

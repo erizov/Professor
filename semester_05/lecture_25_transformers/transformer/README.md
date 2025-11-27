@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_25_transformers/transformer/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_25_transformers/transformer/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_25_transformers/transformer/test_algorithm.py)
+
+
+## References
+
+- [Transformer](https://en.wikipedia.org/wiki/Transformer) - Wikipedia
+
+
+## Historical Context
+
+Faraday's law of induction, discovered in 1831, describes the induced voltage effect in any coil due to a changing magnetic flux encircled by the coil

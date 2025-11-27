@@ -132,3 +132,8 @@ Compare with alternatives
     Provides a single entry point for client requests to multiple backend services, handling routing, authentication, rate limiting, and other cross-cutting concerns, simplifying client interactions and service management.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Api Gateway - Wikipedia](https://en.wikipedia.org/wiki/Api%20Gateway)

@@ -119,3 +119,13 @@ Compare with alternatives
     Data Masking solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data masking](https://en.wikipedia.org/wiki/Data_masking) - Wikipedia
+
+
+## Historical Context
+
+Data masking or data obfuscation is the process of modifying sensitive data in such a way that it is of no or little value to unauthorized intruders while still being usable by software or authorized personnel

@@ -2,23 +2,17 @@
 
 ## Simple Explanation
 
-Algorand is an algorithm used to solve specific problems in computer science.
-
+Algorand is a proof-of-stake blockchain and cryptocurrency. Algorand's native cryptocurrency is called ALGO.
 
 ## Where It's Used
 
-- applying algorand to solve specific tasks in algorand;
-- using algorand in production systems for data processing;
-- integrating algorand into data pipelines for process automation;
+- Algorand powers introductory CS labs focused on reasoning about data.
+- Instructors rely on Algorand when demonstrating how to move from theory to working code.
+- Algorand appears in interview warm-ups and foundational assignments.
 
 ## Example
 
-Specific example of algorand:
-
-1. Data preparation: input data for algorand (specific format and structure)
-2. Algorithm application: sequence of steps of algorand to process data
-3. Result: specific result of algorithm work with interpretation
-
+Algorand powers introductory CS labs focused on reasoning about data.
 
 ## Self-Check Questions
 
@@ -44,13 +38,18 @@ Specific example of algorand:
 
 ### Level 1 (Easy)
 
+(Easy)
+
 Perform a simple operation with the algorand algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
+
+(Medium)
 
 Apply the algorand algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the algorand algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+(Advanced)
 
+Write an implementation of the algorand algorithm in a programming language. Add error handling, input validation, tests, and documentation.

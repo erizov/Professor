@@ -129,3 +129,8 @@ Compare with alternatives
     Defines systematic process for routing unresolved or complex support issues to appropriate personnel or teams, ensuring timely resolution and proper handling of critical problems.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Escalation Procedures - Wikipedia](https://en.wikipedia.org/wiki/Escalation%20Procedures)

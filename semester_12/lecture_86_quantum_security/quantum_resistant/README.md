@@ -130,3 +130,8 @@ Compare with alternatives
     Implements quantum-resistant cryptographic algorithms and systems that remain secure against attacks from both classical and quantum computers, ensuring long-term security.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Resistant - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Resistant)

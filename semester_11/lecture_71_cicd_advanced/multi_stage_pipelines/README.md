@@ -132,3 +132,8 @@ Compare with alternatives
     Organizes CI/CD workflows into multiple sequential stages (build, test, deploy) with dependencies and gates between stages, enabling controlled, phased deployments and better pipeline organization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Multi Stage Pipelines - Wikipedia](https://en.wikipedia.org/wiki/Multi%20Stage%20Pipelines)

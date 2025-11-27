@@ -84,3 +84,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_11_dynamic_programming/knapsack/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_11_dynamic_programming/knapsack/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_11_dynamic_programming/knapsack/test_algorithm.py)
+
+
+## References
+
+- [Backpack](https://en.wikipedia.org/wiki/Backpack) - Wikipedia

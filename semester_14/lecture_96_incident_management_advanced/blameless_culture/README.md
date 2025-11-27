@@ -130,3 +130,8 @@ Compare with alternatives
     Culture and processes that focus on learning from incidents through blameless postmortems rather than assigning blame, promoting improvement and prevention.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Blameless Culture - Wikipedia](https://en.wikipedia.org/wiki/Blameless%20Culture)

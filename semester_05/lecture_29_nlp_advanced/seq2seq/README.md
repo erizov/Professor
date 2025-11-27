@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_29_nlp_advanced/seq2seq/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_29_nlp_advanced/seq2seq/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_29_nlp_advanced/seq2seq/test_algorithm.py)
+
+
+## Historical Context
+
+Seq2seq is a family of machine learning approaches used for natural language processing.Originally developed by Dr. Lê Viết Quốc, a Vietnamese computer scientist and a machine learning pioneer at Google Brain, this framework has become foundational in many modern AI systems. Applications include lan
+
+
+## References
+
+- [Seq2seq](https://en.wikipedia.org/wiki/Seq2seq) - Wikipedia

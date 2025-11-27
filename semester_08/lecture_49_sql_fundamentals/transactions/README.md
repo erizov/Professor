@@ -125,3 +125,8 @@ Compare with alternatives
     Group related statements so they behave as a single all-or-nothing change, ensuring ACID guarantees.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Transaction](https://en.wikipedia.org/wiki/Transaction) - Wikipedia

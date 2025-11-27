@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_07_creational_patterns/abstract_factory/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_07_creational_patterns/abstract_factory/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_07_creational_patterns/abstract_factory/test_algorithm.py)
+
+
+## References
+
+- [Abstract factory pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern) - Wikipedia
+
+
+## Historical Context
+
+The abstract factory pattern in software engineering is a design pattern that provides a way to create families of related objects without imposing their concrete classes, by encapsulating a group of individual factories that have a common theme without specifying their concrete classes

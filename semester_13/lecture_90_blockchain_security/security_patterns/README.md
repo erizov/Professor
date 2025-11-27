@@ -130,3 +130,8 @@ Compare with alternatives
     Implements proven security patterns and best practices for smart contract development, providing reusable solutions to common security problems and vulnerabilities.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Security Patterns - Wikipedia](https://en.wikipedia.org/wiki/Security%20Patterns)

@@ -132,3 +132,8 @@ Compare with alternatives
     Executes code in stateless functions that are triggered by events, automatically managing infrastructure, scaling, and resource allocation, enabling serverless computing.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Function As Service - Wikipedia](https://en.wikipedia.org/wiki/Function%20As%20Service)

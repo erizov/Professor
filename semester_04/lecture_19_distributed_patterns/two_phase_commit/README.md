@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_19_distributed_patterns/two_phase_commit/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_19_distributed_patterns/two_phase_commit/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_19_distributed_patterns/two_phase_commit/test_algorithm.py)
+
+
+## References
+
+- [Two-phase commit protocol](https://en.wikipedia.org/wiki/Two-phase_commit_protocol) - Wikipedia
+
+
+## Historical Context
+
+Log records, which are typically slow to generate but survive failures, are used by the protocol's recovery procedures. Though usually intended to be used infrequently, recovery procedures compose a substantial portion of the protocol, due to many possible failure scenarios to be considered and supported by the protocol

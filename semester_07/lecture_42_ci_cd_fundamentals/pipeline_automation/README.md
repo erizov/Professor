@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/pipeline_automation/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/pipeline_automation/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_42_ci_cd_fundamentals/pipeline_automation/test_algorithm.py)
+
+
+## References
+
+- [Pipeline Automation - Wikipedia](https://en.wikipedia.org/wiki/Pipeline%20Automation)

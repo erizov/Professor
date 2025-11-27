@@ -132,3 +132,8 @@ Compare with alternatives
 Monitors application performance in real-time, tracking response times, throughput, error rates, and resource usage to identify performance bottlenecks and optimize application behavior.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [APM](https://en.wikipedia.org/wiki/APM) - Wikipedia

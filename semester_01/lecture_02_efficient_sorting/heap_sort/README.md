@@ -107,3 +107,17 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_02_efficient_sorting/heap_sort/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_02_efficient_sorting/heap_sort/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_02_efficient_sorting/heap_sort/test_algorithm.py)
+
+
+## References
+
+- [Heapsort](https://en.wikipedia.org/wiki/Heapsort) - Wikipedia
+
+
+## Real-World Applications
+
+- Database query optimization
+- Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling

@@ -119,3 +119,8 @@ Compare with alternatives
     Lakehouse Architecture solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Lakehouse Architecture - Wikipedia](https://en.wikipedia.org/wiki/Lakehouse%20Architecture)

@@ -130,3 +130,8 @@ Compare with alternatives
     Defines standardized interfaces and metadata formats for non-fungible tokens (NFTs), enabling interoperability, composability, and consistent behavior across NFT marketplaces and applications.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Nft Standards - Wikipedia](https://en.wikipedia.org/wiki/Nft%20Standards)

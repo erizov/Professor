@@ -119,3 +119,8 @@ Compare with alternatives
     Migration Strategies solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Migration Strategies - Wikipedia](https://en.wikipedia.org/wiki/Migration%20Strategies)

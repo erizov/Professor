@@ -79,3 +79,17 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_30_time_series/arima/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_30_time_series/arima/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_30_time_series/arima/test_algorithm.py)
+
+
+## References
+
+- [Arima](https://en.wikipedia.org/wiki/Arima) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation

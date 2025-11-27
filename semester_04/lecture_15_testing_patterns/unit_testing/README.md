@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_15_testing_patterns/unit_testing/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_15_testing_patterns/unit_testing/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_15_testing_patterns/unit_testing/test_algorithm.py)
+
+
+## References
+
+- [Unit testing](https://en.wikipedia.org/wiki/Unit_testing) - Wikipedia
+
+
+## Historical Context
+
+component or module testing, is a form of software testing by which isolated source code is tested to validate expected behavior

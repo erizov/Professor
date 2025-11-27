@@ -130,3 +130,8 @@ Compare with alternatives
 Tools and systems that ensure blockchain transactions and entities comply with regulatory requirements through KYC/AML checks and transaction monitoring.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Compliance Tools - Wikipedia](https://en.wikipedia.org/wiki/Compliance%20Tools)

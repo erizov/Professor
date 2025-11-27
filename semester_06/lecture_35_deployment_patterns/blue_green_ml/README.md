@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_35_deployment_patterns/blue_green_ml/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_35_deployment_patterns/blue_green_ml/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_35_deployment_patterns/blue_green_ml/test_algorithm.py)
+
+
+## References
+
+- [Blue Green Ml - Wikipedia](https://en.wikipedia.org/wiki/Blue%20Green%20Ml)

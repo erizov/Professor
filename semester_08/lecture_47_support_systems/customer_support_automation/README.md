@@ -128,3 +128,8 @@ Compare with alternatives
     Automates customer support processes using AI, chatbots, and automated workflows to handle common inquiries, route tickets, and provide instant responses, reducing response time and support costs.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Customer Support Automation - Wikipedia](https://en.wikipedia.org/wiki/Customer%20Support%20Automation)

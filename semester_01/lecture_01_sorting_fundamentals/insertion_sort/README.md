@@ -107,3 +107,20 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_01_sorting_fundamentals/insertion_sort/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_01_sorting_fundamentals/insertion_sort/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_01_sorting_fundamentals/insertion_sort/test_algorithm.py)
+
+
+## References
+
+- [Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) - Wikipedia
+
+
+## Real-World Applications
+
+- Database query optimization
+- Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling
+## Historical Context
+
+Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time by comparisons

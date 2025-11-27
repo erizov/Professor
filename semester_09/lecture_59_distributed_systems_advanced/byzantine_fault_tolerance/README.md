@@ -132,3 +132,13 @@ Compare with alternatives
     Enables distributed systems to reach consensus and maintain correctness even when some nodes are Byzantine (arbitrarily faulty, malicious, or compromised), tolerating up to f faulty nodes in a system of 3f+1 nodes.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## Historical Context
+
+A Byzantine fault is a condition of a system, particularly a distributed computing system, where a fault occurs such that different symptoms are presented to different observers, including imperfect information on whether a system component has failed. The term takes its name from an allegory, the "
+
+
+## References
+
+- [Byzantine fault](https://en.wikipedia.org/wiki/Byzantine_fault) - Wikipedia

@@ -132,3 +132,8 @@ Compare with alternatives
 Implements Automated Market Makers, decentralized exchange protocols that use mathematical formulas (like constant product formula) to determine asset prices and enable trading without traditional order books.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Automated Market Makers - Wikipedia](https://en.wikipedia.org/wiki/Automated%20Market%20Makers)

@@ -132,3 +132,8 @@ Compare with alternatives
     Scales model capacity by using multiple expert networks where only a subset of experts are activated for each input, enabling very large models with manageable computational cost.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Mixture of experts](https://en.wikipedia.org/wiki/Mixture_of_experts) - Wikipedia

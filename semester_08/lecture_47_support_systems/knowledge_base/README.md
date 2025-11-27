@@ -128,3 +128,13 @@ Compare with alternatives
     Centralizes and organizes information, documentation, and solutions to enable self-service support and provide quick answers to common questions, reducing support load and improving customer satisfaction.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Knowledge base](https://en.wikipedia.org/wiki/Knowledge_base) - Wikipedia
+
+
+## Historical Context
+
+It is a technology used to store complex structured data used by a computer system

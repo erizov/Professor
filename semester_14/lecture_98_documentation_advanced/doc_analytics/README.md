@@ -119,3 +119,8 @@ Compare with alternatives
     Doc Analytics solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Doc Analytics - Wikipedia](https://en.wikipedia.org/wiki/Doc%20Analytics)

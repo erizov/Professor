@@ -130,3 +130,8 @@ Compare with alternatives
     Allows distributed systems to have temporary inconsistencies between replicas, with the guarantee that all replicas will eventually converge to the same consistent state without requiring immediate synchronization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency) - Wikipedia

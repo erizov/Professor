@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_15_greedy_algorithms/huffman/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_15_greedy_algorithms/huffman/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_15_greedy_algorithms/huffman/test_algorithm.py)
+
+
+## References
+
+- [Huffman](https://en.wikipedia.org/wiki/Huffman) - Wikipedia

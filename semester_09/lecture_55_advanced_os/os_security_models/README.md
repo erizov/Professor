@@ -132,3 +132,8 @@ Compare with alternatives
     Defines security policies and mechanisms for controlling access to system resources, protecting against unauthorized access, and ensuring system integrity and confidentiality.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Os Security Models - Wikipedia](https://en.wikipedia.org/wiki/Os%20Security%20Models)

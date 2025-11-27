@@ -119,3 +119,13 @@ Compare with alternatives
     Data Discovery solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data mining](https://en.wikipedia.org/wiki/Data_mining) - Wikipedia
+
+
+## Historical Context
+
+Aside from the raw analysis step, it also involves database and data management aspects, data pre-processing, model and inference considerations, interestingness metrics, complexity considerations, post-processing of discovered structures, visualization, and online updating

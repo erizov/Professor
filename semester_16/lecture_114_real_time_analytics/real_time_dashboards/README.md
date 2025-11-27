@@ -119,3 +119,8 @@ Compare with alternatives
     Real Time Dashboards solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Real Time Dashboards - Wikipedia](https://en.wikipedia.org/wiki/Real%20Time%20Dashboards)

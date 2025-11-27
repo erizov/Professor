@@ -128,3 +128,8 @@ Compare with alternatives
 Organizes data into column families (groups of related columns), enabling efficient storage and retrieval of wide, sparse tables with billions of rows, optimized for write-heavy workloads.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Column family](https://en.wikipedia.org/wiki/Column_family) - Wikipedia

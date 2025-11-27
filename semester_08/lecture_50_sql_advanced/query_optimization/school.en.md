@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Query Optimization is an algorithm used to solve specific problems in computer science.
-
+Query Optimization is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying query optimization to solve specific tasks in query;
-- using query optimization in production systems for optimization;
-- integrating query optimization into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of query optimization:
+Consider a specific example of how query optimization works:
 
-1. Data preparation: input data for query optimization (specific format and structure)
-2. Algorithm application: sequence of steps of query optimization to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

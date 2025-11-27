@@ -132,3 +132,8 @@ Compare with alternatives
     Combines quantum machine learning with classical ML, using quantum algorithms for specific ML tasks while leveraging classical ML for others, enabling practical quantum ML applications on near-term hardware.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Ml Hybrid - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Ml%20Hybrid)

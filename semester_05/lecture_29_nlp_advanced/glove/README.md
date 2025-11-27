@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_29_nlp_advanced/glove/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_29_nlp_advanced/glove/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_29_nlp_advanced/glove/test_algorithm.py)
+
+
+## References
+
+- [Glove](https://en.wikipedia.org/wiki/Glove) - Wikipedia
+
+
+## Historical Context
+
+Gloves protect and comfort hands against cold or heat, damage by friction, abrasion or chemicals, and disease; or in turn to provide a guard for what a bare hand should not touch

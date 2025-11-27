@@ -130,3 +130,8 @@ Compare with alternatives
     Applies sophisticated transfer learning techniques including domain adaptation, multi-task transfer, and progressive transfer to leverage knowledge from source domains and tasks for improved performance on target tasks.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Transfer Learning Advanced - Wikipedia](https://en.wikipedia.org/wiki/Transfer%20Learning%20Advanced)

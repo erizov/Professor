@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_44_quantum_computing/quantum_entanglement/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_44_quantum_computing/quantum_entanglement/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_44_quantum_computing/quantum_entanglement/test_algorithm.py)
+
+
+## References
+
+- [Quantum entanglement](https://en.wikipedia.org/wiki/Quantum_entanglement) - Wikipedia
+
+
+## Historical Context
+
+Quantum entanglement is the phenomenon wherein the quantum state of each particle in a group cannot be described independently of the state of the others, even when the particles are separated by a large distance

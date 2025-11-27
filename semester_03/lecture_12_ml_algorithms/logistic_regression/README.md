@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_12_ml_algorithms/logistic_regression/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_12_ml_algorithms/logistic_regression/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_12_ml_algorithms/logistic_regression/test_algorithm.py)
+
+
+## References
+
+- [Logistic regression](https://en.wikipedia.org/wiki/Logistic_regression) - Wikipedia
+
+
+## Historical Context
+
+In binary logistic regression there is a single binary dependent variable, coded by an indicator variable, where the two values are labeled "0" and "1", while the independent variables can each be a binary variable or a continuous variable

@@ -132,3 +132,8 @@ Compare with alternatives
     Assesses LLM outputs using human judges to evaluate quality, relevance, fluency, and other subjective aspects that automated metrics may miss, providing comprehensive quality assessment.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Human Evaluation - Wikipedia](https://en.wikipedia.org/wiki/Human%20Evaluation)

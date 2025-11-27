@@ -130,3 +130,8 @@ Compare with alternatives
     Manages resources and provides services across multiple networked computers, presenting them as a single unified system to users and applications.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Distributed Os - Wikipedia](https://en.wikipedia.org/wiki/Distributed%20Os)

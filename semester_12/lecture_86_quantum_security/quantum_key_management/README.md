@@ -130,3 +130,8 @@ Compare with alternatives
     Manages cryptographic keys in quantum-secure systems, including generation, distribution, storage, rotation, and lifecycle management of quantum keys and quantum-resistant keys.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Key Management - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Key%20Management)

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_22_cnn_architectures/vgg/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_22_cnn_architectures/vgg/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_22_cnn_architectures/vgg/test_algorithm.py)
+
+
+## References
+
+- [Vgg - Wikipedia](https://en.wikipedia.org/wiki/Vgg)

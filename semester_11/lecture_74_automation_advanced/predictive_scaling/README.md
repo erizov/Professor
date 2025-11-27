@@ -130,3 +130,8 @@ Compare with alternatives
     Predicts future demand using machine learning and historical patterns, scaling resources proactively before demand increases, reducing latency and improving user experience.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Predictive Scaling - Wikipedia](https://en.wikipedia.org/wiki/Predictive%20Scaling)

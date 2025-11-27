@@ -85,3 +85,17 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_06_advanced_trees/b_tree/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_06_advanced_trees/b_tree/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_06_advanced_trees/b_tree/test_algorithm.py)
+
+
+## References
+
+- [B-tree](https://en.wikipedia.org/wiki/B-tree) - Wikipedia
+
+
+## Real-World Applications
+
+- Database query optimization
+- Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling

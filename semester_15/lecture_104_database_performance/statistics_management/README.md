@@ -119,3 +119,8 @@ Compare with alternatives
     Statistics Management solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Statistics Management - Wikipedia](https://en.wikipedia.org/wiki/Statistics%20Management)

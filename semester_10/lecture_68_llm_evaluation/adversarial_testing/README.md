@@ -132,3 +132,8 @@ Compare with alternatives
     Tests LLM robustness by generating adversarial inputs designed to cause failures, errors, or harmful outputs, helping identify vulnerabilities and improve model safety and reliability.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Adversarial Testing - Wikipedia](https://en.wikipedia.org/wiki/Adversarial%20Testing)

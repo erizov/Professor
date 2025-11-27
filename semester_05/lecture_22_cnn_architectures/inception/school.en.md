@@ -1,56 +1,57 @@
-# Inception
+# Inception (GoogLeNet)
 
 ## Simple Explanation
 
-Inception (GoogLeNet) is an algorithm used to solve specific problems in computer science.
-
+Inception (GoogLeNet) is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying inception to solve specific tasks in inception;
-- using inception in production systems for data processing;
-- integrating inception into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of inception:
+Consider a specific example of how inception (googlenet) works:
 
-1. Data preparation: input data for inception (specific format and structure)
-2. Algorithm application: sequence of steps of inception to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the inception algorithm do?
-2. In what situations is inception used?
+1. What does the inception (googlenet) algorithm do?
+2. In what situations is inception (googlenet) used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does inception handle edge cases?
-2. What are the advantages and disadvantages of inception?
-3. Can the performance of inception be improved?
+1. How does inception (googlenet) handle edge cases?
+2. What are the advantages and disadvantages of inception (googlenet)?
+3. Can the performance of inception (googlenet) be improved?
 
 ### Advanced
 
-1. What is the time complexity of inception?
-2. How does inception work with large volumes of data?
-3. How can inception be optimized?
+1. What is the time complexity of inception (googlenet)?
+2. How does inception (googlenet) work with large volumes of data?
+3. How can inception (googlenet) be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the inception algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the inception (googlenet) algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the inception algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the inception (googlenet) algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the inception algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the inception (googlenet) algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

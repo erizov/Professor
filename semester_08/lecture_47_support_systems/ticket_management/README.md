@@ -129,3 +129,8 @@ Compare with alternatives
     Organizes, tracks, and manages customer support requests from creation to resolution, ensuring no issues are lost and providing visibility into support workload and performance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Ticket Management - Wikipedia](https://en.wikipedia.org/wiki/Ticket%20Management)

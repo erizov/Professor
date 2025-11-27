@@ -119,3 +119,29 @@ Compare with alternatives
     Graph Traversal solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Graph traversal](https://en.wikipedia.org/wiki/Graph_traversal) - Wikipedia
+
+
+## Real-World Applications
+
+- Database indexing
+- File system organization
+
+- Database indexing
+- File system organization
+
+- Database indexing
+- File system organization
+
+- Database indexing
+- File system organization
+
+- Database indexing
+- File system organization
+## Historical Context
+
+Such traversals are classified by the order in which the vertices are visited

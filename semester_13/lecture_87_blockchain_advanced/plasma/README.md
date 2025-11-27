@@ -130,3 +130,8 @@ Compare with alternatives
 A Layer 2 scaling solution that creates child chains that process transactions off-chain and commit state roots to the main chain, enabling high throughput while maintaining security.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Plasma](https://en.wikipedia.org/wiki/Plasma) - Wikipedia

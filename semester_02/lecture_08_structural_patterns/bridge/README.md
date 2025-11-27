@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_08_structural_patterns/bridge/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_08_structural_patterns/bridge/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_08_structural_patterns/bridge/test_algorithm.py)
+
+
+## References
+
+- [Bridge](https://en.wikipedia.org/wiki/Bridge) - Wikipedia
+
+
+## Historical Context
+
+They may also be categorized by their materials, which include wood, brick, stone, iron, steel, and concrete

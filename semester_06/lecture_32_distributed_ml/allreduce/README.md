@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_32_distributed_ml/allreduce/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_32_distributed_ml/allreduce/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_32_distributed_ml/allreduce/test_algorithm.py)
+
+
+## References
+
+- [Collective operation](https://en.wikipedia.org/wiki/Collective_operation) - Wikipedia

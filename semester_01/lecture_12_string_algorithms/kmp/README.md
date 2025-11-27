@@ -79,3 +79,17 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_12_string_algorithms/kmp/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_12_string_algorithms/kmp/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_12_string_algorithms/kmp/test_algorithm.py)
+
+
+## References
+
+- [KMP](https://en.wikipedia.org/wiki/KMP) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups

@@ -130,3 +130,8 @@ Compare with alternatives
     Routes quantum information through quantum networks, determining optimal paths for quantum communication and managing quantum data flow in distributed quantum systems.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Routing - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Routing)

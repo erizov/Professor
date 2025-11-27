@@ -119,3 +119,8 @@ Compare with alternatives
     Data Catalog solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Database catalog](https://en.wikipedia.org/wiki/Database_catalog) - Wikipedia

@@ -70,6 +70,338 @@ app.register_blueprint(sandbox_bp)
 app.register_blueprint(user_admin_bp)
 app.register_blueprint(algorithm_index_bp)
 
+# Register database query routes from load/web_query.py
+try:
+    # Database path resolution for algos.db
+    def get_algos_db_path():
+        """Find algos.db - prioritize main database in root directory."""
+        # Check main database first (has more data)
+        db_path = ROOT / "algos.db"
+        if not db_path.exists():
+            db_path = ROOT / "load" / "algos.db"
+        return str(db_path)
+    
+    def get_algos_connection():
+        """Get connection to algos.db."""
+        return sqlite3.connect(get_algos_db_path())
+    
+    # Extract templates from web_query.py by parsing the file
+    import re
+    web_query_path = ROOT / "load" / "web_query.py"
+    if web_query_path.exists():
+        with open(web_query_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Extract HTML_TEMPLATE (raw string between HTML_TEMPLATE = r""" and """)
+        html_match = re.search(r'HTML_TEMPLATE = r"""([\s\S]*?)"""', content)
+        if html_match:
+            HTML_TEMPLATE = html_match.group(1).replace('action="/"', 'action="/load"')
+        else:
+            raise ValueError("Could not find HTML_TEMPLATE in web_query.py")
+        
+        # Extract STATS_TEMPLATE
+        stats_match = re.search(r'STATS_TEMPLATE = r"""([\s\S]*?)"""', content)
+        if stats_match:
+            STATS_TEMPLATE = stats_match.group(1)
+        else:
+            raise ValueError("Could not find STATS_TEMPLATE in web_query.py")
+    else:
+        raise FileNotFoundError(f"web_query.py not found at {web_query_path}")
+    
+    from flask import render_template_string
+    from pathlib import Path as PathLib
+    import sqlite3
+    
+    # Register /load route (Algorithm Descriptions Database Query)
+    @app.route('/load')
+    def load_query_page():
+        """Algorithm Descriptions Database Query page."""
+        # Get query parameters
+        search = request.args.get('search', '').strip()
+        language = request.args.get('language', '').strip()
+        level = request.args.get('level', '').strip()
+        source = request.args.get('source', '').strip()
+        order_by = request.args.get('order_by', 'fetched_at').strip()
+        order_dir = request.args.get('order_dir', 'DESC').strip()
+        limit = request.args.get('limit', '200').strip()
+        
+        # Validate order_by to prevent SQL injection
+        valid_columns = ['algorithm_name', 'language', 'level', 'title', 'source_site', 
+                         'quality_score', 'fetched_at', 'id', 'short_description', 'long_description']
+        if order_by not in valid_columns:
+            order_by = 'fetched_at'
+        
+        # Validate order_dir
+        if order_dir.upper() not in ['ASC', 'DESC']:
+            order_dir = 'DESC'
+        
+        # Validate limit
+        try:
+            limit = max(1, min(1000, int(limit)))
+        except ValueError:
+            limit = 200
+        
+        # Build query
+        conn = get_algos_connection()
+        cursor = conn.cursor()
+        
+        # Build WHERE clause
+        where_conditions = []
+        params = []
+        
+        if search:
+            where_conditions.append("""
+                (algorithm_name LIKE ? OR title LIKE ? OR 
+                 short_description LIKE ? OR long_description LIKE ?)
+            """)
+            search_param = f"%{search}%"
+            params.extend([search_param, search_param, search_param, search_param])
+        
+        if language:
+            where_conditions.append("language = ?")
+            params.append(language)
+        
+        if level:
+            where_conditions.append("level = ?")
+            params.append(level)
+        
+        if source:
+            where_conditions.append("source_site = ?")
+            params.append(source)
+        
+        # Filter out rows with no meaningful data
+        # Only show rows that have at least one non-empty description field
+        # and exclude placeholder patterns
+        data_condition = """(
+            (short_description IS NOT NULL AND short_description != '' AND 
+             short_description NOT LIKE '%[конкретн%' AND 
+             short_description NOT LIKE '%[specific%' AND
+             short_description NOT LIKE '%placeholder%' AND
+             short_description NOT LIKE '%заполнитель%') OR
+            (long_description IS NOT NULL AND long_description != '' AND 
+             long_description NOT LIKE '%[конкретн%' AND 
+             long_description NOT LIKE '%[specific%' AND
+             long_description NOT LIKE '%placeholder%' AND
+             long_description NOT LIKE '%заполнитель%') OR
+            (simple_explanation IS NOT NULL AND simple_explanation != '' AND 
+             simple_explanation NOT LIKE '%[конкретн%' AND 
+             simple_explanation NOT LIKE '%[specific%' AND
+             simple_explanation NOT LIKE '%placeholder%' AND
+             simple_explanation NOT LIKE '%заполнитель%') OR
+            (where_its_used IS NOT NULL AND where_its_used != '' AND 
+             where_its_used NOT LIKE '%[конкретн%' AND 
+             where_its_used NOT LIKE '%[specific%' AND
+             where_its_used NOT LIKE '%placeholder%' AND
+             where_its_used NOT LIKE '%заполнитель%') OR
+            (example IS NOT NULL AND example != '' AND 
+             example NOT LIKE '%[конкретн%' AND 
+             example NOT LIKE '%[specific%' AND
+             example NOT LIKE '%placeholder%' AND
+             example NOT LIKE '%заполнитель%') OR
+            (algorithm_definition IS NOT NULL AND algorithm_definition != '' AND 
+             algorithm_definition NOT LIKE '%[конкретн%' AND 
+             algorithm_definition NOT LIKE '%[specific%' AND
+             algorithm_definition NOT LIKE '%placeholder%' AND
+             algorithm_definition NOT LIKE '%заполнитель%') OR
+            (technical_description IS NOT NULL AND technical_description != '' AND 
+             technical_description NOT LIKE '%[конкретн%' AND 
+             technical_description NOT LIKE '%[specific%' AND
+             technical_description NOT LIKE '%placeholder%' AND
+             technical_description NOT LIKE '%заполнитель%') OR
+            (application IS NOT NULL AND application != '' AND 
+             application NOT LIKE '%[конкретн%' AND 
+             application NOT LIKE '%[specific%' AND
+             application NOT LIKE '%placeholder%' AND
+             application NOT LIKE '%заполнитель%') OR
+            (step_by_step IS NOT NULL AND step_by_step != '' AND 
+             step_by_step NOT LIKE '%[конкретн%' AND 
+             step_by_step NOT LIKE '%[specific%' AND
+             step_by_step NOT LIKE '%placeholder%' AND
+             step_by_step NOT LIKE '%заполнитель%')
+        )"""
+        where_conditions.append(data_condition)
+        
+        where_clause = " WHERE " + " AND ".join(where_conditions) if where_conditions else ""
+        
+        # Get total count
+        count_query = f"SELECT COUNT(*) FROM algorithm_descriptions{where_clause}"
+        cursor.execute(count_query, params)
+        total_count = cursor.fetchone()[0]
+        
+        # Get results with all columns for static display
+        query = f"""
+            SELECT id, algorithm_name, language, level, title, source_site, 
+                   quality_score, fetched_at,
+                   short_description, long_description,
+                   simple_explanation, where_its_used, example,
+                   algorithm_definition, technical_description,
+                   application, step_by_step
+            FROM algorithm_descriptions
+            {where_clause}
+            ORDER BY {order_by} {order_dir}
+            LIMIT ?
+        """
+        params.append(limit)
+        cursor.execute(query, params)
+        rows = cursor.fetchall()
+        # Get column names from cursor description
+        columns = [description[0] for description in cursor.description]
+        # Convert rows (tuples) to dictionaries
+        results = [dict(zip(columns, row)) for row in rows]
+        
+        conn.close()
+        
+        # Get database path for display
+        db_path = PathLib(get_algos_db_path()).absolute()
+        
+        return render_template_string(
+            HTML_TEMPLATE,
+            results=results,
+            total_count=total_count,
+            showing_count=len(results),
+            db_path=str(db_path)
+        )
+    
+    # Register /stats route
+    @app.route('/stats')
+    def stats_page():
+        """Database Statistics page."""
+        conn = get_algos_connection()
+        cursor = conn.cursor()
+        
+        # Get total algorithms
+        cursor.execute("SELECT COUNT(DISTINCT algorithm_name) FROM algorithms")
+        total_algorithms = cursor.fetchone()[0]
+        
+        # Get total descriptions
+        cursor.execute("SELECT COUNT(*) FROM algorithm_descriptions")
+        total_descriptions = cursor.fetchone()[0]
+        
+        # Get web vs local counts (SQLite compatible)
+        cursor.execute("""
+            SELECT 
+                SUM(CASE WHEN source_site != 'local_markdown' THEN 1 ELSE 0 END) as web_count,
+                SUM(CASE WHEN source_site = 'local_markdown' THEN 1 ELSE 0 END) as local_count
+            FROM algorithm_descriptions
+        """)
+        row = cursor.fetchone()
+        web_descriptions = row[0] if row else 0
+        local_descriptions = row[1] if row else 0
+        
+        # Get breakdown by source
+        cursor.execute("""
+            SELECT source_site, COUNT(*) 
+            FROM algorithm_descriptions 
+            GROUP BY source_site
+            ORDER BY COUNT(*) DESC
+        """)
+        sources = cursor.fetchall()
+        
+        # Get breakdown by language
+        cursor.execute("""
+            SELECT language, COUNT(*) 
+            FROM algorithm_descriptions 
+            GROUP BY language
+            ORDER BY language
+        """)
+        languages = cursor.fetchall()
+        
+        # Get breakdown by level
+        cursor.execute("""
+            SELECT level, COUNT(*) 
+            FROM algorithm_descriptions 
+            GROUP BY level
+            ORDER BY level
+        """)
+        levels = cursor.fetchall()
+        
+        # Get last updated time
+        cursor.execute("""
+            SELECT MAX(fetched_at) 
+            FROM algorithm_descriptions
+        """)
+        last_updated_row = cursor.fetchone()
+        last_updated = str(last_updated_row[0])[:19] if last_updated_row[0] else "N/A"
+        
+        conn.close()
+        
+        db_path = PathLib(get_algos_db_path()).absolute()
+        
+        return render_template_string(
+            STATS_TEMPLATE,
+            total_algorithms=total_algorithms,
+            total_descriptions=total_descriptions,
+            web_descriptions=web_descriptions,
+            local_descriptions=local_descriptions,
+            sources=sources,
+            languages=languages,
+            levels=levels,
+            db_path=str(db_path),
+            last_updated=last_updated
+        )
+    
+    # Register API endpoint for algorithm details
+    @app.route('/api/algorithm-details/<int:desc_id>')
+    def algorithm_details_api(desc_id):
+        """API endpoint to get full algorithm description details."""
+        conn = get_algos_connection()
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            SELECT 
+                title, short_description, long_description, simple_explanation,
+                algorithm_definition, technical_description, where_its_used,
+                application, step_by_step, example, discipline,
+                self_check_basic, self_check_intermediate, self_check_advanced,
+                practical_tasks_basic, practical_tasks_applied, practical_tasks_research,
+                ethical_reasoning, example_result
+            FROM algorithm_descriptions
+            WHERE id = ?
+        """, (desc_id,))
+        
+        row = cursor.fetchone()
+        conn.close()
+        
+        if not row:
+            return jsonify({'error': 'Not found'}), 404
+        
+        # Map to dictionary
+        details = {
+            'title': row[0],
+            'short_description': row[1],
+            'long_description': row[2],
+            'simple_explanation': row[3],
+            'algorithm_definition': row[4],
+            'technical_description': row[5],
+            'where_its_used': row[6],
+            'application': row[7],
+            'step_by_step': row[8],
+            'example': row[9],
+            'discipline': row[10],
+            'self_check_basic': row[11],
+            'self_check_intermediate': row[12],
+            'self_check_advanced': row[13],
+            'practical_tasks_basic': row[14],
+            'practical_tasks_applied': row[15],
+            'practical_tasks_research': row[16],
+            'ethical_reasoning': row[17],
+            'example_result': row[18]
+        }
+        
+        # Remove None values and return as JSON
+        return jsonify({k: v for k, v in details.items() if v})
+    
+except ImportError as e:
+    print(f"Warning: Could not import database query routes: {e}")
+    print("Routes /load and /stats will not be available")
+    import traceback
+    traceback.print_exc()
+except Exception as e:
+    print(f"Warning: Error setting up database query routes: {e}")
+    print("Routes /load and /stats will not be available")
+    import traceback
+    traceback.print_exc()
+
 
 # Login route
 @app.route("/login")

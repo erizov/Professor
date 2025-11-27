@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_23_object_detection/ssd/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_23_object_detection/ssd/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_23_object_detection/ssd/test_algorithm.py)
+
+
+## References
+
+- [Solid-state drive](https://en.wikipedia.org/wiki/Solid-state_drive) - Wikipedia

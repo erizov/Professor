@@ -121,3 +121,8 @@ Compare with alternatives
     A B Testing Ml solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [A B Testing Ml - Wikipedia](https://en.wikipedia.org/wiki/A%20B%20Testing%20Ml)

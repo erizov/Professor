@@ -130,3 +130,13 @@ Compare with alternatives
     Structures applications as a collection of small, independent services that communicate over well-defined APIs, enabling independent development, deployment, and scaling of services.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Microservices](https://en.wikipedia.org/wiki/Microservices) - Wikipedia
+
+
+## Historical Context
+
+This pattern is characterized by the ability to develop and deploy services independently, improving modularity, scalability, and adaptability

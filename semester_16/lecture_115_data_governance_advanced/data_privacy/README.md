@@ -119,3 +119,8 @@ Compare with alternatives
     Data Privacy solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Information privacy](https://en.wikipedia.org/wiki/Information_privacy) - Wikipedia

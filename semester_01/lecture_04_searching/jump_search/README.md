@@ -90,3 +90,20 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_04_searching/jump_search/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_04_searching/jump_search/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_04_searching/jump_search/test_algorithm.py)
+
+
+## References
+
+- [Jump search](https://en.wikipedia.org/wiki/Jump_search) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+## Historical Context
+
+It works by first checking all items Lkm, where  and m is the block size, until an item is found that is larger than the search key

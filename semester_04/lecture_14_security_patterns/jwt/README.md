@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_14_security_patterns/jwt/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_14_security_patterns/jwt/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_14_security_patterns/jwt/test_algorithm.py)
+
+
+## References
+
+- [Jwt - Wikipedia](https://en.wikipedia.org/wiki/Jwt)

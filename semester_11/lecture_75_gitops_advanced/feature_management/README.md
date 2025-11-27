@@ -132,3 +132,8 @@ Compare with alternatives
     Manages feature flags and feature rollouts through GitOps workflows, enabling controlled feature releases and A/B testing with infrastructure as code principles.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Feature Management - Wikipedia](https://en.wikipedia.org/wiki/Feature%20Management)

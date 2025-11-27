@@ -129,3 +129,8 @@ Compare with alternatives
     Minimizes kernel to essential functions (IPC, scheduling, memory management), moving most OS services to user-space servers, improving modularity, security, and maintainability.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Microkernel Architecture - Wikipedia](https://en.wikipedia.org/wiki/Microkernel%20Architecture)

@@ -130,3 +130,8 @@ Compare with alternatives
     Enables communication and value transfer between different blockchain networks, allowing users to interact with multiple blockchains seamlessly without intermediaries.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Cross Chain - Wikipedia](https://en.wikipedia.org/wiki/Cross%20Chain)

@@ -130,3 +130,8 @@ Compare with alternatives
     Cryptographically secure voting systems that enable token holders to participate in blockchain governance decisions with transparency and verifiability.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Voting Mechanisms - Wikipedia](https://en.wikipedia.org/wiki/Voting%20Mechanisms)

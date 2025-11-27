@@ -119,3 +119,8 @@ Compare with alternatives
     Data Platform Architecture solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data Platform Architecture - Wikipedia](https://en.wikipedia.org/wiki/Data%20Platform%20Architecture)

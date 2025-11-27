@@ -119,3 +119,8 @@ Compare with alternatives
     Data Cataloging solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data Cataloging - Wikipedia](https://en.wikipedia.org/wiki/Data%20Cataloging)

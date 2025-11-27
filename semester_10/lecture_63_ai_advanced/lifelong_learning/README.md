@@ -130,3 +130,8 @@ Compare with alternatives
     Enables AI systems to learn continuously throughout their operational lifetime, accumulating knowledge from multiple tasks and experiences while maintaining performance on previously learned tasks.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Lifelong learning](https://en.wikipedia.org/wiki/Lifelong_learning) - Wikipedia

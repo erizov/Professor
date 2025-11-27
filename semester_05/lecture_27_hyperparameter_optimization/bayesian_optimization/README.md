@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_27_hyperparameter_optimization/bayesian_optimization/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_27_hyperparameter_optimization/bayesian_optimization/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_27_hyperparameter_optimization/bayesian_optimization/test_algorithm.py)
+
+
+## References
+
+- [Bayesian optimization](https://en.wikipedia.org/wiki/Bayesian_optimization) - Wikipedia

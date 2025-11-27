@@ -129,3 +129,8 @@ Compare with alternatives
     Continuously tracks database performance, health, and resource usage through metrics, logs, and alerts, enabling proactive issue detection and performance optimization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Database Monitoring - Wikipedia](https://en.wikipedia.org/wiki/Database%20Monitoring)

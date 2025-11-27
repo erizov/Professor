@@ -132,3 +132,23 @@ Compare with alternatives
     Develops cryptographic algorithms that are secure against attacks from both classical and quantum computers, ensuring long-term security as quantum computers become available.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Post-quantum cryptography](https://en.wikipedia.org/wiki/Post-quantum_cryptography) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+## Historical Context
+
+Post-quantum cryptography (PQC), sometimes referred to as quantum-proof, quantum-safe, or quantum-resistant, is the development of cryptographic algorithms that are currently thought to be secure against a cryptanalytic attack by a quantum computer

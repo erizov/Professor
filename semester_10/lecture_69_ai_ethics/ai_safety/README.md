@@ -132,3 +132,8 @@ Compare with alternatives
     Ensures AI systems operate safely, reliably, and aligned with human values, preventing harmful behaviors, unintended consequences, and ensuring AI systems remain under human control.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Ai Safety - Wikipedia](https://en.wikipedia.org/wiki/Ai%20Safety)

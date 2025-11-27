@@ -132,3 +132,8 @@ Compare with alternatives
     A Byzantine fault-tolerant consensus protocol with linear message complexity and optimistic responsiveness, using a three-phase protocol with pipelined block proposals.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Hotstuff - Wikipedia](https://en.wikipedia.org/wiki/Hotstuff)

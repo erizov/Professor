@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Concurrent Data Structures is an algorithm used to solve specific problems in computer science.
-
+Concurrent Data Structures is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying concurrent data structures to solve specific tasks in concurrent;
-- using concurrent data structures in production systems for structures;
-- integrating concurrent data structures into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of concurrent data structures:
+Consider a specific example of how concurrent data structures works:
 
-1. Data preparation: input data for concurrent data structures (specific format and structure)
-2. Algorithm application: sequence of steps of concurrent data structures to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

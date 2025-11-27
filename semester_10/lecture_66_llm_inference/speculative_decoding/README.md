@@ -130,3 +130,8 @@ Compare with alternatives
     Accelerates LLM generation by using a smaller draft model to generate multiple tokens speculatively, then verifying them with the larger target model in parallel, accepting correct tokens and regenerating incorrect ones.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Speculative Decoding - Wikipedia](https://en.wikipedia.org/wiki/Speculative%20Decoding)

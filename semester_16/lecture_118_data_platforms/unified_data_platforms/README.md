@@ -119,3 +119,8 @@ Compare with alternatives
     Unified Data Platforms solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Unified Data Platforms - Wikipedia](https://en.wikipedia.org/wiki/Unified%20Data%20Platforms)

@@ -1,56 +1,57 @@
-# Parallel Prefix
+# Parallel Prefix (Scan)
 
 ## Simple Explanation
 
-Parallel Prefix (Scan) is an algorithm used to solve specific problems in computer science.
-
+Parallel Prefix (Scan) is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying parallel prefix to solve specific tasks in parallel;
-- using parallel prefix in production systems for prefix;
-- integrating parallel prefix into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of parallel prefix:
+Consider a specific example of how parallel prefix (scan) works:
 
-1. Data preparation: input data for parallel prefix (specific format and structure)
-2. Algorithm application: sequence of steps of parallel prefix to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the parallel prefix algorithm do?
-2. In what situations is parallel prefix used?
+1. What does the parallel prefix (scan) algorithm do?
+2. In what situations is parallel prefix (scan) used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does parallel prefix handle edge cases?
-2. What are the advantages and disadvantages of parallel prefix?
-3. Can the performance of parallel prefix be improved?
+1. How does parallel prefix (scan) handle edge cases?
+2. What are the advantages and disadvantages of parallel prefix (scan)?
+3. Can the performance of parallel prefix (scan) be improved?
 
 ### Advanced
 
-1. What is the time complexity of parallel prefix?
-2. How does parallel prefix work with large volumes of data?
-3. How can parallel prefix be optimized?
+1. What is the time complexity of parallel prefix (scan)?
+2. How does parallel prefix (scan) work with large volumes of data?
+3. How can parallel prefix (scan) be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the parallel prefix algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the parallel prefix (scan) algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the parallel prefix algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the parallel prefix (scan) algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the parallel prefix algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the parallel prefix (scan) algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

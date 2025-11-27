@@ -130,3 +130,8 @@ Compare with alternatives
 Combines quantum simulation with classical simulation, using quantum computers for quantum parts of systems while classical computers simulate classical parts, enabling efficient simulation of hybrid quantum-classical systems.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Simulation Hybrid - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Simulation%20Hybrid)

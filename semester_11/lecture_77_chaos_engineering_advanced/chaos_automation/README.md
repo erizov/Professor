@@ -130,3 +130,8 @@ Compare with alternatives
     Automates chaos engineering experiments through scheduled, continuous, and programmatic execution of chaos tests, enabling systematic resilience validation without manual intervention.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Chaos Automation - Wikipedia](https://en.wikipedia.org/wiki/Chaos%20Automation)

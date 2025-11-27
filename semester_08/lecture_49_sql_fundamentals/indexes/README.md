@@ -128,3 +128,8 @@ Compare with alternatives
     Accelerates data retrieval by creating ordered data structures that map column values to row locations, enabling fast lookups without scanning entire tables.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Index](https://en.wikipedia.org/wiki/Index) - Wikipedia

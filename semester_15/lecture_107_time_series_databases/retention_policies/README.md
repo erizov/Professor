@@ -119,3 +119,8 @@ Compare with alternatives
     Retention Policies solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Retention Policies - Wikipedia](https://en.wikipedia.org/wiki/Retention%20Policies)

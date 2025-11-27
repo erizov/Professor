@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_41_llm_advanced/llm_quantization/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_41_llm_advanced/llm_quantization/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_41_llm_advanced/llm_quantization/test_algorithm.py)
+
+
+## References
+
+- [Llm Quantization - Wikipedia](https://en.wikipedia.org/wiki/Llm%20Quantization)

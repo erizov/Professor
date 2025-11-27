@@ -131,3 +131,8 @@ Compare with alternatives
     Maintains multiple copies of NoSQL data across distributed nodes, enabling high availability, fault tolerance, and load distribution in distributed NoSQL systems.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Nosql Replication - Wikipedia](https://en.wikipedia.org/wiki/Nosql%20Replication)

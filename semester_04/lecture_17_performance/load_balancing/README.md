@@ -79,3 +79,16 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_17_performance/load_balancing/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_17_performance/load_balancing/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_17_performance/load_balancing/test_algorithm.py)
+
+
+## References
+
+- [Load balancing](https://en.wikipedia.org/wiki/Load_balancing) - Wikipedia
+
+
+## Historical Context
+
+Load balancing or load distribution may refer to:Load balancing (computing), balancing a workload among multiple computer devices
+Load balancing, the storing of excess electrical power by power stations during low demand periods, for release as demand rises
+Network load balancing, balancing network traffic across multiple links
+Weight distribution, the apportioning of weight within a vehicle, espe

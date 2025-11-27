@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_24_segmentation/fcn/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_24_segmentation/fcn/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_24_segmentation/fcn/test_algorithm.py)
+
+
+## References
+
+- [Fcn - Wikipedia](https://en.wikipedia.org/wiki/Fcn)

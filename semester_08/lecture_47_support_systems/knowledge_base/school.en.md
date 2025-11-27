@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Knowledge Base is an algorithm used to solve specific problems in computer science.
-
+Knowledge Base is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying knowledge base to solve specific tasks in knowledge;
-- using knowledge base in production systems for base;
-- integrating knowledge base into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of knowledge base:
+Consider a specific example of how knowledge base works:
 
-1. Data preparation: input data for knowledge base (specific format and structure)
-2. Algorithm application: sequence of steps of knowledge base to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

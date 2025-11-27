@@ -130,3 +130,8 @@ Compare with alternatives
     Uses mathematical methods to formally prove correctness and security properties of smart contracts, providing mathematical guarantees that contracts behave as specified and are free from certain classes of bugs.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Formal verification](https://en.wikipedia.org/wiki/Formal_verification) - Wikipedia

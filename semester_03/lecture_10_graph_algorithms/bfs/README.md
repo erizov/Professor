@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_10_graph_algorithms/bfs/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_10_graph_algorithms/bfs/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_10_graph_algorithms/bfs/test_algorithm.py)
+
+
+## References
+
+- [BFS](https://en.wikipedia.org/wiki/BFS) - Wikipedia

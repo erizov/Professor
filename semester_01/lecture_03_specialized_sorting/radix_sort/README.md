@@ -107,3 +107,20 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_03_specialized_sorting/radix_sort/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_03_specialized_sorting/radix_sort/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_03_specialized_sorting/radix_sort/test_algorithm.py)
+
+
+## References
+
+- [Radix sort](https://en.wikipedia.org/wiki/Radix_sort) - Wikipedia
+
+
+## Real-World Applications
+
+- Database query optimization
+- Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling
+## Historical Context
+
+It avoids comparison by creating and distributing elements into buckets according to their radix

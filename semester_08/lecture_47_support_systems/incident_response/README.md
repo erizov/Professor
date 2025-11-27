@@ -129,3 +129,13 @@ Compare with alternatives
     Provides structured approach to detect, respond to, and recover from security incidents, system outages, or critical failures, minimizing impact and restoring service quickly.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Incident management](https://en.wikipedia.org/wiki/Incident_management) - Wikipedia
+
+
+## Historical Context
+
+These incidents within a structured organization are normally dealt with by either an incident response team (IRT), an incident management team (IMT), or Incident Command System (ICS)

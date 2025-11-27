@@ -85,3 +85,17 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_45_blockchain_fundamentals/merkle_trees/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_45_blockchain_fundamentals/merkle_trees/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_45_blockchain_fundamentals/merkle_trees/test_algorithm.py)
+
+
+## References
+
+- [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) - Wikipedia
+
+
+## Real-World Applications
+
+- Database indexing
+- File system organization
+
+- Database indexing
+- File system organization

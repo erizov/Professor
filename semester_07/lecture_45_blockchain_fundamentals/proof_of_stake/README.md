@@ -130,3 +130,13 @@ Compare with alternatives
     Selects validators to create blocks based on amount of cryptocurrency staked, reducing energy consumption while maintaining network security through economic incentives.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Proof of stake](https://en.wikipedia.org/wiki/Proof_of_stake) - Wikipedia
+
+
+## Historical Context
+
+Proof-of-stake (PoS) protocols are a class of consensus mechanisms for blockchains that work by selecting validators in proportion to their quantity of holdings in the associated cryptocurrency

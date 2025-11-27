@@ -130,3 +130,8 @@ Compare with alternatives
 Tests and validates quantum programs, circuits, and algorithms to ensure correctness, performance, and reliability, addressing unique challenges of quantum computing like noise and measurement.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Testing - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Testing)

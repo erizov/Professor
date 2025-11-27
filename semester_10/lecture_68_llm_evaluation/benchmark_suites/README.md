@@ -132,3 +132,8 @@ Compare with alternatives
     Provides standardized test suites and datasets for evaluating LLM performance across diverse tasks, enabling fair comparison of models and tracking progress in the field.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Benchmark Suites - Wikipedia](https://en.wikipedia.org/wiki/Benchmark%20Suites)

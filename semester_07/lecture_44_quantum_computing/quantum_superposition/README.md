@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_44_quantum_computing/quantum_superposition/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_44_quantum_computing/quantum_superposition/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_44_quantum_computing/quantum_superposition/test_algorithm.py)
+
+
+## References
+
+- [Quantum superposition](https://en.wikipedia.org/wiki/Quantum_superposition) - Wikipedia
+
+
+## Historical Context
+
+More precisely, the state of a system is given by a linear combination of all the eigenfunctions of the Schrödinger equation governing that system

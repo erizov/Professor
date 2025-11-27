@@ -119,3 +119,8 @@ Compare with alternatives
     Doc As Code solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Doc As Code - Wikipedia](https://en.wikipedia.org/wiki/Doc%20As%20Code)

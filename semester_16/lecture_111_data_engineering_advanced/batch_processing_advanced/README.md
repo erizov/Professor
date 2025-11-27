@@ -119,3 +119,8 @@ Compare with alternatives
     Batch Processing Advanced solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Batch Processing Advanced - Wikipedia](https://en.wikipedia.org/wiki/Batch%20Processing%20Advanced)

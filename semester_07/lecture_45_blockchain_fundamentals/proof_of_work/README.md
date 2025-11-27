@@ -131,3 +131,20 @@ Compare with alternatives
     Requires miners to solve computationally expensive cryptographic puzzles to validate blocks, securing blockchain network by making attacks economically infeasible.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Proof of work](https://en.wikipedia.org/wiki/Proof_of_work) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+## Historical Context
+
+The concept was first proposed by Moni Naor and Cynthia Dwork in 1993 as a way to deter denial-of-service attacks and other service abuses such as spam on a network by requiring some work from a service requester, usually meaning processing time by a computer. The term "proof of work" was first coined and formalized in a 1999 paper by Markus Jakobsson and Ari Juels

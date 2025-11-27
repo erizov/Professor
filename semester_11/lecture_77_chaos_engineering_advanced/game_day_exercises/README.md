@@ -130,3 +130,8 @@ Compare with alternatives
     Conducts planned, team-based exercises where real failures are simulated in production-like environments to test incident response, team coordination, and system resilience.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Game Day Exercises - Wikipedia](https://en.wikipedia.org/wiki/Game%20Day%20Exercises)

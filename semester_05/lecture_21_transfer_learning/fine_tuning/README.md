@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_21_transfer_learning/fine_tuning/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_21_transfer_learning/fine_tuning/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_21_transfer_learning/fine_tuning/test_algorithm.py)
+
+
+## References
+
+- [Fine-tuning](https://en.wikipedia.org/wiki/Fine-tuning) - Wikipedia

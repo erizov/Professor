@@ -132,3 +132,8 @@ Compare with alternatives
     Assesses LLM safety by testing for harmful outputs, misuse potential, and alignment failures, ensuring models are safe for deployment and use.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Safety Evaluation - Wikipedia](https://en.wikipedia.org/wiki/Safety%20Evaluation)

@@ -119,3 +119,8 @@ Compare with alternatives
     Content Generation solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Content Generation - Wikipedia](https://en.wikipedia.org/wiki/Content%20Generation)

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_10_architectural_patterns/mvc/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_10_architectural_patterns/mvc/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_10_architectural_patterns/mvc/test_algorithm.py)
+
+
+## References
+
+- [MVC](https://en.wikipedia.org/wiki/MVC) - Wikipedia

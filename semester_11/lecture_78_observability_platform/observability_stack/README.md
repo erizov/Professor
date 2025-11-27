@@ -130,3 +130,8 @@ Compare with alternatives
     Integrates multiple observability tools (metrics, logs, traces) into a unified stack that provides comprehensive visibility into system behavior, performance, and health.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Observability Stack - Wikipedia](https://en.wikipedia.org/wiki/Observability%20Stack)

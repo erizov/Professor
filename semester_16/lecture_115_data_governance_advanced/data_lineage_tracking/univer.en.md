@@ -5,33 +5,42 @@
 
 ## Algorithm Definition
 
-Data Lineage Tracking is an algorithm used to solve specific problems in computer science.
-
+Data Lineage Tracking is an algorithm for solving problems in the field of data engineering / data governance, which performs a sequence of operations to process data and obtain results.
 
 ## Technical Description
 
-Data Lineage Tracking works by processing data sequentially according to specific rules and algorithms.
+### What the Algorithm Does
 
+Data Lineage Tracking is an algorithm for solving problems in the field of data engineering / data governance, which performs a sequence of operations to process data and obtain results.
+
+**Key Steps:**
+1. Data input and validation
+2. Algorithm execution
+3. Result processing and output
+
+**Key Data Structures:**
+- Arrays or lists for data storage
+- Variables for intermediate results
+- Control structures for flow management
 
 ## Application in Data Engineering / Data Governance
 
-1. tracking data origin from source to destination
-2. auditing data changes and their impact
-3. simplifying debugging of data issues
-4. compliance with regulations (GDPR, CCPA)
+1. ETL processes in banking systems: processing millions of transactions per day
+2. Report generation in corporate systems: daily processing of web server logs
+3. Image processing in social networks: batch processing of uploaded photos
 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for Data Lineage Tracking]
+[Specific input data for data lineage tracking]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
+...
 
 **Final Result:**
 [Specific result of the algorithm's work]
-
 
 ## Self-Check Questions
 

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_09_behavioral_patterns/iterator/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_09_behavioral_patterns/iterator/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_09_behavioral_patterns/iterator/test_algorithm.py)
+
+
+## References
+
+- [Iterator](https://en.wikipedia.org/wiki/Iterator) - Wikipedia

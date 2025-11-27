@@ -130,3 +130,13 @@ Compare with alternatives
     Designs data warehouse schemas using facts (measurable events) and dimensions (descriptive attributes), optimizing for analytical queries and business intelligence reporting.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## Historical Context
+
+Dimensional modeling is part of the Business Dimensional Lifecycle methodology developed by Ralph Kimball which includes a set of methods, techniques and concepts for use in data warehouse design. The approach focuses on identifying the key business processes within a business and modelling and impl
+
+
+## References
+
+- [Dimensional modeling](https://en.wikipedia.org/wiki/Dimensional_modeling) - Wikipedia

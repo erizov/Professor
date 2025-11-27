@@ -85,3 +85,20 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_06_advanced_trees/trie/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_06_advanced_trees/trie/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_06_advanced_trees/trie/test_algorithm.py)
+
+
+## References
+
+- [Trie](https://en.wikipedia.org/wiki/Trie) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+## Historical Context
+
+Instead, each node's position within the trie determines its associated key, with the connections between nodes defined by individual characters rather than the entire key

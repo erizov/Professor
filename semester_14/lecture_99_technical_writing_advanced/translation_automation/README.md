@@ -119,3 +119,8 @@ Compare with alternatives
     Translation Automation solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Translation Automation - Wikipedia](https://en.wikipedia.org/wiki/Translation%20Automation)

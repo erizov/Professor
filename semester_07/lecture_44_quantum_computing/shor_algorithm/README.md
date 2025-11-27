@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_44_quantum_computing/shor_algorithm/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_44_quantum_computing/shor_algorithm/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_44_quantum_computing/shor_algorithm/test_algorithm.py)
+
+
+## References
+
+- [Shor](https://en.wikipedia.org/wiki/Shor) - Wikipedia

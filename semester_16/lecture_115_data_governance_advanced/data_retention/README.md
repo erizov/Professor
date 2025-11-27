@@ -119,3 +119,8 @@ Compare with alternatives
     Data Retention solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data retention](https://en.wikipedia.org/wiki/Data_retention) - Wikipedia

@@ -132,3 +132,8 @@ Compare with alternatives
     Provides comprehensive reference and guides for using APIs, including endpoints, parameters, request/response formats, authentication, and examples, enabling developers to integrate with APIs effectively.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Api Documentation - Wikipedia](https://en.wikipedia.org/wiki/Api%20Documentation)

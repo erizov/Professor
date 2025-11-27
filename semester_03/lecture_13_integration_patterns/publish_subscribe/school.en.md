@@ -1,56 +1,57 @@
-# Publish Subscribe
+# Publish-Subscribe (Pub/Sub)
 
 ## Simple Explanation
 
-Publish-Subscribe (Pub/Sub) is an algorithm used to solve specific problems in computer science.
-
+Publish-Subscribe (Pub/Sub) is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying publish subscribe to solve specific tasks in publish;
-- using publish subscribe in production systems for subscribe;
-- integrating publish subscribe into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of publish subscribe:
+Consider a specific example of how publish-subscribe (pub/sub) works:
 
-1. Data preparation: input data for publish subscribe (specific format and structure)
-2. Algorithm application: sequence of steps of publish subscribe to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the publish subscribe algorithm do?
-2. In what situations is publish subscribe used?
+1. What does the publish-subscribe (pub/sub) algorithm do?
+2. In what situations is publish-subscribe (pub/sub) used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does publish subscribe handle edge cases?
-2. What are the advantages and disadvantages of publish subscribe?
-3. Can the performance of publish subscribe be improved?
+1. How does publish-subscribe (pub/sub) handle edge cases?
+2. What are the advantages and disadvantages of publish-subscribe (pub/sub)?
+3. Can the performance of publish-subscribe (pub/sub) be improved?
 
 ### Advanced
 
-1. What is the time complexity of publish subscribe?
-2. How does publish subscribe work with large volumes of data?
-3. How can publish subscribe be optimized?
+1. What is the time complexity of publish-subscribe (pub/sub)?
+2. How does publish-subscribe (pub/sub) work with large volumes of data?
+3. How can publish-subscribe (pub/sub) be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the publish subscribe algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the publish-subscribe (pub/sub) algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the publish subscribe algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the publish-subscribe (pub/sub) algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the publish subscribe algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the publish-subscribe (pub/sub) algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

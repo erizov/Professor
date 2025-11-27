@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_09_behavioral_patterns/strategy/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_09_behavioral_patterns/strategy/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_09_behavioral_patterns/strategy/test_algorithm.py)
+
+
+## References
+
+- [Strategy](https://en.wikipedia.org/wiki/Strategy) - Wikipedia

@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_29_nlp_advanced/word2vec/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_29_nlp_advanced/word2vec/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_29_nlp_advanced/word2vec/test_algorithm.py)
+
+
+## Historical Context
+
+Word2vec is a technique in natural language processing for obtaining vector representations of words. These vectors capture information about the meaning of the word based on the surrounding words. The word2vec algorithm estimates these representations by modeling text in a large corpus. Once traine
+
+
+## References
+
+- [Word2vec](https://en.wikipedia.org/wiki/Word2vec) - Wikipedia

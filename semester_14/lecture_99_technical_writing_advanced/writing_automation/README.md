@@ -119,3 +119,8 @@ Compare with alternatives
     Writing Automation solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Writing Automation - Wikipedia](https://en.wikipedia.org/wiki/Writing%20Automation)

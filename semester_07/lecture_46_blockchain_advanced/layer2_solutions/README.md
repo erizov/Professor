@@ -130,3 +130,8 @@ Compare with alternatives
     Processes transactions off the main blockchain (layer 1) and periodically settles results on-chain, dramatically increasing throughput and reducing costs while maintaining security.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Layer2 Solutions - Wikipedia](https://en.wikipedia.org/wiki/Layer2%20Solutions)

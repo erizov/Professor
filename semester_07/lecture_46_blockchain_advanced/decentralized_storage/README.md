@@ -128,3 +128,8 @@ Compare with alternatives
     Stores data across distributed network of nodes instead of centralized servers, providing censorship-resistant, resilient, and cost-effective data storage.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Decentralized computing](https://en.wikipedia.org/wiki/Decentralized_computing) - Wikipedia

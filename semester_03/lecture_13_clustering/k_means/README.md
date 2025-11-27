@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_13_clustering/k_means/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_13_clustering/k_means/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_13_clustering/k_means/test_algorithm.py)
+
+
+## References
+
+- [K-means clustering](https://en.wikipedia.org/wiki/K-means_clustering) - Wikipedia

@@ -130,3 +130,8 @@ Compare with alternatives
 Implements Raft consensus algorithm for blockchains, providing a simpler alternative to Paxos with strong leader-based consensus, used in blockchain systems for fast and understandable consensus.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Raft Blockchain - Wikipedia](https://en.wikipedia.org/wiki/Raft%20Blockchain)

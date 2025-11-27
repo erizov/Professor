@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_28_reinforcement_learning/dqn/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_28_reinforcement_learning/dqn/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_28_reinforcement_learning/dqn/test_algorithm.py)
+
+
+## References
+
+- [Dqn - Wikipedia](https://en.wikipedia.org/wiki/Dqn)

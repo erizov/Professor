@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_43_ci_cd_advanced/blue_green_deployment/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_43_ci_cd_advanced/blue_green_deployment/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_43_ci_cd_advanced/blue_green_deployment/test_algorithm.py)
+
+
+## References
+
+- [Blue Green Deployment - Wikipedia](https://en.wikipedia.org/wiki/Blue%20Green%20Deployment)

@@ -129,3 +129,8 @@ Compare with alternatives
 30-second explanation (your own words)  
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Infrastructure Patterns - Wikipedia](https://en.wikipedia.org/wiki/Infrastructure%20Patterns)

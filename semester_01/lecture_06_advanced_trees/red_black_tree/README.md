@@ -85,3 +85,17 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_06_advanced_trees/red_black_tree/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_06_advanced_trees/red_black_tree/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_06_advanced_trees/red_black_tree/test_algorithm.py)
+
+
+## References
+
+- [Red–black tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups

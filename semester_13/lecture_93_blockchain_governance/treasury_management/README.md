@@ -130,3 +130,8 @@ Compare with alternatives
     Implements treasury management systems for blockchain protocols and DAOs, managing protocol funds, allocating resources, and making financial decisions through governance mechanisms.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Treasury management](https://en.wikipedia.org/wiki/Treasury_management) - Wikipedia

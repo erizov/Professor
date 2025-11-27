@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_34_edge_ai/mobile_optimization/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_34_edge_ai/mobile_optimization/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_34_edge_ai/mobile_optimization/test_algorithm.py)
+
+
+## References
+
+- [Mobile Optimization - Wikipedia](https://en.wikipedia.org/wiki/Mobile%20Optimization)

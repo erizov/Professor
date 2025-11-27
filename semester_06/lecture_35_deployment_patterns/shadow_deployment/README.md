@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_35_deployment_patterns/shadow_deployment/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_35_deployment_patterns/shadow_deployment/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_35_deployment_patterns/shadow_deployment/test_algorithm.py)
+
+
+## References
+
+- [Shadow Deployment - Wikipedia](https://en.wikipedia.org/wiki/Shadow%20Deployment)

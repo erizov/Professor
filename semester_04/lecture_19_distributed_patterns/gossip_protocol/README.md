@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_19_distributed_patterns/gossip_protocol/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_19_distributed_patterns/gossip_protocol/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_19_distributed_patterns/gossip_protocol/test_algorithm.py)
+
+
+## References
+
+- [Gossip protocol](https://en.wikipedia.org/wiki/Gossip_protocol) - Wikipedia

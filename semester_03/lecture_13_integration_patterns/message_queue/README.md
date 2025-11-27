@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_13_integration_patterns/message_queue/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_13_integration_patterns/message_queue/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_13_integration_patterns/message_queue/test_algorithm.py)
+
+
+## References
+
+- [Message queue](https://en.wikipedia.org/wiki/Message_queue) - Wikipedia

@@ -130,3 +130,25 @@ Compare with alternatives
     Develops software and algorithms for quantum computers using quantum programming languages and frameworks, enabling developers to write, test, and execute quantum programs.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## Historical Context
+
+Quantum programming refers to the process of designing and implementing algorithms that operate on quantum systems, typically using quantum circuits composed of quantum gates, measurements, and classical control logic. These circuits are developed to manipulate quantum states for specific computatio
+
+
+## References
+
+- [Quantum programming](https://en.wikipedia.org/wiki/Quantum_programming) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups

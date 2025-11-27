@@ -130,3 +130,8 @@ Compare with alternatives
     Implements applications that operate across multiple blockchains simultaneously, leveraging different chains for different purposes and providing unified user experiences across chains.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Multi Chain Apps - Wikipedia](https://en.wikipedia.org/wiki/Multi%20Chain%20Apps)

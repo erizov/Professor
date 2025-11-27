@@ -132,3 +132,20 @@ Compare with alternatives
     Utilizes Graphics Processing Units (GPUs) for general-purpose parallel computation, leveraging thousands of cores to accelerate data-parallel workloads like machine learning, scientific computing, and image processing.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [General-purpose computing on graphics processing units](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+## Historical Context
+
+General-purpose computing on graphics processing units is the use of a graphics processing unit (GPU), which typically handles computation only for computer graphics, to perform computation in applications traditionally handled by the central processing unit (CPU)

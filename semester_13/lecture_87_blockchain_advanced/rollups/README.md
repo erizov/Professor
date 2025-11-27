@@ -130,3 +130,8 @@ Compare with alternatives
     Layer 2 scaling solutions that execute transactions off-chain, batch and compress them, then submit to the main chain, achieving high throughput with main chain security guarantees.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Rollups - Wikipedia](https://en.wikipedia.org/wiki/Rollups)

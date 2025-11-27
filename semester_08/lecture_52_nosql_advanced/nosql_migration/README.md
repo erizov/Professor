@@ -134,3 +134,8 @@ Compare with alternatives
     Transfers data and applications from one NoSQL database system to another, or from relational databases to NoSQL, ensuring data integrity, minimal downtime, and application compatibility.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Nosql Migration - Wikipedia](https://en.wikipedia.org/wiki/Nosql%20Migration)

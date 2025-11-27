@@ -130,3 +130,8 @@ Compare with alternatives
     Transforms scalar operations (operating on single values) into vector operations (operating on multiple values simultaneously), enabling SIMD instructions and compiler optimizations to improve performance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Vectorization](https://en.wikipedia.org/wiki/Vectorization) - Wikipedia

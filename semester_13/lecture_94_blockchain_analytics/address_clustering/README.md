@@ -130,3 +130,8 @@ Compare with alternatives
     Techniques for identifying and grouping blockchain addresses that belong to the same entity through transaction pattern analysis and graph clustering.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Address Clustering - Wikipedia](https://en.wikipedia.org/wiki/Address%20Clustering)

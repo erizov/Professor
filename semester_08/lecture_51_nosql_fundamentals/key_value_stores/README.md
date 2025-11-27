@@ -130,3 +130,8 @@ Compare with alternatives
     Stores data as simple key-value pairs, providing fast, scalable storage for simple data models where each key maps to a single value, enabling high-performance read/write operations.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Key Value Stores - Wikipedia](https://en.wikipedia.org/wiki/Key%20Value%20Stores)

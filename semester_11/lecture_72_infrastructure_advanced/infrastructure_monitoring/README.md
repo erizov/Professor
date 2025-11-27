@@ -130,3 +130,8 @@ Compare with alternatives
     Continuously monitors infrastructure health, performance, and availability through metrics, logs, and alerts, enabling proactive issue detection and resolution.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Infrastructure Monitoring - Wikipedia](https://en.wikipedia.org/wiki/Infrastructure%20Monitoring)

@@ -130,3 +130,13 @@ Compare with alternatives
     Uses AI and machine learning to automate complex decision-making and tasks that require intelligence, enabling automation of sophisticated operations beyond simple rule-based automation.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Intelligent automation](https://en.wikipedia.org/wiki/Intelligent_automation) - Wikipedia
+
+
+## Historical Context
+
+Companies use intelligent automation to cut costs and streamline tasks by using artificial-intelligence-powered robotic software to mitigate repetitive tasks. The term is similar to hyperautomation, a concept identified by research group Gartner as being one of the top technology trends of 2020

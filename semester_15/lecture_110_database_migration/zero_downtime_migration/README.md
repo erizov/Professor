@@ -119,3 +119,8 @@ Compare with alternatives
     Zero Downtime Migration solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Zero Downtime Migration - Wikipedia](https://en.wikipedia.org/wiki/Zero%20Downtime%20Migration)

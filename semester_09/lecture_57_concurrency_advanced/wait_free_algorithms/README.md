@@ -132,3 +132,8 @@ Compare with alternatives
     Implements concurrent algorithms that guarantee every thread completes its operation in a bounded number of steps regardless of other threads' progress, providing the strongest progress guarantee.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Non-blocking algorithm](https://en.wikipedia.org/wiki/Non-blocking_algorithm) - Wikipedia

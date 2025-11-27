@@ -130,3 +130,8 @@ Compare with alternatives
     Optimizes memory usage and allocation strategies to reduce memory footprint, improve cache performance, minimize fragmentation, and enhance overall system performance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Program optimization](https://en.wikipedia.org/wiki/Program_optimization) - Wikipedia

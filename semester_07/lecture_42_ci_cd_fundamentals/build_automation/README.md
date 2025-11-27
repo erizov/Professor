@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/build_automation/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/build_automation/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_42_ci_cd_fundamentals/build_automation/test_algorithm.py)
+
+
+## References
+
+- [Build automation](https://en.wikipedia.org/wiki/Build_automation) - Wikipedia

@@ -130,3 +130,8 @@ Compare with alternatives
 Analytics systems that analyze support operations data to measure performance, identify trends, and optimize workflows.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Support Analytics - Wikipedia](https://en.wikipedia.org/wiki/Support%20Analytics)

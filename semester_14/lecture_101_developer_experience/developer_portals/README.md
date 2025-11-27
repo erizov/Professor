@@ -130,3 +130,8 @@ Compare with alternatives
     Centralized platforms that provide developers with APIs, documentation, tools, and support resources in one place.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Developer Portals - Wikipedia](https://en.wikipedia.org/wiki/Developer%20Portals)

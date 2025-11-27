@@ -2,24 +2,24 @@
 
 ## Simple Explanation
 
-Data Catalog is an algorithm used to solve specific problems in computer science.
-
+Data Catalog is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- creating centralized catalog of all organizational data;
-- discovering and indexing data from various sources;
-- managing metadata and documentation;
-- simplifying data search and access;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of data catalog:
+Consider a specific example of how data catalog works:
 
-1. Data preparation: input data for data catalog (specific format and structure)
-2. Algorithm application: sequence of steps of data catalog to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

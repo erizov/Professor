@@ -130,3 +130,13 @@ Compare with alternatives
     Automates complex business and technical workflows by orchestrating multiple steps, tasks, and systems, reducing manual effort and improving efficiency and consistency.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Workflow](https://en.wikipedia.org/wiki/Workflow) - Wikipedia
+
+
+## Historical Context
+
+Workflow is a generic term for orchestrated and repeatable patterns of activity, enabled by the systematic organization of resources into processes that transform materials, provide services, or process information

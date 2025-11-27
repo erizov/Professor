@@ -128,3 +128,8 @@ Compare with alternatives
 Stores data as semi-structured documents (JSON, BSON, XML), enabling flexible schemas and efficient storage of hierarchical data without rigid table structures.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Document Databases - Wikipedia](https://en.wikipedia.org/wiki/Document%20Databases)

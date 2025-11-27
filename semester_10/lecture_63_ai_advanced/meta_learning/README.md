@@ -132,3 +132,8 @@ Compare with alternatives
     Trains models to learn how to learn, enabling them to quickly adapt to new tasks with minimal data by leveraging experience from learning many previous tasks.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Meta-learning](https://en.wikipedia.org/wiki/Meta-learning) - Wikipedia

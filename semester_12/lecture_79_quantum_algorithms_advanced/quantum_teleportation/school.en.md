@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Quantum Teleportation is an algorithm used to solve specific problems in computer science.
-
+Quantum Teleportation is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying quantum teleportation to solve specific tasks in quantum;
-- using quantum teleportation in production systems for teleportation;
-- integrating quantum teleportation into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of quantum teleportation:
+Consider a specific example of how quantum teleportation works:
 
-1. Data preparation: input data for quantum teleportation (specific format and structure)
-2. Algorithm application: sequence of steps of quantum teleportation to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

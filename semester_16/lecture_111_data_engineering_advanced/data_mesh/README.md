@@ -119,3 +119,13 @@ Compare with alternatives
     Data Mesh solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data mesh](https://en.wikipedia.org/wiki/Data_mesh) - Wikipedia
+
+
+## Historical Context
+
+Data mesh is a sociotechnical approach to building a decentralized data architecture by leveraging a domain-oriented, self-serve design, and borrows Eric Evans’ theory of domain-driven design and Manuel Pais’ and Matthew Skelton’s theory of team topologies. The main proposition is scaling analytical data by domain-oriented decentralization

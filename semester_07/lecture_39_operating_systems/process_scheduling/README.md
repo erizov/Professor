@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_39_operating_systems/process_scheduling/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_39_operating_systems/process_scheduling/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_39_operating_systems/process_scheduling/test_algorithm.py)
+
+
+## References
+
+- [Scheduling (computing)](https://en.wikipedia.org/wiki/Scheduling_(computing)) - Wikipedia

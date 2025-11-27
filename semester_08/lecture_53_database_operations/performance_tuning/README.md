@@ -129,3 +129,8 @@ Compare with alternatives
     Optimizes database performance by identifying bottlenecks, tuning configuration, optimizing queries, and adjusting resources to improve response times and throughput.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Performance tuning](https://en.wikipedia.org/wiki/Performance_tuning) - Wikipedia

@@ -130,3 +130,8 @@ Compare with alternatives
     Automatically scans code, dependencies, containers, and infrastructure for security vulnerabilities, misconfigurations, and threats, enabling proactive security management.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Security Scanning - Wikipedia](https://en.wikipedia.org/wiki/Security%20Scanning)

@@ -130,3 +130,8 @@ Compare with alternatives
     Verifies correctness of quantum programs and circuits through formal methods, testing, and validation techniques, ensuring quantum algorithms work as intended.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Verification - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Verification)

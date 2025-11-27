@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_34_edge_ai/edge_deployment/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_34_edge_ai/edge_deployment/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_34_edge_ai/edge_deployment/test_algorithm.py)
+
+
+## References
+
+- [Edge Deployment - Wikipedia](https://en.wikipedia.org/wiki/Edge%20Deployment)

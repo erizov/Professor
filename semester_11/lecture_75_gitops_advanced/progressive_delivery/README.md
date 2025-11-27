@@ -130,3 +130,8 @@ Compare with alternatives
     Deploys new versions gradually to users through techniques like canary deployments, feature flags, and A/B testing, reducing deployment risk and enabling data-driven rollouts.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Progressive Delivery - Wikipedia](https://en.wikipedia.org/wiki/Progressive%20Delivery)

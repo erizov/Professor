@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_41_llm_advanced/few_shot_learning/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_41_llm_advanced/few_shot_learning/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_41_llm_advanced/few_shot_learning/test_algorithm.py)
+
+
+## References
+
+- [Few Shot Learning - Wikipedia](https://en.wikipedia.org/wiki/Few%20Shot%20Learning)

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_39_operating_systems/memory_management/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_39_operating_systems/memory_management/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_39_operating_systems/memory_management/test_algorithm.py)
+
+
+## References
+
+- [Memory management](https://en.wikipedia.org/wiki/Memory_management) - Wikipedia

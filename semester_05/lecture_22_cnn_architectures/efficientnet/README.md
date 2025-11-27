@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_22_cnn_architectures/efficientnet/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_22_cnn_architectures/efficientnet/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_22_cnn_architectures/efficientnet/test_algorithm.py)
+
+
+## References
+
+- [Efficientnet - Wikipedia](https://en.wikipedia.org/wiki/Efficientnet)

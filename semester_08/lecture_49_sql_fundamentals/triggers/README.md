@@ -128,3 +128,8 @@ Compare with alternatives
     Automatically executes SQL code in response to specific database events (INSERT, UPDATE, DELETE), enabling automatic data validation, auditing, and maintaining referential integrity.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Trigger](https://en.wikipedia.org/wiki/Trigger) - Wikipedia

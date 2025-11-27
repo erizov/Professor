@@ -132,3 +132,8 @@ Compare with alternatives
 Implements ZK-STARKs, a type of zero-knowledge proof that is transparent (no trusted setup), scalable (efficient for large computations), and provides post-quantum security, enabling privacy without trusted setup.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Zk Starks - Wikipedia](https://en.wikipedia.org/wiki/Zk%20Starks)

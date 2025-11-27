@@ -131,3 +131,8 @@ Compare with alternatives
     Creates conceptual data models using entities (things of interest) and relationships (associations between entities), providing a visual representation of data structure and business rules.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Entity–relationship model](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model) - Wikipedia

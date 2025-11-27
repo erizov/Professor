@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_35_deployment_patterns/multi_armed_bandit/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_35_deployment_patterns/multi_armed_bandit/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_35_deployment_patterns/multi_armed_bandit/test_algorithm.py)
+
+
+## References
+
+- [Multi-armed bandit](https://en.wikipedia.org/wiki/Multi-armed_bandit) - Wikipedia

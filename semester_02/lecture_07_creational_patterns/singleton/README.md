@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_07_creational_patterns/singleton/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_07_creational_patterns/singleton/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_07_creational_patterns/singleton/test_algorithm.py)
+
+
+## References
+
+- [Singleton](https://en.wikipedia.org/wiki/Singleton) - Wikipedia

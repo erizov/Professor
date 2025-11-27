@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_34_edge_ai/tflite/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_34_edge_ai/tflite/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_34_edge_ai/tflite/test_algorithm.py)
+
+
+## References
+
+- [Tflite - Wikipedia](https://en.wikipedia.org/wiki/Tflite)

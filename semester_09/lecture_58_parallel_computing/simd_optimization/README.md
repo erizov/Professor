@@ -132,3 +132,8 @@ Compare with alternatives
     Utilizes Single Instruction, Multiple Data (SIMD) instructions to perform the same operation on multiple data elements simultaneously, accelerating vectorized computations on modern CPUs.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Simd Optimization - Wikipedia](https://en.wikipedia.org/wiki/Simd%20Optimization)

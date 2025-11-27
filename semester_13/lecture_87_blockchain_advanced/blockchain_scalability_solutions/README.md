@@ -130,3 +130,8 @@ Compare with alternatives
     Techniques and solutions that increase blockchain transaction throughput, including Layer 2 solutions, sharding, and optimization methods.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Blockchain Scalability Solutions - Wikipedia](https://en.wikipedia.org/wiki/Blockchain%20Scalability%20Solutions)

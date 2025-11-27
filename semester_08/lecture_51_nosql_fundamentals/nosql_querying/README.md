@@ -130,3 +130,8 @@ Compare with alternatives
     Retrieves and manipulates data from NoSQL databases using query languages and APIs, enabling flexible data access patterns adapted to different NoSQL data models.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Nosql Querying - Wikipedia](https://en.wikipedia.org/wiki/Nosql%20Querying)

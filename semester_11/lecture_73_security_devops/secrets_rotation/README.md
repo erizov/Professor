@@ -130,3 +130,8 @@ Compare with alternatives
     Automatically rotates secrets (passwords, API keys, certificates) on a regular schedule or when compromised, reducing security risk and ensuring secrets remain secure.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Secrets Rotation - Wikipedia](https://en.wikipedia.org/wiki/Secrets%20Rotation)

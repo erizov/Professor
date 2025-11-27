@@ -128,3 +128,8 @@ Compare with alternatives
     Implements atomic swaps, trustless cross-chain cryptocurrency exchanges that enable users to exchange cryptocurrencies from different blockchains without intermediaries, using hash time-locked contracts (HTLCs).
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Atomic Swaps - Wikipedia](https://en.wikipedia.org/wiki/Atomic%20Swaps)

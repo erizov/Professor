@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/deployment_strategies/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_42_ci_cd_fundamentals/deployment_strategies/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_42_ci_cd_fundamentals/deployment_strategies/test_algorithm.py)
+
+
+## References
+
+- [Deployment Strategies - Wikipedia](https://en.wikipedia.org/wiki/Deployment%20Strategies)

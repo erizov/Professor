@@ -2,23 +2,17 @@
 
 ## Simple Explanation
 
-Word2Vec is an algorithm used to solve specific problems in computer science.
-
+Word2vec is a technique in natural language processing for obtaining vector representations of words. These vectors capture information about the meaning of the word based on the surrounding words. The word2vec algorithm estimates these representations by modeling text in a large corpus. Once trained, such a model can detect synonymous words or suggest additional words for a partial sentence. Word2vec was developed by Tomáš Mikolov, Kai Chen, Greg Corrado, Ilya Sutskever and Jeff Dean at Google,
 
 ## Where It's Used
 
-- applying word2vec to solve specific tasks in word2vec;
-- using word2vec in production systems for data processing;
-- integrating word2vec into data pipelines for process automation;
+- Word2Vec powers introductory CS labs focused on reasoning about data.
+- Instructors rely on Word2Vec when demonstrating how to move from theory to working code.
+- Word2Vec appears in interview warm-ups and foundational assignments.
 
 ## Example
 
-Specific example of word2vec:
-
-1. Data preparation: input data for word2vec (specific format and structure)
-2. Algorithm application: sequence of steps of word2vec to process data
-3. Result: specific result of algorithm work with interpretation
-
+The word2vec algorithm estimates these representations by modeling text in a large corpus. Word2vec was developed by Tomáš Mikolov, Kai Chen, Greg Corrado, Ilya Sutskever and Jeff Dean at Google, and published in 2013
 
 ## Self-Check Questions
 
@@ -44,13 +38,18 @@ Specific example of word2vec:
 
 ### Level 1 (Easy)
 
+(Easy)
+
 Perform a simple operation with the word2vec algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
+
+(Medium)
 
 Apply the word2vec algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the word2vec algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+(Advanced)
 
+Write an implementation of the word2vec algorithm in a programming language. Add error handling, input validation, tests, and documentation.

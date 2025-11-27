@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_37_cost_optimization/cost_analysis/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_37_cost_optimization/cost_analysis/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_37_cost_optimization/cost_analysis/test_algorithm.py)
+
+
+## References
+
+- [Cost–benefit analysis](https://en.wikipedia.org/wiki/Cost%E2%80%93benefit_analysis) - Wikipedia

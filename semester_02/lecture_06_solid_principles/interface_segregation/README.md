@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_06_solid_principles/interface_segregation/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_06_solid_principles/interface_segregation/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_06_solid_principles/interface_segregation/test_algorithm.py)
+
+
+## References
+
+- [Interface Segregation - Wikipedia](https://en.wikipedia.org/wiki/Interface%20Segregation)

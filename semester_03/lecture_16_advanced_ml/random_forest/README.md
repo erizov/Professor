@@ -79,3 +79,20 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_16_advanced_ml/random_forest/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_16_advanced_ml/random_forest/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_16_advanced_ml/random_forest/test_algorithm.py)
+
+
+## References
+
+- [Random forest](https://en.wikipedia.org/wiki/Random_forest) - Wikipedia
+
+
+## Real-World Applications
+
+- Database indexing
+- File system organization
+
+- Database indexing
+- File system organization
+## Historical Context
+
+Random forests or random decision forests is an ensemble learning method for classification, regression and other tasks that works by creating a multitude of decision trees during training. For classification tasks, the output of the random forest is the class selected by most trees

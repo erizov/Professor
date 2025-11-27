@@ -119,3 +119,8 @@ Compare with alternatives
     Documentation Testing solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Documentation testing](https://en.wikipedia.org/wiki/Documentation_testing) - Wikipedia

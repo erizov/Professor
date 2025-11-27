@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_43_ci_cd_advanced/canary_deployment/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_43_ci_cd_advanced/canary_deployment/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_43_ci_cd_advanced/canary_deployment/test_algorithm.py)
+
+
+## References
+
+- [Canary Deployment - Wikipedia](https://en.wikipedia.org/wiki/Canary%20Deployment)

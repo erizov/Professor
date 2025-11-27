@@ -132,3 +132,8 @@ Compare with alternatives
     Reduces precision of model weights and activations from FP32 to lower precision (INT8, INT4) during inference, reducing model size and accelerating inference on hardware that supports low-precision operations.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantization Inference - Wikipedia](https://en.wikipedia.org/wiki/Quantization%20Inference)

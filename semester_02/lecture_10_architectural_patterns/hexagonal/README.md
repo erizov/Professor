@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_10_architectural_patterns/hexagonal/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_10_architectural_patterns/hexagonal/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_10_architectural_patterns/hexagonal/test_algorithm.py)
+
+
+## References
+
+- [Hexagon](https://en.wikipedia.org/wiki/Hexagon) - Wikipedia

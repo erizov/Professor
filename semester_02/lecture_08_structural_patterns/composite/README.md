@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_08_structural_patterns/composite/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_08_structural_patterns/composite/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_08_structural_patterns/composite/test_algorithm.py)
+
+
+## References
+
+- [Composite](https://en.wikipedia.org/wiki/Composite) - Wikipedia

@@ -132,3 +132,13 @@ Compare with alternatives
 Enables CI/CD pipelines to execute steps conditionally based on conditions like branch, file changes, environment, or custom logic, making pipelines more efficient and flexible.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Addressing mode](https://en.wikipedia.org/wiki/Addressing_mode) - Wikipedia
+
+
+## Historical Context
+
+An addressing mode specifies how to calculate the effective memory address of an operand by using information held in registers and/or constants contained within a machine instruction or elsewhere

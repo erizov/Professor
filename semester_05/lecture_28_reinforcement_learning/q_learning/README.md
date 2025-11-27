@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_28_reinforcement_learning/q_learning/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_28_reinforcement_learning/q_learning/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_28_reinforcement_learning/q_learning/test_algorithm.py)
+
+
+## References
+
+- [Q-learning](https://en.wikipedia.org/wiki/Q-learning) - Wikipedia

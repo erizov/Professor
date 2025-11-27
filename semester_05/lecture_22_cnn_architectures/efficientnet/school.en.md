@@ -1,9 +1,8 @@
-# Efficientnet
+# EfficientNet
 
 ## Simple Explanation
 
-EfficientNet is an algorithm used to solve specific problems in computer science.
-
+EfficientNet is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
@@ -18,7 +17,6 @@ Specific example of efficientnet:
 1. Data preparation: input data for efficientnet (specific format and structure)
 2. Algorithm application: sequence of steps of efficientnet to process data
 3. Result: specific result of algorithm work with interpretation
-
 
 ## Self-Check Questions
 
@@ -44,13 +42,18 @@ Specific example of efficientnet:
 
 ### Level 1 (Easy)
 
+(Easy)
+
 Perform a simple operation with the efficientnet algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
+
+(Medium)
 
 Apply the efficientnet algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the efficientnet algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+(Advanced)
 
+Write an implementation of the efficientnet algorithm in a programming language. Add error handling, input validation, tests, and documentation.

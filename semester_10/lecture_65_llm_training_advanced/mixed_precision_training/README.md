@@ -130,3 +130,8 @@ Compare with alternatives
     Accelerates neural network training by using lower precision (FP16/BF16) for most operations while maintaining FP32 precision for critical operations, reducing memory usage and increasing training speed on modern GPUs.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Mixed Precision Training - Wikipedia](https://en.wikipedia.org/wiki/Mixed%20Precision%20Training)

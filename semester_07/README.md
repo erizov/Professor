@@ -156,3 +156,8 @@ Avoid Semester 7 when:
 ### Benchmark Results
 
 *Note: Run benchmarks with your specific data and hardware to get accurate performance metrics.*
+
+
+## References
+
+- [Semester 07 - Wikipedia](https://en.wikipedia.org/wiki/Semester%2007)

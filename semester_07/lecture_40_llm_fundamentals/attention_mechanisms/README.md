@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_40_llm_fundamentals/attention_mechanisms/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_40_llm_fundamentals/attention_mechanisms/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_40_llm_fundamentals/attention_mechanisms/test_algorithm.py)
+
+
+## References
+
+- [Attention (machine learning)](https://en.wikipedia.org/wiki/Attention_(machine_learning)) - Wikipedia
+
+
+## Historical Context
+
+In natural language processing, importance is represented by "soft" weights assigned to each word in a sentence

@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_44_quantum_computing/quantum_algorithms/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_44_quantum_computing/quantum_algorithms/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_44_quantum_computing/quantum_algorithms/test_algorithm.py)
+
+
+## References
+
+- [Quantum algorithm](https://en.wikipedia.org/wiki/Quantum_algorithm) - Wikipedia
+
+
+## Historical Context
+
+A classical algorithm is a finite sequence of instructions, or a step-by-step procedure for solving a problem, where each step or instruction can be performed on a classical computer. Similarly, a quantum algorithm is a step-by-step procedure, where each of the steps can be performed on a quantum computer

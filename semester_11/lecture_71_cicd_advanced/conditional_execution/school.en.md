@@ -1,56 +1,57 @@
-# Conditional Execution
+# Conditional Execution in CI/CD
 
 ## Simple Explanation
 
-Conditional Execution in CI/CD is an algorithm used to solve specific problems in computer science.
-
+Conditional Execution in CI/CD is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying conditional execution to solve specific tasks in conditional;
-- using conditional execution in production systems for execution;
-- integrating conditional execution into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of conditional execution:
+Consider a specific example of how conditional execution in ci/cd works:
 
-1. Data preparation: input data for conditional execution (specific format and structure)
-2. Algorithm application: sequence of steps of conditional execution to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the conditional execution algorithm do?
-2. In what situations is conditional execution used?
+1. What does the conditional execution in ci/cd algorithm do?
+2. In what situations is conditional execution in ci/cd used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does conditional execution handle edge cases?
-2. What are the advantages and disadvantages of conditional execution?
-3. Can the performance of conditional execution be improved?
+1. How does conditional execution in ci/cd handle edge cases?
+2. What are the advantages and disadvantages of conditional execution in ci/cd?
+3. Can the performance of conditional execution in ci/cd be improved?
 
 ### Advanced
 
-1. What is the time complexity of conditional execution?
-2. How does conditional execution work with large volumes of data?
-3. How can conditional execution be optimized?
+1. What is the time complexity of conditional execution in ci/cd?
+2. How does conditional execution in ci/cd work with large volumes of data?
+3. How can conditional execution in ci/cd be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the conditional execution algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the conditional execution in ci/cd algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the conditional execution algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the conditional execution in ci/cd algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the conditional execution algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the conditional execution in ci/cd algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

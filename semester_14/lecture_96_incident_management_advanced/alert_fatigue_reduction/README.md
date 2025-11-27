@@ -130,3 +130,8 @@ Compare with alternatives
 Systems that reduce alert fatigue by intelligently filtering, prioritizing, and grouping alerts to ensure operators focus on critical issues.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Alert Fatigue Reduction - Wikipedia](https://en.wikipedia.org/wiki/Alert%20Fatigue%20Reduction)

@@ -1,56 +1,57 @@
-# Onboarding Automation
+# Developer Onboarding Automation
 
 ## Simple Explanation
 
-Developer Onboarding Automation is an algorithm used to solve specific problems in computer science.
-
+Developer Onboarding Automation is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying onboarding automation to solve specific tasks in onboarding;
-- using onboarding automation in production systems for automation;
-- integrating onboarding automation into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of onboarding automation:
+Consider a specific example of how developer onboarding automation works:
 
-1. Data preparation: input data for onboarding automation (specific format and structure)
-2. Algorithm application: sequence of steps of onboarding automation to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the onboarding automation algorithm do?
-2. In what situations is onboarding automation used?
+1. What does the developer onboarding automation algorithm do?
+2. In what situations is developer onboarding automation used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does onboarding automation handle edge cases?
-2. What are the advantages and disadvantages of onboarding automation?
-3. Can the performance of onboarding automation be improved?
+1. How does developer onboarding automation handle edge cases?
+2. What are the advantages and disadvantages of developer onboarding automation?
+3. Can the performance of developer onboarding automation be improved?
 
 ### Advanced
 
-1. What is the time complexity of onboarding automation?
-2. How does onboarding automation work with large volumes of data?
-3. How can onboarding automation be optimized?
+1. What is the time complexity of developer onboarding automation?
+2. How does developer onboarding automation work with large volumes of data?
+3. How can developer onboarding automation be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the onboarding automation algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the developer onboarding automation algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the onboarding automation algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the developer onboarding automation algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the onboarding automation algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the developer onboarding automation algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

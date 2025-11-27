@@ -1,38 +1,26 @@
-# Downsampling
-
-**Алгоритм:** понижающая дискретизация  
-**Дисциплина:** Инженерия данных / управление данными
+# Downsampling — Университетский уровень
 
 ## Определение алгоритма
 
-Downsampling — это алгоритм, используемый для решения конкретных задач в области компьютерных наук.
-
+In digital signal processing, downsampling, subsampling, compression, and decimation are terms associated with the process of resampling in a multi-rate digital signal processing system. Both downsampling and decimation can be synonymous with compression, or they can describe an entire process of bandwidth reduction (filtering) and sample-rate reduction. When the process is performed on a sequence of samples of a signal or a continuous function, it produces an approximation of the sequence that would have been obtained by sampling the signal at a lower rate.
 
 ## Техническое описание
 
-Downsampling работает путем последовательной обработки данных согласно определенным правилам и алгоритмам.
+In digital signal processing, downsampling, subsampling, compression, and decimation are terms associated with the process of resampling in a multi-rate digital signal processing system. Both downsampling and decimation can be synonymous with compression, or they can describe an entire process of bandwidth reduction (filtering) and sample-rate reduction. When the process is performed on a sequence of samples of a signal or a continuous function, it produces an approximation of the sequence that would have been obtained by sampling the signal at a lower rate.
 
+## Области применения
 
-## Применение в Data Engineering / Data Governance
+- Downsampling объясняют в школьных кружках информатики для развития алгоритмического мышления.
+- Учителя используют Downsampling на лабораторных работах, чтобы показать практическую ценность структур данных.
+- Downsampling помогает разбирать реальные задачи соревнований и олимпиад.
 
-1. применение downsampling для решения конкретных задач в области downsampling
-2. использование downsampling в production-системах для обработки данных
-3. интеграция downsampling в data pipelines для автоматизации процессов
+## Пошаговый сценарий
 
-## Пример сценария по шагам
+1. Подготовьте вход: набор данных и структуру памяти.
+2. Примените ключевые шаги Downsampling, отслеживая изменения после каждого шага.
+3. Проверьте итог и сопоставьте его с ожидаемым результатом.
 
-**Входные данные:**
-[Конкретные входные данные для Downsampling]
-
-**Шаг 1:** [Конкретное действие алгоритма Downsampling]
-**Шаг 2:** [Следующее действие]
-**Шаг 3:** [Продолжение обработки]
-
-**Итоговый результат:**
-[Конкретный результат работы алгоритма Downsampling]
-
-
-## Вопросы для самопроверки
+## Контрольные вопросы
 
 ### Базовый уровень
 
@@ -41,13 +29,13 @@ Downsampling работает путем последовательной обр
 
 ### Средний уровень
 
-1. В каких случаях алгоритм понижающая дискретизация наиболее эффективен? Когда его использование нецелесообразно?
-2. Как можно оптимизировать понижающая дискретизация? Предложите конкретные улучшения.
+3. В каких случаях алгоритм понижающая дискретизация наиболее эффективен? Когда его использование нецелесообразно?
+4. Как можно оптимизировать понижающая дискретизация? Предложите конкретные улучшения.
 
 ### Продвинутый уровень
 
-1. Сравните понижающая дискретизация с альтернативными подходами. При каких условиях каждый из них предпочтительнее?
-2. Проанализируйте граничные случаи и ошибки реализации понижающая дискретизация. Как обеспечить корректность алгоритма?
+5. Сравните понижающая дискретизация с альтернативными подходами. При каких условиях каждый из них предпочтительнее?
+6. Проанализируйте граничные случаи и ошибки реализации понижающая дискретизация. Как обеспечить корректность алгоритма?
 
 ## Практические задания
 
@@ -66,3 +54,6 @@ Downsampling работает путем последовательной обр
 Проведите исследовательский анализ понижающая дискретизация: сравните с
 альтернативными алгоритмами, измерьте производительность, проанализируйте сложность и сформулируйте
 выводы о применимости.
+
+
+*Источник: https://en.wikipedia.org/wiki/Downsampling_(signal_processing)*

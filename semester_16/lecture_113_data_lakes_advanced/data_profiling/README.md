@@ -119,3 +119,32 @@ Compare with alternatives
     Data Profiling solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data profiling](https://en.wikipedia.org/wiki/Data_profiling) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+## Historical Context
+
+The purpose of these statistics may be to:Find out whether existing data can be easily used for other purposes
+Improve the ability to search data by tagging it with keywords, descriptions, or assigning it to a category
+Assess data quality, including whether the data conforms to particular standards or patterns
+Assess the risk involved in integrating data in new applications, including the challeng

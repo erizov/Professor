@@ -119,3 +119,8 @@ Compare with alternatives
     Nosql Transactions solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Nosql Transactions - Wikipedia](https://en.wikipedia.org/wiki/Nosql%20Transactions)

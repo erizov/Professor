@@ -1,56 +1,57 @@
-# Open Closed
+# Open/Closed Principle
 
 ## Simple Explanation
 
-Open/Closed Principle is an algorithm used to solve specific problems in computer science.
-
+Open/Closed Principle is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying open closed to solve specific tasks in open;
-- using open closed in production systems for closed;
-- integrating open closed into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of open closed:
+Consider a specific example of how open/closed principle works:
 
-1. Data preparation: input data for open closed (specific format and structure)
-2. Algorithm application: sequence of steps of open closed to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the open closed algorithm do?
-2. In what situations is open closed used?
+1. What does the open/closed principle algorithm do?
+2. In what situations is open/closed principle used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does open closed handle edge cases?
-2. What are the advantages and disadvantages of open closed?
-3. Can the performance of open closed be improved?
+1. How does open/closed principle handle edge cases?
+2. What are the advantages and disadvantages of open/closed principle?
+3. Can the performance of open/closed principle be improved?
 
 ### Advanced
 
-1. What is the time complexity of open closed?
-2. How does open closed work with large volumes of data?
-3. How can open closed be optimized?
+1. What is the time complexity of open/closed principle?
+2. How does open/closed principle work with large volumes of data?
+3. How can open/closed principle be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the open closed algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the open/closed principle algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the open closed algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the open/closed principle algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the open closed algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the open/closed principle algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

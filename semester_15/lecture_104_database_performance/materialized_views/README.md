@@ -119,3 +119,8 @@ Compare with alternatives
     Materialized Views solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Materialized view](https://en.wikipedia.org/wiki/Materialized_view) - Wikipedia

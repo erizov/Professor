@@ -130,3 +130,8 @@ Compare with alternatives
     Optimizes infrastructure and cloud costs by identifying waste, right-sizing resources, using reserved instances, and implementing cost-effective architectures, reducing spending while maintaining performance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Cost Optimization - Wikipedia](https://en.wikipedia.org/wiki/Cost%20Optimization)

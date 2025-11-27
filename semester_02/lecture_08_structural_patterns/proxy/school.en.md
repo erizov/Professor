@@ -1,56 +1,57 @@
-# Proxy
+# Proxy Pattern
 
 ## Simple Explanation
 
-Proxy Pattern is an algorithm used to solve specific problems in computer science.
-
+Proxy Pattern is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying proxy to solve specific tasks in proxy;
-- using proxy in production systems for data processing;
-- integrating proxy into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of proxy:
+Consider a specific example of how proxy pattern works:
 
-1. Data preparation: input data for proxy (specific format and structure)
-2. Algorithm application: sequence of steps of proxy to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the proxy algorithm do?
-2. In what situations is proxy used?
+1. What does the proxy pattern algorithm do?
+2. In what situations is proxy pattern used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does proxy handle edge cases?
-2. What are the advantages and disadvantages of proxy?
-3. Can the performance of proxy be improved?
+1. How does proxy pattern handle edge cases?
+2. What are the advantages and disadvantages of proxy pattern?
+3. Can the performance of proxy pattern be improved?
 
 ### Advanced
 
-1. What is the time complexity of proxy?
-2. How does proxy work with large volumes of data?
-3. How can proxy be optimized?
+1. What is the time complexity of proxy pattern?
+2. How does proxy pattern work with large volumes of data?
+3. How can proxy pattern be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the proxy algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the proxy pattern algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the proxy algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the proxy pattern algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the proxy algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the proxy pattern algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

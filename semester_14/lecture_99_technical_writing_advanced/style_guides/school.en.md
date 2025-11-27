@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Style Guides is an algorithm used to solve specific problems in computer science.
-
+Style Guides is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying style guides to solve specific tasks in style;
-- using style guides in production systems for guides;
-- integrating style guides into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of style guides:
+Consider a specific example of how style guides works:
 
-1. Data preparation: input data for style guides (specific format and structure)
-2. Algorithm application: sequence of steps of style guides to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

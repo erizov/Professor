@@ -130,3 +130,8 @@ Compare with alternatives
     A scaling technique that partitions the blockchain into multiple shards that process transactions in parallel, enabling horizontal scaling of transaction throughput.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Sharding Blockchain - Wikipedia](https://en.wikipedia.org/wiki/Sharding%20Blockchain)

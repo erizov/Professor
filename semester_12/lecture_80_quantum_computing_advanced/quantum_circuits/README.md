@@ -130,3 +130,8 @@ Compare with alternatives
     Designs and implements quantum circuits (sequences of quantum gates) to perform quantum computations, algorithms, and operations on qubits.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Circuits - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Circuits)

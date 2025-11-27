@@ -2,23 +2,25 @@
 
 ## Simple Explanation
 
-Sidechains is an algorithm used to solve specific problems in computer science.
-
+Side-chain, side chain, or sidechain may refer to:Side chain, a chemical group attached to the main chain or backbone of a molecule, such as a protein
+Substituent, an atom or group of atoms substituted in place of a hydrogen atom on the parent chain of a hydrocarbon
+Side-chaining, an effect in digital audio processing
+Sidechain (ledger), a designation for a particular blockchain
+"Sidechain", a song by Knuckle Puck from the album 20/20
 
 ## Where It's Used
 
-- applying sidechains to solve specific tasks in sidechains;
-- using sidechains in production systems for data processing;
-- integrating sidechains into data pipelines for process automation;
+- Sidechains powers introductory CS labs focused on reasoning about data.
+- Instructors rely on Sidechains when demonstrating how to move from theory to working code.
+- Sidechains appears in interview warm-ups and foundational assignments.
 
 ## Example
 
-Specific example of sidechains:
-
-1. Data preparation: input data for sidechains (specific format and structure)
-2. Algorithm application: sequence of steps of sidechains to process data
-3. Result: specific result of algorithm work with interpretation
-
+Side-chain, side chain, or sidechain may refer to:Side chain, a chemical group attached to the main chain or backbone of a molecule, such as a protein
+Substituent, an atom or group of atoms substituted in place of a hydrogen atom on the parent chain of a hydrocarbon
+Side-chaining, an effect in digital audio processing
+Sidechain (ledger), a designation for a particular blockchain
+"Sidechain", a son
 
 ## Self-Check Questions
 
@@ -44,18 +46,26 @@ Specific example of sidechains:
 
 ### Level 1 (Easy)
 
+(Easy)
+
 Perform a simple operation with the sidechains algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
+(Medium)
+
 Apply the sidechains algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
+
+(Advanced)
 
 Write an implementation of the sidechains algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 
 ---
 
 **Ethical Note:**
+
+Remember that machine learning and artificial intelligence algorithms are powerful tools that can affect people's lives. It is important to use them responsibly, considering ethical principles, fairness, transparency, and respect for privacy. Always think about the consequences of your decisions and use technology for the benefit of society.
 
 Remember that machine learning and artificial intelligence algorithms are powerful tools that can affect people's lives. It is important to use them responsibly, considering ethical principles, fairness, transparency, and respect for privacy. Always think about the consequences of your decisions and use technology for the benefit of society.

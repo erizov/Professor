@@ -132,3 +132,8 @@ Compare with alternatives
     Implements decentralized derivatives protocols that enable trading of financial derivatives (futures, options, perpetuals) on blockchain without intermediaries, providing transparent and accessible derivative markets.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Derivative (disambiguation)](https://en.wikipedia.org/wiki/Derivative_(disambiguation)) - Wikipedia

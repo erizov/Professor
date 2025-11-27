@@ -132,3 +132,8 @@ Compare with alternatives
     Automatically scales infrastructure resources up or down based on demand using advanced techniques like predictive scaling, multi-metric scaling, and custom scaling policies, optimizing performance and costs.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Auto Scaling Advanced - Wikipedia](https://en.wikipedia.org/wiki/Auto%20Scaling%20Advanced)

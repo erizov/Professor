@@ -130,3 +130,8 @@ Compare with alternatives
     Studies and analyzes attacks on cryptographic systems using quantum computers, understanding threats posed by quantum computing to current encryption methods.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Attacks - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Attacks)

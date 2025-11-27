@@ -130,3 +130,8 @@ Compare with alternatives
     Implements smart contract audit techniques and methodologies to identify security vulnerabilities, code issues, and potential exploits in blockchain smart contracts before deployment.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Audit Techniques - Wikipedia](https://en.wikipedia.org/wiki/Audit%20Techniques)

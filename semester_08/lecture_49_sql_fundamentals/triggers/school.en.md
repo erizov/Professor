@@ -1,56 +1,57 @@
-# Triggers
+# Database Triggers
 
 ## Simple Explanation
 
-Database Triggers is an algorithm used to solve specific problems in computer science.
-
+Database Triggers is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying triggers to solve specific tasks in triggers;
-- using triggers in production systems for data processing;
-- integrating triggers into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of triggers:
+Consider a specific example of how database triggers works:
 
-1. Data preparation: input data for triggers (specific format and structure)
-2. Algorithm application: sequence of steps of triggers to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the triggers algorithm do?
-2. In what situations is triggers used?
+1. What does the database triggers algorithm do?
+2. In what situations is database triggers used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does triggers handle edge cases?
-2. What are the advantages and disadvantages of triggers?
-3. Can the performance of triggers be improved?
+1. How does database triggers handle edge cases?
+2. What are the advantages and disadvantages of database triggers?
+3. Can the performance of database triggers be improved?
 
 ### Advanced
 
-1. What is the time complexity of triggers?
-2. How does triggers work with large volumes of data?
-3. How can triggers be optimized?
+1. What is the time complexity of database triggers?
+2. How does database triggers work with large volumes of data?
+3. How can database triggers be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the triggers algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the database triggers algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the triggers algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the database triggers algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the triggers algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the database triggers algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_07_heaps_priority/priority_queue/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_07_heaps_priority/priority_queue/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_07_heaps_priority/priority_queue/test_algorithm.py)
+
+
+## References
+
+- [Priority queue](https://en.wikipedia.org/wiki/Priority_queue) - Wikipedia

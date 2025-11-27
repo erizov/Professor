@@ -130,3 +130,8 @@ Compare with alternatives
     Extends language models to understand and generate content across multiple modalities (text, images, audio, video) by learning unified representations and cross-modal understanding.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Multimodal Llms - Wikipedia](https://en.wikipedia.org/wiki/Multimodal%20Llms)

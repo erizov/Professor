@@ -130,3 +130,8 @@ Compare with alternatives
     Reduces memory usage during backpropagation by trading computation for memory - storing only selected activations and recomputing others during backward pass, enabling training of larger models with limited GPU memory.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Gradient Checkpointing - Wikipedia](https://en.wikipedia.org/wiki/Gradient%20Checkpointing)

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_41_llm_advanced/reinforcement_learning_hf/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_41_llm_advanced/reinforcement_learning_hf/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_41_llm_advanced/reinforcement_learning_hf/test_algorithm.py)
+
+
+## References
+
+- [Reinforcement Learning Hf - Wikipedia](https://en.wikipedia.org/wiki/Reinforcement%20Learning%20Hf)

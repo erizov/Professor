@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_06_solid_principles/open_closed/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_06_solid_principles/open_closed/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_06_solid_principles/open_closed/test_algorithm.py)
+
+
+## References
+
+- [Open Closed - Wikipedia](https://en.wikipedia.org/wiki/Open%20Closed)

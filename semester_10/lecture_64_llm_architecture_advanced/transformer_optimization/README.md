@@ -130,3 +130,8 @@ Alternatives: Standard Transformers, Efficient Architectures, Model Compression,
     Optimizes transformer architectures for efficiency, speed, and scalability through architectural improvements, algorithmic optimizations, and hardware-aware design while maintaining model quality.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Transformer Optimization - Wikipedia](https://en.wikipedia.org/wiki/Transformer%20Optimization)

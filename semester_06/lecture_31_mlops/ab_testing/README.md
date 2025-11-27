@@ -79,3 +79,20 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_31_mlops/ab_testing/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_31_mlops/ab_testing/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_31_mlops/ab_testing/test_algorithm.py)
+
+
+## References
+
+- [A/B testing](https://en.wikipedia.org/wiki/A%2FB_testing) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+## Historical Context
+
+A/B testing is employed to compare multiple versions of a single variable, for example by testing a subject's response to variant A against variant B, and to determine which of the variants is more effective

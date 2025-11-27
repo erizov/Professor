@@ -5,32 +5,42 @@
 
 ## Algorithm Definition
 
-Data Mesh is an algorithm used to solve specific problems in computer science.
-
+Data Mesh is an algorithm for solving problems in the field of data engineering / data governance, which performs a sequence of operations to process data and obtain results.
 
 ## Technical Description
 
-Data Mesh works by processing data sequentially according to specific rules and algorithms.
+### What the Algorithm Does
 
+Data Mesh is an algorithm for solving problems in the field of data engineering / data governance, which performs a sequence of operations to process data and obtain results.
+
+**Key Steps:**
+1. Data input and validation
+2. Algorithm execution
+3. Result processing and output
+
+**Key Data Structures:**
+- Arrays or lists for data storage
+- Variables for intermediate results
+- Control structures for flow management
 
 ## Application in Data Engineering / Data Governance
 
-1. applying data mesh to solve specific tasks in data
-2. using data mesh in production systems for mesh
-3. integrating data mesh into data pipelines for process automation
+1. ETL processes in banking systems: processing millions of transactions per day
+2. Report generation in corporate systems: daily processing of web server logs
+3. Image processing in social networks: batch processing of uploaded photos
 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for Data Mesh]
+[Specific input data for data mesh]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
+...
 
 **Final Result:**
 [Specific result of the algorithm's work]
-
 
 ## Self-Check Questions
 

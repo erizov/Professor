@@ -132,3 +132,8 @@ Compare with alternatives
 NLP systems that analyze customer sentiment in support interactions to understand emotions, prioritize cases, and improve support quality.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis) - Wikipedia

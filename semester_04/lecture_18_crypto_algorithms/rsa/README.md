@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_18_crypto_algorithms/rsa/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_18_crypto_algorithms/rsa/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_18_crypto_algorithms/rsa/test_algorithm.py)
+
+
+## References
+
+- [RSA](https://en.wikipedia.org/wiki/RSA) - Wikipedia

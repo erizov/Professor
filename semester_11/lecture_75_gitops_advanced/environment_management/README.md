@@ -130,3 +130,8 @@ Compare with alternatives
     Manages multiple deployment environments (dev, staging, prod) consistently through GitOps, ensuring environments are reproducible, versioned, and aligned with infrastructure as code.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Environment Management - Wikipedia](https://en.wikipedia.org/wiki/Environment%20Management)

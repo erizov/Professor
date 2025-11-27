@@ -5,32 +5,42 @@
 
 ## Algorithm Definition
 
-Chaos Metrics is an algorithm used to solve specific problems in computer science.
-
+Chaos Metrics is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
 
 ## Technical Description
 
-Chaos Metrics works by processing data sequentially according to specific rules and algorithms.
+### What the Algorithm Does
 
+Chaos Metrics is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
+
+**Key Steps:**
+1. Data input and validation
+2. Algorithm execution
+3. Result processing and output
+
+**Key Data Structures:**
+- Arrays or lists for data storage
+- Variables for intermediate results
+- Control structures for flow management
 
 ## Application in Computer Science
 
-1. applying chaos metrics to solve specific tasks in chaos
-2. using chaos metrics in production systems for metrics
-3. integrating chaos metrics into data pipelines for process automation
+1. Data classification: applying the algorithm to predict object categories based on features
+2. Regression analysis: building a model to predict continuous values
+3. Clustering: grouping similar objects without prior labels
 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for Chaos Metrics]
+[Specific input data for chaos metrics]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
+...
 
 **Final Result:**
 [Specific result of the algorithm's work]
-
 
 ## Self-Check Questions
 

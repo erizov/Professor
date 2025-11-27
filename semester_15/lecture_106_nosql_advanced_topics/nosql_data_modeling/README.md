@@ -119,3 +119,8 @@ Compare with alternatives
     Nosql Data Modeling solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Nosql Data Modeling - Wikipedia](https://en.wikipedia.org/wiki/Nosql%20Data%20Modeling)

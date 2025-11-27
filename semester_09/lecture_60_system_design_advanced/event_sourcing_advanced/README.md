@@ -130,3 +130,8 @@ Compare with alternatives
     Stores all changes to application state as a sequence of events, enabling time travel, audit trails, and rebuilding state from events, providing complete history and flexibility.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Event Sourcing Advanced - Wikipedia](https://en.wikipedia.org/wiki/Event%20Sourcing%20Advanced)

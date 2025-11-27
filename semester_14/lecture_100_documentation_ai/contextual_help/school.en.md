@@ -1,58 +1,59 @@
-# Contextual Help
+# Contextual Documentation Help
 
 ## Simple Explanation
 
-Contextual Documentation Help is an algorithm used to solve specific problems in computer science.
-
+Contextual Documentation Help is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying contextual help to solve specific tasks in contextual;
-- using contextual help in production systems for help;
-- integrating contextual help into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of contextual help:
+Consider a specific example of how contextual documentation help works:
 
-1. Data preparation: input data for contextual help (specific format and structure)
-2. Algorithm application: sequence of steps of contextual help to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the contextual help algorithm do?
-2. In what situations is contextual help used?
+1. What does the contextual documentation help algorithm do?
+2. In what situations is contextual documentation help used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does contextual help handle edge cases?
-2. What are the advantages and disadvantages of contextual help?
-3. Can the performance of contextual help be improved?
+1. How does contextual documentation help handle edge cases?
+2. What are the advantages and disadvantages of contextual documentation help?
+3. Can the performance of contextual documentation help be improved?
 
 ### Advanced
 
-1. What is the time complexity of contextual help?
-2. How does contextual help work with large volumes of data?
-3. How can contextual help be optimized?
+1. What is the time complexity of contextual documentation help?
+2. How does contextual documentation help work with large volumes of data?
+3. How can contextual documentation help be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the contextual help algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the contextual documentation help algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the contextual help algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the contextual documentation help algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the contextual help algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the contextual documentation help algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 
 ---
 

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_15_greedy_algorithms/fractional_knapsack/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_15_greedy_algorithms/fractional_knapsack/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_15_greedy_algorithms/fractional_knapsack/test_algorithm.py)
+
+
+## References
+
+- [Fractional Knapsack - Wikipedia](https://en.wikipedia.org/wiki/Fractional%20Knapsack)

@@ -132,3 +132,8 @@ Compare with alternatives
     Improves retrieval quality by re-ranking initially retrieved documents using a more sophisticated model (cross-encoder, LLM) that considers query-document interactions, placing the most relevant documents at the top.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Reranking - Wikipedia](https://en.wikipedia.org/wiki/Reranking)

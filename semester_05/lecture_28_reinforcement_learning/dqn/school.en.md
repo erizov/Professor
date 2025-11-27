@@ -1,56 +1,57 @@
-# Dqn
+# Deep Q-Network (DQN)
 
 ## Simple Explanation
 
-Deep Q-Network (DQN) is an algorithm used to solve specific problems in computer science.
-
+Deep Q-Network (DQN) is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying dqn to solve specific tasks in dqn;
-- using dqn in production systems for data processing;
-- integrating dqn into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of dqn:
+Consider a specific example of how deep q-network (dqn) works:
 
-1. Data preparation: input data for dqn (specific format and structure)
-2. Algorithm application: sequence of steps of dqn to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the dqn algorithm do?
-2. In what situations is dqn used?
+1. What does the deep q-network (dqn) algorithm do?
+2. In what situations is deep q-network (dqn) used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does dqn handle edge cases?
-2. What are the advantages and disadvantages of dqn?
-3. Can the performance of dqn be improved?
+1. How does deep q-network (dqn) handle edge cases?
+2. What are the advantages and disadvantages of deep q-network (dqn)?
+3. Can the performance of deep q-network (dqn) be improved?
 
 ### Advanced
 
-1. What is the time complexity of dqn?
-2. How does dqn work with large volumes of data?
-3. How can dqn be optimized?
+1. What is the time complexity of deep q-network (dqn)?
+2. How does deep q-network (dqn) work with large volumes of data?
+3. How can deep q-network (dqn) be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the dqn algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the deep q-network (dqn) algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the dqn algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the deep q-network (dqn) algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the dqn algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the deep q-network (dqn) algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

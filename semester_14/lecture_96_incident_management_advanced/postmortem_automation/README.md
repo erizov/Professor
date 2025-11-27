@@ -119,3 +119,8 @@ Compare with alternatives
     Postmortem Automation solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Postmortem Automation - Wikipedia](https://en.wikipedia.org/wiki/Postmortem%20Automation)

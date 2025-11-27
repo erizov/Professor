@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_39_operating_systems/file_systems/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_39_operating_systems/file_systems/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_39_operating_systems/file_systems/test_algorithm.py)
+
+
+## References
+
+- [File system](https://en.wikipedia.org/wiki/File_system) - Wikipedia

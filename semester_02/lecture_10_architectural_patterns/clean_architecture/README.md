@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_10_architectural_patterns/clean_architecture/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_10_architectural_patterns/clean_architecture/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_10_architectural_patterns/clean_architecture/test_algorithm.py)
+
+
+## References
+
+- [Clean Architecture - Wikipedia](https://en.wikipedia.org/wiki/Clean%20Architecture)

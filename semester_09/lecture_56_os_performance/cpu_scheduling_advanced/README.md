@@ -132,3 +132,8 @@ Compare with alternatives
 Implements sophisticated CPU scheduling algorithms that optimize for multiple objectives (throughput, latency, fairness, energy efficiency) using multi-level queues, priority inheritance, and dynamic priority adjustment.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Cpu Scheduling Advanced - Wikipedia](https://en.wikipedia.org/wiki/Cpu%20Scheduling%20Advanced)

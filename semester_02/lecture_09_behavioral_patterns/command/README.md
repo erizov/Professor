@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_09_behavioral_patterns/command/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_09_behavioral_patterns/command/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_09_behavioral_patterns/command/test_algorithm.py)
+
+
+## References
+
+- [Command](https://en.wikipedia.org/wiki/Command) - Wikipedia

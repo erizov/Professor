@@ -132,3 +132,8 @@ Compare with alternatives
     Algorithms that strategically combine quantum and classical computing to solve problems by leveraging quantum advantages while using classical resources for optimization and control.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Classical Hybrid - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Classical%20Hybrid)

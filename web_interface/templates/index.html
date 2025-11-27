@@ -372,6 +372,8 @@
                 <a href="/algorithm-executor" id="nav-executor">Algorithm Executor</a>
                 <a href="/test-reports" id="nav-test-results">Test Results</a>
                 <a href="/sandbox" id="nav-sandbox">Sandbox</a>
+                <a href="/load" target="_blank">Algorithm Descriptions Database Query</a>
+                <a href="/stats" target="_blank">Database Statistics</a>
                 <span id="user-admin-link" style="display: none;">
                     <a href="/user-admin" id="nav-user-admin">User Admin</a>
                 </span>
@@ -1006,7 +1008,16 @@ save_results(processed)</code></pre>
                 }
             };
             
-            // Normalize language value (russian -> ru, english -> en)
+
+    
+    
+    
+    
+    
+    
+    
+        
+                    // Normalize language value (russian -> ru, english -> en)
             const normalizedLang = (language === 'ru' || language === 'en') ? language : 
                                   (language === 'russian' ? 'ru' : (language === 'english' ? 'en' : 'en'));
             const t = translations[normalizedLang] || translations.en;

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_41_llm_advanced/chain_of_thought/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_41_llm_advanced/chain_of_thought/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_41_llm_advanced/chain_of_thought/test_algorithm.py)
+
+
+## References
+
+- [Chain of thought](https://en.wikipedia.org/wiki/Chain_of_thought) - Wikipedia

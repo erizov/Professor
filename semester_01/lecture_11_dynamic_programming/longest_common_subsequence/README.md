@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_11_dynamic_programming/longest_common_subsequence/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_11_dynamic_programming/longest_common_subsequence/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_11_dynamic_programming/longest_common_subsequence/test_algorithm.py)
+
+
+## References
+
+- [Longest common subsequence](https://en.wikipedia.org/wiki/Longest_common_subsequence) - Wikipedia

@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Semantic Search is an algorithm used to solve specific problems in computer science.
-
+Semantic Search is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying semantic search to solve specific tasks in semantic;
-- using semantic search in production systems for search;
-- integrating semantic search into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of semantic search:
+Consider a specific example of how semantic search works:
 
-1. Data preparation: input data for semantic search (specific format and structure)
-2. Algorithm application: sequence of steps of semantic search to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

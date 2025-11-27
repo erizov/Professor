@@ -131,3 +131,8 @@ Compare with alternatives
 30-second explanation (your own words)  
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Risk assessment](https://en.wikipedia.org/wiki/Risk_assessment) - Wikipedia

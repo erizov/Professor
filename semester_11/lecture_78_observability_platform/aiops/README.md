@@ -132,3 +132,8 @@ Compare with alternatives
 Uses artificial intelligence and machine learning to automate IT operations, detect anomalies, predict issues, and optimize system performance and reliability.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Aiops - Wikipedia](https://en.wikipedia.org/wiki/Aiops)

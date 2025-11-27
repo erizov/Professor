@@ -2,24 +2,24 @@
 
 ## Simple Explanation
 
-Data Reliability is an algorithm used to solve specific problems in computer science.
-
+Data Reliability is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- ensuring data reliability in critical systems;
-- monitoring SLA for data availability;
-- automatic recovery after failures;
-- ensuring data consistency;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of data reliability:
+Consider a specific example of how data reliability works:
 
-1. Data preparation: input data for data reliability (specific format and structure)
-2. Algorithm application: sequence of steps of data reliability to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

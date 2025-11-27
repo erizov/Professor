@@ -130,3 +130,8 @@ Compare with alternatives
     Implements stablecoins, cryptocurrencies designed to maintain stable value (typically pegged to fiat currencies like USD), providing price stability for DeFi applications and serving as a medium of exchange.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Stablecoin](https://en.wikipedia.org/wiki/Stablecoin) - Wikipedia

@@ -1,65 +1,75 @@
-# Auto Scaling Advanced
+# Advanced Auto-Scaling
 
 **Algorithm:** auto_scaling_advanced  
 **Discipline:** Computer Science
 
 ## Algorithm Definition
 
-Advanced Auto-Scaling is an algorithm used to solve specific problems in computer science.
-
+Advanced Auto-Scaling is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
 
 ## Technical Description
 
-Advanced Auto-Scaling works by processing data sequentially according to specific rules and algorithms.
+### What the Algorithm Does
 
+Advanced Auto-Scaling is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
+
+**Key Steps:**
+1. Data input and validation
+2. Algorithm execution
+3. Result processing and output
+
+**Key Data Structures:**
+- Arrays or lists for data storage
+- Variables for intermediate results
+- Control structures for flow management
 
 ## Application in Computer Science
 
-1. applying auto scaling advanced to solve specific tasks in auto
-2. using auto scaling advanced in production systems for advanced
-3. integrating auto scaling advanced into data pipelines for process automation
+1. Data classification: applying the algorithm to predict object categories based on features
+2. Regression analysis: building a model to predict continuous values
+3. Clustering: grouping similar objects without prior labels
 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for Advanced Auto-Scaling]
+[Specific input data for advanced auto-scaling]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
+...
 
 **Final Result:**
 [Specific result of the algorithm's work]
-
 
 ## Self-Check Questions
 
 ### Basic Level
 
-1. Describe the main stages of the auto scaling advanced algorithm. What data structures are used?
-2. What are the time and space complexity of auto scaling advanced? Justify your answer.
+1. Describe the main stages of the advanced auto-scaling algorithm. What data structures are used?
+2. What are the time and space complexity of advanced auto-scaling? Justify your answer.
 
 ### Intermediate Level
 
-1. In what cases is the auto scaling advanced algorithm most effective? When is its use not advisable?
-2. How can auto scaling advanced be optimized? Suggest specific improvements.
+1. In what cases is the advanced auto-scaling algorithm most effective? When is its use not advisable?
+2. How can advanced auto-scaling be optimized? Suggest specific improvements.
 
 ### Advanced Level
 
-1. Compare auto scaling advanced with alternative approaches. Under what conditions is each preferable?
-2. Analyze edge cases and implementation errors of auto scaling advanced. How to ensure algorithm correctness?
+1. Compare advanced auto-scaling with alternative approaches. Under what conditions is each preferable?
+2. Analyze edge cases and implementation errors of advanced auto-scaling. How to ensure algorithm correctness?
 
 ## Practical Tasks
 
 ### Level 1 — Basic
 
-Implement a basic version of the auto scaling advanced algorithm in a programming language. Add edge case handling and tests.
+Implement a basic version of the advanced auto-scaling algorithm in a programming language. Add edge case handling and tests.
 
 ### Level 2 — Applied
 
-Create a full implementation of auto scaling advanced with error handling, logging, and testing. Apply to real data and analyze results.
+Create a full implementation of advanced auto-scaling with error handling, logging, and testing. Apply to real data and analyze results.
 
 ### Level 3 — Research
 
-Conduct a research analysis of auto scaling advanced: compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
+Conduct a research analysis of advanced auto-scaling: compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
 

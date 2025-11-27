@@ -130,3 +130,8 @@ Compare with alternatives
     Enables NoSQL databases to handle increasing data volumes and traffic by scaling horizontally across multiple nodes, providing linear scalability and high throughput.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Nosql Scalability - Wikipedia](https://en.wikipedia.org/wiki/Nosql%20Scalability)

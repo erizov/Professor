@@ -130,3 +130,8 @@ Compare with alternatives
     Implements security protocols that leverage quantum mechanics for secure communication, authentication, and cryptographic operations, providing provably secure protocols based on quantum principles.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Security Protocols - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Security%20Protocols)

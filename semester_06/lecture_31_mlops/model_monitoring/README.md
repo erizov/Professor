@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_31_mlops/model_monitoring/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_31_mlops/model_monitoring/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_31_mlops/model_monitoring/test_algorithm.py)
+
+
+## References
+
+- [Model Monitoring - Wikipedia](https://en.wikipedia.org/wiki/Model%20Monitoring)

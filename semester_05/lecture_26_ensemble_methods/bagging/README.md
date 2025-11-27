@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_26_ensemble_methods/bagging/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_26_ensemble_methods/bagging/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_26_ensemble_methods/bagging/test_algorithm.py)
+
+
+## References
+
+- [Bagging](https://en.wikipedia.org/wiki/Bagging) - Wikipedia

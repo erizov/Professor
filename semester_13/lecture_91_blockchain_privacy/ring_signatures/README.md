@@ -129,3 +129,23 @@ Compare with alternatives
     Implements ring signatures, cryptographic signatures that provide signer anonymity by allowing a signer to sign on behalf of a group (ring) without revealing which member signed, enabling anonymous transactions.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Ring signature](https://en.wikipedia.org/wiki/Ring_signature) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+## Historical Context
+
+In cryptography, a ring signature is a type of digital signature that can be performed by any member of a set of users that each have keys. Therefore, a message signed with a ring signature is endorsed by someone in a particular set of people

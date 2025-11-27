@@ -2,8 +2,7 @@
 
 ## Simple Explanation
 
-Tendermint is an algorithm used to solve specific problems in computer science.
-
+Tendermint is a specific algorithm/technique used for [specific purpose]. It works by [specific mechanism].
 
 ## Where It's Used
 
@@ -18,7 +17,6 @@ Specific example of tendermint:
 1. Data preparation: input data for tendermint (specific format and structure)
 2. Algorithm application: sequence of steps of tendermint to process data
 3. Result: specific result of algorithm work with interpretation
-
 
 ## Self-Check Questions
 
@@ -44,13 +42,18 @@ Specific example of tendermint:
 
 ### Level 1 (Easy)
 
+(Easy)
+
 Perform a simple operation with the tendermint algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
+
+(Medium)
 
 Apply the tendermint algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the tendermint algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+(Advanced)
 
+Write an implementation of the tendermint algorithm in a programming language. Add error handling, input validation, tests, and documentation.

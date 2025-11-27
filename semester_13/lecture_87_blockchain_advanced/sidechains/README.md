@@ -130,3 +130,17 @@ Compare with alternatives
     Separate blockchains that are pegged to the main chain, enabling asset transfer and interoperability while allowing different consensus mechanisms and features.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Side-chain](https://en.wikipedia.org/wiki/Side-chain) - Wikipedia
+
+
+## Historical Context
+
+Side-chain, side chain, or sidechain may refer to:Side chain, a chemical group attached to the main chain or backbone of a molecule, such as a protein
+Substituent, an atom or group of atoms substituted in place of a hydrogen atom on the parent chain of a hydrocarbon
+Side-chaining, an effect in digital audio processing
+Sidechain (ledger), a designation for a particular blockchain
+"Sidechain", a son

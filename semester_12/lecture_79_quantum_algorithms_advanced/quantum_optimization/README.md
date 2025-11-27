@@ -130,3 +130,8 @@ Compare with alternatives
 Uses quantum algorithms like QAOA (Quantum Approximate Optimization Algorithm) to solve optimization problems, potentially finding better solutions faster than classical methods for combinatorial optimization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Optimization - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Optimization)

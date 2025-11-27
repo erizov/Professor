@@ -130,3 +130,8 @@ Compare with alternatives
     Provides layered software stack for quantum computing, from high-level programming languages to low-level quantum gates, enabling development and execution of quantum applications.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Software Stack - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Software%20Stack)

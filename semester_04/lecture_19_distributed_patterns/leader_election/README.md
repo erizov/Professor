@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_19_distributed_patterns/leader_election/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_19_distributed_patterns/leader_election/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_19_distributed_patterns/leader_election/test_algorithm.py)
+
+
+## References
+
+- [Leader election](https://en.wikipedia.org/wiki/Leader_election) - Wikipedia

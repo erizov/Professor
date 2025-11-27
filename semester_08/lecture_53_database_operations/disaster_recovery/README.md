@@ -130,3 +130,8 @@ Compare with alternatives
     Provides procedures and infrastructure to restore database operations after catastrophic failures, natural disasters, or major outages, minimizing downtime and data loss.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Disaster recovery](https://en.wikipedia.org/wiki/Disaster_recovery) - Wikipedia

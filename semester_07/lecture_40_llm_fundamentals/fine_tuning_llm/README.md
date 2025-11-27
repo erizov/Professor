@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_40_llm_fundamentals/fine_tuning_llm/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_40_llm_fundamentals/fine_tuning_llm/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_40_llm_fundamentals/fine_tuning_llm/test_algorithm.py)
+
+
+## References
+
+- [Fine Tuning Llm - Wikipedia](https://en.wikipedia.org/wiki/Fine%20Tuning%20Llm)

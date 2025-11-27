@@ -132,3 +132,24 @@ Compare with alternatives
     Enhances user queries by adding related terms, synonyms, or reformulations to improve retrieval quality, helping RAG systems find relevant documents even when query terms don't exactly match document vocabulary.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Query expansion](https://en.wikipedia.org/wiki/Query_expansion) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+## Historical Context
+
+Query expansion involves techniques such as:Finding synonyms of words, and searching for the synonyms as well
+Finding semantically related words 
+Finding all the various morphological forms of words by stemming each word in the search query
+Fixing spelling errors and automatically searching for the corrected form or suggesting it in the results
+Re-weighting the terms in the original query

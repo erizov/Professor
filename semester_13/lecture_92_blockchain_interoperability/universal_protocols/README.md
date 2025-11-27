@@ -130,3 +130,13 @@ Compare with alternatives
     Implements universal protocols that work across all blockchains, providing standardized interfaces and operations that enable seamless interaction with any blockchain through a single protocol.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Communication protocol](https://en.wikipedia.org/wiki/Communication_protocol) - Wikipedia
+
+
+## Historical Context
+
+Protocols may be implemented by hardware, software, or a combination of both

@@ -129,3 +129,13 @@ Compare with alternatives
     Executes programmable code automatically on blockchain when conditions are met, enabling trustless automation of agreements and decentralized applications without intermediaries.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## Historical Context
+
+A smart contract is a computer program or a transaction protocol that is intended to automatically execute, control or document events and actions according to the terms of a contract or an agreement. The objectives of smart contracts are the reduction of need for trusted intermediators, arbitration
+
+
+## References
+
+- [Smart contract](https://en.wikipedia.org/wiki/Smart_contract) - Wikipedia

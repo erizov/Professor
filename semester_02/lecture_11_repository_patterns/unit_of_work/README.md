@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_11_repository_patterns/unit_of_work/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_11_repository_patterns/unit_of_work/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_11_repository_patterns/unit_of_work/test_algorithm.py)
+
+
+## References
+
+- [Unit of work](https://en.wikipedia.org/wiki/Unit_of_work) - Wikipedia

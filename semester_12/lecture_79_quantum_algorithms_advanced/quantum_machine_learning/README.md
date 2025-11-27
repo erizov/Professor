@@ -130,3 +130,13 @@ Compare with alternatives
     Uses quantum computers to accelerate machine learning tasks, potentially providing exponential speedups for certain problems like optimization, classification, and data analysis.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum machine learning](https://en.wikipedia.org/wiki/Quantum_machine_learning) - Wikipedia
+
+
+## Historical Context
+
+Quantum machine learning (QML), pioneered by Ventura and Martinez and by Trugenberger in the late 1990s and early 2000s, is the study of quantum algorithms which solve machine learning tasks

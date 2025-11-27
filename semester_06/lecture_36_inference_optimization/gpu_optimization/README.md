@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_36_inference_optimization/gpu_optimization/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_36_inference_optimization/gpu_optimization/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_36_inference_optimization/gpu_optimization/test_algorithm.py)
+
+
+## References
+
+- [Gpu Optimization - Wikipedia](https://en.wikipedia.org/wiki/Gpu%20Optimization)

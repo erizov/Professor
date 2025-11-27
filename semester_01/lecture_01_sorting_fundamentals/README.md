@@ -226,3 +226,8 @@ Typical performance on modern hardware:
 - **Large arrays (n = 1,000,000)**: ~500ms
 
 *Note: Actual performance depends on hardware, data distribution, and implementation details.*
+
+
+## References
+
+- [Lecture 01 Sorting Fundamentals - Wikipedia](https://en.wikipedia.org/wiki/Lecture%2001%20Sorting%20Fundamentals)

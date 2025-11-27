@@ -119,3 +119,8 @@ Compare with alternatives
     Write Scaling solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Write Scaling - Wikipedia](https://en.wikipedia.org/wiki/Write%20Scaling)

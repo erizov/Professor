@@ -130,3 +130,8 @@ Compare with alternatives
     Builds global quantum network infrastructure connecting quantum computers and devices, enabling distributed quantum computing, quantum communication, and quantum applications over long distances.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Internet - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Internet)

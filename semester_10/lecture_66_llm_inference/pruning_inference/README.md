@@ -132,3 +132,8 @@ Compare with alternatives
 Removes less important weights or neurons from trained models to reduce model size and accelerate inference while maintaining acceptable accuracy, enabling deployment on resource-constrained devices.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Pruning Inference - Wikipedia](https://en.wikipedia.org/wiki/Pruning%20Inference)

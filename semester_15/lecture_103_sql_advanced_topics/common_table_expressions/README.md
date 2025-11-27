@@ -119,3 +119,8 @@ Compare with alternatives
     Common Table Expressions solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Hierarchical and recursive queries in SQL](https://en.wikipedia.org/wiki/Hierarchical_and_recursive_queries_in_SQL) - Wikipedia

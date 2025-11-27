@@ -130,3 +130,8 @@ Compare with alternatives
     Combines quantum optimization algorithms with classical optimization, using quantum computers for optimization subproblems while classical computers handle other aspects, enabling practical quantum optimization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Optimization Hybrid - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Optimization%20Hybrid)

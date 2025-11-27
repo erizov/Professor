@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_13_integration_patterns/event_sourcing/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_13_integration_patterns/event_sourcing/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_13_integration_patterns/event_sourcing/test_algorithm.py)
+
+
+## References
+
+- [Event Sourcing - Wikipedia](https://en.wikipedia.org/wiki/Event%20Sourcing)

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_13_integration_patterns/cqrs/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_13_integration_patterns/cqrs/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_13_integration_patterns/cqrs/test_algorithm.py)
+
+
+## References
+
+- [Cqrs - Wikipedia](https://en.wikipedia.org/wiki/Cqrs)

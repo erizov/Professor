@@ -2,23 +2,17 @@
 
 ## Simple Explanation
 
-Downsampling is an algorithm used to solve specific problems in computer science.
-
+In digital signal processing, downsampling, subsampling, compression, and decimation are terms associated with the process of resampling in a multi-rate digital signal processing system. Both downsampling and decimation can be synonymous with compression, or they can describe an entire process of bandwidth reduction (filtering) and sample-rate reduction. When the process is performed on a sequence of samples of a signal or a continuous function, it produces an approximation of the sequence that
 
 ## Where It's Used
 
-- applying downsampling to solve specific tasks in downsampling;
-- using downsampling in production systems for data processing;
-- integrating downsampling into data pipelines for process automation;
+- Downsampling powers introductory CS labs focused on reasoning about data.
+- Instructors rely on Downsampling when demonstrating how to move from theory to working code.
+- Downsampling appears in interview warm-ups and foundational assignments.
 
 ## Example
 
-Specific example of downsampling:
-
-1. Data preparation: input data for downsampling (specific format and structure)
-2. Algorithm application: sequence of steps of downsampling to process data
-3. Result: specific result of algorithm work with interpretation
-
+When the process is performed on a sequence of samples of a signal or a continuous function, it produces an approximation of the sequence that would have been obtained by sampling the signal at a lower rate
 
 ## Self-Check Questions
 
@@ -44,13 +38,18 @@ Specific example of downsampling:
 
 ### Level 1 (Easy)
 
+(Easy)
+
 Perform a simple operation with the downsampling algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
+
+(Medium)
 
 Apply the downsampling algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the downsampling algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+(Advanced)
 
+Write an implementation of the downsampling algorithm in a programming language. Add error handling, input validation, tests, and documentation.

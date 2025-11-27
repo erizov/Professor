@@ -132,3 +132,8 @@ Compare with alternatives
     Separates read and write operations into different models and data stores, enabling independent scaling, optimization, and evolution of read and write sides for complex domain models.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Cqrs Advanced - Wikipedia](https://en.wikipedia.org/wiki/Cqrs%20Advanced)

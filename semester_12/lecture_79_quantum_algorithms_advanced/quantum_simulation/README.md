@@ -130,3 +130,13 @@ Compare with alternatives
     Simulates quantum systems (molecules, materials, quantum many-body systems) using quantum computers, providing exponential speedup over classical simulation for quantum chemistry and physics.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## Historical Context
+
+Quantum simulators permit the study of a quantum system in a programmable fashion. In this instance, simulators are special purpose devices designed to provide insight about specific physics problems. Quantum simulators may be contrasted with generally programmable "digital" quantum computers, which
+
+
+## References
+
+- [Quantum simulator](https://en.wikipedia.org/wiki/Quantum_simulator) - Wikipedia

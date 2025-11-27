@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_33_model_optimization/knowledge_distillation/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_33_model_optimization/knowledge_distillation/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_33_model_optimization/knowledge_distillation/test_algorithm.py)
+
+
+## References
+
+- [Knowledge distillation](https://en.wikipedia.org/wiki/Knowledge_distillation) - Wikipedia

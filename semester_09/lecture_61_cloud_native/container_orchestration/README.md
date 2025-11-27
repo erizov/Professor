@@ -130,3 +130,8 @@ Compare with alternatives
     Manages and coordinates containerized applications across clusters, handling deployment, scaling, load balancing, health monitoring, and service discovery automatically.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Orchestration (computing)](https://en.wikipedia.org/wiki/Orchestration_(computing)) - Wikipedia

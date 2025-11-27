@@ -119,3 +119,8 @@ Compare with alternatives
     Migration Testing solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data migration](https://en.wikipedia.org/wiki/Data_migration) - Wikipedia

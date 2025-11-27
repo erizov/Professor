@@ -132,3 +132,8 @@ Compare with alternatives
 Implements ZK-SNARKs, a type of zero-knowledge proof that is succinct (small proof size), non-interactive (no back-and-forth), and enables efficient privacy-preserving blockchain transactions and smart contracts.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Zk Snarks - Wikipedia](https://en.wikipedia.org/wiki/Zk%20Snarks)

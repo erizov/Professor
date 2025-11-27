@@ -90,3 +90,20 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_04_searching/interpolation_search/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_04_searching/interpolation_search/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_04_searching/interpolation_search/test_algorithm.py)
+
+
+## References
+
+- [Interpolation search](https://en.wikipedia.org/wiki/Interpolation_search) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+## Historical Context
+
+Interpolation search is an algorithm for searching for a key in an array that has been ordered by numerical values assigned to the keys. It was first described by W

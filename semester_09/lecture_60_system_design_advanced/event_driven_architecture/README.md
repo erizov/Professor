@@ -132,3 +132,8 @@ Compare with alternatives
     Designs systems where components communicate through events, enabling loose coupling, scalability, and responsiveness to changes, making systems more flexible and resilient.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Event-driven architecture](https://en.wikipedia.org/wiki/Event-driven_architecture) - Wikipedia

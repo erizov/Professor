@@ -130,3 +130,8 @@ Compare with alternatives
     Interactive systems that guide developers through learning with step-by-step tutorials, hands-on exercises, and progress tracking.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Tutorial Systems - Wikipedia](https://en.wikipedia.org/wiki/Tutorial%20Systems)

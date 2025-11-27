@@ -130,3 +130,8 @@ Compare with alternatives
     Enables models to learn continuously from new data over time without forgetting previously learned knowledge, allowing AI systems to adapt to changing environments and accumulate knowledge.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Incremental learning](https://en.wikipedia.org/wiki/Incremental_learning) - Wikipedia

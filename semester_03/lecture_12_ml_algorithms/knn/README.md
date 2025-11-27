@@ -79,3 +79,24 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_12_ml_algorithms/knn/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_12_ml_algorithms/knn/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_12_ml_algorithms/knn/test_algorithm.py)
+
+
+## References
+
+- [KNN](https://en.wikipedia.org/wiki/KNN) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+## Historical Context
+
+KNN may refer to:k-nearest neighbors algorithm (k-NN), a method for classifying objects
+Nearest neighbor graph (k-NNG), a graph connecting each point to its k nearest neighbors
+Khanna railway station, in Khanna, Punjab, India (by Indian Railways code)
+Kings Norton railway station, in Birmingham, England (by National Rail code)
+Knighton News Network, the recurring TV station which hosts the news re

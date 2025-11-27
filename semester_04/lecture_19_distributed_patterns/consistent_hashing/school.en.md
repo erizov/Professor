@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Consistent Hashing is an algorithm used to solve specific problems in computer science.
-
+Consistent Hashing is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying consistent hashing to solve specific tasks in consistent;
-- using consistent hashing in production systems for hashing;
-- integrating consistent hashing into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of consistent hashing:
+Consider a specific example of how consistent hashing works:
 
-1. Data preparation: input data for consistent hashing (specific format and structure)
-2. Algorithm application: sequence of steps of consistent hashing to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

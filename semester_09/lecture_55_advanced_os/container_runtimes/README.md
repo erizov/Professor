@@ -130,3 +130,8 @@ Compare with alternatives
     Manages the execution and lifecycle of containers, providing isolation, resource management, and low-level container operations for containerized applications.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Container Runtimes - Wikipedia](https://en.wikipedia.org/wiki/Container%20Runtimes)

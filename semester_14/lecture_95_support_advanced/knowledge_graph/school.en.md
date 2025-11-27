@@ -1,56 +1,57 @@
-# Knowledge Graph
+# Knowledge Graphs for Support
 
 ## Simple Explanation
 
-Knowledge Graphs for Support is an algorithm used to solve specific problems in computer science.
-
+Knowledge Graphs for Support is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying knowledge graph to solve specific tasks in knowledge;
-- using knowledge graph in production systems for graph;
-- integrating knowledge graph into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of knowledge graph:
+Consider a specific example of how knowledge graphs for support works:
 
-1. Data preparation: input data for knowledge graph (specific format and structure)
-2. Algorithm application: sequence of steps of knowledge graph to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the knowledge graph algorithm do?
-2. In what situations is knowledge graph used?
+1. What does the knowledge graphs for support algorithm do?
+2. In what situations is knowledge graphs for support used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does knowledge graph handle edge cases?
-2. What are the advantages and disadvantages of knowledge graph?
-3. Can the performance of knowledge graph be improved?
+1. How does knowledge graphs for support handle edge cases?
+2. What are the advantages and disadvantages of knowledge graphs for support?
+3. Can the performance of knowledge graphs for support be improved?
 
 ### Advanced
 
-1. What is the time complexity of knowledge graph?
-2. How does knowledge graph work with large volumes of data?
-3. How can knowledge graph be optimized?
+1. What is the time complexity of knowledge graphs for support?
+2. How does knowledge graphs for support work with large volumes of data?
+3. How can knowledge graphs for support be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the knowledge graph algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the knowledge graphs for support algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the knowledge graph algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the knowledge graphs for support algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the knowledge graph algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the knowledge graphs for support algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

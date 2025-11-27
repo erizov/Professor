@@ -1,56 +1,57 @@
-# Bagging
+# Bagging (Bootstrap Aggregating)
 
 ## Simple Explanation
 
-Bagging (Bootstrap Aggregating) is an algorithm used to solve specific problems in computer science.
-
+Bagging (Bootstrap Aggregating) is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying bagging to solve specific tasks in bagging;
-- using bagging in production systems for data processing;
-- integrating bagging into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of bagging:
+Consider a specific example of how bagging (bootstrap aggregating) works:
 
-1. Data preparation: input data for bagging (specific format and structure)
-2. Algorithm application: sequence of steps of bagging to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the bagging algorithm do?
-2. In what situations is bagging used?
+1. What does the bagging (bootstrap aggregating) algorithm do?
+2. In what situations is bagging (bootstrap aggregating) used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does bagging handle edge cases?
-2. What are the advantages and disadvantages of bagging?
-3. Can the performance of bagging be improved?
+1. How does bagging (bootstrap aggregating) handle edge cases?
+2. What are the advantages and disadvantages of bagging (bootstrap aggregating)?
+3. Can the performance of bagging (bootstrap aggregating) be improved?
 
 ### Advanced
 
-1. What is the time complexity of bagging?
-2. How does bagging work with large volumes of data?
-3. How can bagging be optimized?
+1. What is the time complexity of bagging (bootstrap aggregating)?
+2. How does bagging (bootstrap aggregating) work with large volumes of data?
+3. How can bagging (bootstrap aggregating) be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the bagging algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the bagging (bootstrap aggregating) algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the bagging algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the bagging (bootstrap aggregating) algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the bagging algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the bagging (bootstrap aggregating) algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

@@ -119,3 +119,8 @@ Compare with alternatives
     Data Quality solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data quality](https://en.wikipedia.org/wiki/Data_quality) - Wikipedia

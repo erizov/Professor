@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_32_distributed_ml/model_parallelism/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_32_distributed_ml/model_parallelism/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_32_distributed_ml/model_parallelism/test_algorithm.py)
+
+
+## References
+
+- [Model Parallelism - Wikipedia](https://en.wikipedia.org/wiki/Model%20Parallelism)

@@ -130,3 +130,8 @@ Compare with alternatives
     Implements yield farming strategies that maximize returns by moving assets between different DeFi protocols to earn the highest yields, incentivizing liquidity provision and protocol usage.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Decentralized finance](https://en.wikipedia.org/wiki/Decentralized_finance) - Wikipedia

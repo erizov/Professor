@@ -130,3 +130,8 @@ Compare with alternatives
     Context-aware documentation systems that provide relevant help based on user's current code context and needs.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Context-sensitive help](https://en.wikipedia.org/wiki/Context-sensitive_help) - Wikipedia

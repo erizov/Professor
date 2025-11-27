@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_36_inference_optimization/model_caching/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_36_inference_optimization/model_caching/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_36_inference_optimization/model_caching/test_algorithm.py)
+
+
+## References
+
+- [Model Caching - Wikipedia](https://en.wikipedia.org/wiki/Model%20Caching)

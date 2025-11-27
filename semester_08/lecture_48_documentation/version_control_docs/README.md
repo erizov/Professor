@@ -129,3 +129,8 @@ Compare with alternatives
     Manages documentation changes using version control systems, enabling collaboration, tracking history, and maintaining documentation alongside code in a unified workflow.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Version Control Docs - Wikipedia](https://en.wikipedia.org/wiki/Version%20Control%20Docs)

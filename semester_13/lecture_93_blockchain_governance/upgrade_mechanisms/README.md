@@ -130,3 +130,8 @@ Compare with alternatives
     Mechanisms for upgrading blockchain protocols while maintaining consensus, including hard forks, soft forks, and upgradeable contract patterns.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Upgrade Mechanisms - Wikipedia](https://en.wikipedia.org/wiki/Upgrade%20Mechanisms)

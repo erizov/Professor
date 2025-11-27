@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Customer Support Automation is an algorithm used to solve specific problems in computer science.
-
+Customer Support Automation is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying customer support automation to solve specific tasks in customer;
-- using customer support automation in production systems for automation;
-- integrating customer support automation into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of customer support automation:
+Consider a specific example of how customer support automation works:
 
-1. Data preparation: input data for customer support automation (specific format and structure)
-2. Algorithm application: sequence of steps of customer support automation to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

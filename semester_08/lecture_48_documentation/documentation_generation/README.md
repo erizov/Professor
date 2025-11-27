@@ -129,3 +129,8 @@ Compare with alternatives
     Automatically generates documentation from source code, comments, and specifications using tools and templates, ensuring documentation stays synchronized with code and reducing manual effort.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Documentation generator](https://en.wikipedia.org/wiki/Documentation_generator) - Wikipedia

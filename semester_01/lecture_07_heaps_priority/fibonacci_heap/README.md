@@ -79,3 +79,22 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_07_heaps_priority/fibonacci_heap/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_07_heaps_priority/fibonacci_heap/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_07_heaps_priority/fibonacci_heap/test_algorithm.py)
+
+
+## Historical Context
+
+In computer science, a Fibonacci heap is a data structure for priority queue operations, consisting of a collection of heap-ordered trees. It has a better amortized running time than many other priority queue data structures including the binary heap and binomial heap. Michael L. Fredman and Robert 
+
+
+## References
+
+- [Fibonacci heap](https://en.wikipedia.org/wiki/Fibonacci_heap) - Wikipedia
+
+
+## Real-World Applications
+
+- Database indexing
+- File system organization
+
+- Database indexing
+- File system organization

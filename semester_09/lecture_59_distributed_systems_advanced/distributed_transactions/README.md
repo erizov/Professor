@@ -130,3 +130,8 @@ Compare with alternatives
     Ensures atomicity and consistency of transactions that span multiple distributed databases or services, coordinating commit or abort decisions across all participants.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Distributed transaction](https://en.wikipedia.org/wiki/Distributed_transaction) - Wikipedia

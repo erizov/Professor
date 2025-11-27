@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_18_crypto_algorithms/aes/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_18_crypto_algorithms/aes/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_18_crypto_algorithms/aes/test_algorithm.py)
+
+
+## References
+
+- [Aes](https://en.wikipedia.org/wiki/Aes) - Wikipedia

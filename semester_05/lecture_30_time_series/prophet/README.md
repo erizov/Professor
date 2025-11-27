@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_30_time_series/prophet/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_30_time_series/prophet/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_30_time_series/prophet/test_algorithm.py)
+
+
+## References
+
+- [Prophet](https://en.wikipedia.org/wiki/Prophet) - Wikipedia
+
+
+## Historical Context
+
+In religion, a prophet or prophetess is an individual who is regarded as being in contact with a divine being and is said to speak on behalf of that being, serving as an intermediary with humanity by delivering messages or teachings from the supernatural source to other people

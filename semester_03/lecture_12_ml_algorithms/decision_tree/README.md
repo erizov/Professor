@@ -85,3 +85,17 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_12_ml_algorithms/decision_tree/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_12_ml_algorithms/decision_tree/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_12_ml_algorithms/decision_tree/test_algorithm.py)
+
+
+## References
+
+- [Decision tree](https://en.wikipedia.org/wiki/Decision_tree) - Wikipedia
+
+
+## Real-World Applications
+
+- Database indexing
+- File system organization
+
+- Database indexing
+- File system organization

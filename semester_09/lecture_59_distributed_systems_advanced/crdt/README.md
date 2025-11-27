@@ -132,3 +132,8 @@ Compare with alternatives
     Provides data structures that automatically resolve conflicts in distributed systems without coordination, enabling eventual consistency through mathematical properties (commutativity, associativity, idempotency).
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Crdt - Wikipedia](https://en.wikipedia.org/wiki/Crdt)

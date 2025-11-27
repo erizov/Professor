@@ -130,3 +130,8 @@ Compare with alternatives
     Comprehensive analysis of blockchain transactions to extract insights, identify patterns, and detect anomalies through statistical and machine learning methods.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Transaction Analysis - Wikipedia](https://en.wikipedia.org/wiki/Transaction%20Analysis)

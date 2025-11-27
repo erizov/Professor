@@ -156,3 +156,8 @@ Avoid Semester 8 when:
 ### Benchmark Results
 
 *Note: Run benchmarks with your specific data and hardware to get accurate performance metrics.*
+
+
+## References
+
+- [Semester 08 - Wikipedia](https://en.wikipedia.org/wiki/Semester%2008)

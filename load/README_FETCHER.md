@@ -4,7 +4,24 @@
 
 The enhanced `algo_fetcher.py` can now load algorithm information from:
 1. **Local markdown files** (school.en.md, school.ru.md, univer.en.md, univer.ru.md)
-2. **Web sources** (Wikipedia, e-maxx.ru) - original functionality
+2. **Web sources** (Wikipedia, e-maxx.ru)
+3. **Curated summaries** (`load/curated_summaries.json`)
+
+### Adapter Pipeline
+
+Web enrichment now runs through a modular adapter pipeline:
+
+| Adapter | Description | Notes |
+|---------|-------------|-------|
+| `CuratedSummaryAdapter` | Uses hand-written summaries stored in `load/curated_summaries.json` | Guaranteed clean content (fall back #1) |
+| `WikipediaAdapter` | Fetches English/Russian Wikipedia content, extracts structured sections, and filters non-algorithm pages | Still respects placeholder / duplicate checks |
+| `EMaxxAdapter` | (RU only) Scrapes e-maxx.ru if Wikipedia fails | Enabled only when `prefer_ru_emaxx` is True |
+
+Each adapter returns structured sections (definition, application, examples, etc.). After a source succeeds the fetcher:
+
+1. Sanitizes placeholders and generic defaults
+2. Removes duplicate sections (Definition ≠ Technical Description ≠ Application ≠ Example)
+3. Persists only meaningful, distinct text
 
 ## Database Schema Enhancements
 
@@ -13,12 +30,12 @@ The database schema (`createDbSql.txt`) has been enhanced to store all content f
 ### New Columns Added
 
 **School Level Fields:**
-- `simple_explanation` - Simple explanation section
-- `where_its_used` - Where It's Used section
-- `example` - Example section
+-`simple_explanation` - Simple explanation section
+-`where_its_used` - Where It's Used section
+-`example` - Example section
 
 **University Level Fields:**
-- `discipline` - Discipline field (from metadata)
+-`discipline` - Discipline field (from metadata)
 - `algorithm_definition` - Algorithm Definition section
 - `technical_description` - Technical Description section
 - `application` - Application in Machine Learning / AI section
@@ -141,4 +158,3 @@ The enhanced fetcher maintains backward compatibility:
 - All content is stored with UTF-8 encoding
 - Local files get a quality score of 1.0 (highest)
 - Source URL for local files is stored as `file://` URI
-

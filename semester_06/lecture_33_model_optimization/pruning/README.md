@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_33_model_optimization/pruning/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_33_model_optimization/pruning/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_33_model_optimization/pruning/test_algorithm.py)
+
+
+## References
+
+- [Pruning](https://en.wikipedia.org/wiki/Pruning) - Wikipedia

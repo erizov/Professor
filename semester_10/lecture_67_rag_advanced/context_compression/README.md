@@ -132,3 +132,8 @@ Compare with alternatives
     Compresses retrieved documents and context to fit within LLM context windows while preserving essential information, enabling RAG systems to use more documents or longer documents within token limits.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Context Compression - Wikipedia](https://en.wikipedia.org/wiki/Context%20Compression)

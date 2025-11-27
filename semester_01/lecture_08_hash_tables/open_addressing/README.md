@@ -79,3 +79,20 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_08_hash_tables/open_addressing/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_08_hash_tables/open_addressing/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_08_hash_tables/open_addressing/test_algorithm.py)
+
+
+## References
+
+- [Open addressing](https://en.wikipedia.org/wiki/Open_addressing) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+## Historical Context
+
+With this method a hash collision is resolved by probing, or searching through alternative locations in the array until either the target record is found, or an unused array slot is found, which indicates that there is no such key in the table. Double hashingin which the interval between probes is fixed for each record but is computed by another hash function

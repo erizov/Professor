@@ -132,3 +132,8 @@ Compare with alternatives
     Partitions large language models across multiple devices by splitting layers or tensors, enabling training of models too large to fit on a single GPU while maintaining model integrity.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Model Parallelism - Wikipedia](https://en.wikipedia.org/wiki/Model%20Parallelism)

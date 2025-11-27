@@ -2,23 +2,22 @@
 
 ## Simple Explanation
 
-Tokenization is an algorithm used to solve specific problems in computer science.
-
+Tokenization may refer to:Tokenization in language processing
+Tokenization in large language models
+Tokenization in search engine indexing
+Tokenization 
+Asset tokenization in finance
+Word segmentation
+A procedure during the Transformer architecture
 
 ## Where It's Used
 
-- applying tokenization to solve specific tasks in tokenization;
-- using tokenization in production systems for data processing;
-- integrating tokenization into data pipelines for process automation;
+- Search engines and indexing
+- Database lookups
 
 ## Example
 
-Specific example of tokenization:
-
-1. Data preparation: input data for tokenization (specific format and structure)
-2. Algorithm application: sequence of steps of tokenization to process data
-3. Result: specific result of algorithm work with interpretation
-
+Search engines and indexing
 
 ## Self-Check Questions
 
@@ -44,13 +43,18 @@ Specific example of tokenization:
 
 ### Level 1 (Easy)
 
+(Easy)
+
 Perform a simple operation with the tokenization algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
+
+(Medium)
 
 Apply the tokenization algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the tokenization algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+(Advanced)
 
+Write an implementation of the tokenization algorithm in a programming language. Add error handling, input validation, tests, and documentation.

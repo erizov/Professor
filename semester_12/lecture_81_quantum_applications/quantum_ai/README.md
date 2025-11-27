@@ -132,3 +132,8 @@ Compare with alternatives
     Combines quantum computing with artificial intelligence, using quantum algorithms to accelerate AI tasks like optimization, pattern recognition, and machine learning, potentially providing exponential speedups.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Ai - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Ai)

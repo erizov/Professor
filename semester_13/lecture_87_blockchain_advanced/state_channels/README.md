@@ -130,3 +130,8 @@ Compare with alternatives
     Off-chain transaction channels that allow parties to conduct multiple transactions off-chain and settle the final state on-chain, enabling fast and cheap transactions.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [State Channels - Wikipedia](https://en.wikipedia.org/wiki/State%20Channels)

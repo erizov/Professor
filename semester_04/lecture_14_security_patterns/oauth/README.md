@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_14_security_patterns/oauth/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_14_security_patterns/oauth/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_14_security_patterns/oauth/test_algorithm.py)
+
+
+## References
+
+- [OAuth](https://en.wikipedia.org/wiki/OAuth) - Wikipedia
+
+
+## Historical Context
+
+This mechanism is used by companies such as Amazon, Google, Meta Platforms, Microsoft, and Twitter to permit users to share information about their accounts with third-party applications or websites

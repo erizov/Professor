@@ -130,3 +130,8 @@ Compare with alternatives
     Documentation written in natural, conversational language that makes technical concepts accessible and easy to understand.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Natural Language Docs - Wikipedia](https://en.wikipedia.org/wiki/Natural%20Language%20Docs)

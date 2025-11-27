@@ -1,40 +1,34 @@
-# Explainability
+# Explainability — Школьный уровень
 
 ## Простое объяснение
 
-Explainability — это алгоритм, используемый для решения конкретных задач в области компьютерных наук.
-
+Within artificial intelligence (AI), explainable AI (XAI), generally overlapping with interpretable AI or explainable machine learning (XML), is a field of research that explores methods that provide humans with the ability of intellectual oversight over AI algorithms. The main focus is on the reasoning behind the decisions or predictions made by the AI algorithms, to make them more understandable and transparent. This addresses users' requirement to assess safety and scrutinize the automated decision making in applications. XAI counters the "black box" tendency of machine learning, where even the AI's designers cannot explain why it arrived at a specific decision.
 
 ## Где применяется
 
-- применение explainability для решения конкретных задач в области explainability;
-- использование explainability в production-системах для обработки данных;
-- интеграция explainability в data pipelines для автоматизации процессов;
+- Explainability объясняют в школьных кружках информатики для развития алгоритмического мышления.
+- Учителя используют Explainability на лабораторных работах, чтобы показать практическую ценность структур данных.
+- Explainability помогает разбирать реальные задачи соревнований и олимпиад.
 
 ## Пример
 
-Конкретный пример работы explainability:
+The main focus is on the reasoning behind the decisions or predictions made by the AI algorithms, to make them more understandable and transparent
 
-1. Подготовка данных: входные данные для explainability (конкретный формат и структура)
-2. Применение алгоритма: последовательность шагов explainability для обработки данных
-3. Получение результата: конкретный результат работы алгоритма с интерпретацией
+## Контрольные вопросы
 
-
-## Вопросы для самопроверки
-
-### Базовые
+### Базовый уровень
 
 1. Что делает алгоритм explainability?
 2. В каких ситуациях используется explainability?
 3. Какие данные нужны для работы алгоритма?
 
-### Средние
+### Средний уровень
 
 1. Как explainability обрабатывает граничные случаи?
 2. Какие преимущества и недостатки у explainability?
 3. Можно ли улучшить работу explainability?
 
-### Сложные
+### Продвинутый уровень
 
 1. Какова временная сложность explainability?
 2. Как explainability работает с большими объёмами данных?
@@ -42,17 +36,23 @@ Explainability — это алгоритм, используемый для ре
 
 ## Практические задания
 
-### Уровень 1 (Лёгкий)
+### Уровень 1
+
+(Лёгкий)
 
 Выполни простую операцию с алгоритмом explainability.
 Используй небольшой набор данных (3-5 элементов) и выведи результат.
 
-### Уровень 2 (Средний)
+### Уровень 2
+
+(Средний)
 
 Примени алгоритм explainability к более сложному набору данных.
 Проанализируй результат, объясни каждый шаг работы алгоритма.
 
-### Уровень 3 (Продвинутый)
+### Уровень 3
+
+(Продвинутый)
 
 Напиши реализацию алгоритма explainability на языке программирования.
 Добавь обработку ошибок, проверку входных данных, тесты и документацию.
@@ -65,3 +65,10 @@ Explainability — это алгоритм, используемый для ре
 которые могут влиять на жизнь людей. Важно использовать их ответственно, учитывая этические
 принципы, справедливость, прозрачность и уважение к приватности. Всегда думай о последствиях
 своих решений и используй технологии для блага общества.
+
+---
+
+**Этическое замечание**
+
+Алгоритмы помогают автоматизировать задачи, но важно применять их ответственно,
+понимать ограничения и уметь объяснять результаты другим людям.

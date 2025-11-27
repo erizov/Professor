@@ -1,58 +1,59 @@
-# Kmeans
+# K-Means Clustering
 
 ## Simple Explanation
 
-K-Means Clustering is an algorithm used to solve specific problems in computer science.
-
+K-Means Clustering is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying kmeans to solve specific tasks in kmeans;
-- using kmeans in production systems for data processing;
-- integrating kmeans into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of kmeans:
+Consider a specific example of how k-means clustering works:
 
-1. Data preparation: input data for kmeans (specific format and structure)
-2. Algorithm application: sequence of steps of kmeans to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the kmeans algorithm do?
-2. In what situations is kmeans used?
+1. What does the k-means clustering algorithm do?
+2. In what situations is k-means clustering used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does kmeans handle edge cases?
-2. What are the advantages and disadvantages of kmeans?
-3. Can the performance of kmeans be improved?
+1. How does k-means clustering handle edge cases?
+2. What are the advantages and disadvantages of k-means clustering?
+3. Can the performance of k-means clustering be improved?
 
 ### Advanced
 
-1. What is the time complexity of kmeans?
-2. How does kmeans work with large volumes of data?
-3. How can kmeans be optimized?
+1. What is the time complexity of k-means clustering?
+2. How does k-means clustering work with large volumes of data?
+3. How can k-means clustering be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the kmeans algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the k-means clustering algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the kmeans algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the k-means clustering algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the kmeans algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the k-means clustering algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 
 ---
 

@@ -130,3 +130,8 @@ Compare with alternatives
 Partitions model layers across multiple devices in a pipeline, where each device processes a different stage of the pipeline, enabling training of very large models with efficient device utilization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Pipeline (computing)](https://en.wikipedia.org/wiki/Pipeline_(computing)) - Wikipedia

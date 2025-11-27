@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_27_hyperparameter_optimization/optuna/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_27_hyperparameter_optimization/optuna/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_27_hyperparameter_optimization/optuna/test_algorithm.py)
+
+
+## Historical Context
+
+Optuna is an open-source Python library for automatic hyperparameter tuning of machine learning models. It was first introduced in 2018 by Preferred Networks, a Japanese startup that works on practical applications of deep learning in various fields. The beta version of Optuna was released at the en
+
+
+## References
+
+- [Optuna](https://en.wikipedia.org/wiki/Optuna) - Wikipedia

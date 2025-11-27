@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Technical Writing is an algorithm used to solve specific problems in computer science.
-
+Technical Writing is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying technical writing to solve specific tasks in technical;
-- using technical writing in production systems for writing;
-- integrating technical writing into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of technical writing:
+Consider a specific example of how technical writing works:
 
-1. Data preparation: input data for technical writing (specific format and structure)
-2. Algorithm application: sequence of steps of technical writing to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

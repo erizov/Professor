@@ -131,3 +131,13 @@ Compare with alternatives
 30-second explanation (your own words)  
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## Historical Context
+
+Our reference model is characterized by three elements: P
+
+
+## References
+
+- [real_time_systems - GeeksforGeeks](https://www.geeksforgeeks.org/real-time-systems) - GeeksforGeeks

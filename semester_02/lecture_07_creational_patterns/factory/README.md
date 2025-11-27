@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_07_creational_patterns/factory/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_07_creational_patterns/factory/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_07_creational_patterns/factory/test_algorithm.py)
+
+
+## Historical Context
+
+A factory, manufacturing plant or production plant is an industrial facility, often a complex consisting of several buildings filled with machinery, where workers manufacture items or operate machines which process each item into another. They are a critical part of modern economic production, with 
+
+
+## References
+
+- [Factory](https://en.wikipedia.org/wiki/Factory) - Wikipedia

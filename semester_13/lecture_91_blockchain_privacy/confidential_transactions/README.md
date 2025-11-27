@@ -130,3 +130,8 @@ Compare with alternatives
     Implements confidential transactions that hide transaction amounts while maintaining verifiability, enabling privacy-preserving blockchain transactions where amounts are encrypted but still verifiable.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Confidential Transactions - Wikipedia](https://en.wikipedia.org/wiki/Confidential%20Transactions)

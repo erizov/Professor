@@ -128,3 +128,8 @@ Compare with alternatives
     Addresses blockchain's limited transaction throughput and high latency by implementing solutions that increase transactions per second while maintaining decentralization and security.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Blockchain Scalability - Wikipedia](https://en.wikipedia.org/wiki/Blockchain%20Scalability)

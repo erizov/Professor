@@ -132,3 +132,8 @@ Compare with alternatives
     Implements Decentralized Autonomous Organization (DAO) governance mechanisms that enable token holders to collectively make decisions about protocol changes, treasury management, and organizational direction through on-chain voting.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Dao Governance - Wikipedia](https://en.wikipedia.org/wiki/Dao%20Governance)

@@ -125,3 +125,8 @@ Compare with alternatives
     State what data you want, let the relational engine decide how to fetch it efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Sql Queries - Wikipedia](https://en.wikipedia.org/wiki/Sql%20Queries)

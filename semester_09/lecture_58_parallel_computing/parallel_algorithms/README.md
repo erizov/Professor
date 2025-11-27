@@ -130,3 +130,17 @@ Compare with alternatives
     Designs algorithms that execute multiple operations simultaneously across multiple processors or cores, reducing execution time and improving throughput for computationally intensive problems.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Parallel algorithm](https://en.wikipedia.org/wiki/Parallel_algorithm) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups

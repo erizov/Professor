@@ -129,3 +129,8 @@ Compare with alternatives
 30-second explanation (your own words)  
     Systematically experiments on distributed systems by injecting failures and disruptions to test resilience, identify weaknesses, and improve system reliability through controlled chaos experiments.
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Chaos Engineering Advanced - Wikipedia](https://en.wikipedia.org/wiki/Chaos%20Engineering%20Advanced)

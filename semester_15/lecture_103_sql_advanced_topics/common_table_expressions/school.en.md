@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Common Table Expressions is an algorithm used to solve specific problems in computer science.
-
+Common Table Expressions is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying common table expressions to solve specific tasks in common;
-- using common table expressions in production systems for expressions;
-- integrating common table expressions into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of common table expressions:
+Consider a specific example of how common table expressions works:
 
-1. Data preparation: input data for common table expressions (specific format and structure)
-2. Algorithm application: sequence of steps of common table expressions to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

@@ -90,3 +90,17 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_27_hyperparameter_optimization/random_search/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_27_hyperparameter_optimization/random_search/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_27_hyperparameter_optimization/random_search/test_algorithm.py)
+
+
+## References
+
+- [Random search](https://en.wikipedia.org/wiki/Random_search) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups

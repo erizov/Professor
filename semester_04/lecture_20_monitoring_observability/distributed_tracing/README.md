@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_20_monitoring_observability/distributed_tracing/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_20_monitoring_observability/distributed_tracing/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_20_monitoring_observability/distributed_tracing/test_algorithm.py)
+
+
+## References
+
+- [Distributed Tracing - Wikipedia](https://en.wikipedia.org/wiki/Distributed%20Tracing)

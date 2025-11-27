@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_28_reinforcement_learning/policy_gradient/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_28_reinforcement_learning/policy_gradient/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_28_reinforcement_learning/policy_gradient/test_algorithm.py)
+
+
+## References
+
+- [Policy gradient method](https://en.wikipedia.org/wiki/Policy_gradient_method) - Wikipedia

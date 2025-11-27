@@ -119,3 +119,8 @@ Compare with alternatives
     Time Series Storage solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Time Series Storage - Wikipedia](https://en.wikipedia.org/wiki/Time%20Series%20Storage)

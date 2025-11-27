@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_40_llm_fundamentals/prompt_engineering/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_40_llm_fundamentals/prompt_engineering/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_40_llm_fundamentals/prompt_engineering/test_algorithm.py)
+
+
+## References
+
+- [Prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering) - Wikipedia

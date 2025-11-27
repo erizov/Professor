@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_32_distributed_ml/parameter_server/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_32_distributed_ml/parameter_server/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_32_distributed_ml/parameter_server/test_algorithm.py)
+
+
+## References
+
+- [Parameter Server - Wikipedia](https://en.wikipedia.org/wiki/Parameter%20Server)

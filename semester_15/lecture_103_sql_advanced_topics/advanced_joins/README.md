@@ -119,3 +119,8 @@ Compare with alternatives
     Advanced Joins solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Advanced Joins - Wikipedia](https://en.wikipedia.org/wiki/Advanced%20Joins)

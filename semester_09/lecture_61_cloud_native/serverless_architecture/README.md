@@ -130,3 +130,8 @@ Compare with alternatives
     Builds applications using serverless computing services (FaaS, managed databases, event-driven services) where developers don't manage servers, and the cloud provider handles infrastructure, scaling, and resource management automatically.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Serverless computing](https://en.wikipedia.org/wiki/Serverless_computing) - Wikipedia

@@ -130,3 +130,8 @@ Compare with alternatives
     Implements protocols and standards that enable different blockchains to communicate and interoperate, facilitating cross-chain transactions, data sharing, and unified blockchain ecosystems.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Interoperability Protocols - Wikipedia](https://en.wikipedia.org/wiki/Interoperability%20Protocols)

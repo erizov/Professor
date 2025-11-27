@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Priority Queue is an algorithm used to solve specific problems in computer science.
-
+Priority Queue is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying priority queue to solve specific tasks in priority;
-- using priority queue in production systems for queue;
-- integrating priority queue into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of priority queue:
+Consider a specific example of how priority queue works:
 
-1. Data preparation: input data for priority queue (specific format and structure)
-2. Algorithm application: sequence of steps of priority queue to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

@@ -119,3 +119,8 @@ Compare with alternatives
     Graph Algorithms Db solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Graph Algorithms Db - Wikipedia](https://en.wikipedia.org/wiki/Graph%20Algorithms%20Db)

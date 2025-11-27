@@ -130,3 +130,8 @@ Compare with alternatives
     Provides reusable, parameterized pipeline templates that can be shared across projects, standardizing CI/CD workflows and reducing duplication while allowing customization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Pipeline Templates - Wikipedia](https://en.wikipedia.org/wiki/Pipeline%20Templates)

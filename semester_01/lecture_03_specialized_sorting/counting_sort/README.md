@@ -107,3 +107,20 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_03_specialized_sorting/counting_sort/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_03_specialized_sorting/counting_sort/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_03_specialized_sorting/counting_sort/test_algorithm.py)
+
+
+## References
+
+- [Counting sort](https://en.wikipedia.org/wiki/Counting_sort) - Wikipedia
+
+
+## Real-World Applications
+
+- Database query optimization
+- Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling
+## Historical Context
+
+It operates by counting the number of objects that possess distinct key values, and applying prefix sum on those counts to determine the positions of each key value in the output sequence

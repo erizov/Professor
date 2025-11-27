@@ -2,25 +2,24 @@
 
 ## Simple Explanation
 
-Observability Stack is an algorithm used to solve specific problems in computer science.
-
+Observability Stack is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- real-time data quality monitoring in data pipelines;
-- detecting anomalies in data streams and metrics;
-- tracking freshness, volume, and schema metrics;
-- automatic detection of data drift;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Example of observability stack:
+Consider a specific example of how observability stack works:
 
-1. Metric collection: system collects volume, freshness, and schema metrics from source
-2. Anomaly analysis: algorithm compares current metrics with historical values
-3. Alert generation: when deviations are detected, system sends notifications
-4. Visualization: results are displayed on dashboard for analysis
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

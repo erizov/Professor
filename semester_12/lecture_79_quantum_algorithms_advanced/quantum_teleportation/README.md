@@ -130,3 +130,8 @@ Compare with alternatives
     Transfers an unknown quantum state from one location to another using quantum entanglement and classical communication, without physically transporting the quantum particle.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum teleportation](https://en.wikipedia.org/wiki/Quantum_teleportation) - Wikipedia

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_34_edge_ai/iot_ml/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_34_edge_ai/iot_ml/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_34_edge_ai/iot_ml/test_algorithm.py)
+
+
+## References
+
+- [Iot Ml - Wikipedia](https://en.wikipedia.org/wiki/Iot%20Ml)

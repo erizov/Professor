@@ -90,3 +90,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_27_hyperparameter_optimization/grid_search/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_27_hyperparameter_optimization/grid_search/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_27_hyperparameter_optimization/grid_search/test_algorithm.py)
+
+
+## References
+
+- [Hyperparameter optimization](https://en.wikipedia.org/wiki/Hyperparameter_optimization) - Wikipedia

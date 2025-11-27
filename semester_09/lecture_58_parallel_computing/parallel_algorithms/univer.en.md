@@ -5,32 +5,42 @@
 
 ## Algorithm Definition
 
-Parallel Algorithms is an algorithm used to solve specific problems in computer science.
-
+Parallel Algorithms is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
 
 ## Technical Description
 
-Parallel Algorithms works by processing data sequentially according to specific rules and algorithms.
+### What the Algorithm Does
 
+Parallel Algorithms is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
+
+**Key Steps:**
+1. Data input and validation
+2. Algorithm execution
+3. Result processing and output
+
+**Key Data Structures:**
+- Arrays or lists for data storage
+- Variables for intermediate results
+- Control structures for flow management
 
 ## Application in Computer Science
 
-1. applying parallel algorithms to solve specific tasks in parallel
-2. using parallel algorithms in production systems for algorithms
-3. integrating parallel algorithms into data pipelines for process automation
+1. Data classification: applying the algorithm to predict object categories based on features
+2. Regression analysis: building a model to predict continuous values
+3. Clustering: grouping similar objects without prior labels
 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for Parallel Algorithms]
+[Specific input data for parallel algorithms]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
+...
 
 **Final Result:**
 [Specific result of the algorithm's work]
-
 
 ## Self-Check Questions
 

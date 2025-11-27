@@ -130,3 +130,8 @@ Compare with alternatives
     Measures and evaluates the performance of quantum computers through standardized tests, characterizing gate fidelities, error rates, and overall system quality.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Benchmarking - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Benchmarking)

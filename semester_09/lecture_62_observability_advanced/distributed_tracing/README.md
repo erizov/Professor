@@ -130,3 +130,8 @@ Compare with alternatives
     Tracks requests as they flow through distributed systems, creating end-to-end traces that show the complete path of a request across multiple services, enabling debugging and performance optimization.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Distributed Tracing - Wikipedia](https://en.wikipedia.org/wiki/Distributed%20Tracing)

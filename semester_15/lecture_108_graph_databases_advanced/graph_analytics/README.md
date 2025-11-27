@@ -119,3 +119,8 @@ Compare with alternatives
     Graph Analytics solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Graph Analytics - Wikipedia](https://en.wikipedia.org/wiki/Graph%20Analytics)

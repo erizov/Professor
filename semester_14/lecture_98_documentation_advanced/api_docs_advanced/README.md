@@ -119,3 +119,8 @@ Compare with alternatives
     Api Docs Advanced solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Api Docs Advanced - Wikipedia](https://en.wikipedia.org/wiki/Api%20Docs%20Advanced)

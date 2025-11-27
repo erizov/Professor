@@ -5,32 +5,42 @@
 
 ## Algorithm Definition
 
-Event Sourcing is an algorithm used to solve specific problems in computer science.
-
+Event Sourcing is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
 
 ## Technical Description
 
-Event Sourcing works by processing data sequentially according to specific rules and algorithms.
+### What the Algorithm Does
 
+Event Sourcing is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
+
+**Key Steps:**
+1. Data input and validation
+2. Algorithm execution
+3. Result processing and output
+
+**Key Data Structures:**
+- Arrays or lists for data storage
+- Variables for intermediate results
+- Control structures for flow management
 
 ## Application in Computer Science
 
-1. applying event sourcing to solve specific tasks in event
-2. using event sourcing in production systems for sourcing
-3. integrating event sourcing into data pipelines for process automation
+1. Data classification: applying the algorithm to predict object categories based on features
+2. Regression analysis: building a model to predict continuous values
+3. Clustering: grouping similar objects without prior labels
 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for Event Sourcing]
+[Specific input data for event sourcing]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
+...
 
 **Final Result:**
 [Specific result of the algorithm's work]
-
 
 ## Self-Check Questions
 

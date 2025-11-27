@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_06_solid_principles/single_responsibility/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_06_solid_principles/single_responsibility/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_06_solid_principles/single_responsibility/test_algorithm.py)
+
+
+## References
+
+- [Single Responsibility - Wikipedia](https://en.wikipedia.org/wiki/Single%20Responsibility)

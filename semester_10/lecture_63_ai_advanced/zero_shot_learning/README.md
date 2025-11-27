@@ -132,3 +132,8 @@ Compare with alternatives
     Enables models to recognize or classify objects from classes they have never seen during training by leveraging semantic relationships, attribute descriptions, or text descriptions to generalize to unseen classes.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Zero-shot learning](https://en.wikipedia.org/wiki/Zero-shot_learning) - Wikipedia

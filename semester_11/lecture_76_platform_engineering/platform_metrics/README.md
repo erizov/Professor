@@ -130,3 +130,8 @@ Compare with alternatives
 Collects, analyzes, and presents metrics about platform usage, performance, and health, enabling platform teams to optimize platforms and demonstrate value.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Platform Metrics - Wikipedia](https://en.wikipedia.org/wiki/Platform%20Metrics)

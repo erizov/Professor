@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_39_operating_systems/virtual_memory/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_39_operating_systems/virtual_memory/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_39_operating_systems/virtual_memory/test_algorithm.py)
+
+
+## References
+
+- [Virtual memory](https://en.wikipedia.org/wiki/Virtual_memory) - Wikipedia

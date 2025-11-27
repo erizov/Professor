@@ -132,3 +132,8 @@ Alternatives: Quantum Approximate Optimization Algorithm, Quantum Machine Learni
     A class of hybrid quantum-classical algorithms that use parameterized quantum circuits optimized classically to solve optimization and machine learning problems.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Variational Quantum - Wikipedia](https://en.wikipedia.org/wiki/Variational%20Quantum)

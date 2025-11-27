@@ -5,32 +5,42 @@
 
 ## Algorithm Definition
 
-Star Schema is an algorithm used to solve specific problems in computer science.
-
+Star Schema is an algorithm for solving problems in the field of data engineering / data governance, which performs a sequence of operations to process data and obtain results.
 
 ## Technical Description
 
-Star Schema works by processing data sequentially according to specific rules and algorithms.
+### What the Algorithm Does
 
+Star Schema is an algorithm for solving problems in the field of data engineering / data governance, which performs a sequence of operations to process data and obtain results.
+
+**Key Steps:**
+1. Data input and validation
+2. Algorithm execution
+3. Result processing and output
+
+**Key Data Structures:**
+- Arrays or lists for data storage
+- Variables for intermediate results
+- Control structures for flow management
 
 ## Application in Data Engineering / Data Governance
 
-1. applying star schema to solve specific tasks in star
-2. using star schema in production systems for schema
-3. integrating star schema into data pipelines for process automation
+1. ETL processes in banking systems: processing millions of transactions per day
+2. Report generation in corporate systems: daily processing of web server logs
+3. Image processing in social networks: batch processing of uploaded photos
 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for Star Schema]
+[Specific input data for star schema]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
+...
 
 **Final Result:**
 [Specific result of the algorithm's work]
-
 
 ## Self-Check Questions
 

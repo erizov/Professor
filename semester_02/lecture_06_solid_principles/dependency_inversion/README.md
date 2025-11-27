@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_06_solid_principles/dependency_inversion/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_06_solid_principles/dependency_inversion/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_06_solid_principles/dependency_inversion/test_algorithm.py)
+
+
+## References
+
+- [Dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) - Wikipedia

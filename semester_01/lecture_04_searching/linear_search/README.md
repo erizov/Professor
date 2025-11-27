@@ -90,3 +90,17 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_04_searching/linear_search/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_04_searching/linear_search/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_04_searching/linear_search/test_algorithm.py)
+
+
+## References
+
+- [Linear search](https://en.wikipedia.org/wiki/Linear_search) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups

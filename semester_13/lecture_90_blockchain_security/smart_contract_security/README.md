@@ -130,3 +130,8 @@ Compare with alternatives
     Ensures security of smart contracts through comprehensive security practices, including secure coding, vulnerability prevention, access controls, and defense against common attack vectors.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Smart Contract Security - Wikipedia](https://en.wikipedia.org/wiki/Smart%20Contract%20Security)

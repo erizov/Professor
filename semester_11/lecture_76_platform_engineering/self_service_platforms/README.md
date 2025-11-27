@@ -132,3 +132,8 @@ Compare with alternatives
     Enables developers to provision, configure, and manage resources and services independently through self-service interfaces, reducing dependency on operations teams and improving developer velocity.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Self Service Platforms - Wikipedia](https://en.wikipedia.org/wiki/Self%20Service%20Platforms)

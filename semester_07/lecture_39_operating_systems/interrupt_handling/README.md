@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_39_operating_systems/interrupt_handling/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_39_operating_systems/interrupt_handling/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_39_operating_systems/interrupt_handling/test_algorithm.py)
+
+
+## References
+
+- [Interrupt](https://en.wikipedia.org/wiki/Interrupt) - Wikipedia

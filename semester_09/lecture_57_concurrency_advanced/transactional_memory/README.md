@@ -130,3 +130,13 @@ Compare with alternatives
     Provides atomic, isolated execution of code blocks (transactions) in concurrent programs, simplifying concurrent programming by automatically handling synchronization and conflict resolution.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Transactional memory](https://en.wikipedia.org/wiki/Transactional_memory) - Wikipedia
+
+
+## Historical Context
+
+In computer science and engineering, transactional memory attempts to simplify concurrent programming by allowing a group of load and store instructions to execute in an atomic way

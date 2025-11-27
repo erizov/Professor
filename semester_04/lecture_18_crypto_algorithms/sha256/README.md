@@ -79,3 +79,22 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_18_crypto_algorithms/sha256/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_18_crypto_algorithms/sha256/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_18_crypto_algorithms/sha256/test_algorithm.py)
+
+
+## Historical Context
+
+SHA-2 is a set of cryptographic hash functions designed by the United States National Security Agency (NSA) and first published in 2001. They are built using the Merkle–Damgård construction, from a one-way compression function itself built using the Davies–Meyer structure from a specialized block ci
+
+
+## References
+
+- [SHA-2](https://en.wikipedia.org/wiki/SHA-2) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation

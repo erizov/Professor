@@ -119,3 +119,13 @@ Compare with alternatives
     Snowflake Schema solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Snowflake schema](https://en.wikipedia.org/wiki/Snowflake_schema) - Wikipedia
+
+
+## Historical Context
+
+The snowflake schema is represented by centralized fact tables which are connected to multiple dimensions. The principle behind snowflaking is normalization of the dimension tables by removing low cardinality attributes and forming separate tables

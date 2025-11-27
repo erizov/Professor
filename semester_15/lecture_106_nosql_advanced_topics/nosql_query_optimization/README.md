@@ -119,3 +119,8 @@ Compare with alternatives
     Nosql Query Optimization solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Nosql Query Optimization - Wikipedia](https://en.wikipedia.org/wiki/Nosql%20Query%20Optimization)

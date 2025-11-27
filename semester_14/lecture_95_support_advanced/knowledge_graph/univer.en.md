@@ -1,65 +1,75 @@
-# Knowledge Graph
+# Knowledge Graphs for Support
 
 **Algorithm:** knowledge_graph  
 **Discipline:** Data Engineering / Data Governance
 
 ## Algorithm Definition
 
-Knowledge Graphs for Support is an algorithm used to solve specific problems in computer science.
-
+Knowledge Graphs for Support is an algorithm for solving problems in the field of data engineering / data governance, which performs a sequence of operations to process data and obtain results.
 
 ## Technical Description
 
-Knowledge Graphs for Support works by processing data sequentially according to specific rules and algorithms.
+### What the Algorithm Does
 
+Knowledge Graphs for Support is an algorithm for solving problems in the field of data engineering / data governance, which performs a sequence of operations to process data and obtain results.
+
+**Key Steps:**
+1. Data input and validation
+2. Algorithm execution
+3. Result processing and output
+
+**Key Data Structures:**
+- Arrays or lists for data storage
+- Variables for intermediate results
+- Control structures for flow management
 
 ## Application in Data Engineering / Data Governance
 
-1. applying knowledge graph to solve specific tasks in knowledge
-2. using knowledge graph in production systems for graph
-3. integrating knowledge graph into data pipelines for process automation
+1. ETL processes in banking systems: processing millions of transactions per day
+2. Report generation in corporate systems: daily processing of web server logs
+3. Image processing in social networks: batch processing of uploaded photos
 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for Knowledge Graphs for Support]
+[Specific input data for knowledge graphs for support]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
+...
 
 **Final Result:**
 [Specific result of the algorithm's work]
-
 
 ## Self-Check Questions
 
 ### Basic Level
 
-1. Describe the main stages of the knowledge graph algorithm. What data structures are used?
-2. What are the time and space complexity of knowledge graph? Justify your answer.
+1. Describe the main stages of the knowledge graphs for support algorithm. What data structures are used?
+2. What are the time and space complexity of knowledge graphs for support? Justify your answer.
 
 ### Intermediate Level
 
-1. In what cases is the knowledge graph algorithm most effective? When is its use not advisable?
-2. How can knowledge graph be optimized? Suggest specific improvements.
+1. In what cases is the knowledge graphs for support algorithm most effective? When is its use not advisable?
+2. How can knowledge graphs for support be optimized? Suggest specific improvements.
 
 ### Advanced Level
 
-1. Compare knowledge graph with alternative approaches. Under what conditions is each preferable?
-2. Analyze edge cases and implementation errors of knowledge graph. How to ensure algorithm correctness?
+1. Compare knowledge graphs for support with alternative approaches. Under what conditions is each preferable?
+2. Analyze edge cases and implementation errors of knowledge graphs for support. How to ensure algorithm correctness?
 
 ## Practical Tasks
 
 ### Level 1 — Basic
 
-Implement a basic version of the knowledge graph algorithm in a programming language. Add edge case handling and tests.
+Implement a basic version of the knowledge graphs for support algorithm in a programming language. Add edge case handling and tests.
 
 ### Level 2 — Applied
 
-Create a full implementation of knowledge graph with error handling, logging, and testing. Apply to real data and analyze results.
+Create a full implementation of knowledge graphs for support with error handling, logging, and testing. Apply to real data and analyze results.
 
 ### Level 3 — Research
 
-Conduct a research analysis of knowledge graph: compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
+Conduct a research analysis of knowledge graphs for support: compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
 

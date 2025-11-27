@@ -107,3 +107,22 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_02_efficient_sorting/quick_sort/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_02_efficient_sorting/quick_sort/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_02_efficient_sorting/quick_sort/test_algorithm.py)
+
+
+## Historical Context
+
+Quicksort is an efficient, general-purpose sorting algorithm. Quicksort was developed by British computer scientist Tony Hoare in 1959 and published in 1961. It is still a commonly used algorithm for sorting. Overall, it is slightly faster than merge sort and heapsort for randomized data, particular
+
+
+## References
+
+- [Quicksort](https://en.wikipedia.org/wiki/Quicksort) - Wikipedia
+
+
+## Real-World Applications
+
+- Database query optimization
+- Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling

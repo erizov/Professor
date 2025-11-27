@@ -130,3 +130,8 @@ Compare with alternatives
     Makes AI models and their internal workings understandable to humans, enabling users to understand how models work, why they make specific predictions, and how to improve them.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Interpretability](https://en.wikipedia.org/wiki/Interpretability) - Wikipedia

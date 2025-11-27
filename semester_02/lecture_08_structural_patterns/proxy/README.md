@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_08_structural_patterns/proxy/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_08_structural_patterns/proxy/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_08_structural_patterns/proxy/test_algorithm.py)
+
+
+## References
+
+- [Proxy](https://en.wikipedia.org/wiki/Proxy) - Wikipedia

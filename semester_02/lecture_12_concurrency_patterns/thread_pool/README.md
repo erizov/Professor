@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_12_concurrency_patterns/thread_pool/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_12_concurrency_patterns/thread_pool/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_12_concurrency_patterns/thread_pool/test_algorithm.py)
+
+
+## References
+
+- [Thread pool](https://en.wikipedia.org/wiki/Thread_pool) - Wikipedia
+
+
+## Historical Context
+
+Often also called a replicated workers or worker-crew model, a thread pool maintains multiple threads waiting for tasks to be allocated for concurrent execution by the supervising program. By maintaining a pool of threads, the model increases performance and avoids latency in execution due to frequent creation and destruction of threads for short-lived tasks

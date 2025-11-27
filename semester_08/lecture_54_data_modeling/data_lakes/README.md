@@ -129,3 +129,8 @@ Compare with alternatives
     Stores vast amounts of raw, unstructured, and structured data in its native format, enabling flexible data exploration, analytics, and machine learning without predefined schema.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data Lakes - Wikipedia](https://en.wikipedia.org/wiki/Data%20Lakes)

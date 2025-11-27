@@ -119,3 +119,8 @@ Compare with alternatives
     Automated Documentation solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Automated Documentation - Wikipedia](https://en.wikipedia.org/wiki/Automated%20Documentation)

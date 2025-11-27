@@ -1,38 +1,26 @@
-# Explainability
-
-**Алгоритм:** explainability  
-**Дисциплина:** Машинное обучение / ai
+# Explainability — Университетский уровень
 
 ## Определение алгоритма
 
-Explainability — это алгоритм, используемый для решения конкретных задач в области компьютерных наук.
-
+Within artificial intelligence (AI), explainable AI (XAI), generally overlapping with interpretable AI or explainable machine learning (XML), is a field of research that explores methods that provide humans with the ability of intellectual oversight over AI algorithms. The main focus is on the reasoning behind the decisions or predictions made by the AI algorithms, to make them more understandable and transparent. This addresses users' requirement to assess safety and scrutinize the automated decision making in applications. XAI counters the "black box" tendency of machine learning, where even the AI's designers cannot explain why it arrived at a specific decision.
 
 ## Техническое описание
 
-Explainability работает путем последовательной обработки данных согласно определенным правилам и алгоритмам.
+Within artificial intelligence (AI), explainable AI (XAI), generally overlapping with interpretable AI or explainable machine learning (XML), is a field of research that explores methods that provide humans with the ability of intellectual oversight over AI algorithms. The main focus is on the reasoning behind the decisions or predictions made by the AI algorithms, to make them more understandable and transparent. This addresses users' requirement to assess safety and scrutinize the automated decision making in applications. XAI counters the "black box" tendency of machine learning, where even the AI's designers cannot explain why it arrived at a specific decision.
 
+## Области применения
 
-## Применение в Machine Learning / AI
+- Explainability объясняют в школьных кружках информатики для развития алгоритмического мышления.
+- Учителя используют Explainability на лабораторных работах, чтобы показать практическую ценность структур данных.
+- Explainability помогает разбирать реальные задачи соревнований и олимпиад.
 
-1. применение explainability для решения конкретных задач в области explainability
-2. использование explainability в production-системах для обработки данных
-3. интеграция explainability в data pipelines для автоматизации процессов
+## Пошаговый сценарий
 
-## Пример сценария по шагам
+1. Подготовьте вход: набор данных и структуру памяти.
+2. Примените ключевые шаги Explainability, отслеживая изменения после каждого шага.
+3. Проверьте итог и сопоставьте его с ожидаемым результатом.
 
-**Входные данные:**
-[Конкретные входные данные для Explainability]
-
-**Шаг 1:** [Конкретное действие алгоритма Explainability]
-**Шаг 2:** [Следующее действие]
-**Шаг 3:** [Продолжение обработки]
-
-**Итоговый результат:**
-[Конкретный результат работы алгоритма Explainability]
-
-
-## Вопросы для самопроверки
+## Контрольные вопросы
 
 ### Базовый уровень
 
@@ -41,13 +29,13 @@ Explainability работает путем последовательной об
 
 ### Средний уровень
 
-1. В каких случаях алгоритм explainability наиболее эффективен? Когда его использование нецелесообразно?
-2. Как можно оптимизировать explainability? Предложите конкретные улучшения.
+3. В каких случаях алгоритм explainability наиболее эффективен? Когда его использование нецелесообразно?
+4. Как можно оптимизировать explainability? Предложите конкретные улучшения.
 
 ### Продвинутый уровень
 
-1. Сравните explainability с альтернативными подходами. При каких условиях каждый из них предпочтительнее?
-2. Проанализируйте граничные случаи и ошибки реализации explainability. Как обеспечить корректность алгоритма?
+5. Сравните explainability с альтернативными подходами. При каких условиях каждый из них предпочтительнее?
+6. Проанализируйте граничные случаи и ошибки реализации explainability. Как обеспечить корректность алгоритма?
 
 ## Практические задания
 
@@ -67,7 +55,7 @@ Explainability работает путем последовательной об
 альтернативными алгоритмами, измерьте производительность, проанализируйте сложность и сформулируйте
 выводы о применимости.
 
-## Этическое рассуждение
+## Этические аспекты
 
 Применение алгоритмов машинного обучения требует этического подхода:
 
@@ -77,3 +65,6 @@ Explainability работает путем последовательной об
 - Приватность: защита персональных данных
 - Ответственность: человеческий надзор за критическими решениями
 - Безопасность: защита от злоупотреблений и атак
+
+
+*Источник: https://en.wikipedia.org/wiki/Explainable_artificial_intelligence*

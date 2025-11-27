@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_11_dynamic_programming/edit_distance/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_11_dynamic_programming/edit_distance/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_11_dynamic_programming/edit_distance/test_algorithm.py)
+
+
+## References
+
+- [Edit distance](https://en.wikipedia.org/wiki/Edit_distance) - Wikipedia
+
+
+## Historical Context
+
+a way of quantifying how dissimilar two strings are to one another, that is measured by counting the minimum number of operations required to transform one string into the other. Edit distances find applications in natural language processing, where automatic spelling correction can determine candidate corrections for a misspelled word by selecting words from a dictionary that have a low distance 

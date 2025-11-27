@@ -130,3 +130,8 @@ Compare with alternatives
     Uses quantum computing to solve logistics and supply chain optimization problems like vehicle routing, warehouse optimization, and delivery scheduling, finding better solutions faster than classical methods.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Logistics - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Logistics)

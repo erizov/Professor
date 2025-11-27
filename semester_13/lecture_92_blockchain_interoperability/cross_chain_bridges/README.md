@@ -130,3 +130,8 @@ Compare with alternatives
     Implements cross-chain bridges that enable transfer of assets and data between different blockchains, connecting isolated blockchain networks and enabling interoperability.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Cross Chain Bridges - Wikipedia](https://en.wikipedia.org/wiki/Cross%20Chain%20Bridges)

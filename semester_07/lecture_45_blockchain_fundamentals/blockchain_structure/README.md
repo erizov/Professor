@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_45_blockchain_fundamentals/blockchain_structure/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_45_blockchain_fundamentals/blockchain_structure/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_45_blockchain_fundamentals/blockchain_structure/test_algorithm.py)
+
+
+## References
+
+- [blockchain_structure - GeeksforGeeks](https://www.geeksforgeeks.org/blockchain-structure) - GeeksforGeeks

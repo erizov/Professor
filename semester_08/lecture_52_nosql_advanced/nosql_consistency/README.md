@@ -130,3 +130,8 @@ Compare with alternatives
     Defines data consistency guarantees in distributed NoSQL systems, balancing between strong consistency (ACID) and eventual consistency (BASE) based on application requirements.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Nosql Consistency - Wikipedia](https://en.wikipedia.org/wiki/Nosql%20Consistency)

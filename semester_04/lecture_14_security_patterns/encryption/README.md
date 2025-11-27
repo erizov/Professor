@@ -79,3 +79,17 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_14_security_patterns/encryption/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_14_security_patterns/encryption/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_14_security_patterns/encryption/test_algorithm.py)
+
+
+## References
+
+- [Encryption](https://en.wikipedia.org/wiki/Encryption) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation

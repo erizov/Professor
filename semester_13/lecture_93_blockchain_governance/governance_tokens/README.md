@@ -130,3 +130,8 @@ Compare with alternatives
 Tokens that grant voting rights to holders, enabling decentralized governance where token-weighted votes determine protocol decisions and parameter changes.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Governance Tokens - Wikipedia](https://en.wikipedia.org/wiki/Governance%20Tokens)

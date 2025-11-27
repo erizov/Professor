@@ -130,3 +130,8 @@ Compare with alternatives
     A pure proof-of-stake consensus protocol that uses cryptographic sortition to randomly select small committees for fast, secure, and fork-free consensus.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Algorand](https://en.wikipedia.org/wiki/Algorand) - Wikipedia

@@ -130,3 +130,8 @@ Compare with alternatives
     Processes data and runs applications closer to data sources (at the edge) rather than in centralized cloud data centers, reducing latency, bandwidth usage, and enabling real-time processing.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Edge computing](https://en.wikipedia.org/wiki/Edge_computing) - Wikipedia

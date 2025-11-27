@@ -130,3 +130,8 @@ Compare with alternatives
     Tests applications and infrastructure for security vulnerabilities through automated and manual testing techniques, ensuring security before deployment.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Security testing](https://en.wikipedia.org/wiki/Security_testing) - Wikipedia

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_21_transfer_learning/transfer_learning/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_21_transfer_learning/transfer_learning/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_21_transfer_learning/transfer_learning/test_algorithm.py)
+
+
+## References
+
+- [Transfer learning](https://en.wikipedia.org/wiki/Transfer_learning) - Wikipedia

@@ -2,23 +2,16 @@
 
 ## Simple Explanation
 
-Trie is an algorithm used to solve specific problems in computer science.
-
+In computer science, a trie, also known as a digital tree or prefix tree, is a specialized search tree data structure used to store and retrieve strings from a dictionary or set. Unlike a binary search tree, nodes in a trie do not store their associated key. Instead, each node's position within the trie determines its associated key, with the connections between nodes defined by individual characters rather than the entire key.
 
 ## Where It's Used
 
-- applying trie to solve specific tasks in trie;
-- using trie in production systems for data processing;
-- integrating trie into data pipelines for process automation;
+- Search engines and indexing
+- Database lookups
 
 ## Example
 
-Specific example of trie:
-
-1. Data preparation: input data for trie (specific format and structure)
-2. Algorithm application: sequence of steps of trie to process data
-3. Result: specific result of algorithm work with interpretation
-
+Instead, each node's position within the trie determines its associated key, with the connections between nodes defined by individual characters rather than the entire key
 
 ## Self-Check Questions
 
@@ -44,13 +37,18 @@ Specific example of trie:
 
 ### Level 1 (Easy)
 
+(Easy)
+
 Perform a simple operation with the trie algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
+
+(Medium)
 
 Apply the trie algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the trie algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+(Advanced)
 
+Write an implementation of the trie algorithm in a programming language. Add error handling, input validation, tests, and documentation.

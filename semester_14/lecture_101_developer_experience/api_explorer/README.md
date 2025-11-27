@@ -132,3 +132,8 @@ Compare with alternatives
     Interactive tools that help developers discover, test, and understand APIs through visual interfaces and integrated documentation.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Api Explorer - Wikipedia](https://en.wikipedia.org/wiki/Api%20Explorer)

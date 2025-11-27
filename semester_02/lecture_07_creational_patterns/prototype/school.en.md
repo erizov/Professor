@@ -1,56 +1,57 @@
-# Prototype
+# Prototype Pattern
 
 ## Simple Explanation
 
-Prototype Pattern is an algorithm used to solve specific problems in computer science.
-
+Prototype Pattern is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying prototype to solve specific tasks in prototype;
-- using prototype in production systems for data processing;
-- integrating prototype into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of prototype:
+Consider a specific example of how prototype pattern works:
 
-1. Data preparation: input data for prototype (specific format and structure)
-2. Algorithm application: sequence of steps of prototype to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the prototype algorithm do?
-2. In what situations is prototype used?
+1. What does the prototype pattern algorithm do?
+2. In what situations is prototype pattern used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does prototype handle edge cases?
-2. What are the advantages and disadvantages of prototype?
-3. Can the performance of prototype be improved?
+1. How does prototype pattern handle edge cases?
+2. What are the advantages and disadvantages of prototype pattern?
+3. Can the performance of prototype pattern be improved?
 
 ### Advanced
 
-1. What is the time complexity of prototype?
-2. How does prototype work with large volumes of data?
-3. How can prototype be optimized?
+1. What is the time complexity of prototype pattern?
+2. How does prototype pattern work with large volumes of data?
+3. How can prototype pattern be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the prototype algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the prototype pattern algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the prototype algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the prototype pattern algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the prototype algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the prototype pattern algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

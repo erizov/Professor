@@ -79,3 +79,22 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_14_string_algorithms/boyer_moore/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_14_string_algorithms/boyer_moore/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_14_string_algorithms/boyer_moore/test_algorithm.py)
+
+
+## Historical Context
+
+In computer science, the Boyer–Moore string-search algorithm is an efficient string-searching algorithm that is the standard benchmark for practical string-search literature. It was developed by Robert S. Boyer and J Strother Moore in 1977. The original paper contained static tables for computing th
+
+
+## References
+
+- [Boyer–Moore string-search algorithm](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups

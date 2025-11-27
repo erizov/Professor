@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_17_performance/rate_limiting/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_17_performance/rate_limiting/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_17_performance/rate_limiting/test_algorithm.py)
+
+
+## References
+
+- [Rate limiting](https://en.wikipedia.org/wiki/Rate_limiting) - Wikipedia
+
+
+## Historical Context
+
+In computer networks, rate limiting is used to control the rate of requests sent or received by a network interface controller

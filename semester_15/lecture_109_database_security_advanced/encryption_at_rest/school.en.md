@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Encryption At Rest is an algorithm used to solve specific problems in computer science.
-
+Encryption At Rest is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying encryption at rest to solve specific tasks in encryption;
-- using encryption at rest in production systems for rest;
-- integrating encryption at rest into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of encryption at rest:
+Consider a specific example of how encryption at rest works:
 
-1. Data preparation: input data for encryption at rest (specific format and structure)
-2. Algorithm application: sequence of steps of encryption at rest to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

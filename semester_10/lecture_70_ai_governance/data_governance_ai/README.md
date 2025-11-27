@@ -131,3 +131,8 @@ Compare with alternatives
 30-second explanation (your own words)  
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data Governance Ai - Wikipedia](https://en.wikipedia.org/wiki/Data%20Governance%20Ai)

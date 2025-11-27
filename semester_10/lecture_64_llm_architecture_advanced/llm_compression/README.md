@@ -132,3 +132,8 @@ Alternatives: Full Precision Models, Model Distillation, Knowledge Distillation,
     Reduces the size and computational requirements of large language models through techniques like quantization, pruning, distillation, and low-rank factorization while maintaining acceptable performance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Llm Compression - Wikipedia](https://en.wikipedia.org/wiki/Llm%20Compression)

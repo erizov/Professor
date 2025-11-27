@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_37_cost_optimization/autoscaling/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_37_cost_optimization/autoscaling/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_37_cost_optimization/autoscaling/test_algorithm.py)
+
+
+## References
+
+- [Autoscaling](https://en.wikipedia.org/wiki/Autoscaling) - Wikipedia
+
+
+## Historical Context
+
+Autoscaling,, is a method used in cloud computing that dynamically adjusts the amount of computational resources in a server farm - typically measured by the number of active servers - automatically based on the load on the farm

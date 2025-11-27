@@ -130,3 +130,8 @@ Compare with alternatives
     Implements thread-safe data structures that support concurrent access from multiple threads without data corruption, using locks, lock-free algorithms, or transactional memory.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Concurrent Data Structures - Wikipedia](https://en.wikipedia.org/wiki/Concurrent%20Data%20Structures)

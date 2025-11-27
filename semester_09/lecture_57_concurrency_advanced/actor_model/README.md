@@ -130,3 +130,8 @@ Compare with alternatives
     Models concurrent computation using actors (independent computational entities) that communicate through asynchronous message passing, avoiding shared state and locks for better scalability and fault tolerance.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Actor model](https://en.wikipedia.org/wiki/Actor_model) - Wikipedia

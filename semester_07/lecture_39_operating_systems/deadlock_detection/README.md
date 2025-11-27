@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_39_operating_systems/deadlock_detection/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_39_operating_systems/deadlock_detection/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_39_operating_systems/deadlock_detection/test_algorithm.py)
+
+
+## References
+
+- [Deadlock (computer science)](https://en.wikipedia.org/wiki/Deadlock_(computer_science)) - Wikipedia

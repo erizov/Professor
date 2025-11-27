@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_28_reinforcement_learning/ppo/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_28_reinforcement_learning/ppo/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_28_reinforcement_learning/ppo/test_algorithm.py)
+
+
+## References
+
+- [PPO](https://en.wikipedia.org/wiki/PPO) - Wikipedia

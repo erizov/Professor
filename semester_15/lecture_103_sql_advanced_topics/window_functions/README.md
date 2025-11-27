@@ -119,3 +119,13 @@ Compare with alternatives
     Window Functions solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Window function](https://en.wikipedia.org/wiki/Window_function) - Wikipedia
+
+
+## Historical Context
+
+Mathematically, when another function or waveform/data-sequence is "multiplied" by a window function, the product is also zero-valued outside the interval: all that is left is the part where they overlap, the "view through the window". Equivalently, and in actual practice, the segment of data within the window is first isolated, and then only that data is multiplied by the window function values

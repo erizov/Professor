@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_36_inference_optimization/inference_pipeline/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_36_inference_optimization/inference_pipeline/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_36_inference_optimization/inference_pipeline/test_algorithm.py)
+
+
+## References
+
+- [Inference Pipeline - Wikipedia](https://en.wikipedia.org/wiki/Inference%20Pipeline)

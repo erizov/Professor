@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_37_cost_optimization/serverless_ml/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_37_cost_optimization/serverless_ml/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_37_cost_optimization/serverless_ml/test_algorithm.py)
+
+
+## References
+
+- [Serverless Ml - Wikipedia](https://en.wikipedia.org/wiki/Serverless%20Ml)

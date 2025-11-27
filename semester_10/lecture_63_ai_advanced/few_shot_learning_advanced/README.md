@@ -132,3 +132,8 @@ Compare with alternatives
     Enables models to learn new tasks from very few examples (often just 1-5 examples) using advanced techniques like meta-learning, metric learning, and prompt engineering, making AI systems highly data-efficient.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Few Shot Learning Advanced - Wikipedia](https://en.wikipedia.org/wiki/Few%20Shot%20Learning%20Advanced)

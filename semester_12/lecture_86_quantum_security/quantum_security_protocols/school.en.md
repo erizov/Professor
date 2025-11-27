@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Quantum Security Protocols is an algorithm used to solve specific problems in computer science.
-
+Quantum Security Protocols is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying quantum security protocols to solve specific tasks in quantum;
-- using quantum security protocols in production systems for protocols;
-- integrating quantum security protocols into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of quantum security protocols:
+Consider a specific example of how quantum security protocols works:
 
-1. Data preparation: input data for quantum security protocols (specific format and structure)
-2. Algorithm application: sequence of steps of quantum security protocols to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

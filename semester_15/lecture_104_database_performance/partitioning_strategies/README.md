@@ -119,3 +119,8 @@ Compare with alternatives
     Partitioning Strategies solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Partitioning Strategies - Wikipedia](https://en.wikipedia.org/wiki/Partitioning%20Strategies)

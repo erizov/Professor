@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_24_segmentation/unet/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_24_segmentation/unet/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_24_segmentation/unet/test_algorithm.py)
+
+
+## Historical Context
+
+U-Net is a convolutional neural network that was developed for image segmentation. The network is based on a fully convolutional neural network whose architecture was modified and extended to work with fewer training images and to yield more precise segmentation. Segmentation of a 512 × 512 image ta
+
+
+## References
+
+- [U-Net](https://en.wikipedia.org/wiki/U-Net) - Wikipedia

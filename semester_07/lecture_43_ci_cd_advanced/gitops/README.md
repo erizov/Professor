@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_07/lecture_43_ci_cd_advanced/gitops/algorithm.py)
 - [Java Implementation](/code/semester_07/lecture_43_ci_cd_advanced/gitops/Algorithm.java)
 - [Python Tests](/code/semester_07/lecture_43_ci_cd_advanced/gitops/test_algorithm.py)
+
+
+## References
+
+- [Gitops - Wikipedia](https://en.wikipedia.org/wiki/Gitops)

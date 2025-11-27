@@ -119,3 +119,8 @@ Compare with alternatives
     Incident Response Automation solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Incident Response Automation - Wikipedia](https://en.wikipedia.org/wiki/Incident%20Response%20Automation)

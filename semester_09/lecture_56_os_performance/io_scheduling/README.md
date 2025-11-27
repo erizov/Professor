@@ -132,3 +132,8 @@ Compare with alternatives
     Optimizes the order of I/O requests to storage devices, reducing seek time, improving throughput, and ensuring fair access to I/O resources for multiple processes.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Io Scheduling - Wikipedia](https://en.wikipedia.org/wiki/Io%20Scheduling)

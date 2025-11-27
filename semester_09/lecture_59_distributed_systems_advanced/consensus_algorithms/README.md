@@ -131,3 +131,8 @@ Compare with alternatives
     Enables multiple distributed nodes to agree on a single value or decision despite network failures, node failures, and message delays, ensuring consistency in distributed systems.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Consensus Algorithms - Wikipedia](https://en.wikipedia.org/wiki/Consensus%20Algorithms)

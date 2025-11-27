@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_09_behavioral_patterns/chain_of_responsibility/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_09_behavioral_patterns/chain_of_responsibility/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_09_behavioral_patterns/chain_of_responsibility/test_algorithm.py)
+
+
+## Historical Context
+
+The chain of responsibility is a policy concept used in Australian transport legislation to place legal obligations on parties in the transport supply chain or across transport industries generally. The concept was initially developed to apply in the heavy vehicle industry in regulated areas such as
+
+
+## References
+
+- [Chain of responsibility](https://en.wikipedia.org/wiki/Chain_of_responsibility) - Wikipedia

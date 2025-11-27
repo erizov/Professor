@@ -1,24 +1,25 @@
-# Chain Of Responsibility
+# Chain of Responsibility
 
 ## Simple Explanation
 
-Chain of Responsibility is an algorithm used to solve specific problems in computer science.
-
+Chain of Responsibility is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying chain of responsibility to solve specific tasks in chain;
-- using chain of responsibility in production systems for responsibility;
-- integrating chain of responsibility into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of chain of responsibility:
+Consider a specific example of how chain of responsibility works:
 
-1. Data preparation: input data for chain of responsibility (specific format and structure)
-2. Algorithm application: sequence of steps of chain of responsibility to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

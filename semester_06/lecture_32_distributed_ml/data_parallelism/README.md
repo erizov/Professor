@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_32_distributed_ml/data_parallelism/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_32_distributed_ml/data_parallelism/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_32_distributed_ml/data_parallelism/test_algorithm.py)
+
+
+## References
+
+- [Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) - Wikipedia
+
+
+## Historical Context
+
+It can be applied on regular data structures like arrays and matrices by working on each element in parallel

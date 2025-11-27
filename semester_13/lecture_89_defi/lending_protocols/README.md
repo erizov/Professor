@@ -130,3 +130,8 @@ Compare with alternatives
     Implements decentralized lending protocols that enable users to lend and borrow cryptocurrencies without intermediaries, using smart contracts to manage loans, collateral, and interest rates algorithmically.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Lending Protocols - Wikipedia](https://en.wikipedia.org/wiki/Lending%20Protocols)

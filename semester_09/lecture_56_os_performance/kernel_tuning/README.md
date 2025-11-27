@@ -130,3 +130,8 @@ Compare with alternatives
     Optimizes operating system kernel parameters and configuration to improve performance, resource utilization, and system behavior for specific workloads and hardware.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Kernel Tuning - Wikipedia](https://en.wikipedia.org/wiki/Kernel%20Tuning)

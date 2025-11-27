@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_12_concurrency_patterns/readers_writers/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_12_concurrency_patterns/readers_writers/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_12_concurrency_patterns/readers_writers/test_algorithm.py)
+
+
+## References
+
+- [Readers Writers - Wikipedia](https://en.wikipedia.org/wiki/Readers%20Writers)

@@ -130,3 +130,8 @@ Compare with alternatives
     Processes multiple inference requests together in batches, improving GPU utilization and throughput by amortizing computation overhead across multiple requests.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Batch Inference - Wikipedia](https://en.wikipedia.org/wiki/Batch%20Inference)

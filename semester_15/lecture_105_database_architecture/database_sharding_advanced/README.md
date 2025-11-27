@@ -119,3 +119,8 @@ Compare with alternatives
     Database Sharding Advanced solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Database Sharding Advanced - Wikipedia](https://en.wikipedia.org/wiki/Database%20Sharding%20Advanced)

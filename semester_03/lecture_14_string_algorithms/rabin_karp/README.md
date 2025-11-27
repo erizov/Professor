@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_03/lecture_14_string_algorithms/rabin_karp/algorithm.py)
 - [Java Implementation](/code/semester_03/lecture_14_string_algorithms/rabin_karp/Algorithm.java)
 - [Python Tests](/code/semester_03/lecture_14_string_algorithms/rabin_karp/test_algorithm.py)
+
+
+## References
+
+- [rabin_karp - TutorialsPoint](https://www.tutorialspoint.com/data_structures_algorithms/rabin_karp_algorithm.htm) - TutorialsPoint

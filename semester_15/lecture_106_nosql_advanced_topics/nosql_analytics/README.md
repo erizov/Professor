@@ -119,3 +119,8 @@ Compare with alternatives
     Nosql Analytics solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Nosql Analytics - Wikipedia](https://en.wikipedia.org/wiki/Nosql%20Analytics)

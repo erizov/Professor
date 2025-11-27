@@ -130,3 +130,8 @@ Compare with alternatives
     Designs and implements control systems for quantum hardware, managing qubit manipulation, gate operations, and system coordination to enable accurate quantum computation.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Control Systems - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Control%20Systems)

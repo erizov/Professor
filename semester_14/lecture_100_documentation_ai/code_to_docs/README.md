@@ -132,3 +132,8 @@ Compare with alternatives
     Tools and techniques that convert source code into readable documentation by extracting structure and generating explanations.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Code To Docs - Wikipedia](https://en.wikipedia.org/wiki/Code%20To%20Docs)

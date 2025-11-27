@@ -1,56 +1,57 @@
-# Actor Critic
+# Actor-Critic
 
 ## Simple Explanation
 
-Actor-Critic is an algorithm used to solve specific problems in computer science.
-
+Actor-Critic is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying actor critic to solve specific tasks in actor;
-- using actor critic in production systems for critic;
-- integrating actor critic into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of actor critic:
+Consider a specific example of how actor-critic works:
 
-1. Data preparation: input data for actor critic (specific format and structure)
-2. Algorithm application: sequence of steps of actor critic to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the actor critic algorithm do?
-2. In what situations is actor critic used?
+1. What does the actor-critic algorithm do?
+2. In what situations is actor-critic used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does actor critic handle edge cases?
-2. What are the advantages and disadvantages of actor critic?
-3. Can the performance of actor critic be improved?
+1. How does actor-critic handle edge cases?
+2. What are the advantages and disadvantages of actor-critic?
+3. Can the performance of actor-critic be improved?
 
 ### Advanced
 
-1. What is the time complexity of actor critic?
-2. How does actor critic work with large volumes of data?
-3. How can actor critic be optimized?
+1. What is the time complexity of actor-critic?
+2. How does actor-critic work with large volumes of data?
+3. How can actor-critic be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the actor critic algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the actor-critic algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the actor critic algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the actor-critic algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the actor critic algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the actor-critic algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

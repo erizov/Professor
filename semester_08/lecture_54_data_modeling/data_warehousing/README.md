@@ -130,3 +130,13 @@ Compare with alternatives
     Consolidates data from multiple sources into a centralized, structured repository optimized for analytical queries and business intelligence, enabling historical analysis and reporting.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data warehouse](https://en.wikipedia.org/wiki/Data_warehouse) - Wikipedia
+
+
+## Historical Context
+
+They are intended to be used by analysts and managers to help make organizational decisions

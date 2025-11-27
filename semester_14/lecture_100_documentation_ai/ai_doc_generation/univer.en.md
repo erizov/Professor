@@ -1,67 +1,77 @@
-# Ai Doc Generation
+# AI-Powered Documentation Generation
 
 **Algorithm:** ai_doc_generation  
 **Discipline:** Machine Learning / AI
 
 ## Algorithm Definition
 
-AI-Powered Documentation Generation is an algorithm used to solve specific problems in computer science.
-
+AI-Powered Documentation Generation is an algorithm for solving problems in the field of machine learning / ai, which performs a sequence of operations to process data and obtain results.
 
 ## Technical Description
 
-AI-Powered Documentation Generation works by processing data sequentially according to specific rules and algorithms.
+### What the Algorithm Does
 
+AI-Powered Documentation Generation is an algorithm for solving problems in the field of machine learning / ai, which performs a sequence of operations to process data and obtain results.
+
+**Key Steps:**
+1. Data input and validation
+2. Algorithm execution
+3. Result processing and output
+
+**Key Data Structures:**
+- Arrays or lists for data storage
+- Variables for intermediate results
+- Control structures for flow management
 
 ## Application in Machine Learning / AI
 
-1. applying ai doc generation to solve specific tasks in ai
-2. using ai doc generation in production systems for generation
-3. integrating ai doc generation into data pipelines for process automation
+1. Data classification: applying the algorithm to predict object categories based on features
+2. Regression analysis: building a model to predict continuous values
+3. Clustering: grouping similar objects without prior labels
 
 ## Step-by-Step Scenario
 
 **Input Data:**
-[Specific input data for AI-Powered Documentation Generation]
+[Specific input data for ai-powered documentation generation]
 
 **Step 1:** [Specific algorithm action]
 **Step 2:** [Next action]
 **Step 3:** [Continuation of processing]
+...
 
 **Final Result:**
 [Specific result of the algorithm's work]
-
 
 ## Self-Check Questions
 
 ### Basic Level
 
-1. Describe the main stages of the ai doc generation algorithm. What data structures are used?
-2. What are the time and space complexity of ai doc generation? Justify your answer.
+1. Describe the main stages of the ai-powered documentation generation algorithm. What data structures are used?
+2. What are the time and space complexity of ai-powered documentation generation? Justify your answer.
 
 ### Intermediate Level
 
-1. In what cases is the ai doc generation algorithm most effective? When is its use not advisable?
-2. How can ai doc generation be optimized? Suggest specific improvements.
+1. In what cases is the ai-powered documentation generation algorithm most effective? When is its use not advisable?
+2. How can ai-powered documentation generation be optimized? Suggest specific improvements.
 
 ### Advanced Level
 
-1. Compare ai doc generation with alternative approaches. Under what conditions is each preferable?
-2. Analyze edge cases and implementation errors of ai doc generation. How to ensure algorithm correctness?
+1. Compare ai-powered documentation generation with alternative approaches. Under what conditions is each preferable?
+2. Analyze edge cases and implementation errors of ai-powered documentation generation. How to ensure algorithm correctness?
 
 ## Practical Tasks
 
 ### Level 1 — Basic
 
-Implement a basic version of the ai doc generation algorithm in a programming language. Add edge case handling and tests.
+Implement a basic version of the ai-powered documentation generation algorithm in a programming language. Add edge case handling and tests.
 
 ### Level 2 — Applied
 
-Create a full implementation of ai doc generation with error handling, logging, and testing. Apply to real data and analyze results.
+Create a full implementation of ai-powered documentation generation with error handling, logging, and testing. Apply to real data and analyze results.
 
 ### Level 3 — Research
 
-Conduct a research analysis of ai doc generation: compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
+Conduct a research analysis of ai-powered documentation generation: compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
 
 ## Ethical Reasoning
 

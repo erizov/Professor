@@ -130,3 +130,8 @@ Compare with alternatives
     Collects, aggregates, and stores time-series metrics from applications and infrastructure, enabling monitoring, alerting, and performance analysis through quantitative measurements.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Metrics Collection - Wikipedia](https://en.wikipedia.org/wiki/Metrics%20Collection)

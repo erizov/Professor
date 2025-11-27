@@ -130,3 +130,13 @@ Compare with alternatives
     Structured processes for collecting, analyzing, and acting on developer feedback to continuously improve products and developer experience.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Feedback](https://en.wikipedia.org/wiki/Feedback) - Wikipedia
+
+
+## Historical Context
+
+As provided by Webster, feedback in business is the transmission of evaluative or corrective information about an action, event, or process to the original or controlling source

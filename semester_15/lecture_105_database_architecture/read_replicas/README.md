@@ -119,3 +119,8 @@ Compare with alternatives
     Read Replicas solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Read Replicas - Wikipedia](https://en.wikipedia.org/wiki/Read%20Replicas)

@@ -128,3 +128,20 @@ Compare with alternatives
 Improves SQL query performance by selecting efficient execution plans, using indexes, and rewriting queries to minimize execution time and resource usage.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Query optimization](https://en.wikipedia.org/wiki/Query_optimization) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+## Historical Context
+
+The query optimizer attempts to determine the most efficient way to execute a given query by considering the possible query plans

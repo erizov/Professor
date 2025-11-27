@@ -130,3 +130,8 @@ Compare with alternatives
     Partitions large datasets across multiple database nodes (shards) based on shard key, enabling horizontal scaling and distributing data and load across cluster.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Nosql Sharding - Wikipedia](https://en.wikipedia.org/wiki/Nosql%20Sharding)

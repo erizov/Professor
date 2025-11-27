@@ -130,3 +130,13 @@ Compare with alternatives
     Controls and manipulates quantum systems (qubits) precisely using control pulses, gates, and feedback, enabling accurate quantum operations and maintaining quantum coherence.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Coherent control](https://en.wikipedia.org/wiki/Coherent_control) - Wikipedia
+
+
+## Historical Context
+
+Coherent control is a quantum mechanics-based method for controlling dynamic processes by light. The basic principle is to control quantum interference phenomena, typically by shaping the phase of laser pulses

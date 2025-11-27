@@ -130,3 +130,8 @@ Compare with alternatives
     Systems and processes for managing community contributions, including guidelines, review, recognition, and tracking.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Contribution Management - Wikipedia](https://en.wikipedia.org/wiki/Contribution%20Management)

@@ -130,3 +130,25 @@ Compare with alternatives
     Applies quantum computing to financial problems like portfolio optimization, risk analysis, option pricing, and fraud detection, potentially providing speedups for complex financial calculations.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## Historical Context
+
+Quantum finance is an interdisciplinary research field, applying theories and methods developed by quantum physicists and economists in order to solve problems in finance. It is a branch of econophysics.
+
+
+## References
+
+- [Quantum finance](https://en.wikipedia.org/wiki/Quantum_finance) - Wikipedia
+
+
+## Real-World Applications
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups
+
+- Search engines and indexing
+- Database lookups

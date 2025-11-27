@@ -130,3 +130,8 @@ Compare with alternatives
     Characterizes, models, and mitigates noise and errors in quantum systems caused by decoherence, gate errors, and environmental interactions that degrade quantum information.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum noise](https://en.wikipedia.org/wiki/Quantum_noise) - Wikipedia

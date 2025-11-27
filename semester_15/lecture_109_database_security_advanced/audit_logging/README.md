@@ -119,3 +119,8 @@ Compare with alternatives
     Audit Logging solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Audit Logging - Wikipedia](https://en.wikipedia.org/wiki/Audit%20Logging)

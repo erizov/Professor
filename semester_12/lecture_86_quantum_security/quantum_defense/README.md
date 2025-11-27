@@ -130,3 +130,8 @@ Compare with alternatives
     Defends against quantum attacks on cryptographic systems by implementing quantum-resistant cryptography, quantum key distribution, and other defense mechanisms to protect against quantum computing threats.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Defense - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Defense)

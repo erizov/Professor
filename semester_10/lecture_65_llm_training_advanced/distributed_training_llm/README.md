@@ -132,3 +132,8 @@ Compare with alternatives
     Trains large language models across multiple GPUs or machines using data parallelism, model parallelism, and pipeline parallelism to handle models that don't fit on a single device.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Distributed Training Llm - Wikipedia](https://en.wikipedia.org/wiki/Distributed%20Training%20Llm)

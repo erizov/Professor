@@ -119,3 +119,8 @@ Compare with alternatives
     Query Hints solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Query Hints - Wikipedia](https://en.wikipedia.org/wiki/Query%20Hints)

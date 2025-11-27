@@ -119,3 +119,8 @@ Compare with alternatives
     Schema Migration solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Schema migration](https://en.wikipedia.org/wiki/Schema_migration) - Wikipedia

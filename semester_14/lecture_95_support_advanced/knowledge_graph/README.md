@@ -132,3 +132,23 @@ Compare with alternatives
     Knowledge graphs that represent support information as connected entities and relationships, enabling intelligent querying and recommendations.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph) - Wikipedia
+
+
+## Real-World Applications
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation

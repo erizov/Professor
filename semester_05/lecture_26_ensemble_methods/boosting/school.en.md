@@ -2,23 +2,17 @@
 
 ## Simple Explanation
 
-Boosting is an algorithm used to solve specific problems in computer science.
-
+Boost, boosted or boosting may refer to:
 
 ## Where It's Used
 
-- applying boosting to solve specific tasks in boosting;
-- using boosting in production systems for data processing;
-- integrating boosting into data pipelines for process automation;
+- Boosting powers introductory CS labs focused on reasoning about data.
+- Instructors rely on Boosting when demonstrating how to move from theory to working code.
+- Boosting appears in interview warm-ups and foundational assignments.
 
 ## Example
 
-Specific example of boosting:
-
-1. Data preparation: input data for boosting (specific format and structure)
-2. Algorithm application: sequence of steps of boosting to process data
-3. Result: specific result of algorithm work with interpretation
-
+Boosting powers introductory CS labs focused on reasoning about data.
 
 ## Self-Check Questions
 
@@ -44,13 +38,18 @@ Specific example of boosting:
 
 ### Level 1 (Easy)
 
+(Easy)
+
 Perform a simple operation with the boosting algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
+
+(Medium)
 
 Apply the boosting algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the boosting algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+(Advanced)
 
+Write an implementation of the boosting algorithm in a programming language. Add error handling, input validation, tests, and documentation.

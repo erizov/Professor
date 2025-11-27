@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_09_behavioral_patterns/template_method/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_09_behavioral_patterns/template_method/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_09_behavioral_patterns/template_method/test_algorithm.py)
+
+
+## References
+
+- [Template method pattern](https://en.wikipedia.org/wiki/Template_method_pattern) - Wikipedia
+
+
+## Historical Context
+
+In object-oriented programming, the template method is one of the behavioral design patterns identified by Gamma et al. These steps are themselves implemented by additional helper methods in the same class as the template method

@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_06_solid_principles/liskov_substitution/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_06_solid_principles/liskov_substitution/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_06_solid_principles/liskov_substitution/test_algorithm.py)
+
+
+## Historical Context
+
+The Liskov substitution principle (LSP) is a particular definition of a subtyping relation, called strong behavioral subtyping, that was initially introduced by Barbara Liskov in a 1987 conference keynote address titled Data abstraction and hierarchy. It is based on the concept of "substitutability"
+
+
+## References
+
+- [Liskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle) - Wikipedia

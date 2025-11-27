@@ -119,3 +119,8 @@ Compare with alternatives
     Knowledge Graph Construction solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Knowledge Graph Construction - Wikipedia](https://en.wikipedia.org/wiki/Knowledge%20Graph%20Construction)

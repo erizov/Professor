@@ -128,3 +128,13 @@ Compare with alternatives
     Intentionally introduces data redundancy by storing duplicate data across tables to improve query performance, trading storage space and update complexity for faster reads.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Denormalization](https://en.wikipedia.org/wiki/Denormalization) - Wikipedia
+
+
+## Historical Context
+
+In computing, denormalization is the process of trying to improve the read performance of a database, at the expense of losing some write performance, by adding redundant copies of data or by grouping data. It is often motivated by performance or scalability in relational database software needing to carry out very large numbers of read operations

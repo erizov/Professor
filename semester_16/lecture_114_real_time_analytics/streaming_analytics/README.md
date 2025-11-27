@@ -119,3 +119,8 @@ Compare with alternatives
     Streaming Analytics solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Streaming Analytics - Wikipedia](https://en.wikipedia.org/wiki/Streaming%20Analytics)

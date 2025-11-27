@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_05/lecture_22_cnn_architectures/resnet/algorithm.py)
 - [Java Implementation](/code/semester_05/lecture_22_cnn_architectures/resnet/Algorithm.java)
 - [Python Tests](/code/semester_05/lecture_22_cnn_architectures/resnet/test_algorithm.py)
+
+
+## Historical Context
+
+A residual neural network is a deep learning architecture in which the layers learn residual functions with reference to the layer inputs. It was developed in 2015 for image recognition, and won the ImageNet Large Scale Visual Recognition Challenge of that year.
+
+
+## References
+
+- [Residual neural network](https://en.wikipedia.org/wiki/Residual_neural_network) - Wikipedia

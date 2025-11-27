@@ -132,3 +132,8 @@ Compare with alternatives
     Provides self-service platforms that abstract infrastructure complexity and enable developers to deploy, scale, and manage applications without deep infrastructure knowledge.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Internal Developer Platforms - Wikipedia](https://en.wikipedia.org/wiki/Internal%20Developer%20Platforms)

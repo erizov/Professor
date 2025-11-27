@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_36_inference_optimization/batch_inference/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_36_inference_optimization/batch_inference/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_36_inference_optimization/batch_inference/test_algorithm.py)
+
+
+## References
+
+- [Batch Inference - Wikipedia](https://en.wikipedia.org/wiki/Batch%20Inference)

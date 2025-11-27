@@ -107,3 +107,22 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_02_efficient_sorting/merge_sort/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_02_efficient_sorting/merge_sort/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_02_efficient_sorting/merge_sort/test_algorithm.py)
+
+
+## Historical Context
+
+In computer science, merge sort is an efficient, general-purpose, and comparison-based sorting algorithm. Most implementations of merge sort are stable, which means that the relative order of equal elements is the same between the input and output. Merge sort is a divide-and-conquer algorithm that w
+
+
+## References
+
+- [Merge sort](https://en.wikipedia.org/wiki/Merge_sort) - Wikipedia
+
+
+## Real-World Applications
+
+- Database query optimization
+- Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling

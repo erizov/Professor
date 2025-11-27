@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_08_structural_patterns/adapter/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_08_structural_patterns/adapter/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_08_structural_patterns/adapter/test_algorithm.py)
+
+
+## References
+
+- [Adapter](https://en.wikipedia.org/wiki/Adapter) - Wikipedia

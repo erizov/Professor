@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_17_performance/caching/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_17_performance/caching/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_17_performance/caching/test_algorithm.py)
+
+
+## References
+
+- [Cache (computing)](https://en.wikipedia.org/wiki/Cache_(computing)) - Wikipedia
+
+
+## Historical Context
+
+Cache hits are served by reading data from the cache, which is faster than recomputing a result or reading from a slower data store; thus, the more requests that can be served from the cache, the faster the system performs

@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_06/lecture_37_cost_optimization/spot_instances/algorithm.py)
 - [Java Implementation](/code/semester_06/lecture_37_cost_optimization/spot_instances/Algorithm.java)
 - [Python Tests](/code/semester_06/lecture_37_cost_optimization/spot_instances/test_algorithm.py)
+
+
+## References
+
+- [Spot Instances - Wikipedia](https://en.wikipedia.org/wiki/Spot%20Instances)

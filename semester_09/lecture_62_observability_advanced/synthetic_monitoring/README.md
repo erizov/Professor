@@ -130,3 +130,13 @@ Compare with alternatives
     Proactively monitors application availability and performance by simulating user interactions and transactions, detecting issues before real users are affected.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## Historical Context
+
+In software design, web design, and electronic product design, synthetic monitoring is a monitoring technique that is done by using a simulation or scripted recordings of transactions. Behavioral scripts are created to simulate an action or path that a customer or end user would take on a site, appl
+
+
+## References
+
+- [Synthetic monitoring](https://en.wikipedia.org/wiki/Synthetic_monitoring) - Wikipedia

@@ -130,3 +130,8 @@ Compare with alternatives
     Tracks causal relationships between events in distributed systems by assigning vector timestamps to events, enabling detection of happened-before relationships and causal ordering without global clocks.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Vector clock](https://en.wikipedia.org/wiki/Vector_clock) - Wikipedia

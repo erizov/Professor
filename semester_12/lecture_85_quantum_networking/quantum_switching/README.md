@@ -130,3 +130,8 @@ Compare with alternatives
 Switches and routes quantum information between quantum channels and nodes in quantum networks, enabling efficient quantum communication and network management.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Quantum Switching - Wikipedia](https://en.wikipedia.org/wiki/Quantum%20Switching)

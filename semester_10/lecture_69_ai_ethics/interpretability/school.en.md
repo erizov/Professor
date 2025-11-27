@@ -2,23 +2,17 @@
 
 ## Simple Explanation
 
-Interpretability is an algorithm used to solve specific problems in computer science.
-
+In mathematical logic, interpretability is a relation between formal theories that expresses the possibility of interpreting or translating one into the other.
 
 ## Where It's Used
 
-- applying interpretability to solve specific tasks in interpretability;
-- using interpretability in production systems for data processing;
-- integrating interpretability into data pipelines for process automation;
+- Interpretability powers introductory CS labs focused on reasoning about data.
+- Instructors rely on Interpretability when demonstrating how to move from theory to working code.
+- Interpretability appears in interview warm-ups and foundational assignments.
 
 ## Example
 
-Specific example of interpretability:
-
-1. Data preparation: input data for interpretability (specific format and structure)
-2. Algorithm application: sequence of steps of interpretability to process data
-3. Result: specific result of algorithm work with interpretation
-
+Interpretability powers introductory CS labs focused on reasoning about data.
 
 ## Self-Check Questions
 
@@ -44,18 +38,26 @@ Specific example of interpretability:
 
 ### Level 1 (Easy)
 
+(Easy)
+
 Perform a simple operation with the interpretability algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
+(Medium)
+
 Apply the interpretability algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
+
+(Advanced)
 
 Write an implementation of the interpretability algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 
 ---
 
 **Ethical Note:**
+
+Remember that machine learning and artificial intelligence algorithms are powerful tools that can affect people's lives. It is important to use them responsibly, considering ethical principles, fairness, transparency, and respect for privacy. Always think about the consequences of your decisions and use technology for the benefit of society.
 
 Remember that machine learning and artificial intelligence algorithms are powerful tools that can affect people's lives. It is important to use them responsibly, considering ethical principles, fairness, transparency, and respect for privacy. Always think about the consequences of your decisions and use technology for the benefit of society.

@@ -119,3 +119,8 @@ Compare with alternatives
     Gdpr Compliance solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Gdpr Compliance - Wikipedia](https://en.wikipedia.org/wiki/Gdpr%20Compliance)

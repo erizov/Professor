@@ -130,3 +130,8 @@ Compare with alternatives
     Splits individual tensor operations (matrix multiplications) across multiple devices by partitioning tensors along specific dimensions, enabling parallel computation of large matrix operations.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Tensor Parallelism - Wikipedia](https://en.wikipedia.org/wiki/Tensor%20Parallelism)

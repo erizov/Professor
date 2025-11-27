@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_15_testing_patterns/tdd/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_15_testing_patterns/tdd/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_15_testing_patterns/tdd/test_algorithm.py)
+
+
+## References
+
+- [TDD](https://en.wikipedia.org/wiki/TDD) - Wikipedia

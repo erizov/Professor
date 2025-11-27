@@ -119,3 +119,13 @@ Compare with alternatives
     Data Lineage solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Data lineage](https://en.wikipedia.org/wiki/Data_lineage) - Wikipedia
+
+
+## Historical Context
+
+This process simplifies the identification of errors in data analytics workflows, by enabling users to trace issues back to their root causes

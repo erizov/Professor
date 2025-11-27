@@ -119,3 +119,8 @@ Compare with alternatives
     Real Time Alerts solves computational problems efficiently.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Real Time Alerts - Wikipedia](https://en.wikipedia.org/wiki/Real%20Time%20Alerts)

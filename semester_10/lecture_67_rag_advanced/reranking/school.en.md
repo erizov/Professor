@@ -1,56 +1,57 @@
-# Reranking
+# Re-ranking for RAG
 
 ## Simple Explanation
 
-Re-ranking for RAG is an algorithm used to solve specific problems in computer science.
-
+Re-ranking for RAG is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying reranking to solve specific tasks in reranking;
-- using reranking in production systems for data processing;
-- integrating reranking into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of reranking:
+Consider a specific example of how re-ranking for rag works:
 
-1. Data preparation: input data for reranking (specific format and structure)
-2. Algorithm application: sequence of steps of reranking to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 
 ### Basic
 
-1. What does the reranking algorithm do?
-2. In what situations is reranking used?
+1. What does the re-ranking for rag algorithm do?
+2. In what situations is re-ranking for rag used?
 3. What data is needed for the algorithm to work?
 
 ### Intermediate
 
-1. How does reranking handle edge cases?
-2. What are the advantages and disadvantages of reranking?
-3. Can the performance of reranking be improved?
+1. How does re-ranking for rag handle edge cases?
+2. What are the advantages and disadvantages of re-ranking for rag?
+3. Can the performance of re-ranking for rag be improved?
 
 ### Advanced
 
-1. What is the time complexity of reranking?
-2. How does reranking work with large volumes of data?
-3. How can reranking be optimized?
+1. What is the time complexity of re-ranking for rag?
+2. How does re-ranking for rag work with large volumes of data?
+3. How can re-ranking for rag be optimized?
 
 ## Practical Tasks
 
 ### Level 1 (Easy)
 
-Perform a simple operation with the reranking algorithm. Use a small dataset (3-5 elements) and output the result.
+Perform a simple operation with the re-ranking for rag algorithm. Use a small dataset (3-5 elements) and output the result.
 
 ### Level 2 (Medium)
 
-Apply the reranking algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
+Apply the re-ranking for rag algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
 
 ### Level 3 (Advanced)
 
-Write an implementation of the reranking algorithm in a programming language. Add error handling, input validation, tests, and documentation.
+Write an implementation of the re-ranking for rag algorithm in a programming language. Add error handling, input validation, tests, and documentation.
 

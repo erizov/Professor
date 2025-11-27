@@ -130,3 +130,8 @@ Compare with alternatives
     Centralizes and manages application configuration across environments, enabling dynamic configuration updates, environment-specific settings, and secure configuration distribution.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Config Management - Wikipedia](https://en.wikipedia.org/wiki/Config%20Management)

@@ -130,3 +130,8 @@ Compare with alternatives
     Abstracts underlying infrastructure and platform complexity behind simple, consistent APIs and interfaces, enabling developers to work at higher levels without dealing with low-level details.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Platform Abstraction - Wikipedia](https://en.wikipedia.org/wiki/Platform%20Abstraction)

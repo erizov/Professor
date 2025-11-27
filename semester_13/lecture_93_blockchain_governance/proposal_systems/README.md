@@ -130,3 +130,8 @@ Compare with alternatives
     Structured systems for creating, discussing, voting on, and executing governance proposals that modify protocol parameters and behavior.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Proposal Systems - Wikipedia](https://en.wikipedia.org/wiki/Proposal%20Systems)

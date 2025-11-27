@@ -130,3 +130,8 @@ Compare with alternatives
     Defines and tracks metrics to measure system resilience during chaos experiments, enabling quantitative assessment of system behavior under failure conditions.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Chaos Metrics - Wikipedia](https://en.wikipedia.org/wiki/Chaos%20Metrics)

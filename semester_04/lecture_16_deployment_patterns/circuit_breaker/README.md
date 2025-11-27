@@ -79,3 +79,13 @@ flowchart TD
 - [Python Implementation](/code/semester_04/lecture_16_deployment_patterns/circuit_breaker/algorithm.py)
 - [Java Implementation](/code/semester_04/lecture_16_deployment_patterns/circuit_breaker/Algorithm.java)
 - [Python Tests](/code/semester_04/lecture_16_deployment_patterns/circuit_breaker/test_algorithm.py)
+
+
+## Historical Context
+
+A circuit breaker is an electrical safety device designed to protect an electrical circuit from damage caused by current in excess of that which the equipment can safely carry (overcurrent). Its basic function is to interrupt current flow to protect equipment and to prevent fire. Unlike a fuse, whic
+
+
+## References
+
+- [Circuit breaker](https://en.wikipedia.org/wiki/Circuit_breaker) - Wikipedia

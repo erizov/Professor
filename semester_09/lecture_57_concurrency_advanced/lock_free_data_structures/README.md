@@ -132,3 +132,8 @@ Compare with alternatives
     Implements concurrent data structures that guarantee progress for at least one thread without using locks, using atomic operations and compare-and-swap to achieve thread safety.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Lock Free Data Structures - Wikipedia](https://en.wikipedia.org/wiki/Lock%20Free%20Data%20Structures)

@@ -130,3 +130,8 @@ Compare with alternatives
     Provides a dedicated infrastructure layer for handling service-to-service communication, managing traffic, security, and observability without modifying application code.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Service mesh](https://en.wikipedia.org/wiki/Service_mesh) - Wikipedia

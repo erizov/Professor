@@ -79,3 +79,8 @@ flowchart TD
 - [Python Implementation](/code/semester_02/lecture_08_structural_patterns/facade/algorithm.py)
 - [Java Implementation](/code/semester_02/lecture_08_structural_patterns/facade/Algorithm.java)
 - [Python Tests](/code/semester_02/lecture_08_structural_patterns/facade/test_algorithm.py)
+
+
+## References
+
+- [Façade](https://en.wikipedia.org/wiki/Fa%C3%A7ade) - Wikipedia

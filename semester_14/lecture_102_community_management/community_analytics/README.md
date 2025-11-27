@@ -130,3 +130,8 @@ Compare with alternatives
 Analytics systems that track and analyze community engagement, participation, and health metrics to inform community management.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Community Analytics - Wikipedia](https://en.wikipedia.org/wiki/Community%20Analytics)

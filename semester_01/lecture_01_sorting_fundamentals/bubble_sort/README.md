@@ -111,3 +111,20 @@ flowchart TD
 - [Python Implementation](/code/semester_01/lecture_01_sorting_fundamentals/bubble_sort/algorithm.py)
 - [Java Implementation](/code/semester_01/lecture_01_sorting_fundamentals/bubble_sort/Algorithm.java)
 - [Python Tests](/code/semester_01/lecture_01_sorting_fundamentals/bubble_sort/test_algorithm.py)
+
+
+## References
+
+- [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) - Wikipedia
+
+
+## Real-World Applications
+
+- Database query optimization
+- Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling
+## Historical Context
+
+Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the input list element by element, comparing the current element with the one after it, swapping their values if needed

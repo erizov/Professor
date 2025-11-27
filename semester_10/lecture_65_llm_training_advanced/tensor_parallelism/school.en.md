@@ -2,23 +2,24 @@
 
 ## Simple Explanation
 
-Tensor Parallelism is an algorithm used to solve specific problems in computer science.
-
+Tensor Parallelism is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
 
 ## Where It's Used
 
-- applying tensor parallelism to solve specific tasks in tensor;
-- using tensor parallelism in production systems for parallelism;
-- integrating tensor parallelism into data pipelines for process automation;
+- solving practical programming problems;
+- optimizing application and system performance;
+- processing and analyzing data;
+- automating processes in various fields;
 
 ## Example
 
-Specific example of tensor parallelism:
+Consider a specific example of how tensor parallelism works:
 
-1. Data preparation: input data for tensor parallelism (specific format and structure)
-2. Algorithm application: sequence of steps of tensor parallelism to process data
-3. Result: specific result of algorithm work with interpretation
+1. Data preparation: [specific input data]
+2. Algorithm application: [specific steps]
+3. Result: [specific result]
 
+The algorithm performs operations sequentially, processing data according to specific rules.
 
 ## Self-Check Questions
 

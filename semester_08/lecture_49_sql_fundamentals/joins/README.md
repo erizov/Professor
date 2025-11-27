@@ -125,3 +125,18 @@ Compare with alternatives
     Map matching keys across tables so related data can be viewed as a single combined set.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## Historical Context
+
+Join may refer to:Join (law), to include additional counts or additional defendants on an indictment
+In mathematics:
+Join (mathematics), a least upper bound of sets orders in lattice theory
+Join (topology), an operation combining two topological spaces
+Join, an operation combining two categories
+Joi
+
+
+## References
+
+- [Join](https://en.wikipedia.org/wiki/Join) - Wikipedia

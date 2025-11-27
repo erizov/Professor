@@ -132,3 +132,8 @@ Compare with alternatives
 Implements PBFT consensus algorithm, a Byzantine fault-tolerant consensus protocol that tolerates up to (n-1)/3 Byzantine failures in a network of n nodes, providing fast finality and high throughput.
 
 *Sources: Adapted from standard university textbooks and Wikipedia summaries.*
+
+
+## References
+
+- [Pbft - Wikipedia](https://en.wikipedia.org/wiki/Pbft)
