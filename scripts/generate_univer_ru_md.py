@@ -12,6 +12,11 @@ import io
 import time
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+
+from learning_materials_db import (
+    fetch_learning_record,
+    read_algorithm_identifiers_from_folder,
+)
 import urllib.request
 from urllib.error import URLError, HTTPError
 
@@ -21,6 +26,196 @@ if sys.platform == 'win32':
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def log_db_record_extraction(folder_path: Path, algorithm_key: str,
+                             language: str, level: str, record: Optional[Dict],
+                             output_file: str) -> None:
+    """Log detailed information about DB record extraction."""
+    relative_path = folder_path.relative_to(ROOT)
+    print(f"\n[DB EXTRACT] folder={relative_path} algorithm={algorithm_key} "
+          f"language={language} level={level} -> file {output_file}")
+    
+    if record:
+        print(f"  [DB] Using stored record:")
+        for key, value in sorted(record.items()):
+            if value is not None:
+                value_str = str(value)
+                if len(value_str) > 100:
+                    value_str = value_str[:97] + "..."
+                print(f"    {key}: {value_str}")
+    else:
+        print(f"  [FALLBACK] No DB record found, using legacy generation")
+
+
+def _parse_ru_items(value: Optional[str]) -> List[str]:
+    if not value:
+        return []
+    items: List[str] = []
+    for raw in value.splitlines():
+        stripped = raw.strip()
+        if not stripped:
+            continue
+        stripped = stripped.lstrip("-*0123456789.). ").strip()
+        if stripped:
+            items.append(stripped)
+    return items
+
+
+def _format_ru_bullets(items: List[str]) -> str:
+    if not items:
+        return ""
+    return "\n".join(f"- {item}" for item in items)
+
+
+def _format_ru_numbered(items: List[str], start: int = 1) -> str:
+    if not items:
+        return ""
+    return "\n".join(f"{idx}. {item}" for idx, item in enumerate(items, start))
+
+
+def _default_ru_univer_sections(title: str) -> Dict[str, object]:
+    definition = (
+        f"{title} — алгоритм, который используется в прикладных и "
+        "исследовательских задачах. Он описывает строгую последовательность "
+        "шагов и требования к данным."
+    )
+    applications = [
+        "производственные ETL‑конвейеры",
+        "аналитика больших данных",
+        "оптимизация вычислительных процессов",
+    ]
+    step_by_step = (
+        f"1. Подготовьте входные данные для алгоритма {title.lower()}.\n"
+        "2. Распишите ключевые операции и укажите структуры данных.\n"
+        "3. Проведите анализ результатов и сформулируйте выводы."
+    )
+    questions = {
+        "basic": [
+            "Опишите основные стадии алгоритма.",
+            "Каковы асимптотические оценки времени и памяти?",
+        ],
+        "medium": [
+            "В каких сценариях применение алгоритма наиболее оправдано?",
+            "Какие узкие места возникают на больших данных?",
+        ],
+        "advanced": [
+            "Сравните алгоритм с альтернативными подходами.",
+            "Как проверить корректность и устойчивость реализации?",
+        ],
+    }
+    tasks = {
+        "level1": (
+            f"Реализуйте базовую версию {title.lower()} и подготовьте модульные тесты."
+        ),
+        "level2": (
+            f"Создайте прикладной пример с реальными данными и измерьте производительность."
+        ),
+        "level3": (
+            "Проведите исследование: сравните с альтернативами и оформите выводы."
+        ),
+    }
+    return {
+        "definition": definition,
+        "applications": applications,
+        "step_by_step": step_by_step,
+        "questions": questions,
+        "tasks": tasks,
+    }
+
+
+def render_univer_ru_from_record(
+    folder_path: Path,
+    record: Dict[str, Optional[str]],
+) -> str:
+    """Render univer.ru.md content from database record."""
+    _, display_name = read_algorithm_identifiers_from_folder(folder_path)
+    title = record.get("title") or display_name
+    defaults = _default_ru_univer_sections(title)
+    
+    definition = (
+        record.get("algorithm_definition")
+        or record.get("long_description")
+        or defaults["definition"]
+    ).strip()
+    technical = (record.get("technical_description") or definition).strip()
+    applications = _parse_ru_items(record.get("application")) or defaults["applications"]
+    step_by_step = (record.get("step_by_step") or defaults["step_by_step"]).strip()
+    
+    questions = defaults["questions"]
+    basic = _parse_ru_items(record.get("self_check_basic")) or questions["basic"]
+    medium = (
+        _parse_ru_items(record.get("self_check_intermediate")) or questions["medium"]
+    )
+    advanced = _parse_ru_items(record.get("self_check_advanced")) or questions["advanced"]
+    
+    tasks_defaults = defaults["tasks"]
+    tasks = {
+        "level1": record.get("practical_tasks_basic") or tasks_defaults["level1"],
+        "level2": record.get("practical_tasks_applied") or tasks_defaults["level2"],
+        "level3": record.get("practical_tasks_research") or tasks_defaults["level3"],
+    }
+    
+    ethical = (record.get("ethical_reasoning") or "").strip()
+    ethical_section = ""
+    if ethical:
+        ethical_section = f"""
+## Этические аспекты
+
+{ethical}
+"""
+    
+    content = f"""# {title}
+
+## Определение алгоритма
+
+{definition}
+
+## Техническое описание
+
+{technical}
+
+## Области применения
+
+{_format_ru_bullets(applications)}
+
+## Пошаговый сценарий
+
+{step_by_step}
+
+## Контрольные вопросы
+
+### Базовый уровень
+
+{_format_ru_numbered(basic)}
+
+### Средний уровень
+
+{_format_ru_numbered(medium, start=len(basic) + 1)}
+
+### Продвинутый уровень
+
+{_format_ru_numbered(advanced, start=len(basic) + len(medium) + 1)}
+
+## Практические задания
+
+### Уровень 1 — базовый
+
+{tasks['level1']}
+
+### Уровень 2 — прикладной
+
+{tasks['level2']}
+
+### Уровень 3 — исследовательский
+
+{tasks['level3']}
+{ethical_section}
+"""
+    source_url = record.get("source_url")
+    if source_url:
+        content += f"\n*Источник: {source_url}*\n"
+    return content.strip() + "\n"
 
 
 def get_wikipedia_content(algorithm_name: str) -> Dict[str, str]:
@@ -1396,6 +1591,19 @@ def process_algorithm_folder(folder_path: Path) -> bool:
         
         if not (has_java or has_python):
             return False
+
+        # Prefer database-backed multilingual content
+        algorithm_key, _ = read_algorithm_identifiers_from_folder(folder_path)
+        record = fetch_learning_record(algorithm_key, "ru", "university")
+        log_db_record_extraction(
+            folder_path, algorithm_key, "ru", "university",
+            record, "univer.ru.md"
+        )
+        if record:
+            content = render_univer_ru_from_record(folder_path, record)
+            univer_file = folder_path / "univer.ru.md"
+            univer_file.write_text(content, encoding='utf-8')
+            return True
         
         # Get algorithm information
         english_name, russian_name = get_algorithm_name(folder_path)
