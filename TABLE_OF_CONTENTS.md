@@ -8,6 +8,7 @@
 - [Algorithms by Language](#algorithms-by-language)
 - [Algorithms by Difficulty](#algorithms-by-difficulty)
 - [Full Algorithm List](#full-algorithm-list)
+- [Appendix: Syntax of Programming Languages](APPENDIX_LANGUAGE_SYNTAX.md)
 
 ## Algorithms by Semester
 
@@ -31990,6 +31991,7 @@
     - [Assessment Review](#assessment-review)
     - [Updates](#updates)
 - [Appendices](#appendices)
+  - [Syntax of Programming Languages](APPENDIX_LANGUAGE_SYNTAX.md) - Quick reference guides for programming language syntax
   - [Teaching Resources](#teaching-resources)
   - [Instructor Guide for Algorithms Course](#instructor-guide-for-algorithms-course)
   - [Lecture Slides](#lecture-slides)

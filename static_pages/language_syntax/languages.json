@@ -1,0 +1,952 @@
+[
+  {
+    "key": "ada",
+    "name": "Ada",
+    "path": "/ada/"
+  },
+  {
+    "key": "amd",
+    "name": "AMD",
+    "path": "/amd/"
+  },
+  {
+    "key": "angularjs",
+    "name": "AngularJS",
+    "path": "/angularjs/"
+  },
+  {
+    "key": "ansible",
+    "name": "Ansible",
+    "path": "/ansible/"
+  },
+  {
+    "key": "apl",
+    "name": "APL",
+    "path": "/apl/"
+  },
+  {
+    "key": "arturo",
+    "name": "Arturo",
+    "path": "/arturo/"
+  },
+  {
+    "key": "asciidoc",
+    "name": "AsciiDoc",
+    "path": "/asciidoc/"
+  },
+  {
+    "key": "assemblyscript",
+    "name": "AssemblyScript",
+    "path": "/assemblyscript/"
+  },
+  {
+    "key": "asymptotic-notation",
+    "name": "Asymptotic Notation",
+    "path": "/asymptotic-notation/"
+  },
+  {
+    "key": "ats",
+    "name": "ATS",
+    "path": "/ats/"
+  },
+  {
+    "key": "awk",
+    "name": "AWK",
+    "path": "/awk/"
+  },
+  {
+    "key": "ballerina",
+    "name": "Ballerina",
+    "path": "/ballerina/"
+  },
+  {
+    "key": "bash",
+    "name": "Bash",
+    "path": "/bash/"
+  },
+  {
+    "key": "bc",
+    "name": "bc",
+    "path": "/bc/"
+  },
+  {
+    "key": "bf",
+    "name": "BF",
+    "path": "/bf/"
+  },
+  {
+    "key": "bqn",
+    "name": "BQN",
+    "path": "/bqn/"
+  },
+  {
+    "key": "c",
+    "name": "C",
+    "path": "/c/"
+  },
+  {
+    "key": "csharp",
+    "name": "C#",
+    "path": "/csharp/"
+  },
+  {
+    "key": "c++",
+    "name": "C++",
+    "path": "/c++/"
+  },
+  {
+    "key": "chapel",
+    "name": "Chapel",
+    "path": "/chapel/"
+  },
+  {
+    "key": "chicken",
+    "name": "CHICKEN",
+    "path": "/chicken/"
+  },
+  {
+    "key": "citron",
+    "name": "citron",
+    "path": "/citron/"
+  },
+  {
+    "key": "clojure",
+    "name": "Clojure",
+    "path": "/clojure/"
+  },
+  {
+    "key": "clojure-macros",
+    "name": "Clojure macros",
+    "path": "/clojure-macros/"
+  },
+  {
+    "key": "cmake",
+    "name": "CMake",
+    "path": "/cmake/"
+  },
+  {
+    "key": "cobol",
+    "name": "COBOL",
+    "path": "/cobol/"
+  },
+  {
+    "key": "coffeescript",
+    "name": "CoffeeScript",
+    "path": "/coffeescript/"
+  },
+  {
+    "key": "coldfusion",
+    "name": "ColdFusion",
+    "path": "/coldfusion/"
+  },
+  {
+    "key": "common-lisp",
+    "name": "Common Lisp",
+    "path": "/common-lisp/"
+  },
+  {
+    "key": "compojure",
+    "name": "Compojure",
+    "path": "/compojure/"
+  },
+  {
+    "key": "php-composer",
+    "name": "Composer",
+    "path": "/php-composer/"
+  },
+  {
+    "key": "coq",
+    "name": "Coq",
+    "path": "/coq/"
+  },
+  {
+    "key": "crystal",
+    "name": "Crystal",
+    "path": "/crystal/"
+  },
+  {
+    "key": "css",
+    "name": "CSS",
+    "path": "/css/"
+  },
+  {
+    "key": "csv",
+    "name": "CSV",
+    "path": "/csv/"
+  },
+  {
+    "key": "cue",
+    "name": "CUE",
+    "path": "/cue/"
+  },
+  {
+    "key": "cypher",
+    "name": "Cypher",
+    "path": "/cypher/"
+  },
+  {
+    "key": "d",
+    "name": "D",
+    "path": "/d/"
+  },
+  {
+    "key": "dart",
+    "name": "Dart",
+    "path": "/dart/"
+  },
+  {
+    "key": "dhall",
+    "name": "Dhall",
+    "path": "/dhall/"
+  },
+  {
+    "key": "directx9",
+    "name": "DirectX 9",
+    "path": "/directx9/"
+  },
+  {
+    "key": "docker",
+    "name": "Docker",
+    "path": "/docker/"
+  },
+  {
+    "key": "dynamic-programming",
+    "name": "Dynamic Programming",
+    "path": "/dynamic-programming/"
+  },
+  {
+    "key": "easylang",
+    "name": "Easylang",
+    "path": "/easylang/"
+  },
+  {
+    "key": "edn",
+    "name": "EDN",
+    "path": "/edn/"
+  },
+  {
+    "key": "elixir",
+    "name": "Elixir",
+    "path": "/elixir/"
+  },
+  {
+    "key": "elm",
+    "name": "Elm",
+    "path": "/elm/"
+  },
+  {
+    "key": "emacs",
+    "name": "Emacs",
+    "path": "/emacs/"
+  },
+  {
+    "key": "elisp",
+    "name": "Emacs Lisp",
+    "path": "/elisp/"
+  },
+  {
+    "key": "erlang",
+    "name": "Erlang",
+    "path": "/erlang/"
+  },
+  {
+    "key": "fsharp",
+    "name": "F#",
+    "path": "/fsharp/"
+  },
+  {
+    "key": "factor",
+    "name": "Factor",
+    "path": "/factor/"
+  },
+  {
+    "key": "fish",
+    "name": "fish",
+    "path": "/fish/"
+  },
+  {
+    "key": "forth",
+    "name": "Forth",
+    "path": "/forth/"
+  },
+  {
+    "key": "fortran",
+    "name": "Fortran",
+    "path": "/fortran/"
+  },
+  {
+    "key": "gdscript",
+    "name": "GDScript",
+    "path": "/gdscript/"
+  },
+  {
+    "key": "git",
+    "name": "Git",
+    "path": "/git/"
+  },
+  {
+    "key": "gleam",
+    "name": "Gleam",
+    "path": "/gleam/"
+  },
+  {
+    "key": "go",
+    "name": "Go",
+    "path": "/go/"
+  },
+  {
+    "key": "golfscript",
+    "name": "GolfScript",
+    "path": "/golfscript/"
+  },
+  {
+    "key": "groovy",
+    "name": "Groovy",
+    "path": "/groovy/"
+  },
+  {
+    "key": "hack",
+    "name": "Hack",
+    "path": "/hack/"
+  },
+  {
+    "key": "haml",
+    "name": "Haml",
+    "path": "/haml/"
+  },
+  {
+    "key": "haskell",
+    "name": "Haskell",
+    "path": "/haskell/"
+  },
+  {
+    "key": "haxe",
+    "name": "Haxe",
+    "path": "/haxe/"
+  },
+  {
+    "key": "hcl",
+    "name": "HCL",
+    "path": "/hcl/"
+  },
+  {
+    "key": "hdl",
+    "name": "HDL",
+    "path": "/hdl/"
+  },
+  {
+    "key": "hjson",
+    "name": "Hjson",
+    "path": "/hjson/"
+  },
+  {
+    "key": "hocon",
+    "name": "HOCON",
+    "path": "/hocon/"
+  },
+  {
+    "key": "hq9+",
+    "name": "HQ9+",
+    "path": "/hq9+/"
+  },
+  {
+    "key": "html",
+    "name": "HTML",
+    "path": "/html/"
+  },
+  {
+    "key": "httpie",
+    "name": "HTTPie",
+    "path": "/httpie/"
+  },
+  {
+    "key": "hy",
+    "name": "Hy",
+    "path": "/hy/"
+  },
+  {
+    "key": "inform7",
+    "name": "Inform7",
+    "path": "/inform7/"
+  },
+  {
+    "key": "janet",
+    "name": "Janet",
+    "path": "/janet/"
+  },
+  {
+    "key": "java",
+    "name": "Java",
+    "path": "/java/"
+  },
+  {
+    "key": "javascript",
+    "name": "JavaScript",
+    "path": "/javascript/"
+  },
+  {
+    "key": "jinja",
+    "name": "Jinja",
+    "path": "/jinja/"
+  },
+  {
+    "key": "jq",
+    "name": "jq",
+    "path": "/jq/"
+  },
+  {
+    "key": "jquery",
+    "name": "jQuery",
+    "path": "/jquery/"
+  },
+  {
+    "key": "json",
+    "name": "JSON",
+    "path": "/json/"
+  },
+  {
+    "key": "jsonnet",
+    "name": "Jsonnet",
+    "path": "/jsonnet/"
+  },
+  {
+    "key": "julia",
+    "name": "Julia",
+    "path": "/julia/"
+  },
+  {
+    "key": "kdb+",
+    "name": "kdb+",
+    "path": "/kdb+/"
+  },
+  {
+    "key": "kotlin",
+    "name": "Kotlin",
+    "path": "/kotlin/"
+  },
+  {
+    "key": "lambda-calculus",
+    "name": "Lambda Calculus",
+    "path": "/lambda-calculus/"
+  },
+  {
+    "key": "latex",
+    "name": "LaTeX",
+    "path": "/latex/"
+  },
+  {
+    "key": "lbstanza",
+    "name": "LB Stanza",
+    "path": "/lbstanza/"
+  },
+  {
+    "key": "ldpl",
+    "name": "LDPL",
+    "path": "/ldpl/"
+  },
+  {
+    "key": "lean4",
+    "name": "Lean 4",
+    "path": "/lean4/"
+  },
+  {
+    "key": "less",
+    "name": "Less",
+    "path": "/less/"
+  },
+  {
+    "key": "linker",
+    "name": "Linker script",
+    "path": "/linker/"
+  },
+  {
+    "key": "lfe",
+    "name": "Lisp Flavoured Erlang (LFE)",
+    "path": "/lfe/"
+  },
+  {
+    "key": "livescript",
+    "name": "LiveScript",
+    "path": "/livescript/"
+  },
+  {
+    "key": "logtalk",
+    "name": "Logtalk",
+    "path": "/logtalk/"
+  },
+  {
+    "key": "lolcode",
+    "name": "LOLCODE",
+    "path": "/lolcode/"
+  },
+  {
+    "key": "lua",
+    "name": "Lua",
+    "path": "/lua/"
+  },
+  {
+    "key": "m",
+    "name": "M (MUMPS)",
+    "path": "/m/"
+  },
+  {
+    "key": "make",
+    "name": "Make",
+    "path": "/make/"
+  },
+  {
+    "key": "markdown",
+    "name": "Markdown",
+    "path": "/markdown/"
+  },
+  {
+    "key": "matlab",
+    "name": "MATLAB",
+    "path": "/matlab/"
+  },
+  {
+    "key": "mercurial",
+    "name": "Mercurial",
+    "path": "/mercurial/"
+  },
+  {
+    "key": "mercury",
+    "name": "Mercury",
+    "path": "/mercury/"
+  },
+  {
+    "key": "messagepack",
+    "name": "MessagePack",
+    "path": "/messagepack/"
+  },
+  {
+    "key": "miniscript",
+    "name": "MiniScript",
+    "path": "/miniscript/"
+  },
+  {
+    "key": "mips",
+    "name": "MIPS Assembly",
+    "path": "/mips/"
+  },
+  {
+    "key": "mongodb",
+    "name": "MongoDB",
+    "path": "/mongodb/"
+  },
+  {
+    "key": "moonscript",
+    "name": "MoonScript",
+    "path": "/moonscript/"
+  },
+  {
+    "key": "nim",
+    "name": "Nim",
+    "path": "/nim/"
+  },
+  {
+    "key": "niva",
+    "name": "niva",
+    "path": "/niva/"
+  },
+  {
+    "key": "nix",
+    "name": "Nix",
+    "path": "/nix/"
+  },
+  {
+    "key": "nmap",
+    "name": "Nmap",
+    "path": "/nmap/"
+  },
+  {
+    "key": "objective-c",
+    "name": "Objective-C",
+    "path": "/objective-c/"
+  },
+  {
+    "key": "ocaml",
+    "name": "OCaml",
+    "path": "/ocaml/"
+  },
+  {
+    "key": "odin",
+    "name": "Odin",
+    "path": "/odin/"
+  },
+  {
+    "key": "opencv",
+    "name": "OpenCV",
+    "path": "/opencv/"
+  },
+  {
+    "key": "opengl",
+    "name": "OpenGL",
+    "path": "/opengl/"
+  },
+  {
+    "key": "openmp",
+    "name": "OpenMP",
+    "path": "/openmp/"
+  },
+  {
+    "key": "openscad",
+    "name": "OpenSCAD",
+    "path": "/openscad/"
+  },
+  {
+    "key": "osl",
+    "name": "OSL",
+    "path": "/osl/"
+  },
+  {
+    "key": "p5",
+    "name": "p5.js",
+    "path": "/p5/"
+  },
+  {
+    "key": "paren",
+    "name": "Paren",
+    "path": "/paren/"
+  },
+  {
+    "key": "pascal",
+    "name": "Pascal",
+    "path": "/pascal/"
+  },
+  {
+    "key": "pcre",
+    "name": "PCRE",
+    "path": "/pcre/"
+  },
+  {
+    "key": "perl",
+    "name": "Perl",
+    "path": "/perl/"
+  },
+  {
+    "key": "phel",
+    "name": "Phel",
+    "path": "/phel/"
+  },
+  {
+    "key": "phix",
+    "name": "Phix",
+    "path": "/phix/"
+  },
+  {
+    "key": "php",
+    "name": "PHP",
+    "path": "/php/"
+  },
+  {
+    "key": "raku-pod",
+    "name": "Pod",
+    "path": "/raku-pod/"
+  },
+  {
+    "key": "powershell",
+    "name": "PowerShell",
+    "path": "/powershell/"
+  },
+  {
+    "key": "processing",
+    "name": "Processing",
+    "path": "/processing/"
+  },
+  {
+    "key": "prolog",
+    "name": "Prolog",
+    "path": "/prolog/"
+  },
+  {
+    "key": "protocol-buffer-3",
+    "name": "Protocol Buffers",
+    "path": "/protocol-buffer-3/"
+  },
+  {
+    "key": "pug",
+    "name": "Pug",
+    "path": "/pug/"
+  },
+  {
+    "key": "purescript",
+    "name": "PureScript",
+    "path": "/purescript/"
+  },
+  {
+    "key": "pyqt",
+    "name": "PyQt",
+    "path": "/pyqt/"
+  },
+  {
+    "key": "python",
+    "name": "Python",
+    "path": "/python/"
+  },
+  {
+    "key": "qsharp",
+    "name": "Q#",
+    "path": "/qsharp/"
+  },
+  {
+    "key": "qml",
+    "name": "QML",
+    "path": "/qml/"
+  },
+  {
+    "key": "qt",
+    "name": "Qt",
+    "path": "/qt/"
+  },
+  {
+    "key": "r",
+    "name": "R",
+    "path": "/r/"
+  },
+  {
+    "key": "racket",
+    "name": "Racket",
+    "path": "/racket/"
+  },
+  {
+    "key": "raku",
+    "name": "Raku",
+    "path": "/raku/"
+  },
+  {
+    "key": "raylib",
+    "name": "raylib",
+    "path": "/raylib/"
+  },
+  {
+    "key": "rdf",
+    "name": "RDF",
+    "path": "/rdf/"
+  },
+  {
+    "key": "reason",
+    "name": "Reason",
+    "path": "/reason/"
+  },
+  {
+    "key": "red",
+    "name": "Red",
+    "path": "/red/"
+  },
+  {
+    "key": "rescript",
+    "name": "ReScript",
+    "path": "/rescript/"
+  },
+  {
+    "key": "rst",
+    "name": "reStructuredText (RST)",
+    "path": "/rst/"
+  },
+  {
+    "key": "ruby",
+    "name": "Ruby",
+    "path": "/ruby/"
+  },
+  {
+    "key": "ruby-ecosystem",
+    "name": "Ruby ecosystem",
+    "path": "/ruby-ecosystem/"
+  },
+  {
+    "key": "rust",
+    "name": "Rust",
+    "path": "/rust/"
+  },
+  {
+    "key": "sass",
+    "name": "Sass",
+    "path": "/sass/"
+  },
+  {
+    "key": "scala",
+    "name": "Scala",
+    "path": "/scala/"
+  },
+  {
+    "key": "sed",
+    "name": "sed",
+    "path": "/sed/"
+  },
+  {
+    "key": "self",
+    "name": "Self",
+    "path": "/self/"
+  },
+  {
+    "key": "set-theory",
+    "name": "Set theory",
+    "path": "/set-theory/"
+  },
+  {
+    "key": "shutit",
+    "name": "ShutIt",
+    "path": "/shutit/"
+  },
+  {
+    "key": "sing",
+    "name": "Sing",
+    "path": "/sing/"
+  },
+  {
+    "key": "smallbasic",
+    "name": "SmallBASIC",
+    "path": "/smallbasic/"
+  },
+  {
+    "key": "smalltalk",
+    "name": "Smalltalk",
+    "path": "/smalltalk/"
+  },
+  {
+    "key": "solidity",
+    "name": "Solidity",
+    "path": "/solidity/"
+  },
+  {
+    "key": "sorbet",
+    "name": "Sorbet",
+    "path": "/sorbet/"
+  },
+  {
+    "key": "sql",
+    "name": "SQL",
+    "path": "/sql/"
+  },
+  {
+    "key": "standard-ml",
+    "name": "Standard ML",
+    "path": "/standard-ml/"
+  },
+  {
+    "key": "pythonstatcomp",
+    "name": "Statistical computing with Python",
+    "path": "/pythonstatcomp/"
+  },
+  {
+    "key": "stylus",
+    "name": "Stylus",
+    "path": "/stylus/"
+  },
+  {
+    "key": "swift",
+    "name": "Swift",
+    "path": "/swift/"
+  },
+  {
+    "key": "tailspin",
+    "name": "Tailspin",
+    "path": "/tailspin/"
+  },
+  {
+    "key": "tcl",
+    "name": "Tcl",
+    "path": "/tcl/"
+  },
+  {
+    "key": "tcsh",
+    "name": "tcsh",
+    "path": "/tcsh/"
+  },
+  {
+    "key": "texinfo",
+    "name": "Texinfo",
+    "path": "/texinfo/"
+  },
+  {
+    "key": "textile",
+    "name": "Textile",
+    "path": "/textile/"
+  },
+  {
+    "key": "tmux",
+    "name": "tmux",
+    "path": "/tmux/"
+  },
+  {
+    "key": "toml",
+    "name": "TOML",
+    "path": "/toml/"
+  },
+  {
+    "key": "typescript",
+    "name": "TypeScript",
+    "path": "/typescript/"
+  },
+  {
+    "key": "uxntal",
+    "name": "Uxntal",
+    "path": "/uxntal/"
+  },
+  {
+    "key": "v",
+    "name": "V",
+    "path": "/v/"
+  },
+  {
+    "key": "vala",
+    "name": "Vala",
+    "path": "/vala/"
+  },
+  {
+    "key": "vim",
+    "name": "Vim",
+    "path": "/vim/"
+  },
+  {
+    "key": "vim9script",
+    "name": "Vim9Script",
+    "path": "/vim9script/"
+  },
+  {
+    "key": "vimscript",
+    "name": "Vimscript",
+    "path": "/vimscript/"
+  },
+  {
+    "key": "visualbasic",
+    "name": "Visual Basic",
+    "path": "/visualbasic/"
+  },
+  {
+    "key": "wasm",
+    "name": "WebAssembly",
+    "path": "/wasm/"
+  },
+  {
+    "key": "wikitext",
+    "name": "Wikitext",
+    "path": "/wikitext/"
+  },
+  {
+    "key": "wolfram",
+    "name": "Wolfram",
+    "path": "/wolfram/"
+  },
+  {
+    "key": "xml",
+    "name": "XML",
+    "path": "/xml/"
+  },
+  {
+    "key": "yaml",
+    "name": "YAML",
+    "path": "/yaml/"
+  },
+  {
+    "key": "zfs",
+    "name": "ZFS",
+    "path": "/zfs/"
+  },
+  {
+    "key": "zig",
+    "name": "Zig",
+    "path": "/zig/"
+  }
+]

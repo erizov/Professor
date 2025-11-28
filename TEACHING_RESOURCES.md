@@ -4,6 +4,12 @@
 **Purpose**: Comprehensive resources for educators teaching the 16-semester algorithms course.
 
 ---
+
+## Additional Resources
+
+- **[Appendix: Syntax of Programming Languages](APPENDIX_LANGUAGE_SYNTAX.md)** - Quick reference guides for programming language syntax (English and Russian) from [Learn X in Y Minutes](https://learnxinyminutes.com/)
+
+---
 ---
 
 ## Instructor Guide for Algorithms Course

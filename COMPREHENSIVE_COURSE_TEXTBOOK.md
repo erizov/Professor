@@ -329038,6 +329038,14 @@ Avoid Synthetic Monitoring when:
 - **Frameworks Covered**: Spring, J2EE, .NET, Docker, Kubernetes, Kafka
 - **Topics**: Algorithms, Data Structures, Design Patterns, Computational Intelligence, Operating Systems, Concurrency, CI/CD, Quantum Computing, Blockchain, Databases, and more
 
+## Syntax of Programming Languages
+
+For quick reference guides on programming language syntax, see:
+
+**[Appendix: Syntax of Programming Languages](APPENDIX_LANGUAGE_SYNTAX.md)**
+
+This appendix provides quick reference guides for programming language syntax in both English and Russian, based on content from [Learn X in Y Minutes](https://learnxinyminutes.com/). Static copies are available for offline access.
+
 ## References
 
 - All algorithms include complexity analysis

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXC8R75DEN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WXC8R75DEN');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Language" content="en">
+    <title>Learn Odin in Y Minutes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/screen.css">
+    <link rel="stylesheet" href="/css/light.css">
+    <link rel="stylesheet" href="/css/dark.css">
+
+    <link rel="canonical" href="https://learnxinyminutes.com/odin/">
+    <script>
+      localStorage.removeItem("lxiym_theme");
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1><a href="/">Learn X in Y minutes</a></h1>
+      <h2>Where X=Odin</h2>
+
+      <p class="filelink">
+        Get the code:
+        <a href="/files/learnodin.odin">learnodin.odin</a>
+      </p>
+      <div id="doc">
+<p>Odin was created by Bill &quot;gingerBill&quot; Hall. It is a general-purpose systems
+programming language that emphasizes simplicity, readability, and performance
+without garbage collection. Odin bills itself as &quot;the C alternative for the
+joy of programming.&quot;</p>
+<div class="highlight"><pre>// Single line comments start with two slashes.
+
+/*
+   Multiline comments start with slash-star,
+   and end with star-slash. They can be nested!
+   /*
+       Like this!
+   */
+*/
+
+// This is the classic &quot;hello world&quot; program in Odin.
+package main
+
+import &quot;core:fmt&quot;
+
+main :: proc() {
+    fmt.println(&quot;Hellope!&quot;)
+}
+</pre></div>
+<h2>1. Basic Data Types and Operators</h2>
+<div class="highlight"><pre>// Integers - Odin has explicit sized integer types
+x: i32 = 42          // 32-bit signed integer
+y: u64 = 100         // 64-bit unsigned integer
+z: int = 123         // Platform-dependent integer (usually i64)
+
+// You can use underscores for readability in numbers
+big_number := 1_000_000
+
+// Floating point numbers
+pi: f32 = 3.14159    // 32-bit float
+e: f64 = 2.71828     // 64-bit float (default for float literals)
+
+// Boolean
+is_true: bool = true
+is_false: bool = false
+
+// Rune (Unicode character)
+letter: rune = &#39;A&#39;
+emoji: rune = &#39;🚀&#39;
+
+// Strings
+name: string = &quot;Odin Programming&quot;
+raw_string := `C:\Windows\System32`  // Raw string with backticks
+
+// String length (in bytes, not characters!)
+length := len(name)
+
+// Arithmetic operators work as you&#39;d expect
+result := 10 + 5    // 15
+diff := 10 - 5      // 5
+product := 10 * 5   // 50
+quotient := 10 / 5  // 2
+remainder := 10 % 3 // 1
+
+// Comparison operators
+is_equal := 10 == 10        // true
+not_equal := 10 != 5        // true
+greater := 10 &gt; 5           // true
+less_equal := 5 &lt;= 10       // true
+
+// Logical operators
+and_result := true &amp;&amp; false  // false
+or_result := true || false   // true
+not_result := !true          // false
+
+// Bitwise operators
+bit_and := 0b1010 &amp; 0b1100   // 0b1000
+bit_or := 0b1010 | 0b1100    // 0b1110
+bit_xor := 0b1010 ~ 0b1100   // 0b0110 (note: ~ is XOR in Odin)
+bit_not := ~u8(0b1010)       // bitwise NOT, Cast needed for untyped constants
+</pre></div>
+<h2>2. Variables and Constants</h2>
+<div class="highlight"><pre>// Variable declaration with type inference
+some_number := 42            // Type inferred as int
+some_text := &quot;Hello&quot;         // Type inferred as string
+
+// Explicit type declaration
+explicit_int: int = 42
+explicit_float: f64 = 3.14
+
+// Uninitialized variables are zero-initialized
+uninitialized_int: int       // Defaults to 0
+uninitialized_bool: bool     // Defaults to false
+uninitialized_string: string // Defaults to &quot;&quot;
+
+// Constants are defined with ::
+PI :: 3.14159
+MESSAGE :: &quot;This is a constant&quot;
+
+// Typed constants
+TYPED_CONSTANT : f32 : 2.71828
+
+// Multiple assignment
+a, b := 10, 20
+a, b = b, a  // Swap values
+</pre></div>
+<h2>3. Arrays and Slices</h2>
+<div class="highlight"><pre>// Fixed-size arrays
+numbers: [5]int = {1, 2, 3, 4, 5}
+chars: [3]rune = {&#39;A&#39;, &#39;B&#39;, &#39;C&#39;}
+
+// Array with inferred size
+inferred := [?]int{10, 20, 30, 40}
+
+// Zero-initialized array
+zeros: [10]int  // All elements are 0
+
+// Accessing array elements
+first := numbers[0]     // 1
+last := numbers[4]      // 5
+array_length := len(numbers)  // 5
+
+// Slices - dynamic views into arrays
+slice: []int = {1, 2, 3, 4, 5}  // Slice literal
+// Slice indices are optional. The following slice is the entire numbers array
+full_slice := numbers[:]
+// Slice indices are formatted like a[lower_bound : upper_bound]
+// The lower bound is inclusive and the upper bound is exclusive
+array_slice := numbers[1:4]     // Slice of array elements 1 - 3
+
+// Dynamic arrays - can grow and shrink
+dynamic_array: [dynamic]int
+append(&amp;dynamic_array, 1)
+append(&amp;dynamic_array, 2, 3, 4)  // Append multiple elements
+
+// Remember to clean up dynamic arrays
+defer delete(dynamic_array)
+</pre></div>
+<h2>4. Control Flow</h2>
+<div class="highlight"><pre>// If statements
+age := 25
+if age &gt;= 18 {
+    fmt.println(&quot;Adult&quot;)
+} else if age &gt;= 13 {
+    fmt.println(&quot;Teenager&quot;)
+} else {
+    fmt.println(&quot;Child&quot;)
+}
+
+// For loops - Odin&#39;s only loop construct
+// C-style for loop
+for i := 0; i &lt; 10; i += 1 {
+    fmt.println(i)
+}
+// Note that conditions are optional.
+for {
+    fmt.println(&quot;This will loop forever.&quot;)
+}
+
+// Range-based loops
+for i in 0..&lt;5 {  // 0 to 4 (exclusive upper bound)
+    fmt.println(i)
+}
+
+for i in 0..=4 {  // 0 to 4 (inclusive upper bound)  
+    fmt.println(i)
+}
+
+// Iterating over arrays/slices with index
+numbers_array := [3]int{10, 20, 30}
+for value, index in numbers_array {
+    fmt.printf(&quot;Index %d: Value %d\n&quot;, index, value)
+}
+
+// Iterating over just values
+for value in numbers_array {
+    fmt.println(value)
+}
+
+// Switch statements
+day := &quot;Monday&quot;
+switch day {
+case &quot;Monday&quot;, &quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday&quot;:
+    fmt.println(&quot;Weekday&quot;)
+case &quot;Saturday&quot;, &quot;Sunday&quot;:
+    fmt.println(&quot;Weekend&quot;)
+case:  // Default case
+    fmt.println(&quot;Unknown day&quot;)
+}
+
+// Switch with no condition (like if-else chain)
+switch {
+case age &lt; 13:
+    fmt.println(&quot;Child&quot;)
+case age &lt; 20:
+    fmt.println(&quot;Teenager&quot;)
+case:
+    fmt.println(&quot;Adult&quot;)
+}
+</pre></div>
+<h2>5. Procedures (Functions)</h2>
+<div class="highlight"><pre>// Basic procedure definition
+add :: proc(a: int, b: int) -&gt; int {
+    return a + b
+}
+
+// Procedure with multiple return values
+divide :: proc(a: int, b: int) -&gt; (int, bool) {
+    if b == 0 {
+        return 0, false  // Division by zero
+    }
+    return a / b, true
+}
+
+// Using the procedure
+sum := add(5, 3)                    // 8
+quotient, ok := divide(10, 2)       // 5, true
+quotient_bad, ok_bad := divide(10, 0) // 0, false
+
+// Something akin to overloading can be mimicked using procedure groups 
+greet_string :: proc(name: string) {
+    fmt.printf(&quot;Hello, %s!\n&quot;, name)
+}
+
+greet_nothing :: proc() {
+    greet_string(&quot;World&quot;) // or greet(&quot;World&quot;) will work with the following procedure group
+}
+
+greet :: proc{
+    greet_string,
+    greet_nothing,
+}
+
+// Variadic procedures (variable number of arguments)
+sum_all :: proc(numbers: ..int) -&gt; int {
+    total := 0
+    for number in numbers {
+        total += number
+    }
+    return total
+}
+
+result_sum := sum_all(1, 2, 3, 4, 5)  // 15
+</pre></div>
+<h2>6. Structs</h2>
+<div class="highlight"><pre>// Struct definition
+Person :: struct {
+    name: string,
+    age:  int,
+    height: f32,
+}
+
+// Creating struct instances
+person1 := Person{
+    name = &quot;Alice&quot;,
+    age = 30,
+    height = 5.6,
+}
+
+// Partial initialization (remaining fields are zero-initialized)
+person2 := Person{
+    name = &quot;Bob&quot;,
+    // age and height default to 0
+}
+
+// Accessing struct fields
+fmt.printf(&quot;%s is %d years old\n&quot;, person1.name, person1.age)
+
+// Modifying struct fields
+person1.age = 31
+
+// Procedure that works with structs
+celebrate_birthday :: proc(person: ^Person) {  // ^ means pointer
+    person.age += 1
+    fmt.printf(&quot;Happy birthday! %s is now %d\n&quot;, person.name, person.age)
+}
+
+celebrate_birthday(&amp;person1)  // Pass address with &amp;
+</pre></div>
+<h2>7. Enums and Unions</h2>
+<div class="highlight"><pre>// Enums
+Color :: enum {
+    RED,
+    GREEN,
+    BLUE,
+    YELLOW,
+}
+
+my_color := Color.RED
+
+// Enums with explicit values
+Status :: enum u8 {
+    OK = 0,
+    ERROR = 1,
+    WARNING = 2,
+}
+
+// Unions
+Value :: union {int, bool}
+
+v: Value// in Odin, unions have a default state of `nil`
+
+// Pattern matching with unions
+switch _ in v {
+case int:  fmt.println(&quot;int&quot;)
+case bool: fmt.println(&quot;bool&quot;)
+case:      fmt.println(&quot;This default case will execute in this example&quot;)
+}
+</pre></div>
+<h2>8. Maps</h2>
+<div class="highlight"><pre>// Map declaration
+scores: map[string]int
+
+// Initialize map
+scores = make(map[string]int)
+defer delete(scores)  // Clean up when done
+
+// Add key-value pairs
+scores[&quot;Alice&quot;] = 95
+scores[&quot;Bob&quot;] = 87
+scores[&quot;Charlie&quot;] = 92
+
+// Access values
+alice_score := scores[&quot;Alice&quot;]  // 95
+
+// Check if key exists
+bob_score, exists := scores[&quot;Bob&quot;]
+if exists {
+    fmt.printf(&quot;Bob&#39;s score: %d\n&quot;, bob_score)
+}
+
+// Iterate over map
+for name, score in scores {
+    fmt.printf(&quot;%s: %d\n&quot;, name, score)
+}
+</pre></div>
+<h2>9. Pointers and Memory Management</h2>
+<div class="highlight"><pre>// Pointers
+number := 42
+number_ptr := &amp;number        // Get address of number
+value := number_ptr^         // Dereference pointer (get value)
+
+fmt.printf(&quot;Value: %d, Address: %p\n&quot;, value, number_ptr)
+
+// Dynamic memory allocation
+// new() allocates and returns a pointer
+int_ptr := new(int)
+int_ptr^ = 100
+defer free(int_ptr)  // Clean up memory
+
+// make() for complex types
+my_slice := make([]int, 5)    // Slice with length 5
+defer delete(my_slice)
+</pre></div>
+<h2>10. Error Handling</h2>
+<div class="highlight"><pre>// Odin uses multiple return values for error handling
+read_file :: proc(filename: string) -&gt; (string, bool) {
+    // Simulate file reading
+    if filename == &quot;&quot; {
+        return &quot;&quot;, false  // Error case
+    }
+    return &quot;file contents&quot;, true  // Success case
+}
+
+// Using the error-returning procedure
+content, success := read_file(&quot;myfile.txt&quot;)
+if !success {
+    fmt.println(&quot;Failed to read file&quot;)
+} else {
+    fmt.printf(&quot;File content: %s\n&quot;, content)
+}
+
+// Common pattern with or_return
+parse_number :: proc(s: string) -&gt; (int, bool) {
+    // This is a simplified example
+    if s == &quot;42&quot; {
+        return 42, true
+    }
+    return 0, false
+}
+
+example_with_error_handling :: proc() -&gt; bool {
+    // or_return automatically returns false if the second value is false
+    num := parse_number(&quot;42&quot;) or_return
+    fmt.printf(&quot;Parsed number: %d\n&quot;, num)
+    return true
+}
+</pre></div>
+<h2>11. Packages and Imports</h2>
+<div class="highlight"><pre>package main
+// Every .odin file starts with a package declaration
+
+// Import from core library
+import &quot;core:fmt&quot;
+import &quot;core:strings&quot;
+import &quot;core:os&quot;
+
+// Import with alias
+import str &quot;core:strings&quot;
+
+main :: proc() {
+    // Using imported procedures
+    text := &quot;Hello, World!&quot;
+    upper_text := strings.to_upper(text)
+    fmt.println(upper_text)
+}
+
+// Import from vendor packages (external libraries)
+// import &quot;vendor:raylib&quot;
+</pre></div>
+<h2>12. Compile-time Features</h2>
+<div class="highlight"><pre>// Compile-time conditionals
+when ODIN_OS == .Windows {
+    // Windows-specific code
+    fmt.println(&quot;Running on Windows&quot;)
+} else when ODIN_OS == .Linux {
+    // Linux-specific code
+    fmt.println(&quot;Running on Linux&quot;)
+} else {
+    // Other platforms
+    fmt.println(&quot;Running on other platform&quot;)
+}
+
+// Compile-time constants
+ENABLE_LOGGING :: #config(ENABLE_LOGGING, false)
+
+when ENABLE_LOGGING {
+    fmt.println(&quot;Logging enabled&quot;)
+}
+
+// Generics (Parametric polymorphism)
+Generic_Array :: struct($T: typeid) {
+    data: []T,
+}
+
+// Generics (Parametric polymorphism)
+add :: proc(a: $T, b: T) -&gt; T {
+    return a + b
+}
+
+sum_int := add(10, 20)        // T becomes int
+sum_float := add(3.14, 2.71)  // T becomes f64
+</pre></div>
+<h2>13. Built-in Data Structures</h2>
+<div class="highlight"><pre>// Bit sets for flags
+File_Mode :: enum {
+    READ,
+    WRITE,
+    EXECUTE,
+}
+
+permissions: bit_set[File_Mode]
+permissions += {.READ, .WRITE}        // Set multiple flags
+permissions -= {.WRITE}              // Remove flag
+has_read := .READ in permissions      // Check flag
+is_readonly := permissions == {.READ} // Compare sets
+
+// Complex numbers
+z1 := complex64(3 + 4i)
+z2 := complex64(1 - 2i)
+sum := z1 + z2                        // (4 + 2i)
+magnitude := abs(z1)                  // 5.0
+
+// Matrices for linear algebra
+transform := matrix[3, 3]f32{
+    1, 0, 5,  // Translation X = 5
+    0, 1, 3,  // Translation Y = 3  
+    0, 0, 1,  // Homogeneous coordinate
+}
+
+point := [3]f32{10, 20, 1}
+transformed := transform * point      // Matrix multiplication
+
+// Quaternions for 3D rotations
+identity_rot := quaternion(w = 1, x = 0, y = 0, z = 0)  // No rotation
+rotation_90_z := quaternion(w = 0.707, x = 0, y = 0, z = 0.707)  // 90° around Z
+</pre></div>
+<h2>14. Context System and Defer</h2>
+<div class="highlight"><pre>// Odin has an implicit context system that makes it easy to use
+// temporary allocations in loops without manual cleanup
+
+process_files :: proc(filenames: []string) {
+    // Use temp allocator for temporary data in this scope
+    defer free_all(context.temp_allocator)  // Clear the arena when done 
+    
+    for filename in filenames {
+        // Each iteration allocates temporary data
+        data := make([]u8, 1024, context.temp_allocator)  // No defer is needed here
+        fmt.printf(&quot;Processing %s with %d bytes\n&quot;, filename, len(data))
+        // No individual cleanup needed
+    }
+}
+
+// defer ensures cleanup on scope exit
+resource_example :: proc() {
+    buffer := make([]u8, 1024)
+    defer delete(buffer)  // Free the buffer 
+}
+</pre></div>
+<h2>Further Reading</h2>
+<p>The <a href="https://odin-lang.org/">Odin Programming Language website</a> provides
+excellent documentation and examples.</p>
+<p>The <a href="https://odin-lang.org/docs/overview/">overview</a> covers much of the
+language in detail.</p>
+<p>The <a href="https://github.com/odin-lang/examples">GitHub examples repository</a>
+contains idiomatic Odin code examples.</p>
+<p>For learning resources:</p>
+<ul>
+<li><a href="https://odinbook.com">&quot;Understanding the Odin Programming Language&quot; by Karl Zylinski</a></li>
+<li><a href="https://discord.gg/sVBPHEv">Odin Discord</a> for community support</li>
+<li><a href="https://odin-lang.org/docs/faq/">FAQ</a> for common questions</li>
+</ul>
+
+        <hr>
+        <p>
+          Got a suggestion? A correction, perhaps? <a href="https://github.com/adambard/learnxinyminutes-docs/issues/new">Open an Issue</a> on the GitHub Repo, or make a <a href="https://github.com/adambard/learnxinyminutes-docs/edit/master/odin.md">pull request</a> yourself!
+        </p>
+        <p class="contributed">
+          Originally contributed by Collin MacDonald, and updated by <a href="https://github.com/adambard/learnxinyminutes-docs/blame/master/odin.md">1 contributor</a>.
+        </p>
+
+        <footer>
+          <a style="float: left" rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width: 0; width: 80px; height: 28px; padding-bottom: 5px;" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" /></a>
+          <p>
+            &copy; 2025
+            <a href="https://github.com/CollinEMac">Collin MacDonald</a>
+          </p>
+        </footer>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const langSelect = document.getElementById('lang-select');
+          langSelect?.addEventListener('change', () => {
+            const selectedOption = langSelect.options[langSelect.selectedIndex];
+            const url = selectedOption?.getAttribute('data-url');
+            if (url) {
+              window.location.href = url;
+            }
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
