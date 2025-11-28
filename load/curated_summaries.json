@@ -1,0 +1,45 @@
+{
+  "heap-sort": {
+    "en": {
+      "school": {
+        "title": "Heap Sort",
+        "short_summary": "Heap sort turns the input into a heap and repeatedly extracts the max.",
+        "long_summary": "Heap sort builds a binary heap from the input and repeatedly removes the largest element to produce a sorted array.",
+        "simple_explanation": "Imagine all elements stored in a pyramid where each parent is bigger than its children; taking the top element and rebuilding the pyramid gives a sorted list.",
+        "where_its_used": "Used in introductory CS courses and anywhere deterministic O(n log n) sorting is needed without extra memory.",
+        "example": "Sorting numbers [4, 1, 3, 2] results in [1, 2, 3, 4] after building and draining the heap."
+      },
+      "university": {
+        "title": "Heap Sort (University)",
+        "short_summary": "Heap sort offers O(n log n) sorting with in-place memory usage by leveraging binary heaps.",
+        "long_summary": "Heap sort first heapifies the array, then repeatedly swaps the root with the last element and heapifies the reduced heap until sorted.",
+        "algorithm_definition": "Build a max-heap from the array and repeatedly extract the maximum to construct the sorted suffix.",
+        "technical_description": "Use sift-down operations to maintain heap property; heapify runs in O(n) and each extraction costs O(log n).",
+        "application": "Used where memory constraints forbid mergesort and where predictable O(n log n) time beats quicksort worst cases.",
+        "step_by_step": "1) Heapify array. 2) Swap root with last element. 3) Reduce heap size. 4) Sift-down new root. 5) Repeat."
+      }
+    }
+  },
+  "dijkstra-s-algorithm": {
+    "en": {
+      "school": {
+        "title": "Dijkstra's Algorithm",
+        "short_summary": "Finds the shortest paths from one node to all others using edge weights.",
+        "long_summary": "Dijkstra's algorithm explores nodes in order of increasing distance and relaxes outgoing edges to maintain best-known paths.",
+        "simple_explanation": "Keep a growing cloud of nodes with known best distances and always expand the cheapest frontier node.",
+        "where_its_used": "Used in GPS navigation, network routing, and resource planning.",
+        "example": "Computing quickest driving directions between two cities."
+      },
+      "university": {
+        "title": "Dijkstra's Algorithm (University)",
+        "short_summary": "Dijkstra's algorithm maintains a priority queue of frontier nodes ordered by tentative distance.",
+        "long_summary": "Initialize source distance to zero, push into a min-heap, repeatedly extract the closest node, and relax its outgoing edges if shorter paths are found.",
+        "algorithm_definition": "For weighted graphs with non-negative weights, Dijkstra returns shortest path distances from the source to every vertex.",
+        "technical_description": "Uses a binary or Fibonacci heap to achieve O((V + E) log V) complexity; each relaxation updates the heap key.",
+        "application": "Routing protocols (OSPF), game AI pathfinding, pipeline scheduling.",
+        "step_by_step": "1) Distance[source]=0. 2) Push source to PQ. 3) Pop min node u. 4) For each edge (u,v,w) relax v. 5) Repeat until PQ empty."
+      }
+    }
+  }
+}
+
