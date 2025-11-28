@@ -141,3 +141,6 @@ Compare with alternatives
 
 - Social network analysis
 - Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation

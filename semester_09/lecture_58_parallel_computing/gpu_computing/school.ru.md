@@ -10,7 +10,7 @@ Gpu Computing — это алгоритм для решения конкретн
 - Route planning and navigation;
 - Social network analysis;
 - Route planning and navigation;
-- purpose computing on graphics processing units is the use of a graphics processing unit (GPU), which typically handles computation only for computer graphics, to perform computation in applications traditionally handled by the central processing unit (CPU);
+- Social network analysis;
 
 ## Пример
 

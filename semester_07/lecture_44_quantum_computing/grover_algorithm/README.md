@@ -93,6 +93,9 @@ flowchart TD
 
 - Database indexing
 - File system organization
+
+- Database indexing
+- File system organization
 ## Historical Context
 
 Grover was originally performed by Frank Oz from his earliest appearances

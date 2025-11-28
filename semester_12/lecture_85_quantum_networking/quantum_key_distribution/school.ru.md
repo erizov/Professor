@@ -10,6 +10,7 @@ Quantum Key Distribution — это алгоритм для решения ко�
 - Route planning and navigation;
 - Social network analysis;
 - Route planning and navigation;
+- Social network analysis;
 
 ## Пример
 

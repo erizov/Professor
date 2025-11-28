@@ -10,6 +10,7 @@ Grover Алгоритм — это алгоритм для решения кон
 - File system organization;
 - Database indexing;
 - File system organization;
+- Database indexing;
 
 ## Пример
 

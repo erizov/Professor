@@ -121,6 +121,9 @@ flowchart TD
 
 - Database query optimization
 - Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling
 ## Historical Context
 
 Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time by comparisons

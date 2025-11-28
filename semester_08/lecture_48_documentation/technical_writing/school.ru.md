@@ -10,7 +10,7 @@ Technical Writing — это алгоритм для решения конкре
 - Database lookups;
 - Search engines and indexing;
 - Database lookups;
-- to-under;
+- Search engines and indexing;
 
 ## Пример
 

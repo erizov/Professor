@@ -99,3 +99,6 @@ flowchart TD
 
 - Database indexing
 - File system organization
+
+- Database indexing
+- File system organization

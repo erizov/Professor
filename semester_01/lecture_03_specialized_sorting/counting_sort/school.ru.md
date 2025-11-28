@@ -10,6 +10,7 @@ Counting Сортировка упорядочивает элементы спи
 - Operating system process scheduling;
 - Database query optimization;
 - Operating system process scheduling;
+- Database query optimization;
 
 ## Пример
 

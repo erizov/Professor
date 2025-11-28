@@ -10,6 +10,7 @@ Knuth-Morris-Pratt (Kmp) — это алгоритм для решения ко�
 - Database lookups;
 - Search engines and indexing;
 - Database lookups;
+- Search engines and indexing;
 
 ## Пример
 

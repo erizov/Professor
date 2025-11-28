@@ -121,6 +121,9 @@ flowchart TD
 
 - Database query optimization
 - Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling
 ## Historical Context
 
 It avoids comparison by creating and distributing elements into buckets according to their radix

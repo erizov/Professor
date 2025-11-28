@@ -93,6 +93,9 @@ flowchart TD
 
 - Database indexing
 - File system organization
+
+- Database indexing
+- File system organization
 ## Historical Context
 
 Random forests or random decision forests is an ensemble learning method for classification, regression and other tasks that works by creating a multitude of decision trees during training. For classification tasks, the output of the random forest is the class selected by most trees

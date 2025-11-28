@@ -10,6 +10,7 @@ Onnx Model Conversion — это алгоритм для решения конк
 - Database lookups;
 - Search engines and indexing;
 - Database lookups;
+- Search engines and indexing;
 
 ## Пример
 

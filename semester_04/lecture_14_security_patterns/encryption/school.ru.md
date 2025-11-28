@@ -10,6 +10,7 @@ Encryption Algorithms — это алгоритм для решения конк
 - Route planning and navigation;
 - Social network analysis;
 - Route planning and navigation;
+- Social network analysis;
 
 ## Пример
 

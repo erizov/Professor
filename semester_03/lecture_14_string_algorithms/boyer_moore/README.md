@@ -98,3 +98,6 @@ In computer science, the Boyer–Moore string-search algorithm is an efficient s
 
 - Search engines and indexing
 - Database lookups
+
+- Search engines and indexing
+- Database lookups

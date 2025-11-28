@@ -10,7 +10,7 @@ Proof Of Work — это алгоритм для решения конкретн
 - Route planning and navigation;
 - Social network analysis;
 - Route planning and navigation;
-- of-service attacks and other service abuses such as spam on a network by requiring some work from a service requester, usually meaning processing time by a computer. The term "proof of work" was first coined and formalized in a 1999 paper by Markus Jakobsson and Ari Juels;
+- Social network analysis;
 
 ## Пример
 

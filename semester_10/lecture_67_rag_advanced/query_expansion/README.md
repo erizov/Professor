@@ -146,6 +146,9 @@ Compare with alternatives
 
 - Search engines and indexing
 - Database lookups
+
+- Search engines and indexing
+- Database lookups
 ## Historical Context
 
 Query expansion involves techniques such as:Finding synonyms of words, and searching for the synonyms as well

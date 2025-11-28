@@ -98,3 +98,6 @@ SHA-2 is a set of cryptographic hash functions designed by the United States Nat
 
 - Social network analysis
 - Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation

@@ -121,3 +121,6 @@ flowchart TD
 
 - Database query optimization
 - Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling

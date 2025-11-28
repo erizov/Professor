@@ -126,3 +126,6 @@ In computer science, merge sort is an efficient, general-purpose, and comparison
 
 - Database query optimization
 - Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling

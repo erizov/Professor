@@ -10,6 +10,7 @@ Flow Analysis — это алгоритм для решения конкретн
 - Route planning and navigation;
 - Social network analysis;
 - Route planning and navigation;
+- Social network analysis;
 
 ## Пример
 

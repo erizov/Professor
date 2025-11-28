@@ -10,6 +10,7 @@ Arima — это алгоритм для решения конкретной з�
 - Route planning and navigation;
 - Social network analysis;
 - Route planning and navigation;
+- Social network analysis;
 
 ## Пример
 

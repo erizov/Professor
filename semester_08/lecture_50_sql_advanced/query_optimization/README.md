@@ -142,6 +142,9 @@ Improves SQL query performance by selecting efficient execution plans, using ind
 
 - Social network analysis
 - Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
 ## Historical Context
 
 The query optimizer attempts to determine the most efficient way to execute a given query by considering the possible query plans

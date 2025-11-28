@@ -10,6 +10,7 @@ Random Поиск просматривает элементы списка од�
 - Database lookups;
 - Search engines and indexing;
 - Database lookups;
+- Search engines and indexing;
 
 ## Пример
 

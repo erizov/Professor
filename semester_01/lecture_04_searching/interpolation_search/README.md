@@ -104,6 +104,9 @@ flowchart TD
 
 - Search engines and indexing
 - Database lookups
+
+- Search engines and indexing
+- Database lookups
 ## Historical Context
 
 Interpolation search is an algorithm for searching for a key in an array that has been ordered by numerical values assigned to the keys. It was first described by W

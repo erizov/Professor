@@ -125,6 +125,9 @@ flowchart TD
 
 - Database query optimization
 - Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling
 ## Historical Context
 
 Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the input list element by element, comparing the current element with the one after it, swapping their values if needed

@@ -10,6 +10,7 @@ Red-Black Дерево — это алгоритм для решения кон�
 - Database lookups;
 - Search engines and indexing;
 - Database lookups;
+- Search engines and indexing;
 
 ## Пример
 

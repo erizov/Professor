@@ -10,6 +10,7 @@ Fibonacci Heap — это алгоритм для решения конкрет�
 - File system organization;
 - Database indexing;
 - File system organization;
+- Database indexing;
 
 ## Пример
 

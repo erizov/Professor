@@ -10,6 +10,7 @@ Kmp String Matching — это алгоритм для решения конкр
 - Database lookups;
 - Search engines and indexing;
 - Database lookups;
+- Search engines and indexing;
 
 ## Пример
 

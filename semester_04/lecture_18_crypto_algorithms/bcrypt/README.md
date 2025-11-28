@@ -103,3 +103,6 @@ bcrypt is a password-hashing function designed by Niels Provos and David Mazièr
 
 - Search engines and indexing
 - Database lookups
+
+- Search engines and indexing
+- Database lookups

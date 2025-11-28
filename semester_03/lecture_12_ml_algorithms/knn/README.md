@@ -93,6 +93,9 @@ flowchart TD
 
 - Social network analysis
 - Route planning and navigation
+
+- Social network analysis
+- Route planning and navigation
 ## Historical Context
 
 KNN may refer to:k-nearest neighbors algorithm (k-NN), a method for classifying objects

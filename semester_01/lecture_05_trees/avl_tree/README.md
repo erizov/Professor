@@ -99,6 +99,9 @@ flowchart TD
 
 - Search engines and indexing
 - Database lookups
+
+- Search engines and indexing
+- Database lookups
 ## Historical Context
 
 In an AVL tree, the heights of the two child subtrees of any node differ by at most one; if at any time they differ by more than one, rebalancing is done to restore this property. Insertions and deletions may require the tree to be rebalanced by one or more tree rotations

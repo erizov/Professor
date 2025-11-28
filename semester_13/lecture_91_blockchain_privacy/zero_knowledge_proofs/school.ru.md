@@ -10,7 +10,7 @@ Zero Knowledge Proofs — это алгоритм для решения конк
 - Route planning and navigation;
 - Social network analysis;
 - Route planning and navigation;
-- knowledge proofs is that it is trivial to prove possession of the relevant information simply by revealing it; the hard part is to prove this possession without revealing this information;
+- Social network analysis;
 
 ## Пример
 

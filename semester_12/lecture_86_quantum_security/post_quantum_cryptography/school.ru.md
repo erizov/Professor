@@ -10,7 +10,7 @@ Post Quantum Cryptography — это алгоритм для решения ко
 - Route planning and navigation;
 - Social network analysis;
 - Route planning and navigation;
-- quantum cryptography (PQC), sometimes referred to as quantum-proof, quantum-safe, or quantum-resistant, is the development of cryptographic algorithms that are currently thought to be secure against a cryptanalytic attack by a quantum computer;
+- Social network analysis;
 
 ## Пример
 

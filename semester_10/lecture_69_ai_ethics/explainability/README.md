@@ -144,6 +144,9 @@ Compare with alternatives
 
 - Search engines and indexing
 - Database lookups
+
+- Search engines and indexing
+- Database lookups
 ## Historical Context
 
 The main focus is on the reasoning behind the decisions or predictions made by the AI algorithms, to make them more understandable and transparent

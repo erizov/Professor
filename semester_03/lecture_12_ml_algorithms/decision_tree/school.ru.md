@@ -10,6 +10,7 @@ Decision Дерево — это алгоритм для решения конк
 - File system organization;
 - Database indexing;
 - File system organization;
+- Database indexing;
 
 ## Пример
 

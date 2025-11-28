@@ -10,6 +10,7 @@ Boyer-Moore Алгоритм — это алгоритм для решения �
 - Database lookups;
 - Search engines and indexing;
 - Database lookups;
+- Search engines and indexing;
 
 ## Пример
 

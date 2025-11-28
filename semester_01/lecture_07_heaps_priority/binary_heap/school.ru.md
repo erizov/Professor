@@ -10,6 +10,7 @@ Binary Heap — это алгоритм для решения конкретно
 - Operating system process scheduling;
 - Database query optimization;
 - Operating system process scheduling;
+- Database query optimization;
 
 ## Пример
 

@@ -99,6 +99,9 @@ flowchart TD
 
 - Search engines and indexing
 - Database lookups
+
+- Search engines and indexing
+- Database lookups
 ## Historical Context
 
 Instead, each node's position within the trie determines its associated key, with the connections between nodes defined by individual characters rather than the entire key

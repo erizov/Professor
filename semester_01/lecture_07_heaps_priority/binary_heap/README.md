@@ -98,3 +98,6 @@ A binary heap is a heap data structure that takes the form of a binary tree. Bin
 
 - Database query optimization
 - Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling

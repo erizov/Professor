@@ -93,6 +93,9 @@ flowchart TD
 
 - Search engines and indexing
 - Database lookups
+
+- Search engines and indexing
+- Database lookups
 ## Historical Context
 
 With this method a hash collision is resolved by probing, or searching through alternative locations in the array until either the target record is found, or an unused array slot is found, which indicates that there is no such key in the table. Double hashingin which the interval between probes is fixed for each record but is computed by another hash function

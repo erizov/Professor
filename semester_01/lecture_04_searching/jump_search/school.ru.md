@@ -10,6 +10,7 @@ Jump Поиск просматривает элементы списка оди�
 - Database lookups;
 - Search engines and indexing;
 - Database lookups;
+- Search engines and indexing;
 
 ## Пример
 

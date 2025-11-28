@@ -10,7 +10,7 @@ Query Expansion — это алгоритм для решения конкрет
 - Database lookups;
 - Search engines and indexing;
 - Database lookups;
-- weighting the terms in the original query;
+- Search engines and indexing;
 
 ## Пример
 

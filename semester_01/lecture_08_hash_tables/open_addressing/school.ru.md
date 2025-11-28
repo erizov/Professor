@@ -10,6 +10,7 @@ Collision Resolution: Open Addressing — это алгоритм для реш�
 - Database lookups;
 - Search engines and indexing;
 - Database lookups;
+- Search engines and indexing;
 
 ## Пример
 

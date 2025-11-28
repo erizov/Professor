@@ -10,6 +10,7 @@ Quantum Finance — это алгоритм для решения конкрет
 - Database lookups;
 - Search engines and indexing;
 - Database lookups;
+- Search engines and indexing;
 
 ## Пример
 

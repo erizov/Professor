@@ -10,7 +10,7 @@ K-Nearest Neighbors — это алгоритм для решения конкр
 - Route planning and navigation;
 - Social network analysis;
 - Route planning and navigation;
-- nearest neighbors algorithm (k-NN), a method for classifying objects;
+- Social network analysis;
 
 ## Пример
 

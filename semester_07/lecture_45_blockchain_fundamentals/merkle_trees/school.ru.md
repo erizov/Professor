@@ -10,6 +10,7 @@ Merkle Trees — это алгоритм для решения конкретн�
 - File system organization;
 - Database indexing;
 - File system organization;
+- Database indexing;
 
 ## Пример
 

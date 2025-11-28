@@ -99,3 +99,6 @@ flowchart TD
 
 - Search engines and indexing
 - Database lookups
+
+- Search engines and indexing
+- Database lookups

@@ -126,3 +126,6 @@ Quicksort is an efficient, general-purpose sorting algorithm. Quicksort was deve
 
 - Database query optimization
 - Operating system process scheduling
+
+- Database query optimization
+- Operating system process scheduling

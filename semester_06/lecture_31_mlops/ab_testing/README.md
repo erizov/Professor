@@ -93,6 +93,9 @@ flowchart TD
 
 - Search engines and indexing
 - Database lookups
+
+- Search engines and indexing
+- Database lookups
 ## Historical Context
 
 A/B testing is employed to compare multiple versions of a single variable, for example by testing a subject's response to variant A against variant B, and to determine which of the variants is more effective

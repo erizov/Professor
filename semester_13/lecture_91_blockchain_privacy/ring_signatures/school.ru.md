@@ -10,6 +10,7 @@ Ring Signatures — это алгоритм для решения конкрет
 - Route planning and navigation;
 - Social network analysis;
 - Route planning and navigation;
+- Social network analysis;
 
 ## Пример
 

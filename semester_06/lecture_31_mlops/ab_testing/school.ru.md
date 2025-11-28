@@ -10,6 +10,7 @@ A/B Testing For Ml — это алгоритм для решения конкр�
 - Database lookups;
 - Search engines and indexing;
 - Database lookups;
+- Search engines and indexing;
 
 ## Пример
 

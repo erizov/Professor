@@ -104,6 +104,9 @@ flowchart TD
 
 - Search engines and indexing
 - Database lookups
+
+- Search engines and indexing
+- Database lookups
 ## Historical Context
 
 It works by first checking all items Lkm, where  and m is the block size, until an item is found that is larger than the search key
