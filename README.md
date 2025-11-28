@@ -123,6 +123,28 @@ This repository contains a **complete 16-semester course** (8 undergraduate + 8 
 - Advanced AI/ML
 - MLOps and deployment
 
+## 🧰 Content Generation Workflow
+
+To keep every algorithm folder synchronized across English/Russian and school/university levels,
+use the automated workflow:
+
+1. `python scripts/run_full_workflow.py --run-all`
+   - Enhances each `README.md`, stores four structured records per algorithm
+     (`en/ru` × `school/university`) inside `algos.db`, and regenerates
+     `school.en.md`, `univer.en.md`, `school.ru.md`, and `univer.ru.md`
+     directly from the database.
+   - All database writes and file generations are logged with algorithm name,
+     language, level, and target file so you can trace exactly where each
+     paragraph originated.
+2. Run without `--run-all` if you prefer interactive confirmation after each
+   step.
+
+Individual scripts (invoked automatically by the workflow) are still available:
+- `scripts/enhance_readmes_improved.py`
+- `scripts/generate_english_md_files.py`
+- `scripts/generate_school_ru_md_improved.py`
+- `scripts/generate_univer_ru_md.py`
+
 ## 🚀 Quick Start
 
 ### Prerequisites

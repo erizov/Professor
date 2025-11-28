@@ -51,6 +51,16 @@ Create approximately 180-200 folders for each lecture/algorithm. Each algorithm 
   └── AlgorithmTest.java # Java tests
   ```
 
+### Multilingual Content Workflow:
+- After enriching an algorithm README, persist four structured entries
+  (`en/ru` × `school/university`) in `algos.db` so downstream generators can
+  build `school.*.md` and `univer.*.md` straight from the database.
+- Provide or update the orchestration script `scripts/run_full_workflow.py`
+  (with `--run-all` flag) so maintainers can regenerate every Markdown file
+  via a single command.
+- Every database insert/update and file generation must log the algorithm name,
+  language, level, and target file for auditability.
+
 ### Execution Framework:
 Create a common framework to run any of the Python and Java examples with all dependencies:
 - `requirements.txt` for Python dependencies
