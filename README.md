@@ -86,7 +86,9 @@ This repository contains a **complete 16-semester course** (8 undergraduate + 8 
 - **Framework integration**: Uses `framework/java_executor.py` and `framework/python_executor.py`
 - **Access**: Available at `/algorithm-executor` route in web interface
 
-### Student Sandbox & Learning Environment (Planned)
+### Student Sandbox & Learning Environment (In Development)
+
+**Implementation Status**: Ready to begin - See [`CURRENT_WORK.md`](CURRENT_WORK.md)
 
 **Comprehensive Plan Created:**
 - **Student Sandbox System**: Isolated workspace for students to modify and test algorithms
@@ -97,7 +99,8 @@ This repository contains a **complete 16-semester course** (8 undergraduate + 8 
 - **Visualization**: Interactive charts, test matrices, and code diff visualization
 - **Security**: Docker-based isolation with resource limits
 - **Role-Based Access**: Visitor (read-only), Student, Professor, Admin roles
-- **Detailed Plan**: See `docs/STUDENT_SANDBOX_PLAN.md` for complete implementation roadmap
+- **Detailed Plan**: See `docs/STUDENT_SANDBOX_PLAN.md` for complete design
+- **Implementation Steps**: See `docs/SANDBOX_IMPLEMENTATION_STEPS.md` for step-by-step guide
 
 ### Completed Sections
 
