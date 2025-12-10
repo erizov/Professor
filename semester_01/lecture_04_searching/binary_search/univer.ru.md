@@ -123,7 +123,6 @@ What happens if you try binary search on an unsorted array? Why doesn't it work?
 **Q4:** When would you use binary search instead of linear search?
 **A:** When the array is sorted and you need to search multiple times - the O(log n) vs O(n) advantage is significant.
 
-## 🎯 Try It Yourself
 
 **Try finding 7 in this sorted array:**
 ```
@@ -139,7 +138,6 @@ Step 2: Check middle of right half (index 5, value 9)
 Step 3: Found! Element 7 is at index 3
 ```
 
-## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
 Find the number 42 in this sorted array: [10, 20, 30, 40, 50, 60, 70]
@@ -151,7 +149,6 @@ Implement binary search to find the first occurrence of a target value in a sort
 **Exercise 3 (Hard):**
 What happens if you try binary search on an unsorted array? Why doesn't it work?
 
-## ✅ Check Your Understanding
 
 **Q1:** Why must the array be sorted for binary search?
 **A:** Because we eliminate half the search space based on comparison - this only works if elements are ordered.

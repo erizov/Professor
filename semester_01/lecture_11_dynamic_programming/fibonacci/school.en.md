@@ -92,7 +92,6 @@ Compare the time complexity of recursive Fibonacci vs dynamic programming Fibona
 **Q4:** What is the space complexity of DP Fibonacci?
 **A:** O(n) if we store all values, or O(1) if we only keep the last two values.
 
-## 🎯 Try It Yourself
 
 **Try computing Fibonacci(5) by hand:**
 ```
@@ -106,7 +105,6 @@ F(5) = F(4) + F(3) = 3 + 2 = 5
 Answer: 5
 ```
 
-## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
 Calculate the first 10 Fibonacci numbers by hand.
@@ -117,7 +115,6 @@ Write a function to compute Fibonacci(n) using dynamic programming (store previo
 **Exercise 3 (Hard):**
 Compare the time complexity of recursive Fibonacci vs dynamic programming Fibonacci. Why is DP faster?
 
-## ✅ Check Your Understanding
 
 **Q1:** What are the base cases for Fibonacci?
 **A:** F(0) = 0 and F(1) = 1.

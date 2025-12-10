@@ -130,7 +130,6 @@ Optimize bubble sort to stop early if the list is already sorted. How does this 
 **Q4:** Is bubble sort stable?
 **A:** Yes, it preserves the relative order of equal elements.
 
-## 🎯 Try It Yourself
 
 **Try sorting this by hand:**
 ```
@@ -151,7 +150,6 @@ Pass 2:
 Continue until sorted: [1, 2, 5, 8, 9]
 ```
 
-## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
 Sort this list by hand: [64, 34, 25, 12, 22, 11, 90]
@@ -163,7 +161,6 @@ Write a function to sort a list of student names alphabetically using bubble sor
 **Exercise 3 (Hard):**
 Optimize bubble sort to stop early if the list is already sorted. How does this improve performance?
 
-## ✅ Check Your Understanding
 
 **Q1:** How many passes are needed for n elements in the worst case?
 **A:** At most n-1 passes (the last element is already in place after n-1 passes).
@@ -206,7 +203,6 @@ You might also want to learn:
 - **Heap Sort** - Similar algorithm in the same category
 
 
-## 🔗 Related Algorithms
 
 You might also want to learn:
 - **Insertion Sort** - Similar algorithm in the same category
@@ -214,7 +210,6 @@ You might also want to learn:
 - **Heap Sort** - Similar algorithm in the same category
 
 
-## 🔗 Related Algorithms
 
 You might also want to learn:
 - **Insertion Sort** - Similar algorithm in the same category

@@ -108,7 +108,6 @@ Optimize the algorithm or apply it to solve a real-world problem.
 **Q4:** What are the main steps of this algorithm?
 **A:** [List 3-5 key steps]
 
-## 🎯 Try It Yourself
 
 **Try this example:**
 ```
@@ -119,7 +118,6 @@ Step 2: [second operation]
 Output: [result]
 ```
 
-## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
 Trace through the algorithm with a small example (3-5 elements).
@@ -130,7 +128,6 @@ Implement the algorithm in your preferred programming language.
 **Exercise 3 (Hard):**
 Optimize the algorithm or apply it to solve a real-world problem.
 
-## ✅ Check Your Understanding
 
 **Q1:** What problem does this algorithm solve?
 **A:** [Answer based on algorithm purpose]
@@ -173,7 +170,6 @@ You might also want to learn:
 - **Heap Sort** - Similar algorithm in the same category
 
 
-## 🔗 Related Algorithms
 
 You might also want to learn:
 - **Bubble Sort** - Similar algorithm in the same category
@@ -181,7 +177,6 @@ You might also want to learn:
 - **Heap Sort** - Similar algorithm in the same category
 
 
-## 🔗 Related Algorithms
 
 You might also want to learn:
 - **Bubble Sort** - Similar algorithm in the same category
