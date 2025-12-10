@@ -1,8 +1,27 @@
 # Fibonacci Heap
 
-## Обзор алгоритма
+- **Purpose:** Fibonacci Heap: Each number is the sum of the two previous numbers - we can compute this efficiently by storing previous results.
+- **Complexity:** O(1)
+- **Category:** Data Structure
+- **Key Idea:** Each number is the sum of the two previous numbers - we can compute this efficiently by storing previous results.
 
-Fibonacci Heap Step-by-Step Execution: Start([Start]) --> Init[Initialize data]
+Fibonacci Heap: Each number is the sum of the two previous numbers - we can compute this efficiently by storing previous results.
+
+Each number is the sum of the two previous numbers - we can compute this efficiently by storing previous results.
+
+**FIBONACCI** = Find In Both, Add Next, Continue Iteratively. Each number is the sum of the two before it!
+
+
+- **Complexity:** O(1)
+- **Category:** Data Structure
+- **Key Idea:** Each number is the sum of the two previous numbers - we can compute this efficiently by storing previous results.
+
+
+Each number is the sum of the two previous numbers - we can compute this efficiently by storing previous results.
+
+**FIBONACCI** = Find In Both, Add Next, Continue Iteratively. Each number is the sum of the two before it!
+
+
 
 Этот алгоритм относится к категории **Data Structure** и использует систематическую обработку данных для достижения своих целей.
 
@@ -60,3 +79,96 @@ def fibonacci_heap(data):
 - "Алгоритмы" Седжвика и Уэйна
 - Научные статьи по оптимизации и анализу алгоритмов
 - Документация фреймворков и руководства по реализации
+
+
+## 🎯 Try It Yourself
+
+**Try this example:**
+```
+Input: [example data]
+Step 1: [first operation]
+Step 2: [second operation]
+...
+Output: [result]
+```
+
+## ✏️ Practice Exercise
+
+**Exercise 1 (Easy):**
+Trace through the algorithm with a small example (3-5 elements).
+
+**Exercise 2 (Medium):**
+Implement the algorithm in your preferred programming language.
+
+**Exercise 3 (Hard):**
+Optimize the algorithm or apply it to solve a real-world problem.
+
+## ✅ Check Your Understanding
+
+**Q1:** What problem does this algorithm solve?
+**A:** [Answer based on algorithm purpose]
+
+**Q2:** What is the time complexity?
+**A:** O(1)
+
+**Q3:** When would you use this algorithm?
+**A:** [Answer based on use cases]
+
+**Q4:** What are the main steps of this algorithm?
+**A:** [List 3-5 key steps]
+
+## 🎯 Try It Yourself
+
+**Try this example:**
+```
+Input: [example data]
+Step 1: [first operation]
+Step 2: [second operation]
+...
+Output: [result]
+```
+
+## ✏️ Practice Exercise
+
+**Exercise 1 (Easy):**
+Trace through the algorithm with a small example (3-5 elements).
+
+**Exercise 2 (Medium):**
+Implement the algorithm in your preferred programming language.
+
+**Exercise 3 (Hard):**
+Optimize the algorithm or apply it to solve a real-world problem.
+
+## ✅ Check Your Understanding
+
+**Q1:** What problem does this algorithm solve?
+**A:** [Answer based on algorithm purpose]
+
+**Q2:** What is the time complexity?
+**A:** O(1)
+
+**Q3:** When would you use this algorithm?
+**A:** [Answer based on use cases]
+
+**Q4:** What are the main steps of this algorithm?
+**A:** [List 3-5 key steps]
+
+## Common Mistakes
+
+### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
+**Solution:** [How to fix this mistake]
+
+### ❌ Mistake 2: Trace through examples step-by-step
+**Solution:** [How to fix this mistake]
+
+### ❌ Mistake 3: Use debugging tools to verify your logic
+**Solution:** [How to fix this mistake]
+
+### ❌ Mistake 4: Review the algorithm's key steps before implementing
+**Solution:** [How to fix this mistake]
+
+### 💡 How to Avoid
+- Test with edge cases (empty input, single element, boundary values)
+- Trace through examples step-by-step
+- Use debugging tools to verify your logic
+- Review the algorithm's key steps before implementing

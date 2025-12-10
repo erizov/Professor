@@ -1,8 +1,27 @@
 # Dfs
 
-## Обзор алгоритма
+- **Purpose:** Dfs: Go deep first - explore as far as possible along each branch before backtracking.
+- **Complexity:** O(n²)
+- **Category:** Algorithms
+- **Key Idea:** Go deep first - explore as far as possible along each branch before backtracking.
 
-Depth-First Search Step-by-Step Execution: Start([Start]) --> Init[Initialize data]
+Dfs: Go deep first - explore as far as possible along each branch before backtracking.
+
+Go deep first - explore as far as possible along each branch before backtracking.
+
+**DFS** = Depth First Search. Like exploring a maze - go as deep as possible down one path before trying another.
+
+
+- **Complexity:** O(n²)
+- **Category:** Algorithms
+- **Key Idea:** Go deep first - explore as far as possible along each branch before backtracking.
+
+
+Go deep first - explore as far as possible along each branch before backtracking.
+
+**DFS** = Depth First Search. Like exploring a maze - go as deep as possible down one path before trying another.
+
+
 
 Этот алгоритм относится к категории **Sorting** и использует систематическую обработку данных для достижения своих целей.
 
@@ -60,3 +79,96 @@ def dfs(data):
 - "Алгоритмы" Седжвика и Уэйна
 - Научные статьи по оптимизации и анализу алгоритмов
 - Документация фреймворков и руководства по реализации
+
+
+## 🎯 Try It Yourself
+
+**Try this example:**
+```
+Input: [example data]
+Step 1: [first operation]
+Step 2: [second operation]
+...
+Output: [result]
+```
+
+## ✏️ Practice Exercise
+
+**Exercise 1 (Easy):**
+Trace through the algorithm with a small example (3-5 elements).
+
+**Exercise 2 (Medium):**
+Implement the algorithm in your preferred programming language.
+
+**Exercise 3 (Hard):**
+Optimize the algorithm or apply it to solve a real-world problem.
+
+## ✅ Check Your Understanding
+
+**Q1:** What problem does this algorithm solve?
+**A:** [Answer based on algorithm purpose]
+
+**Q2:** What is the time complexity?
+**A:** O(n²)
+
+**Q3:** When would you use this algorithm?
+**A:** [Answer based on use cases]
+
+**Q4:** What are the main steps of this algorithm?
+**A:** [List 3-5 key steps]
+
+## 🎯 Try It Yourself
+
+**Try this example:**
+```
+Input: [example data]
+Step 1: [first operation]
+Step 2: [second operation]
+...
+Output: [result]
+```
+
+## ✏️ Practice Exercise
+
+**Exercise 1 (Easy):**
+Trace through the algorithm with a small example (3-5 elements).
+
+**Exercise 2 (Medium):**
+Implement the algorithm in your preferred programming language.
+
+**Exercise 3 (Hard):**
+Optimize the algorithm or apply it to solve a real-world problem.
+
+## ✅ Check Your Understanding
+
+**Q1:** What problem does this algorithm solve?
+**A:** [Answer based on algorithm purpose]
+
+**Q2:** What is the time complexity?
+**A:** O(n²)
+
+**Q3:** When would you use this algorithm?
+**A:** [Answer based on use cases]
+
+**Q4:** What are the main steps of this algorithm?
+**A:** [List 3-5 key steps]
+
+## Common Mistakes
+
+### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
+**Solution:** [How to fix this mistake]
+
+### ❌ Mistake 2: Trace through examples step-by-step
+**Solution:** [How to fix this mistake]
+
+### ❌ Mistake 3: Use debugging tools to verify your logic
+**Solution:** [How to fix this mistake]
+
+### ❌ Mistake 4: Review the algorithm's key steps before implementing
+**Solution:** [How to fix this mistake]
+
+### 💡 How to Avoid
+- Test with edge cases (empty input, single element, boundary values)
+- Trace through examples step-by-step
+- Use debugging tools to verify your logic
+- Review the algorithm's key steps before implementing
