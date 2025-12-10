@@ -132,13 +132,16 @@ What happens if you try binary search on an unsorted array? Why doesn't it work?
 ## Common Mistakes
 
 ### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
-**Solution:** [How to fix this mistake]
+**Solution:** Verify array is sorted: `if data != sorted(data): raise ValueError`
 
 ### ❌ Mistake 2: Trace through examples step-by-step
+**Solution:** Manually trace through a small example (3-5 elements) to verify each step matches the algorithm logic
 
 ### ❌ Mistake 3: Use debugging tools to verify your logic
+**Solution:** Use print statements or debugger to check variable values at each step, compare with expected behavior
 
 ### ❌ Mistake 4: Review the algorithm's key steps before implementing
+**Solution:** Study the algorithm's pseudocode or description, identify the core steps, then implement one step at a time
 
 ### 💡 How to Avoid
 - Test with edge cases (empty input, single element, boundary values)

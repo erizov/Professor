@@ -174,13 +174,16 @@ Optimize bubble sort to stop early if the list is already sorted. How does this 
 ## Common Mistakes
 
 ### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
-**Solution:** [How to fix this mistake]
+**Solution:** Add edge case checks: `if not data or len(data) <= 1: return data`
 
 ### ❌ Mistake 2: Trace through examples step-by-step
+**Solution:** Manually trace through a small example (3-5 elements) to verify each step matches the algorithm logic
 
 ### ❌ Mistake 3: Use debugging tools to verify your logic
+**Solution:** Use print statements or debugger to check variable values at each step, compare with expected behavior
 
 ### ❌ Mistake 4: Review the algorithm's key steps before implementing
+**Solution:** Study the algorithm's pseudocode or description, identify the core steps, then implement one step at a time
 
 ### 💡 How to Avoid
 - Test with edge cases (empty input, single element, boundary values)

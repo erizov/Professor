@@ -4,14 +4,14 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Edit Distance: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Edit Distance: The algorithm works by > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 - **Complexity:** O(n²)
 - **Category:** Algorithms
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** The algorithm works by > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-Edit Distance: The algorithm works by systematically processing data according to a specific strategy.
+Edit Distance: The algorithm works by > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 **EDIT DISTANCE** = Remember the key steps: step 1, step 2, step 3
 
@@ -90,7 +90,7 @@ def edit_distance(s1, s2):
 Input: [example data]
 Step 1: [first operation]
 Step 2: [second operation]
-...
+.
 Output: [result]
 
 ## ✏️ Practice Exercise
@@ -124,7 +124,7 @@ Optimize the algorithm or apply it to solve a real-world problem.
 Input: [example data]
 Step 1: [first operation]
 Step 2: [second operation]
-...
+.
 Output: [result]
 
 
@@ -153,13 +153,16 @@ Optimize the algorithm or apply it to solve a real-world problem.
 ## Common Mistakes
 
 ### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
-**Solution:** [How to fix this mistake]
+**Solution:** Add validation: `if not data or len(data) <= 1: return data`
 
 ### ❌ Mistake 2: Trace through examples step-by-step
+**Solution:** Manually trace through a small example (3-5 elements) to verify each step matches the algorithm logic
 
 ### ❌ Mistake 3: Use debugging tools to verify your logic
+**Solution:** Use print statements or debugger to check variable values at each step, compare with expected behavior
 
 ### ❌ Mistake 4: Review the algorithm's key steps before implementing
+**Solution:** Study the algorithm's pseudocode or description, identify the core steps, then implement one step at a time
 
 ### 💡 How to Avoid
 - Test with edge cases (empty input, single element, boundary values)
