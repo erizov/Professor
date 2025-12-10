@@ -43,27 +43,43 @@ Downsampling is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Downsampling is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Downsampling is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Downsampling is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class Downsampling:
-    """Downsampling implementation."""
-    
+class TimeSeriesDownsampling:
+    """Time series downsampling."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
+        self.methods = {
+            "mean": lambda chunk: sum(chunk) / len(chunk),
+            "max": max,
+            "min": min,
+        }
+
+    def downsample(
+        self, data: List[float], window: int, method: str = "mean"
+    ) -> List[float]:
+        """Downsample with aggregation."""
+        agg_func = self.methods.get(method, self.methods["mean"])
+        result = []
+        for i in range(0, len(data), window):
+            chunk = data[i : i + window]
+            if chunk:
+                result.append(agg_func(chunk))
         return result
 ```
 

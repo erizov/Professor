@@ -43,28 +43,44 @@ Snowflake Schema is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Snowflake Schema is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Snowflake Schema is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Snowflake Schema is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class SnowflakeSchema:
-    """Snowflake Schema implementation."""
-    
+    """Snowflake schema (normalized star schema)."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.fact_tables: Dict[str, dict] = {}
+        self.dimensions: Dict[str, dict] = {}
+        self.sub_dimensions: Dict[str, dict] = {}
+
+    def create_dimension(self, name: str, attributes: List[str]) -> None:
+        """Create dimension."""
+        self.dimensions[name] = {"attributes": attributes}
+
+    def create_sub_dimension(
+        self, parent: str, name: str, attributes: List[str]
+    ) -> None:
+        """Create sub-dimension."""
+        self.sub_dimensions[name] = {"parent": parent, "attributes": attributes}
+
+    def create_fact_table(self, name: str, measures: List[str]) -> None:
+        """Create fact table."""
+        self.fact_tables[name] = {"measures": measures}
 ```
 
 

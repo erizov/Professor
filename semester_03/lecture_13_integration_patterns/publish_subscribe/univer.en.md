@@ -43,28 +43,47 @@ Publish Subscribe is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Integration category, following similar design patterns and optimization strategies.
+Publish Subscribe is conceptually similar to:
+- Other algorithms in the Integration category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Publish Subscribe is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Publish Subscribe is often used in combination with:
+- Related algorithms in the Integration category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class PublishSubscribe:
-    """Publish Subscribe implementation."""
-    
+class PubSub:
+    """Publish-subscribe pattern."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.topics: Dict[str, List[callable]] = {}
+
+    def subscribe(self, topic: str, callback: callable) -> None:
+        """Subscribe to topic."""
+        if topic not in self.topics:
+            self.topics[topic] = []
+        if callback not in self.topics[topic]:
+            self.topics[topic].append(callback)
+
+    def publish(self, topic: str, message: any) -> None:
+        """Publish message to topic."""
+        if topic in self.topics:
+            for callback in self.topics[topic]:
+                callback(message)
+
+    def unsubscribe(self, topic: str, callback: callable) -> None:
+        """Unsubscribe from topic."""
+        if topic in self.topics:
+            if callback in self.topics[topic]:
+                self.topics[topic].remove(callback)
 ```
 
 

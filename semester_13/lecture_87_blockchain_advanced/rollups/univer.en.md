@@ -43,28 +43,47 @@ Rollups is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Rollups is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Rollups is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Rollups is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class Rollups:
-    """Rollups implementation."""
-    
+    """Data rollups."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.raw_data: List[dict] = {}
+        self.rollups: Dict[str, dict] = {}
+
+    def add_data(self, timestamp: float, value: float) -> None:
+        """Add raw data."""
+        self.raw_data.append({"timestamp": timestamp, "value": value})
+
+    def create_rollup(self, interval: str, data: List[dict]) -> dict:
+        """Create rollup."""
+        if data:
+            values = [d["value"] for d in data]
+            rollup = {
+                "interval": interval,
+                "sum": sum(values),
+                "avg": sum(values) / len(values),
+                "count": len(values),
+            }
+            self.rollups[interval] = rollup
+            return rollup
+        return {}
 ```
 
 

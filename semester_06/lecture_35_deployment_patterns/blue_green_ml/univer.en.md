@@ -43,28 +43,63 @@ Blue Green Ml is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Deployment category, following similar design patterns and optimization strategies.
+Blue Green Ml is conceptually similar to:
+- Other algorithms in the Deployment category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Blue Green Ml is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Blue Green Ml is often used in combination with:
+- Related algorithms in the Deployment category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class BlueGreenMl:
-    """Blue Green Ml implementation."""
-    
+class BlueGreenML:
+    """Blue-Green deployment for ML models."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.blue_model = None
+        self.green_model = None
+        self.active = "blue"
+        self.metrics: Dict[str, List[float]] = {"blue": [], "green": []}
+
+    def deploy_green_model(self, model: callable) -> None:
+        """Deploy green model."""
+        self.green_model = model
+
+    def predict(self, x: List[float], use_green: bool = False) -> any:
+        """Predict using active model."""
+        if use_green and self.green_model:
+            return self.green_model(x)
+        elif self.blue_model:
+            return self.blue_model(x)
+        return None
+
+    def record_metric(self, version: str, metric: float) -> None:
+        """Record metric."""
+        if version in self.metrics:
+            self.metrics[version].append(metric)
+
+    def compare_models(self) -> dict:
+        """Compare blue vs green models."""
+        if not self.metrics["blue"] or not self.metrics["green"]:
+            return {}
+
+        blue_avg = sum(self.metrics["blue"]) / len(self.metrics["blue"])
+        green_avg = sum(self.metrics["green"]) / len(self.metrics["green"])
+
+        return {
+            "blue_avg": blue_avg,
+            "green_avg": green_avg,
+            "improvement": green_avg - blue_avg,
+            "winner": "green" if green_avg > blue_avg else "blue",
+        }
 ```
 
 

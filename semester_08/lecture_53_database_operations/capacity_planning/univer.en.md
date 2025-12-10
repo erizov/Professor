@@ -43,28 +43,88 @@ Capacity Planning is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Database Operations category, following similar design patterns and optimization strategies.
+Capacity Planning is conceptually similar to:
+- Other algorithms in the Database Operations category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Capacity Planning is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Capacity Planning is often used in combination with:
+- Related algorithms in the Database Operations category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class CapacityPlanning:
-    """Capacity Planning implementation."""
-    
+    """Capacity planning system."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.historical_usage: List[float] = []
+        self.current_capacity: float = 100.0
+        self.growth_rate: float = 0.1
+
+    def record_usage(self, usage: float) -> None:
+        """Record usage."""
+        self.historical_usage.append(usage)
+
+        # Keep recent history
+        if len(self.historical_usage) > 365:  # 1 year
+            self.historical_usage.pop(0)
+
+    def predict_future_usage(self, days: int = 30) -> List[float]:
+        """Predict future usage."""
+        if len(self.historical_usage) < 2:
+            return [self.current_capacity] * days
+
+        # Simple linear growth prediction
+        recent_avg = sum(self.historical_usage[-30:]) / min(
+            30, len(self.historical_usage)
+        )
+        growth = self.growth_rate / 365  # Daily growth
+
+        predictions = []
+        for i in range(days):
+            predictions.append(recent_avg * (1 + growth) ** i)
+
+        return predictions
+
+    def recommend_capacity(self, target_utilization: float = 0.8) -> float:
+        """Recommend capacity."""
+        if not self.historical_usage:
+            return self.current_capacity
+
+        predicted_usage = self.predict_future_usage(30)
+        max_predicted = (
+            max(predicted_usage) if predicted_usage else self.current_capacity
+        )
+
+        recommended = max_predicted / target_utilization
+        return recommended
+
+    def calculate_growth_rate(self) -> float:
+        """Calculate growth rate from historical data."""
+        if len(self.historical_usage) < 2:
+            return 0.0
+
+        # Simple growth rate calculation
+        old_avg = sum(self.historical_usage[: len(self.historical_usage) // 2]) / (
+            len(self.historical_usage) // 2
+        )
+        new_avg = sum(self.historical_usage[len(self.historical_usage) // 2 :]) / (
+            len(self.historical_usage) - len(self.historical_usage) // 2
+        )
+
+        if old_avg > 0:
+            self.growth_rate = (new_avg - old_avg) / old_avg
+        else:
+            self.growth_rate = 0.0
+
+        return self.growth_rate
 ```
 
 

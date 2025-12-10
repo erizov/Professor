@@ -43,28 +43,81 @@ Evaluation Metrics is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Evaluation Metrics is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Evaluation Metrics is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Evaluation Metrics is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class EvaluationMetrics:
-    """Evaluation Metrics implementation."""
-    
+    """ML model evaluation metrics."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.predictions: List[any] = []
+        self.labels: List[any] = []
+
+    def add_prediction(self, prediction: any, label: any) -> None:
+        """Add prediction and label."""
+        self.predictions.append(prediction)
+        self.labels.append(label)
+
+    def accuracy(self) -> float:
+        """Calculate accuracy."""
+        if not self.predictions:
+            return 0.0
+        correct = sum(1 for p, l in zip(self.predictions, self.labels) if p == l)
+        return correct / len(self.predictions)
+
+    def precision(self, positive_class: any = 1) -> float:
+        """Calculate precision."""
+        tp = sum(
+            1
+            for p, l in zip(self.predictions, self.labels)
+            if p == positive_class and l == positive_class
+        )
+        fp = sum(
+            1
+            for p, l in zip(self.predictions, self.labels)
+            if p == positive_class and l != positive_class
+        )
+        return tp / (tp + fp) if (tp + fp) > 0 else 0.0
+
+    def recall(self, positive_class: any = 1) -> float:
+        """Calculate recall."""
+        tp = sum(
+            1
+            for p, l in zip(self.predictions, self.labels)
+            if p == positive_class and l == positive_class
+        )
+        fn = sum(
+            1
+            for p, l in zip(self.predictions, self.labels)
+            if p != positive_class and l == positive_class
+        )
+        return tp / (tp + fn) if (tp + fn) > 0 else 0.0
+
+    def f1_score(self, positive_class: any = 1) -> float:
+        """Calculate F1 score."""
+        prec = self.precision(positive_class)
+        rec = self.recall(positive_class)
+        return 2 * (prec * rec) / (prec + rec) if (prec + rec) > 0 else 0.0
+
+    def confusion_matrix(self) -> Dict[tuple, int]:
+        """Calculate confusion matrix."""
+        from collections import Counter
+
+        return Counter((p, l) for p, l in zip(self.predictions, self.labels))
 ```
 
 

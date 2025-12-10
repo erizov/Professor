@@ -43,28 +43,68 @@ Alerting is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Monitoring category, following similar design patterns and optimization strategies.
+Alerting is conceptually similar to:
+- Other algorithms in the Monitoring category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Alerting is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Alerting is often used in combination with:
+- Related algorithms in the Monitoring category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class Alerting:
-    """Alerting implementation."""
-    
+    """Alerting system implementation."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.alerts: List[dict] = []
+        self.rules: List[dict] = []
+        self.notification_channels: List[callable] = []
+
+    def add_rule(
+        self, name: str, condition: callable, severity: str = "warning"
+    ) -> None:
+        """Add alerting rule."""
+        self.rules.append({"name": name, "condition": condition, "severity": severity})
+
+    def add_notification_channel(self, channel: callable) -> None:
+        """Add notification channel."""
+        self.notification_channels.append(channel)
+
+    def check_metrics(self, metrics: dict) -> List[dict]:
+        """Check metrics against rules."""
+        triggered_alerts = []
+
+        for rule in self.rules:
+            if rule["condition"](metrics):
+                alert = {
+                    "rule": rule["name"],
+                    "severity": rule["severity"],
+                    "metrics": metrics,
+                    "timestamp": None,
+                }
+                import time
+
+                alert["timestamp"] = time.time()
+                self.alerts.append(alert)
+                triggered_alerts.append(alert)
+
+                # Send notifications
+                for channel in self.notification_channels:
+                    channel(alert)
+
+        return triggered_alerts
+
+    def get_recent_alerts(self, limit: int = 10) -> List[dict]:
+        """Get recent alerts."""
+        return sorted(self.alerts, key=lambda x: x["timestamp"], reverse=True)[:limit]
 ```
 
 

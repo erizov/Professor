@@ -43,28 +43,48 @@ Dimensional Modeling is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Data Modeling category, following similar design patterns and optimization strategies.
+Dimensional Modeling is conceptually similar to:
+- Other algorithms in the Data Modeling category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Dimensional Modeling is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Dimensional Modeling is often used in combination with:
+- Related algorithms in the Data Modeling category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class DimensionalModeling:
-    """Dimensional Modeling implementation."""
-    
+    """Dimensional modeling."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.fact_tables: Dict[str, dict] = {}
+        self.dimension_tables: Dict[str, dict] = {}
+
+    def create_fact_table(
+        self, name: str, measures: List[str], dimensions: List[str]
+    ) -> None:
+        """Create fact table."""
+        self.fact_tables[name] = {"measures": measures, "dimensions": dimensions}
+
+    def create_dimension_table(self, name: str, attributes: List[str]) -> None:
+        """Create dimension table."""
+        self.dimension_tables[name] = {"attributes": attributes}
+
+    def build_star_schema(self, fact_table: str) -> dict:
+        """Build star schema."""
+        if fact_table not in self.fact_tables:
+            return {}
+        return {
+            "fact_table": fact_table,
+            "dimensions": self.fact_tables[fact_table]["dimensions"],
+        }
 ```
 
 

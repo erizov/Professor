@@ -43,27 +43,96 @@ Cpu Scheduling Advanced is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Cpu Scheduling Advanced is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Cpu Scheduling Advanced is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Cpu Scheduling Advanced is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class CpuSchedulingAdvanced:
-    """Cpu Scheduling Advanced implementation."""
-    
+class CPUSchedulerAdvanced:
+    """Advanced CPU scheduling algorithms."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
+        self.processes: List[dict] = []
+        self.current_time = 0
+
+    def add_process(
+        self, process_id: str, arrival_time: float, burst_time: float, priority: int = 0
+    ) -> None:
+        """Add process."""
+        self.processes.append(
+            {
+                "id": process_id,
+                "arrival": arrival_time,
+                "burst": burst_time,
+                "priority": priority,
+                "remaining": burst_time,
+                "wait_time": 0.0,
+                "turnaround_time": 0.0,
+            }
+        )
+
+    def round_robin(self, time_quantum: float = 2.0) -> List[str]:
+        """Round-robin scheduling."""
+        queue = sorted(self.processes, key=lambda p: p["arrival"])
+        result = []
+        current_time = 0.0
+
+        while queue:
+            process = queue.pop(0)
+            if process["remaining"] <= time_quantum:
+                current_time += process["remaining"]
+                process["turnaround_time"] = current_time - process["arrival"]
+                result.append(process["id"])
+            else:
+                current_time += time_quantum
+                process["remaining"] -= time_quantum
+                queue.append(process)
+                result.append(process["id"])
+
+        return result
+
+    def priority_scheduling(self) -> List[str]:
+        """Priority scheduling."""
+        sorted_processes = sorted(
+            self.processes, key=lambda p: (p["priority"], p["arrival"])
+        )
+        result = []
+        current_time = 0.0
+
+        for process in sorted_processes:
+            current_time += process["burst"]
+            process["turnaround_time"] = current_time - process["arrival"]
+            result.append(process["id"])
+
+        return result
+
+    def shortest_job_first(self) -> List[str]:
+        """Shortest Job First scheduling."""
+        sorted_processes = sorted(
+            self.processes, key=lambda p: (p["arrival"], p["burst"])
+        )
+        result = []
+        current_time = 0.0
+
+        for process in sorted_processes:
+            if current_time < process["arrival"]:
+                current_time = process["arrival"]
+            current_time += process["burst"]
+            process["turnaround_time"] = current_time - process["arrival"]
+            result.append(process["id"])
+
         return result
 ```
 

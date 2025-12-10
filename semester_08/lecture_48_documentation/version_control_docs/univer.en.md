@@ -43,28 +43,50 @@ Version Control Docs is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Documentation Systems category, following similar design patterns and optimization strategies.
+Version Control Docs is conceptually similar to:
+- Other algorithms in the Documentation Systems category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Version Control Docs is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Version Control Docs is often used in combination with:
+- Related algorithms in the Documentation Systems category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class VersionControlDocs:
-    """Version Control Docs implementation."""
-    
+    """Version control for documentation."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.versions: Dict[str, List[str]] = {}
+        self.current: Dict[str, str] = {}
+
+    def commit_doc(self, doc_id: str, content: str) -> None:
+        """Commit document version."""
+        if doc_id not in self.versions:
+            self.versions[doc_id] = []
+        self.versions[doc_id].append(content)
+        self.current[doc_id] = content
+
+    def get_version(self, doc_id: str, version: int) -> Optional[str]:
+        """Get specific version."""
+        if doc_id in self.versions and 0 <= version < len(self.versions[doc_id]):
+            return self.versions[doc_id][version]
+        return None
+
+    def diff(self, doc_id: str, version1: int, version2: int) -> str:
+        """Get diff between versions."""
+        v1 = self.get_version(doc_id, version1)
+        v2 = self.get_version(doc_id, version2)
+        if v1 and v2:
+            return f"Diff between version {version1} and {version2}"
+        return
 ```
 
 

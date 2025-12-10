@@ -43,28 +43,50 @@ Allreduce is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Distributed ML category, following similar design patterns and optimization strategies.
+Allreduce is conceptually similar to:
+- Other algorithms in the Distributed ML category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Allreduce is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Allreduce is often used in combination with:
+- Related algorithms in the Distributed ML category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class Allreduce:
-    """Allreduce implementation."""
-    
-    def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+class AllReduce:
+    """AllReduce implementation for distributed training."""
+
+    def __init__(self, num_workers: int = 4):
+        self.num_workers = num_workers
+        self.gradients: List[List[float]] = []
+
+    def reduce(self, gradients: List[float], operation: str = "sum") -> List[float]:
+        """Reduce gradients across workers."""
+        self.gradients.append(gradients)
+
+        if len(self.gradients) == self.num_workers:
+            # Aggregate
+            aggregated = []
+            for i in range(len(gradients)):
+                values = [g[i] for g in self.gradients]
+                if operation == "sum":
+                    aggregated.append(sum(values))
+                elif operation == "avg":
+                    aggregated.append(sum(values) / len(values))
+                else:
+                    aggregated.append(values[0])
+
+            self.gradients = []
+            return aggregated
+
+        return gradients
 ```
 
 

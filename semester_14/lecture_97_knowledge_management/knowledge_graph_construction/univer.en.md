@@ -43,28 +43,47 @@ Knowledge Graph Construction is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Knowledge Graph Construction is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Knowledge Graph Construction is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Knowledge Graph Construction is often used in combination with:
+- **Graph traversal:** BFS, DFS for exploring graph structures
+- **Shortest path:** Dijkstra, Bellman-Ford for pathfinding
+- **Data structures:** Adjacency lists, adjacency matrices
+
 
 ## Key Implementation Details
 
 ```python
 class KnowledgeGraphConstruction:
-    """Knowledge Graph Construction implementation."""
-    
+    """Knowledge graph construction."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.graph: Dict[str, dict] = {}
+        self.extractors: List[callable] = {}
+
+    def add_extractor(self, extractor_name: str, extractor: callable) -> None:
+        """Add extraction function."""
+        self.extractors[extractor_name] = extractor
+
+    def build_from_text(self, text: str) -> dict:
+        """Build knowledge graph from text."""
+        entities = []
+        relations = []
+
+        for extractor_name, extractor in self.extractors.items():
+            result = extractor(text)
+            if "entities" in result:
+                entities.extend(result["entities"])
+            if "relations" in result:
+                relations.extend(result["relations"])
+
+        return {"entities": entities, "relations": relations}
 ```
 
 

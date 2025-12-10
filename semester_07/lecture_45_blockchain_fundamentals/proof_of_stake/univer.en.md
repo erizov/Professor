@@ -43,28 +43,57 @@ Proof Of Stake is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Blockchain Fundamentals category, following similar design patterns and optimization strategies.
+Proof Of Stake is conceptually similar to:
+- Other algorithms in the Blockchain Fundamentals category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Proof Of Stake is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Proof Of Stake is often used in combination with:
+- Related algorithms in the Blockchain Fundamentals category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class ProofOfStake:
-    """Proof Of Stake implementation."""
-    
+    """Proof of Stake consensus."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.validators: Dict[str, dict] = {}
+        self.stakes: Dict[str, float] = {}
+
+    def register_validator(self, validator_id: str, stake: float) -> None:
+        """Register validator."""
+        self.validators[validator_id] = {"stake": stake, "selected": False}
+        self.stakes[validator_id] = stake
+
+    def select_validator(self) -> Optional[str]:
+        """Select validator based on stake."""
+        if not self.validators:
+            return None
+
+        total_stake = sum(self.stakes.values())
+        import random
+
+        rand = random.random() * total_stake
+
+        cumulative = 0.0
+        for validator_id, stake in self.stakes.items():
+            cumulative += stake
+            if rand <= cumulative:
+                return validator_id
+        return list(self.stakes.keys())[0]
+
+    def validate_block(self, validator_id: str, block: dict) -> bool:
+        """Validate block."""
+        if validator_id in self.validators:
+            return True
+        return False
 ```
 
 

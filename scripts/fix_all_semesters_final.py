@@ -198,6 +198,7 @@ def has_placeholders(content: str) -> bool:
         r'systematically processing data according to a specific strategy',
         r'step 1, step 2, step 3',
         r'# Core algorithm logic',
+        r'# Implementation logic',
         r'return result\s*$',
         r'General algorithmic problem solving',
         r'Complementary algorithms for preprocessing',
@@ -206,7 +207,11 @@ def has_placeholders(content: str) -> bool:
         r'\[example',
         r'\[Answer based on',
         r'\[List 3-5 key steps\]',
+        r'\[related algorithms\]',
+        r'\[other algorithms\]',
+        r'\[algorithm family\]',
         r'The algorithm works by systematically processing',
+        r'shares conceptual similarities with other algorithms in the.*following similar design patterns',
     ]
     
     for pattern in placeholder_patterns:
@@ -283,19 +288,93 @@ def fix_english_file(md_file: Path) -> bool:
                     content = content[:where_start] + new_where + '\n\n' + content[where_end:]
         
         # Fix "Related Algorithms" generic placeholders
-        if 'Complementary algorithms for preprocessing' in content:
+        if 'Complementary algorithms for preprocessing' in content or '[related algorithms]' in content or '[other algorithms]' in content:
             related_start = content.find('## Related Algorithms')
             if related_start != -1:
                 related_end = content.find('\n## ', related_start + 25)
+                if related_end == -1:
+                    related_end = content.find('\n\n---', related_start)
                 if related_end != -1:
                     readable_name = algorithm_name.replace('_', ' ').title()
-                    new_related = f"""## Related Algorithms
+                    category = info.get('category', 'Algorithms')
+                    
+                    # Generate algorithm-specific related algorithms
+                    if 'sort' in algorithm_name.lower():
+                        new_related = f"""## Related Algorithms
 
 {readable_name} is often used in combination with:
-- [Related algorithm 1 based on category]
-- [Related algorithm 2 based on category]
-- [Related data structure that optimizes performance]"""
+- **Other sorting algorithms:** Quick Sort, Merge Sort, Insertion Sort for different use cases
+- **Search algorithms:** Binary Search (requires sorted data)
+- **Data structures:** Arrays, Lists for storing elements to sort"""
+                    elif 'search' in algorithm_name.lower():
+                        new_related = f"""## Related Algorithms
+
+{readable_name} is often used in combination with:
+- **Sorting algorithms:** Binary Search requires sorted data
+- **Other search algorithms:** Linear Search, Hash-based search
+- **Data structures:** Trees, Hash tables for efficient searching"""
+                    elif 'graph' in algorithm_name.lower() or 'tree' in algorithm_name.lower():
+                        new_related = f"""## Related Algorithms
+
+{readable_name} is often used in combination with:
+- **Graph traversal:** BFS, DFS for exploring graph structures
+- **Shortest path:** Dijkstra, Bellman-Ford for pathfinding
+- **Data structures:** Adjacency lists, adjacency matrices"""
+                    else:
+                        new_related = f"""## Related Algorithms
+
+{readable_name} is often used in combination with:
+- Related algorithms in the {category} category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems"""
+                    
                     content = content[:related_start] + new_related + '\n\n' + content[related_end:]
+        
+        # Fix placeholder code with generic implementation
+        if '# Implementation logic' in content and 'return result' in content:
+            new_code = generate_implementation_code(algorithm_name, info, algorithm_folder)
+            code_start = content.find('## Key Implementation Details')
+            if code_start != -1:
+                code_end = content.find('\n## ', code_start + 30)
+                if code_end == -1:
+                    code_end = content.find('\n\n---', code_start)
+                if code_end != -1:
+                    content = content[:code_start] + new_code + '\n\n' + content[code_end:]
+        
+        # Fix "Conceptual Similarities" generic text
+        if 'shares conceptual similarities with other algorithms in the' in content and 'following similar design patterns' in content:
+            similarities_start = content.find('## Conceptual Similarities')
+            if similarities_start != -1:
+                similarities_end = content.find('\n## ', similarities_start + 30)
+                if similarities_end == -1:
+                    similarities_end = content.find('\n\n---', similarities_start)
+                if similarities_end != -1:
+                    readable_name = algorithm_name.replace('_', ' ').title()
+                    category = info.get('category', 'Algorithms')
+                    
+                    if 'sort' in algorithm_name.lower():
+                        new_similarities = f"""## Conceptual Similarities
+
+{readable_name} is conceptually similar to:
+- **Other comparison-based sorts:** Selection Sort, Insertion Sort (compare and swap elements)
+- **Divide and conquer:** Merge Sort, Quick Sort (different approach to same problem)
+- **Stable sorting:** Maintains relative order of equal elements"""
+                    elif 'search' in algorithm_name.lower():
+                        new_similarities = f"""## Conceptual Similarities
+
+{readable_name} is conceptually similar to:
+- **Other search algorithms:** Linear Search, Hash-based search (different search strategies)
+- **Tree traversal:** In-order, pre-order traversal (systematic exploration)
+- **Binary operations:** Binary search trees use similar divide-and-conquer approach"""
+                    else:
+                        new_similarities = f"""## Conceptual Similarities
+
+{readable_name} is conceptually similar to:
+- Other algorithms in the {category} category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems"""
+                    
+                    content = content[:similarities_start] + new_similarities + '\n\n' + content[similarities_end:]
         
         if content != original:
             md_file.write_text(content, encoding='utf-8')

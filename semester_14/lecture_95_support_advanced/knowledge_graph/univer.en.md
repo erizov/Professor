@@ -43,28 +43,50 @@ Knowledge Graph is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Knowledge Graph is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Knowledge Graph is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Knowledge Graph is often used in combination with:
+- **Graph traversal:** BFS, DFS for exploring graph structures
+- **Shortest path:** Dijkstra, Bellman-Ford for pathfinding
+- **Data structures:** Adjacency lists, adjacency matrices
+
 
 ## Key Implementation Details
 
 ```python
 class KnowledgeGraph:
-    """Knowledge Graph implementation."""
-    
+    """Knowledge graph."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.nodes: Dict[str, dict] = {}
+        self.edges: List[dict] = {}
+
+    def add_entity(self, entity_id: str, entity_type: str, properties: dict) -> None:
+        """Add entity."""
+        self.nodes[entity_id] = {"type": entity_type, "properties": properties}
+
+    def add_relation(self, subject_id: str, predicate: str, object_id: str) -> None:
+        """Add relation."""
+        relation_id = f"{subject_id}_{predicate}_{object_id}"
+        self.edges[relation_id] = {
+            "subject": subject_id,
+            "predicate": predicate,
+            "object": object_id,
+        }
+
+    def query(self, pattern: dict) -> List[dict]:
+        """Query knowledge graph."""
+        results = []
+        for edge_id, edge in self.edges.items():
+            if all(edge.get(k) == v for k, v in pattern.items()):
+                results.append(edge)
+        return results
 ```
 
 

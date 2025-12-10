@@ -43,28 +43,45 @@ Template Method is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Behavioral Pattern category, following similar design patterns and optimization strategies.
+Template Method is conceptually similar to:
+- Other algorithms in the Behavioral Pattern category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Template Method is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Template Method is often used in combination with:
+- Related algorithms in the Behavioral Pattern category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class TemplateMethod:
-    """Template Method implementation."""
-    
-    def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+class AbstractClass:
+    """Abstract class with template method."""
+
+    def template_method(self) -> str:
+        """Template method."""
+        result = []
+        result.append(self.operation1())
+        result.append(self.operation2())
+        result.append(self.operation3())
+        return " -> ".join(result)
+
+    def operation1(self) -> str:
+        """Primitive operation 1."""
+        return "AbstractClass.operation1"
+
+    def operation2(self) -> str:
+        """Primitive operation 2 (hook)."""
+        return "AbstractClass.operation2"
+
+    def operation3(self) -> str:
+        """Primitive operation 3."""
+        return "AbstractClass.operation3"
 ```
 
 

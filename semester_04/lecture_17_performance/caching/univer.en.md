@@ -43,28 +43,56 @@ Caching is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Performance category, following similar design patterns and optimization strategies.
+Caching is conceptually similar to:
+- Other algorithms in the Performance category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Caching is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Caching is often used in combination with:
+- Related algorithms in the Performance category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class Caching:
-    """Caching implementation."""
-    
-    def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+class Cache:
+    """Simple cache implementation."""
+
+    def __init__(self, max_size: int = 100):
+        self.max_size = max_size
+        self.cache: Dict[str, any] = {}
+        self.access_order: List[str] = []
+
+    def get(self, key: str) -> Optional[any]:
+        """Get value from cache."""
+        if key in self.cache:
+            # Move to end (most recently used)
+            self.access_order.remove(key)
+            self.access_order.append(key)
+            return self.cache[key]
+        return None
+
+    def put(self, key: str, value: any) -> None:
+        """Put value in cache."""
+        if key in self.cache:
+            self.access_order.remove(key)
+        elif len(self.cache) >= self.max_size:
+            # Remove least recently used
+            lru_key = self.access_order.pop(0)
+            del self.cache[lru_key]
+
+        self.cache[key] = value
+        self.access_order.append(key)
+
+    def clear(self) -> None:
+        """Clear cache."""
+        self.cache.clear()
+        self.access_order.clear()
 ```
 
 

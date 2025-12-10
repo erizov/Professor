@@ -43,28 +43,59 @@ Secrets Rotation is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Secrets Rotation is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Secrets Rotation is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Secrets Rotation is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class SecretsRotation:
-    """Secrets Rotation implementation."""
-    
+    """Secrets rotation."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.secrets: Dict[str, dict] = {}
+        self.rotation_schedule: Dict[str, float] = {}
+
+    def set_rotation_schedule(
+        self, secret_id: str, rotation_interval_days: int
+    ) -> None:
+        """Set rotation schedule."""
+        import time
+
+        self.rotation_schedule[secret_id] = time.time() + rotation_interval_days * 86400
+
+    def rotate_secret(self, secret_id: str) -> bool:
+        """Rotate secret."""
+        if secret_id in self.secrets:
+            import random
+            import time
+
+            new_value = f"NEW_SECRET_{random.randint(1000, 9999)}"
+            self.secrets[secret_id]["value"] = new_value
+            self.secrets[secret_id]["rotated_at"] = time.time()
+            return True
+        return False
+
+    def check_rotation_needed(self) -> List[str]:
+        """Check which secrets need rotation."""
+        import time
+
+        needed = []
+        for secret_id, next_rotation in self.rotation_schedule.items():
+            if time.time() >= next_rotation:
+                needed.append(secret_id)
+        return needed
 ```
 
 

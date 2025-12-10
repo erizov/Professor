@@ -43,28 +43,47 @@ Tokenization is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Large Language Models Fundamentals category, following similar design patterns and optimization strategies.
+Tokenization is conceptually similar to:
+- Other algorithms in the Large Language Models Fundamentals category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Tokenization is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Tokenization is often used in combination with:
+- Related algorithms in the Large Language Models Fundamentals category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class Tokenization:
-    """Tokenization implementation."""
-    
+    """Text tokenization."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.vocab: Dict[str, int] = {}
+        self.token_to_id: Dict[str, int] = {}
+        self.id_to_token: Dict[int, str] = {}
+
+    def tokenize(self, text: str) -> List[int]:
+        """Tokenize text."""
+        tokens = text.split()
+        token_ids = []
+        for token in tokens:
+            if token not in self.token_to_id:
+                token_id = len(self.token_to_id)
+                self.token_to_id[token] = token_id
+                self.id_to_token[token_id] = token
+            token_ids.append(self.token_to_id[token])
+        return token_ids
+
+    def detokenize(self, token_ids: List[int]) -> str:
+        """Detokenize."""
+        tokens = [self.id_to_token.get(tid, "<UNK>") for tid in token_ids]
+        return " ".join(tokens)
 ```
 
 

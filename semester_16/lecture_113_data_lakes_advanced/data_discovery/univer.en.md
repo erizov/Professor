@@ -43,28 +43,63 @@ Data Discovery is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Data Discovery is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Data Discovery is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Data Discovery is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class DataDiscovery:
-    """Data Discovery implementation."""
-    
+    """Data discovery system."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.data_sources: Dict[str, dict] = {}
+        self.index: Dict[str, List[str]] = {}
+
+    def register_source(
+        self, source_id: str, name: str, location: str, schema: dict
+    ) -> None:
+        """Register data source."""
+        self.data_sources[source_id] = {
+            "name": name,
+            "location": location,
+            "schema": schema,
+        }
+
+        # Index schema fields
+        for field_name in schema.keys():
+            if field_name not in self.index:
+                self.index[field_name] = []
+            if source_id not in self.index[field_name]:
+                self.index[field_name].append(source_id)
+
+    def discover_by_field(self, field_name: str) -> List[str]:
+        """Discover sources by field name."""
+        return self.index.get(field_name, [])
+
+    def discover_by_name(self, name_pattern: str) -> List[str]:
+        """Discover sources by name pattern."""
+        results = []
+        name_lower = name_pattern.lower()
+        for source_id, source in self.data_sources.items():
+            if name_lower in source["name"].lower():
+                results.append(source_id)
+        return results
+
+    def get_source_info(self, source_id: str) -> Optional[dict]:
+        """Get source information."""
+        return self.data_sources.get(source_id)
 ```
 
 

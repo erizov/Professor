@@ -43,27 +43,48 @@ Tensor Parallelism is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Tensor Parallelism is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Tensor Parallelism is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Tensor Parallelism is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class TensorParallelism:
-    """Tensor Parallelism implementation."""
-    
-    def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
+    """Tensor parallelism for large models."""
+
+    def __init__(self, num_gpus: int = 4):
+        self.num_gpus = num_gpus
+        self.shards: List[dict] = [{} for _ in range(num_gpus)]
+
+    def shard_tensor(
+        self, tensor: List[List[float]], axis: int = 0
+    ) -> List[List[List[float]]]:
+        """Shard tensor across GPUs."""
+        shard_size = len(tensor) // self.num_gpus
+        shards = []
+        for i in range(self.num_gpus):
+            start = i * shard_size
+            end = start + shard_size if i < self.num_gpus - 1 else len(tensor)
+            shards.append(tensor[start:end])
+        return shards
+
+    def all_reduce(self, shards: List[List[List[float]]]) -> List[List[float]]:
+        """All-reduce operation."""
+        # Simplified: concatenate shards
+        result = []
+        for shard in shards:
+            result.extend(shard)
         return result
 ```
 

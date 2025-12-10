@@ -43,28 +43,60 @@ Governance Tokens is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Governance Tokens is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Governance Tokens is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Governance Tokens is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class GovernanceTokens:
-    """Governance Tokens implementation."""
-    
+class GovernanceToken:
+    """Governance token system."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.holders: Dict[str, int] = {}
+        self.proposals: List[dict] = {}
+        self.votes: Dict[str, Dict[str, int]] = {}
+
+    def mint(self, address: str, amount: int) -> None:
+        """Mint tokens."""
+        self.holders[address] = self.holders.get(address, 0) + amount
+
+    def create_proposal(self, proposal_id: str, description: str) -> None:
+        """Create governance proposal."""
+        self.proposals.append(
+            {
+                "id": proposal_id,
+                "description": description,
+                "votes_for": 0,
+                "votes_against": 0,
+            }
+        )
+        self.votes[proposal_id] = {}
+
+    def vote(self, proposal_id: str, voter: str, support: bool) -> None:
+        """Vote on proposal."""
+        if proposal_id not in self.votes:
+            return
+        tokens = self.holders.get(voter, 0)
+        if tokens > 0 and voter not in self.votes[proposal_id]:
+            self.votes[proposal_id][voter] = support
+            proposal = next((p for p in self.proposals if p["id"] == proposal_id), None)
+            if proposal:
+                if support:
+                    proposal["votes_for"] += tokens
+                else:
+                    proposal["votes_against"] += tokens
 ```
 
 

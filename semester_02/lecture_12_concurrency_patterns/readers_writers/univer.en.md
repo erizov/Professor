@@ -43,28 +43,53 @@ Readers Writers is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Concurrency category, following similar design patterns and optimization strategies.
+Readers Writers is conceptually similar to:
+- Other algorithms in the Concurrency category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Readers Writers is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Readers Writers is often used in combination with:
+- Related algorithms in the Concurrency category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class ReadersWriters:
-    """Readers Writers implementation."""
-    
+    """Readers-Writers problem solution."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.readers_count = 0
+        self.mutex = threading.Lock()
+        self.write_lock = threading.Lock()
+        self.data = 0
+
+    def read(self) -> int:
+        """Read data."""
+        with self.mutex:
+            self.readers_count += 1
+            if self.readers_count == 1:
+                self.write_lock.acquire()
+
+        # Read data
+        value = self.data
+
+        with self.mutex:
+            self.readers_count -= 1
+            if self.readers_count == 0:
+                self.write_lock.release()
+
+        return value
+
+    def write(self, value: int) -> None:
+        """Write data."""
+        with self.write_lock:
+            self.data = value
 ```
 
 

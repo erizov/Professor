@@ -1,97 +1,95 @@
+<!-- TRANSLATION NEEDED: This file was auto-generated from English version. Full translation required. -->
+
 # Jump Search
 
 # Univer
 
-## 📋 Quick Summary
+## 📋 Краткое резюме
 
-- **Purpose:** Jump Search: The algorithm works by Step 2: Check middle of right half (index 4, value 9).
-- **Complexity:** O(√n)
-- **Category:** Searching
-- **Key Idea:** The algorithm works by Step 2: Check middle of right half (index 4, value 9).
+- **Назначение:** Jump Search finds a specific element or pattern in a data structure.
+- **Сложность:** Varies time, Varies space
+- **Категория:** Searching
+- **Ключевая идея:** Uses divide-and-conquer or linear search strategy to locate target efficiently.
 
-Jump Search: The algorithm works by Step 2: Check middle of right half (index 4, value 9).
+Step 2: Check middle of right half (index 4, value 9)
 
-The algorithm works by Step 2: Check middle of right half (index 4, value 9).
+The algorithm works by applying systematic transformations to input data based on Searching principles.
 
-**JUMP SEARCH** = Remember the key steps: step 1, step 2, step 3
-
-
+**JUMP_SEARCH** = Remember: Understand the problem → Apply Searching principles → Process systematically → Verify results
 
 
+## Complexity Analysis
 
+**Time Complexity:** O(n) to O(n²) depending on implementation
+- Analysis based on algorithm structure and data operations
+- Best, average, and worst cases depend on input characteristics
+- Consider input size and data distribution
 
+**Space Complexity:** O(1) to O(n) depending on approach
+- Additional memory for data structures and recursion
+- Auxiliary space for temporary variables
+- Consider in-place vs. extra space implementations
 
+**Key Data Structures:** 
+- Based on algorithm type: arrays, trees, graphs, hash tables, etc.
 
-Этот алгоритм относится к категории **Searching** и использует систематическую обработку данных для достижения своих целей.
-
-
-> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-
-
-
-## Анализ сложности
-
-**Временная сложность:** O(√n)
-- Производительность алгоритма масштабируется согласно этому классу сложности
-- Лучший, средний и худший случаи могут различаться в зависимости от характеристик входных данных
-
-**Пространственная сложность:** O(1)
-- Указывает на количество дополнительной памяти, необходимой во время выполнения
-
-**Ключевые структуры данных:** hash table/dictionary
 
 ## Применение в реальных системах
 
-Jump Search используется в:
-- Database query optimization
-- Search engines (binary search in sorted indices)
-- Autocomplete and suggestion systems
-- Lookup tables and caches
+Jump Search is used in:
+- **Database Systems:** Index lookups, query optimization
+- **Information Retrieval:** Finding documents, text search
+- **Networking:** Routing tables, DNS lookups
+- **Compilers:** Symbol table lookups, code optimization
 
-## Концептуальные сходства
 
-Этот алгоритм имеет концептуальное сходство с другими алгоритмами в категории Searching, следуя аналогичным паттернам проектирования и стратегиям оптимизации.
+## Conceptual Similarities
+
+Jump Search is conceptually similar to:
+- **Other search algorithms:** Linear Search, Hash-based search (different search strategies)
+- **Tree traversal:** In-order, pre-order traversal (systematic exploration)
+- **Binary operations:** Binary search trees use similar divide-and-conquer approach
+
 
 ## Связанные алгоритмы
 
-Jump Search часто используется в сочетании с:
-- Дополнительными алгоритмами для предобработки или постобработки
-- Структурами данных, оптимизирующими его производительность
-- Другими алгоритмами того же класса сложности
+Jump Search is often used in combination with:
+- **Sorting algorithms:** Binary Search requires sorted data
+- **Other search algorithms:** Linear Search, Hash-based search
+- **Data structures:** Trees, Hash tables for efficient searching
+
 
 ## Ключевые детали реализации
 
 ```python
-def jump_search(arr, target):
-    """Implementation."""
-    n = len(arr)
-    if n == 0:
-    return -1
-    step = int(n ** 0.5)
+def jump_search(data):
+    """Implementation of Jump Search."""
+    # [Implementation details based on algorithm type]
     return result
 ```
 
-## Распространённые ошибки применения
 
-- Неправильная обработка граничных случаев (пустой ввод, один элемент, граничные условия)
-- Непонимание последствий сложности в крупномасштабных системах
-- Субоптимальная реализация, приводящая к деградации производительности
-- Неверные предположения о характеристиках входных данных
-- Не рассмотрение альтернативных алгоритмов для конкретных случаев использования
+## Частые ошибки применения
 
-## Рекомендуемая литература
+- **Assuming input is sorted when it's not:** Solution: Verify input is sorted or use appropriate search algorithm.
+- **Incorrect boundary conditions:** Solution: Use inclusive/exclusive bounds consistently.
+- **Not handling duplicate values:** Solution: Decide whether to return first, last, or any occurrence.
+- **Integer overflow in mid calculation:** Solution: Use `left + (right - left) // 2` instead of `(left + right) // 2`.
 
-- "Алгоритмы: построение и анализ" (CLRS) - Комплексный анализ алгоритмов
-- "Руководство по проектированию алгоритмов" Стивена Скиены
-- "Алгоритмы" Седжвика и Уэйна
-- Научные статьи по оптимизации и анализу алгоритмов
-- Документация фреймворков и руководства по реализации
+
+## Recommended Literature
+
+- "Introduction to Algorithms" (CLRS) - Comprehensive algorithm analysis
+- "Algorithm Design Manual" by Steven Skiena
+- "Algorithms" by Sedgewick and Wayne
+- Research papers on algorithm optimization and analysis
+- Framework documentation and implementation guides
 
 
 
 ---
 
-## 🎯 Try It Yourself
+## 🎯 Попробуйте сами
 
 **Try searching for a value:**
 ```
@@ -107,7 +105,7 @@ Output: Found at index 3
 ---
 
 
-## 🔍 Step-by-Step Execution
+## 🔍 Пошаговое выполнение
 
 
 
@@ -119,40 +117,40 @@ Output: Found at index 3
 
 
 
-## ✏️ Practice Exercise
+## ✏️ Практическое упражнение
 
-**Exercise 1 (Easy):**
-**Exercise 1 (Easy):**
+**Упражнение 1 (Легкое):**
+**Упражнение 1 (Легкое):**
 Trace through the Jump Search algorithm with a small example. Analyze time and space complexity.
 
-**Exercise 2 (Medium):**
+**Упражнение 2 (Среднее):**
 Implement the Jump Search algorithm with proper error handling and edge case coverage.
 
-**Exercise 3 (Hard):**
+**Упражнение 3 (Сложное):**
 Optimize the Jump Search algorithm or design a variant for a specific use case. Analyze trade-offs.
 
-**Exercise 2 (Medium):**
+**Упражнение 2 (Среднее):**
 Implement the algorithm in your preferred programming language.
 
-**Exercise 3 (Hard):**
+**Упражнение 3 (Сложное):**
 Optimize the algorithm or apply it to solve a real-world problem.
 
 
 ---
 
-## ✅ Check Your Understanding
+## ✅ Проверьте понимание
 
-**Q1:** What problem does this algorithm solve?
-**A:** Jump Search solves the problem of [algorithm purpose]. It processes input data systematically to achieve [desired outcome].
+**В1:** What problem does this algorithm solve?
+**О:** Jump Search solves the problem of [algorithm purpose]. It processes input data systematically to achieve [desired outcome].
 
-**Q2:** What is the time complexity?
-**A:** Varies
+**В2:** What is the time complexity?
+**О:** Varies
 
-**Q3:** When would you use this algorithm?
-**A:** Use Jump Search when you need to [use case scenario]. It's particularly effective for [specific situations].
+**В3:** When would you use this algorithm?
+**О:** Use Jump Search when you need to [use case scenario]. It's particularly effective for [specific situations].
 
-**Q4:** What are the main steps of this algorithm?
-**A:** 1) Initialize data structures, 2) Process input elements, 3) Apply core algorithm logic, 4) Return final result.
+**В4:** What are the main steps of this algorithm?
+**О:** 1) Initialize data structures, 2) Process input elements, 3) Apply core algorithm logic, 4) Return final result.
 
 
 **Try searching for a value:**

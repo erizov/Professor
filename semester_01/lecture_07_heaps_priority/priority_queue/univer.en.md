@@ -43,28 +43,52 @@ Priority Queue is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Data Structure category, following similar design patterns and optimization strategies.
+Priority Queue is conceptually similar to:
+- Other algorithms in the Data Structure category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Priority Queue is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Priority Queue is often used in combination with:
+- Related algorithms in the Data Structure category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class PriorityQueue:
-    """Priority Queue implementation."""
-    
+    """Priority queue implementation using heap."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.heap: List[tuple] = []
+
+    def push(self, item: any, priority: int) -> None:
+        """Add item with priority."""
+        from heapq import heappush
+
+        heappush(self.heap, (priority, item))
+
+    def pop(self) -> Optional[any]:
+        """Remove and return highest priority item."""
+        from heapq import heappop
+
+        if self.heap:
+            return heappop(self.heap)[1]
+        return None
+
+    def peek(self) -> Optional[any]:
+        """Return highest priority item without removing."""
+        if self.heap:
+            return self.heap[0][1]
+        return None
+
+    def is_empty(self) -> bool:
+        """Check if queue is empty."""
+        return len(self.heap) == 0
 ```
 
 

@@ -43,28 +43,48 @@ Rate Limiting is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Performance category, following similar design patterns and optimization strategies.
+Rate Limiting is conceptually similar to:
+- Other algorithms in the Performance category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Rate Limiting is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Rate Limiting is often used in combination with:
+- Related algorithms in the Performance category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class RateLimiting:
-    """Rate Limiting implementation."""
-    
-    def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+    """Rate limiting."""
+
+    def __init__(self, max_requests: int = 100, time_window: int = 60):
+        self.max_requests = max_requests
+        self.time_window = time_window
+        self.requests: Dict[str, List[float]] = {}
+
+    def is_allowed(self, identifier: str) -> bool:
+        """Check if request is allowed."""
+        import time
+
+        current_time = time.time()
+        if identifier not in self.requests:
+            self.requests[identifier] = []
+        # Remove old requests
+        self.requests[identifier] = [
+            req_time
+            for req_time in self.requests[identifier]
+            if current_time - req_time < self.time_window
+        ]
+        if len(self.requests[identifier]) >= self.max_requests:
+            return False
+        self.requests[identifier].append(current_time)
+        return True
 ```
 
 

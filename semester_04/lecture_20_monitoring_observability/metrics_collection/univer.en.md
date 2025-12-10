@@ -43,28 +43,51 @@ Metrics Collection is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Observability category, following similar design patterns and optimization strategies.
+Metrics Collection is conceptually similar to:
+- Other algorithms in the Observability category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Metrics Collection is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Metrics Collection is often used in combination with:
+- Related algorithms in the Observability category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class MetricsCollection:
-    """Metrics Collection implementation."""
-    
+    """Metrics collection system."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.metrics: Dict[str, List[dict]] = {}
+
+    def record_metric(self, metric_name: str, value: float, tags: dict = None) -> None:
+        """Record metric."""
+        import time
+
+        if metric_name not in self.metrics:
+            self.metrics[metric_name] = []
+        self.metrics[metric_name].append(
+            {"value": value, "tags": tags or {}, "timestamp": time.time()}
+        )
+
+    def get_metric_summary(self, metric_name: str) -> dict:
+        """Get metric summary."""
+        if metric_name not in self.metrics:
+            return {}
+
+        values = [m["value"] for m in self.metrics[metric_name]]
+        return {
+            "count": len(values),
+            "min": min(values) if values else 0,
+            "max": max(values) if values else 0,
+            "avg": sum(values) / len(values) if values else 0,
+        }
 ```
 
 

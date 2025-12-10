@@ -43,28 +43,46 @@ Moderation Automation is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Moderation Automation is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Moderation Automation is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Moderation Automation is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class ModerationAutomation:
-    """Moderation Automation implementation."""
-    
+    """Content moderation automation."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.rules: List[dict] = {}
+        self.model: any = None
+
+    def add_rule(self, rule_name: str, pattern: str, action: str) -> None:
+        """Add moderation rule."""
+        self.rules.append({"name": rule_name, "pattern": pattern, "action": action})
+
+    def moderate(self, content: str) -> dict:
+        """Moderate content."""
+        violations = []
+        for rule in self.rules:
+            if rule["pattern"] in content.lower():
+                violations.append(rule["name"])
+
+        return {
+            "approved": len(violations) == 0,
+            "violations": violations,
+            "action": self.rules[0]["action"] if violations else "approve",
+        }
 ```
 
 

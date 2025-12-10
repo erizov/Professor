@@ -43,28 +43,60 @@ Key Value Stores is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the NoSQL Database Fundamentals category, following similar design patterns and optimization strategies.
+Key Value Stores is conceptually similar to:
+- Other algorithms in the NoSQL Database Fundamentals category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Key Value Stores is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Key Value Stores is often used in combination with:
+- Related algorithms in the NoSQL Database Fundamentals category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class KeyValueStores:
-    """Key Value Stores implementation."""
-    
+class KeyValueStore:
+    """Key-value store."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.store: Dict[str, any] = {}
+        self.ttl: Dict[str, float] = {}
+
+    def put(self, key: str, value: any, ttl: int = None) -> None:
+        """Put key-value pair."""
+        import time
+
+        self.store[key] = value
+        if ttl:
+            self.ttl[key] = time.time() + ttl
+
+    def get(self, key: str) -> Optional[any]:
+        """Get value by key."""
+        import time
+
+        if key in self.ttl and time.time() > self.ttl[key]:
+            del self.store[key]
+            del self.ttl[key]
+            return None
+        return self.store.get(key)
+
+    def delete(self, key: str) -> bool:
+        """Delete key."""
+        if key in self.store:
+            del self.store[key]
+            if key in self.ttl:
+                del self.ttl[key]
+            return True
+        return False
+
+    def exists(self, key: str) -> bool:
+        """Check if key exists."""
+        return key in self.store
 ```
 
 

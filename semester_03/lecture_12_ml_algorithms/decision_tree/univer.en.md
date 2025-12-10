@@ -43,28 +43,76 @@ Decision Tree is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Machine Learning category, following similar design patterns and optimization strategies.
+Decision Tree is conceptually similar to:
+- Other algorithms in the Machine Learning category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Decision Tree is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Decision Tree is often used in combination with:
+- **Graph traversal:** BFS, DFS for exploring graph structures
+- **Shortest path:** Dijkstra, Bellman-Ford for pathfinding
+- **Data structures:** Adjacency lists, adjacency matrices
+
 
 ## Key Implementation Details
 
 ```python
-class DecisionTree:
-    """Decision Tree implementation."""
-    
-    def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+class DecisionTreeNode:
+    """Decision tree node."""
+
+    def __init__(self, feature=None, threshold=None, left=None, right=None, value=None):
+        self.feature = feature
+        self.threshold = threshold
+        self.left = left
+        self.right = right
+        self.value = value
+
+
+def build_decision_tree(
+    X: List[List[float]], y: List[any], max_depth: int = 10
+) -> DecisionTreeNode:
+    """Build decision tree (simplified version)."""
+    if max_depth == 0 or len(set(y)) == 1:
+        return DecisionTreeNode(value=max(set(y), key=y.count))
+
+    # Simple split (in real implementation, find best split)
+    if not X:
+        return DecisionTreeNode(value=None)
+
+    feature = 0
+    threshold = sum(row[feature] for row in X) / len(X)
+
+    left_X, left_y = [], []
+    right_X, right_y = [], []
+
+    for i, row in enumerate(X):
+        if row[feature] <= threshold:
+            left_X.append(row)
+            left_y.append(y[i])
+        else:
+            right_X.append(row)
+            right_y.append(y[i])
+
+    left = build_decision_tree(left_X, left_y, max_depth - 1)
+    right = build_decision_tree(right_X, right_y, max_depth - 1)
+
+    return DecisionTreeNode(
+        feature=feature, threshold=threshold, left=left, right=right
+    )
+
+
+def predict_tree(node: DecisionTreeNode, x: List[float]) -> any:
+    """Predict using decision tree."""
+    if node.value is not None:
+        return node.value
+
+    if x[node.feature] <= node.threshold:
+        return predict_tree(node.left, x)
+    else:
+        return predict_tree(node.right, x)
 ```
 
 

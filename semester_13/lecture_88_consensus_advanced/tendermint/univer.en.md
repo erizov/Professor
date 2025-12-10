@@ -43,28 +43,55 @@ Tendermint is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Tendermint is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Tendermint is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Tendermint is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class Tendermint:
-    """Tendermint implementation."""
-    
+    """Tendermint consensus."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.validators: List[dict] = {}
+        self.blocks: List[dict] = {}
+        self.height = 0
+
+    def add_validator(self, validator_id: str, voting_power: int) -> None:
+        """Add validator."""
+        self.validators[validator_id] = {"voting_power": voting_power, "voted": False}
+
+    def propose_block(self, proposer: str, transactions: List[dict]) -> dict:
+        """Propose block."""
+        import time
+
+        self.height += 1
+        block = {
+            "height": self.height,
+            "proposer": proposer,
+            "transactions": transactions,
+            "timestamp": time.time(),
+        }
+        self.blocks[self.height] = block
+        return block
+
+    def vote(self, validator_id: str, block_height: int, vote_type: str) -> bool:
+        """Vote on block."""
+        if validator_id in self.validators:
+            self.validators[validator_id]["voted"] = True
+            return True
+        return False
 ```
 
 

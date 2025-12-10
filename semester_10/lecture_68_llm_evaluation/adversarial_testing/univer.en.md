@@ -43,28 +43,72 @@ Adversarial Testing is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Adversarial Testing is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Adversarial Testing is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Adversarial Testing is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class AdversarialTesting:
-    """Adversarial Testing implementation."""
-    
+    """Adversarial testing for ML models."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.test_cases: List[dict] = []
+
+    def generate_adversarial_example(
+        self, model: callable, original_input: List[float], epsilon: float = 0.1
+    ) -> List[float]:
+        """Generate adversarial example using FGSM (simplified)."""
+        # Simplified Fast Gradient Sign Method
+        adversarial = original_input.copy()
+
+        # Add small perturbation
+        for i in range(len(adversarial)):
+            adversarial[i] += epsilon * (1 if adversarial[i] > 0 else -1)
+
+        return adversarial
+
+    def test_robustness(
+        self,
+        model: callable,
+        test_data: List[List[float]],
+        labels: List[any],
+        epsilon: float = 0.1,
+    ) -> dict:
+        """Test model robustness."""
+        correct_original = 0
+        correct_adversarial = 0
+
+        for i, (x, y) in enumerate(zip(test_data, labels)):
+            # Original prediction
+            pred_original = model(x)
+            if pred_original == y:
+                correct_original += 1
+
+            # Adversarial prediction
+            x_adv = self.generate_adversarial_example(model, x, epsilon)
+            pred_adv = model(x_adv)
+            if pred_adv == y:
+                correct_adversarial += 1
+
+        return {
+            "original_accuracy": correct_original / len(test_data),
+            "adversarial_accuracy": correct_adversarial / len(test_data),
+            "robustness": (
+                correct_adversarial / correct_original if correct_original > 0 else 0.0
+            ),
+        }
 ```
 
 

@@ -43,28 +43,51 @@ Quantum Search is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Quantum Search is conceptually similar to:
+- **Other search algorithms:** Linear Search, Hash-based search (different search strategies)
+- **Tree traversal:** In-order, pre-order traversal (systematic exploration)
+- **Binary operations:** Binary search trees use similar divide-and-conquer approach
+
 
 ## Related Algorithms
 
-- Quantum Search is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Quantum Search is often used in combination with:
+- **Sorting algorithms:** Binary Search requires sorted data
+- **Other search algorithms:** Linear Search, Hash-based search
+- **Data structures:** Trees, Hash tables for efficient searching
+
 
 ## Key Implementation Details
 
 ```python
 class QuantumSearch:
-    """Quantum Search implementation."""
-    
+    """Quantum search algorithms."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.dataset: List[any] = {}
+
+    def grover_search(self, target: any, dataset: List[any]) -> Optional[int]:
+        """Grover's search algorithm."""
+        import math
+
+        n = len(dataset)
+        iterations = int(math.pi / 4 * math.sqrt(n))
+        for _ in range(iterations):
+            for i, item in enumerate(dataset):
+                if item == target:
+                    return i
+        return None
+
+    def amplitude_amplification(
+        self, marked_states: Set[int], n_qubits: int
+    ) -> List[float]:
+        """Amplitude amplification."""
+        n = 2**n_qubits
+        amplitudes = [1.0 / (n**0.5)] * n
+        for marked in marked_states:
+            if 0 <= marked < n:
+                amplitudes[marked] *= -1
+        return amplitudes
 ```
 
 

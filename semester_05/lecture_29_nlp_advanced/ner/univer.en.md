@@ -43,28 +43,53 @@ Ner is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the NLP category, following similar design patterns and optimization strategies.
+Ner is conceptually similar to:
+- Other algorithms in the NLP category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Ner is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Ner is often used in combination with:
+- Related algorithms in the NLP category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class Ner:
-    """Ner implementation."""
-    
+class NER:
+    """Named Entity Recognition."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.model: any = None
+        self.entities: Dict[str, List[dict]] = {}
+
+    def extract_entities(self, text: str) -> List[dict]:
+        """Extract named entities."""
+        entities = []
+        words = text.split()
+        for i, word in enumerate(words):
+            if word[0].isupper() and len(word) > 1:
+                entities.append(
+                    {"text": word, "label": "PERSON", "start": i, "end": i + 1}
+                )
+        return entities
+
+    def tag(self, text: str) -> List[tuple]:
+        """Tag text with entities."""
+        entities = self.extract_entities(text)
+        words = text.split()
+        tags = []
+        entity_set = {e["text"] for e in entities}
+        for word in words:
+            if word in entity_set:
+                tags.append((word, "ENTITY"))
+            else:
+                tags.append((word, "O"))
+        return tags
 ```
 
 

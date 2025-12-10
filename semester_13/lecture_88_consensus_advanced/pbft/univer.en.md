@@ -43,28 +43,60 @@ Pbft is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Pbft is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Pbft is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Pbft is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class Pbft:
-    """Pbft implementation."""
-    
+class PBFT:
+    """Practical Byzantine Fault Tolerance."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.nodes: List[str] = []
+        self.messages: List[dict] = {}
+        self.consensus_state: Dict[str, dict] = {}
+
+    def add_node(self, node_id: str) -> None:
+        """Add node."""
+        self.nodes.append(node_id)
+
+    def propose(self, proposal_id: str, value: any) -> None:
+        """Propose value."""
+        self.consensus_state[proposal_id] = {
+            "value": value,
+            "prepared": {},
+            "committed": {},
+        }
+
+    def prepare(self, proposal_id: str, node_id: str) -> None:
+        """Prepare phase."""
+        if proposal_id in self.consensus_state:
+            self.consensus_state[proposal_id]["prepared"][node_id] = True
+
+    def commit(self, proposal_id: str, node_id: str) -> bool:
+        """Commit phase."""
+        if proposal_id not in self.consensus_state:
+            return False
+
+        state = self.consensus_state[proposal_id]
+        state["committed"][node_id] = True
+
+        # Need 2f+1 commits (f = number of faulty nodes)
+        f = (len(self.nodes) - 1) // 3
+        required = 2 * f + 1
+        return len(state["committed"]) >= required
 ```
 
 

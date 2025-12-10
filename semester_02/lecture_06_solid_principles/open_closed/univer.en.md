@@ -43,28 +43,47 @@ Open Closed is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the SOLID category, following similar design patterns and optimization strategies.
+Open Closed is conceptually similar to:
+- Other algorithms in the SOLID category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Open Closed is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Open Closed is often used in combination with:
+- Related algorithms in the SOLID category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class OpenClosed:
-    """Open Closed implementation."""
-    
+    """Open-Closed principle."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.base_classes: Dict[str, List[str]] = {}
+        self.extensions: Dict[str, str] = {}
+
+    def define_base(self, base_name: str, methods: List[str]) -> None:
+        """Define base class."""
+        self.base_classes[base_name] = methods
+
+    def extend(
+        self, extension_name: str, base_name: str, new_methods: List[str]
+    ) -> None:
+        """Extend base class."""
+        self.extensions[extension_name] = {"base": base_name, "methods": new_methods}
+
+    def get_methods(self, class_name: str) -> List[str]:
+        """Get all methods for class."""
+        if class_name in self.extensions:
+            ext = self.extensions[class_name]
+            base_methods = self.base_classes.get(ext["base"], [])
+            return base_methods + ext["methods"]
+        return self.base_classes.get(class_name, [])
 ```
 
 

@@ -1,47 +1,38 @@
+<!-- TRANSLATION NEEDED: This file was auto-generated from English version. Full translation required. -->
+
 # Hybrid Search
 
 # School
 
-## 📋 Quick Summary
+## 📋 Краткое резюме
 
-- **Purpose:** Hybrid Search: The algorithm works by Step 2: Check middle of right half (index 4, value 9).
-- **Complexity:** Varies
-- **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by Step 2: Check middle of right half (index 4, value 9).
+- **Назначение:** Hybrid Search finds a specific element or pattern in a data structure.
+- **Сложность:** Varies time, Varies space
+- **Категория:** Advanced Graduate Level
+- **Ключевая идея:** Uses divide-and-conquer or linear search strategy to locate target efficiently.
 
-Hybrid Search: The algorithm works by Step 2: Check middle of right half (index 4, value 9).
+Step 2: Check middle of right half (index 4, value 9)
 
-The algorithm works by Step 2: Check middle of right half (index 4, value 9).
+The algorithm works by applying systematic transformations to input data based on Advanced Graduate Level principles.
 
-**HYBRID SEARCH** = Remember the key steps: step 1, step 2, step 3
-
-
+**HYBRID_SEARCH** = Remember: Understand the problem → Apply Advanced Graduate Level principles → Process systematically → Verify results
 
 
+## Algorithm Complexity
 
+The time complexity is **Varies**, which means the time it takes to run depends on the size of the input data. The space complexity is **Varies**, indicating how much extra memory is needed.
 
+## Где применяется in Practice
 
+- Hybrid Search is used in [specific domain]
+- Applied in [specific technology/framework]
+- Used for [specific use case]
 
-Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **Advanced Graduate Level**.
+## What It Can Be Compared To
 
+Think of Hybrid Search like a systematic way of organizing or finding information - similar to how you might organize items or search through a collection efficiently.
 
-> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-
-
-
-## Сложность алгоритма
-
-Временная сложность составляет **Varies**, что означает, что время выполнения зависит от размера входных данных. Пространственная сложность — **Varies**, что указывает на количество дополнительной памяти.
-
-## Где применяется на практике
-
-- General algorithmic problem solving
-
-## С чем можно сравнить
-
-Представьте Hybrid Search как систематический способ организации или поиска информации — похоже на то, как вы можете эффективно организовывать предметы или искать в коллекции.
-
-## Минимальный пример кода
+## Minimal Code Example
 
 ```python
 def hybrid_search(data):
@@ -50,24 +41,10 @@ def hybrid_search(data):
     return result
 ```
 
-## Частые ошибки
-
-- Не обрабатываются граничные случаи (пустой ввод, один элемент)
-- Непонимание последствий сложности
-- Неправильная реализация, приводящая к неверным результатам
-- Не оптимизировано для конкретного случая использования
-
-## Рекомендуемая литература
-
-- "Алгоритмы: построение и анализ" Томас Кормен и др.
-- "Алгоритмы" Роберт Седжвик
-- Онлайн-ресурсы: GeeksforGeeks, Википедия, Визуализации алгоритмов
-
-
 
 ---
 
-## 🎯 Try It Yourself
+## 🎯 Попробуйте сами
 
 **Try searching for a value:**
 ```
@@ -80,10 +57,12 @@ Step 3: Find target element
 
 Output: Found at index 3
 ```
+
+
 ---
 
 
-## 🔍 Step-by-Step Execution
+## 🔍 Пошаговое выполнение
 
 
 
@@ -95,40 +74,40 @@ Output: Found at index 3
 
 
 
-## ✏️ Practice Exercise
+## ✏️ Практическое упражнение
 
-**Exercise 1 (Easy):**
-**Exercise 1 (Easy):**
+**Упражнение 1 (Легкое):**
+**Упражнение 1 (Легкое):**
 Trace through the Hybrid Search algorithm with a small example (3-5 elements). Write down each step.
 
-**Exercise 2 (Medium):**
+**Упражнение 2 (Среднее):**
 Implement the Hybrid Search algorithm in your preferred programming language. Test it with different inputs.
 
-**Exercise 3 (Hard):**
+**Упражнение 3 (Сложное):**
 Apply the Hybrid Search algorithm to solve a real-world problem. Explain why this algorithm is suitable.
 
-**Exercise 2 (Medium):**
+**Упражнение 2 (Среднее):**
 Implement the algorithm in your preferred programming language.
 
-**Exercise 3 (Hard):**
+**Упражнение 3 (Сложное):**
 Optimize the algorithm or apply it to solve a real-world problem.
 
 
 ---
 
-## ✅ Check Your Understanding
+## ✅ Проверьте понимание
 
-**Q1:** What problem does this algorithm solve?
-**A:** Hybrid Search solves the problem of [algorithm purpose]. It processes input data systematically to achieve [desired outcome].
+**В1:** What problem does this algorithm solve?
+**О:** Hybrid Search solves the problem of [algorithm purpose]. It processes input data systematically to achieve [desired outcome].
 
-**Q2:** What is the time complexity?
-**A:** Varies
+**В2:** What is the time complexity?
+**О:** Varies
 
-**Q3:** When would you use this algorithm?
-**A:** Use Hybrid Search when you need to [use case scenario]. It's particularly effective for [specific situations].
+**В3:** When would you use this algorithm?
+**О:** Use Hybrid Search when you need to [use case scenario]. It's particularly effective for [specific situations].
 
-**Q4:** What are the main steps of this algorithm?
-**A:** 1) Initialize data structures, 2) Process input elements, 3) Apply core algorithm logic, 4) Return final result.
+**В4:** What are the main steps of this algorithm?
+**О:** 1) Initialize data structures, 2) Process input elements, 3) Apply core algorithm logic, 4) Return final result.
 
 
 **Try searching for a value:**
@@ -168,3 +147,16 @@ Output: Found at index 3
 - Trace through examples step-by-step
 - Use debugging tools to verify your logic
 - Review the algorithm's key steps before implementing
+
+
+
+---
+
+## Recommended Literature
+
+- "Introduction to Algorithms" by Cormen, Leiserson, Rivest, and Stein
+- "Algorithms" by Robert Sedgewick and Kevin Wayne
+- Online resources: GeeksforGeeks, Wikipedia, Algorithm Visualizations
+
+
+

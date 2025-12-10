@@ -43,28 +43,70 @@ Data Catalog is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Data Catalog is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Data Catalog is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Data Catalog is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class DataCatalog:
-    """Data Catalog implementation."""
-    
+    """Data catalog implementation."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.datasets: Dict[str, dict] = {}
+        self.metadata: Dict[str, dict] = {}
+
+    def register_dataset(
+        self, dataset_id: str, name: str, description: str, schema: dict
+    ) -> None:
+        """Register dataset."""
+        self.datasets[dataset_id] = {
+            "name": name,
+            "description": description,
+            "schema": schema,
+        }
+
+    def add_metadata(self, dataset_id: str, metadata: dict) -> None:
+        """Add metadata."""
+        if dataset_id not in self.metadata:
+            self.metadata[dataset_id] = {}
+        self.metadata[dataset_id].update(metadata)
+
+    def search(self, query: str) -> List[str]:
+        """Search datasets."""
+        results = []
+        query_lower = query.lower()
+
+        for dataset_id, dataset in self.datasets.items():
+            if (
+                query_lower in dataset["name"].lower()
+                or query_lower in dataset["description"].lower()
+            ):
+                results.append(dataset_id)
+
+        return results
+
+    def get_dataset_info(self, dataset_id: str) -> Optional[dict]:
+        """Get dataset information."""
+        if dataset_id not in self.datasets:
+            return None
+
+        info = self.datasets[dataset_id].copy()
+        if dataset_id in self.metadata:
+            info["metadata"] = self.metadata[dataset_id]
+
+        return info
 ```
 
 

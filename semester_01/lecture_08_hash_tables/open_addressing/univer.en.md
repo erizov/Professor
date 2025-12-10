@@ -43,28 +43,76 @@ Open Addressing is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Data Structure category, following similar design patterns and optimization strategies.
+Open Addressing is conceptually similar to:
+- Other algorithms in the Data Structure category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Open Addressing is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Open Addressing is often used in combination with:
+- Related algorithms in the Data Structure category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class OpenAddressing:
-    """Open Addressing implementation."""
-    
-    def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+class HashTableOpenAddressing:
+    """Hash table with open addressing (linear probing)."""
+
+    def __init__(self, size: int = 10):
+        self.size = size
+        self.table: List[Optional[tuple]] = [None] * size
+        self.deleted = object()  # Marker for deleted entries
+
+    def _hash(self, key: int) -> int:
+        """Hash function."""
+        return key % self.size
+
+    def _probe(self, key: int, start_index: int) -> int:
+        """Linear probing."""
+        index = start_index
+        while self.table[index] is not None and self.table[index] is not self.deleted:
+            if self.table[index][0] == key:
+                return index
+            index = (index + 1) % self.size
+            if index == start_index:
+                raise Exception("Hash table is full")
+        return index
+
+    def insert(self, key: int, value: any) -> None:
+        """Insert key-value pair."""
+        index = self._hash(key)
+        index = self._probe(key, index)
+        self.table[index] = (key, value)
+
+    def get(self, key: int) -> Optional[any]:
+        """Get value by key."""
+        index = self._hash(key)
+        start = index
+        while self.table[index] is not None:
+            if self.table[index] is not self.deleted and self.table[index][0] == key:
+                return self.table[index][1]
+            index = (index + 1) % self.size
+            if index == start:
+                break
+        return None
+
+    def delete(self, key: int) -> bool:
+        """Delete key-value pair."""
+        index = self._hash(key)
+        start = index
+        while self.table[index] is not None:
+            if self.table[index] is not self.deleted and self.table[index][0] == key:
+                self.table[index] = self.deleted
+                return True
+            index = (index + 1) % self.size
+            if index == start:
+                break
+        return False
 ```
 
 

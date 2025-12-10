@@ -43,28 +43,47 @@ Mocking is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Testing category, following similar design patterns and optimization strategies.
+Mocking is conceptually similar to:
+- Other algorithms in the Testing category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Mocking is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Mocking is often used in combination with:
+- Related algorithms in the Testing category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class Mocking:
-    """Mocking implementation."""
-    
+    """Mocking framework."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.mocks: Dict[str, callable] = {}
+
+    def create_mock(self, name: str, return_value: any = None) -> callable:
+        """Create mock function."""
+
+        def mock_func(*args, **kwargs):
+            return return_value
+
+        self.mocks[name] = mock_func
+        return mock_func
+
+    def set_return_value(self, mock_name: str, value: any) -> None:
+        """Set mock return value."""
+        if mock_name in self.mocks:
+            original = self.mocks[mock_name]
+            self.mocks[mock_name] = lambda *args, **kwargs: value
+
+    def verify_call(self, mock_name: str, *args, **kwargs) -> bool:
+        """Verify mock was called."""
+        return mock_name in self.mocks
 ```
 
 

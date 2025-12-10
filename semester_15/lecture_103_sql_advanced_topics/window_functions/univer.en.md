@@ -43,28 +43,48 @@ Window Functions is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Window Functions is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Window Functions is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Window Functions is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class WindowFunctions:
-    """Window Functions implementation."""
-    
+    """SQL window functions."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.data: List[dict] = {}
+
+    def row_number(self, data: List[dict], order_by: str) -> List[dict]:
+        """Row number window function."""
+        sorted_data = sorted(data, key=lambda x: x.get(order_by, 0))
+        for i, row in enumerate(sorted_data, 1):
+            row["row_number"] = i
+        return sorted_data
+
+    def rank(self, data: List[dict], order_by: str) -> List[dict]:
+        """Rank window function."""
+        sorted_data = sorted(data, key=lambda x: x.get(order_by, 0), reverse=True)
+        current_rank = 1
+        prev_value = None
+        for row in sorted_data:
+            value = row.get(order_by, 0)
+            if prev_value is not None and value != prev_value:
+                current_rank += 1
+            row["rank"] = current_rank
+            prev_value = value
+        return sorted_data
 ```
 
 

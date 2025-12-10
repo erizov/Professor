@@ -43,28 +43,55 @@ Spot Instances is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Cost Optimization category, following similar design patterns and optimization strategies.
+Spot Instances is conceptually similar to:
+- Other algorithms in the Cost Optimization category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Spot Instances is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Spot Instances is often used in combination with:
+- Related algorithms in the Cost Optimization category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class SpotInstances:
-    """Spot Instances implementation."""
-    
+    """Spot instance management."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.instances: Dict[str, dict] = {}
+        self.prices: Dict[str, float] = {}
+
+    def request_spot_instance(
+        self, instance_type: str, max_price: float
+    ) -> Optional[str]:
+        """Request spot instance."""
+        import time
+        import random
+
+        instance_id = f"SPOT-{int(time.time())}"
+        current_price = random.uniform(0.1, max_price)
+        if current_price <= max_price:
+            self.instances[instance_id] = {
+                "type": instance_type,
+                "price": current_price,
+                "status": "running",
+            }
+            self.prices[instance_type] = current_price
+            return instance_id
+        return None
+
+    def check_interruption(self, instance_id: str) -> bool:
+        """Check if instance interrupted."""
+        # Simplified: random interruption
+        import random
+
+        return random.random() < 0.1
 ```
 
 

@@ -43,28 +43,73 @@ Contribution Management is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Contribution Management is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Contribution Management is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Contribution Management is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class ContributionManagement:
-    """Contribution Management implementation."""
-    
+    """Contribution management system."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.contributions: List[dict] = {}
+        self.contributors: Dict[str, dict] = {}
+
+    def add_contribution(
+        self, contribution_id: str, contributor: str, type: str, description: str
+    ) -> None:
+        """Add contribution."""
+        import time
+
+        self.contributions[contribution_id] = {
+            "contributor": contributor,
+            "type": type,
+            "description": description,
+            "timestamp": time.time(),
+            "status": "pending",
+        }
+
+        if contributor not in self.contributors:
+            self.contributors[contributor] = {"contributions": [], "total": 0}
+        self.contributors[contributor]["contributions"].append(contribution_id)
+        self.contributors[contributor]["total"] += 1
+
+    def approve_contribution(self, contribution_id: str) -> bool:
+        """Approve contribution."""
+        if contribution_id in self.contributions:
+            self.contributions[contribution_id]["status"] = "approved"
+            return True
+        return False
+
+    def get_contributor_stats(self, contributor: str) -> dict:
+        """Get contributor statistics."""
+        if contributor not in self.contributors:
+            return {}
+
+        contribs = self.contributors[contributor]
+        approved = sum(
+            1
+            for cid in contribs["contributions"]
+            if self.contributions.get(cid, {}).get("status") == "approved"
+        )
+
+        return {
+            "total": contribs["total"],
+            "approved": approved,
+            "pending": contribs["total"] - approved,
+        }
 ```
 
 

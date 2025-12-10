@@ -43,27 +43,68 @@ Graph Traversal is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Graph Traversal is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Graph Traversal is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Graph Traversal is often used in combination with:
+- **Graph traversal:** BFS, DFS for exploring graph structures
+- **Shortest path:** Dijkstra, Bellman-Ford for pathfinding
+- **Data structures:** Adjacency lists, adjacency matrices
+
 
 ## Key Implementation Details
 
 ```python
 class GraphTraversal:
-    """Graph Traversal implementation."""
-    
+    """Graph traversal algorithms."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
+        self.graph: Dict[str, List[str]] = {}
+
+    def add_edge(self, u: str, v: str) -> None:
+        """Add edge."""
+        if u not in self.graph:
+            self.graph[u] = []
+        if v not in self.graph[u]:
+            self.graph[u].append(v)
+
+    def dfs(self, start: str) -> List[str]:
+        """Depth-first search."""
+        visited = set()
+        result = []
+
+        def dfs_helper(node: str):
+            if node in visited:
+                return
+            visited.add(node)
+            result.append(node)
+            for neighbor in self.graph.get(node, []):
+                dfs_helper(neighbor)
+
+        dfs_helper(start)
+        return result
+
+    def bfs(self, start: str) -> List[str]:
+        """Breadth-first search."""
+        from collections import deque
+
+        queue = deque([start])
+        visited = {start}
+        result = []
+
+        while queue:
+            node = queue.popleft()
+            result.append(node)
+            for neighbor in self.graph.get(node, []):
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append(neighbor)
+
         return result
 ```
 

@@ -43,28 +43,70 @@ Huffman is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Greedy Algorithm category, following similar design patterns and optimization strategies.
+Huffman is conceptually similar to:
+- Other algorithms in the Greedy Algorithm category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Huffman is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Huffman is often used in combination with:
+- Related algorithms in the Greedy Algorithm category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class Huffman:
-    """Huffman implementation."""
-    
-    def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+class HuffmanNode:
+    """Huffman tree node."""
+
+    def __init__(self, char=None, freq=0, left=None, right=None):
+        self.char = char
+        self.freq = freq
+        self.left = left
+        self.right = right
+
+    def __lt__(self, other):
+        return self.freq < other.freq
+
+
+def build_huffman_tree(text: str) -> HuffmanNode:
+    """Build Huffman tree."""
+    from collections import Counter
+    from heapq import heappush, heappop
+
+    freq = Counter(text)
+    heap = []
+
+    for char, count in freq.items():
+        heappush(heap, HuffmanNode(char=char, freq=count))
+
+    while len(heap) > 1:
+        left = heappop(heap)
+        right = heappop(heap)
+        merged = HuffmanNode(freq=left.freq + right.freq, left=left, right=right)
+        heappush(heap, merged)
+
+    return heap[0] if heap else None
+
+
+def build_huffman_codes(root: HuffmanNode, code: str = "", codes: dict = None) -> dict:
+    """Build Huffman codes."""
+    if codes is None:
+        codes = {}
+
+    if root.char is not None:
+        codes[root.char] = code
+    else:
+        if root.left:
+            build_huffman_codes(root.left, code + "0", codes)
+        if root.right:
+            build_huffman_codes(root.right, code + "1", codes)
+
+    return codes
 ```
 
 

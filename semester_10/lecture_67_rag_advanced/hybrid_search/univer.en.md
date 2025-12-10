@@ -43,28 +43,45 @@ Hybrid Search is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Hybrid Search is conceptually similar to:
+- **Other search algorithms:** Linear Search, Hash-based search (different search strategies)
+- **Tree traversal:** In-order, pre-order traversal (systematic exploration)
+- **Binary operations:** Binary search trees use similar divide-and-conquer approach
+
 
 ## Related Algorithms
 
-- Hybrid Search is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Hybrid Search is often used in combination with:
+- **Sorting algorithms:** Binary Search requires sorted data
+- **Other search algorithms:** Linear Search, Hash-based search
+- **Data structures:** Trees, Hash tables for efficient searching
+
 
 ## Key Implementation Details
 
 ```python
 class HybridSearch:
-    """Hybrid Search implementation."""
-    
+    """Hybrid search combining multiple methods."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.searchers: List[dict] = {}
+
+    def add_searcher(self, name: str, searcher: callable, weight: float) -> None:
+        """Add search method."""
+        self.searchers[name] = {"searcher": searcher, "weight": weight}
+
+    def search(self, query: str, top_k: int = 10) -> List[tuple]:
+        """Hybrid search."""
+        all_results = []
+        for name, searcher_info in self.searchers.items():
+            results = searcher_info["searcher"](query)
+            weight = searcher_info["weight"]
+            for result, score in results:
+                all_results.append((result, score * weight))
+
+        # Sort by weighted score
+        all_results.sort(key=lambda x: x[1], reverse=True)
+        return all_results[:top_k]
 ```
 
 

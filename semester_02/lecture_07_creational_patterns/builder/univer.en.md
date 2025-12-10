@@ -43,28 +43,36 @@ Builder is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Creational Pattern category, following similar design patterns and optimization strategies.
+Builder is conceptually similar to:
+- Other algorithms in the Creational Pattern category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Builder is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Builder is often used in combination with:
+- Related algorithms in the Creational Pattern category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class Builder:
-    """Builder implementation."""
-    
+class Product:
+    """Product class."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.parts: List[str] = []
+
+    def add_part(self, part: str) -> None:
+        """Add part to product."""
+        self.parts.append(part)
+
+    def show(self) -> str:
+        """Show product parts."""
+        return ", ".join(self.parts)
 ```
 
 

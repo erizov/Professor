@@ -43,28 +43,60 @@ Process Scheduling is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Operating Systems Fundamentals category, following similar design patterns and optimization strategies.
+Process Scheduling is conceptually similar to:
+- Other algorithms in the Operating Systems Fundamentals category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Process Scheduling is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Process Scheduling is often used in combination with:
+- Related algorithms in the Operating Systems Fundamentals category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class ProcessScheduling:
-    """Process Scheduling implementation."""
-    
-    def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+class ProcessScheduler:
+    """Process scheduler."""
+
+    def __init__(self, algorithm: str = "fcfs"):
+        self.processes: List[dict] = []
+        self.algorithm = algorithm
+
+    def add_process(
+        self, process_id: str, arrival_time: float, burst_time: float, priority: int = 0
+    ) -> None:
+        """Add process."""
+        self.processes.append(
+            {
+                "id": process_id,
+                "arrival": arrival_time,
+                "burst": burst_time,
+                "priority": priority,
+                "status": "ready",
+            }
+        )
+
+    def schedule(self) -> Optional[dict]:
+        """Schedule next process."""
+        if not self.processes:
+            return None
+
+        ready = [p for p in self.processes if p["status"] == "ready"]
+        if not ready:
+            return None
+
+        if self.algorithm == "fcfs":
+            return min(ready, key=lambda p: p["arrival"])
+        elif self.algorithm == "sjf":
+            return min(ready, key=lambda p: p["burst"])
+        elif self.algorithm == "priority":
+            return min(ready, key=lambda p: p["priority"])
+        return ready[0]
 ```
 
 

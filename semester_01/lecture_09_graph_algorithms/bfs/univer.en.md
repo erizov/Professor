@@ -56,28 +56,189 @@ Bfs is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Sorting category, following similar design patterns and optimization strategies.
+Bfs is conceptually similar to:
+- Other algorithms in the Algorithms category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Bfs is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Bfs is often used in combination with:
+- Related algorithms in the Algorithms category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class Bfs:
-    """Bfs implementation."""
-    
-    def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
+class Graph:
+    """Graph representation using adjacency list."""
+
+    def __init__(self, directed: bool = False):
+        """
+        Initialize graph.
+
+        Args:
+            directed: True for directed graph, False for undirected
+        """
+        self.graph: Dict[int, List[int]] = defaultdict(list)
+        self.directed = directed
+
+    def add_edge(self, u: int, v: int) -> None:
+        """Add edge to graph."""
+        self.graph[u].append(v)
+        if not self.directed:
+            self.graph[v].append(u)
+
+    def bfs(self, start: int) -> List[int]:
+        """
+        Perform BFS traversal from start node.
+
+        Args:
+            start: Starting node
+
+        Returns:
+            List of nodes in BFS order
+        """
+        visited: Set[int] = set()
+        result: List[int] = []
+        queue: deque = deque([start])
+        visited.add(start)
+
+        while queue:
+            node = queue.popleft()
+            result.append(node)
+
+            for neighbor in self.graph[node]:
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append(neighbor)
+
         return result
+
+    def shortest_path(self, start: int, end: int) -> Optional[List[int]]:
+        """
+        Find shortest path using BFS.
+
+        Args:
+            start: Start node
+            end: End node
+
+        Returns:
+            List representing path, or None if no path exists
+        """
+        if start == end:
+            return [start]
+
+        visited: Set[int] = {start}
+        queue: deque = deque([(start, [start])])
+
+        while queue:
+            node, path = queue.popleft()
+
+            for neighbor in self.graph[node]:
+                if neighbor == end:
+                    return path + [neighbor]
+
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append((neighbor, path + [neighbor]))
+
+        return None  # No path found
+
+    def shortest_distance(self, start: int, end: int) -> int:
+        """
+        Find shortest distance (number of edges) using BFS.
+
+        Args:
+            start: Start node
+            end: End node
+
+        Returns:
+            Distance, or -1 if no path
+        """
+        if start == end:
+            return 0
+
+        visited: Set[int] = {start}
+        queue: deque = deque([(start, 0)])
+
+        while queue:
+            node, dist = queue.popleft()
+
+            for neighbor in self.graph[node]:
+                if neighbor == end:
+                    return dist + 1
+
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append((neighbor, dist + 1))
+
+        return -1  # No path
+
+    def all_paths_distance(self, start: int) -> Dict[int, int]:
+        """
+        Find shortest distance from start to all reachable nodes.
+
+        Args:
+            start: Starting node
+
+        Returns:
+            Dictionary mapping node to distance
+        """
+        distances: Dict[int, int] = {start: 0}
+        queue: deque = deque([start])
+
+        while queue:
+            node = queue.popleft()
+            current_dist = distances[node]
+
+            for neighbor in self.graph[node]:
+                if neighbor not in distances:
+                    distances[neighbor] = current_dist + 1
+                    queue.append(neighbor)
+
+        return distances
+
+    def is_bipartite(self) -> bool:
+        """
+        Check if graph is bipartite using BFS.
+
+        Returns:
+            True if bipartite, False otherwise
+        """
+        # Color nodes with 0 and 1
+        colors: Dict[int, int] = {}
+
+        # Get all nodes
+        all_nodes = set(self.graph.keys())
+        for neighbors in self.graph.values():
+            all_nodes.update(neighbors)
+
+        # Check each component
+        for start_node in all_nodes:
+            if start_node in colors:
+                continue
+
+            # BFS coloring
+            queue: deque = deque([start_node])
+            colors[start_node] = 0
+
+            while queue:
+                node = queue.popleft()
+                current_color = colors[node]
+                next_color = 1 - current_color
+
+                for neighbor in self.graph[node]:
+                    if neighbor not in colors:
+                        colors[neighbor] = next_color
+                        queue.append(neighbor)
+                    elif colors[neighbor] != next_color:
+                        return False  # Adjacent nodes same color
+
+        return True
 ```
 
 

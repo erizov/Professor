@@ -43,28 +43,50 @@ Io Scheduling is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Io Scheduling is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Io Scheduling is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Io Scheduling is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class IoScheduling:
-    """Io Scheduling implementation."""
-    
+class IOScheduler:
+    """I/O scheduling."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.queue: List[dict] = []
+        self.scheduling_algorithm = "fcfs"
+
+    def set_algorithm(self, algorithm: str) -> None:
+        """Set scheduling algorithm."""
+        self.scheduling_algorithm = algorithm
+
+    def enqueue_request(self, request: dict) -> None:
+        """Enqueue I/O request."""
+        self.queue.append(request)
+
+    def schedule(self) -> Optional[dict]:
+        """Schedule next I/O request."""
+        if not self.queue:
+            return None
+
+        if self.scheduling_algorithm == "fcfs":
+            return self.queue.pop(0)
+        elif self.scheduling_algorithm == "sstf":
+            # Shortest seek time first
+            return min(self.queue, key=lambda x: x.get("seek_time", 0))
+        else:
+            return self.queue.pop(0)
 ```
 
 

@@ -43,28 +43,50 @@ Single Responsibility is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the SOLID category, following similar design patterns and optimization strategies.
+Single Responsibility is conceptually similar to:
+- Other algorithms in the SOLID category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Single Responsibility is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Single Responsibility is often used in combination with:
+- Related algorithms in the SOLID category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class SingleResponsibility:
-    """Single Responsibility implementation."""
-    
-    def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+    """Single Responsibility Principle example."""
+
+    class UserRepository:
+        """Handles user data."""
+
+        def get_user(self, user_id: str) -> dict:
+            return {"id": user_id, "name": "User"}
+
+    class UserValidator:
+        """Validates user data."""
+
+        def validate(self, user: dict) -> bool:
+            return "name" in user and user["name"]
+
+    class UserService:
+        """Orchestrates user operations."""
+
+        def __init__(self):
+            self.repository = SingleResponsibility.UserRepository()
+            self.validator = SingleResponsibility.UserValidator()
+
+        def get_validated_user(self, user_id: str) -> Optional[dict]:
+            user = self.repository.get_user(user_id)
+            if self.validator.validate(user):
+                return user
+            return None
 ```
 
 

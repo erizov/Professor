@@ -43,28 +43,58 @@ Unit Of Work is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Data Access Pattern category, following similar design patterns and optimization strategies.
+Unit Of Work is conceptually similar to:
+- Other algorithms in the Data Access Pattern category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Unit Of Work is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Unit Of Work is often used in combination with:
+- Related algorithms in the Data Access Pattern category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class UnitOfWork:
-    """Unit Of Work implementation."""
-    
+    """Unit of Work pattern implementation."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.new_entities: List[any] = []
+        self.modified_entities: List[any] = []
+        self.deleted_entities: List[any] = []
+
+    def register_new(self, entity: any) -> None:
+        """Register new entity."""
+        if entity not in self.new_entities:
+            self.new_entities.append(entity)
+
+    def register_modified(self, entity: any) -> None:
+        """Register modified entity."""
+        if entity not in self.modified_entities:
+            self.modified_entities.append(entity)
+
+    def register_deleted(self, entity: any) -> None:
+        """Register deleted entity."""
+        if entity not in self.deleted_entities:
+            self.deleted_entities.append(entity)
+
+    def commit(self) -> None:
+        """Commit all changes."""
+        # In real implementation, would persist changes
+        self.new_entities.clear()
+        self.modified_entities.clear()
+        self.deleted_entities.clear()
+
+    def rollback(self) -> None:
+        """Rollback all changes."""
+        self.new_entities.clear()
+        self.modified_entities.clear()
+        self.deleted_entities.clear()
 ```
 
 

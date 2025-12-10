@@ -43,28 +43,45 @@ Time Series Storage is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Time Series Storage is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Time Series Storage is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Time Series Storage is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class TimeSeriesStorage:
-    """Time Series Storage implementation."""
-    
+    """Time series storage."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.series: Dict[str, List[dict]] = {}
+        self.indexes: Dict[str, dict] = {}
+
+    def write(self, series_id: str, timestamp: float, value: float) -> None:
+        """Write data point."""
+        if series_id not in self.series:
+            self.series[series_id] = []
+        self.series[series_id].append({"timestamp": timestamp, "value": value})
+
+    def read(self, series_id: str, start_time: float, end_time: float) -> List[dict]:
+        """Read time range."""
+        if series_id in self.series:
+            return [
+                p
+                for p in self.series[series_id]
+                if start_time <= p["timestamp"] <= end_time
+            ]
+        return []
 ```
 
 

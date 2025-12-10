@@ -43,28 +43,49 @@ Service Discovery is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Service Discovery is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Service Discovery is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Service Discovery is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class ServiceDiscovery:
-    """Service Discovery implementation."""
-    
+    """Service discovery."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.services: Dict[str, dict] = {}
+        self.registry: Dict[str, List[str]] = {}
+
+    def register_service(
+        self, service_id: str, address: str, port: int, metadata: dict = None
+    ) -> None:
+        """Register service."""
+        self.services[service_id] = {
+            "address": address,
+            "port": port,
+            "metadata": metadata or {},
+        }
+        service_type = metadata.get("type", "default") if metadata else "default"
+        if service_type not in self.registry:
+            self.registry[service_type] = []
+        self.registry[service_type].append(service_id)
+
+    def discover(self, service_type: str) -> List[dict]:
+        """Discover services by type."""
+        if service_type in self.registry:
+            return [self.services[sid] for sid in self.registry[service_type]]
+        return []
 ```
 
 

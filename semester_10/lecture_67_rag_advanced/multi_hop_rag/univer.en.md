@@ -43,28 +43,52 @@ Multi Hop Rag is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Multi Hop Rag is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Multi Hop Rag is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Multi Hop Rag is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
-class MultiHopRag:
-    """Multi Hop Rag implementation."""
-    
+class MultiHopRAG:
+    """Multi-hop RAG system."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.knowledge_base: Dict[str, dict] = {}
+        self.retrievers: List[callable] = {}
+
+    def add_document(self, doc_id: str, content: str, metadata: dict = None) -> None:
+        """Add document."""
+        self.knowledge_base[doc_id] = {"content": content, "metadata": metadata or {}}
+
+    def retrieve(self, query: str, hop: int = 1) -> List[dict]:
+        """Multi-hop retrieval."""
+        results = []
+        for doc_id, doc in self.knowledge_base.items():
+            if query.lower() in doc["content"].lower():
+                results.append(
+                    {"doc_id": doc_id, "content": doc["content"], "hop": hop}
+                )
+        return results
+
+    def answer(self, query: str, max_hops: int = 3) -> str:
+        """Answer query with multi-hop reasoning."""
+        context = []
+        for hop in range(1, max_hops + 1):
+            retrieved = self.retrieve(query, hop)
+            context.extend(retrieved)
+        # Simplified: return answer
+        return "Answer based on retrieved context"
 ```
 
 

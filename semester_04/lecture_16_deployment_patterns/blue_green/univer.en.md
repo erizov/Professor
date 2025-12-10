@@ -43,28 +43,51 @@ Blue Green is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Deployment category, following similar design patterns and optimization strategies.
+Blue Green is conceptually similar to:
+- Other algorithms in the Deployment category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Blue Green is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Blue Green is often used in combination with:
+- Related algorithms in the Deployment category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class BlueGreen:
-    """Blue Green implementation."""
-    
+    """Blue-Green deployment."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.blue_version = None
+        self.green_version = None
+        self.active = "blue"
+        self.traffic_split = {"blue": 1.0, "green": 0.0}
+
+    def deploy_green(self, version: str) -> None:
+        """Deploy green version."""
+        self.green_version = version
+
+    def switch_traffic(self, green_percentage: float) -> None:
+        """Switch traffic to green."""
+        self.traffic_split["green"] = green_percentage
+        self.traffic_split["blue"] = 1.0 - green_percentage
+
+    def complete_switch(self) -> None:
+        """Complete switch to green."""
+        self.active = "green"
+        self.traffic_split = {"blue": 0.0, "green": 1.0}
+        self.blue_version, self.green_version = self.green_version, self.blue_version
+
+    def rollback(self) -> None:
+        """Rollback to blue."""
+        self.active = "blue"
+        self.traffic_split = {"blue": 1.0, "green": 0.0}
 ```
 
 

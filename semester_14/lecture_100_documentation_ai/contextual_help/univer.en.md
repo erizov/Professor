@@ -43,28 +43,56 @@ Contextual Help is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Contextual Help is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Contextual Help is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Contextual Help is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class ContextualHelp:
-    """Contextual Help implementation."""
-    
+    """Contextual help system."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.help_topics: Dict[str, dict] = {}
+        self.context_rules: List[dict] = {}
+
+    def add_help_topic(
+        self, topic_id: str, title: str, content: str, keywords: List[str]
+    ) -> None:
+        """Add help topic."""
+        self.help_topics[topic_id] = {
+            "title": title,
+            "content": content,
+            "keywords": keywords,
+        }
+
+    def get_help(self, context: str) -> List[dict]:
+        """Get contextual help."""
+        context_lower = context.lower()
+        matches = []
+
+        for topic_id, topic in self.help_topics.items():
+            score = sum(
+                1 for keyword in topic["keywords"] if keyword.lower() in context_lower
+            )
+            if score > 0:
+                matches.append(
+                    {"topic_id": topic_id, "title": topic["title"], "score": score}
+                )
+
+        matches.sort(key=lambda x: x["score"], reverse=True)
+        return matches[:5]  # Top 5 matches
 ```
 
 

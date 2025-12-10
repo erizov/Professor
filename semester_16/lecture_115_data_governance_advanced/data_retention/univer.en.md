@@ -43,28 +43,58 @@ Data Retention is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Data Retention is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Data Retention is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Data Retention is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class DataRetention:
-    """Data Retention implementation."""
-    
+    """Data retention policy manager."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.policies: Dict[str, dict] = {}
+        self.records: Dict[str, float] = {}
+
+    def add_policy(self, data_type: str, retention_days: int) -> None:
+        """Add retention policy."""
+        import time
+
+        self.policies[data_type] = {
+            "retention_days": retention_days,
+            "created_at": time.time(),
+        }
+
+    def register_data(self, data_id: str, data_type: str) -> None:
+        """Register data."""
+        import time
+
+        self.records[data_id] = {"type": data_type, "created_at": time.time()}
+
+    def get_expired(self) -> List[str]:
+        """Get expired data IDs."""
+        import time
+
+        expired = []
+        current_time = time.time()
+        for data_id, record in self.records.items():
+            policy = self.policies.get(record["type"])
+            if policy:
+                age_days = (current_time - record["created_at"]) / 86400
+                if age_days > policy["retention_days"]:
+                    expired.append(data_id)
+        return expired
 ```
 
 

@@ -43,28 +43,35 @@ Red Black Tree is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Data Structure category, following similar design patterns and optimization strategies.
+Red Black Tree is conceptually similar to:
+- Other algorithms in the Data Structure category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Red Black Tree is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Red Black Tree is often used in combination with:
+- **Graph traversal:** BFS, DFS for exploring graph structures
+- **Shortest path:** Dijkstra, Bellman-Ford for pathfinding
+- **Data structures:** Adjacency lists, adjacency matrices
+
 
 ## Key Implementation Details
 
 ```python
-class RedBlackTree:
-    """Red Black Tree implementation."""
-    
-    def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+class RBNode:
+    """Red-Black tree node."""
+
+    RED = True
+    BLACK = False
+
+    def __init__(self, val: int):
+        self.val = val
+        self.color = RBNode.RED
+        self.left: Optional["RBNode"] = None
+        self.right: Optional["RBNode"] = None
+        self.parent: Optional["RBNode"] = None
 ```
 
 

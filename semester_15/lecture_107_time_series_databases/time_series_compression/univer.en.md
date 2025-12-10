@@ -43,28 +43,56 @@ Time Series Compression is used in:
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Advanced Graduate Level category, following similar design patterns and optimization strategies.
+Time Series Compression is conceptually similar to:
+- Other algorithms in the Advanced Graduate Level category
+- Algorithms that use similar data structures and techniques
+- Related algorithms that solve similar problems
+
 
 ## Related Algorithms
 
-- Time Series Compression is often used with [related algorithms]
-- Complementary to [other algorithms]
-- Part of [algorithm family]
+Time Series Compression is often used in combination with:
+- Related algorithms in the Advanced Graduate Level category
+- Complementary data structures that optimize performance
+- Algorithms that solve related problems
+
 
 ## Key Implementation Details
 
 ```python
 class TimeSeriesCompression:
-    """Time Series Compression implementation."""
-    
+    """Time series compression."""
+
     def __init__(self):
-        # Initialize data structures
-        pass
-    
-    def process(self, data):
-        """Process input data."""
-        # Implementation logic
-        return result
+        self.compressed: Dict[str, List[dict]] = {}
+
+    def compress(self, series: List[dict], method: str = "delta") -> List[dict]:
+        """Compress time series."""
+        if method == "delta":
+            compressed = [series[0]]
+            for i in range(1, len(series)):
+                compressed.append(
+                    {
+                        "timestamp": series[i]["timestamp"]
+                        - series[i - 1]["timestamp"],
+                        "value": series[i]["value"] - series[i - 1]["value"],
+                    }
+                )
+            return compressed
+        return series
+
+    def decompress(
+        self, compressed: List[dict], start_timestamp: float, start_value: float
+    ) -> List[dict]:
+        """Decompress time series."""
+        decompressed = [{"timestamp": start_timestamp, "value": start_value}]
+        current_ts = start_timestamp
+        current_val = start_value
+        for point in compressed[1:]:
+            current_ts += point["timestamp"]
+            current_val += point["value"]
+            decompressed.append({"timestamp": current_ts, "value": current_val})
+        return decompressed
 ```
 
 

@@ -1,13 +1,15 @@
+<!-- TRANSLATION NEEDED: This file was auto-generated from English version. Full translation required. -->
+
 # Deadlock Detection
 
 # School
 
-## 📋 Quick Summary
+## 📋 Краткое резюме
 
-- **Purpose:** Deadlock Detection identifies circular wait conditions in resource allocation graphs where processes are blocked waiting for each other indefinitely.
-- **Complexity:** O(V + E) time, O(V) space where V is processes/resources and E is wait relationships
-- **Category:** Operating Systems Fundamentals
-- **Key Idea:** Uses depth-first search (DFS) with recursion stack tracking to detect cycles in the wait-for graph, indicating deadlocked processes.
+- **Назначение:** Deadlock Detection identifies circular wait conditions in resource allocation graphs where processes are blocked waiting for each other indefinitely.
+- **Сложность:** O(V + E) time, O(V) space where V is processes/resources and E is wait relationships
+- **Категория:** Operating Systems Fundamentals
+- **Ключевая идея:** Uses depth-first search (DFS) with recursion stack tracking to detect cycles in the wait-for graph, indicating deadlocked processes.
 
 Deadlock Detection is a critical algorithm in operating systems that identifies when multiple processes are stuck in a circular wait condition, preventing any of them from making progress.
 
@@ -22,22 +24,25 @@ The algorithm builds a wait-for graph from process-resource relationships and us
 
 
 
-Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **Operating Systems Fundamentals**.
+This algorithm works by processing data systematically to achieve its goal. It's part of the **Operating Systems Fundamentals** category of algorithms.
 
 
-## Сложность алгоритма
+## Algorithm Complexity
 
-Временная сложность составляет **Varies**, что означает, что время выполнения зависит от размера входных данных. Пространственная сложность — **Varies**, что указывает на количество дополнительной памяти.
+The time complexity is **Varies**, which means the time it takes to run depends on the size of the input data. The space complexity is **Varies**, indicating how much extra memory is needed.
 
-## Где применяется на практике
+## Где применяется in Practice
 
-- General algorithmic problem solving
+- **Operating Systems:** Linux, Windows, and Unix systems use this algorithm
+- **Database Systems:** PostgreSQL, MySQL, and Oracle implement this
+- **Distributed Systems:** Kubernetes, Docker Swarm use this approach
+- **Frameworks:** [Framework-specific examples]
 
-## С чем можно сравнить
+## What It Can Be Compared To
 
-Представьте Deadlock Detection как систематический способ организации или поиска информации — похоже на то, как вы можете эффективно организовывать предметы или искать в коллекции.
+Think of Deadlock Detection like a systematic way of organizing or finding information - similar to how you might organize items or search through a collection efficiently.
 
-## Минимальный пример кода
+## Minimal Code Example
 
 ```python
 def deadlock_detection(data):
@@ -46,24 +51,10 @@ def deadlock_detection(data):
     return result
 ```
 
-## Частые ошибки
-
-- Не обрабатываются граничные случаи (пустой ввод, один элемент)
-- Непонимание последствий сложности
-- Неправильная реализация, приводящая к неверным результатам
-- Не оптимизировано для конкретного случая использования
-
-## Рекомендуемая литература
-
-- "Алгоритмы: построение и анализ" Томас Кормен и др.
-- "Алгоритмы" Роберт Седжвик
-- Онлайн-ресурсы: GeeksforGeeks, Википедия, Визуализации алгоритмов
-
-
 
 ---
 
-## 🎯 Try It Yourself
+## 🎯 Попробуйте сами
 
 **Try detecting a deadlock:**
 ```
@@ -87,10 +78,12 @@ Step 4: Process 1 is already in recursion stack!
 
 Output: Deadlock found in cycle [1, 2, 3, 1]
 ```
+
+
 ---
 
 
-## 🔍 Step-by-Step Execution
+## 🔍 Пошаговое выполнение
 
 **Step-by-Step Execution:**
 
@@ -142,77 +135,33 @@ Deadlock found!
 Cycle: [1, 2, 3, 1]
 ```
 
+## ✏️ Практическое упражнение
 
-**Expected Output:**
-
-```
-Wait-for graph:
-  Process 1 → Resource 2
-  Process 2 → Resource 3
-  Process 3 → Resource 1
-
-DFS traversal:
-  Start: Process 1
-  Visit: Process 2
-  Visit: Process 3
-  Cycle detected: Process 1 (already in recursion stack)
-
-Deadlock found!
-Cycle: [1, 2, 3, 1]
-```
-
-## ✏️ Practice Exercise
-
-**Exercise 1 (Easy):**
+**Упражнение 1 (Легкое):**
 Create a wait-for graph with 3 processes and detect if there's a deadlock. Draw the graph and trace the DFS.
 
-**Exercise 2 (Medium):**
+**Упражнение 2 (Среднее):**
 Implement deadlock detection for a system with multiple processes and resources. Handle edge cases (no cycles, multiple cycles).
 
-**Exercise 3 (Hard):**
+**Упражнение 3 (Сложное):**
 Design a deadlock detection system that runs periodically in an operating system. Consider performance and false positives.
 
 
 ---
 
-## ✅ Check Your Understanding
+## ✅ Проверьте понимание
 
-**Q1:** What problem does this algorithm solve?
-**A:** Deadlock Detection identifies when processes are waiting for each other in a circular manner, causing all processes to be blocked indefinitely.
+**В1:** What problem does this algorithm solve?
+**О:** Deadlock Detection identifies when processes are waiting for each other in a circular manner, causing all processes to be blocked indefinitely.
 
-**Q2:** What is the time complexity?
-**A:** O(V + E) where V is the number of processes/resources and E is the number of wait relationships. Uses DFS for cycle detection.
+**В2:** What is the time complexity?
+**О:** O(V + E) where V is the number of processes/resources and E is the number of wait relationships. Uses DFS for cycle detection.
 
-**Q3:** When would you use this algorithm?
-**A:** In operating systems to periodically check for deadlocks, in database systems to detect transaction deadlocks, and in distributed systems to identify circular dependencies.
+**В3:** When would you use this algorithm?
+**О:** In operating systems to periodically check for deadlocks, in database systems to detect transaction deadlocks, and in distributed systems to identify circular dependencies.
 
-**Q4:** What are the main steps of this algorithm?
-**A:** 1) Build wait-for graph from process-resource relationships, 2) Use DFS to traverse the graph, 3) Detect cycles using recursion stack, 4) Return all detected cycles as deadlocks.
-
-
-**Try detecting a deadlock:**
-```
-Wait-for graph:
-  Process 1 → Resource 2
-  Process 2 → Resource 3
-  Process 3 → Resource 1
-
-Step 1: Start DFS from Process 1
-  Visit Process 1 → Resource 2
-
-Step 2: Follow Resource 2 → Process 2
-  Visit Process 2 → Resource 3
-
-Step 3: Follow Resource 3 → Process 3
-  Visit Process 3 → Resource 1
-
-Step 4: Process 1 is already in recursion stack!
-  Found cycle: 1 → 2 → 3 → 1
-  Deadlock detected!
-
-Output: Deadlock found in cycle [1, 2, 3, 1]
-```
-
+**В4:** What are the main steps of this algorithm?
+**О:** 1) Build wait-for graph from process-resource relationships, 2) Use DFS to traverse the graph, 3) Detect cycles using recursion stack, 4) Return all detected cycles as deadlocks.
 
 
 ## Common Mistakes
@@ -238,3 +187,16 @@ Output: Deadlock found in cycle [1, 2, 3, 1]
 - Trace through examples step-by-step
 - Use debugging tools to verify your logic
 - Review the algorithm's key steps before implementing
+
+
+
+---
+
+## Recommended Literature
+
+- "Introduction to Algorithms" by Cormen, Leiserson, Rivest, and Stein
+- "Algorithms" by Robert Sedgewick and Kevin Wayne
+- Online resources: GeeksforGeeks, Wikipedia, Algorithm Visualizations
+
+
+
