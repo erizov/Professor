@@ -1,0 +1,1278 @@
+Java Placeholder Files Report
+======================================================================
+
+Algorithm: insertion_sort
+  Path: semester_01\lecture_01_sorting_fundamentals\insertion_sort
+  File: semester_01\lecture_01_sorting_fundamentals\insertion_sort\Algorithm.java
+  Reason: Too short (23 lines)
+
+Algorithm: selection_sort
+  Path: semester_01\lecture_01_sorting_fundamentals\selection_sort
+  File: semester_01\lecture_01_sorting_fundamentals\selection_sort\Algorithm.java
+  Reason: Too short (26 lines)
+
+Algorithm: linear_search
+  Path: semester_01\lecture_04_searching\linear_search
+  File: semester_01\lecture_04_searching\linear_search\Algorithm.java
+  Reason: Too short (20 lines)
+
+Algorithm: binary_heap
+  Path: semester_01\lecture_07_heaps_priority\binary_heap
+  File: semester_01\lecture_07_heaps_priority\binary_heap\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: fibonacci_heap
+  Path: semester_01\lecture_07_heaps_priority\fibonacci_heap
+  File: semester_01\lecture_07_heaps_priority\fibonacci_heap\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: dependency_inversion
+  Path: semester_02\lecture_06_solid_principles\dependency_inversion
+  File: semester_02\lecture_06_solid_principles\dependency_inversion\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: interface_segregation
+  Path: semester_02\lecture_06_solid_principles\interface_segregation
+  File: semester_02\lecture_06_solid_principles\interface_segregation\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: prototype
+  Path: semester_02\lecture_07_creational_patterns\prototype
+  File: semester_02\lecture_07_creational_patterns\prototype\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: bridge
+  Path: semester_02\lecture_08_structural_patterns\bridge
+  File: semester_02\lecture_08_structural_patterns\bridge\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: chain_of_responsibility
+  Path: semester_02\lecture_09_behavioral_patterns\chain_of_responsibility
+  File: semester_02\lecture_09_behavioral_patterns\chain_of_responsibility\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: command
+  Path: semester_02\lecture_09_behavioral_patterns\command
+  File: semester_02\lecture_09_behavioral_patterns\command\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: template_method
+  Path: semester_02\lecture_09_behavioral_patterns\template_method
+  File: semester_02\lecture_09_behavioral_patterns\template_method\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: clean_architecture
+  Path: semester_02\lecture_10_architectural_patterns\clean_architecture
+  File: semester_02\lecture_10_architectural_patterns\clean_architecture\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: readers_writers
+  Path: semester_02\lecture_12_concurrency_patterns\readers_writers
+  File: semester_02\lecture_12_concurrency_patterns\readers_writers\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: decision_tree
+  Path: semester_03\lecture_12_ml_algorithms\decision_tree
+  File: semester_03\lecture_12_ml_algorithms\decision_tree\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: naive_bayes
+  Path: semester_03\lecture_12_ml_algorithms\naive_bayes
+  File: semester_03\lecture_12_ml_algorithms\naive_bayes\Algorithm.java
+  Reason: Too short (22 lines)
+
+Algorithm: boyer_moore
+  Path: semester_03\lecture_14_string_algorithms\boyer_moore
+  File: semester_03\lecture_14_string_algorithms\boyer_moore\Algorithm.java
+  Reason: Too short (22 lines)
+
+Algorithm: rabin_karp
+  Path: semester_03\lecture_14_string_algorithms\rabin_karp
+  File: semester_03\lecture_14_string_algorithms\rabin_karp\Algorithm.java
+  Reason: Too short (22 lines)
+
+Algorithm: activity_selection
+  Path: semester_03\lecture_15_greedy_algorithms\activity_selection
+  File: semester_03\lecture_15_greedy_algorithms\activity_selection\Algorithm.java
+  Reason: Too short (22 lines)
+
+Algorithm: fractional_knapsack
+  Path: semester_03\lecture_15_greedy_algorithms\fractional_knapsack
+  File: semester_03\lecture_15_greedy_algorithms\fractional_knapsack\Algorithm.java
+  Reason: Too short (22 lines)
+
+Algorithm: huffman
+  Path: semester_03\lecture_15_greedy_algorithms\huffman
+  File: semester_03\lecture_15_greedy_algorithms\huffman\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: gradient_descent
+  Path: semester_03\lecture_16_advanced_ml\gradient_descent
+  File: semester_03\lecture_16_advanced_ml\gradient_descent\Algorithm.java
+  Reason: Too short (22 lines)
+
+Algorithm: neural_network
+  Path: semester_03\lecture_16_advanced_ml\neural_network
+  File: semester_03\lecture_16_advanced_ml\neural_network\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: random_forest
+  Path: semester_03\lecture_16_advanced_ml\random_forest
+  File: semester_03\lecture_16_advanced_ml\random_forest\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: blue_green
+  Path: semester_04\lecture_16_deployment_patterns\blue_green
+  File: semester_04\lecture_16_deployment_patterns\blue_green\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: caching
+  Path: semester_04\lecture_17_performance\caching
+  File: semester_04\lecture_17_performance\caching\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: aes
+  Path: semester_04\lecture_18_crypto_algorithms\aes
+  File: semester_04\lecture_18_crypto_algorithms\aes\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: sha256
+  Path: semester_04\lecture_18_crypto_algorithms\sha256
+  File: semester_04\lecture_18_crypto_algorithms\sha256\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: consistent_hashing
+  Path: semester_04\lecture_19_distributed_patterns\consistent_hashing
+  File: semester_04\lecture_19_distributed_patterns\consistent_hashing\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: gossip_protocol
+  Path: semester_04\lecture_19_distributed_patterns\gossip_protocol
+  File: semester_04\lecture_19_distributed_patterns\gossip_protocol\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: feature_extraction
+  Path: semester_05\lecture_21_transfer_learning\feature_extraction
+  File: semester_05\lecture_21_transfer_learning\feature_extraction\Algorithm.java
+  Reason: Python file has 73 lines, Java only 8 meaningful lines
+
+Algorithm: fine_tuning
+  Path: semester_05\lecture_21_transfer_learning\fine_tuning
+  File: semester_05\lecture_21_transfer_learning\fine_tuning\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: transfer_learning
+  Path: semester_05\lecture_21_transfer_learning\transfer_learning
+  File: semester_05\lecture_21_transfer_learning\transfer_learning\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: efficientnet
+  Path: semester_05\lecture_22_cnn_architectures\efficientnet
+  File: semester_05\lecture_22_cnn_architectures\efficientnet\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: resnet
+  Path: semester_05\lecture_22_cnn_architectures\resnet
+  File: semester_05\lecture_22_cnn_architectures\resnet\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: vgg
+  Path: semester_05\lecture_22_cnn_architectures\vgg
+  File: semester_05\lecture_22_cnn_architectures\vgg\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: rcnn
+  Path: semester_05\lecture_23_object_detection\rcnn
+  File: semester_05\lecture_23_object_detection\rcnn\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: ssd
+  Path: semester_05\lecture_23_object_detection\ssd
+  File: semester_05\lecture_23_object_detection\ssd\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: yolo
+  Path: semester_05\lecture_23_object_detection\yolo
+  File: semester_05\lecture_23_object_detection\yolo\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: unet
+  Path: semester_05\lecture_24_segmentation\unet
+  File: semester_05\lecture_24_segmentation\unet\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: attention
+  Path: semester_05\lecture_25_transformers\attention
+  File: semester_05\lecture_25_transformers\attention\Algorithm.java
+  Reason: Python file has 61 lines, Java only 8 meaningful lines
+
+Algorithm: bert
+  Path: semester_05\lecture_25_transformers\bert
+  File: semester_05\lecture_25_transformers\bert\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: gpt
+  Path: semester_05\lecture_25_transformers\gpt
+  File: semester_05\lecture_25_transformers\gpt\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: transformer
+  Path: semester_05\lecture_25_transformers\transformer
+  File: semester_05\lecture_25_transformers\transformer\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: bagging
+  Path: semester_05\lecture_26_ensemble_methods\bagging
+  File: semester_05\lecture_26_ensemble_methods\bagging\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: bayesian_optimization
+  Path: semester_05\lecture_27_hyperparameter_optimization\bayesian_optimization
+  File: semester_05\lecture_27_hyperparameter_optimization\bayesian_optimization\Algorithm.java
+  Reason: Too short (28 lines)
+
+Algorithm: grid_search
+  Path: semester_05\lecture_27_hyperparameter_optimization\grid_search
+  File: semester_05\lecture_27_hyperparameter_optimization\grid_search\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: optuna
+  Path: semester_05\lecture_27_hyperparameter_optimization\optuna
+  File: semester_05\lecture_27_hyperparameter_optimization\optuna\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: actor_critic
+  Path: semester_05\lecture_28_reinforcement_learning\actor_critic
+  File: semester_05\lecture_28_reinforcement_learning\actor_critic\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: dqn
+  Path: semester_05\lecture_28_reinforcement_learning\dqn
+  File: semester_05\lecture_28_reinforcement_learning\dqn\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: policy_gradient
+  Path: semester_05\lecture_28_reinforcement_learning\policy_gradient
+  File: semester_05\lecture_28_reinforcement_learning\policy_gradient\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: ppo
+  Path: semester_05\lecture_28_reinforcement_learning\ppo
+  File: semester_05\lecture_28_reinforcement_learning\ppo\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: q_learning
+  Path: semester_05\lecture_28_reinforcement_learning\q_learning
+  File: semester_05\lecture_28_reinforcement_learning\q_learning\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: glove
+  Path: semester_05\lecture_29_nlp_advanced\glove
+  File: semester_05\lecture_29_nlp_advanced\glove\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: seq2seq
+  Path: semester_05\lecture_29_nlp_advanced\seq2seq
+  File: semester_05\lecture_29_nlp_advanced\seq2seq\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: word2vec
+  Path: semester_05\lecture_29_nlp_advanced\word2vec
+  File: semester_05\lecture_29_nlp_advanced\word2vec\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: lstm_timeseries
+  Path: semester_05\lecture_30_time_series\lstm_timeseries
+  File: semester_05\lecture_30_time_series\lstm_timeseries\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: ab_testing
+  Path: semester_06\lecture_31_mlops\ab_testing
+  File: semester_06\lecture_31_mlops\ab_testing\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: data_drift
+  Path: semester_06\lecture_31_mlops\data_drift
+  File: semester_06\lecture_31_mlops\data_drift\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: feature_store
+  Path: semester_06\lecture_31_mlops\feature_store
+  File: semester_06\lecture_31_mlops\feature_store\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: allreduce
+  Path: semester_06\lecture_32_distributed_ml\allreduce
+  File: semester_06\lecture_32_distributed_ml\allreduce\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: data_parallelism
+  Path: semester_06\lecture_32_distributed_ml\data_parallelism
+  File: semester_06\lecture_32_distributed_ml\data_parallelism\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: federated_learning
+  Path: semester_06\lecture_32_distributed_ml\federated_learning
+  File: semester_06\lecture_32_distributed_ml\federated_learning\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: model_parallelism
+  Path: semester_06\lecture_32_distributed_ml\model_parallelism
+  File: semester_06\lecture_32_distributed_ml\model_parallelism\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: parameter_server
+  Path: semester_06\lecture_32_distributed_ml\parameter_server
+  File: semester_06\lecture_32_distributed_ml\parameter_server\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: knowledge_distillation
+  Path: semester_06\lecture_33_model_optimization\knowledge_distillation
+  File: semester_06\lecture_33_model_optimization\knowledge_distillation\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: nas
+  Path: semester_06\lecture_33_model_optimization\nas
+  File: semester_06\lecture_33_model_optimization\nas\Algorithm.java
+  Reason: Too short (26 lines)
+
+Algorithm: pruning
+  Path: semester_06\lecture_33_model_optimization\pruning
+  File: semester_06\lecture_33_model_optimization\pruning\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantization
+  Path: semester_06\lecture_33_model_optimization\quantization
+  File: semester_06\lecture_33_model_optimization\quantization\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: tensorrt
+  Path: semester_06\lecture_33_model_optimization\tensorrt
+  File: semester_06\lecture_33_model_optimization\tensorrt\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: tflite
+  Path: semester_06\lecture_34_edge_ai\tflite
+  File: semester_06\lecture_34_edge_ai\tflite\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: blue_green_ml
+  Path: semester_06\lecture_35_deployment_patterns\blue_green_ml
+  File: semester_06\lecture_35_deployment_patterns\blue_green_ml\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: multi_armed_bandit
+  Path: semester_06\lecture_35_deployment_patterns\multi_armed_bandit
+  File: semester_06\lecture_35_deployment_patterns\multi_armed_bandit\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: shadow_deployment
+  Path: semester_06\lecture_35_deployment_patterns\shadow_deployment
+  File: semester_06\lecture_35_deployment_patterns\shadow_deployment\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: batch_inference
+  Path: semester_06\lecture_36_inference_optimization\batch_inference
+  File: semester_06\lecture_36_inference_optimization\batch_inference\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: autoscaling
+  Path: semester_06\lecture_37_cost_optimization\autoscaling
+  File: semester_06\lecture_37_cost_optimization\autoscaling\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: alerting
+  Path: semester_06\lecture_38_monitoring_production\alerting
+  File: semester_06\lecture_38_monitoring_production\alerting\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: deadlock_detection
+  Path: semester_07\lecture_39_operating_systems\deadlock_detection
+  File: semester_07\lecture_39_operating_systems\deadlock_detection\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: virtual_memory
+  Path: semester_07\lecture_39_operating_systems\virtual_memory
+  File: semester_07\lecture_39_operating_systems\virtual_memory\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: attention_mechanisms
+  Path: semester_07\lecture_40_llm_fundamentals\attention_mechanisms
+  File: semester_07\lecture_40_llm_fundamentals\attention_mechanisms\Algorithm.java
+  Reason: Too short (24 lines)
+
+Algorithm: fine_tuning_llm
+  Path: semester_07\lecture_40_llm_fundamentals\fine_tuning_llm
+  File: semester_07\lecture_40_llm_fundamentals\fine_tuning_llm\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: llm_architecture
+  Path: semester_07\lecture_40_llm_fundamentals\llm_architecture
+  File: semester_07\lecture_40_llm_fundamentals\llm_architecture\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: prompt_engineering
+  Path: semester_07\lecture_40_llm_fundamentals\prompt_engineering
+  File: semester_07\lecture_40_llm_fundamentals\prompt_engineering\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: tokenization
+  Path: semester_07\lecture_40_llm_fundamentals\tokenization
+  File: semester_07\lecture_40_llm_fundamentals\tokenization\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: few_shot_learning
+  Path: semester_07\lecture_41_llm_advanced\few_shot_learning
+  File: semester_07\lecture_41_llm_advanced\few_shot_learning\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: llm_distillation
+  Path: semester_07\lecture_41_llm_advanced\llm_distillation
+  File: semester_07\lecture_41_llm_advanced\llm_distillation\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: llm_quantization
+  Path: semester_07\lecture_41_llm_advanced\llm_quantization
+  File: semester_07\lecture_41_llm_advanced\llm_quantization\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: continuous_deployment
+  Path: semester_07\lecture_42_ci_cd_fundamentals\continuous_deployment
+  File: semester_07\lecture_42_ci_cd_fundamentals\continuous_deployment\Algorithm.java
+  Reason: Python file has 53 lines, Java only 9 meaningful lines
+
+Algorithm: blue_green_deployment
+  Path: semester_07\lecture_43_ci_cd_advanced\blue_green_deployment
+  File: semester_07\lecture_43_ci_cd_advanced\blue_green_deployment\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: grover_algorithm
+  Path: semester_07\lecture_44_quantum_computing\grover_algorithm
+  File: semester_07\lecture_44_quantum_computing\grover_algorithm\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_algorithms
+  Path: semester_07\lecture_44_quantum_computing\quantum_algorithms
+  File: semester_07\lecture_44_quantum_computing\quantum_algorithms\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_gates
+  Path: semester_07\lecture_44_quantum_computing\quantum_gates
+  File: semester_07\lecture_44_quantum_computing\quantum_gates\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_superposition
+  Path: semester_07\lecture_44_quantum_computing\quantum_superposition
+  File: semester_07\lecture_44_quantum_computing\quantum_superposition\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: shor_algorithm
+  Path: semester_07\lecture_44_quantum_computing\shor_algorithm
+  File: semester_07\lecture_44_quantum_computing\shor_algorithm\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: blockchain_scalability
+  Path: semester_07\lecture_46_blockchain_advanced\blockchain_scalability
+  File: semester_07\lecture_46_blockchain_advanced\blockchain_scalability\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: escalation_procedures
+  Path: semester_08\lecture_47_support_systems\escalation_procedures
+  File: semester_08\lecture_47_support_systems\escalation_procedures\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: version_control_docs
+  Path: semester_08\lecture_48_documentation\version_control_docs
+  File: semester_08\lecture_48_documentation\version_control_docs\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: indexes
+  Path: semester_08\lecture_49_sql_fundamentals\indexes
+  File: semester_08\lecture_49_sql_fundamentals\indexes\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: joins
+  Path: semester_08\lecture_49_sql_fundamentals\joins
+  File: semester_08\lecture_49_sql_fundamentals\joins\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: sql_queries
+  Path: semester_08\lecture_49_sql_fundamentals\sql_queries
+  File: semester_08\lecture_49_sql_fundamentals\sql_queries\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: denormalization
+  Path: semester_08\lecture_50_sql_advanced\denormalization
+  File: semester_08\lecture_50_sql_advanced\denormalization\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: query_optimization
+  Path: semester_08\lecture_50_sql_advanced\query_optimization
+  File: semester_08\lecture_50_sql_advanced\query_optimization\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: column_family
+  Path: semester_08\lecture_51_nosql_fundamentals\column_family
+  File: semester_08\lecture_51_nosql_fundamentals\column_family\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: nosql_indexing
+  Path: semester_08\lecture_51_nosql_fundamentals\nosql_indexing
+  File: semester_08\lecture_51_nosql_fundamentals\nosql_indexing\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: nosql_querying
+  Path: semester_08\lecture_51_nosql_fundamentals\nosql_querying
+  File: semester_08\lecture_51_nosql_fundamentals\nosql_querying\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: nosql_sharding
+  Path: semester_08\lecture_52_nosql_advanced\nosql_sharding
+  File: semester_08\lecture_52_nosql_advanced\nosql_sharding\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: capacity_planning
+  Path: semester_08\lecture_53_database_operations\capacity_planning
+  File: semester_08\lecture_53_database_operations\capacity_planning\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: data_lakes
+  Path: semester_08\lecture_54_data_modeling\data_lakes
+  File: semester_08\lecture_54_data_modeling\data_lakes\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: entity_relationship
+  Path: semester_08\lecture_54_data_modeling\entity_relationship
+  File: semester_08\lecture_54_data_modeling\entity_relationship\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: etl_processes
+  Path: semester_08\lecture_54_data_modeling\etl_processes
+  File: semester_08\lecture_54_data_modeling\etl_processes\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: exokernel_design
+  Path: semester_09\lecture_55_advanced_os\exokernel_design
+  File: semester_09\lecture_55_advanced_os\exokernel_design\Algorithm.java
+  Reason: Too short (26 lines)
+
+Algorithm: microkernel_architecture
+  Path: semester_09\lecture_55_advanced_os\microkernel_architecture
+  File: semester_09\lecture_55_advanced_os\microkernel_architecture\Algorithm.java
+  Reason: Too short (19 lines)
+
+Algorithm: cpu_scheduling_advanced
+  Path: semester_09\lecture_56_os_performance\cpu_scheduling_advanced
+  File: semester_09\lecture_56_os_performance\cpu_scheduling_advanced\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: io_scheduling
+  Path: semester_09\lecture_56_os_performance\io_scheduling
+  File: semester_09\lecture_56_os_performance\io_scheduling\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: kernel_tuning
+  Path: semester_09\lecture_56_os_performance\kernel_tuning
+  File: semester_09\lecture_56_os_performance\kernel_tuning\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: actor_model
+  Path: semester_09\lecture_57_concurrency_advanced\actor_model
+  File: semester_09\lecture_57_concurrency_advanced\actor_model\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: concurrent_data_structures
+  Path: semester_09\lecture_57_concurrency_advanced\concurrent_data_structures
+  File: semester_09\lecture_57_concurrency_advanced\concurrent_data_structures\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: csp_model
+  Path: semester_09\lecture_57_concurrency_advanced\csp_model
+  File: semester_09\lecture_57_concurrency_advanced\csp_model\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: parallel_algorithms
+  Path: semester_09\lecture_58_parallel_computing\parallel_algorithms
+  File: semester_09\lecture_58_parallel_computing\parallel_algorithms\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: parallel_prefix
+  Path: semester_09\lecture_58_parallel_computing\parallel_prefix
+  File: semester_09\lecture_58_parallel_computing\parallel_prefix\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: parallel_reduction
+  Path: semester_09\lecture_58_parallel_computing\parallel_reduction
+  File: semester_09\lecture_58_parallel_computing\parallel_reduction\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: simd_optimization
+  Path: semester_09\lecture_58_parallel_computing\simd_optimization
+  File: semester_09\lecture_58_parallel_computing\simd_optimization\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: vectorization
+  Path: semester_09\lecture_58_parallel_computing\vectorization
+  File: semester_09\lecture_58_parallel_computing\vectorization\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: byzantine_fault_tolerance
+  Path: semester_09\lecture_59_distributed_systems_advanced\byzantine_fault_tolerance
+  File: semester_09\lecture_59_distributed_systems_advanced\byzantine_fault_tolerance\Algorithm.java
+  Reason: Python file has 71 lines, Java only 9 meaningful lines
+
+Algorithm: crdt
+  Path: semester_09\lecture_59_distributed_systems_advanced\crdt
+  File: semester_09\lecture_59_distributed_systems_advanced\crdt\Algorithm.java
+  Reason: Too short (25 lines)
+
+Algorithm: eventual_consistency
+  Path: semester_09\lecture_59_distributed_systems_advanced\eventual_consistency
+  File: semester_09\lecture_59_distributed_systems_advanced\eventual_consistency\Algorithm.java
+  Reason: Too short (26 lines)
+
+Algorithm: vector_clocks
+  Path: semester_09\lecture_59_distributed_systems_advanced\vector_clocks
+  File: semester_09\lecture_59_distributed_systems_advanced\vector_clocks\Algorithm.java
+  Reason: Too short (24 lines)
+
+Algorithm: api_gateway
+  Path: semester_09\lecture_60_system_design_advanced\api_gateway
+  File: semester_09\lecture_60_system_design_advanced\api_gateway\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: service_mesh
+  Path: semester_09\lecture_60_system_design_advanced\service_mesh
+  File: semester_09\lecture_60_system_design_advanced\service_mesh\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: config_management
+  Path: semester_09\lecture_61_cloud_native\config_management
+  File: semester_09\lecture_61_cloud_native\config_management\Algorithm.java
+  Reason: Too short (23 lines)
+
+Algorithm: function_as_service
+  Path: semester_09\lecture_61_cloud_native\function_as_service
+  File: semester_09\lecture_61_cloud_native\function_as_service\Algorithm.java
+  Reason: Too short (19 lines)
+
+Algorithm: chaos_engineering_advanced
+  Path: semester_09\lecture_62_observability_advanced\chaos_engineering_advanced
+  File: semester_09\lecture_62_observability_advanced\chaos_engineering_advanced\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: continual_learning
+  Path: semester_10\lecture_63_ai_advanced\continual_learning
+  File: semester_10\lecture_63_ai_advanced\continual_learning\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: few_shot_learning_advanced
+  Path: semester_10\lecture_63_ai_advanced\few_shot_learning_advanced
+  File: semester_10\lecture_63_ai_advanced\few_shot_learning_advanced\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: meta_learning
+  Path: semester_10\lecture_63_ai_advanced\meta_learning
+  File: semester_10\lecture_63_ai_advanced\meta_learning\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: llm_compression
+  Path: semester_10\lecture_64_llm_architecture_advanced\llm_compression
+  File: semester_10\lecture_64_llm_architecture_advanced\llm_compression\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: long_context_models
+  Path: semester_10\lecture_64_llm_architecture_advanced\long_context_models
+  File: semester_10\lecture_64_llm_architecture_advanced\long_context_models\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: mixture_of_experts
+  Path: semester_10\lecture_64_llm_architecture_advanced\mixture_of_experts
+  File: semester_10\lecture_64_llm_architecture_advanced\mixture_of_experts\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: multimodal_llms
+  Path: semester_10\lecture_64_llm_architecture_advanced\multimodal_llms
+  File: semester_10\lecture_64_llm_architecture_advanced\multimodal_llms\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: sparse_attention
+  Path: semester_10\lecture_64_llm_architecture_advanced\sparse_attention
+  File: semester_10\lecture_64_llm_architecture_advanced\sparse_attention\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: distributed_training_llm
+  Path: semester_10\lecture_65_llm_training_advanced\distributed_training_llm
+  File: semester_10\lecture_65_llm_training_advanced\distributed_training_llm\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: gradient_checkpointing
+  Path: semester_10\lecture_65_llm_training_advanced\gradient_checkpointing
+  File: semester_10\lecture_65_llm_training_advanced\gradient_checkpointing\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: mixed_precision_training
+  Path: semester_10\lecture_65_llm_training_advanced\mixed_precision_training
+  File: semester_10\lecture_65_llm_training_advanced\mixed_precision_training\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: pipeline_parallelism
+  Path: semester_10\lecture_65_llm_training_advanced\pipeline_parallelism
+  File: semester_10\lecture_65_llm_training_advanced\pipeline_parallelism\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: tensor_parallelism
+  Path: semester_10\lecture_65_llm_training_advanced\tensor_parallelism
+  File: semester_10\lecture_65_llm_training_advanced\tensor_parallelism\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: continuous_batching
+  Path: semester_10\lecture_66_llm_inference\continuous_batching
+  File: semester_10\lecture_66_llm_inference\continuous_batching\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: pruning_inference
+  Path: semester_10\lecture_66_llm_inference\pruning_inference
+  File: semester_10\lecture_66_llm_inference\pruning_inference\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantization_inference
+  Path: semester_10\lecture_66_llm_inference\quantization_inference
+  File: semester_10\lecture_66_llm_inference\quantization_inference\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: speculative_decoding
+  Path: semester_10\lecture_66_llm_inference\speculative_decoding
+  File: semester_10\lecture_66_llm_inference\speculative_decoding\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: context_compression
+  Path: semester_10\lecture_67_rag_advanced\context_compression
+  File: semester_10\lecture_67_rag_advanced\context_compression\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: query_expansion
+  Path: semester_10\lecture_67_rag_advanced\query_expansion
+  File: semester_10\lecture_67_rag_advanced\query_expansion\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: adversarial_testing
+  Path: semester_10\lecture_68_llm_evaluation\adversarial_testing
+  File: semester_10\lecture_68_llm_evaluation\adversarial_testing\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: bias_detection
+  Path: semester_10\lecture_68_llm_evaluation\bias_detection
+  File: semester_10\lecture_68_llm_evaluation\bias_detection\Algorithm.java
+  Reason: Too short (25 lines)
+
+Algorithm: evaluation_metrics
+  Path: semester_10\lecture_68_llm_evaluation\evaluation_metrics
+  File: semester_10\lecture_68_llm_evaluation\evaluation_metrics\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: adversarial_robustness
+  Path: semester_10\lecture_69_ai_ethics\adversarial_robustness
+  File: semester_10\lecture_69_ai_ethics\adversarial_robustness\Algorithm.java
+  Reason: Too short (25 lines)
+
+Algorithm: bias_mitigation
+  Path: semester_10\lecture_69_ai_ethics\bias_mitigation
+  File: semester_10\lecture_69_ai_ethics\bias_mitigation\Algorithm.java
+  Reason: Too short (25 lines)
+
+Algorithm: explainability
+  Path: semester_10\lecture_69_ai_ethics\explainability
+  File: semester_10\lecture_69_ai_ethics\explainability\Algorithm.java
+  Reason: Python file has 54 lines, Java only 8 meaningful lines
+
+Algorithm: fairness_algorithms
+  Path: semester_10\lecture_69_ai_ethics\fairness_algorithms
+  File: semester_10\lecture_69_ai_ethics\fairness_algorithms\Algorithm.java
+  Reason: Too short (25 lines)
+
+Algorithm: interpretability
+  Path: semester_10\lecture_69_ai_ethics\interpretability
+  File: semester_10\lecture_69_ai_ethics\interpretability\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: compliance_frameworks
+  Path: semester_10\lecture_70_ai_governance\compliance_frameworks
+  File: semester_10\lecture_70_ai_governance\compliance_frameworks\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: conditional_execution
+  Path: semester_11\lecture_71_cicd_advanced\conditional_execution
+  File: semester_11\lecture_71_cicd_advanced\conditional_execution\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: pipeline_templates
+  Path: semester_11\lecture_71_cicd_advanced\pipeline_templates
+  File: semester_11\lecture_71_cicd_advanced\pipeline_templates\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: infrastructure_monitoring
+  Path: semester_11\lecture_72_infrastructure_advanced\infrastructure_monitoring
+  File: semester_11\lecture_72_infrastructure_advanced\infrastructure_monitoring\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: auto_scaling_advanced
+  Path: semester_11\lecture_74_automation_advanced\auto_scaling_advanced
+  File: semester_11\lecture_74_automation_advanced\auto_scaling_advanced\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: predictive_scaling
+  Path: semester_11\lecture_74_automation_advanced\predictive_scaling
+  File: semester_11\lecture_74_automation_advanced\predictive_scaling\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: developer_experience
+  Path: semester_11\lecture_76_platform_engineering\developer_experience
+  File: semester_11\lecture_76_platform_engineering\developer_experience\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: chaos_automation
+  Path: semester_11\lecture_77_chaos_engineering_advanced\chaos_automation
+  File: semester_11\lecture_77_chaos_engineering_advanced\chaos_automation\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: chaos_experiments
+  Path: semester_11\lecture_77_chaos_engineering_advanced\chaos_experiments
+  File: semester_11\lecture_77_chaos_engineering_advanced\chaos_experiments\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: chaos_metrics
+  Path: semester_11\lecture_77_chaos_engineering_advanced\chaos_metrics
+  File: semester_11\lecture_77_chaos_engineering_advanced\chaos_metrics\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: game_day_exercises
+  Path: semester_11\lecture_77_chaos_engineering_advanced\game_day_exercises
+  File: semester_11\lecture_77_chaos_engineering_advanced\game_day_exercises\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: aiops
+  Path: semester_11\lecture_78_observability_platform\aiops
+  File: semester_11\lecture_78_observability_platform\aiops\Algorithm.java
+  Reason: Python file has 59 lines, Java only 9 meaningful lines
+
+Algorithm: anomaly_detection
+  Path: semester_11\lecture_78_observability_platform\anomaly_detection
+  File: semester_11\lecture_78_observability_platform\anomaly_detection\Algorithm.java
+  Reason: Too short (25 lines)
+
+Algorithm: quantum_cryptography
+  Path: semester_12\lecture_79_quantum_algorithms_advanced\quantum_cryptography
+  File: semester_12\lecture_79_quantum_algorithms_advanced\quantum_cryptography\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: quantum_error_correction
+  Path: semester_12\lecture_79_quantum_algorithms_advanced\quantum_error_correction
+  File: semester_12\lecture_79_quantum_algorithms_advanced\quantum_error_correction\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_machine_learning
+  Path: semester_12\lecture_79_quantum_algorithms_advanced\quantum_machine_learning
+  File: semester_12\lecture_79_quantum_algorithms_advanced\quantum_machine_learning\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_teleportation
+  Path: semester_12\lecture_79_quantum_algorithms_advanced\quantum_teleportation
+  File: semester_12\lecture_79_quantum_algorithms_advanced\quantum_teleportation\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: quantum_architectures
+  Path: semester_12\lecture_80_quantum_computing_advanced\quantum_architectures
+  File: semester_12\lecture_80_quantum_computing_advanced\quantum_architectures\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_networking
+  Path: semester_12\lecture_80_quantum_computing_advanced\quantum_networking
+  File: semester_12\lecture_80_quantum_computing_advanced\quantum_networking\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_ai
+  Path: semester_12\lecture_81_quantum_applications\quantum_ai
+  File: semester_12\lecture_81_quantum_applications\quantum_ai\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_database
+  Path: semester_12\lecture_81_quantum_applications\quantum_database
+  File: semester_12\lecture_81_quantum_applications\quantum_database\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_finance
+  Path: semester_12\lecture_81_quantum_applications\quantum_finance
+  File: semester_12\lecture_81_quantum_applications\quantum_finance\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_logistics
+  Path: semester_12\lecture_81_quantum_applications\quantum_logistics
+  File: semester_12\lecture_81_quantum_applications\quantum_logistics\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_search
+  Path: semester_12\lecture_81_quantum_applications\quantum_search
+  File: semester_12\lecture_81_quantum_applications\quantum_search\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_approximate
+  Path: semester_12\lecture_82_hybrid_quantum\quantum_approximate
+  File: semester_12\lecture_82_hybrid_quantum\quantum_approximate\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_classical_hybrid
+  Path: semester_12\lecture_82_hybrid_quantum\quantum_classical_hybrid
+  File: semester_12\lecture_82_hybrid_quantum\quantum_classical_hybrid\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_optimization_hybrid
+  Path: semester_12\lecture_82_hybrid_quantum\quantum_optimization_hybrid
+  File: semester_12\lecture_82_hybrid_quantum\quantum_optimization_hybrid\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_debugging
+  Path: semester_12\lecture_83_quantum_software\quantum_debugging
+  File: semester_12\lecture_83_quantum_software\quantum_debugging\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_software_stack
+  Path: semester_12\lecture_83_quantum_software\quantum_software_stack
+  File: semester_12\lecture_83_quantum_software\quantum_software_stack\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_characterization
+  Path: semester_12\lecture_84_quantum_hardware\quantum_characterization
+  File: semester_12\lecture_84_quantum_hardware\quantum_characterization\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_key_distribution
+  Path: semester_12\lecture_85_quantum_networking\quantum_key_distribution
+  File: semester_12\lecture_85_quantum_networking\quantum_key_distribution\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_routing
+  Path: semester_12\lecture_85_quantum_networking\quantum_routing
+  File: semester_12\lecture_85_quantum_networking\quantum_routing\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: post_quantum_cryptography
+  Path: semester_12\lecture_86_quantum_security\post_quantum_cryptography
+  File: semester_12\lecture_86_quantum_security\post_quantum_cryptography\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: quantum_attacks
+  Path: semester_12\lecture_86_quantum_security\quantum_attacks
+  File: semester_12\lecture_86_quantum_security\quantum_attacks\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: quantum_defense
+  Path: semester_12\lecture_86_quantum_security\quantum_defense
+  File: semester_12\lecture_86_quantum_security\quantum_defense\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: quantum_resistant
+  Path: semester_12\lecture_86_quantum_security\quantum_resistant
+  File: semester_12\lecture_86_quantum_security\quantum_resistant\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: blockchain_scalability_solutions
+  Path: semester_13\lecture_87_blockchain_advanced\blockchain_scalability_solutions
+  File: semester_13\lecture_87_blockchain_advanced\blockchain_scalability_solutions\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: sharding_blockchain
+  Path: semester_13\lecture_87_blockchain_advanced\sharding_blockchain
+  File: semester_13\lecture_87_blockchain_advanced\sharding_blockchain\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: dpos_advanced
+  Path: semester_13\lecture_88_consensus_advanced\dpos_advanced
+  File: semester_13\lecture_88_consensus_advanced\dpos_advanced\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: automated_market_makers
+  Path: semester_13\lecture_89_defi\automated_market_makers
+  File: semester_13\lecture_89_defi\automated_market_makers\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: derivatives
+  Path: semester_13\lecture_89_defi\derivatives
+  File: semester_13\lecture_89_defi\derivatives\Algorithm.java
+  Reason: Too short (25 lines)
+
+Algorithm: privacy_coins
+  Path: semester_13\lecture_91_blockchain_privacy\privacy_coins
+  File: semester_13\lecture_91_blockchain_privacy\privacy_coins\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: chain_abstraction
+  Path: semester_13\lecture_92_blockchain_interoperability\chain_abstraction
+  File: semester_13\lecture_92_blockchain_interoperability\chain_abstraction\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: interoperability_protocols
+  Path: semester_13\lecture_92_blockchain_interoperability\interoperability_protocols
+  File: semester_13\lecture_92_blockchain_interoperability\interoperability_protocols\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: address_clustering
+  Path: semester_13\lecture_94_blockchain_analytics\address_clustering
+  File: semester_13\lecture_94_blockchain_analytics\address_clustering\Algorithm.java
+  Reason: Too short (25 lines)
+
+Algorithm: anomaly_detection_blockchain
+  Path: semester_13\lecture_94_blockchain_analytics\anomaly_detection_blockchain
+  File: semester_13\lecture_94_blockchain_analytics\anomaly_detection_blockchain\Algorithm.java
+  Reason: Too short (25 lines)
+
+Algorithm: flow_analysis
+  Path: semester_13\lecture_94_blockchain_analytics\flow_analysis
+  File: semester_13\lecture_94_blockchain_analytics\flow_analysis\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: on_chain_analytics
+  Path: semester_13\lecture_94_blockchain_analytics\on_chain_analytics
+  File: semester_13\lecture_94_blockchain_analytics\on_chain_analytics\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: transaction_analysis
+  Path: semester_13\lecture_94_blockchain_analytics\transaction_analysis
+  File: semester_13\lecture_94_blockchain_analytics\transaction_analysis\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: ai_doc_generation
+  Path: semester_14\lecture_100_documentation_ai\ai_doc_generation
+  File: semester_14\lecture_100_documentation_ai\ai_doc_generation\Algorithm.java
+  Reason: Too short (27 lines)
+
+Algorithm: code_to_docs
+  Path: semester_14\lecture_100_documentation_ai\code_to_docs
+  File: semester_14\lecture_100_documentation_ai\code_to_docs\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: contextual_help
+  Path: semester_14\lecture_100_documentation_ai\contextual_help
+  File: semester_14\lecture_100_documentation_ai\contextual_help\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: natural_language_docs
+  Path: semester_14\lecture_100_documentation_ai\natural_language_docs
+  File: semester_14\lecture_100_documentation_ai\natural_language_docs\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: tutorial_systems
+  Path: semester_14\lecture_101_developer_experience\tutorial_systems
+  File: semester_14\lecture_101_developer_experience\tutorial_systems\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: engagement_metrics
+  Path: semester_14\lecture_102_community_management\engagement_metrics
+  File: semester_14\lecture_102_community_management\engagement_metrics\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: chatbot_advanced
+  Path: semester_14\lecture_95_support_advanced\chatbot_advanced
+  File: semester_14\lecture_95_support_advanced\chatbot_advanced\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: knowledge_graph
+  Path: semester_14\lecture_95_support_advanced\knowledge_graph
+  File: semester_14\lecture_95_support_advanced\knowledge_graph\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: content_curation
+  Path: semester_14\lecture_97_knowledge_management\content_curation
+  File: semester_14\lecture_97_knowledge_management\content_curation\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: knowledge_graph_construction
+  Path: semester_14\lecture_97_knowledge_management\knowledge_graph_construction
+  File: semester_14\lecture_97_knowledge_management\knowledge_graph_construction\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: knowledge_validation
+  Path: semester_14\lecture_97_knowledge_management\knowledge_validation
+  File: semester_14\lecture_97_knowledge_management\knowledge_validation\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: semantic_search
+  Path: semester_14\lecture_97_knowledge_management\semantic_search
+  File: semester_14\lecture_97_knowledge_management\semantic_search\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: automated_documentation
+  Path: semester_14\lecture_98_documentation_advanced\automated_documentation
+  File: semester_14\lecture_98_documentation_advanced\automated_documentation\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: doc_as_code
+  Path: semester_14\lecture_98_documentation_advanced\doc_as_code
+  File: semester_14\lecture_98_documentation_advanced\doc_as_code\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: accessibility_docs
+  Path: semester_14\lecture_99_technical_writing_advanced\accessibility_docs
+  File: semester_14\lecture_99_technical_writing_advanced\accessibility_docs\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: content_generation
+  Path: semester_14\lecture_99_technical_writing_advanced\content_generation
+  File: semester_14\lecture_99_technical_writing_advanced\content_generation\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: translation_automation
+  Path: semester_14\lecture_99_technical_writing_advanced\translation_automation
+  File: semester_14\lecture_99_technical_writing_advanced\translation_automation\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: writing_automation
+  Path: semester_14\lecture_99_technical_writing_advanced\writing_automation
+  File: semester_14\lecture_99_technical_writing_advanced\writing_automation\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: advanced_joins
+  Path: semester_15\lecture_103_sql_advanced_topics\advanced_joins
+  File: semester_15\lecture_103_sql_advanced_topics\advanced_joins\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: common_table_expressions
+  Path: semester_15\lecture_103_sql_advanced_topics\common_table_expressions
+  File: semester_15\lecture_103_sql_advanced_topics\common_table_expressions\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: recursive_queries
+  Path: semester_15\lecture_103_sql_advanced_topics\recursive_queries
+  File: semester_15\lecture_103_sql_advanced_topics\recursive_queries\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: index_strategies
+  Path: semester_15\lecture_104_database_performance\index_strategies
+  File: semester_15\lecture_104_database_performance\index_strategies\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: partitioning_strategies
+  Path: semester_15\lecture_104_database_performance\partitioning_strategies
+  File: semester_15\lecture_104_database_performance\partitioning_strategies\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: query_hints
+  Path: semester_15\lecture_104_database_performance\query_hints
+  File: semester_15\lecture_104_database_performance\query_hints\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: query_optimization_advanced
+  Path: semester_15\lecture_104_database_performance\query_optimization_advanced
+  File: semester_15\lecture_104_database_performance\query_optimization_advanced\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: statistics_management
+  Path: semester_15\lecture_104_database_performance\statistics_management
+  File: semester_15\lecture_104_database_performance\statistics_management\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: database_sharding_advanced
+  Path: semester_15\lecture_105_database_architecture\database_sharding_advanced
+  File: semester_15\lecture_105_database_architecture\database_sharding_advanced\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: multi_tenant_databases
+  Path: semester_15\lecture_105_database_architecture\multi_tenant_databases
+  File: semester_15\lecture_105_database_architecture\multi_tenant_databases\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: nosql_aggregation
+  Path: semester_15\lecture_106_nosql_advanced_topics\nosql_aggregation
+  File: semester_15\lecture_106_nosql_advanced_topics\nosql_aggregation\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: downsampling
+  Path: semester_15\lecture_107_time_series_databases\downsampling
+  File: semester_15\lecture_107_time_series_databases\downsampling\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: graph_analytics
+  Path: semester_15\lecture_108_graph_databases_advanced\graph_analytics
+  File: semester_15\lecture_108_graph_databases_advanced\graph_analytics\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: graph_ml
+  Path: semester_15\lecture_108_graph_databases_advanced\graph_ml
+  File: semester_15\lecture_108_graph_databases_advanced\graph_ml\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: graph_pattern_matching
+  Path: semester_15\lecture_108_graph_databases_advanced\graph_pattern_matching
+  File: semester_15\lecture_108_graph_databases_advanced\graph_pattern_matching\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: graph_traversal
+  Path: semester_15\lecture_108_graph_databases_advanced\graph_traversal
+  File: semester_15\lecture_108_graph_databases_advanced\graph_traversal\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: graph_visualization
+  Path: semester_15\lecture_108_graph_databases_advanced\graph_visualization
+  File: semester_15\lecture_108_graph_databases_advanced\graph_visualization\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: data_masking
+  Path: semester_15\lecture_109_database_security_advanced\data_masking
+  File: semester_15\lecture_109_database_security_advanced\data_masking\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: encryption_at_rest
+  Path: semester_15\lecture_109_database_security_advanced\encryption_at_rest
+  File: semester_15\lecture_109_database_security_advanced\encryption_at_rest\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: row_level_security
+  Path: semester_15\lecture_109_database_security_advanced\row_level_security
+  File: semester_15\lecture_109_database_security_advanced\row_level_security\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: migration_testing
+  Path: semester_15\lecture_110_database_migration\migration_testing
+  File: semester_15\lecture_110_database_migration\migration_testing\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: lambda_architecture
+  Path: semester_16\lecture_111_data_engineering_advanced\lambda_architecture
+  File: semester_16\lecture_111_data_engineering_advanced\lambda_architecture\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: warehouse_architecture
+  Path: semester_16\lecture_112_data_warehousing_advanced\warehouse_architecture
+  File: semester_16\lecture_112_data_warehousing_advanced\warehouse_architecture\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: data_discovery
+  Path: semester_16\lecture_113_data_lakes_advanced\data_discovery
+  File: semester_16\lecture_113_data_lakes_advanced\data_discovery\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: data_quality
+  Path: semester_16\lecture_113_data_lakes_advanced\data_quality
+  File: semester_16\lecture_113_data_lakes_advanced\data_quality\Algorithm.java
+  Reason: Too short (14 lines)
+
+Algorithm: streaming_analytics
+  Path: semester_16\lecture_114_real_time_analytics\streaming_analytics
+  File: semester_16\lecture_114_real_time_analytics\streaming_analytics\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: data_catalog
+  Path: semester_16\lecture_115_data_governance_advanced\data_catalog
+  File: semester_16\lecture_115_data_governance_advanced\data_catalog\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: data_reliability
+  Path: semester_16\lecture_116_data_ops\data_reliability
+  File: semester_16\lecture_116_data_ops\data_reliability\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+
+Algorithm: a_b_testing_ml
+  Path: semester_16\lecture_117_ml_ops_advanced\a_b_testing_ml
+  File: semester_16\lecture_117_ml_ops_advanced\a_b_testing_ml\Algorithm.java
+  Reason: All methods are placeholders (only logging and return null/-1)
+

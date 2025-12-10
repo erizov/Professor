@@ -81,51 +81,42 @@ def anomaly_detection(data, threshold):
 
 ## 🎯 Try It Yourself
 
-**Try this example:**
+**Try detecting a pattern:**
 ```
-Input: [example data]
-Step 1: [first operation]
-Step 2: [second operation]
-.
-Output: [result]
+Input: [example data with pattern]
 
+Step 1: Initialize detection state
+Step 2: Process data elements
+Step 3: Identify pattern occurrence
 
+Output: Pattern detected at position X
+```
 ---
 
 
 ## 🔍 Step-by-Step Execution
 
-**Step-by-Step Execution:**
 
-```python
-# Input
-data = [example input]
 
-# Step 1: Initialize
-state = initial_state
 
-# Step 2: Process
-# [Processing steps]
 
-# Step 3: Finalize
-result = final_state
 
-# Output
-return result
-```
 
-**Expected Output:**
 
-```
-Input: [example]
-Processing...
-Result: [output]
-```
+
+
 
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
-Trace through the algorithm with a small example (3-5 elements).
+**Exercise 1 (Easy):**
+Trace through the Anomaly Detection algorithm with a small example (3-5 elements). Write down each step.
+
+**Exercise 2 (Medium):**
+Implement the Anomaly Detection algorithm in your preferred programming language. Test it with different inputs.
+
+**Exercise 3 (Hard):**
+Apply the Anomaly Detection algorithm to solve a real-world problem. Explain why this algorithm is suitable.
 
 **Exercise 2 (Medium):**
 Implement the algorithm in your preferred programming language.
@@ -139,67 +130,50 @@ Optimize the algorithm or apply it to solve a real-world problem.
 ## ✅ Check Your Understanding
 
 **Q1:** What problem does this algorithm solve?
-**A:** [Answer based on algorithm purpose]
+**A:** Anomaly Detection solves the problem of [algorithm purpose]. It processes input data systematically to achieve [desired outcome].
 
 **Q2:** What is the time complexity?
 **A:** Varies
 
 **Q3:** When would you use this algorithm?
-**A:** [Answer based on use cases]
+**A:** Use Anomaly Detection when you need to [use case scenario]. It's particularly effective for [specific situations].
 
 **Q4:** What are the main steps of this algorithm?
-**A:** [List 3-5 key steps]
+**A:** 1) Initialize data structures, 2) Process input elements, 3) Apply core algorithm logic, 4) Return final result.
 
 
 **Try this example:**
 ```
 Input: [example data]
-Step 1: [first operation]
-Step 2: [second operation]
-.
-Output: [result]
+
+Step 1: Initialize algorithm state
+Step 2: Process input data
+Step 3: Generate result
+
+Output: [algorithm result]
+```
 
 
-**Exercise 1 (Easy):**
-Trace through the algorithm with a small example (3-5 elements).
-
-**Exercise 2 (Medium):**
-Implement the algorithm in your preferred programming language.
-
-**Exercise 3 (Hard):**
-Optimize the algorithm or apply it to solve a real-world problem.
-
-
-**Q1:** What problem does this algorithm solve?
-**A:** [Answer based on algorithm purpose]
-
-**Q2:** What is the time complexity?
-**A:** Varies
-
-**Q3:** When would you use this algorithm?
-**A:** [Answer based on use cases]
-
-**Q4:** What are the main steps of this algorithm?
-**A:** [List 3-5 key steps]
-
-
----
 
 ## Common Mistakes
 
-### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
-**Solution:** Add validation: `if not data or len(data) <= 1: return data`
+### ❌ Mistake 1: Not handling edge cases
+**Solution:** Always check for empty input, single element, or boundary values before processing.
 
-### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** Manually trace through a small example (3-5 elements) to verify each step matches the algorithm logic
+### ❌ Mistake 2: Incorrect initialization
+**Solution:** Ensure all variables and data structures are properly initialized before the main algorithm loop.
 
-### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** Use print statements or debugger to check variable values at each step, compare with expected behavior
+### ❌ Mistake 3: Off-by-one errors in loops
+**Solution:** Carefully verify loop bounds and termination conditions. Test with small examples to catch boundary issues.
 
-### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** Study the algorithm's pseudocode or description, identify the core steps, then implement one step at a time
+### ❌ Mistake 4: Not validating input
+**Solution:** Add input validation to ensure data is in expected format and within valid ranges.
 
 ### 💡 How to Avoid
+- Test with edge cases (empty input, single element, boundary values)
+- Trace through examples step-by-step
+- Use debugging tools to verify variable values
+- Review algorithm's key steps before implementing
 - Test with edge cases (empty input, single element, boundary values)
 - Trace through examples step-by-step
 - Use debugging tools to verify your logic

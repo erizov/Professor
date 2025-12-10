@@ -209,47 +209,26 @@ Step 3: Found! Element 7 is at index 3
 ```
 
 
-**Exercise 1 (Easy):**
-Find the number 42 in this sorted array: [10, 20, 30, 40, 50, 60, 70]
-Show each step of your search.
-
-**Exercise 2 (Medium):**
-Implement binary search to find the first occurrence of a target value in a sorted array with duplicates.
-
-**Exercise 3 (Hard):**
-What happens if you try binary search on an unsorted array? Why doesn't it work?
-
-
-**Q1:** Why must the array be sorted for binary search?
-**A:** Because we eliminate half the search space based on comparison - this only works if elements are ordered.
-
-**Q2:** What is the time complexity of binary search?
-**A:** O(log n) - we halve the search space each time.
-
-**Q3:** What is the space complexity of iterative binary search?
-**A:** O(1) - we only use a few variables, no extra space needed.
-
-**Q4:** When would you use binary search instead of linear search?
-**A:** When the array is sorted and you need to search multiple times - the O(log n) vs O(n) advantage is significant.
-
-
----
 
 ## Common Mistakes
 
-### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
-**Solution:** Verify array is sorted: `if data != sorted(data): raise ValueError`
+### ❌ Mistake 1: Not handling edge cases
+**Solution:** Always check for empty input, single element, or boundary values before processing.
 
-### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** Manually trace through a small example (3-5 elements) to verify each step matches the algorithm logic
+### ❌ Mistake 2: Incorrect initialization
+**Solution:** Ensure all variables and data structures are properly initialized before the main algorithm loop.
 
-### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** Use print statements or debugger to check variable values at each step, compare with expected behavior
+### ❌ Mistake 3: Off-by-one errors in loops
+**Solution:** Carefully verify loop bounds and termination conditions. Test with small examples to catch boundary issues.
 
-### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** Study the algorithm's pseudocode or description, identify the core steps, then implement one step at a time
+### ❌ Mistake 4: Not validating input
+**Solution:** Add input validation to ensure data is in expected format and within valid ranges.
 
 ### 💡 How to Avoid
+- Test with edge cases (empty input, single element, boundary values)
+- Trace through examples step-by-step
+- Use debugging tools to verify variable values
+- Review algorithm's key steps before implementing
 - Test with edge cases (empty input, single element, boundary values)
 - Trace through examples step-by-step
 - Use debugging tools to verify your logic

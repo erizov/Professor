@@ -214,46 +214,26 @@ F(5) = F(4) + F(3) = 3 + 2 = 5
 Answer: 5
 
 
-**Exercise 1 (Easy):**
-Calculate the first 10 Fibonacci numbers by hand.
-
-**Exercise 2 (Medium):**
-Write a function to compute Fibonacci(n) using dynamic programming (store previous results).
-
-**Exercise 3 (Hard):**
-Compare the time complexity of recursive Fibonacci vs dynamic programming Fibonacci. Why is DP faster?
-
-
-**Q1:** What are the base cases for Fibonacci?
-**A:** F(0) = 0 and F(1) = 1.
-
-**Q2:** Why is recursive Fibonacci slow?
-**A:** It recalculates the same values many times (exponential time complexity).
-
-**Q3:** How does dynamic programming make Fibonacci faster?
-**A:** By storing previously computed values, we avoid redundant calculations (linear time complexity).
-
-**Q4:** What is the space complexity of DP Fibonacci?
-**A:** O(n) if we store all values, or O(1) if we only keep the last two values.
-
-
----
 
 ## Common Mistakes
 
-### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
-**Solution:** Use base cases: `if n <= 1: return n`
+### ❌ Mistake 1: Not handling edge cases
+**Solution:** Always check for empty input, single element, or boundary values before processing.
 
-### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** Manually trace through a small example (3-5 elements) to verify each step matches the algorithm logic
+### ❌ Mistake 2: Incorrect initialization
+**Solution:** Ensure all variables and data structures are properly initialized before the main algorithm loop.
 
-### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** Use print statements or debugger to check variable values at each step, compare with expected behavior
+### ❌ Mistake 3: Off-by-one errors in loops
+**Solution:** Carefully verify loop bounds and termination conditions. Test with small examples to catch boundary issues.
 
-### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** Study the algorithm's pseudocode or description, identify the core steps, then implement one step at a time
+### ❌ Mistake 4: Not validating input
+**Solution:** Add input validation to ensure data is in expected format and within valid ranges.
 
 ### 💡 How to Avoid
+- Test with edge cases (empty input, single element, boundary values)
+- Trace through examples step-by-step
+- Use debugging tools to verify variable values
+- Review algorithm's key steps before implementing
 - Test with edge cases (empty input, single element, boundary values)
 - Trace through examples step-by-step
 - Use debugging tools to verify your logic

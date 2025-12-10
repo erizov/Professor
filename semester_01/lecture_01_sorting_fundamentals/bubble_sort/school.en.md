@@ -187,47 +187,26 @@ Continue until sorted: [1, 2, 5, 8, 9]
 ```
 
 
-**Exercise 1 (Easy):**
-Sort this list by hand: [64, 34, 25, 12, 22, 11, 90]
-Show each pass and count how many swaps you make.
-
-**Exercise 2 (Medium):**
-Write a function to sort a list of student names alphabetically using bubble sort.
-
-**Exercise 3 (Hard):**
-Optimize bubble sort to stop early if the list is already sorted. How does this improve performance?
-
-
-**Q1:** How many passes are needed for n elements in the worst case?
-**A:** At most n-1 passes (the last element is already in place after n-1 passes).
-
-**Q2:** What is the best-case time complexity and when does it occur?
-**A:** O(n) when the array is already sorted and we use early termination.
-
-**Q3:** Why is bubble sort called "bubble" sort?
-**A:** Because larger elements "bubble up" to the end of the array, like bubbles rising in water.
-
-**Q4:** Is bubble sort stable?
-**A:** Yes, it preserves the relative order of equal elements.
-
-
----
 
 ## Common Mistakes
 
-### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
-**Solution:** Add edge case checks: `if not data or len(data) <= 1: return data`
+### ❌ Mistake 1: Not optimizing to stop early
+**Solution:** Add a flag to check if any swaps occurred in a pass. If no swaps, the array is sorted and you can stop early.
 
-### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** Manually trace through a small example (3-5 elements) to verify each step matches the algorithm logic
+### ❌ Mistake 2: Comparing wrong elements
+**Solution:** Compare `arr[j]` with `arr[j+1]`, not `arr[i]` with `arr[j]`. The inner loop should compare adjacent elements.
 
-### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** Use print statements or debugger to check variable values at each step, compare with expected behavior
+### ❌ Mistake 3: Going out of bounds
+**Solution:** In inner loop, iterate `j` from `0` to `n-i-1` (not `n-1`) to avoid comparing already-sorted elements at the end.
 
-### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** Study the algorithm's pseudocode or description, identify the core steps, then implement one step at a time
+### ❌ Mistake 4: Not handling edge cases
+**Solution:** Check for empty arrays or single-element arrays before starting the sorting process.
 
 ### 💡 How to Avoid
+- Test with edge cases: empty array, single element, already sorted
+- Use proper loop bounds to avoid index errors
+- Add early termination optimization
+- Trace through examples step-by-step
 - Test with edge cases (empty input, single element, boundary values)
 - Trace through examples step-by-step
 - Use debugging tools to verify your logic

@@ -90,135 +90,35 @@ def fibonacci_heap(data):
 **Try this example:**
 ```
 Input: [example data]
-Step 1: [first operation]
-Step 2: [second operation]
-.
-Output: [result]
 
+Step 1: Initialize algorithm state
+Step 2: Process input data
+Step 3: Generate result
 
----
-
-
-## 🔍 Step-by-Step Execution
-
-**Step-by-Step Execution (Dynamic Programming):**
-
-```python
-# Input
-n = 5
-memo = {}
-
-# Step 1: Base cases
-memo[0] = 0
-memo[1] = 1
-
-# Step 2: Build up
-memo[2] = memo[1] + memo[0] = 1 + 0 = 1
-memo[3] = memo[2] + memo[1] = 1 + 1 = 2
-memo[4] = memo[3] + memo[2] = 2 + 1 = 3
-memo[5] = memo[4] + memo[3] = 3 + 2 = 5
-
-# Result
-return memo[5] = 5
+Output: [algorithm result]
 ```
 
-**Variable States:**
-```
-Step | memo[0] | memo[1] | memo[2] | memo[3] | memo[4] | memo[5]
------|---------|---------|---------|---------|---------|--------
-Init |    0    |    1    |    -    |    -    |    -    |    -
-  1  |    0    |    1    |    1    |    -    |    -    |    -
-  2  |    0    |    1    |    1    |    2    |    -    |    -
-  3  |    0    |    1    |    1    |    2    |    3    |    -
-  4  |    0    |    1    |    1    |    2    |    3    |    5
-```
 
-**Expected Output:**
-
-```
-Input: [example]
-Processing...
-Result: [output]
-```
-
-## ✏️ Practice Exercise
-
-**Exercise 1 (Easy):**
-Trace through the algorithm with a small example (3-5 elements).
-
-**Exercise 2 (Medium):**
-Implement the algorithm in your preferred programming language.
-
-**Exercise 3 (Hard):**
-Optimize the algorithm or apply it to solve a real-world problem.
-
-
----
-
-## ✅ Check Your Understanding
-
-**Q1:** What problem does this algorithm solve?
-**A:** [Answer based on algorithm purpose]
-
-**Q2:** What is the time complexity?
-**A:** O(1)
-
-**Q3:** When would you use this algorithm?
-**A:** [Answer based on use cases]
-
-**Q4:** What are the main steps of this algorithm?
-**A:** [List 3-5 key steps]
-
-
-**Try this example:**
-```
-Input: [example data]
-Step 1: [first operation]
-Step 2: [second operation]
-.
-Output: [result]
-
-
-**Exercise 1 (Easy):**
-Trace through the algorithm with a small example (3-5 elements).
-
-**Exercise 2 (Medium):**
-Implement the algorithm in your preferred programming language.
-
-**Exercise 3 (Hard):**
-Optimize the algorithm or apply it to solve a real-world problem.
-
-
-**Q1:** What problem does this algorithm solve?
-**A:** [Answer based on algorithm purpose]
-
-**Q2:** What is the time complexity?
-**A:** O(1)
-
-**Q3:** When would you use this algorithm?
-**A:** [Answer based on use cases]
-
-**Q4:** What are the main steps of this algorithm?
-**A:** [List 3-5 key steps]
-
-
----
 
 ## Common Mistakes
 
-### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
-**Solution:** Use base cases: `if n <= 1: return n`
+### ❌ Mistake 1: Not handling edge cases
+**Solution:** Always check for empty input, single element, or boundary values before processing.
 
-### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** Manually trace through a small example (3-5 elements) to verify each step matches the algorithm logic
+### ❌ Mistake 2: Incorrect initialization
+**Solution:** Ensure all variables and data structures are properly initialized before the main algorithm loop.
 
-### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** Use print statements or debugger to check variable values at each step, compare with expected behavior
+### ❌ Mistake 3: Off-by-one errors in loops
+**Solution:** Carefully verify loop bounds and termination conditions. Test with small examples to catch boundary issues.
 
-### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** Study the algorithm's pseudocode or description, identify the core steps, then implement one step at a time
+### ❌ Mistake 4: Not validating input
+**Solution:** Add input validation to ensure data is in expected format and within valid ranges.
 
 ### 💡 How to Avoid
+- Test with edge cases (empty input, single element, boundary values)
+- Trace through examples step-by-step
+- Use debugging tools to verify variable values
+- Review algorithm's key steps before implementing
 - Test with edge cases (empty input, single element, boundary values)
 - Trace through examples step-by-step
 - Use debugging tools to verify your logic
