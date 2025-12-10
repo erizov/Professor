@@ -1,75 +1,32 @@
-# Bubble Sort
+**Bubble Sort Algorithm**
 
-**Algorithm:** bubble_sort  
-**Discipline:** Computer Science
+**Convergence Speed and Complexity Estimate**
+- Bubble sort has a worst-case time complexity of O(n^2) and a best-case time complexity of O(n), making it relatively slow for large datasets.
 
-## Algorithm Definition
+**Real Frameworks and Software**
+- Bubble sort is rarely used in practice due to its inefficiency. However, it can be found in educational settings or small-scale applications where simplicity is preferred over speed.
 
-Bubble Sort is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
+**Similar Concepts**
+- The concept of bubble sort is similar to the way we sort playing cards in our hands, comparing adjacent cards and swapping them if they are in the wrong order.
 
-## Technical Description
+**Often Used With**
+- Bubble sort is often used with other sorting algorithms such as quicksort or mergesort for larger datasets where efficiency is crucial.
 
-### What the Algorithm Does
+**Key Code**
+```
+void bubbleSort(int arr[], int n) {
+    for (int i = 0; i < n-1; i++) {
+        for (int j = 0; j < n-i-1; j++) {
+            if (arr[j] > arr[j+1]) {
+                swap(arr[j], arr[j+1]);
+            }
+        }
+    }
+}
+```
 
-Bubble Sort is an algorithm for solving problems in the field of computer science, which performs a sequence of operations to process data and obtain results.
+**Common Application Errors**
+- One common error in implementing bubble sort is not optimizing the algorithm to stop early if the array is already sorted. This can waste unnecessary computations.
 
-**Key Steps:**
-1. Data input and validation
-2. Algorithm execution
-3. Result processing and output
-
-**Key Data Structures:**
-- Arrays or lists for data storage
-- Variables for intermediate results
-- Control structures for flow management
-
-## Application in Computer Science
-
-1. Data classification: applying the algorithm to predict object categories based on features
-2. Regression analysis: building a model to predict continuous values
-3. Clustering: grouping similar objects without prior labels
-
-## Step-by-Step Scenario
-
-**Input Data:**
-[Specific input data for bubble sort]
-
-**Step 1:** [Specific algorithm action]
-**Step 2:** [Next action]
-**Step 3:** [Continuation of processing]
-...
-
-**Final Result:**
-[Specific result of the algorithm's work]
-
-## Self-Check Questions
-
-### Basic Level
-
-1. Describe the main stages of the bubble sort algorithm. What data structures are used?
-2. What are the time and space complexity of bubble sort? Justify your answer.
-
-### Intermediate Level
-
-1. In what cases is the bubble sort algorithm most effective? When is its use not advisable?
-2. How can bubble sort be optimized? Suggest specific improvements.
-
-### Advanced Level
-
-1. Compare bubble sort with alternative approaches. Under what conditions is each preferable?
-2. Analyze edge cases and implementation errors of bubble sort. How to ensure algorithm correctness?
-
-## Practical Tasks
-
-### Level 1 — Basic
-
-Implement a basic version of the bubble sort algorithm in a programming language. Add edge case handling and tests.
-
-### Level 2 — Applied
-
-Create a full implementation of bubble sort with error handling, logging, and testing. Apply to real data and analyze results.
-
-### Level 3 — Research
-
-Conduct a research analysis of bubble sort: compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
-
+**Recommended Literature**
+- "Introduction to Algorithms" by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein provides a comprehensive overview of sorting algorithms, including bubble sort.

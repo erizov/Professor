@@ -1,57 +1,39 @@
-# Insertion Sort
+**Brief about Insertion Sort Algorithm for School Students**
 
-## Simple Explanation
+**Principle of Operation:**
+- Insertion Sort is a simple sorting algorithm that builds the final sorted array one item at a time.
+- It takes each element from an unsorted portion and inserts it into its correct position in the sorted portion.
 
-Insertion Sort is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
+**Algorithm Complexity:** 
+- The time complexity of Insertion Sort is O(n^2) in the worst case scenario, where n is the number of elements in the array.
 
-## Where It's Used
+**Usage in Practice:**
+- Insertion Sort is commonly used for sorting small arrays or as a building block in more advanced sorting algorithms.
 
-- solving practical programming problems;
-- optimizing application and system performance;
-- processing and analyzing data;
-- automating processes in various fields;
+**Comparison:**
+- Insertion Sort can be compared to sorting a hand of cards in your hand, where you pick one card at a time and insert it in the correct position.
 
-## Example
+**Minimal Code Example:**
+```
+void insertionSort(int arr[], int n) {
+    int i, key, j;
+    for (i = 1; i < n; i++) {
+        key = arr[i];
+        j = i - 1;
 
-Consider a specific example of how insertion sort works:
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+}
+```
 
-1. Data preparation: [specific input data]
-2. Algorithm application: [specific steps]
-3. Result: [specific result]
+**Common Mistakes:**
+- Forgetting to update the index correctly in the inner while loop can lead to incorrect sorting.
+- Not understanding the concept of shifting elements can also result in errors.
 
-The algorithm performs operations sequentially, processing data according to specific rules.
-
-## Self-Check Questions
-
-### Basic
-
-1. What does the insertion sort algorithm do?
-2. In what situations is insertion sort used?
-3. What data is needed for the algorithm to work?
-
-### Intermediate
-
-1. How does insertion sort handle edge cases?
-2. What are the advantages and disadvantages of insertion sort?
-3. Can the performance of insertion sort be improved?
-
-### Advanced
-
-1. What is the time complexity of insertion sort?
-2. How does insertion sort work with large volumes of data?
-3. How can insertion sort be optimized?
-
-## Practical Tasks
-
-### Level 1 (Easy)
-
-Perform a simple operation with the insertion sort algorithm. Use a small dataset (3-5 elements) and output the result.
-
-### Level 2 (Medium)
-
-Apply the insertion sort algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
-
-### Level 3 (Advanced)
-
-Write an implementation of the insertion sort algorithm in a programming language. Add error handling, input validation, tests, and documentation.
-
+**Recommended Literature:**
+- "Introduction to Algorithms" by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
+- "Algorithms" by Robert Sedgewick and Kevin Wayne
