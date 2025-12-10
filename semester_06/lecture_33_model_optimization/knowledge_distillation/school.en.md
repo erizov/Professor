@@ -22,7 +22,9 @@ The time complexity is **O(n*student)**, which means the time it takes to run de
 
 ## Where It's Used in Practice
 
-- General algorithmic problem solving
+- Knowledge Distillation is used in [specific domain]
+- Applied in [specific technology/framework]
+- Used for [specific use case]
 
 ## What It Can Be Compared To
 

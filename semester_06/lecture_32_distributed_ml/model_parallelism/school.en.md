@@ -22,7 +22,9 @@ The time complexity is **O(n*layers/workers)**, which means the time it takes to
 
 ## Where It's Used in Practice
 
-- General algorithmic problem solving
+- Model Parallelism is used in [specific domain]
+- Applied in [specific technology/framework]
+- Used for [specific use case]
 
 ## What It Can Be Compared To
 

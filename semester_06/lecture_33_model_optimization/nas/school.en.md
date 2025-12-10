@@ -22,7 +22,9 @@ The time complexity is **O(search_space*trials)**, which means the time it takes
 
 ## Where It's Used in Practice
 
-- General algorithmic problem solving
+- Nas is used in [specific domain]
+- Applied in [specific technology/framework]
+- Used for [specific use case]
 
 ## What It Can Be Compared To
 

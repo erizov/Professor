@@ -22,7 +22,9 @@ The time complexity is **O(n/parallelism)**, which means the time it takes to ru
 
 ## Where It's Used in Practice
 
-- General algorithmic problem solving
+- Gpu Optimization is used in [specific domain]
+- Applied in [specific technology/framework]
+- Used for [specific use case]
 
 ## What It Can Be Compared To
 

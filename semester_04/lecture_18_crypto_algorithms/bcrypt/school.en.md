@@ -22,7 +22,9 @@ The time complexity is **O(2^cost)**, which means the time it takes to run depen
 
 ## Where It's Used in Practice
 
-- General algorithmic problem solving
+- Bcrypt is used in [specific domain]
+- Applied in [specific technology/framework]
+- Used for [specific use case]
 
 ## What It Can Be Compared To
 

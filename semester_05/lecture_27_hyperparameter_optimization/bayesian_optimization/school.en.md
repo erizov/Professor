@@ -22,7 +22,9 @@ The time complexity is **O(n*iterations)**, which means the time it takes to run
 
 ## Where It's Used in Practice
 
-- General algorithmic problem solving
+- Bayesian Optimization is used in [specific domain]
+- Applied in [specific technology/framework]
+- Used for [specific use case]
 
 ## What It Can Be Compared To
 

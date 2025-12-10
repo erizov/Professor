@@ -22,7 +22,9 @@ The time complexity is **O(n*p*d*q)**, which means the time it takes to run depe
 
 ## Where It's Used in Practice
 
-- General algorithmic problem solving
+- Arima is used in [specific domain]
+- Applied in [specific technology/framework]
+- Used for [specific use case]
 
 ## What It Can Be Compared To
 

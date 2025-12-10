@@ -22,7 +22,9 @@ The time complexity is **O(k³)**, which means the time it takes to run depends 
 
 ## Where It's Used in Practice
 
-- General algorithmic problem solving
+- Rsa is used in [specific domain]
+- Applied in [specific technology/framework]
+- Used for [specific use case]
 
 ## What It Can Be Compared To
 

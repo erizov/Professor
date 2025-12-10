@@ -22,7 +22,9 @@ The time complexity is **N/A**, which means the time it takes to run depends on 
 
 ## Where It's Used in Practice
 
-- General algorithmic problem solving
+- Mvvm is used in [specific domain]
+- Applied in [specific technology/framework]
+- Used for [specific use case]
 
 ## What It Can Be Compared To
 

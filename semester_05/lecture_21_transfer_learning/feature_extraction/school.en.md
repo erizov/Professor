@@ -22,7 +22,9 @@ The time complexity is **O(n*d)**, which means the time it takes to run depends 
 
 ## Where It's Used in Practice
 
-- General algorithmic problem solving
+- Feature Extraction is used in [specific domain]
+- Applied in [specific technology/framework]
+- Used for [specific use case]
 
 ## What It Can Be Compared To
 

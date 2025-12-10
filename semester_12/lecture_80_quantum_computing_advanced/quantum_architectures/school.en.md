@@ -35,7 +35,9 @@ The time complexity is **Varies**, which means the time it takes to run depends 
 
 ## Where It's Used in Practice
 
-- General algorithmic problem solving
+- Quantum Architectures is used in [specific domain]
+- Applied in [specific technology/framework]
+- Used for [specific use case]
 
 ## What It Can Be Compared To
 

@@ -22,7 +22,9 @@ The time complexity is **O(profiling_overhead)**, which means the time it takes 
 
 ## Where It's Used in Practice
 
-- General algorithmic problem solving
+- Performance Profiling is used in [specific domain]
+- Applied in [specific technology/framework]
+- Used for [specific use case]
 
 ## What It Can Be Compared To
 

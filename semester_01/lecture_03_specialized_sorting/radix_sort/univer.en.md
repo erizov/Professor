@@ -47,10 +47,9 @@ This algorithm shares conceptual similarities with other algorithms in the Sorti
 
 ## Related Algorithms
 
-Radix Sort is often used in combination with:
-- Complementary algorithms for preprocessing or post-processing
-- Data structures that optimize its performance
-- Other algorithms in the same complexity class
+- Radix Sort is often used with [related algorithms]
+- Complementary to [other algorithms]
+- Part of [algorithm family]
 
 ## Key Implementation Details
 

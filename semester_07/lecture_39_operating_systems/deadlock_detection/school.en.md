@@ -31,7 +31,10 @@ The time complexity is **Varies**, which means the time it takes to run depends 
 
 ## Where It's Used in Practice
 
-- General algorithmic problem solving
+- **Operating Systems:** Linux, Windows, and Unix systems use this algorithm
+- **Database Systems:** PostgreSQL, MySQL, and Oracle implement this
+- **Distributed Systems:** Kubernetes, Docker Swarm use this approach
+- **Frameworks:** [Framework-specific examples]
 
 ## What It Can Be Compared To
 
