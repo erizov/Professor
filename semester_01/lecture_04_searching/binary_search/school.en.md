@@ -24,6 +24,29 @@ Always check the middle element - if it's not what we want, eliminate half the s
 
 This algorithm works by processing data systematically to achieve its goal. It's part of the **Searching** category of algorithms.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Set left=0, right=n-1]
+    Init --> Loop{left <= right?}
+    Loop -->|No| NotFound[Return -1]
+    Loop -->|Yes| Mid[Calculate mid]
+    Mid --> Compare{Compare arr[mid] with target}
+    Compare -->|Equal| Found[Return mid]
+    Compare -->|arr[mid] > target| Left[Set right = mid-1]
+    Compare -->|arr[mid] < target| Right[Set left = mid+1]
+    Left --> Loop
+    Right --> Loop
+    Found --> End([End])
+    NotFound --> End
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Algorithm Complexity
 
 The time complexity is **O(log n)**, which means the time it takes to run depends on the size of the input data. The space complexity is **O(1)**, indicating how much extra memory is needed.
@@ -48,6 +71,9 @@ def binary_search(arr, target):
     return result
 ```
 
+
+---
+
 ## 🎯 Try It Yourself
 
 **Try finding 7 in this sorted array:**
@@ -63,6 +89,9 @@ Step 2: Check middle of right half (index 5, value 9)
 Step 3: Found! Element 7 is at index 3
 ```
 
+
+---
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
@@ -74,6 +103,9 @@ Implement binary search to find the first occurrence of a target value in a sort
 
 **Exercise 3 (Hard):**
 What happens if you try binary search on an unsorted array? Why doesn't it work?
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -128,6 +160,9 @@ What happens if you try binary search on an unsorted array? Why doesn't it work?
 **Q4:** When would you use binary search instead of linear search?
 **A:** When the array is sorted and you need to search multiple times - the O(log n) vs O(n) advantage is significant.
 
+
+---
+
 ## Common Mistakes
 
 ### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
@@ -148,6 +183,9 @@ What happens if you try binary search on an unsorted array? Why doesn't it work?
 - Use debugging tools to verify your logic
 - Review the algorithm's key steps before implementing
 
+
+
+---
 
 ## Recommended Literature
 

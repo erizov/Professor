@@ -24,6 +24,24 @@ Greedy approach: always process the closest unvisited node first, ensuring short
 
 Этот алгоритм относится к категории **Graph Algorithms** и использует систематическую обработку данных для достижения своих целей.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize distances]
+    Init --> Select[Select unvisited node with min distance]
+    Select --> Mark[Mark as visited]
+    Mark --> Update[Update distances to neighbors]
+    Update --> Check{All nodes visited?}
+    Check -->|No| Select
+    Check -->|Yes| End([End])
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Анализ сложности
 
 **Временная сложность:** O(n²)
@@ -82,6 +100,9 @@ def dijkstra(graph, start):
 - Документация фреймворков и руководства по реализации
 
 
+
+---
+
 ## 🎯 Try It Yourself
 
 **Try this example:**
@@ -91,6 +112,9 @@ Step 1: [first operation]
 Step 2: [second operation]
 .
 Output: [result]
+
+
+---
 
 ## ✏️ Practice Exercise
 
@@ -102,6 +126,9 @@ Implement the algorithm in your preferred programming language.
 
 **Exercise 3 (Hard):**
 Optimize the algorithm or apply it to solve a real-world problem.
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -148,6 +175,9 @@ Optimize the algorithm or apply it to solve a real-world problem.
 
 **Q4:** What are the main steps of this algorithm?
 **A:** [List 3-5 key steps]
+
+
+---
 
 ## Common Mistakes
 

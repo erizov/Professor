@@ -24,6 +24,26 @@ Each number is the sum of the two previous numbers - we can compute this efficie
 
 This algorithm works by processing data systematically to achieve its goal. It's part of the **Dynamic Programming** category of algorithms.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Check{Base case?}
+    Check -->|n <= 1| Return[Return n]
+    Check -->|No| Memo{In memo?}
+    Memo -->|Yes| ReturnMemo[Return memo[n]]
+    Memo -->|No| Calc[Calculate F(n-1) + F(n-2)]
+    Calc --> Store[Store in memo]
+    Store --> ReturnMemo
+    Return --> End([End])
+    ReturnMemo --> End
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Algorithm Complexity
 
 The time complexity is **O(n²)**, which means the time it takes to run depends on the size of the input data. The space complexity is **O(1)**, indicating how much extra memory is needed.
@@ -51,6 +71,9 @@ def fibonacci(n):
     return result
 ```
 
+
+---
+
 ## 🎯 Try It Yourself
 
 **Try computing Fibonacci(5) by hand:**
@@ -64,6 +87,9 @@ F(5) = F(4) + F(3) = 3 + 2 = 5
 Answer: 5
 ```
 
+
+---
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
@@ -74,6 +100,9 @@ Write a function to compute Fibonacci(n) using dynamic programming (store previo
 
 **Exercise 3 (Hard):**
 Compare the time complexity of recursive Fibonacci vs dynamic programming Fibonacci. Why is DP faster?
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -124,6 +153,9 @@ Compare the time complexity of recursive Fibonacci vs dynamic programming Fibona
 **Q4:** What is the space complexity of DP Fibonacci?
 **A:** O(n) if we store all values, or O(1) if we only keep the last two values.
 
+
+---
+
 ## Common Mistakes
 
 ### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
@@ -144,6 +176,9 @@ Compare the time complexity of recursive Fibonacci vs dynamic programming Fibona
 - Use debugging tools to verify your logic
 - Review the algorithm's key steps before implementing
 
+
+
+---
 
 ## Recommended Literature
 

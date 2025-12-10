@@ -24,6 +24,23 @@ The algorithm works by Step 2: Check middle of right half (index 4, value 9).
 
 This algorithm belongs to the **Searching** category and employs systematic data processing to achieve its objectives.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize]
+    Init --> Process[Process data]
+    Process --> Check{Condition?}
+    Check -->|Yes| Action[Execute action]
+    Check -->|No| End([End])
+    Action --> Process
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Complexity Analysis
 
 **Time Complexity:** O(√n)
@@ -74,6 +91,9 @@ def jump_search(arr, target):
 - Incorrect assumptions about input data characteristics
 - Not considering alternative algorithms for specific use cases
 
+
+---
+
 ## Recommended Literature
 
 - "Introduction to Algorithms" (CLRS) - Comprehensive algorithm analysis
@@ -82,6 +102,9 @@ def jump_search(arr, target):
 - Research papers on algorithm optimization and analysis
 - Framework documentation and implementation guides
 
+
+
+---
 
 ## 🎯 Try It Yourself
 
@@ -93,6 +116,9 @@ Step 2: [second operation]
 .
 Output: [result]
 
+
+---
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
@@ -103,6 +129,9 @@ Implement the algorithm in your preferred programming language.
 
 **Exercise 3 (Hard):**
 Optimize the algorithm or apply it to solve a real-world problem.
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -149,6 +178,9 @@ Optimize the algorithm or apply it to solve a real-world problem.
 
 **Q4:** What are the main steps of this algorithm?
 **A:** [List 3-5 key steps]
+
+
+---
 
 ## Common Mistakes
 

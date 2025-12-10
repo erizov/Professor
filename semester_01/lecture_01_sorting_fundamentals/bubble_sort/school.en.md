@@ -24,6 +24,29 @@ The largest element 'bubbles up' to the end in each pass, so we can reduce the c
 
 This algorithm works by swapping elements, comparing elements to achieve its goal. It's part of the **Sorting** category of algorithms.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize array]
+    Init --> Loop1[For i = 0 to n-1]
+    Loop1 --> Loop2[For j = 0 to n-i-2]
+    Loop2 --> Compare{Compare arr[j] and arr[j+1]}
+    Compare -->|arr[j] > arr[j+1]| Swap[Swap elements]
+    Compare -->|arr[j] <= arr[j+1]| Next[Next iteration]
+    Swap --> Next
+    Next --> Check{More elements?}
+    Check -->|Yes| Loop2
+    Check -->|No| Sorted{Array sorted?}
+    Sorted -->|No| Loop1
+    Sorted -->|Yes| End([End])
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Algorithm Complexity
 
 The time complexity is **O(n²)**, which means the time it takes to run depends on the size of the input data. The space complexity is **O(1)**, indicating how much extra memory is needed.
@@ -47,6 +70,9 @@ def bubble_sort(data):
     return result
 ```
 
+
+---
+
 ## 🎯 Try It Yourself
 
 **Try sorting this by hand:**
@@ -67,6 +93,9 @@ Pass 2:
 Continue until sorted: [1, 2, 5, 8, 9]
 ```
 
+
+---
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
@@ -78,6 +107,9 @@ Write a function to sort a list of student names alphabetically using bubble sor
 
 **Exercise 3 (Hard):**
 Optimize bubble sort to stop early if the list is already sorted. How does this improve performance?
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -137,6 +169,9 @@ Optimize bubble sort to stop early if the list is already sorted. How does this 
 **Q4:** Is bubble sort stable?
 **A:** Yes, it preserves the relative order of equal elements.
 
+
+---
+
 ## Common Mistakes
 
 ### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
@@ -157,6 +192,9 @@ Optimize bubble sort to stop early if the list is already sorted. How does this 
 - Use debugging tools to verify your logic
 - Review the algorithm's key steps before implementing
 
+
+
+---
 
 ## Recommended Literature
 

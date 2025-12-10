@@ -24,6 +24,23 @@ The algorithm works by Step 2: Check middle of right half (index 4, value 9).
 
 Этот алгоритм относится к категории **Searching** и использует систематическую обработку данных для достижения своих целей.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize]
+    Init --> Process[Process data]
+    Process --> Check{Condition?}
+    Check -->|Yes| Action[Execute action]
+    Check -->|No| End([End])
+    Action --> Process
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Анализ сложности
 
 **Временная сложность:** O(n)
@@ -82,6 +99,9 @@ def linear_search(arr, target):
 - Документация фреймворков и руководства по реализации
 
 
+
+---
+
 ## 🎯 Try It Yourself
 
 **Try this example:**
@@ -91,6 +111,9 @@ Step 1: [first operation]
 Step 2: [second operation]
 .
 Output: [result]
+
+
+---
 
 ## ✏️ Practice Exercise
 
@@ -102,6 +125,9 @@ Implement the algorithm in your preferred programming language.
 
 **Exercise 3 (Hard):**
 Optimize the algorithm or apply it to solve a real-world problem.
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -148,6 +174,9 @@ Optimize the algorithm or apply it to solve a real-world problem.
 
 **Q4:** What are the main steps of this algorithm?
 **A:** [List 3-5 key steps]
+
+
+---
 
 ## Common Mistakes
 

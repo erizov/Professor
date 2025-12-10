@@ -24,6 +24,26 @@ Each number is the sum of the two previous numbers - we can compute this efficie
 
 Этот алгоритм относится к категории **Data Structure** и использует систематическую обработку данных для достижения своих целей.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Check{Base case?}
+    Check -->|n <= 1| Return[Return n]
+    Check -->|No| Memo{In memo?}
+    Memo -->|Yes| ReturnMemo[Return memo[n]]
+    Memo -->|No| Calc[Calculate F(n-1) + F(n-2)]
+    Calc --> Store[Store in memo]
+    Store --> ReturnMemo
+    Return --> End([End])
+    ReturnMemo --> End
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Анализ сложности
 
 **Временная сложность:** O(1)
@@ -80,6 +100,9 @@ def fibonacci_heap(data):
 - Документация фреймворков и руководства по реализации
 
 
+
+---
+
 ## 🎯 Try It Yourself
 
 **Try this example:**
@@ -89,6 +112,9 @@ Step 1: [first operation]
 Step 2: [second operation]
 .
 Output: [result]
+
+
+---
 
 ## ✏️ Practice Exercise
 
@@ -100,6 +126,9 @@ Implement the algorithm in your preferred programming language.
 
 **Exercise 3 (Hard):**
 Optimize the algorithm or apply it to solve a real-world problem.
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -146,6 +175,9 @@ Optimize the algorithm or apply it to solve a real-world problem.
 
 **Q4:** What are the main steps of this algorithm?
 **A:** [List 3-5 key steps]
+
+
+---
 
 ## Common Mistakes
 

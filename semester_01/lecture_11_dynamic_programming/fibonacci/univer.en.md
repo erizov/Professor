@@ -24,6 +24,26 @@ Each number is the sum of the two previous numbers - we can compute this efficie
 
 This algorithm belongs to the **Dynamic Programming** category and employs systematic data processing to achieve its objectives.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Check{Base case?}
+    Check -->|n <= 1| Return[Return n]
+    Check -->|No| Memo{In memo?}
+    Memo -->|Yes| ReturnMemo[Return memo[n]]
+    Memo -->|No| Calc[Calculate F(n-1) + F(n-2)]
+    Calc --> Store[Store in memo]
+    Store --> ReturnMemo
+    Return --> End([End])
+    ReturnMemo --> End
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Complexity Analysis
 
 **Time Complexity:** O(n²)
@@ -74,6 +94,9 @@ def fibonacci(n):
 - Incorrect assumptions about input data characteristics
 - Not considering alternative algorithms for specific use cases
 
+
+---
+
 ## Recommended Literature
 
 - "Introduction to Algorithms" (CLRS) - Comprehensive algorithm analysis
@@ -82,6 +105,9 @@ def fibonacci(n):
 - Research papers on algorithm optimization and analysis
 - Framework documentation and implementation guides
 
+
+
+---
 
 ## 🎯 Try It Yourself
 
@@ -96,6 +122,9 @@ F(5) = F(4) + F(3) = 3 + 2 = 5
 
 Answer: 5
 
+
+---
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
@@ -106,6 +135,9 @@ Write a function to compute Fibonacci(n) using dynamic programming (store previo
 
 **Exercise 3 (Hard):**
 Compare the time complexity of recursive Fibonacci vs dynamic programming Fibonacci. Why is DP faster?
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -155,6 +187,9 @@ Compare the time complexity of recursive Fibonacci vs dynamic programming Fibona
 
 **Q4:** What is the space complexity of DP Fibonacci?
 **A:** O(n) if we store all values, or O(1) if we only keep the last two values.
+
+
+---
 
 ## Common Mistakes
 

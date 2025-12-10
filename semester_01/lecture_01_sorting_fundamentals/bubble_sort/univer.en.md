@@ -24,6 +24,29 @@ The largest element 'bubbles up' to the end in each pass, so we can reduce the c
 
 This algorithm belongs to the **Sorting** category and employs swapping elements and comparing elements to achieve its objectives.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize array]
+    Init --> Loop1[For i = 0 to n-1]
+    Loop1 --> Loop2[For j = 0 to n-i-2]
+    Loop2 --> Compare{Compare arr[j] and arr[j+1]}
+    Compare -->|arr[j] > arr[j+1]| Swap[Swap elements]
+    Compare -->|arr[j] <= arr[j+1]| Next[Next iteration]
+    Swap --> Next
+    Next --> Check{More elements?}
+    Check -->|Yes| Loop2
+    Check -->|No| Sorted{Array sorted?}
+    Sorted -->|No| Loop1
+    Sorted -->|Yes| End([End])
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Complexity Analysis
 
 **Time Complexity:** O(n²)
@@ -71,6 +94,9 @@ def bubble_sort(data):
 - Incorrect assumptions about input data characteristics
 - Not considering alternative algorithms for specific use cases
 
+
+---
+
 ## Recommended Literature
 
 - "Introduction to Algorithms" (CLRS) - Comprehensive algorithm analysis
@@ -79,6 +105,9 @@ def bubble_sort(data):
 - Research papers on algorithm optimization and analysis
 - Framework documentation and implementation guides
 
+
+
+---
 
 ## 🎯 Try It Yourself
 
@@ -101,6 +130,9 @@ Pass 2:
 Continue until sorted: [1, 2, 5, 8, 9]
 ```
 
+
+---
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
@@ -112,6 +144,9 @@ Write a function to sort a list of student names alphabetically using bubble sor
 
 **Exercise 3 (Hard):**
 Optimize bubble sort to stop early if the list is already sorted. How does this improve performance?
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -170,6 +205,9 @@ Optimize bubble sort to stop early if the list is already sorted. How does this 
 
 **Q4:** Is bubble sort stable?
 **A:** Yes, it preserves the relative order of equal elements.
+
+
+---
 
 ## Common Mistakes
 

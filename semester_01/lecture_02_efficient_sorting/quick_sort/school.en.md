@@ -24,6 +24,26 @@ Divide and conquer: pick a pivot, partition around it, then recursively sort the
 
 This algorithm works by processing data systematically to achieve its goal. It's part of the **Sorting** category of algorithms.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Check{Base case?}
+    Check -->|Yes| End([End])
+    Check -->|No| Pivot[Choose pivot]
+    Pivot --> Partition[Partition array]
+    Partition --> Left[Recursively sort left]
+    Partition --> Right[Recursively sort right]
+    Left --> Merge[Merge results]
+    Right --> Merge
+    Merge --> End
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Algorithm Complexity
 
 The time complexity is **O(n log n)**, which means the time it takes to run depends on the size of the input data. The space complexity is **O(log n)**, indicating how much extra memory is needed.
@@ -53,6 +73,9 @@ def quick_sort(arr, low, high):
     return result
 ```
 
+
+---
+
 ## 🎯 Try It Yourself
 
 **Try this example:**
@@ -61,6 +84,9 @@ Step 1: [first operation]
 Step 2: [second operation]
 .
 Output: [result]
+
+
+---
 
 ## ✏️ Practice Exercise
 
@@ -72,6 +98,9 @@ Implement the algorithm in your preferred programming language.
 
 **Exercise 3 (Hard):**
 Optimize the algorithm or apply it to solve a real-world problem.
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -119,6 +148,9 @@ Optimize the algorithm or apply it to solve a real-world problem.
 **Q4:** What are the main steps of this algorithm?
 **A:** [List 3-5 key steps]
 
+
+---
+
 ## Common Mistakes
 
 ### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
@@ -139,6 +171,9 @@ Optimize the algorithm or apply it to solve a real-world problem.
 - Use debugging tools to verify your logic
 - Review the algorithm's key steps before implementing
 
+
+
+---
 
 ## Recommended Literature
 

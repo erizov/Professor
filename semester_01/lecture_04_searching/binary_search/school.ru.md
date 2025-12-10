@@ -24,6 +24,29 @@ Always check the middle element - if it's not what we want, eliminate half the s
 
 Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **Searching**.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Set left=0, right=n-1]
+    Init --> Loop{left <= right?}
+    Loop -->|No| NotFound[Return -1]
+    Loop -->|Yes| Mid[Calculate mid]
+    Mid --> Compare{Compare arr[mid] with target}
+    Compare -->|Equal| Found[Return mid]
+    Compare -->|arr[mid] > target| Left[Set right = mid-1]
+    Compare -->|arr[mid] < target| Right[Set left = mid+1]
+    Left --> Loop
+    Right --> Loop
+    Found --> End([End])
+    NotFound --> End
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Сложность алгоритма
 
 Временная сложность составляет **O(log n)**, что означает, что время выполнения зависит от размера входных данных. Пространственная сложность — **O(1)**, что указывает на количество дополнительной памяти.
@@ -62,6 +85,9 @@ def binary_search(arr, target):
 - Онлайн-ресурсы: GeeksforGeeks, Википедия, Визуализации алгоритмов
 
 
+
+---
+
 ## 🎯 Try It Yourself
 
 **Try finding 7 in this sorted array:**
@@ -78,6 +104,9 @@ Step 2: Check middle of right half (index 5, value 9)
 Step 3: Found! Element 7 is at index 3
 ```
 
+
+---
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
@@ -89,6 +118,9 @@ Implement binary search to find the first occurrence of a target value in a sort
 
 **Exercise 3 (Hard):**
 What happens if you try binary search on an unsorted array? Why doesn't it work?
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -142,6 +174,9 @@ What happens if you try binary search on an unsorted array? Why doesn't it work?
 
 **Q4:** When would you use binary search instead of linear search?
 **A:** When the array is sorted and you need to search multiple times - the O(log n) vs O(n) advantage is significant.
+
+
+---
 
 ## Common Mistakes
 

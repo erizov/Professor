@@ -24,6 +24,29 @@ The largest element 'bubbles up' to the end in each pass, so we can reduce the c
 
 Этот алгоритм работает, swapping elements, comparing elements, чтобы достичь своей цели. Он относится к категории алгоритмов **Sorting**.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize array]
+    Init --> Loop1[For i = 0 to n-1]
+    Loop1 --> Loop2[For j = 0 to n-i-2]
+    Loop2 --> Compare{Compare arr[j] and arr[j+1]}
+    Compare -->|arr[j] > arr[j+1]| Swap[Swap elements]
+    Compare -->|arr[j] <= arr[j+1]| Next[Next iteration]
+    Swap --> Next
+    Next --> Check{More elements?}
+    Check -->|Yes| Loop2
+    Check -->|No| Sorted{Array sorted?}
+    Sorted -->|No| Loop1
+    Sorted -->|Yes| End([End])
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Сложность алгоритма
 
 Временная сложность составляет **O(n²)**, что означает, что время выполнения зависит от размера входных данных. Пространственная сложность — **O(1)**, что указывает на количество дополнительной памяти.
@@ -61,6 +84,9 @@ def bubble_sort(data):
 - Онлайн-ресурсы: GeeksforGeeks, Википедия, Визуализации алгоритмов
 
 
+
+---
+
 ## 🎯 Try It Yourself
 
 **Try sorting this by hand:**
@@ -82,6 +108,9 @@ Pass 2:
 Continue until sorted: [1, 2, 5, 8, 9]
 ```
 
+
+---
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
@@ -93,6 +122,9 @@ Write a function to sort a list of student names alphabetically using bubble sor
 
 **Exercise 3 (Hard):**
 Optimize bubble sort to stop early if the list is already sorted. How does this improve performance?
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -151,6 +183,9 @@ Optimize bubble sort to stop early if the list is already sorted. How does this 
 
 **Q4:** Is bubble sort stable?
 **A:** Yes, it preserves the relative order of equal elements.
+
+
+---
 
 ## Common Mistakes
 

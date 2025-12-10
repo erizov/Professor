@@ -24,6 +24,26 @@ Compare elements and rearrange them until everything is in the correct order.
 
 Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **Sorting**.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize data]
+    Init --> Process[Process elements]
+    Process --> Compare{Compare elements}
+    Compare -->|Swap needed| Swap[Swap elements]
+    Compare -->|No swap| Next[Next iteration]
+    Swap --> Next
+    Next --> Check{All processed?}
+    Check -->|No| Process
+    Check -->|Yes| End([End])
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Сложность алгоритма
 
 Временная сложность составляет **O(n log n)**, что означает, что время выполнения зависит от размера входных данных. Пространственная сложность — **O(1)**, что указывает на количество дополнительной памяти.
@@ -66,6 +86,9 @@ def heap_sort(arr):
 - Онлайн-ресурсы: GeeksforGeeks, Википедия, Визуализации алгоритмов
 
 
+
+---
+
 ## 🎯 Try It Yourself
 
 **Try this example:**
@@ -75,6 +98,9 @@ Step 1: [first operation]
 Step 2: [second operation]
 .
 Output: [result]
+
+
+---
 
 ## ✏️ Practice Exercise
 
@@ -86,6 +112,9 @@ Implement the algorithm in your preferred programming language.
 
 **Exercise 3 (Hard):**
 Optimize the algorithm or apply it to solve a real-world problem.
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -132,6 +161,9 @@ Optimize the algorithm or apply it to solve a real-world problem.
 
 **Q4:** What are the main steps of this algorithm?
 **A:** [List 3-5 key steps]
+
+
+---
 
 ## Common Mistakes
 

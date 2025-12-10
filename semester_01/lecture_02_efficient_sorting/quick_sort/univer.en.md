@@ -24,6 +24,26 @@ Divide and conquer: pick a pivot, partition around it, then recursively sort the
 
 This algorithm belongs to the **Sorting** category and employs systematic data processing to achieve its objectives.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Check{Base case?}
+    Check -->|Yes| End([End])
+    Check -->|No| Pivot[Choose pivot]
+    Pivot --> Partition[Partition array]
+    Partition --> Left[Recursively sort left]
+    Partition --> Right[Recursively sort right]
+    Left --> Merge[Merge results]
+    Right --> Merge
+    Merge --> End
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Complexity Analysis
 
 **Time Complexity:** O(n log n)
@@ -76,6 +96,9 @@ def quick_sort(arr, low, high):
 - Incorrect assumptions about input data characteristics
 - Not considering alternative algorithms for specific use cases
 
+
+---
+
 ## Recommended Literature
 
 - "Introduction to Algorithms" (CLRS) - Comprehensive algorithm analysis
@@ -84,6 +107,9 @@ def quick_sort(arr, low, high):
 - Research papers on algorithm optimization and analysis
 - Framework documentation and implementation guides
 
+
+
+---
 
 ## 🎯 Try It Yourself
 
@@ -95,6 +121,9 @@ Step 2: [second operation]
 .
 Output: [result]
 
+
+---
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
@@ -105,6 +134,9 @@ Implement the algorithm in your preferred programming language.
 
 **Exercise 3 (Hard):**
 Optimize the algorithm or apply it to solve a real-world problem.
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -151,6 +183,9 @@ Optimize the algorithm or apply it to solve a real-world problem.
 
 **Q4:** What are the main steps of this algorithm?
 **A:** [List 3-5 key steps]
+
+
+---
 
 ## Common Mistakes
 

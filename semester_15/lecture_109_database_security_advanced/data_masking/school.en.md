@@ -24,6 +24,20 @@ The algorithm works by > **Note**: Mermaid diagrams are rendered automatically o
 
 This algorithm works by processing data systematically to achieve its goal. It's part of the **Advanced Graduate Level** category of algorithms.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Initialize]
+    Init --> Process[Process data]
+    Process --> Check{Condition?}
+    Check -->|Yes| Action[Execute action]
+    Check -->|No| End([End])
+    Action --> Process
+```
+
+
 ## Algorithm Complexity
 
 The time complexity is **Varies**, which means the time it takes to run depends on the size of the input data. The space complexity is **Varies**, indicating how much extra memory is needed.
@@ -46,6 +60,9 @@ def data_masking(data, mask_char):
     return result
 ```
 
+
+---
+
 ## 🎯 Try It Yourself
 
 **Try this example:**
@@ -54,6 +71,9 @@ Step 1: [first operation]
 Step 2: [second operation]
 .
 Output: [result]
+
+
+---
 
 ## ✏️ Practice Exercise
 
@@ -65,6 +85,9 @@ Implement the algorithm in your preferred programming language.
 
 **Exercise 3 (Hard):**
 Optimize the algorithm or apply it to solve a real-world problem.
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -112,6 +135,9 @@ Optimize the algorithm or apply it to solve a real-world problem.
 **Q4:** What are the main steps of this algorithm?
 **A:** [List 3-5 key steps]
 
+
+---
+
 ## Common Mistakes
 
 ### ❌ Mistake 1: Test with edge cases (empty input, single element, boundary values)
@@ -132,6 +158,9 @@ Optimize the algorithm or apply it to solve a real-world problem.
 - Use debugging tools to verify your logic
 - Review the algorithm's key steps before implementing
 
+
+
+---
 
 ## Recommended Literature
 

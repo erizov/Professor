@@ -24,6 +24,29 @@ Always check the middle element - if it's not what we want, eliminate half the s
 
 This algorithm belongs to the **Data Structure** category and employs systematic data processing to achieve its objectives.
 
+
+## 📊 Visual Flowchart
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Init[Set left=0, right=n-1]
+    Init --> Loop{left <= right?}
+    Loop -->|No| NotFound[Return -1]
+    Loop -->|Yes| Mid[Calculate mid]
+    Mid --> Compare{Compare arr[mid] with target}
+    Compare -->|Equal| Found[Return mid]
+    Compare -->|arr[mid] > target| Left[Set right = mid-1]
+    Compare -->|arr[mid] < target| Right[Set left = mid+1]
+    Left --> Loop
+    Right --> Loop
+    Found --> End([End])
+    NotFound --> End
+```
+
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+
+
+
 ## Complexity Analysis
 
 **Time Complexity:** O(log n)
@@ -71,6 +94,9 @@ def binary_search_tree(data):
 - Incorrect assumptions about input data characteristics
 - Not considering alternative algorithms for specific use cases
 
+
+---
+
 ## Recommended Literature
 
 - "Introduction to Algorithms" (CLRS) - Comprehensive algorithm analysis
@@ -79,6 +105,9 @@ def binary_search_tree(data):
 - Research papers on algorithm optimization and analysis
 - Framework documentation and implementation guides
 
+
+
+---
 
 ## 🎯 Try It Yourself
 
@@ -90,6 +119,9 @@ Step 2: [second operation]
 .
 Output: [result]
 
+
+---
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**
@@ -100,6 +132,9 @@ Implement the algorithm in your preferred programming language.
 
 **Exercise 3 (Hard):**
 Optimize the algorithm or apply it to solve a real-world problem.
+
+
+---
 
 ## ✅ Check Your Understanding
 
@@ -146,6 +181,9 @@ Optimize the algorithm or apply it to solve a real-world problem.
 
 **Q4:** What are the main steps of this algorithm?
 **A:** [List 3-5 key steps]
+
+
+---
 
 ## Common Mistakes
 
