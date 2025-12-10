@@ -5,7 +5,7 @@
 ## 📋 Quick Summary
 
 - **Purpose:** Dfs: Go deep first - explore as far as possible along each branch before backtracking.
-- **Complexity:** O(n²)
+- **Complexity:** O(V + E)
 - **Category:** Algorithms
 - **Key Idea:** Go deep first - explore as far as possible along each branch before backtracking.
 
@@ -30,11 +30,7 @@ The time complexity is **O(n²)**, which means the time it takes to run depends 
 
 ## Where It's Used in Practice
 
-Dfs is commonly used in:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
-- Database query optimization and indexing
-- Operating system process scheduling
-- Computer science education and algorithm learning
+- General algorithmic problem solving
 
 ## What It Can Be Compared To
 

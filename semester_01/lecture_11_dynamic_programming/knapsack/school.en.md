@@ -30,11 +30,7 @@ The time complexity is **O(n²)**, which means the time it takes to run depends 
 
 ## Where It's Used in Practice
 
-Knapsack is commonly used in:
-- Resource allocation problems
-- Portfolio optimization
-- Cutting stock problems
-- Computer science education and algorithm learning
+- General algorithmic problem solving
 
 ## What It Can Be Compared To
 

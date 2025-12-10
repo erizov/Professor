@@ -5,7 +5,7 @@
 ## 📋 Quick Summary
 
 - **Purpose:** Bfs: Explore level by level - visit all neighbors before moving to the next level, like ripples in water.
-- **Complexity:** O(n²)
+- **Complexity:** O(V + E)
 - **Category:** Algorithms
 - **Key Idea:** Explore level by level - visit all neighbors before moving to the next level, like ripples in water.
 

@@ -30,11 +30,7 @@ The algorithm works by Variational Quantum leverages quantum superposition and e
 
 ## Где применяется на практике
 
-Variational Quantum обычно используется в:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

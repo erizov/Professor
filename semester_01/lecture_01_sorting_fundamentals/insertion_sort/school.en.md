@@ -30,11 +30,9 @@ The time complexity is **O(n²)**, which means the time it takes to run depends 
 
 ## Where It's Used in Practice
 
-Insertion Sort is commonly used in:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
-- Database query optimization and indexing
-- Operating system process scheduling
-- Computer science education and algorithm learning
+- Data organization and retrieval
+- Database indexing
+- Search algorithm preprocessing
 
 ## What It Can Be Compared To
 

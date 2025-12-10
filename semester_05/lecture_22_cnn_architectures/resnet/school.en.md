@@ -30,11 +30,7 @@ The time complexity is **O(n*d*layers)**, which means the time it takes to run d
 
 ## Where It's Used in Practice
 
-Resnet is commonly used in:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Computer science education and algorithm learning
+- General algorithmic problem solving
 
 ## What It Can Be Compared To
 

@@ -30,11 +30,10 @@ Always check the middle element - if it's not what we want, eliminate half the s
 
 ## Где применяется на практике
 
-Binary Search Tree обычно используется в:
-- Database indexing (B-trees, AVL trees)
-- File system organization
-- Expression parsing and evaluation
-- Образовании по информатике и изучении алгоритмов
+- Searching in sorted arrays and databases
+- Finding elements in phone books, dictionaries
+- Range queries in databases
+- Game development (finding items in sorted lists)
 
 ## С чем можно сравнить
 

@@ -30,11 +30,9 @@ Compare elements and rearrange them until everything is in the correct order.
 
 ## Где применяется на практике
 
-Insertion Sort обычно используется в:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
-- Database query optimization and indexing
-- Operating system process scheduling
-- Образовании по информатике и изучении алгоритмов
+- Data organization and retrieval
+- Database indexing
+- Search algorithm preprocessing
 
 ## С чем можно сравнить
 

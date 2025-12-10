@@ -30,11 +30,7 @@ For each item, decide whether to include it or not - store the best value for ea
 
 ## Где применяется на практике
 
-Fractional Knapsack обычно используется в:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

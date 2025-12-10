@@ -30,11 +30,7 @@ The algorithm works by > **Note**: Mermaid diagrams are rendered automatically o
 
 ## Где применяется на практике
 
-Red Black Tree обычно используется в:
-- Database indexing (B-trees, AVL trees)
-- File system organization
-- Expression parsing and evaluation
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

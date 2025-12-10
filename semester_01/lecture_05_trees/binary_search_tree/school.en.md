@@ -30,11 +30,10 @@ The time complexity is **O(log n)**, which means the time it takes to run depend
 
 ## Where It's Used in Practice
 
-Binary Search Tree is commonly used in:
-- Database indexing (B-trees, AVL trees)
-- File system organization
-- Expression parsing and evaluation
-- Computer science education and algorithm learning
+- Searching in sorted arrays and databases
+- Finding elements in phone books, dictionaries
+- Range queries in databases
+- Game development (finding items in sorted lists)
 
 ## What It Can Be Compared To
 

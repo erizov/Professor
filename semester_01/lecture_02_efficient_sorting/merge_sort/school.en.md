@@ -30,11 +30,10 @@ The time complexity is **O(n log n)**, which means the time it takes to run depe
 
 ## Where It's Used in Practice
 
-Merge Sort is commonly used in:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
-- Database query optimization and indexing
-- Operating system process scheduling
-- Computer science education and algorithm learning
+- External sorting (sorting data that doesn't fit in memory)
+- Stable sorting when relative order matters
+- Sorting linked lists efficiently
+- Merge operations in databases
 
 ## What It Can Be Compared To
 

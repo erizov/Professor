@@ -30,11 +30,7 @@ The time complexity is **O(n)**, which means the time it takes to run depends on
 
 ## Where It's Used in Practice
 
-Linear Search is commonly used in:
-- Database query optimization
-- Search engines (binary search in sorted indices)
-- Autocomplete and suggestion systems
-- Computer science education and algorithm learning
+- General algorithmic problem solving
 
 ## What It Can Be Compared To
 

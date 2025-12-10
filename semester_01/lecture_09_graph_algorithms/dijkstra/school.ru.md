@@ -30,11 +30,10 @@ Greedy approach: always process the closest unvisited node first, ensuring short
 
 ## Где применяется на практике
 
-Dijkstra обычно используется в:
-- GPS navigation systems (Google Maps, Waze)
-- Network routing protocols (OSPF, IS-IS)
-- Social media friend recommendations
-- Образовании по информатике и изучении алгоритмов
+- GPS navigation systems (finding shortest routes)
+- Network routing protocols
+- Social network analysis (shortest path between users)
+- Game development (pathfinding in games)
 
 ## С чем можно сравнить
 

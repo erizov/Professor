@@ -30,11 +30,10 @@ Each number is the sum of the two previous numbers - we can compute this efficie
 
 ## Где применяется на практике
 
-Fibonacci Heap обычно используется в:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Образовании по информатике и изучении алгоритмов
+- Financial modeling (compound interest calculations)
+- Computer graphics (spiral patterns, golden ratio)
+- Biology (population growth models)
+- Algorithm analysis and benchmarking
 
 ## С чем можно сравнить
 

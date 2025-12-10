@@ -30,11 +30,10 @@ Always check the middle element - if it's not what we want, eliminate half the s
 
 ## Где применяется на практике
 
-Binary Search обычно используется в:
-- Database query optimization
-- Search engines (binary search in sorted indices)
-- Autocomplete and suggestion systems
-- Образовании по информатике и изучении алгоритмов
+- Searching in sorted arrays and databases
+- Finding elements in phone books, dictionaries
+- Range queries in databases
+- Game development (finding items in sorted lists)
 
 ## С чем можно сравнить
 

@@ -30,11 +30,7 @@ Shor Algorithm is a quantum algorithm for integer factorization, exponentially f
 
 ## Где применяется на практике
 
-Shor Algorithm обычно используется в:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

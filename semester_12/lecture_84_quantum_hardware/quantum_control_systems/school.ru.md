@@ -30,11 +30,7 @@ The algorithm works by Quantum Control Systems leverages quantum superposition a
 
 ## Где применяется на практике
 
-Quantum Control Systems обычно используется в:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

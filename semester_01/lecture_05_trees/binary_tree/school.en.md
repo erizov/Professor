@@ -30,11 +30,7 @@ The time complexity is **O(n)**, which means the time it takes to run depends on
 
 ## Where It's Used in Practice
 
-Binary Tree is commonly used in:
-- Database indexing (B-trees, AVL trees)
-- File system organization
-- Expression parsing and evaluation
-- Computer science education and algorithm learning
+- General algorithmic problem solving
 
 ## What It Can Be Compared To
 

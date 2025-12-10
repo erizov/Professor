@@ -30,11 +30,7 @@ The time complexity is **O(S²*B*C)**, which means the time it takes to run depe
 
 ## Where It's Used in Practice
 
-Yolo is commonly used in:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Computer science education and algorithm learning
+- General algorithmic problem solving
 
 ## What It Can Be Compared To
 

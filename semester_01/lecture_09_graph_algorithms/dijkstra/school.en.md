@@ -30,11 +30,10 @@ The time complexity is **O(n²)**, which means the time it takes to run depends 
 
 ## Where It's Used in Practice
 
-Dijkstra is commonly used in:
-- GPS navigation systems (Google Maps, Waze)
-- Network routing protocols (OSPF, IS-IS)
-- Social media friend recommendations
-- Computer science education and algorithm learning
+- GPS navigation systems (finding shortest routes)
+- Network routing protocols
+- Social network analysis (shortest path between users)
+- Game development (pathfinding in games)
 
 ## What It Can Be Compared To
 

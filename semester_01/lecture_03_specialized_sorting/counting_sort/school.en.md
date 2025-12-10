@@ -30,11 +30,9 @@ The time complexity is **O(n + k)**, which means the time it takes to run depend
 
 ## Where It's Used in Practice
 
-Counting Sort is commonly used in:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
-- Database query optimization and indexing
-- Operating system process scheduling
-- Computer science education and algorithm learning
+- Data organization and retrieval
+- Database indexing
+- Search algorithm preprocessing
 
 ## What It Can Be Compared To
 

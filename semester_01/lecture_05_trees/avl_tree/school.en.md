@@ -30,11 +30,7 @@ The time complexity is **O(log n)**, which means the time it takes to run depend
 
 ## Where It's Used in Practice
 
-Avl Tree is commonly used in:
-- Database indexing (B-trees, AVL trees)
-- File system organization
-- Expression parsing and evaluation
-- Computer science education and algorithm learning
+- General algorithmic problem solving
 
 ## What It Can Be Compared To
 

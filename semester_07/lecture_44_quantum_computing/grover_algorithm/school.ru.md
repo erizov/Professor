@@ -30,11 +30,10 @@ Grover Algorithm is a quantum search algorithm that finds a marked item in an un
 
 ## Где применяется на практике
 
-Grover Algorithm обычно используется в:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Образовании по информатике и изучении алгоритмов
+- Quantum database search
+- Optimization problems in quantum computing
+- Cryptographic applications
+- Quantum machine learning
 
 ## С чем можно сравнить
 

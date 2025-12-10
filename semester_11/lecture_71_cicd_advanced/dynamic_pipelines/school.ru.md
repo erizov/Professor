@@ -30,11 +30,7 @@ The algorithm works by > **Note**: Mermaid diagrams are rendered automatically o
 
 ## Где применяется на практике
 
-Dynamic Pipelines обычно используется в:
-- Optimization problems
-- Sequence alignment
-- Resource allocation
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

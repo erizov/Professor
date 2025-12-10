@@ -30,11 +30,10 @@ Divide and conquer: pick a pivot, partition around it, then recursively sort the
 
 ## Где применяется на практике
 
-Quick Sort обычно используется в:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
+- General-purpose sorting in programming languages (Python, Java)
 - Database query optimization and indexing
 - Operating system process scheduling
-- Образовании по информатике и изучении алгоритмов
+- In-memory sorting of large datasets
 
 ## С чем можно сравнить
 

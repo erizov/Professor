@@ -30,11 +30,10 @@ Divide the array in half, sort each half, then merge the sorted halves together.
 
 ## Где применяется на практике
 
-Merge Sort обычно используется в:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
-- Database query optimization and indexing
-- Operating system process scheduling
-- Образовании по информатике и изучении алгоритмов
+- External sorting (sorting data that doesn't fit in memory)
+- Stable sorting when relative order matters
+- Sorting linked lists efficiently
+- Merge operations in databases
 
 ## С чем можно сравнить
 

@@ -30,11 +30,7 @@ The algorithm works by Post Quantum Cryptography leverages quantum superposition
 
 ## Где применяется на практике
 
-Post Quantum Cryptography обычно используется в:
-- Social network analysis
-- Recommendation systems
-- Network topology analysis
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

@@ -30,11 +30,7 @@ The algorithm works by > **Note**: Mermaid diagrams are rendered automatically o
 
 ## Где применяется на практике
 
-Bellman Ford обычно используется в:
-- Social network analysis
-- Recommendation systems
-- Network topology analysis
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

@@ -30,11 +30,7 @@ For each item, decide whether to include it or not - store the best value for ea
 
 ## Где применяется на практике
 
-Knapsack обычно используется в:
-- Resource allocation problems
-- Portfolio optimization
-- Cutting stock problems
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

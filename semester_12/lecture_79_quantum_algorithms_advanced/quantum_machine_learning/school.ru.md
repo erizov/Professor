@@ -30,11 +30,7 @@ The algorithm works by Quantum Machine Learning leverages quantum superposition 
 
 ## Где применяется на практике
 
-Quantum Machine Learning обычно используется в:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

@@ -5,7 +5,7 @@
 ## 📋 Quick Summary
 
 - **Purpose:** Dfs: Go deep first - explore as far as possible along each branch before backtracking.
-- **Complexity:** O(n²)
+- **Complexity:** O(V + E)
 - **Category:** Algorithms
 - **Key Idea:** Go deep first - explore as far as possible along each branch before backtracking.
 

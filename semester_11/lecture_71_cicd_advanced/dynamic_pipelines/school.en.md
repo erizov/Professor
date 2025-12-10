@@ -30,11 +30,7 @@ The time complexity is **Varies**, which means the time it takes to run depends 
 
 ## Where It's Used in Practice
 
-Dynamic Pipelines is commonly used in:
-- Optimization problems
-- Sequence alignment
-- Resource allocation
-- Computer science education and algorithm learning
+- General algorithmic problem solving
 
 ## What It Can Be Compared To
 

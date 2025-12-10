@@ -30,11 +30,7 @@ The time complexity is **O(n/m)**, which means the time it takes to run depends 
 
 ## Where It's Used in Practice
 
-Boyer Moore is commonly used in:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Computer science education and algorithm learning
+- General algorithmic problem solving
 
 ## What It Can Be Compared To
 

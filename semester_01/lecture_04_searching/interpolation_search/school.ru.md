@@ -30,11 +30,7 @@ The algorithm works by Step 2: Check middle of right half (index 4, value 9).
 
 ## Где применяется на практике
 
-Interpolation Search обычно используется в:
-- Database query optimization
-- Search engines (binary search in sorted indices)
-- Autocomplete and suggestion systems
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

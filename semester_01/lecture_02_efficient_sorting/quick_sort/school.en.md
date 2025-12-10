@@ -30,11 +30,10 @@ The time complexity is **O(n log n)**, which means the time it takes to run depe
 
 ## Where It's Used in Practice
 
-Quick Sort is commonly used in:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
+- General-purpose sorting in programming languages (Python, Java)
 - Database query optimization and indexing
 - Operating system process scheduling
-- Computer science education and algorithm learning
+- In-memory sorting of large datasets
 
 ## What It Can Be Compared To
 

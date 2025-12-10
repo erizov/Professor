@@ -30,11 +30,7 @@ The time complexity is **Varies**, which means the time it takes to run depends 
 
 ## Where It's Used in Practice
 
-Graph Visualization is commonly used in:
-- Social network analysis
-- Recommendation systems
-- Network topology analysis
-- Computer science education and algorithm learning
+- General algorithmic problem solving
 
 ## What It Can Be Compared To
 

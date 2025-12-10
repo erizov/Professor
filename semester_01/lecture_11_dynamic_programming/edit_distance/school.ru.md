@@ -30,11 +30,7 @@ The algorithm works by > **Note**: Mermaid diagrams are rendered automatically o
 
 ## Где применяется на практике
 
-Edit Distance обычно используется в:
-- Spell checkers and autocorrect
-- DNA sequence alignment
-- Version control diff algorithms
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

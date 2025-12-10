@@ -5,7 +5,7 @@
 ## 📋 Quick Summary
 
 - **Purpose:** Dfs: Go deep first - explore as far as possible along each branch before backtracking.
-- **Complexity:** O(n²)
+- **Complexity:** O(V + E)
 - **Category:** Algorithms
 - **Key Idea:** Go deep first - explore as far as possible along each branch before backtracking.
 
@@ -30,11 +30,7 @@ Go deep first - explore as far as possible along each branch before backtracking
 
 ## Где применяется на практике
 
-Dfs обычно используется в:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
-- Database query optimization and indexing
-- Operating system process scheduling
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

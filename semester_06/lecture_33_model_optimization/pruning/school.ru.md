@@ -30,11 +30,7 @@ The algorithm works by > **Note**: Mermaid diagrams are rendered automatically o
 
 ## Где применяется на практике
 
-Pruning обычно используется в:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

@@ -30,11 +30,9 @@ The time complexity is **O(n²)**, which means the time it takes to run depends 
 
 ## Where It's Used in Practice
 
-Bubble Sort is commonly used in:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
-- Database query optimization and indexing
-- Operating system process scheduling
-- Computer science education and algorithm learning
+- Educational purposes and small datasets (< 10 elements)
+- When simplicity is more important than performance
+- Sorting nearly-sorted data with early termination optimization
 
 ## What It Can Be Compared To
 

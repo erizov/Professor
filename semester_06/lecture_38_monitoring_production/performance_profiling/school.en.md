@@ -30,11 +30,7 @@ The time complexity is **O(profiling_overhead)**, which means the time it takes 
 
 ## Where It's Used in Practice
 
-Performance Profiling is commonly used in:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Computer science education and algorithm learning
+- General algorithmic problem solving
 
 ## What It Can Be Compared To
 

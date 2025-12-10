@@ -30,11 +30,7 @@ The time complexity is **O(n²)**, which means the time it takes to run depends 
 
 ## Where It's Used in Practice
 
-Edit Distance is commonly used in:
-- Spell checkers and autocorrect
-- DNA sequence alignment
-- Version control diff algorithms
-- Computer science education and algorithm learning
+- General algorithmic problem solving
 
 ## What It Can Be Compared To
 

@@ -30,11 +30,7 @@ The algorithm works by > **Note**: Mermaid diagrams are rendered automatically o
 
 ## Где применяется на практике
 
-Kmp обычно используется в:
-- Database query optimization
-- Search engines (binary search in sorted indices)
-- Autocomplete and suggestion systems
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

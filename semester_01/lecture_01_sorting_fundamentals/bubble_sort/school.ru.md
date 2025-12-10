@@ -30,11 +30,9 @@ The largest element 'bubbles up' to the end in each pass, so we can reduce the c
 
 ## Где применяется на практике
 
-Bubble Sort обычно используется в:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
-- Database query optimization and indexing
-- Operating system process scheduling
-- Образовании по информатике и изучении алгоритмов
+- Educational purposes and small datasets (< 10 elements)
+- When simplicity is more important than performance
+- Sorting nearly-sorted data with early termination optimization
 
 ## С чем можно сравнить
 

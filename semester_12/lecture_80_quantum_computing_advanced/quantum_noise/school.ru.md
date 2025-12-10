@@ -30,11 +30,7 @@ The algorithm works by Quantum Noise leverages quantum superposition and entangl
 
 ## Где применяется на практике
 
-Quantum Noise обычно используется в:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 

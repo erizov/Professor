@@ -5,7 +5,7 @@
 ## 📋 Quick Summary
 
 - **Purpose:** Bfs: Explore level by level - visit all neighbors before moving to the next level, like ripples in water.
-- **Complexity:** O(n²)
+- **Complexity:** O(V + E)
 - **Category:** Algorithms
 - **Key Idea:** Explore level by level - visit all neighbors before moving to the next level, like ripples in water.
 
@@ -30,11 +30,7 @@ Explore level by level - visit all neighbors before moving to the next level, li
 
 ## Где применяется на практике
 
-Bfs обычно используется в:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
-- Database query optimization and indexing
-- Operating system process scheduling
-- Образовании по информатике и изучении алгоритмов
+- General algorithmic problem solving
 
 ## С чем можно сравнить
 
