@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Longest Common Subsequence solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Longest Common Subsequence processes data according to Algorithms principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Algorithms
-- **Key Idea:** Longest Common Subsequence uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Longest Common Subsequence is an algorithm that [brief description of what it does and why it's important].
+Longest Common Subsequence (LCS) Step-by-Step Execution:
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Algorithms principles.
 
-**LONGEST_COMMON_SUBSEQUENCE** = Remember: [key steps]
+**LONGEST_COMMON_SUBSEQUENCE** = Remember: Understand the problem → Apply Algorithms principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

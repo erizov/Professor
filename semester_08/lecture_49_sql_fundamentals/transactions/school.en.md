@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Transactions solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Transactions processes data according to SQL Database Fundamentals principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** SQL Database Fundamentals
-- **Key Idea:** Transactions uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Transactions is an algorithm that [brief description of what it does and why it's important].
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on SQL Database Fundamentals principles.
 
-**TRANSACTIONS** = Remember: [key steps]
+**TRANSACTIONS** = Remember: Understand the problem → Apply SQL Database Fundamentals principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

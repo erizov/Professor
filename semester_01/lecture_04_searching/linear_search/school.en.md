@@ -4,29 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Linear Search: The algorithm works by Step 2: Check middle of right half (index 4, value 9).
-- **Complexity:** O(n)
+- **Purpose:** Linear Search finds a specific element or pattern in a data structure.
+- **Complexity:** Varies time, Varies space
 - **Category:** Searching
-- **Key Idea:** The algorithm works by Step 2: Check middle of right half (index 4, value 9).
+- **Key Idea:** Uses divide-and-conquer or linear search strategy to locate target efficiently.
 
-Linear Search: The algorithm works by Step 2: Check middle of right half (index 4, value 9).
+Step 2: Check middle of right half (index 4, value 9)
 
-The algorithm works by Step 2: Check middle of right half (index 4, value 9).
+The algorithm works by applying systematic transformations to input data based on Searching principles.
 
-**LINEAR SEARCH** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm works by processing data systematically to achieve its goal. It's part of the **Searching** category of algorithms.
-
-
-> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-
+**LINEAR_SEARCH** = Remember: Understand the problem → Apply Searching principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

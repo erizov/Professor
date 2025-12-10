@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Iot Ml solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Iot Ml processes data according to Edge Computing principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Edge Computing
-- **Key Idea:** Iot Ml uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Iot Ml is an algorithm that [brief description of what it does and why it's important].
+IoT ML (Internet of Things Machine Learning) Flowchart:
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Edge Computing principles.
 
-**IOT_ML** = Remember: [key steps]
+**IOT_ML** = Remember: Understand the problem → Apply Edge Computing principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

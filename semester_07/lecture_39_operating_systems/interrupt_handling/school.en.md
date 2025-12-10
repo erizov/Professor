@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Interrupt Handling solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Interrupt Handling processes data according to Operating Systems Fundamentals principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Operating Systems Fundamentals
-- **Key Idea:** Interrupt Handling uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Interrupt Handling is an algorithm that [brief description of what it does and why it's important].
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Operating Systems Fundamentals principles.
 
-**INTERRUPT_HANDLING** = Remember: [key steps]
+**INTERRUPT_HANDLING** = Remember: Understand the problem → Apply Operating Systems Fundamentals principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

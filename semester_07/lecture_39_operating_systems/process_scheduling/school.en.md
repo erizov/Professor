@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Process Scheduling solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Process Scheduling processes data according to Operating Systems Fundamentals principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Operating Systems Fundamentals
-- **Key Idea:** Process Scheduling uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Process Scheduling is an algorithm that [brief description of what it does and why it's important].
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Operating Systems Fundamentals principles.
 
-**PROCESS_SCHEDULING** = Remember: [key steps]
+**PROCESS_SCHEDULING** = Remember: Understand the problem → Apply Operating Systems Fundamentals principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

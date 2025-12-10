@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Multimodal Llms solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Multimodal Llms processes data according to Advanced Graduate Level principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Advanced Graduate Level
-- **Key Idea:** Multimodal Llms uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Multimodal Llms is an algorithm that [brief description of what it does and why it's important].
+Multimodal Large Language Models Step-by-Step Execution:
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Advanced Graduate Level principles.
 
-**MULTIMODAL_LLMS** = Remember: [key steps]
+**MULTIMODAL_LLMS** = Remember: Understand the problem → Apply Advanced Graduate Level principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

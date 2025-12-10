@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Policy Gradient solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Policy Gradient processes data according to Reinforcement Learning principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Reinforcement Learning
-- **Key Idea:** Policy Gradient uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Policy Gradient is an algorithm that [brief description of what it does and why it's important].
+Policy Gradient (REINFORCE) Step-by-Step Execution:
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Reinforcement Learning principles.
 
-**POLICY_GRADIENT** = Remember: [key steps]
+**POLICY_GRADIENT** = Remember: Understand the problem → Apply Reinforcement Learning principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

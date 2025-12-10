@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Interface Segregation solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Interface Segregation processes data according to SOLID principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** SOLID
-- **Key Idea:** Interface Segregation uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Interface Segregation is an algorithm that [brief description of what it does and why it's important].
+Interface Segregation Principle Step-by-Step Execution:
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on SOLID principles.
 
-**INTERFACE_SEGREGATION** = Remember: [key steps]
+**INTERFACE_SEGREGATION** = Remember: Understand the problem → Apply SOLID principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

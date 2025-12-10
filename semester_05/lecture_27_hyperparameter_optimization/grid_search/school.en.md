@@ -4,29 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Grid Search: The algorithm works by Step 2: Check middle of right half (index 4, value 9).
-- **Complexity:** O(n*combinations)
+- **Purpose:** Grid Search finds a specific element or pattern in a data structure.
+- **Complexity:** Varies time, Varies space
 - **Category:** Optimization
-- **Key Idea:** The algorithm works by Step 2: Check middle of right half (index 4, value 9).
+- **Key Idea:** Uses divide-and-conquer or linear search strategy to locate target efficiently.
 
-Grid Search: The algorithm works by Step 2: Check middle of right half (index 4, value 9).
+Step 2: Check middle of right half (index 4, value 9)
 
-The algorithm works by Step 2: Check middle of right half (index 4, value 9).
+The algorithm works by applying systematic transformations to input data based on Optimization principles.
 
-**GRID SEARCH** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm works by processing data systematically to achieve its goal. It's part of the **Optimization** category of algorithms.
-
-
-> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-
+**GRID_SEARCH** = Remember: Understand the problem → Apply Optimization principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

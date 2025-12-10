@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Sha256 solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Sha256 processes data according to Cryptography principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Cryptography
-- **Key Idea:** Sha256 uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Sha256 is an algorithm that [brief description of what it does and why it's important].
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Cryptography principles.
 
-**SHA256** = Remember: [key steps]
+**SHA256** = Remember: Understand the problem → Apply Cryptography principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

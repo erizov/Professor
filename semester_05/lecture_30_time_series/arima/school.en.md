@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Arima solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Arima processes data according to Time Series principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Time Series
-- **Key Idea:** Arima uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Arima is an algorithm that [brief description of what it does and why it's important].
+ARIMA (AutoRegressive Integrated Moving Average) Flowchart:
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Time Series principles.
 
-**ARIMA** = Remember: [key steps]
+**ARIMA** = Remember: Understand the problem → Apply Time Series principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

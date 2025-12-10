@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Readers Writers solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Readers Writers processes data according to Concurrency principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Concurrency
-- **Key Idea:** Readers Writers uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Readers Writers is an algorithm that [brief description of what it does and why it's important].
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Concurrency principles.
 
-**READERS_WRITERS** = Remember: [key steps]
+**READERS_WRITERS** = Remember: Understand the problem → Apply Concurrency principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

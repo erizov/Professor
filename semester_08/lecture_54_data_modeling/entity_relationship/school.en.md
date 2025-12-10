@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Entity Relationship solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Entity Relationship processes data according to Data Modeling principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Data Modeling
-- **Key Idea:** Entity Relationship uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Entity Relationship is an algorithm that [brief description of what it does and why it's important].
+Entity-Relationship Modeling Step-by-Step Execution:
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Data Modeling principles.
 
-**ENTITY_RELATIONSHIP** = Remember: [key steps]
+**ENTITY_RELATIONSHIP** = Remember: Understand the problem → Apply Data Modeling principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Rsa solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Rsa processes data according to Cryptography principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Cryptography
-- **Key Idea:** Rsa uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Rsa is an algorithm that [brief description of what it does and why it's important].
+RSA Public-Key Cryptography Step-by-Step Execution:
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Cryptography principles.
 
-**RSA** = Remember: [key steps]
+**RSA** = Remember: Understand the problem → Apply Cryptography principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

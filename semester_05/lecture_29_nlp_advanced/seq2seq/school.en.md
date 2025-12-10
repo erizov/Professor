@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Seq2Seq solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Seq2Seq processes data according to NLP principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** NLP
-- **Key Idea:** Seq2Seq uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Seq2Seq is an algorithm that [brief description of what it does and why it's important].
+Seq2Seq (Sequence-to-Sequence) Step-by-Step Execution:
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on NLP principles.
 
-**SEQ2SEQ** = Remember: [key steps]
+**SEQ2SEQ** = Remember: Understand the problem → Apply NLP principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

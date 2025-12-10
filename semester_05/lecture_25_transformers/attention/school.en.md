@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Attention solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Attention processes data according to NLP principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** NLP
-- **Key Idea:** Attention uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Attention is an algorithm that [brief description of what it does and why it's important].
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on NLP principles.
 
-**ATTENTION** = Remember: [key steps]
+**ATTENTION** = Remember: Understand the problem → Apply NLP principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

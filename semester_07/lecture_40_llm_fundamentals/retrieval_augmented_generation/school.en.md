@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Retrieval Augmented Generation solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Retrieval Augmented Generation processes data according to Large Language Models Fundamentals principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Large Language Models Fundamentals
-- **Key Idea:** Retrieval Augmented Generation uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Retrieval Augmented Generation is an algorithm that [brief description of what it does and why it's important].
+Retrieval Augmented Generation (RAG) Step-by-Step Execution:
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Large Language Models Fundamentals principles.
 
-**RETRIEVAL_AUGMENTED_GENERATION** = Remember: [key steps]
+**RETRIEVAL_AUGMENTED_GENERATION** = Remember: Understand the problem → Apply Large Language Models Fundamentals principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

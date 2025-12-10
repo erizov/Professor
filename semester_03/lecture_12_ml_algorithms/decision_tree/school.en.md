@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Decision Tree solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Decision Tree organizes data in a hierarchical tree structure for efficient access and manipulation.
+- **Complexity:** Varies time, Varies space
 - **Category:** Machine Learning
-- **Key Idea:** Decision Tree uses [key technique] to [achieve goal].
+- **Key Idea:** Uses tree-based data structure to maintain ordering and enable fast operations.
 
-Decision Tree is an algorithm that [brief description of what it does and why it's important].
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Machine Learning principles.
 
-**DECISION_TREE** = Remember: [key steps]
+**DECISION_TREE** = Remember: Understand the problem → Apply Machine Learning principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

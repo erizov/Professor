@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Bcrypt solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Bcrypt processes data according to Cryptography principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Cryptography
-- **Key Idea:** Bcrypt uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Bcrypt is an algorithm that [brief description of what it does and why it's important].
+![bcrypt Password Hashing Flowchart](semester_04/lecture_18_crypto_algorithms/bcrypt/visualizations/flowchart.svg)
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Cryptography principles.
 
-**BCRYPT** = Remember: [key steps]
+**BCRYPT** = Remember: Understand the problem → Apply Cryptography principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

@@ -31,22 +31,28 @@ This algorithm belongs to the **Sorting** category and employs swapping elements
 
 ## Complexity Analysis
 
-**Time Complexity:** O(n²)
-- The algorithm's performance scales according to this complexity class
-- Best, average, and worst cases may vary based on input characteristics
+**Time Complexity:** O(n) to O(n²) depending on implementation
+- Analysis based on algorithm structure and data operations
+- Best, average, and worst cases depend on input characteristics
+- Consider input size and data distribution
 
-**Space Complexity:** O(1)
-- Indicates the amount of additional memory required during execution
+**Space Complexity:** O(1) to O(n) depending on approach
+- Additional memory for data structures and recursion
+- Auxiliary space for temporary variables
+- Consider in-place vs. extra space implementations
 
-**Key Data Structures:** Standard data structures
+**Key Data Structures:** 
+- Based on algorithm type: arrays, trees, graphs, hash tables, etc.
+
 
 ## Real-World Applications
 
 Bubble Sort is used in:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
-- Database query optimization and indexing
-- Operating system process scheduling
-- E-commerce product listings and price sorting
+- **Database Systems:** Sorting query results, indexing, and organizing data
+- **Operating Systems:** Process scheduling, file system organization
+- **Data Analysis:** Preparing data for analysis, statistical operations
+- **Search Engines:** Ranking and organizing search results
+
 
 ## Conceptual Similarities
 
@@ -62,24 +68,26 @@ Bubble Sort is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def bubble_sort(data):
-    """Implementation of Bubble Sort."""
-    # [Implementation details based on algorithm type]
-    return result
+class BubbleSort:
+    """Bubble Sort implementation."""
+    
+    def __init__(self):
+        # Initialize data structures
+        pass
+    
+    def process(self, data):
+        """Process input data."""
+        # Implementation logic
+        return result
 ```
 
 
 ## Common Application Errors
 
-- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
-
-- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
-
-- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
-
-- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
-
-- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+- **Not handling empty or single-element arrays:** Solution: Add checks for edge cases before sorting.
+- **Incorrect loop bounds:** Solution: Carefully verify indices to avoid off-by-one errors.
+- **Not optimizing for already-sorted input:** Solution: Add early termination check.
+- **Memory issues with large datasets:** Solution: Consider in-place sorting or external sorting for large data.
 
 
 ## Recommended Literature

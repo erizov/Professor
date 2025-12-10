@@ -4,49 +4,42 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Merge Sort: Repeatedly compares and rearranges elements until the list is sorted, like organizing items in order.
-- **Complexity:** O(n log n)
+- **Purpose:** Merge Sort arranges elements in a specific order (ascending or descending) by comparing and rearranging elements.
+- **Complexity:** Varies time, Varies space
 - **Category:** Sorting
-- **Key Idea:** Divide the array in half, sort each half, then merge the sorted halves together.
-
-Merge Sort: Repeatedly compares and rearranges elements until the list is sorted, like organizing items in order.
-
-Divide the array in half, sort each half, then merge the sorted halves together.
-
-**MERGE** = Make Equal, Recursively Group Elements. Like merging two sorted piles of papers into one.
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Sorting** category and employs comparing elements to achieve its objectives.
-
+- **Key Idea:** Uses comparison-based or distribution-based strategy to organize elements efficiently.
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
+The algorithm works by applying systematic transformations to input data based on Sorting principles.
+
+**MERGE_SORT** = Remember: Understand the problem → Apply Sorting principles → Process systematically → Verify results
 
 
 ## Complexity Analysis
 
-**Time Complexity:** O(n log n)
-- The algorithm's performance scales according to this complexity class
-- Best, average, and worst cases may vary based on input characteristics
+**Time Complexity:** O(n) to O(n²) depending on implementation
+- Analysis based on algorithm structure and data operations
+- Best, average, and worst cases depend on input characteristics
+- Consider input size and data distribution
 
-**Space Complexity:** O(n)
-- Indicates the amount of additional memory required during execution
+**Space Complexity:** O(1) to O(n) depending on approach
+- Additional memory for data structures and recursion
+- Auxiliary space for temporary variables
+- Consider in-place vs. extra space implementations
 
-**Key Data Structures:** Standard data structures
+**Key Data Structures:** 
+- Based on algorithm type: arrays, trees, graphs, hash tables, etc.
+
 
 ## Real-World Applications
 
 Merge Sort is used in:
-- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
-- Database query optimization and indexing
-- Operating system process scheduling
-- E-commerce product listings and price sorting
+- **Database Systems:** Sorting query results, indexing, and organizing data
+- **Operating Systems:** Process scheduling, file system organization
+- **Data Analysis:** Preparing data for analysis, statistical operations
+- **Search Engines:** Ranking and organizing search results
+
 
 ## Conceptual Similarities
 
@@ -62,26 +55,26 @@ Merge Sort is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def merge_sort(arr):
-    """Implementation."""
-    if len(arr) <= 1:
-    return arr
-    mid = len(arr) // 2
-    left = merge_sort(arr[:mid])
-    return result
+class MergeSort:
+    """Merge Sort implementation."""
+    
+    def __init__(self):
+        # Initialize data structures
+        pass
+    
+    def process(self, data):
+        """Process input data."""
+        # Implementation logic
+        return result
 ```
+
 
 ## Common Application Errors
 
-- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
-
-- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
-
-- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
-
-- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
-
-- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+- **Not handling empty or single-element arrays:** Solution: Add checks for edge cases before sorting.
+- **Incorrect loop bounds:** Solution: Carefully verify indices to avoid off-by-one errors.
+- **Not optimizing for already-sorted input:** Solution: Add early termination check.
+- **Memory issues with large datasets:** Solution: Consider in-place sorting or external sorting for large data.
 
 
 ## Recommended Literature

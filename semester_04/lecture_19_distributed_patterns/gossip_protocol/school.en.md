@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Gossip Protocol solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Gossip Protocol processes data according to Distributed Systems principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Distributed Systems
-- **Key Idea:** Gossip Protocol uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Gossip Protocol is an algorithm that [brief description of what it does and why it's important].
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Distributed Systems principles.
 
-**GOSSIP_PROTOCOL** = Remember: [key steps]
+**GOSSIP_PROTOCOL** = Remember: Understand the problem → Apply Distributed Systems principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

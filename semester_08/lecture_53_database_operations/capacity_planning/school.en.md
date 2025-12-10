@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Capacity Planning solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Capacity Planning processes data according to Database Operations principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Database Operations
-- **Key Idea:** Capacity Planning uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Capacity Planning is an algorithm that [brief description of what it does and why it's important].
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Database Operations principles.
 
-**CAPACITY_PLANNING** = Remember: [key steps]
+**CAPACITY_PLANNING** = Remember: Understand the problem → Apply Database Operations principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

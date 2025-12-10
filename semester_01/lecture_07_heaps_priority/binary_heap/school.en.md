@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Binary Heap solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Binary Heap organizes data in a hierarchical tree structure for efficient access and manipulation.
+- **Complexity:** Varies time, Varies space
 - **Category:** Data Structure
-- **Key Idea:** Binary Heap uses [key technique] to [achieve goal].
+- **Key Idea:** Uses tree-based data structure to maintain ordering and enable fast operations.
 
-Binary Heap is an algorithm that [brief description of what it does and why it's important].
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Data Structure principles.
 
-**BINARY_HEAP** = Remember: [key steps]
+**BINARY_HEAP** = Remember: Understand the problem → Apply Data Structure principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

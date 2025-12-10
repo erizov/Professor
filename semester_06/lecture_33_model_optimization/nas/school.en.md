@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Nas solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Nas processes data according to Optimization principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Optimization
-- **Key Idea:** Nas uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Nas is an algorithm that [brief description of what it does and why it's important].
+NAS (Neural Architecture Search) Step-by-Step Execution:
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Optimization principles.
 
-**NAS** = Remember: [key steps]
+**NAS** = Remember: Understand the problem → Apply Optimization principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

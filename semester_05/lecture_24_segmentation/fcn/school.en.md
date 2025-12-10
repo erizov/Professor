@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Fcn solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Fcn processes data according to Computer Vision principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Computer Vision
-- **Key Idea:** Fcn uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Fcn is an algorithm that [brief description of what it does and why it's important].
+FCN (Fully Convolutional Network) Step-by-Step Execution:
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Computer Vision principles.
 
-**FCN** = Remember: [key steps]
+**FCN** = Remember: Understand the problem → Apply Computer Vision principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

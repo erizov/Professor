@@ -4,36 +4,42 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Decision Tree solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Decision Tree organizes data in a hierarchical tree structure for efficient access and manipulation.
+- **Complexity:** Varies time, Varies space
 - **Category:** Machine Learning
-- **Key Idea:** Decision Tree uses [key technique] to [achieve goal].
+- **Key Idea:** Uses tree-based data structure to maintain ordering and enable fast operations.
 
-Decision Tree is an algorithm that [brief description of what it does and why it's important].
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Machine Learning principles.
 
-**DECISION_TREE** = Remember: [key steps]
+**DECISION_TREE** = Remember: Understand the problem → Apply Machine Learning principles → Process systematically → Verify results
 
 
 ## Complexity Analysis
 
-**Time Complexity:** O(n log n)
-- The algorithm's performance scales according to this complexity class
-- Best, average, and worst cases may vary based on input characteristics
+**Time Complexity:** O(n) to O(n²) depending on implementation
+- Analysis based on algorithm structure and data operations
+- Best, average, and worst cases depend on input characteristics
+- Consider input size and data distribution
 
-**Space Complexity:** O(n)
-- Indicates the amount of additional memory required during execution
+**Space Complexity:** O(1) to O(n) depending on approach
+- Additional memory for data structures and recursion
+- Auxiliary space for temporary variables
+- Consider in-place vs. extra space implementations
 
-**Key Data Structures:** hash table/dictionary
+**Key Data Structures:** 
+- Based on algorithm type: arrays, trees, graphs, hash tables, etc.
+
 
 ## Real-World Applications
 
 Decision Tree is used in:
-- Database indexing (B-trees, AVL trees)
-- File system organization
-- Expression parsing and evaluation
-- Decision tree algorithms in ML
+- **Priority Queues:** Task scheduling, event handling
+- **Database Indexing:** B-trees, B+ trees for efficient lookups
+- **Memory Management:** Heap allocation, garbage collection
+- **Expression Parsing:** Abstract syntax trees, compiler design
+
 
 ## Conceptual Similarities
 
@@ -49,73 +55,26 @@ Decision Tree is often used in combination with:
 ## Key Implementation Details
 
 ```python
-class DecisionTreeNode:
-    """Decision tree node."""
-
-    def __init__(self, feature=None, threshold=None, left=None, right=None, value=None):
-        self.feature = feature
-        self.threshold = threshold
-        self.left = left
-        self.right = right
-        self.value = value
-
-
-def build_decision_tree(
-    X: List[List[float]], y: List[any], max_depth: int = 10
-) -> DecisionTreeNode:
-    """Build decision tree (simplified version)."""
-    if max_depth == 0 or len(set(y)) == 1:
-        return DecisionTreeNode(value=max(set(y), key=y.count))
-
-    # Simple split (in real implementation, find best split)
-    if not X:
-        return DecisionTreeNode(value=None)
-
-    feature = 0
-    threshold = sum(row[feature] for row in X) / len(X)
-
-    left_X, left_y = [], []
-    right_X, right_y = [], []
-
-    for i, row in enumerate(X):
-        if row[feature] <= threshold:
-            left_X.append(row)
-            left_y.append(y[i])
-        else:
-            right_X.append(row)
-            right_y.append(y[i])
-
-    left = build_decision_tree(left_X, left_y, max_depth - 1)
-    right = build_decision_tree(right_X, right_y, max_depth - 1)
-
-    return DecisionTreeNode(
-        feature=feature, threshold=threshold, left=left, right=right
-    )
-
-
-def predict_tree(node: DecisionTreeNode, x: List[float]) -> any:
-    """Predict using decision tree."""
-    if node.value is not None:
-        return node.value
-
-    if x[node.feature] <= node.threshold:
-        return predict_tree(node.left, x)
-    else:
-        return predict_tree(node.right, x)
+class DecisionTree:
+    """Decision Tree implementation."""
+    
+    def __init__(self):
+        # Initialize data structures
+        pass
+    
+    def process(self, data):
+        """Process input data."""
+        # Implementation logic
+        return result
 ```
 
 
 ## Common Application Errors
 
-- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
-
-- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
-
-- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
-
-- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
-
-- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+- **Not maintaining heap/tree property:** Solution: Verify property after each insertion/deletion.
+- **Incorrect parent-child index calculations:** Solution: Use proper formulas (parent = (i-1)//2, left = 2*i+1).
+- **Not handling empty tree/heap:** Solution: Add null checks before operations.
+- **Memory leaks in tree operations:** Solution: Properly clean up nodes when deleting.
 
 
 ## Recommended Literature

@@ -4,29 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Binary Search Tree: Always check the middle element - if it's not what we want, eliminate half the search space.
-- **Complexity:** O(log n)
+- **Purpose:** Binary Search Tree finds a specific element or pattern in a data structure.
+- **Complexity:** Varies time, Varies space
 - **Category:** Data Structure
-- **Key Idea:** Always check the middle element - if it's not what we want, eliminate half the search space.
+- **Key Idea:** Uses divide-and-conquer or linear search strategy to locate target efficiently.
 
-Binary Search Tree: Always check the middle element - if it's not what we want, eliminate half the search space.
+Step 2: Check middle of right half (index 4, value 9)
 
-Always check the middle element - if it's not what we want, eliminate half the search space.
+The algorithm works by applying systematic transformations to input data based on Data Structure principles.
 
-**BINARY** = Begin In Middle, Always Narrow Your search. Like finding a word in a dictionary - always check the middle!
-
-
-
-
-
-
-
-
-This algorithm works by processing data systematically to achieve its goal. It's part of the **Data Structure** category of algorithms.
-
-
-> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
-
+**BINARY_SEARCH_TREE** = Remember: Understand the problem → Apply Data Structure principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

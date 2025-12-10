@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Prophet solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Prophet processes data according to Time Series principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Time Series
-- **Key Idea:** Prophet uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Prophet is an algorithm that [brief description of what it does and why it's important].
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Time Series principles.
 
-**PROPHET** = Remember: [key steps]
+**PROPHET** = Remember: Understand the problem → Apply Time Series principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

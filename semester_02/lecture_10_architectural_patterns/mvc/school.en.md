@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Mvc solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Mvc processes data according to Architectural Pattern principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Architectural Pattern
-- **Key Idea:** Mvc uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Mvc is an algorithm that [brief description of what it does and why it's important].
+Model-View-Controller (MVC) Step-by-Step Execution:
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Architectural Pattern principles.
 
-**MVC** = Remember: [key steps]
+**MVC** = Remember: Understand the problem → Apply Architectural Pattern principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

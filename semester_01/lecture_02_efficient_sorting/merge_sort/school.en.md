@@ -4,29 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Merge Sort: Repeatedly compares and rearranges elements until the list is sorted, like organizing items in order.
-- **Complexity:** O(n log n)
+- **Purpose:** Merge Sort arranges elements in a specific order (ascending or descending) by comparing and rearranging elements.
+- **Complexity:** Varies time, Varies space
 - **Category:** Sorting
-- **Key Idea:** Divide the array in half, sort each half, then merge the sorted halves together.
-
-Merge Sort: Repeatedly compares and rearranges elements until the list is sorted, like organizing items in order.
-
-Divide the array in half, sort each half, then merge the sorted halves together.
-
-**MERGE** = Make Equal, Recursively Group Elements. Like merging two sorted piles of papers into one.
-
-
-
-
-
-
-
-
-This algorithm works by comparing elements to achieve its goal. It's part of the **Sorting** category of algorithms.
-
+- **Key Idea:** Uses comparison-based or distribution-based strategy to organize elements efficiently.
 
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
+The algorithm works by applying systematic transformations to input data based on Sorting principles.
+
+**MERGE_SORT** = Remember: Understand the problem → Apply Sorting principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity

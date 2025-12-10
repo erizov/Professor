@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Activity Selection solves [algorithm purpose] by [key approach].
-- **Complexity:** Varies
+- **Purpose:** Activity Selection processes data according to Greedy Algorithm principles to achieve specific computational goals.
+- **Complexity:** Varies time, Varies space
 - **Category:** Greedy Algorithm
-- **Key Idea:** Activity Selection uses [key technique] to [achieve goal].
+- **Key Idea:** Uses systematic approach to transform input data into desired output format.
 
-Activity Selection is an algorithm that [brief description of what it does and why it's important].
+> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
-The algorithm works by [key steps in the process].
+The algorithm works by applying systematic transformations to input data based on Greedy Algorithm principles.
 
-**ACTIVITY_SELECTION** = Remember: [key steps]
+**ACTIVITY_SELECTION** = Remember: Understand the problem → Apply Greedy Algorithm principles → Process systematically → Verify results
 
 
 ## Algorithm Complexity
