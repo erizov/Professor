@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Column Family: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Column Family solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** NoSQL Database Fundamentals
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Column Family uses [key technique] to [achieve goal].
 
-Column Family: The algorithm works by systematically processing data according to a specific strategy.
+Column Family is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**COLUMN FAMILY** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **NoSQL Database Fundamentals** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**COLUMN_FAMILY** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,74 @@ Column Family is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def column_family(data):
-    """Implementation of Column Family."""
-    # Core algorithm logic
-    return result
+class ColumnFamily:
+    """Column family (NoSQL) data model."""
+
+    def __init__(self):
+        self.column_families: Dict[str, Dict[str, Dict[str, any]]] = {}
+
+    def create_column_family(self, family_name: str) -> None:
+        """Create column family."""
+        self.column_families[family_name] = {}
+
+    def put(self, family_name: str, row_key: str, column: str, value: any) -> None:
+        """Put value in column family."""
+        if family_name not in self.column_families:
+            self.create_column_family(family_name)
+
+        if row_key not in self.column_families[family_name]:
+            self.column_families[family_name][row_key] = {}
+
+        self.column_families[family_name][row_key][column] = value
+
+    def get(self, family_name: str, row_key: str, column: Optional[str] = None) -> any:
+        """Get value from column family."""
+        if family_name not in self.column_families:
+            return None
+
+        if row_key not in self.column_families[family_name]:
+            return None
+
+        if column:
+            return self.column_families[family_name][row_key].get(column)
+
+        return self.column_families[family_name][row_key]
+
+    def scan(
+        self,
+        family_name: str,
+        start_key: Optional[str] = None,
+        end_key: Optional[str] = None,
+    ) -> List[dict]:
+        """Scan column family."""
+        if family_name not in self.column_families:
+            return []
+
+        results = []
+        for row_key, columns in self.column_families[family_name].items():
+            if start_key and row_key < start_key:
+                continue
+            if end_key and row_key > end_key:
+                continue
+
+            results.append({"row_key": row_key, "columns": columns})
+
+        return results
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Optuna: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(n*trials)
+- **Purpose:** Optuna solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Optimization
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Optuna uses [key technique] to [achieve goal].
 
-Optuna: The algorithm works by systematically processing data according to a specific strategy.
+Optuna is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**OPTUNA** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Optimization** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**OPTUNA** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,61 @@ Optuna is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def optuna(data):
-    """Implementation of Optuna."""
-    # Core algorithm logic
-    return result
+class Optuna:
+    """Optuna hyperparameter optimization."""
+
+    def __init__(self):
+        self.trials: List[dict] = {}
+        self.best_params: Optional[dict] = None
+        self.best_score = float("-inf")
+
+    def suggest_float(self, name: str, low: float, high: float) -> float:
+        """Suggest float parameter."""
+        import random
+
+        return random.uniform(low, high)
+
+    def suggest_int(self, name: str, low: int, high: int) -> int:
+        """Suggest int parameter."""
+        import random
+
+        return random.randint(low, high)
+
+    def suggest_categorical(self, name: str, choices: List[any]) -> any:
+        """Suggest categorical parameter."""
+        import random
+
+        return random.choice(choices)
+
+    def optimize(self, objective: callable, n_trials: int = 100) -> dict:
+        """Optimize hyperparameters."""
+        for _ in range(n_trials):
+            params = {
+                "lr": self.suggest_float("lr", 0.001, 0.1),
+                "batch_size": self.suggest_int("batch_size", 16, 128),
+            }
+            score = objective(params)
+            self.trials.append({"params": params, "score": score})
+            if score > self.best_score:
+                self.best_score = score
+                self.best_params = params
+
+        return {"best_params": self.best_params, "best_score": self.best_score}
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Circuit Breaker: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(1)
+- **Purpose:** Circuit Breaker solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Deployment
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Circuit Breaker uses [key technique] to [achieve goal].
 
-Circuit Breaker: The algorithm works by systematically processing data according to a specific strategy.
+Circuit Breaker is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**CIRCUIT BREAKER** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм относится к категории **Deployment** и использует систематическую обработку данных для достижения своих целей.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**CIRCUIT_BREAKER** = Remember: [key steps]
 
 
 ## Анализ сложности

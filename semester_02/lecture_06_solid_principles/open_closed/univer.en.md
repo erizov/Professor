@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Open Closed: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** N/A
+- **Purpose:** Open Closed solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** SOLID
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Open Closed uses [key technique] to [achieve goal].
 
-Open Closed: The algorithm works by systematically processing data according to a specific strategy.
+Open Closed is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**OPEN CLOSED** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **SOLID** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**OPEN_CLOSED** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,45 @@ Open Closed is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def open_closed(data):
-    """Implementation of Open Closed."""
-    # Core algorithm logic
-    return result
+class OpenClosed:
+    """Open-Closed principle."""
+
+    def __init__(self):
+        self.base_classes: Dict[str, List[str]] = {}
+        self.extensions: Dict[str, str] = {}
+
+    def define_base(self, base_name: str, methods: List[str]) -> None:
+        """Define base class."""
+        self.base_classes[base_name] = methods
+
+    def extend(
+        self, extension_name: str, base_name: str, new_methods: List[str]
+    ) -> None:
+        """Extend base class."""
+        self.extensions[extension_name] = {"base": base_name, "methods": new_methods}
+
+    def get_methods(self, class_name: str) -> List[str]:
+        """Get all methods for class."""
+        if class_name in self.extensions:
+            ext = self.extensions[class_name]
+            base_methods = self.base_classes.get(ext["base"], [])
+            return base_methods + ext["methods"]
+        return self.base_classes.get(class_name, [])
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

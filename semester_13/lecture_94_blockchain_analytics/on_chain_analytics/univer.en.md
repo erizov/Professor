@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** On Chain Analytics: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** On Chain Analytics solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** On Chain Analytics uses [key technique] to [achieve goal].
 
-On Chain Analytics: The algorithm works by systematically processing data according to a specific strategy.
+On Chain Analytics is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**ON CHAIN ANALYTICS** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**ON_CHAIN_ANALYTICS** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,61 @@ On Chain Analytics is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def on_chain_analytics(data):
-    """Implementation of On Chain Analytics."""
-    # Core algorithm logic
-    return result
+class OnChainAnalytics:
+    """On-chain analytics."""
+
+    def __init__(self):
+        self.transactions: List[dict] = {}
+        self.blocks: List[dict] = {}
+
+    def add_transaction(self, tx: dict) -> None:
+        """Add transaction."""
+        self.transactions.append(tx)
+
+    def add_block(self, block: dict) -> None:
+        """Add block."""
+        self.blocks.append(block)
+
+    def analyze_volume(self, time_window: int = 3600) -> dict:
+        """Analyze transaction volume."""
+        import time
+
+        current_time = time.time()
+        recent_txs = [
+            tx
+            for tx in self.transactions
+            if current_time - tx.get("timestamp", 0) < time_window
+        ]
+        return {
+            "volume": len(recent_txs),
+            "total_value": sum(tx.get("value", 0) for tx in recent_txs),
+        }
+
+    def analyze_gas(self) -> dict:
+        """Analyze gas usage."""
+        if not self.transactions:
+            return {}
+        gas_values = [tx.get("gas", 0) for tx in self.transactions]
+        return {
+            "avg_gas": sum(gas_values) / len(gas_values),
+            "max_gas": max(gas_values),
+            "min_gas": min(gas_values),
+        }
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Random Forest: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(n log n)
+- **Purpose:** Random Forest solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Machine Learning
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Random Forest uses [key technique] to [achieve goal].
 
-Random Forest: The algorithm works by systematically processing data according to a specific strategy.
+Random Forest is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**RANDOM FOREST** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Machine Learning** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**RANDOM_FOREST** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,50 @@ Random Forest is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def random_forest(data):
-    """Implementation of Random Forest."""
-    # Core algorithm logic
-    return result
+class RandomForest:
+    """Random Forest classifier (simplified)."""
+
+    def __init__(self, n_trees: int = 10):
+        self.n_trees = n_trees
+        self.trees = []
+
+    def fit(self, X: List[List[float]], y: List[any]) -> None:
+        """Train random forest."""
+        import random
+        from decision_tree import build_decision_tree
+
+        n_samples = len(X)
+        for _ in range(self.n_trees):
+            # Bootstrap sampling
+            indices = [random.randint(0, n_samples - 1) for _ in range(n_samples)]
+            X_boot = [X[i] for i in indices]
+            y_boot = [y[i] for i in indices]
+
+            # Build tree (simplified - would use decision_tree implementation)
+            tree = build_decision_tree(X_boot, y_boot)
+            self.trees.append(tree)
+
+    def predict(self, x: List[float]) -> any:
+        """Predict using random forest."""
+        from decision_tree import predict_tree
+
+        predictions = [predict_tree(tree, x) for tree in self.trees]
+        return max(set(predictions), key=predictions.count)
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Io Scheduling: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Io Scheduling solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Io Scheduling uses [key technique] to [achieve goal].
 
-Io Scheduling: The algorithm works by systematically processing data according to a specific strategy.
+Io Scheduling is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**IO SCHEDULING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм относится к категории **Advanced Graduate Level** и использует систематическую обработку данных для достижения своих целей.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**IO_SCHEDULING** = Remember: [key steps]
 
 
 ## Анализ сложности

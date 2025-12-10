@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Readers Writers: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(1)
+- **Purpose:** Readers Writers solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Concurrency
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Readers Writers uses [key technique] to [achieve goal].
 
-Readers Writers: The algorithm works by systematically processing data according to a specific strategy.
+Readers Writers is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**READERS WRITERS** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Concurrency** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**READERS_WRITERS** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,51 @@ Readers Writers is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def readers_writers(data):
-    """Implementation of Readers Writers."""
-    # Core algorithm logic
-    return result
+class ReadersWriters:
+    """Readers-Writers problem solution."""
+
+    def __init__(self):
+        self.readers_count = 0
+        self.mutex = threading.Lock()
+        self.write_lock = threading.Lock()
+        self.data = 0
+
+    def read(self) -> int:
+        """Read data."""
+        with self.mutex:
+            self.readers_count += 1
+            if self.readers_count == 1:
+                self.write_lock.acquire()
+
+        # Read data
+        value = self.data
+
+        with self.mutex:
+            self.readers_count -= 1
+            if self.readers_count == 0:
+                self.write_lock.release()
+
+        return value
+
+    def write(self, value: int) -> None:
+        """Write data."""
+        with self.write_lock:
+            self.data = value
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Data Mapper: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(1)
+- **Purpose:** Data Mapper solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Data Access Pattern
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Data Mapper uses [key technique] to [achieve goal].
 
-Data Mapper: The algorithm works by systematically processing data according to a specific strategy.
+Data Mapper is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**DATA MAPPER** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Data Access Pattern** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**DATA_MAPPER** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,48 @@ Data Mapper is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def data_mapper(data):
-    """Implementation of Data Mapper."""
-    # Core algorithm logic
-    return result
+class DataMapper:
+    """Data Mapper pattern implementation."""
+
+    def __init__(self):
+        self.storage: Dict[int, dict] = {}
+
+    def find(self, id: int) -> Optional[dict]:
+        """Find entity by ID."""
+        return self.storage.get(id)
+
+    def insert(self, id: int, data: dict) -> None:
+        """Insert entity."""
+        self.storage[id] = data
+
+    def update(self, id: int, data: dict) -> bool:
+        """Update entity."""
+        if id in self.storage:
+            self.storage[id].update(data)
+            return True
+        return False
+
+    def delete(self, id: int) -> bool:
+        """Delete entity."""
+        if id in self.storage:
+            del self.storage[id]
+            return True
+        return False
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

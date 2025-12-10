@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Mobile Optimization: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(inference)
+- **Purpose:** Mobile Optimization solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Edge Computing
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Mobile Optimization uses [key technique] to [achieve goal].
 
-Mobile Optimization: The algorithm works by systematically processing data according to a specific strategy.
+Mobile Optimization is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**MOBILE OPTIMIZATION** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **Edge Computing**.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**MOBILE_OPTIMIZATION** = Remember: [key steps]
 
 
 ## Сложность алгоритма

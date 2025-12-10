@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Binary Heap: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(log n)
+- **Purpose:** Binary Heap solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Data Structure
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Binary Heap uses [key technique] to [achieve goal].
 
-Binary Heap: The algorithm works by systematically processing data according to a specific strategy.
+Binary Heap is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**BINARY HEAP** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Data Structure** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**BINARY_HEAP** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,79 @@ Binary Heap is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def binary_heap(data):
-    """Implementation of Binary Heap."""
-    # Core algorithm logic
-    return result
+class BinaryHeap:
+    """Binary heap (min heap) implementation."""
+
+    def __init__(self):
+        self.heap: List[int] = []
+
+    def parent(self, i: int) -> int:
+        """Get parent index."""
+        return (i - 1) // 2
+
+    def left_child(self, i: int) -> int:
+        """Get left child index."""
+        return 2 * i + 1
+
+    def right_child(self, i: int) -> int:
+        """Get right child index."""
+        return 2 * i + 2
+
+    def insert(self, val: int) -> None:
+        """Insert value into heap."""
+        self.heap.append(val)
+        self._heapify_up(len(self.heap) - 1)
+
+    def extract_min(self) -> Optional[int]:
+        """Extract minimum value."""
+        if not self.heap:
+            return None
+        if len(self.heap) == 1:
+            return self.heap.pop()
+
+        root = self.heap[0]
+        self.heap[0] = self.heap.pop()
+        self._heapify_down(0)
+        return root
+
+    def _heapify_up(self, i: int) -> None:
+        """Maintain heap property upward."""
+        while i > 0 and self.heap[self.parent(i)] > self.heap[i]:
+            self.heap[i], self.heap[self.parent(i)] = (
+                self.heap[self.parent(i)],
+                self.heap[i],
+            )
+            i = self.parent(i)
+
+    def _heapify_down(self, i: int) -> None:
+        """Maintain heap property downward."""
+        smallest = i
+        left = self.left_child(i)
+        right = self.right_child(i)
+
+        if left < len(self.heap) and self.heap[left] < self.heap[smallest]:
+            smallest = left
+        if right < len(self.heap) and self.heap[right] < self.heap[smallest]:
+            smallest = right
+
+        if smallest != i:
+            self.heap[i], self.heap[smallest] = self.heap[smallest], self.heap[i]
+            self._heapify_down(smallest)
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

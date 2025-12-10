@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Message Queue: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(1)
+- **Purpose:** Message Queue solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Integration
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Message Queue uses [key technique] to [achieve goal].
 
-Message Queue: The algorithm works by systematically processing data according to a specific strategy.
+Message Queue is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**MESSAGE QUEUE** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм относится к категории **Integration** и использует систематическую обработку данных для достижения своих целей.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**MESSAGE_QUEUE** = Remember: [key steps]
 
 
 ## Анализ сложности

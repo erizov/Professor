@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Graph Traversal: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Graph Traversal solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Graph Traversal uses [key technique] to [achieve goal].
 
-Graph Traversal: The algorithm works by systematically processing data according to a specific strategy.
+Graph Traversal is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**GRAPH TRAVERSAL** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм относится к категории **Advanced Graduate Level** и использует систематическую обработку данных для достижения своих целей.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**GRAPH_TRAVERSAL** = Remember: [key steps]
 
 
 ## Анализ сложности

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Window Functions: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Window Functions solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Window Functions uses [key technique] to [achieve goal].
 
-Window Functions: The algorithm works by systematically processing data according to a specific strategy.
+Window Functions is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**WINDOW FUNCTIONS** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**WINDOW_FUNCTIONS** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,46 @@ Window Functions is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def window_functions(data):
-    """Implementation of Window Functions."""
-    # Core algorithm logic
-    return result
+class WindowFunctions:
+    """SQL window functions."""
+
+    def __init__(self):
+        self.data: List[dict] = {}
+
+    def row_number(self, data: List[dict], order_by: str) -> List[dict]:
+        """Row number window function."""
+        sorted_data = sorted(data, key=lambda x: x.get(order_by, 0))
+        for i, row in enumerate(sorted_data, 1):
+            row["row_number"] = i
+        return sorted_data
+
+    def rank(self, data: List[dict], order_by: str) -> List[dict]:
+        """Rank window function."""
+        sorted_data = sorted(data, key=lambda x: x.get(order_by, 0), reverse=True)
+        current_rank = 1
+        prev_value = None
+        for row in sorted_data:
+            value = row.get(order_by, 0)
+            if prev_value is not None and value != prev_value:
+                current_rank += 1
+            row["rank"] = current_rank
+            prev_value = value
+        return sorted_data
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

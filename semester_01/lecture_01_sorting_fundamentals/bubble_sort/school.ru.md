@@ -25,24 +25,6 @@ The largest element 'bubbles up' to the end in each pass, so we can reduce the c
 Этот алгоритм работает, swapping elements, comparing elements, чтобы достичь своей цели. Он относится к категории алгоритмов **Sorting**.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize array]
-    Init --> Loop1[For i = 0 to n-1]
-    Loop1 --> Loop2[For j = 0 to n-i-2]
-    Loop2 --> Compare{Compare arr[j] and arr[j+1]}
-    Compare -->|arr[j] > arr[j+1]| Swap[Swap elements]
-    Compare -->|arr[j] <= arr[j+1]| Next[Next iteration]
-    Swap --> Next
-    Next --> Check{More elements?}
-    Check -->|Yes| Loop2
-    Check -->|No| Sorted{Array sorted?}
-    Sorted -->|No| Loop1
-    Sorted -->|Yes| End([End])
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 

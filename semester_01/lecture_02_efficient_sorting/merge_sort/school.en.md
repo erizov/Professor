@@ -25,20 +25,6 @@ Divide the array in half, sort each half, then merge the sorted halves together.
 This algorithm works by comparing elements to achieve its goal. It's part of the **Sorting** category of algorithms.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Check{Base case?}
-    Check -->|Yes| End([End])
-    Check -->|No| Split[Split array in half]
-    Split --> Left[Recursively sort left half]
-    Split --> Right[Recursively sort right half]
-    Left --> Merge[Merge sorted halves]
-    Right --> Merge
-    Merge --> End
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 

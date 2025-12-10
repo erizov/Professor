@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Prompt Engineering: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Prompt Engineering solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Large Language Models Fundamentals
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Prompt Engineering uses [key technique] to [achieve goal].
 
-Prompt Engineering: The algorithm works by systematically processing data according to a specific strategy.
+Prompt Engineering is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**PROMPT ENGINEERING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Large Language Models Fundamentals** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**PROMPT_ENGINEERING** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,48 @@ Prompt Engineering is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def prompt_engineering(data):
-    """Implementation of Prompt Engineering."""
-    # Core algorithm logic
-    return result
+class PromptEngineering:
+    """Prompt engineering."""
+
+    def __init__(self):
+        self.prompts: Dict[str, str] = {}
+        self.templates: Dict[str, str] = {}
+
+    def create_template(self, template_id: str, template: str) -> None:
+        """Create prompt template."""
+        self.templates[template_id] = template
+
+    def generate_prompt(self, template_id: str, variables: dict) -> str:
+        """Generate prompt from template."""
+        if template_id in self.templates:
+            prompt = self.templates[template_id]
+            for key, value in variables.items():
+                prompt = prompt.replace(f"{{{key}}}", str(value))
+            return prompt
+        return ""
+
+    def optimize_prompt(self, base_prompt: str, examples: List[dict]) -> str:
+        """Optimize prompt using examples."""
+        # Simplified: add few-shot examples
+        optimized = base_prompt + "\n\nExamples:\n"
+        for example in examples[:3]:
+            optimized += f"{example}\n"
+        return optimized
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

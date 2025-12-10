@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Distributed Tracing: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(1)
+- **Purpose:** Distributed Tracing solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Observability
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Distributed Tracing uses [key technique] to [achieve goal].
 
-Distributed Tracing: The algorithm works by systematically processing data according to a specific strategy.
+Distributed Tracing is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**DISTRIBUTED TRACING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Observability** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**DISTRIBUTED_TRACING** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,79 @@ Distributed Tracing is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def distributed_tracing(data):
-    """Implementation of Distributed Tracing."""
-    # Core algorithm logic
-    return result
+class DistributedTracing:
+    """Distributed tracing system."""
+
+    def __init__(self):
+        self.traces: Dict[str, dict] = {}
+        self.spans: Dict[str, dict] = {}
+
+    def start_trace(self, trace_id: str, service_name: str) -> None:
+        """Start trace."""
+        import time
+
+        self.traces[trace_id] = {
+            "id": trace_id,
+            "service": service_name,
+            "start_time": time.time(),
+            "spans": [],
+        }
+
+    def start_span(
+        self, trace_id: str, span_id: str, operation: str, service: str
+    ) -> None:
+        """Start span."""
+        import time
+
+        span = {
+            "id": span_id,
+            "trace_id": trace_id,
+            "operation": operation,
+            "service": service,
+            "start_time": time.time(),
+        }
+        self.spans[span_id] = span
+
+        if trace_id in self.traces:
+            self.traces[trace_id]["spans"].append(span_id)
+
+    def end_span(self, span_id: str, tags: dict = None) -> None:
+        """End span."""
+        import time
+
+        if span_id in self.spans:
+            self.spans[span_id]["end_time"] = time.time()
+            self.spans[span_id]["duration"] = (
+                self.spans[span_id]["end_time"] - self.spans[span_id]["start_time"]
+            )
+            if tags:
+                self.spans[span_id]["tags"] = tags
+
+    def get_trace(self, trace_id: str) -> Optional[dict]:
+        """Get trace with all spans."""
+        if trace_id not in self.traces:
+            return None
+
+        trace = self.traces[trace_id].copy()
+        trace["spans"] = [
+            self.spans[sid] for sid in trace["spans"] if sid in self.spans
+        ]
+        return trace
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

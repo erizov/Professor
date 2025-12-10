@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Chain Of Responsibility: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(n)
+- **Purpose:** Chain Of Responsibility solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Behavioral Pattern
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Chain Of Responsibility uses [key technique] to [achieve goal].
 
-Chain Of Responsibility: The algorithm works by systematically processing data according to a specific strategy.
+Chain Of Responsibility is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**CHAIN OF RESPONSIBILITY** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Behavioral Pattern** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**CHAIN_OF_RESPONSIBILITY** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,37 @@ Chain Of Responsibility is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def chain_of_responsibility(data):
-    """Implementation of Chain Of Responsibility."""
-    # Core algorithm logic
-    return result
+class Handler:
+    """Handler interface."""
+
+    def __init__(self):
+        self.next_handler: Optional["Handler"] = None
+
+    def set_next(self, handler: "Handler") -> "Handler":
+        """Set next handler."""
+        self.next_handler = handler
+        return handler
+
+    def handle(self, request: str) -> Optional[str]:
+        """Handle request."""
+        if self.next_handler:
+            return self.next_handler.handle(request)
+        return None
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

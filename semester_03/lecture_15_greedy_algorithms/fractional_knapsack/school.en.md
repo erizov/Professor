@@ -25,18 +25,6 @@ For each item, decide whether to include it or not - store the best value for ea
 This algorithm works by processing data systematically to achieve its goal. It's part of the **Greedy Algorithm** category of algorithms.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 

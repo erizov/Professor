@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Parameter Server: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(sync_overhead)
+- **Purpose:** Parameter Server solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Distributed ML
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Parameter Server uses [key technique] to [achieve goal].
 
-Parameter Server: The algorithm works by systematically processing data according to a specific strategy.
+Parameter Server is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**PARAMETER SERVER** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм относится к категории **Distributed ML** и использует систематическую обработку данных для достижения своих целей.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**PARAMETER_SERVER** = Remember: [key steps]
 
 
 ## Анализ сложности

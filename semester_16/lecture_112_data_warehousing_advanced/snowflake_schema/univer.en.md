@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Snowflake Schema: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Snowflake Schema solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Snowflake Schema uses [key technique] to [achieve goal].
 
-Snowflake Schema: The algorithm works by systematically processing data according to a specific strategy.
+Snowflake Schema is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**SNOWFLAKE SCHEMA** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**SNOWFLAKE_SCHEMA** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,42 @@ Snowflake Schema is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def snowflake_schema(data):
-    """Implementation of Snowflake Schema."""
-    # Core algorithm logic
-    return result
+class SnowflakeSchema:
+    """Snowflake schema (normalized star schema)."""
+
+    def __init__(self):
+        self.fact_tables: Dict[str, dict] = {}
+        self.dimensions: Dict[str, dict] = {}
+        self.sub_dimensions: Dict[str, dict] = {}
+
+    def create_dimension(self, name: str, attributes: List[str]) -> None:
+        """Create dimension."""
+        self.dimensions[name] = {"attributes": attributes}
+
+    def create_sub_dimension(
+        self, parent: str, name: str, attributes: List[str]
+    ) -> None:
+        """Create sub-dimension."""
+        self.sub_dimensions[name] = {"parent": parent, "attributes": attributes}
+
+    def create_fact_table(self, name: str, measures: List[str]) -> None:
+        """Create fact table."""
+        self.fact_tables[name] = {"measures": measures}
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

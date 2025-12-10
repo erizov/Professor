@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Nosql Querying: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Nosql Querying solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** NoSQL Database Fundamentals
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Nosql Querying uses [key technique] to [achieve goal].
 
-Nosql Querying: The algorithm works by systematically processing data according to a specific strategy.
+Nosql Querying is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**NOSQL QUERYING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **NoSQL Database Fundamentals** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**NOSQL_QUERYING** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,48 @@ Nosql Querying is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def nosql_querying(data):
-    """Implementation of Nosql Querying."""
-    # Core algorithm logic
-    return result
+class NoSQLQuerying:
+    """NoSQL querying."""
+
+    def __init__(self):
+        self.collections: Dict[str, List[dict]] = {}
+
+    def query(self, collection: str, filter_dict: dict) -> List[dict]:
+        """Query collection."""
+        if collection not in self.collections:
+            return []
+
+        results = []
+        for doc in self.collections[collection]:
+            if all(doc.get(k) == v for k, v in filter_dict.items()):
+                results.append(doc)
+        return results
+
+    def find_one(self, collection: str, filter_dict: dict) -> Optional[dict]:
+        """Find one document."""
+        results = self.query(collection, filter_dict)
+        return results[0] if results else None
+
+    def count(self, collection: str, filter_dict: dict = None) -> int:
+        """Count documents."""
+        if filter_dict:
+            return len(self.query(collection, filter_dict))
+        return len(self.collections.get(collection, []))
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

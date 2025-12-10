@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Single Responsibility: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** N/A
+- **Purpose:** Single Responsibility solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** SOLID
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Single Responsibility uses [key technique] to [achieve goal].
 
-Single Responsibility: The algorithm works by systematically processing data according to a specific strategy.
+Single Responsibility is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**SINGLE RESPONSIBILITY** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **SOLID** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**SINGLE_RESPONSIBILITY** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,48 @@ Single Responsibility is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def single_responsibility(data):
-    """Implementation of Single Responsibility."""
-    # Core algorithm logic
-    return result
+class SingleResponsibility:
+    """Single Responsibility Principle example."""
+
+    class UserRepository:
+        """Handles user data."""
+
+        def get_user(self, user_id: str) -> dict:
+            return {"id": user_id, "name": "User"}
+
+    class UserValidator:
+        """Validates user data."""
+
+        def validate(self, user: dict) -> bool:
+            return "name" in user and user["name"]
+
+    class UserService:
+        """Orchestrates user operations."""
+
+        def __init__(self):
+            self.repository = SingleResponsibility.UserRepository()
+            self.validator = SingleResponsibility.UserValidator()
+
+        def get_validated_user(self, user_id: str) -> Optional[dict]:
+            user = self.repository.get_user(user_id)
+            if self.validator.validate(user):
+                return user
+            return None
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

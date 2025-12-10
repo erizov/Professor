@@ -25,21 +25,6 @@ Divide and conquer: pick a pivot, partition around it, then recursively sort the
 Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **Sorting**.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Check{Base case?}
-    Check -->|Yes| End([End])
-    Check -->|No| Pivot[Choose pivot]
-    Pivot --> Partition[Partition array]
-    Partition --> Left[Recursively sort left]
-    Partition --> Right[Recursively sort right]
-    Left --> Merge[Merge results]
-    Right --> Merge
-    Merge --> End
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 

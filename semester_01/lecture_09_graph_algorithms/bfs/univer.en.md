@@ -25,18 +25,6 @@ Explore level by level - visit all neighbors before moving to the next level, li
 This algorithm belongs to the **Sorting** category and employs systematic data processing to achieve its objectives.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 
@@ -74,22 +62,187 @@ Bfs is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def bfs(data):
-    """Implementation of Bfs."""
-    # Core algorithm logic
-    return result
+class Graph:
+    """Graph representation using adjacency list."""
+
+    def __init__(self, directed: bool = False):
+        """
+        Initialize graph.
+
+        Args:
+            directed: True for directed graph, False for undirected
+        """
+        self.graph: Dict[int, List[int]] = defaultdict(list)
+        self.directed = directed
+
+    def add_edge(self, u: int, v: int) -> None:
+        """Add edge to graph."""
+        self.graph[u].append(v)
+        if not self.directed:
+            self.graph[v].append(u)
+
+    def bfs(self, start: int) -> List[int]:
+        """
+        Perform BFS traversal from start node.
+
+        Args:
+            start: Starting node
+
+        Returns:
+            List of nodes in BFS order
+        """
+        visited: Set[int] = set()
+        result: List[int] = []
+        queue: deque = deque([start])
+        visited.add(start)
+
+        while queue:
+            node = queue.popleft()
+            result.append(node)
+
+            for neighbor in self.graph[node]:
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append(neighbor)
+
+        return result
+
+    def shortest_path(self, start: int, end: int) -> Optional[List[int]]:
+        """
+        Find shortest path using BFS.
+
+        Args:
+            start: Start node
+            end: End node
+
+        Returns:
+            List representing path, or None if no path exists
+        """
+        if start == end:
+            return [start]
+
+        visited: Set[int] = {start}
+        queue: deque = deque([(start, [start])])
+
+        while queue:
+            node, path = queue.popleft()
+
+            for neighbor in self.graph[node]:
+                if neighbor == end:
+                    return path + [neighbor]
+
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append((neighbor, path + [neighbor]))
+
+        return None  # No path found
+
+    def shortest_distance(self, start: int, end: int) -> int:
+        """
+        Find shortest distance (number of edges) using BFS.
+
+        Args:
+            start: Start node
+            end: End node
+
+        Returns:
+            Distance, or -1 if no path
+        """
+        if start == end:
+            return 0
+
+        visited: Set[int] = {start}
+        queue: deque = deque([(start, 0)])
+
+        while queue:
+            node, dist = queue.popleft()
+
+            for neighbor in self.graph[node]:
+                if neighbor == end:
+                    return dist + 1
+
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append((neighbor, dist + 1))
+
+        return -1  # No path
+
+    def all_paths_distance(self, start: int) -> Dict[int, int]:
+        """
+        Find shortest distance from start to all reachable nodes.
+
+        Args:
+            start: Starting node
+
+        Returns:
+            Dictionary mapping node to distance
+        """
+        distances: Dict[int, int] = {start: 0}
+        queue: deque = deque([start])
+
+        while queue:
+            node = queue.popleft()
+            current_dist = distances[node]
+
+            for neighbor in self.graph[node]:
+                if neighbor not in distances:
+                    distances[neighbor] = current_dist + 1
+                    queue.append(neighbor)
+
+        return distances
+
+    def is_bipartite(self) -> bool:
+        """
+        Check if graph is bipartite using BFS.
+
+        Returns:
+            True if bipartite, False otherwise
+        """
+        # Color nodes with 0 and 1
+        colors: Dict[int, int] = {}
+
+        # Get all nodes
+        all_nodes = set(self.graph.keys())
+        for neighbors in self.graph.values():
+            all_nodes.update(neighbors)
+
+        # Check each component
+        for start_node in all_nodes:
+            if start_node in colors:
+                continue
+
+            # BFS coloring
+            queue: deque = deque([start_node])
+            colors[start_node] = 0
+
+            while queue:
+                node = queue.popleft()
+                current_color = colors[node]
+                next_color = 1 - current_color
+
+                for neighbor in self.graph[node]:
+                    if neighbor not in colors:
+                        colors[neighbor] = next_color
+                        queue.append(neighbor)
+                    elif colors[neighbor] != next_color:
+                        return False  # Adjacent nodes same color
+
+        return True
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Huffman: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(n log n)
+- **Purpose:** Huffman solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Greedy Algorithm
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Huffman uses [key technique] to [achieve goal].
 
-Huffman: The algorithm works by systematically processing data according to a specific strategy.
+Huffman is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**HUFFMAN** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм относится к категории **Greedy Algorithm** и использует систематическую обработку данных для достижения своих целей.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**HUFFMAN** = Remember: [key steps]
 
 
 ## Анализ сложности

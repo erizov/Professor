@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Deadlock Detection: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** Varies
+- **Purpose:** Deadlock Detection identifies circular wait conditions in resource allocation graphs where processes are blocked waiting for each other indefinitely.
+- **Complexity:** O(V + E) time, O(V) space where V is processes/resources and E is wait relationships
 - **Category:** Operating Systems Fundamentals
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Uses depth-first search (DFS) with recursion stack tracking to detect cycles in the wait-for graph, indicating deadlocked processes.
 
-Deadlock Detection: The algorithm works by systematically processing data according to a specific strategy.
+Deadlock Detection is a critical algorithm in operating systems that identifies when multiple processes are stuck in a circular wait condition, preventing any of them from making progress.
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm builds a wait-for graph from process-resource relationships and uses DFS cycle detection to find circular dependencies that cause deadlocks.
 
-**DEADLOCK DETECTION** = Remember the key steps: step 1, step 2, step 3
+**DEADLOCK DETECTION = Remember: Build wait-for graph → DFS traversal → Track recursion stack → Detect cycles → Return deadlocked processes**
 
 
 
@@ -23,19 +23,6 @@ The algorithm works by systematically processing data according to a specific st
 
 
 Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **Operating Systems Fundamentals**.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
 
 
 ## Сложность алгоритма

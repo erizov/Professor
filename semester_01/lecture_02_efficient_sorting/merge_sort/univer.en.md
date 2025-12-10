@@ -25,20 +25,6 @@ Divide the array in half, sort each half, then merge the sorted halves together.
 This algorithm belongs to the **Sorting** category and employs comparing elements to achieve its objectives.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Check{Base case?}
-    Check -->|Yes| End([End])
-    Check -->|No| Split[Split array in half]
-    Split --> Left[Recursively sort left half]
-    Split --> Right[Recursively sort right half]
-    Left --> Merge[Merge sorted halves]
-    Right --> Merge
-    Merge --> End
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 
@@ -87,14 +73,16 @@ def merge_sort(arr):
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

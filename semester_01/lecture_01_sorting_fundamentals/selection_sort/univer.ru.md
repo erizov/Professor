@@ -25,21 +25,6 @@ Compare elements and rearrange them until everything is in the correct order.
 Этот алгоритм относится к категории **Sorting** и использует swapping elements для достижения своих целей.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize data]
-    Init --> Process[Process elements]
-    Process --> Compare{Compare elements}
-    Compare -->|Swap needed| Swap[Swap elements]
-    Compare -->|No swap| Next[Next iteration]
-    Swap --> Next
-    Next --> Check{All processed?}
-    Check -->|No| Process
-    Check -->|Yes| End([End])
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 

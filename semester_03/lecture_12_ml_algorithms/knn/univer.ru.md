@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Knn: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(nd)
+- **Purpose:** Knn solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Machine Learning
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Knn uses [key technique] to [achieve goal].
 
-Knn: The algorithm works by systematically processing data according to a specific strategy.
+Knn is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**KNN** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм относится к категории **Machine Learning** и использует систематическую обработку данных для достижения своих целей.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**KNN** = Remember: [key steps]
 
 
 ## Анализ сложности

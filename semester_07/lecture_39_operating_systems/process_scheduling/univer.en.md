@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Process Scheduling: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Process Scheduling solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Operating Systems Fundamentals
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Process Scheduling uses [key technique] to [achieve goal].
 
-Process Scheduling: The algorithm works by systematically processing data according to a specific strategy.
+Process Scheduling is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**PROCESS SCHEDULING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Operating Systems Fundamentals** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**PROCESS_SCHEDULING** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,58 @@ Process Scheduling is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def process_scheduling(data):
-    """Implementation of Process Scheduling."""
-    # Core algorithm logic
-    return result
+class ProcessScheduler:
+    """Process scheduler."""
+
+    def __init__(self, algorithm: str = "fcfs"):
+        self.processes: List[dict] = []
+        self.algorithm = algorithm
+
+    def add_process(
+        self, process_id: str, arrival_time: float, burst_time: float, priority: int = 0
+    ) -> None:
+        """Add process."""
+        self.processes.append(
+            {
+                "id": process_id,
+                "arrival": arrival_time,
+                "burst": burst_time,
+                "priority": priority,
+                "status": "ready",
+            }
+        )
+
+    def schedule(self) -> Optional[dict]:
+        """Schedule next process."""
+        if not self.processes:
+            return None
+
+        ready = [p for p in self.processes if p["status"] == "ready"]
+        if not ready:
+            return None
+
+        if self.algorithm == "fcfs":
+            return min(ready, key=lambda p: p["arrival"])
+        elif self.algorithm == "sjf":
+            return min(ready, key=lambda p: p["burst"])
+        elif self.algorithm == "priority":
+            return min(ready, key=lambda p: p["priority"])
+        return ready[0]
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

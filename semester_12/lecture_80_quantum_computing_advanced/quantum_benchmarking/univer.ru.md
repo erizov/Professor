@@ -25,18 +25,6 @@ The algorithm works by Quantum Benchmarking leverages quantum superposition and 
 Этот алгоритм относится к категории **Advanced Graduate Level** и использует comparing elements для достижения своих целей.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 

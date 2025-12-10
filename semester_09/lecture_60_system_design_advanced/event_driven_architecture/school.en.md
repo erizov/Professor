@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Event Driven Architecture: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Event Driven Architecture solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Event Driven Architecture uses [key technique] to [achieve goal].
 
-Event Driven Architecture: The algorithm works by systematically processing data according to a specific strategy.
+Event Driven Architecture is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**EVENT DRIVEN ARCHITECTURE** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm works by processing data systematically to achieve its goal. It's part of the **Advanced Graduate Level** category of algorithms.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**EVENT_DRIVEN_ARCHITECTURE** = Remember: [key steps]
 
 
 ## Algorithm Complexity

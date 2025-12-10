@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Nosql Querying: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Nosql Querying solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** NoSQL Database Fundamentals
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Nosql Querying uses [key technique] to [achieve goal].
 
-Nosql Querying: The algorithm works by systematically processing data according to a specific strategy.
+Nosql Querying is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**NOSQL QUERYING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **NoSQL Database Fundamentals**.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**NOSQL_QUERYING** = Remember: [key steps]
 
 
 ## Сложность алгоритма

@@ -25,19 +25,6 @@ Greedy approach: always process the closest unvisited node first, ensuring short
 This algorithm works by processing data systematically to achieve its goal. It's part of the **Graph Algorithms** category of algorithms.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize distances]
-    Init --> Select[Select unvisited node with min distance]
-    Select --> Mark[Mark as visited]
-    Mark --> Update[Update distances to neighbors]
-    Update --> Check{All nodes visited?}
-    Check -->|No| Select
-    Check -->|Yes| End([End])
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 

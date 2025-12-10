@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Circuit Breaker: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(1)
+- **Purpose:** Circuit Breaker solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Deployment
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Circuit Breaker uses [key technique] to [achieve goal].
 
-Circuit Breaker: The algorithm works by systematically processing data according to a specific strategy.
+Circuit Breaker is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**CIRCUIT BREAKER** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Deployment** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**CIRCUIT_BREAKER** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,69 @@ Circuit Breaker is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def circuit_breaker(data):
-    """Implementation of Circuit Breaker."""
-    # Core algorithm logic
-    return result
+class CircuitBreaker:
+    """Circuit breaker pattern implementation."""
+
+    def __init__(self, failure_threshold: int = 5, timeout: int = 60):
+        self.failure_threshold = failure_threshold
+        self.timeout = timeout
+        self.failure_count = 0
+        self.last_failure_time = None
+        self.state = "CLOSED"  # CLOSED, OPEN, HALF_OPEN
+
+    def call(self, func: callable, *args, **kwargs):
+        """Call function with circuit breaker."""
+        if self.state == "OPEN":
+            if self._should_attempt_reset():
+                self.state = "HALF_OPEN"
+            else:
+                raise Exception("Circuit breaker is OPEN")
+
+        try:
+            result = func(*args, **kwargs)
+            self._on_success()
+            return result
+        except Exception as e:
+            self._on_failure()
+            raise e
+
+    def _on_success(self) -> None:
+        """Handle successful call."""
+        self.failure_count = 0
+        self.state = "CLOSED"
+
+    def _on_failure(self) -> None:
+        """Handle failed call."""
+        import time
+
+        self.failure_count += 1
+        self.last_failure_time = time.time()
+
+        if self.failure_count >= self.failure_threshold:
+            self.state = "OPEN"
+
+    def _should_attempt_reset(self) -> bool:
+        """Check if should attempt reset."""
+        import time
+
+        if self.last_failure_time is None:
+            return True
+        return (time.time() - self.last_failure_time) >= self.timeout
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

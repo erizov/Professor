@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Data Retention: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Data Retention solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Data Retention uses [key technique] to [achieve goal].
 
-Data Retention: The algorithm works by systematically processing data according to a specific strategy.
+Data Retention is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**DATA RETENTION** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**DATA_RETENTION** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,56 @@ Data Retention is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def data_retention(data):
-    """Implementation of Data Retention."""
-    # Core algorithm logic
-    return result
+class DataRetention:
+    """Data retention policy manager."""
+
+    def __init__(self):
+        self.policies: Dict[str, dict] = {}
+        self.records: Dict[str, float] = {}
+
+    def add_policy(self, data_type: str, retention_days: int) -> None:
+        """Add retention policy."""
+        import time
+
+        self.policies[data_type] = {
+            "retention_days": retention_days,
+            "created_at": time.time(),
+        }
+
+    def register_data(self, data_id: str, data_type: str) -> None:
+        """Register data."""
+        import time
+
+        self.records[data_id] = {"type": data_type, "created_at": time.time()}
+
+    def get_expired(self) -> List[str]:
+        """Get expired data IDs."""
+        import time
+
+        expired = []
+        current_time = time.time()
+        for data_id, record in self.records.items():
+            policy = self.policies.get(record["type"])
+            if policy:
+                age_days = (current_time - record["created_at"]) / 86400
+                if age_days > policy["retention_days"]:
+                    expired.append(data_id)
+        return expired
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

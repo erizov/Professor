@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Proposal Systems: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Proposal Systems solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Proposal Systems uses [key technique] to [achieve goal].
 
-Proposal Systems: The algorithm works by systematically processing data according to a specific strategy.
+Proposal Systems is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**PROPOSAL SYSTEMS** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**PROPOSAL_SYSTEMS** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,61 @@ Proposal Systems is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def proposal_systems(data):
-    """Implementation of Proposal Systems."""
-    # Core algorithm logic
-    return result
+class ProposalSystem:
+    """Proposal system."""
+
+    def __init__(self):
+        self.proposals: Dict[str, dict] = {}
+        self.votes: Dict[str, Dict[str, bool]] = {}
+
+    def create_proposal(
+        self, proposal_id: str, description: str, proposer: str
+    ) -> None:
+        """Create proposal."""
+        self.proposals[proposal_id] = {
+            "description": description,
+            "proposer": proposer,
+            "status": "active",
+            "votes_for": 0,
+            "votes_against": 0,
+        }
+        self.votes[proposal_id] = {}
+
+    def vote(self, proposal_id: str, voter: str, support: bool) -> None:
+        """Vote on proposal."""
+        if proposal_id in self.proposals and proposal_id in self.votes:
+            if voter not in self.votes[proposal_id]:
+                self.votes[proposal_id][voter] = support
+                if support:
+                    self.proposals[proposal_id]["votes_for"] += 1
+                else:
+                    self.proposals[proposal_id]["votes_against"] += 1
+
+    def get_result(self, proposal_id: str) -> dict:
+        """Get proposal result."""
+        if proposal_id in self.proposals:
+            proposal = self.proposals[proposal_id]
+            return {
+                "votes_for": proposal["votes_for"],
+                "votes_against": proposal["votes_against"],
+                "passed": proposal["votes_for"] > proposal["votes_against"],
+            }
+        return {}
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

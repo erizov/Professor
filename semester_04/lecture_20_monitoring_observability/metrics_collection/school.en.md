@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Metrics Collection: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(1)
+- **Purpose:** Metrics Collection solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Observability
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Metrics Collection uses [key technique] to [achieve goal].
 
-Metrics Collection: The algorithm works by systematically processing data according to a specific strategy.
+Metrics Collection is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**METRICS COLLECTION** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm works by processing data systematically to achieve its goal. It's part of the **Observability** category of algorithms.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**METRICS_COLLECTION** = Remember: [key steps]
 
 
 ## Algorithm Complexity

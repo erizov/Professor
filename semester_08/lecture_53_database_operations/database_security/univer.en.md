@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Database Security: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Database Security solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Database Operations
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Database Security uses [key technique] to [achieve goal].
 
-Database Security: The algorithm works by systematically processing data according to a specific strategy.
+Database Security is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**DATABASE SECURITY** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Database Operations** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**DATABASE_SECURITY** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,42 @@ Database Security is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def database_security(data):
-    """Implementation of Database Security."""
-    # Core algorithm logic
-    return result
+class DatabaseSecurity:
+    """Database security manager."""
+
+    def __init__(self):
+        self.users: Dict[str, dict] = {}
+        self.permissions: Dict[str, List[str]] = {}
+
+    def add_user(self, username: str, password_hash: str, role: str) -> None:
+        """Add user."""
+        self.users[username] = {"password_hash": password_hash, "role": role}
+
+    def grant_permission(self, username: str, permission: str) -> None:
+        """Grant permission."""
+        if username not in self.permissions:
+            self.permissions[username] = []
+        if permission not in self.permissions[username]:
+            self.permissions[username].append(permission)
+
+    def check_permission(self, username: str, permission: str) -> bool:
+        """Check permission."""
+        return permission in self.permissions.get(username, [])
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

@@ -25,18 +25,6 @@ For each item, decide whether to include it or not - store the best value for ea
 Этот алгоритм относится к категории **Greedy Algorithm** и использует систематическую обработку данных для достижения своих целей.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 

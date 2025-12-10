@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Merkle Trees: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Merkle Trees solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Blockchain Fundamentals
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Merkle Trees uses [key technique] to [achieve goal].
 
-Merkle Trees: The algorithm works by systematically processing data according to a specific strategy.
+Merkle Trees is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**MERKLE TREES** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Blockchain Fundamentals** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**MERKLE_TREES** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,70 @@ Merkle Trees is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def merkle_trees(data):
-    """Implementation of Merkle Trees."""
-    # Core algorithm logic
-    return result
+class MerkleTree:
+    """Merkle tree."""
+
+    def __init__(self):
+        self.leaves: List[str] = []
+        self.root: Optional[str] = None
+
+    def add_leaf(self, data: str) -> None:
+        """Add leaf."""
+        import hashlib
+
+        hash_value = hashlib.sha256(data.encode()).hexdigest()
+        self.leaves.append(hash_value)
+
+    def build_tree(self) -> str:
+        """Build Merkle tree."""
+        import hashlib
+
+        if not self.leaves:
+            return ""
+
+        current_level = self.leaves[:]
+
+        while len(current_level) > 1:
+            next_level = []
+            for i in range(0, len(current_level), 2):
+                if i + 1 < len(current_level):
+                    combined = current_level[i] + current_level[i + 1]
+                else:
+                    combined = current_level[i] + current_level[i]
+                hash_value = hashlib.sha256(combined.encode()).hexdigest()
+                next_level.append(hash_value)
+            current_level = next_level
+
+        self.root = current_level[0] if current_level else ""
+        return self.root
+
+    def verify(self, data: str, proof: List[str]) -> bool:
+        """Verify data with Merkle proof."""
+        import hashlib
+
+        hash_value = hashlib.sha256(data.encode()).hexdigest()
+        current = hash_value
+
+        for sibling in proof:
+            combined = current + sibling
+            current = hashlib.sha256(combined.encode()).hexdigest()
+
+        return current == self.root
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

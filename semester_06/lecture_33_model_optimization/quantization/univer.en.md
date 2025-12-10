@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Quantization: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(params)
+- **Purpose:** Quantization solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Optimization
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Quantization uses [key technique] to [achieve goal].
 
-Quantization: The algorithm works by systematically processing data according to a specific strategy.
+Quantization is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**QUANTIZATION** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Optimization** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**QUANTIZATION** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,42 @@ Quantization is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def quantization(data):
-    """Implementation of Quantization."""
-    # Core algorithm logic
-    return result
+class Quantization:
+    """Model quantization."""
+
+    def __init__(self):
+        self.model: any = None
+        self.quantization_bits = 8
+
+    def quantize(self, model: any, bits: int = 8) -> any:
+        """Quantize model."""
+        self.model = model
+        self.quantization_bits = bits
+        return model
+
+    def quantize_weights(self, weights: List[float], bits: int = 8) -> List[int]:
+        """Quantize weights."""
+        scale = (2**bits - 1) / (max(weights) - min(weights)) if weights else 1.0
+        return [int(w * scale) for w in weights]
+
+    def dequantize(self, quantized: List[int], scale: float) -> List[float]:
+        """Dequantize weights."""
+        return [q / scale for q in quantized]
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Knowledge Graph Construction: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Knowledge Graph Construction solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Knowledge Graph Construction uses [key technique] to [achieve goal].
 
-Knowledge Graph Construction: The algorithm works by systematically processing data according to a specific strategy.
+Knowledge Graph Construction is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**KNOWLEDGE GRAPH CONSTRUCTION** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**KNOWLEDGE_GRAPH_CONSTRUCTION** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,45 @@ Knowledge Graph Construction is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def knowledge_graph_construction(data):
-    """Implementation of Knowledge Graph Construction."""
-    # Core algorithm logic
-    return result
+class KnowledgeGraphConstruction:
+    """Knowledge graph construction."""
+
+    def __init__(self):
+        self.graph: Dict[str, dict] = {}
+        self.extractors: List[callable] = {}
+
+    def add_extractor(self, extractor_name: str, extractor: callable) -> None:
+        """Add extraction function."""
+        self.extractors[extractor_name] = extractor
+
+    def build_from_text(self, text: str) -> dict:
+        """Build knowledge graph from text."""
+        entities = []
+        relations = []
+
+        for extractor_name, extractor in self.extractors.items():
+            result = extractor(text)
+            if "entities" in result:
+                entities.extend(result["entities"])
+            if "relations" in result:
+                relations.extend(result["relations"])
+
+        return {"entities": entities, "relations": relations}
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

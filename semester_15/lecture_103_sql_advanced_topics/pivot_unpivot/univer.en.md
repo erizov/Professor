@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Pivot Unpivot: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Pivot Unpivot solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Pivot Unpivot uses [key technique] to [achieve goal].
 
-Pivot Unpivot: The algorithm works by systematically processing data according to a specific strategy.
+Pivot Unpivot is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**PIVOT UNPIVOT** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**PIVOT_UNPIVOT** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,61 @@ Pivot Unpivot is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def pivot_unpivot(data):
-    """Implementation of Pivot Unpivot."""
-    # Core algorithm logic
-    return result
+class PivotUnpivot:
+    """Pivot and unpivot operations."""
+
+    def __init__(self):
+        self.tables: Dict[str, List[dict]] = {}
+
+    def pivot(
+        self, table_name: str, index_col: str, columns: List[str], values: str
+    ) -> List[dict]:
+        """Pivot table."""
+        if table_name not in self.tables:
+            return []
+
+        pivoted = {}
+        for row in self.tables[table_name]:
+            index_val = row[index_col]
+            if index_val not in pivoted:
+                pivoted[index_val] = {index_col: index_val}
+            for col in columns:
+                if col in row:
+                    pivoted[index_val][col] = row[col]
+
+        return list(pivoted.values())
+
+    def unpivot(
+        self, table_name: str, id_cols: List[str], value_cols: List[str]
+    ) -> List[dict]:
+        """Unpivot table."""
+        if table_name not in self.tables:
+            return []
+
+        unpivoted = []
+        for row in self.tables[table_name]:
+            for value_col in value_cols:
+                if value_col in row:
+                    new_row = {col: row[col] for col in id_cols}
+                    new_row["variable"] = value_col
+                    new_row["value"] = row[value_col]
+                    unpivoted.append(new_row)
+        return unpivoted
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

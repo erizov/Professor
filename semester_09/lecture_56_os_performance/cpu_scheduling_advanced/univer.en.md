@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Cpu Scheduling Advanced: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Cpu Scheduling Advanced solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Cpu Scheduling Advanced uses [key technique] to [achieve goal].
 
-Cpu Scheduling Advanced: The algorithm works by systematically processing data according to a specific strategy.
+Cpu Scheduling Advanced is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**CPU SCHEDULING ADVANCED** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**CPU_SCHEDULING_ADVANCED** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,95 @@ Cpu Scheduling Advanced is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def cpu_scheduling_advanced(data):
-    """Implementation of Cpu Scheduling Advanced."""
-    # Core algorithm logic
-    return result
+class CPUSchedulerAdvanced:
+    """Advanced CPU scheduling algorithms."""
+
+    def __init__(self):
+        self.processes: List[dict] = []
+        self.current_time = 0
+
+    def add_process(
+        self, process_id: str, arrival_time: float, burst_time: float, priority: int = 0
+    ) -> None:
+        """Add process."""
+        self.processes.append(
+            {
+                "id": process_id,
+                "arrival": arrival_time,
+                "burst": burst_time,
+                "priority": priority,
+                "remaining": burst_time,
+                "wait_time": 0.0,
+                "turnaround_time": 0.0,
+            }
+        )
+
+    def round_robin(self, time_quantum: float = 2.0) -> List[str]:
+        """Round-robin scheduling."""
+        queue = sorted(self.processes, key=lambda p: p["arrival"])
+        result = []
+        current_time = 0.0
+
+        while queue:
+            process = queue.pop(0)
+            if process["remaining"] <= time_quantum:
+                current_time += process["remaining"]
+                process["turnaround_time"] = current_time - process["arrival"]
+                result.append(process["id"])
+            else:
+                current_time += time_quantum
+                process["remaining"] -= time_quantum
+                queue.append(process)
+                result.append(process["id"])
+
+        return result
+
+    def priority_scheduling(self) -> List[str]:
+        """Priority scheduling."""
+        sorted_processes = sorted(
+            self.processes, key=lambda p: (p["priority"], p["arrival"])
+        )
+        result = []
+        current_time = 0.0
+
+        for process in sorted_processes:
+            current_time += process["burst"]
+            process["turnaround_time"] = current_time - process["arrival"]
+            result.append(process["id"])
+
+        return result
+
+    def shortest_job_first(self) -> List[str]:
+        """Shortest Job First scheduling."""
+        sorted_processes = sorted(
+            self.processes, key=lambda p: (p["arrival"], p["burst"])
+        )
+        result = []
+        current_time = 0.0
+
+        for process in sorted_processes:
+            if current_time < process["arrival"]:
+                current_time = process["arrival"]
+            current_time += process["burst"]
+            process["turnaround_time"] = current_time - process["arrival"]
+            result.append(process["id"])
+
+        return result
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

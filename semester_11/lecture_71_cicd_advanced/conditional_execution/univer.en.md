@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Conditional Execution: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Conditional Execution solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Conditional Execution uses [key technique] to [achieve goal].
 
-Conditional Execution: The algorithm works by systematically processing data according to a specific strategy.
+Conditional Execution is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**CONDITIONAL EXECUTION** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**CONDITIONAL_EXECUTION** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,57 @@ Conditional Execution is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def conditional_execution(data):
-    """Implementation of Conditional Execution."""
-    # Core algorithm logic
-    return result
+class ConditionalExecution:
+    """Conditional execution framework."""
+
+    def __init__(self):
+        self.conditions: Dict[str, callable] = {}
+        self.actions: Dict[str, callable] = {}
+        self.rules: List[dict] = []
+
+    def add_condition(self, condition_name: str, condition_func: callable) -> None:
+        """Add condition."""
+        self.conditions[condition_name] = condition_func
+
+    def add_action(self, action_name: str, action_func: callable) -> None:
+        """Add action."""
+        self.actions[action_name] = action_func
+
+    def add_rule(self, rule_name: str, condition_name: str, action_name: str) -> None:
+        """Add rule."""
+        self.rules.append(
+            {"name": rule_name, "condition": condition_name, "action": action_name}
+        )
+
+    def execute(self, context: dict) -> List[str]:
+        """Execute rules based on conditions."""
+        executed = []
+
+        for rule in self.rules:
+            condition_func = self.conditions.get(rule["condition"])
+            action_func = self.actions.get(rule["action"])
+
+            if condition_func and action_func:
+                if condition_func(context):
+                    action_func(context)
+                    executed.append(rule["name"])
+
+        return executed
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

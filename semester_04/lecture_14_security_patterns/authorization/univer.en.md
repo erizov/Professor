@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Authorization: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(1)
+- **Purpose:** Authorization solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Security
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Authorization uses [key technique] to [achieve goal].
 
-Authorization: The algorithm works by systematically processing data according to a specific strategy.
+Authorization is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**AUTHORIZATION** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Security** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**AUTHORIZATION** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,62 @@ Authorization is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def authorization(data):
-    """Implementation of Authorization."""
-    # Core algorithm logic
-    return result
+class Authorization:
+    """Authorization system (RBAC - Role-Based Access Control)."""
+
+    def __init__(self):
+        self.user_roles: Dict[str, List[str]] = {}  # user -> roles
+        self.role_permissions: Dict[str, List[str]] = {}  # role -> permissions
+        self.resource_permissions: Dict[str, List[str]] = (
+            {}
+        )  # resource -> required permissions
+
+    def assign_role(self, user: str, role: str) -> None:
+        """Assign role to user."""
+        if user not in self.user_roles:
+            self.user_roles[user] = []
+        if role not in self.user_roles[user]:
+            self.user_roles[user].append(role)
+
+    def grant_permission(self, role: str, permission: str) -> None:
+        """Grant permission to role."""
+        if role not in self.role_permissions:
+            self.role_permissions[role] = []
+        if permission not in self.role_permissions[role]:
+            self.role_permissions[role].append(permission)
+
+    def set_resource_permissions(self, resource: str, permissions: List[str]) -> None:
+        """Set required permissions for resource."""
+        self.resource_permissions[resource] = permissions
+
+    def check_access(self, user: str, resource: str) -> bool:
+        """Check if user has access to resource."""
+        if resource not in self.resource_permissions:
+            return True  # No restrictions
+
+        required_permissions = self.resource_permissions[resource]
+        user_roles = self.user_roles.get(user, [])
+
+        user_permissions = set()
+        for role in user_roles:
+            user_permissions.update(self.role_permissions.get(role, []))
+
+        return all(perm in user_permissions for perm in required_permissions)
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

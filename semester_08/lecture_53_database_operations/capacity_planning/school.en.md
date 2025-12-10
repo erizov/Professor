@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Capacity Planning: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Capacity Planning solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Database Operations
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Capacity Planning uses [key technique] to [achieve goal].
 
-Capacity Planning: The algorithm works by systematically processing data according to a specific strategy.
+Capacity Planning is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**CAPACITY PLANNING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm works by processing data systematically to achieve its goal. It's part of the **Database Operations** category of algorithms.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**CAPACITY_PLANNING** = Remember: [key steps]
 
 
 ## Algorithm Complexity

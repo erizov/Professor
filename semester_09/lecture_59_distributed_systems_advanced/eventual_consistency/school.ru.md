@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Eventual Consistency: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Eventual Consistency solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Eventual Consistency uses [key technique] to [achieve goal].
 
-Eventual Consistency: The algorithm works by systematically processing data according to a specific strategy.
+Eventual Consistency is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**EVENTUAL CONSISTENCY** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм работает, comparing elements, чтобы достичь своей цели. Он относится к категории алгоритмов **Advanced Graduate Level**.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**EVENTUAL_CONSISTENCY** = Remember: [key steps]
 
 
 ## Сложность алгоритма

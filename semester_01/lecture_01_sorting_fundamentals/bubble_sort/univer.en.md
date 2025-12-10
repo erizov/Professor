@@ -25,24 +25,6 @@ The largest element 'bubbles up' to the end in each pass, so we can reduce the c
 This algorithm belongs to the **Sorting** category and employs swapping elements and comparing elements to achieve its objectives.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize array]
-    Init --> Loop1[For i = 0 to n-1]
-    Loop1 --> Loop2[For j = 0 to n-i-2]
-    Loop2 --> Compare{Compare arr[j] and arr[j+1]}
-    Compare -->|arr[j] > arr[j+1]| Swap[Swap elements]
-    Compare -->|arr[j] <= arr[j+1]| Next[Next iteration]
-    Swap --> Next
-    Next --> Check{More elements?}
-    Check -->|Yes| Loop2
-    Check -->|No| Sorted{Array sorted?}
-    Sorted -->|No| Loop1
-    Sorted -->|Yes| End([End])
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 
@@ -82,20 +64,23 @@ Bubble Sort is often used in combination with:
 ```python
 def bubble_sort(data):
     """Implementation of Bubble Sort."""
-    # Core algorithm logic
+    # [Implementation details based on algorithm type]
     return result
 ```
 
+
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

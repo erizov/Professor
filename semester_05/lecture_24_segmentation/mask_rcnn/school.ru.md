@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Mask Rcnn: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(n*proposals)
+- **Purpose:** Mask Rcnn solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Computer Vision
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Mask Rcnn uses [key technique] to [achieve goal].
 
-Mask Rcnn: The algorithm works by systematically processing data according to a specific strategy.
+Mask Rcnn is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**MASK RCNN** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **Computer Vision**.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**MASK_RCNN** = Remember: [key steps]
 
 
 ## Сложность алгоритма

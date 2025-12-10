@@ -25,24 +25,6 @@ Always check the middle element - if it's not what we want, eliminate half the s
 This algorithm belongs to the **Data Structure** category and employs systematic data processing to achieve its objectives.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Set left=0, right=n-1]
-    Init --> Loop{left <= right?}
-    Loop -->|No| NotFound[Return -1]
-    Loop -->|Yes| Mid[Calculate mid]
-    Mid --> Compare{Compare arr[mid] with target}
-    Compare -->|Equal| Found[Return mid]
-    Compare -->|arr[mid] > target| Left[Set right = mid-1]
-    Compare -->|arr[mid] < target| Right[Set left = mid+1]
-    Left --> Loop
-    Right --> Loop
-    Found --> End([End])
-    NotFound --> End
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 
@@ -80,22 +62,28 @@ Binary Search Tree is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def binary_search_tree(data):
-    """Implementation of Binary Search Tree."""
-    # Core algorithm logic
-    return result
+class BSTNode:
+    """Binary Search Tree node."""
+
+    def __init__(self, val: int):
+        self.val = val
+        self.left: Optional["BSTNode"] = None
+        self.right: Optional["BSTNode"] = None
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

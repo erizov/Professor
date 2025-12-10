@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Agentic Rag: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Agentic Rag solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Agentic Rag uses [key technique] to [achieve goal].
 
-Agentic Rag: The algorithm works by systematically processing data according to a specific strategy.
+Agentic Rag is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**AGENTIC RAG** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**AGENTIC_RAG** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,58 @@ Agentic Rag is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def agentic_rag(data):
-    """Implementation of Agentic Rag."""
-    # Core algorithm logic
-    return result
+class AgenticRAG:
+    """Agentic Retrieval-Augmented Generation."""
+
+    def __init__(self):
+        self.knowledge_base: Dict[str, str] = {}
+        self.embeddings: Dict[str, List[float]] = {}
+
+    def add_document(self, doc_id: str, content: str) -> None:
+        """Add document to knowledge base."""
+        self.knowledge_base[doc_id] = content
+        # Simplified embedding
+        import hashlib
+
+        hash_val = hashlib.md5(content.encode()).hexdigest()
+        self.embeddings[doc_id] = [
+            float(int(hash_val[i : i + 2], 16)) / 255.0
+            for i in range(0, min(len(hash_val), 128), 2)
+        ]
+
+    def retrieve(self, query: str, top_k: int = 5) -> List[tuple]:
+        """Retrieve relevant documents."""
+        # Simplified retrieval
+        query_hash = hash(query)
+        results = []
+
+        for doc_id, content in self.knowledge_base.items():
+            # Simple relevance score
+            score = len(set(query.split()) & set(content.split())) / len(query.split())
+            results.append((doc_id, content, score))
+
+        results.sort(key=lambda x: x[2], reverse=True)
+        return results[:top_k]
+
+    def generate(self, query: str, context: List[str]) -> str:
+        """Generate response using retrieved context."""
+        # Simplified generation
+        return f"Based on context: {', '.join(context[:2])}. Answer: {query}"
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

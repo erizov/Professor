@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Evaluation Metrics: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Evaluation Metrics solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Evaluation Metrics uses [key technique] to [achieve goal].
 
-Evaluation Metrics: The algorithm works by systematically processing data according to a specific strategy.
+Evaluation Metrics is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**EVALUATION METRICS** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**EVALUATION_METRICS** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,79 @@ Evaluation Metrics is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def evaluation_metrics(data):
-    """Implementation of Evaluation Metrics."""
-    # Core algorithm logic
-    return result
+class EvaluationMetrics:
+    """ML model evaluation metrics."""
+
+    def __init__(self):
+        self.predictions: List[any] = []
+        self.labels: List[any] = []
+
+    def add_prediction(self, prediction: any, label: any) -> None:
+        """Add prediction and label."""
+        self.predictions.append(prediction)
+        self.labels.append(label)
+
+    def accuracy(self) -> float:
+        """Calculate accuracy."""
+        if not self.predictions:
+            return 0.0
+        correct = sum(1 for p, l in zip(self.predictions, self.labels) if p == l)
+        return correct / len(self.predictions)
+
+    def precision(self, positive_class: any = 1) -> float:
+        """Calculate precision."""
+        tp = sum(
+            1
+            for p, l in zip(self.predictions, self.labels)
+            if p == positive_class and l == positive_class
+        )
+        fp = sum(
+            1
+            for p, l in zip(self.predictions, self.labels)
+            if p == positive_class and l != positive_class
+        )
+        return tp / (tp + fp) if (tp + fp) > 0 else 0.0
+
+    def recall(self, positive_class: any = 1) -> float:
+        """Calculate recall."""
+        tp = sum(
+            1
+            for p, l in zip(self.predictions, self.labels)
+            if p == positive_class and l == positive_class
+        )
+        fn = sum(
+            1
+            for p, l in zip(self.predictions, self.labels)
+            if p != positive_class and l == positive_class
+        )
+        return tp / (tp + fn) if (tp + fn) > 0 else 0.0
+
+    def f1_score(self, positive_class: any = 1) -> float:
+        """Calculate F1 score."""
+        prec = self.precision(positive_class)
+        rec = self.recall(positive_class)
+        return 2 * (prec * rec) / (prec + rec) if (prec + rec) > 0 else 0.0
+
+    def confusion_matrix(self) -> Dict[tuple, int]:
+        """Calculate confusion matrix."""
+        from collections import Counter
+
+        return Counter((p, l) for p, l in zip(self.predictions, self.labels))
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

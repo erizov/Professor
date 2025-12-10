@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** File Systems: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** File Systems solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Operating Systems Fundamentals
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** File Systems uses [key technique] to [achieve goal].
 
-File Systems: The algorithm works by systematically processing data according to a specific strategy.
+File Systems is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**FILE SYSTEMS** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **Operating Systems Fundamentals**.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**FILE_SYSTEMS** = Remember: [key steps]
 
 
 ## Сложность алгоритма

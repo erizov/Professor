@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Pbft: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Pbft solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Pbft uses [key technique] to [achieve goal].
 
-Pbft: The algorithm works by systematically processing data according to a specific strategy.
+Pbft is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**PBFT** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**PBFT** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,58 @@ Pbft is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def pbft(data):
-    """Implementation of Pbft."""
-    # Core algorithm logic
-    return result
+class PBFT:
+    """Practical Byzantine Fault Tolerance."""
+
+    def __init__(self):
+        self.nodes: List[str] = []
+        self.messages: List[dict] = {}
+        self.consensus_state: Dict[str, dict] = {}
+
+    def add_node(self, node_id: str) -> None:
+        """Add node."""
+        self.nodes.append(node_id)
+
+    def propose(self, proposal_id: str, value: any) -> None:
+        """Propose value."""
+        self.consensus_state[proposal_id] = {
+            "value": value,
+            "prepared": {},
+            "committed": {},
+        }
+
+    def prepare(self, proposal_id: str, node_id: str) -> None:
+        """Prepare phase."""
+        if proposal_id in self.consensus_state:
+            self.consensus_state[proposal_id]["prepared"][node_id] = True
+
+    def commit(self, proposal_id: str, node_id: str) -> bool:
+        """Commit phase."""
+        if proposal_id not in self.consensus_state:
+            return False
+
+        state = self.consensus_state[proposal_id]
+        state["committed"][node_id] = True
+
+        # Need 2f+1 commits (f = number of faulty nodes)
+        f = (len(self.nodes) - 1) // 3
+        required = 2 * f + 1
+        return len(state["committed"]) >= required
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

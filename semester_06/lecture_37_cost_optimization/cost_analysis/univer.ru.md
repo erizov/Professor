@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Cost Analysis: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(resources)
+- **Purpose:** Cost Analysis solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Cost Optimization
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Cost Analysis uses [key technique] to [achieve goal].
 
-Cost Analysis: The algorithm works by systematically processing data according to a specific strategy.
+Cost Analysis is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**COST ANALYSIS** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм относится к категории **Cost Optimization** и использует систематическую обработку данных для достижения своих целей.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**COST_ANALYSIS** = Remember: [key steps]
 
 
 ## Анализ сложности

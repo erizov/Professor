@@ -25,18 +25,6 @@ The algorithm works by Quantum Search leverages quantum superposition and entang
 This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 
@@ -74,22 +62,49 @@ Quantum Search is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def quantum_search(data):
-    """Implementation of Quantum Search."""
-    # Core algorithm logic
-    return result
+class QuantumSearch:
+    """Quantum search algorithms."""
+
+    def __init__(self):
+        self.dataset: List[any] = {}
+
+    def grover_search(self, target: any, dataset: List[any]) -> Optional[int]:
+        """Grover's search algorithm."""
+        import math
+
+        n = len(dataset)
+        iterations = int(math.pi / 4 * math.sqrt(n))
+        for _ in range(iterations):
+            for i, item in enumerate(dataset):
+                if item == target:
+                    return i
+        return None
+
+    def amplitude_amplification(
+        self, marked_states: Set[int], n_qubits: int
+    ) -> List[float]:
+        """Amplitude amplification."""
+        n = 2**n_qubits
+        amplitudes = [1.0 / (n**0.5)] * n
+        for marked in marked_states:
+            if 0 <= marked < n:
+                amplitudes[marked] *= -1
+        return amplitudes
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

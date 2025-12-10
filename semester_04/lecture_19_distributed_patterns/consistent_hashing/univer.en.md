@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Consistent Hashing: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(log n)
+- **Purpose:** Consistent Hashing solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Distributed Systems
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Consistent Hashing uses [key technique] to [achieve goal].
 
-Consistent Hashing: The algorithm works by systematically processing data according to a specific strategy.
+Consistent Hashing is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**CONSISTENT HASHING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Distributed Systems** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**CONSISTENT_HASHING** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,55 @@ Consistent Hashing is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def consistent_hashing(data):
-    """Implementation of Consistent Hashing."""
-    # Core algorithm logic
-    return result
+class ConsistentHash:
+    """Consistent hashing implementation."""
+
+    def __init__(self, nodes: List[str], replicas: int = 3):
+        self.replicas = replicas
+        self.ring: Dict[int, str] = {}
+        self.sorted_keys: List[int] = []
+
+        for node in nodes:
+            for i in range(replicas):
+                key = self._hash(f"{node}:{i}")
+                self.ring[key] = node
+                self.sorted_keys.append(key)
+
+        self.sorted_keys.sort()
+
+    def _hash(self, key: str) -> int:
+        """Hash function."""
+        return hash(key) % (2**32)
+
+    def get_node(self, key: str) -> Optional[str]:
+        """Get node for given key."""
+        if not self.ring:
+            return None
+
+        hash_key = self._hash(key)
+
+        # Find first node with hash >= hash_key
+        for ring_key in self.sorted_keys:
+            if ring_key >= hash_key:
+                return self.ring[ring_key]
+
+        # Wrap around
+        return self.ring[self.sorted_keys[0]]
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

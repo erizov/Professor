@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Priority Queue: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(log n)
+- **Purpose:** Priority Queue solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Data Structure
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Priority Queue uses [key technique] to [achieve goal].
 
-Priority Queue: The algorithm works by systematically processing data according to a specific strategy.
+Priority Queue is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**PRIORITY QUEUE** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Data Structure** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**PRIORITY_QUEUE** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,50 @@ Priority Queue is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def priority_queue(data):
-    """Implementation of Priority Queue."""
-    # Core algorithm logic
-    return result
+class PriorityQueue:
+    """Priority queue implementation using heap."""
+
+    def __init__(self):
+        self.heap: List[tuple] = []
+
+    def push(self, item: any, priority: int) -> None:
+        """Add item with priority."""
+        from heapq import heappush
+
+        heappush(self.heap, (priority, item))
+
+    def pop(self) -> Optional[any]:
+        """Remove and return highest priority item."""
+        from heapq import heappop
+
+        if self.heap:
+            return heappop(self.heap)[1]
+        return None
+
+    def peek(self) -> Optional[any]:
+        """Return highest priority item without removing."""
+        if self.heap:
+            return self.heap[0][1]
+        return None
+
+    def is_empty(self) -> bool:
+        """Check if queue is empty."""
+        return len(self.heap) == 0
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

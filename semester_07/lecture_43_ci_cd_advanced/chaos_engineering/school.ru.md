@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Chaos Engineering: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Chaos Engineering solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced CI/CD
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Chaos Engineering uses [key technique] to [achieve goal].
 
-Chaos Engineering: The algorithm works by systematically processing data according to a specific strategy.
+Chaos Engineering is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**CHAOS ENGINEERING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **Advanced CI/CD**.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**CHAOS_ENGINEERING** = Remember: [key steps]
 
 
 ## Сложность алгоритма

@@ -25,21 +25,6 @@ Each number is the sum of the two previous numbers - we can compute this efficie
 Этот алгоритм относится к категории **Dynamic Programming** и использует систематическую обработку данных для достижения своих целей.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Check{Base case?}
-    Check -->|n <= 1| Return[Return n]
-    Check -->|No| Memo{In memo?}
-    Memo -->|Yes| ReturnMemo[Return memo[n]]
-    Memo -->|No| Calc[Calculate F(n-1) + F(n-2)]
-    Calc --> Store[Store in memo]
-    Store --> ReturnMemo
-    Return --> End([End])
-    ReturnMemo --> End
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 

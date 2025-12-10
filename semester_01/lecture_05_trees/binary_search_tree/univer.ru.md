@@ -25,24 +25,6 @@ Always check the middle element - if it's not what we want, eliminate half the s
 Этот алгоритм относится к категории **Data Structure** и использует систематическую обработку данных для достижения своих целей.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Set left=0, right=n-1]
-    Init --> Loop{left <= right?}
-    Loop -->|No| NotFound[Return -1]
-    Loop -->|Yes| Mid[Calculate mid]
-    Mid --> Compare{Compare arr[mid] with target}
-    Compare -->|Equal| Found[Return mid]
-    Compare -->|arr[mid] > target| Left[Set right = mid-1]
-    Compare -->|arr[mid] < target| Right[Set left = mid+1]
-    Left --> Loop
-    Right --> Loop
-    Found --> End([End])
-    NotFound --> End
-```
-
 > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
 
 

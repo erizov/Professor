@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Few Shot Learning: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Few Shot Learning solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced LLM Techniques
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Few Shot Learning uses [key technique] to [achieve goal].
 
-Few Shot Learning: The algorithm works by systematically processing data according to a specific strategy.
+Few Shot Learning is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**FEW SHOT LEARNING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm works by processing data systematically to achieve its goal. It's part of the **Advanced LLM Techniques** category of algorithms.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**FEW_SHOT_LEARNING** = Remember: [key steps]
 
 
 ## Algorithm Complexity

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Rsa: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(k³)
+- **Purpose:** Rsa solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Cryptography
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Rsa uses [key technique] to [achieve goal].
 
-Rsa: The algorithm works by systematically processing data according to a specific strategy.
+Rsa is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**RSA** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Cryptography** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**RSA** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,44 @@ Rsa is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def rsa(data):
-    """Implementation of Rsa."""
-    # Core algorithm logic
-    return result
+class RSA:
+    """RSA encryption."""
+
+    def __init__(self):
+        self.keys: Dict[str, dict] = {}
+
+    def generate_key_pair(self, key_id: str, key_size: int = 2048) -> tuple:
+        """Generate RSA key pair (simplified)."""
+        import random
+
+        # Simplified: not actual RSA
+        private_key = random.randint(1000, 9999)
+        public_key = private_key * 2
+        self.keys[key_id] = {"private": private_key, "public": public_key}
+        return private_key, public_key
+
+    def encrypt(self, message: str, public_key: int) -> List[int]:
+        """Encrypt message."""
+        return [ord(c) + public_key for c in message]
+
+    def decrypt(self, ciphertext: List[int], private_key: int) -> str:
+        """Decrypt message."""
+        return "".join(chr(c - private_key) for c in ciphertext)
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

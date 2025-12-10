@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Entity Relationship: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Entity Relationship solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Data Modeling
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Entity Relationship uses [key technique] to [achieve goal].
 
-Entity Relationship: The algorithm works by systematically processing data according to a specific strategy.
+Entity Relationship is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**ENTITY RELATIONSHIP** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Data Modeling** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**ENTITY_RELATIONSHIP** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,67 @@ Entity Relationship is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def entity_relationship(data):
-    """Implementation of Entity Relationship."""
-    # Core algorithm logic
-    return result
+class EntityRelationship:
+    """Entity-Relationship model."""
+
+    def __init__(self):
+        self.entities: Dict[str, dict] = {}
+        self.relationships: List[dict] = {}
+
+    def add_entity(self, entity_name: str, attributes: List[str]) -> None:
+        """Add entity."""
+        self.entities[entity_name] = {"attributes": attributes, "instances": []}
+
+    def add_relationship(
+        self, entity1: str, entity2: str, relationship_type: str
+    ) -> None:
+        """Add relationship."""
+        self.relationships.append(
+            {"entity1": entity1, "entity2": entity2, "type": relationship_type}
+        )
+
+    def create_instance(self, entity_name: str, values: dict) -> str:
+        """Create entity instance."""
+        import uuid
+
+        instance_id = str(uuid.uuid4())
+
+        if entity_name in self.entities:
+            instance = {"id": instance_id, **values}
+            self.entities[entity_name]["instances"].append(instance)
+            return instance_id
+
+        return None
+
+    def query_related(self, entity_name: str, instance_id: str) -> List[dict]:
+        """Query related entities."""
+        related = []
+
+        for rel in self.relationships:
+            if rel["entity1"] == entity_name:
+                # Find related instances (simplified)
+                if rel["entity2"] in self.entities:
+                    related.extend(self.entities[rel["entity2"]]["instances"])
+            elif rel["entity2"] == entity_name:
+                if rel["entity1"] in self.entities:
+                    related.extend(self.entities[rel["entity1"]]["instances"])
+
+        return related
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

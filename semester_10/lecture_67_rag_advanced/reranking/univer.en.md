@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Reranking: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Reranking solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Reranking uses [key technique] to [achieve goal].
 
-Reranking: The algorithm works by systematically processing data according to a specific strategy.
+Reranking is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**RERANKING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**RERANKING** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,38 @@ Reranking is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def reranking(data):
-    """Implementation of Reranking."""
-    # Core algorithm logic
-    return result
+class Reranking:
+    """Reranking algorithm."""
+
+    def __init__(self):
+        self.ranker: dict = {}
+        self.results: List[dict] = {}
+
+    def rerank(self, items: List[dict], query: str) -> List[dict]:
+        """Rerank items."""
+        # Simplified reranking
+        scored = []
+        for item in items:
+            score = item.get("score", 0.0)
+            if query.lower() in item.get("text", "").lower():
+                score += 0.5
+            scored.append({**item, "rerank_score": score})
+        return sorted(scored, key=lambda x: x["rerank_score"], reverse=True)
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Huffman: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(n log n)
+- **Purpose:** Huffman solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Greedy Algorithm
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Huffman uses [key technique] to [achieve goal].
 
-Huffman: The algorithm works by systematically processing data according to a specific strategy.
+Huffman is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**HUFFMAN** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Greedy Algorithm** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**HUFFMAN** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,68 @@ Huffman is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def huffman(data):
-    """Implementation of Huffman."""
-    # Core algorithm logic
-    return result
+class HuffmanNode:
+    """Huffman tree node."""
+
+    def __init__(self, char=None, freq=0, left=None, right=None):
+        self.char = char
+        self.freq = freq
+        self.left = left
+        self.right = right
+
+    def __lt__(self, other):
+        return self.freq < other.freq
+
+
+def build_huffman_tree(text: str) -> HuffmanNode:
+    """Build Huffman tree."""
+    from collections import Counter
+    from heapq import heappush, heappop
+
+    freq = Counter(text)
+    heap = []
+
+    for char, count in freq.items():
+        heappush(heap, HuffmanNode(char=char, freq=count))
+
+    while len(heap) > 1:
+        left = heappop(heap)
+        right = heappop(heap)
+        merged = HuffmanNode(freq=left.freq + right.freq, left=left, right=right)
+        heappush(heap, merged)
+
+    return heap[0] if heap else None
+
+
+def build_huffman_codes(root: HuffmanNode, code: str = "", codes: dict = None) -> dict:
+    """Build Huffman codes."""
+    if codes is None:
+        codes = {}
+
+    if root.char is not None:
+        codes[root.char] = code
+    else:
+        if root.left:
+            build_huffman_codes(root.left, code + "0", codes)
+        if root.right:
+            build_huffman_codes(root.right, code + "1", codes)
+
+    return codes
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

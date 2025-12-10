@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Decision Tree: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(n log n)
+- **Purpose:** Decision Tree solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Machine Learning
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Decision Tree uses [key technique] to [achieve goal].
 
-Decision Tree: The algorithm works by systematically processing data according to a specific strategy.
+Decision Tree is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**DECISION TREE** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Machine Learning** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**DECISION_TREE** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,74 @@ Decision Tree is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def decision_tree(data):
-    """Implementation of Decision Tree."""
-    # Core algorithm logic
-    return result
+class DecisionTreeNode:
+    """Decision tree node."""
+
+    def __init__(self, feature=None, threshold=None, left=None, right=None, value=None):
+        self.feature = feature
+        self.threshold = threshold
+        self.left = left
+        self.right = right
+        self.value = value
+
+
+def build_decision_tree(
+    X: List[List[float]], y: List[any], max_depth: int = 10
+) -> DecisionTreeNode:
+    """Build decision tree (simplified version)."""
+    if max_depth == 0 or len(set(y)) == 1:
+        return DecisionTreeNode(value=max(set(y), key=y.count))
+
+    # Simple split (in real implementation, find best split)
+    if not X:
+        return DecisionTreeNode(value=None)
+
+    feature = 0
+    threshold = sum(row[feature] for row in X) / len(X)
+
+    left_X, left_y = [], []
+    right_X, right_y = [], []
+
+    for i, row in enumerate(X):
+        if row[feature] <= threshold:
+            left_X.append(row)
+            left_y.append(y[i])
+        else:
+            right_X.append(row)
+            right_y.append(y[i])
+
+    left = build_decision_tree(left_X, left_y, max_depth - 1)
+    right = build_decision_tree(right_X, right_y, max_depth - 1)
+
+    return DecisionTreeNode(
+        feature=feature, threshold=threshold, left=left, right=right
+    )
+
+
+def predict_tree(node: DecisionTreeNode, x: List[float]) -> any:
+    """Predict using decision tree."""
+    if node.value is not None:
+        return node.value
+
+    if x[node.feature] <= node.threshold:
+        return predict_tree(node.left, x)
+    else:
+        return predict_tree(node.right, x)
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

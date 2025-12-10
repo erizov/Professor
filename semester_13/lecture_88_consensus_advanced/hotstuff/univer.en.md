@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Hotstuff: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Hotstuff solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Hotstuff uses [key technique] to [achieve goal].
 
-Hotstuff: The algorithm works by systematically processing data according to a specific strategy.
+Hotstuff is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**HOTSTUFF** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**HOTSTUFF** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,51 @@ Hotstuff is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def hotstuff(data):
-    """Implementation of Hotstuff."""
-    # Core algorithm logic
-    return result
+class HotStuff:
+    """HotStuff consensus algorithm (simplified)."""
+
+    def __init__(self):
+        self.nodes: List[str] = []
+        self.proposals: List[dict] = {}
+        self.votes: Dict[str, Dict[str, bool]] = {}
+
+    def add_node(self, node_id: str) -> None:
+        """Add node."""
+        self.nodes.append(node_id)
+
+    def propose(self, proposal_id: str, value: any) -> None:
+        """Propose value."""
+        self.proposals[proposal_id] = {"value": value, "votes": {}}
+        self.votes[proposal_id] = {}
+
+    def vote(self, proposal_id: str, node_id: str, vote: bool) -> None:
+        """Vote on proposal."""
+        if proposal_id in self.votes:
+            self.votes[proposal_id][node_id] = vote
+
+    def decide(self, proposal_id: str) -> bool:
+        """Decide on proposal."""
+        if proposal_id not in self.votes:
+            return False
+        votes = self.votes[proposal_id]
+        majority = len(self.nodes) // 2 + 1
+        yes_votes = sum(1 for v in votes.values() if v)
+        return yes_votes >= majority
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Message Queue: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(1)
+- **Purpose:** Message Queue solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Integration
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Message Queue uses [key technique] to [achieve goal].
 
-Message Queue: The algorithm works by systematically processing data according to a specific strategy.
+Message Queue is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**MESSAGE QUEUE** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Integration** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**MESSAGE_QUEUE** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,63 @@ Message Queue is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def message_queue(data):
-    """Implementation of Message Queue."""
-    # Core algorithm logic
-    return result
+class MessageQueue:
+    """Simple message queue implementation."""
+
+    def __init__(self, max_size: int = 1000):
+        self.queue = Queue(maxsize=max_size)
+        self.subscribers: List[callable] = []
+        self.running = False
+        self.worker_thread = None
+
+    def publish(self, message: any) -> bool:
+        """Publish message."""
+        try:
+            self.queue.put(message, block=False)
+            return True
+        except:
+            return False
+
+    def subscribe(self, handler: callable) -> None:
+        """Subscribe to messages."""
+        self.subscribers.append(handler)
+
+    def start(self) -> None:
+        """Start processing messages."""
+        self.running = True
+        self.worker_thread = threading.Thread(target=self._process_messages)
+        self.worker_thread.start()
+
+    def stop(self) -> None:
+        """Stop processing messages."""
+        self.running = False
+        if self.worker_thread:
+            self.worker_thread.join()
+
+    def _process_messages(self) -> None:
+        """Process messages in background."""
+        while self.running:
+            try:
+                message = self.queue.get(timeout=1)
+                for handler in self.subscribers:
+                    handler(message)
+            except:
+                continue
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

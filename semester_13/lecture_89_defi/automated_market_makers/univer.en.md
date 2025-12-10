@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Automated Market Makers: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Automated Market Makers solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Automated Market Makers uses [key technique] to [achieve goal].
 
-Automated Market Makers: The algorithm works by systematically processing data according to a specific strategy.
+Automated Market Makers is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**AUTOMATED MARKET MAKERS** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs swapping elements to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**AUTOMATED_MARKET_MAKERS** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,62 @@ Automated Market Makers is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def automated_market_makers(data):
-    """Implementation of Automated Market Makers."""
-    # Core algorithm logic
-    return result
+class AutomatedMarketMaker:
+    """Automated Market Maker (AMM) implementation."""
+
+    def __init__(self, token_a: str, token_b: str):
+        self.token_a = token_a
+        self.token_b = token_b
+        self.reserve_a = 1000.0
+        self.reserve_b = 1000.0
+
+    def get_price(self, token: str) -> float:
+        """Get current price."""
+        if token == self.token_a:
+            return self.reserve_b / self.reserve_a
+        else:
+            return self.reserve_a / self.reserve_b
+
+    def swap(self, token_in: str, amount_in: float) -> float:
+        """Execute swap (constant product formula)."""
+        k = self.reserve_a * self.reserve_b
+
+        if token_in == self.token_a:
+            new_reserve_a = self.reserve_a + amount_in
+            new_reserve_b = k / new_reserve_a
+            amount_out = self.reserve_b - new_reserve_b
+            self.reserve_a = new_reserve_a
+            self.reserve_b = new_reserve_b
+        else:
+            new_reserve_b = self.reserve_b + amount_in
+            new_reserve_a = k / new_reserve_b
+            amount_out = self.reserve_a - new_reserve_a
+            self.reserve_a = new_reserve_a
+            self.reserve_b = new_reserve_b
+
+        return amount_out
+
+    def add_liquidity(self, amount_a: float, amount_b: float) -> float:
+        """Add liquidity."""
+        self.reserve_a += amount_a
+        self.reserve_b += amount_b
+        # Return LP tokens (simplified)
+        return (amount_a + amount_b) / 2.0
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Query Expansion: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Query Expansion solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Query Expansion uses [key technique] to [achieve goal].
 
-Query Expansion: The algorithm works by systematically processing data according to a specific strategy.
+Query Expansion is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**QUERY EXPANSION** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**QUERY_EXPANSION** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,41 @@ Query Expansion is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def query_expansion(data):
-    """Implementation of Query Expansion."""
-    # Core algorithm logic
-    return result
+class QueryExpansion:
+    """Query expansion for search."""
+
+    def __init__(self):
+        self.synonyms: Dict[str, List[str]] = {}
+        self.expansions: List[dict] = {}
+
+    def add_synonyms(self, term: str, synonyms: List[str]) -> None:
+        """Add synonyms."""
+        self.synonyms[term] = synonyms
+
+    def expand(self, query: str) -> List[str]:
+        """Expand query."""
+        terms = query.split()
+        expanded = []
+        for term in terms:
+            expanded.append(term)
+            if term in self.synonyms:
+                expanded.extend(self.synonyms[term])
+        return expanded
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

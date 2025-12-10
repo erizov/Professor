@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Data Drift: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(n*features)
+- **Purpose:** Data Drift solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** MLOps
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Data Drift uses [key technique] to [achieve goal].
 
-Data Drift: The algorithm works by systematically processing data according to a specific strategy.
+Data Drift is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**DATA DRIFT** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **MLOps** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**DATA_DRIFT** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,62 @@ Data Drift is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def data_drift(data):
-    """Implementation of Data Drift."""
-    # Core algorithm logic
-    return result
+class DataDrift:
+    """Data drift detection."""
+
+    def __init__(self):
+        self.reference_data: List[List[float]] = []
+        self.current_data: List[List[float]] = []
+
+    def set_reference(self, data: List[List[float]]) -> None:
+        """Set reference data."""
+        self.reference_data = data
+
+    def add_current(self, data: List[List[float]]) -> None:
+        """Add current data."""
+        self.current_data.extend(data)
+
+    def detect_drift(self, threshold: float = 0.1) -> dict:
+        """Detect data drift."""
+        if not self.reference_data or not self.current_data:
+            return {"drift_detected": False}
+
+        # Calculate statistics
+        ref_means = [sum(col) / len(col) for col in zip(*self.reference_data)]
+        curr_means = [sum(col) / len(col) for col in zip(*self.current_data)]
+
+        # Calculate drift score
+        drift_scores = []
+        for ref_mean, curr_mean in zip(ref_means, curr_means):
+            if ref_mean != 0:
+                drift = abs((curr_mean - ref_mean) / ref_mean)
+            else:
+                drift = abs(curr_mean)
+            drift_scores.append(drift)
+
+        max_drift = max(drift_scores) if drift_scores else 0.0
+        drift_detected = max_drift > threshold
+
+        return {
+            "drift_detected": drift_detected,
+            "max_drift_score": max_drift,
+            "drift_scores": drift_scores,
+        }
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

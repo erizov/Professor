@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Load Balancing: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(1)
+- **Purpose:** Load Balancing solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Performance
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Load Balancing uses [key technique] to [achieve goal].
 
-Load Balancing: The algorithm works by systematically processing data according to a specific strategy.
+Load Balancing is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**LOAD BALANCING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Performance** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**LOAD_BALANCING** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,55 @@ Load Balancing is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def load_balancing(data):
-    """Implementation of Load Balancing."""
-    # Core algorithm logic
-    return result
+class LoadBalancer:
+    """Load balancer."""
+
+    def __init__(self, algorithm: str = "round_robin"):
+        self.servers: List[dict] = []
+        self.algorithm = algorithm
+        self.current_index = 0
+
+    def add_server(self, server_id: str, capacity: int) -> None:
+        """Add server."""
+        self.servers.append({"id": server_id, "capacity": capacity, "current_load": 0})
+
+    def select_server(self) -> Optional[str]:
+        """Select server based on algorithm."""
+        if not self.servers:
+            return None
+
+        if self.algorithm == "round_robin":
+            server = self.servers[self.current_index]
+            self.current_index = (self.current_index + 1) % len(self.servers)
+            return server["id"]
+        elif self.algorithm == "least_connections":
+            server = min(self.servers, key=lambda s: s["current_load"])
+            return server["id"]
+        else:
+            return self.servers[0]["id"]
+
+    def route_request(self, request: dict) -> Optional[str]:
+        """Route request to server."""
+        server_id = self.select_server()
+        if server_id:
+            server = next(s for s in self.servers if s["id"] == server_id)
+            server["current_load"] += 1
+        return server_id
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

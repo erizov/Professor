@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Performance Profiling: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(profiling_overhead)
+- **Purpose:** Performance Profiling solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Monitoring
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Performance Profiling uses [key technique] to [achieve goal].
 
-Performance Profiling: The algorithm works by systematically processing data according to a specific strategy.
+Performance Profiling is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**PERFORMANCE PROFILING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **Monitoring**.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**PERFORMANCE_PROFILING** = Remember: [key steps]
 
 
 ## Сложность алгоритма

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Boosting: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(n*m*iterations)
+- **Purpose:** Boosting solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Ensemble Learning
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Boosting uses [key technique] to [achieve goal].
 
-Boosting: The algorithm works by systematically processing data according to a specific strategy.
+Boosting is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**BOOSTING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Ensemble Learning** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**BOOSTING** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,80 @@ Boosting is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def boosting(data):
-    """Implementation of Boosting."""
-    # Core algorithm logic
-    return result
+class Boosting:
+    """Boosting algorithm (AdaBoost simplified)."""
+
+    def __init__(self, n_estimators: int = 50):
+        self.n_estimators = n_estimators
+        self.estimators = []
+        self.weights = []
+
+    def fit(self, X: List[List[float]], y: List[int]) -> None:
+        """Train boosting model."""
+        import math
+
+        n = len(X)
+        sample_weights = [1.0 / n] * n
+
+        for _ in range(self.n_estimators):
+            error, estimator = self._train_weak_learner(X, y, sample_weights)
+            if error >= 0.5:
+                break
+            alpha = 0.5 * math.log((1 - error) / error)
+            self.estimators.append(estimator)
+            self.weights.append(alpha)
+            for i in range(n):
+                if self._predict_one(X[i], estimator) != y[i]:
+                    sample_weights[i] *= math.exp(alpha)
+                else:
+                    sample_weights[i] *= math.exp(-alpha)
+            total = sum(sample_weights)
+            sample_weights = [w / total for w in sample_weights]
+
+    def _train_weak_learner(
+        self, X: List[List[float]], y: List[int], weights: List[float]
+    ) -> tuple:
+        """Train weak learner."""
+        best_error = float("inf")
+        best_threshold = 0.0
+        for threshold in [0.0, 0.25, 0.5, 0.75, 1.0]:
+            error = sum(
+                weights[i] for i in range(len(X)) if (X[i][0] > threshold) != (y[i] > 0)
+            )
+            if error < best_error:
+                best_error = error
+                best_threshold = threshold
+        return best_error, {"threshold": best_threshold}
+
+    def _predict_one(self, x: List[float], estimator: dict) -> int:
+        """Predict single sample."""
+        return 1 if x[0] > estimator["threshold"] else -1
+
+    def predict(self, X: List[List[float]]) -> List[int]:
+        """Predict."""
+        predictions = []
+        for x in X:
+            score = sum(
+                self.weights[i] * self._predict_one(x, self.estimators[i])
+                for i in range(len(self.estimators))
+            )
+            predictions.append(1 if score > 0 else -1)
+        return predictions
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

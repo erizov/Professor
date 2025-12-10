@@ -4,16 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Deadlock Detection: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** Varies
+- **Purpose:** Deadlock Detection identifies circular wait conditions in resource allocation graphs where processes are blocked waiting for each other indefinitely.
+- **Complexity:** O(V + E) time, O(V) space where V is processes/resources and E is wait relationships
 - **Category:** Operating Systems Fundamentals
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Uses depth-first search (DFS) with recursion stack tracking to detect cycles in the wait-for graph, indicating deadlocked processes.
 
-Deadlock Detection: The algorithm works by systematically processing data according to a specific strategy.
+Deadlock Detection is a critical algorithm in operating systems that identifies when multiple processes are stuck in a circular wait condition, preventing any of them from making progress.
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm builds a wait-for graph from process-resource relationships and uses DFS cycle detection to find circular dependencies that cause deadlocks.
 
-**DEADLOCK DETECTION** = Remember the key steps: step 1, step 2, step 3
+**DEADLOCK DETECTION** = Remember: Build wait-for graph → DFS traversal → Track recursion stack → Detect cycles → Return deadlocked processes
 
 
 
@@ -25,65 +25,107 @@ The algorithm works by systematically processing data according to a specific st
 This algorithm belongs to the **Operating Systems Fundamentals** category and employs systematic data processing to achieve its objectives.
 
 
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
-
-
 ## Complexity Analysis
 
-**Time Complexity:** Varies
-- The algorithm's performance scales according to this complexity class
-- Best, average, and worst cases may vary based on input characteristics
+**Time Complexity:** O(V + E)
+- V is the number of processes/resources (vertices)
+- E is the number of wait relationships (edges)
+- DFS visits each vertex once and each edge once
+- Best, average, and worst cases are all O(V + E)
 
-**Space Complexity:** Varies
-- Indicates the amount of additional memory required during execution
+**Space Complexity:** O(V)
+- Recursion stack: O(V) in worst case (deepest path)
+- Visited set: O(V) to track explored nodes
+- Recursion stack set: O(V) to track current path
+- Wait-for graph: O(V + E) for adjacency representation
 
-**Key Data Structures:** stack, hash table/dictionary
+**Key Data Structures:** 
+- Dictionary/Map for wait-for graph (adjacency list)
+- Set for visited nodes
+- Set for recursion stack (current DFS path)
+- List for tracking current path during DFS
 
 ## Real-World Applications
 
 Deadlock Detection is used in:
-- Software development frameworks
-- System optimization
-- Data processing pipelines
-- Algorithm libraries
+- **Operating Systems:** Linux, Windows, and Unix systems periodically check for deadlocks in process scheduling and resource allocation
+- **Database Systems:** PostgreSQL, MySQL, and Oracle detect transaction deadlocks and rollback one transaction to break the cycle
+- **Distributed Systems:** Kubernetes, Docker Swarm, and Mesos detect circular dependencies in resource allocation
+- **Concurrent Programming:** Java's ThreadMXBean, .NET's deadlock detection APIs monitor thread deadlocks
+- **Transaction Managers:** Two-phase commit protocols use deadlock detection to prevent distributed deadlocks
 
 ## Conceptual Similarities
 
-This algorithm shares conceptual similarities with other algorithms in the Operating Systems Fundamentals category, following similar design patterns and optimization strategies.
+Deadlock Detection is conceptually similar to:
+- **Cycle Detection in Graphs:** Uses the same DFS-based cycle detection as topological sort and strongly connected components
+- **Graph Traversal Algorithms:** Shares DFS/BFS traversal patterns with pathfinding algorithms
+- **Resource Allocation Algorithms:** Related to banker's algorithm and resource allocation graph algorithms
 
 ## Related Algorithms
 
 Deadlock Detection is often used in combination with:
-- Complementary algorithms for preprocessing or post-processing
-- Data structures that optimize its performance
-- Other algorithms in the same complexity class
+- **Deadlock Prevention:** Banker's algorithm prevents deadlocks before they occur
+- **Deadlock Avoidance:** Resource allocation graphs help avoid unsafe states
+- **Deadlock Recovery:** Once detected, recovery algorithms select which process to terminate
+- **Graph Algorithms:** DFS, BFS, and cycle detection algorithms form the foundation
 
 ## Key Implementation Details
 
 ```python
-def deadlock_detection(data):
-    """Implementation of Deadlock Detection."""
-    # Core algorithm logic
-    return result
+from typing import List, Dict, Set
+
+class DeadlockDetection:
+    """Deadlock detection using cycle detection in wait-for graph."""
+    
+    def __init__(self):
+        self.wait_for_graph: Dict[int, List[int]] = {}
+    
+    def add_wait(self, process: int, resource: int) -> None:
+        """Add wait relationship: process waits for resource."""
+        if process not in self.wait_for_graph:
+            self.wait_for_graph[process] = []
+        self.wait_for_graph[process].append(resource)
+    
+    def detect_deadlock(self) -> List[List[int]]:
+        """Detect deadlocks using DFS cycle detection."""
+        visited = set()
+        rec_stack = set()
+        cycles = []
+        
+        def dfs(node: int, path: List[int]) -> None:
+            visited.add(node)
+            rec_stack.add(node)
+            path.append(node)
+            
+            for neighbor in self.wait_for_graph.get(node, []):
+                if neighbor not in visited:
+                    dfs(neighbor, path[:])
+                elif neighbor in rec_stack:
+                    # Found cycle - deadlock detected
+                    cycle_start = path.index(neighbor)
+                    cycles.append(path[cycle_start:] + [neighbor])
+            
+            rec_stack.remove(node)
+        
+        # Check all nodes for cycles
+        for node in self.wait_for_graph:
+            if node not in visited:
+                dfs(node, [])
+        
+        return cycles
 ```
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Not tracking recursion stack separately from visited set:** Using only a visited set misses cycles because a node can be visited but not in the current path. Solution: Maintain separate `visited` (all explored nodes) and `rec_stack` (nodes in current DFS path) sets.
+
+- **Not handling disconnected components:** Only checking from one starting node misses cycles in other components. Solution: Iterate through all nodes and start DFS from each unvisited node.
+
+- **Confusing back edges with forward edges:** A back edge (to a node in recursion stack) indicates a cycle, but a forward edge (to a visited node not in stack) does not. Solution: Only report cycles when `neighbor in rec_stack`, not just `neighbor in visited`.
+
+- **Not removing nodes from recursion stack after DFS:** Failing to remove nodes from `rec_stack` after processing prevents detection of multiple cycles. Solution: Always call `rec_stack.remove(node)` after processing all neighbors.
+
+- **Incorrect cycle extraction:** Extracting the wrong portion of the path when a cycle is found. Solution: Find the cycle start index with `path.index(neighbor)` and extract from that point to the end, then add the neighbor again to close the cycle.
 
 
 ---
@@ -160,25 +202,6 @@ cycles = [[1, 2, 3, 1]]
 # Result
 return [[1, 2, 3, 1]]  # Deadlock detected!
 ```
-
-**Expected Output:**
-
-```
-Wait-for graph:
-  Process 1 → Resource 2
-  Process 2 → Resource 3
-  Process 3 → Resource 1
-
-DFS traversal:
-  Start: Process 1
-  Visit: Process 2
-  Visit: Process 3
-  Cycle detected: Process 1 (already in recursion stack)
-
-Deadlock found!
-Cycle: [1, 2, 3, 1]
-```
-
 
 **Expected Output:**
 

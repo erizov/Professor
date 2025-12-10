@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Byzantine Fault Tolerance: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Byzantine Fault Tolerance solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Byzantine Fault Tolerance uses [key technique] to [achieve goal].
 
-Byzantine Fault Tolerance: The algorithm works by systematically processing data according to a specific strategy.
+Byzantine Fault Tolerance is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**BYZANTINE FAULT TOLERANCE** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм относится к категории **Advanced Graduate Level** и использует систематическую обработку данных для достижения своих целей.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**BYZANTINE_FAULT_TOLERANCE** = Remember: [key steps]
 
 
 ## Анализ сложности

@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Caching: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(1)
+- **Purpose:** Caching solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Performance
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Caching uses [key technique] to [achieve goal].
 
-Caching: The algorithm works by systematically processing data according to a specific strategy.
+Caching is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**CACHING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Performance** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**CACHING** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,54 @@ Caching is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def caching(data):
-    """Implementation of Caching."""
-    # Core algorithm logic
-    return result
+class Cache:
+    """Simple cache implementation."""
+
+    def __init__(self, max_size: int = 100):
+        self.max_size = max_size
+        self.cache: Dict[str, any] = {}
+        self.access_order: List[str] = []
+
+    def get(self, key: str) -> Optional[any]:
+        """Get value from cache."""
+        if key in self.cache:
+            # Move to end (most recently used)
+            self.access_order.remove(key)
+            self.access_order.append(key)
+            return self.cache[key]
+        return None
+
+    def put(self, key: str, value: any) -> None:
+        """Put value in cache."""
+        if key in self.cache:
+            self.access_order.remove(key)
+        elif len(self.cache) >= self.max_size:
+            # Remove least recently used
+            lru_key = self.access_order.pop(0)
+            del self.cache[lru_key]
+
+        self.cache[key] = value
+        self.access_order.append(key)
+
+    def clear(self) -> None:
+        """Clear cache."""
+        self.cache.clear()
+        self.access_order.clear()
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

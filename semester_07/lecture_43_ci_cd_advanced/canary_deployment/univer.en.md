@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Canary Deployment: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Canary Deployment solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced CI/CD
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Canary Deployment uses [key technique] to [achieve goal].
 
-Canary Deployment: The algorithm works by systematically processing data according to a specific strategy.
+Canary Deployment is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**CANARY DEPLOYMENT** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced CI/CD** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**CANARY_DEPLOYMENT** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,73 @@ Canary Deployment is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def canary_deployment(data):
-    """Implementation of Canary Deployment."""
-    # Core algorithm logic
-    return result
+class CanaryDeployment:
+    """Canary deployment strategy."""
+
+    def __init__(self, canary_percentage: float = 0.1):
+        self.canary_percentage = canary_percentage
+        self.canary_version = None
+        self.stable_version = None
+        self.metrics: Dict[str, List[float]] = {"canary": [], "stable": []}
+
+    def deploy_canary(self, canary_version: str, stable_version: str) -> None:
+        """Deploy canary version."""
+        self.canary_version = canary_version
+        self.stable_version = stable_version
+
+    def route_request(self, request_id: str) -> str:
+        """Route request to canary or stable."""
+        import random
+
+        if random.random() < self.canary_percentage:
+            return self.canary_version
+        return self.stable_version
+
+    def record_metric(self, version: str, metric: float) -> None:
+        """Record metric for version."""
+        if version in self.metrics:
+            self.metrics[version].append(metric)
+
+    def should_promote_canary(self) -> bool:
+        """Check if canary should be promoted."""
+        if not self.metrics["canary"] or not self.metrics["stable"]:
+            return False
+
+        canary_avg = sum(self.metrics["canary"]) / len(self.metrics["canary"])
+        stable_avg = sum(self.metrics["stable"]) / len(self.metrics["stable"])
+
+        # Promote if canary performs better or similarly
+        return canary_avg >= stable_avg * 0.95
+
+    def should_rollback(self) -> bool:
+        """Check if should rollback canary."""
+        if not self.metrics["canary"]:
+            return False
+
+        canary_avg = sum(self.metrics["canary"]) / len(self.metrics["canary"])
+        stable_avg = (
+            sum(self.metrics["stable"]) / len(self.metrics["stable"])
+            if self.metrics["stable"]
+            else 1.0
+        )
+
+        # Rollback if canary performs significantly worse
+        return canary_avg < stable_avg * 0.9
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

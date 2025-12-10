@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Canary Analysis: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Canary Analysis solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Canary Analysis uses [key technique] to [achieve goal].
 
-Canary Analysis: The algorithm works by systematically processing data according to a specific strategy.
+Canary Analysis is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**CANARY ANALYSIS** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Advanced Graduate Level** category and employs comparing elements to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**CANARY_ANALYSIS** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,71 @@ Canary Analysis is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def canary_analysis(data):
-    """Implementation of Canary Analysis."""
-    # Core algorithm logic
-    return result
+class CanaryAnalysis:
+    """Canary deployment analysis."""
+
+    def __init__(self):
+        self.canary_metrics: Dict[str, List[float]] = {}
+        self.stable_metrics: Dict[str, List[float]] = {}
+
+    def add_metric(self, version: str, metric_name: str, value: float) -> None:
+        """Add metric."""
+        metrics = self.canary_metrics if version == "canary" else self.stable_metrics
+        if metric_name not in metrics:
+            metrics[metric_name] = []
+        metrics[metric_name].append(value)
+
+    def compare_metrics(self) -> dict:
+        """Compare canary vs stable metrics."""
+        comparison = {}
+
+        all_metrics = set(self.canary_metrics.keys()) | set(self.stable_metrics.keys())
+
+        for metric_name in all_metrics:
+            canary_vals = self.canary_metrics.get(metric_name, [])
+            stable_vals = self.stable_metrics.get(metric_name, [])
+
+            if canary_vals and stable_vals:
+                canary_avg = sum(canary_vals) / len(canary_vals)
+                stable_avg = sum(stable_vals) / len(stable_vals)
+
+                diff = canary_avg - stable_avg
+                diff_percent = (diff / stable_avg * 100) if stable_avg > 0 else 0.0
+
+                comparison[metric_name] = {
+                    "canary_avg": canary_avg,
+                    "stable_avg": stable_avg,
+                    "difference": diff,
+                    "difference_percent": diff_percent,
+                }
+
+        return comparison
+
+    def should_rollback(self, threshold: float = 0.1) -> bool:
+        """Check if should rollback."""
+        comparison = self.compare_metrics()
+
+        for metric_name, comp in comparison.items():
+            # If canary performs significantly worse
+            if comp["difference_percent"] < -threshold * 100:
+                return True
+
+        return False
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

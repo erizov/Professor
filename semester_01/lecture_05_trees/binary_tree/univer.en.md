@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Binary Tree: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(n)
+- **Purpose:** Binary Tree solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Data Structure
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Binary Tree uses [key technique] to [achieve goal].
 
-Binary Tree: The algorithm works by systematically processing data according to a specific strategy.
+Binary Tree is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**BINARY TREE** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Data Structure** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**BINARY_TREE** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,58 @@ Binary Tree is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def binary_tree(data):
-    """Implementation of Binary Tree."""
-    # Core algorithm logic
+class TreeNode:
+    """Binary tree node."""
+
+    def __init__(self, val: int = 0):
+        self.val = val
+        self.left: Optional["TreeNode"] = None
+        self.right: Optional["TreeNode"] = None
+
+
+def inorder_traversal(root: Optional[TreeNode]) -> List[int]:
+    """Inorder traversal of binary tree."""
+    result = []
+    if root:
+        result.extend(inorder_traversal(root.left))
+        result.append(root.val)
+        result.extend(inorder_traversal(root.right))
+    return result
+
+
+def preorder_traversal(root: Optional[TreeNode]) -> List[int]:
+    """Preorder traversal of binary tree."""
+    result = []
+    if root:
+        result.append(root.val)
+        result.extend(preorder_traversal(root.left))
+        result.extend(preorder_traversal(root.right))
+    return result
+
+
+def postorder_traversal(root: Optional[TreeNode]) -> List[int]:
+    """Postorder traversal of binary tree."""
+    result = []
+    if root:
+        result.extend(postorder_traversal(root.left))
+        result.extend(postorder_traversal(root.right))
+        result.append(root.val)
     return result
 ```
 
+
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

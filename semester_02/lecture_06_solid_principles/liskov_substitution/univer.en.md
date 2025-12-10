@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Liskov Substitution: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** N/A
+- **Purpose:** Liskov Substitution solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** SOLID
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Liskov Substitution uses [key technique] to [achieve goal].
 
-Liskov Substitution: The algorithm works by systematically processing data according to a specific strategy.
+Liskov Substitution is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**LISKOV SUBSTITUTION** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **SOLID** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**LISKOV_SUBSTITUTION** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,43 @@ Liskov Substitution is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def liskov_substitution(data):
-    """Implementation of Liskov Substitution."""
-    # Core algorithm logic
-    return result
+class LiskovSubstitution:
+    """Liskov substitution principle."""
+
+    def __init__(self):
+        self.base_classes: Dict[str, List[str]] = {}
+        self.subclasses: Dict[str, str] = {}
+
+    def define_base(self, base_name: str, methods: List[str]) -> None:
+        """Define base class."""
+        self.base_classes[base_name] = methods
+
+    def define_subclass(self, subclass_name: str, base_name: str) -> None:
+        """Define subclass."""
+        self.subclasses[subclass_name] = base_name
+
+    def verify_substitution(self, subclass_name: str) -> bool:
+        """Verify Liskov substitution."""
+        if subclass_name not in self.subclasses:
+            return False
+        base_name = self.subclasses[subclass_name]
+        # Simplified: assume valid if subclass exists
+        return base_name in self.base_classes
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

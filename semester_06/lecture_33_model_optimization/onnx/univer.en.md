@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Onnx: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(model_size)
+- **Purpose:** Onnx solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Optimization
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Onnx uses [key technique] to [achieve goal].
 
-Onnx: The algorithm works by systematically processing data according to a specific strategy.
+Onnx is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**ONNX** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm belongs to the **Optimization** category and employs systematic data processing to achieve its objectives.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**ONNX** = Remember: [key steps]
 
 
 ## Complexity Analysis
@@ -71,22 +49,46 @@ Onnx is often used in combination with:
 ## Key Implementation Details
 
 ```python
-def onnx(data):
-    """Implementation of Onnx."""
-    # Core algorithm logic
-    return result
+class ONNX:
+    """ONNX model format."""
+
+    def __init__(self):
+        self.models: Dict[str, any] = {}
+
+    def export_model(self, model_id: str, model: any) -> str:
+        """Export model to ONNX format."""
+        # Simplified: store model
+        self.models[model_id] = {"format": "onnx", "model": model}
+        return f"{model_id}.onnx"
+
+    def import_model(self, onnx_file: str) -> Optional[any]:
+        """Import ONNX model."""
+        model_id = onnx_file.replace(".onnx", "")
+        if model_id in self.models:
+            return self.models[model_id]["model"]
+        return None
+
+    def optimize_model(self, model_id: str) -> any:
+        """Optimize ONNX model."""
+        if model_id in self.models:
+            # Simplified optimization
+            return self.models[model_id]["model"]
+        return None
 ```
+
 
 ## Common Application Errors
 
-- Incorrect handling of edge cases (empty input, single element, boundary conditions)
-- Misunderstanding of complexity implications in large-scale systems
-- Suboptimal implementation leading to performance degradation
-- Incorrect assumptions about input data characteristics
-- Not considering alternative algorithms for specific use cases
+- **Incorrect handling of edge cases:** [Algorithm-specific edge case]. Solution: [Specific solution].
 
+- **Misunderstanding complexity implications:** [Algorithm-specific complexity issue]. Solution: [Specific solution].
 
----
+- **Suboptimal implementation:** [Algorithm-specific performance issue]. Solution: [Specific solution].
+
+- **Incorrect assumptions about input:** [Algorithm-specific input assumption]. Solution: [Specific solution].
+
+- **Not considering alternatives:** [Algorithm-specific alternative consideration]. Solution: [Specific solution].
+
 
 ## Recommended Literature
 

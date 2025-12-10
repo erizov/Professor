@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Red Black Tree: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(log n)
+- **Purpose:** Red Black Tree solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Data Structure
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Red Black Tree uses [key technique] to [achieve goal].
 
-Red Black Tree: The algorithm works by systematically processing data according to a specific strategy.
+Red Black Tree is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**RED BLACK TREE** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **Data Structure**.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**RED_BLACK_TREE** = Remember: [key steps]
 
 
 ## Сложность алгоритма

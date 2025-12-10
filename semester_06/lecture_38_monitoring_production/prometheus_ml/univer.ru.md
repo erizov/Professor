@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Prometheus Ml: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(metrics)
+- **Purpose:** Prometheus Ml solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Monitoring
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Prometheus Ml uses [key technique] to [achieve goal].
 
-Prometheus Ml: The algorithm works by systematically processing data according to a specific strategy.
+Prometheus Ml is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**PROMETHEUS ML** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм относится к категории **Monitoring** и использует систематическую обработку данных для достижения своих целей.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**PROMETHEUS_ML** = Remember: [key steps]
 
 
 ## Анализ сложности

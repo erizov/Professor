@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Federated Learning: The algorithm works by systematically processing data according to a specific strategy.
-- **Complexity:** O(rounds*clients)
+- **Purpose:** Federated Learning solves [algorithm purpose] by [key approach].
+- **Complexity:** Varies
 - **Category:** Distributed ML
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Federated Learning uses [key technique] to [achieve goal].
 
-Federated Learning: The algorithm works by systematically processing data according to a specific strategy.
+Federated Learning is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**FEDERATED LEARNING** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-Этот алгоритм работает, систематически обрабатывая данные, чтобы достичь своей цели. Он относится к категории алгоритмов **Distributed ML**.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**FEDERATED_LEARNING** = Remember: [key steps]
 
 
 ## Сложность алгоритма

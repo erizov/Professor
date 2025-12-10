@@ -4,38 +4,16 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Knowledge Graph: The algorithm works by systematically processing data according to a specific strategy.
+- **Purpose:** Knowledge Graph solves [algorithm purpose] by [key approach].
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
+- **Key Idea:** Knowledge Graph uses [key technique] to [achieve goal].
 
-Knowledge Graph: The algorithm works by systematically processing data according to a specific strategy.
+Knowledge Graph is an algorithm that [brief description of what it does and why it's important].
 
-The algorithm works by systematically processing data according to a specific strategy.
+The algorithm works by [key steps in the process].
 
-**KNOWLEDGE GRAPH** = Remember the key steps: step 1, step 2, step 3
-
-
-
-
-
-
-
-
-This algorithm works by processing data systematically to achieve its goal. It's part of the **Advanced Graduate Level** category of algorithms.
-
-
-## 📊 Visual Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Init[Initialize]
-    Init --> Process[Process data]
-    Process --> Check{Condition?}
-    Check -->|Yes| Action[Execute action]
-    Check -->|No| End([End])
-    Action --> Process
-```
+**KNOWLEDGE_GRAPH** = Remember: [key steps]
 
 
 ## Algorithm Complexity
