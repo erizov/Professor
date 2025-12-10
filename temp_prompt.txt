@@ -1,0 +1,4 @@
+  File "<string>", line 1
+    import sqlite3; conn = sqlite3.connect('database/algorithm_prompts.db'); cursor = conn.cursor(); cursor.execute('SELECT prompt_univer_en FROM algorithm_prompts WHERE algorithm_name = \
+                                                                                                                    ^
+SyntaxError: unterminated string literal (detected at line 1)
