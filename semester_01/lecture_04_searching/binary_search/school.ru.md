@@ -1,5 +1,9 @@
 # Binary Search
 
+# School
+
+## 📋 Quick Summary
+
 - **Purpose:** Binary Search: Always check the middle element - if it's not what we want, eliminate half the search space.
 - **Complexity:** O(log n)
 - **Category:** Searching
@@ -12,14 +16,9 @@ Always check the middle element - if it's not what we want, eliminate half the s
 **BINARY** = Begin In Middle, Always Narrow Your search. Like finding a word in a dictionary - always check the middle!
 
 
-- **Complexity:** O(log n)
-- **Category:** Searching
-- **Key Idea:** Always check the middle element - if it's not what we want, eliminate half the search space.
 
 
-Always check the middle element - if it's not what we want, eliminate half the search space.
 
-**BINARY** = Begin In Middle, Always Narrow Your search. Like finding a word in a dictionary - always check the middle!
 
 
 
@@ -151,13 +150,10 @@ What happens if you try binary search on an unsorted array? Why doesn't it work?
 **Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** [How to fix this mistake]
 
 ### 💡 How to Avoid
 - Test with edge cases (empty input, single element, boundary values)

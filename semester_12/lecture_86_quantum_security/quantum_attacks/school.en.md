@@ -1,5 +1,9 @@
 # Quantum Attacks
 
+# School
+
+## 📋 Quick Summary
+
 - **Purpose:** Quantum Attacks: The algorithm works by systematically processing data according to a specific strategy.
 - **Complexity:** Varies
 - **Category:** Advanced Graduate Level
@@ -12,14 +16,9 @@ The algorithm works by systematically processing data according to a specific st
 **QUANTUM ATTACKS** = Remember the key steps: step 1, step 2, step 3
 
 
-- **Complexity:** Varies
-- **Category:** Advanced Graduate Level
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
 
 
-The algorithm works by systematically processing data according to a specific strategy.
 
-**QUANTUM ATTACKS** = Remember the key steps: step 1, step 2, step 3
 
 
 
@@ -53,13 +52,11 @@ def quantum_attacks(data):
 ## 🎯 Try It Yourself
 
 **Try this example:**
-```
 Input: [example data]
 Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 ## ✏️ Practice Exercise
 
@@ -94,7 +91,6 @@ Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 
 **Exercise 1 (Easy):**
@@ -125,13 +121,10 @@ Optimize the algorithm or apply it to solve a real-world problem.
 **Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** [How to fix this mistake]
 
 ### 💡 How to Avoid
 - Test with edge cases (empty input, single element, boundary values)

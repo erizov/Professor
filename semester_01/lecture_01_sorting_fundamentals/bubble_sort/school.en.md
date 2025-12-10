@@ -1,16 +1,8 @@
 # Bubble Sort
 
-- **Purpose:** Bubble Sort: Repeatedly compares and rearranges elements until the list is sorted, like organizing items in order.
-- **Complexity:** O(n²)
-- **Category:** Sorting
-- **Key Idea:** The largest element 'bubbles up' to the end in each pass, so we can reduce the comparison range each time.
+# School
 
-Bubble Sort: Repeatedly compares and rearranges elements until the list is sorted, like organizing items in order.
-
-The largest element 'bubbles up' to the end in each pass, so we can reduce the comparison range each time.
-
-**BUBBLE** = Bring Up Bigger, Leave Elements. Think of bubbles rising in water - larger elements float to the top!
-
+## 📋 Quick Summary
 
 - **Purpose:** Bubble Sort: Repeatedly compares and rearranges elements until the list is sorted, like organizing items in order.
 - **Complexity:** O(n²)
@@ -22,6 +14,11 @@ Bubble Sort: Repeatedly compares and rearranges elements until the list is sorte
 The largest element 'bubbles up' to the end in each pass, so we can reduce the comparison range each time.
 
 **BUBBLE** = Bring Up Bigger, Leave Elements. Think of bubbles rising in water - larger elements float to the top!
+
+
+
+
+
 
 
 
@@ -55,7 +52,6 @@ def bubble_sort(data):
 ## 🎯 Try It Yourself
 
 **Try sorting this by hand:**
-```
 Input: [5, 2, 8, 1, 9]
 
 Pass 1:
@@ -149,13 +145,10 @@ Optimize bubble sort to stop early if the list is already sorted. How does this 
 **Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** [How to fix this mistake]
 
 ### 💡 How to Avoid
 - Test with edge cases (empty input, single element, boundary values)
@@ -179,15 +172,7 @@ You might also want to learn:
 
 
 
-You might also want to learn:
-- **Insertion Sort** - Similar algorithm in the same category
-- **Selection Sort** - Similar algorithm in the same category
-- **Heap Sort** - Similar algorithm in the same category
 
 
 
-You might also want to learn:
-- **Insertion Sort** - Similar algorithm in the same category
-- **Selection Sort** - Similar algorithm in the same category
-- **Heap Sort** - Similar algorithm in the same category
 

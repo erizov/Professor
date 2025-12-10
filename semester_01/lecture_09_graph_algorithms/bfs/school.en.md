@@ -1,5 +1,9 @@
 # Bfs
 
+# School
+
+## 📋 Quick Summary
+
 - **Purpose:** Bfs: Explore level by level - visit all neighbors before moving to the next level, like ripples in water.
 - **Complexity:** O(n²)
 - **Category:** Algorithms
@@ -12,14 +16,9 @@ Explore level by level - visit all neighbors before moving to the next level, li
 **BFS** = Breadth First Search. Like exploring a maze room by room, level by level - visit all neighbors first!
 
 
-- **Complexity:** O(n²)
-- **Category:** Algorithms
-- **Key Idea:** Explore level by level - visit all neighbors before moving to the next level, like ripples in water.
 
 
-Explore level by level - visit all neighbors before moving to the next level, like ripples in water.
 
-**BFS** = Breadth First Search. Like exploring a maze room by room, level by level - visit all neighbors first!
 
 
 
@@ -53,13 +52,11 @@ def bfs(data):
 ## 🎯 Try It Yourself
 
 **Try this example:**
-```
 Input: [example data]
 Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 ## ✏️ Practice Exercise
 
@@ -94,7 +91,6 @@ Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 
 **Exercise 1 (Easy):**
@@ -125,13 +121,10 @@ Optimize the algorithm or apply it to solve a real-world problem.
 **Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** [How to fix this mistake]
 
 ### 💡 How to Avoid
 - Test with edge cases (empty input, single element, boundary values)

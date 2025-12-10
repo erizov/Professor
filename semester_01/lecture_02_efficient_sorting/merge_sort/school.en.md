@@ -1,16 +1,8 @@
 # Merge Sort
 
-- **Purpose:** Merge Sort: Repeatedly compares and rearranges elements until the list is sorted, like organizing items in order.
-- **Complexity:** O(n log n)
-- **Category:** Sorting
-- **Key Idea:** Divide the array in half, sort each half, then merge the sorted halves together.
+# School
 
-Merge Sort: Repeatedly compares and rearranges elements until the list is sorted, like organizing items in order.
-
-Divide the array in half, sort each half, then merge the sorted halves together.
-
-**MERGE** = Make Equal, Recursively Group Elements. Like merging two sorted piles of papers into one.
-
+## 📋 Quick Summary
 
 - **Purpose:** Merge Sort: Repeatedly compares and rearranges elements until the list is sorted, like organizing items in order.
 - **Complexity:** O(n log n)
@@ -22,6 +14,11 @@ Merge Sort: Repeatedly compares and rearranges elements until the list is sorted
 Divide the array in half, sort each half, then merge the sorted halves together.
 
 **MERGE** = Make Equal, Recursively Group Elements. Like merging two sorted piles of papers into one.
+
+
+
+
+
 
 
 
@@ -58,13 +55,11 @@ def merge_sort(arr):
 ## 🎯 Try It Yourself
 
 **Try this example:**
-```
 Input: [example data]
 Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 ## ✏️ Practice Exercise
 
@@ -99,7 +94,6 @@ Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 
 **Exercise 1 (Easy):**
@@ -130,13 +124,10 @@ Optimize the algorithm or apply it to solve a real-world problem.
 **Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** [How to fix this mistake]
 
 ### 💡 How to Avoid
 - Test with edge cases (empty input, single element, boundary values)
@@ -160,15 +151,7 @@ You might also want to learn:
 
 
 
-You might also want to learn:
-- **Bubble Sort** - Similar algorithm in the same category
-- **Insertion Sort** - Similar algorithm in the same category
-- **Selection Sort** - Similar algorithm in the same category
 
 
 
-You might also want to learn:
-- **Bubble Sort** - Similar algorithm in the same category
-- **Insertion Sort** - Similar algorithm in the same category
-- **Selection Sort** - Similar algorithm in the same category
 

@@ -24,6 +24,8 @@ def remove_duplicate_sections(content: str) -> str:
     seen_sections = set()
     result = []
     i = 0
+    in_section = False
+    current_section = None
     
     while i < len(lines):
         line = lines[i]
@@ -34,45 +36,79 @@ def remove_duplicate_sections(content: str) -> str:
             
             # Check if we've seen this section before
             if section_name in seen_sections:
-                # Skip this section and its content until next section or end
+                # Skip this entire section
+                in_section = True
+                current_section = section_name
                 i += 1
+                # Skip until next section or significant blank line
                 while i < len(lines):
-                    if lines[i].startswith('## ') or lines[i].strip() == '':
+                    if lines[i].startswith('## '):
+                        break
+                    # Stop at significant blank (2+ newlines or section break)
+                    if i < len(lines) - 1 and lines[i].strip() == '' and lines[i+1].strip() == '':
+                        i += 1
                         break
                     i += 1
+                in_section = False
+                current_section = None
                 continue
             else:
                 seen_sections.add(section_name)
+                in_section = True
+                current_section = section_name
+        
+        # Also check for duplicate content patterns
+        line_stripped = line.strip()
+        
+        # Skip duplicate bullet points (same content)
+        if line_stripped.startswith('- **'):
+            # Check if we've seen this exact bullet recently
+            if line_stripped in [r.strip() for r in result[-20:] if r.strip().startswith('- **')]:
+                i += 1
+                continue
+        
+        # Skip duplicate standalone lines (same content repeated)
+        if line_stripped and not line_stripped.startswith('#') and not line_stripped.startswith('-'):
+            # Check last 10 lines for duplicates
+            recent_lines = [r.strip() for r in result[-10:] if r.strip() and not r.strip().startswith('#')]
+            if line_stripped in recent_lines:
+                i += 1
+                continue
         
         result.append(line)
         i += 1
     
-    # Also remove duplicate Quick Summary bullet points
     content = '\n'.join(result)
     
-    # Remove duplicate bullet points in Quick Summary
-    if '## 📋 Quick Summary' in content:
-        summary_start = content.find('## 📋 Quick Summary')
-        summary_end = content.find('\n## ', summary_start + 1)
-        if summary_end == -1:
-            summary_end = len(content)
-        
-        summary_section = content[summary_start:summary_end]
-        lines = summary_section.split('\n')
-        seen_bullets = set()
-        unique_lines = []
-        
-        for line in lines:
-            if line.strip().startswith('- **'):
-                if line.strip() not in seen_bullets:
-                    seen_bullets.add(line.strip())
-                    unique_lines.append(line)
-                else:
-                    continue
+    # Additional cleanup: remove duplicate Quick Summary sections
+    if content.count('## 📋 Quick Summary') > 1:
+        parts = content.split('## 📋 Quick Summary')
+        # Keep first occurrence, remove others
+        content = parts[0] + '## 📋 Quick Summary' + parts[1]
+        # Remove any remaining duplicates
+        while '## 📋 Quick Summary' in content[content.find('## 📋 Quick Summary') + 1:]:
+            first = content.find('## 📋 Quick Summary')
+            second = content.find('## 📋 Quick Summary', first + 1)
+            next_section = content.find('\n## ', second)
+            if next_section == -1:
+                content = content[:second]
             else:
-                unique_lines.append(line)
-        
-        content = content[:summary_start] + '\n'.join(unique_lines) + content[summary_end:]
+                content = content[:second] + content[next_section:]
+    
+    # Remove duplicate "In One Sentence", "Key Insight", "Memory Tip" sections
+    for section in ['## 💬 In One Sentence', '## 💡 Key Insight', '## 🧠 Memory Tip']:
+        if content.count(section) > 1:
+            parts = content.split(section)
+            # Keep first, remove others
+            new_content = parts[0] + section + parts[1]
+            # Remove remaining
+            for part in parts[2:]:
+                next_section = part.find('\n## ')
+                if next_section != -1:
+                    new_content += part[next_section:]
+                else:
+                    new_content += part
+            content = new_content
     
     return content
 

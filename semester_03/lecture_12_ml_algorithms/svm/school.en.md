@@ -1,5 +1,9 @@
 # Svm
 
+# School
+
+## 📋 Quick Summary
+
 - **Purpose:** Svm: The algorithm works by systematically processing data according to a specific strategy.
 - **Complexity:** O(n²)
 - **Category:** Algorithms
@@ -12,14 +16,9 @@ The algorithm works by systematically processing data according to a specific st
 **SVM** = Remember the key steps: step 1, step 2, step 3
 
 
-- **Complexity:** O(n²)
-- **Category:** Algorithms
-- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
 
 
-The algorithm works by systematically processing data according to a specific strategy.
 
-**SVM** = Remember the key steps: step 1, step 2, step 3
 
 
 
@@ -55,13 +54,11 @@ def svm(X, y, learning_rate, lambda_param, iterations):
 ## 🎯 Try It Yourself
 
 **Try this example:**
-```
 Input: [example data]
 Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 ## ✏️ Practice Exercise
 
@@ -96,7 +93,6 @@ Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 
 **Exercise 1 (Easy):**
@@ -127,13 +123,10 @@ Optimize the algorithm or apply it to solve a real-world problem.
 **Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** [How to fix this mistake]
 
 ### 💡 How to Avoid
 - Test with edge cases (empty input, single element, boundary values)

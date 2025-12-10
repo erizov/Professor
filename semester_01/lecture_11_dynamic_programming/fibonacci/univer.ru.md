@@ -1,5 +1,9 @@
 # Fibonacci
 
+# Univer
+
+## 📋 Quick Summary
+
 - **Purpose:** Fibonacci: Each number is the sum of the two previous numbers - we can compute this efficiently by storing previous results.
 - **Complexity:** O(n²)
 - **Category:** Algorithms
@@ -12,14 +16,9 @@ Each number is the sum of the two previous numbers - we can compute this efficie
 **FIBONACCI** = Find In Both, Add Next, Continue Iteratively. Each number is the sum of the two before it!
 
 
-- **Complexity:** O(n²)
-- **Category:** Algorithms
-- **Key Idea:** Each number is the sum of the two previous numbers - we can compute this efficiently by storing previous results.
 
 
-Each number is the sum of the two previous numbers - we can compute this efficiently by storing previous results.
 
-**FIBONACCI** = Find In Both, Add Next, Continue Iteratively. Each number is the sum of the two before it!
 
 
 
@@ -96,7 +95,6 @@ F(4) = F(3) + F(2) = 2 + 1 = 3
 F(5) = F(4) + F(3) = 3 + 2 = 5
 
 Answer: 5
-```
 
 ## ✏️ Practice Exercise
 
@@ -134,7 +132,6 @@ F(4) = F(3) + F(2) = 2 + 1 = 3
 F(5) = F(4) + F(3) = 3 + 2 = 5
 
 Answer: 5
-```
 
 
 **Exercise 1 (Easy):**
@@ -165,13 +162,10 @@ Compare the time complexity of recursive Fibonacci vs dynamic programming Fibona
 **Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** [How to fix this mistake]
 
 ### 💡 How to Avoid
 - Test with edge cases (empty input, single element, boundary values)

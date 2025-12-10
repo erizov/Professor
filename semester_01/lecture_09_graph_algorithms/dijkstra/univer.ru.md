@@ -1,5 +1,9 @@
 # Dijkstra
 
+# Univer
+
+## 📋 Quick Summary
+
 - **Purpose:** Dijkstra: Greedy approach: always process the closest unvisited node first, ensuring shortest paths are found.
 - **Complexity:** O(n²)
 - **Category:** Algorithms
@@ -12,14 +16,9 @@ Greedy approach: always process the closest unvisited node first, ensuring short
 **DIJKSTRA** = Distance Increases, Just Keep Shortest Track Record Always. Always pick the closest unvisited node first.
 
 
-- **Complexity:** O(n²)
-- **Category:** Algorithms
-- **Key Idea:** Greedy approach: always process the closest unvisited node first, ensuring shortest paths are found.
 
 
-Greedy approach: always process the closest unvisited node first, ensuring shortest paths are found.
 
-**DIJKSTRA** = Distance Increases, Just Keep Shortest Track Record Always. Always pick the closest unvisited node first.
 
 
 
@@ -92,7 +91,6 @@ Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 ## ✏️ Practice Exercise
 
@@ -127,7 +125,6 @@ Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 
 **Exercise 1 (Easy):**
@@ -158,13 +155,10 @@ Optimize the algorithm or apply it to solve a real-world problem.
 **Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** [How to fix this mistake]
 
 ### 💡 How to Avoid
 - Test with edge cases (empty input, single element, boundary values)

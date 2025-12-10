@@ -1,5 +1,9 @@
 # Binary Search Tree
 
+# School
+
+## 📋 Quick Summary
+
 - **Purpose:** Binary Search Tree: Always check the middle element - if it's not what we want, eliminate half the search space.
 - **Complexity:** O(log n)
 - **Category:** Data Structure
@@ -12,14 +16,9 @@ Always check the middle element - if it's not what we want, eliminate half the s
 **BINARY** = Begin In Middle, Always Narrow Your search. Like finding a word in a dictionary - always check the middle!
 
 
-- **Complexity:** O(log n)
-- **Category:** Data Structure
-- **Key Idea:** Always check the middle element - if it's not what we want, eliminate half the search space.
 
 
-Always check the middle element - if it's not what we want, eliminate half the search space.
 
-**BINARY** = Begin In Middle, Always Narrow Your search. Like finding a word in a dictionary - always check the middle!
 
 
 
@@ -53,13 +52,11 @@ def binary_search_tree(data):
 ## 🎯 Try It Yourself
 
 **Try this example:**
-```
 Input: [example data]
 Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 ## ✏️ Practice Exercise
 
@@ -94,7 +91,6 @@ Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 
 **Exercise 1 (Easy):**
@@ -125,13 +121,10 @@ Optimize the algorithm or apply it to solve a real-world problem.
 **Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** [How to fix this mistake]
 
 ### 💡 How to Avoid
 - Test with edge cases (empty input, single element, boundary values)

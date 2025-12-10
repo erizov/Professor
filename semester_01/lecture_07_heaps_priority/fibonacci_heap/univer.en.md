@@ -1,5 +1,9 @@
 # Fibonacci Heap
 
+# Univer
+
+## 📋 Quick Summary
+
 - **Purpose:** Fibonacci Heap: Each number is the sum of the two previous numbers - we can compute this efficiently by storing previous results.
 - **Complexity:** O(1)
 - **Category:** Data Structure
@@ -12,14 +16,9 @@ Each number is the sum of the two previous numbers - we can compute this efficie
 **FIBONACCI** = Find In Both, Add Next, Continue Iteratively. Each number is the sum of the two before it!
 
 
-- **Complexity:** O(1)
-- **Category:** Data Structure
-- **Key Idea:** Each number is the sum of the two previous numbers - we can compute this efficiently by storing previous results.
 
 
-Each number is the sum of the two previous numbers - we can compute this efficiently by storing previous results.
 
-**FIBONACCI** = Find In Both, Add Next, Continue Iteratively. Each number is the sum of the two before it!
 
 
 
@@ -90,7 +89,6 @@ Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 ## ✏️ Practice Exercise
 
@@ -125,7 +123,6 @@ Step 1: [first operation]
 Step 2: [second operation]
 ...
 Output: [result]
-```
 
 
 **Exercise 1 (Easy):**
@@ -156,13 +153,10 @@ Optimize the algorithm or apply it to solve a real-world problem.
 **Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 2: Trace through examples step-by-step
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 3: Use debugging tools to verify your logic
-**Solution:** [How to fix this mistake]
 
 ### ❌ Mistake 4: Review the algorithm's key steps before implementing
-**Solution:** [How to fix this mistake]
 
 ### 💡 How to Avoid
 - Test with edge cases (empty input, single element, boundary values)
