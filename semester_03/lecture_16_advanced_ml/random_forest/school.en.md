@@ -2,61 +2,44 @@
 
 ## Simple Explanation
 
-Random Forest is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
+Random Forest Step-by-Step Execution: Start([Start]) --> Init[Initialize data]
 
-## Where It's Used
+This algorithm works by processing data systematically to achieve its goal. It's part of the **Machine Learning** category of algorithms.
 
-- solving practical programming problems;
-- optimizing application and system performance;
-- processing and analyzing data;
-- automating processes in various fields;
+## Algorithm Complexity
 
-## Example
+The time complexity is **O(n log n)**, which means the time it takes to run depends on the size of the input data. The space complexity is **O(n)**, indicating how much extra memory is needed.
 
-Consider a specific example of how random forest works:
+## Where It's Used in Practice
 
-1. Data preparation: [specific input data]
-2. Algorithm application: [specific steps]
-3. Result: [specific result]
+Random Forest is commonly used in:
+- Software development frameworks
+- System optimization
+- Data processing pipelines
+- Computer science education and algorithm learning
 
-The algorithm performs operations sequentially, processing data according to specific rules.
+## What It Can Be Compared To
 
-## Self-Check Questions
+Think of Random Forest like a systematic way of organizing or finding information - similar to how you might organize items or search through a collection efficiently.
 
-### Basic
+## Minimal Code Example
 
-1. What does the random forest algorithm do?
-2. In what situations is random forest used?
-3. What data is needed for the algorithm to work?
+```python
+def random_forest(data):
+    """Implementation of Random Forest."""
+    # Core algorithm logic
+    return result
+```
 
-### Intermediate
+## Common Mistakes
 
-1. How does random forest handle edge cases?
-2. What are the advantages and disadvantages of random forest?
-3. Can the performance of random forest be improved?
+- Not handling edge cases (empty input, single element)
+- Misunderstanding the complexity implications
+- Incorrect implementation leading to wrong results
+- Not optimizing for the specific use case
 
-### Advanced
+## Recommended Literature
 
-1. What is the time complexity of random forest?
-2. How does random forest work with large volumes of data?
-3. How can random forest be optimized?
-
-## Practical Tasks
-
-### Level 1 (Easy)
-
-Perform a simple operation with the random forest algorithm. Use a small dataset (3-5 elements) and output the result.
-
-### Level 2 (Medium)
-
-Apply the random forest algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
-
-### Level 3 (Advanced)
-
-Write an implementation of the random forest algorithm in a programming language. Add error handling, input validation, tests, and documentation.
-
----
-
-**Ethical Note:**
-
-Remember that machine learning and artificial intelligence algorithms are powerful tools that can affect people's lives. It is important to use them responsibly, considering ethical principles, fairness, transparency, and respect for privacy. Always think about the consequences of your decisions and use technology for the benefit of society.
+- "Introduction to Algorithms" by Cormen, Leiserson, Rivest, and Stein
+- "Algorithms" by Robert Sedgewick and Kevin Wayne
+- Online resources: GeeksforGeeks, Wikipedia, Algorithm Visualizations

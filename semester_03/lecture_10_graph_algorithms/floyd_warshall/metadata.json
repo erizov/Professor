@@ -1,8 +1,0 @@
-{
-  "name": "Floyd-Warshall Algorithm",
-  "category": "Graph Algorithm",
-  "complexity": {
-    "time": "O(V\u00b3)",
-    "space": "O(V\u00b2)"
-  }
-}

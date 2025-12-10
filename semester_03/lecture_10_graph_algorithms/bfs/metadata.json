@@ -1,8 +1,0 @@
-{
-  "name": "Breadth-First Search",
-  "category": "Graph Algorithm",
-  "complexity": {
-    "time": "O(V + E)",
-    "space": "O(V)"
-  }
-}

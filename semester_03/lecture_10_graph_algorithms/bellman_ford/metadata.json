@@ -1,8 +1,0 @@
-{
-  "name": "Bellman-Ford Algorithm",
-  "category": "Graph Algorithm",
-  "complexity": {
-    "time": "O(VE)",
-    "space": "O(V)"
-  }
-}

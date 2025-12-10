@@ -1,33 +1,68 @@
-**Insertion Sort Algorithm**
+# Insertion Sort
 
-**Complexity Estimate:** 
-- Time complexity: O(n^2)
-- Space complexity: O(1)
+## Algorithm Overview
 
-**Usage in Real Frameworks and Software:**
-- Insertion sort is commonly used in small datasets or when the input is almost sorted. It is used in various programming languages and frameworks like Java, C++, and Python.
+Insertion Sort Step-by-Step Execution: Start([Start]) --> Init[Initialize array]
 
-**Similar Concept:** 
-- Insertion sort is similar to sorting a hand of cards in a card game, where you pick up a card and insert it into the correct position in your hand to keep it sorted.
+This algorithm belongs to the **Sorting** category and employs systematic data processing to achieve its objectives.
 
-**Often Used With:**
-- Insertion sort is often used with other sorting algorithms like merge sort or quicksort to optimize the sorting process for different types of input data.
+## Complexity Analysis
 
-**Key Code:**
+**Time Complexity:** O(n²)
+- The algorithm's performance scales according to this complexity class
+- Best, average, and worst cases may vary based on input characteristics
+
+**Space Complexity:** O(1)
+- Indicates the amount of additional memory required during execution
+
+**Key Data Structures:** Standard data structures
+
+## Real-World Applications
+
+Insertion Sort is used in:
+- Sorting arrays in programming languages (Python sorted(), Java Collections.sort())
+- Database query optimization and indexing
+- Operating system process scheduling
+- E-commerce product listings and price sorting
+
+## Conceptual Similarities
+
+This algorithm shares conceptual similarities with other algorithms in the Sorting category, following similar design patterns and optimization strategies.
+
+## Related Algorithms
+
+Insertion Sort is often used in combination with:
+- Complementary algorithms for preprocessing or post-processing
+- Data structures that optimize its performance
+- Other algorithms in the same complexity class
+
+## Key Implementation Details
+
 ```python
 def insertion_sort(arr):
+    """Implementation."""
     for i in range(1, len(arr)):
-        key = arr[i]
-        j = i - 1
-        while j >= 0 and key < arr[j]:
-            arr[j + 1] = arr[j]
-            j -= 1
-        arr[j + 1] = key
+    key = arr[i]
+    j = i - 1
+    while j >= 0 and arr[j] > key:
+        arr[j + 1] = arr[j]
+        j -= 1
+    arr[j + 1] = key
+    return result
 ```
 
-**Common Application Errors:**
-- One common application error when implementing insertion sort is not properly updating the index while swapping elements, which can lead to incorrect sorting.
+## Common Application Errors
 
-**Recommended Literature:**
-- "Introduction to Algorithms" by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
-- "Algorithms" by Robert Sedgewick and Kevin Wayne
+- Incorrect handling of edge cases (empty input, single element, boundary conditions)
+- Misunderstanding of complexity implications in large-scale systems
+- Suboptimal implementation leading to performance degradation
+- Incorrect assumptions about input data characteristics
+- Not considering alternative algorithms for specific use cases
+
+## Recommended Literature
+
+- "Introduction to Algorithms" (CLRS) - Comprehensive algorithm analysis
+- "Algorithm Design Manual" by Steven Skiena
+- "Algorithms" by Sedgewick and Wayne
+- Research papers on algorithm optimization and analysis
+- Framework documentation and implementation guides

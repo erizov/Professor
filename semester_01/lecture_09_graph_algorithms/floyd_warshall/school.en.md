@@ -1,57 +1,50 @@
-# Floyd-Warshall Algorithm
+# Floyd Warshall
 
 ## Simple Explanation
 
-Floyd-Warshall Algorithm is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
+Floyd-Warshall Algorithm Flowchart: Floyd-Warshall Algorithm Step-by-Step Execution:
 
-## Where It's Used
+This algorithm works by processing data systematically to achieve its goal. It's part of the **Graph Algorithms** category of algorithms.
 
-- solving practical programming problems;
-- optimizing application and system performance;
-- processing and analyzing data;
-- automating processes in various fields;
+## Algorithm Complexity
 
-## Example
+The time complexity is **O(n²)**, which means the time it takes to run depends on the size of the input data. The space complexity is **O(1)**, indicating how much extra memory is needed.
 
-Consider a specific example of how floyd-warshall algorithm works:
+## Where It's Used in Practice
 
-1. Data preparation: [specific input data]
-2. Algorithm application: [specific steps]
-3. Result: [specific result]
+Floyd Warshall is commonly used in:
+- Social network analysis
+- Recommendation systems
+- Network topology analysis
+- Computer science education and algorithm learning
 
-The algorithm performs operations sequentially, processing data according to specific rules.
+## What It Can Be Compared To
 
-## Self-Check Questions
+Think of Floyd Warshall like a systematic way of organizing or finding information - similar to how you might organize items or search through a collection efficiently.
 
-### Basic
+## Minimal Code Example
 
-1. What does the floyd-warshall algorithm algorithm do?
-2. In what situations is floyd-warshall algorithm used?
-3. What data is needed for the algorithm to work?
+```python
+def floyd_warshall(graph, n):
+    """Implementation."""
+    dist = [row[:] for row in graph]
+    for k in range(n):
+    for i in range(n):
+        for j in range(n):
+            if dist[i][k] != float('inf') and dist[k][j] != float('inf'):
+                dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])
+    return result
+```
 
-### Intermediate
+## Common Mistakes
 
-1. How does floyd-warshall algorithm handle edge cases?
-2. What are the advantages and disadvantages of floyd-warshall algorithm?
-3. Can the performance of floyd-warshall algorithm be improved?
+- Not handling edge cases (empty input, single element)
+- Misunderstanding the complexity implications
+- Incorrect implementation leading to wrong results
+- Not optimizing for the specific use case
 
-### Advanced
+## Recommended Literature
 
-1. What is the time complexity of floyd-warshall algorithm?
-2. How does floyd-warshall algorithm work with large volumes of data?
-3. How can floyd-warshall algorithm be optimized?
-
-## Practical Tasks
-
-### Level 1 (Easy)
-
-Perform a simple operation with the floyd-warshall algorithm algorithm. Use a small dataset (3-5 elements) and output the result.
-
-### Level 2 (Medium)
-
-Apply the floyd-warshall algorithm algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
-
-### Level 3 (Advanced)
-
-Write an implementation of the floyd-warshall algorithm algorithm in a programming language. Add error handling, input validation, tests, and documentation.
-
+- "Introduction to Algorithms" by Cormen, Leiserson, Rivest, and Stein
+- "Algorithms" by Robert Sedgewick and Kevin Wayne
+- Online resources: GeeksforGeeks, Wikipedia, Algorithm Visualizations

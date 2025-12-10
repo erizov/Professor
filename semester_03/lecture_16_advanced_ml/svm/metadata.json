@@ -1,8 +1,0 @@
-{
-  "name": "Support Vector Machine",
-  "category": "Machine Learning",
-  "complexity": {
-    "time": "O(n\u00b2)",
-    "space": "O(n)"
-  }
-}

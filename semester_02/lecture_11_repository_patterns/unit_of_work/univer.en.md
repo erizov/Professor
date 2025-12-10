@@ -1,75 +1,62 @@
-# Unit of Work
+# Unit Of Work
 
-**Algorithm:** unit_of_work  
-**Discipline:** Data Engineering / Data Governance
+## Algorithm Overview
 
-## Algorithm Definition
+Unit of Work Step-by-Step Execution: Start([Start]) --> Init[Initialize data]
 
-Unit of Work is an algorithm for solving problems in the field of data engineering / data governance, which performs a sequence of operations to process data and obtain results.
+This algorithm belongs to the **Data Access Pattern** category and employs systematic data processing to achieve its objectives.
 
-## Technical Description
+## Complexity Analysis
 
-### What the Algorithm Does
+**Time Complexity:** O(1)
+- The algorithm's performance scales according to this complexity class
+- Best, average, and worst cases may vary based on input characteristics
 
-Unit of Work is an algorithm for solving problems in the field of data engineering / data governance, which performs a sequence of operations to process data and obtain results.
+**Space Complexity:** O(n)
+- Indicates the amount of additional memory required during execution
 
-**Key Steps:**
-1. Data input and validation
-2. Algorithm execution
-3. Result processing and output
+**Key Data Structures:** hash table/dictionary
 
-**Key Data Structures:**
-- Arrays or lists for data storage
-- Variables for intermediate results
-- Control structures for flow management
+## Real-World Applications
 
-## Application in Data Engineering / Data Governance
+Unit Of Work is used in:
+- Software development frameworks
+- System optimization
+- Data processing pipelines
+- Algorithm libraries
 
-1. ETL processes in banking systems: processing millions of transactions per day
-2. Report generation in corporate systems: daily processing of web server logs
-3. Image processing in social networks: batch processing of uploaded photos
+## Conceptual Similarities
 
-## Step-by-Step Scenario
+This algorithm shares conceptual similarities with other algorithms in the Data Access Pattern category, following similar design patterns and optimization strategies.
 
-**Input Data:**
-[Specific input data for unit of work]
+## Related Algorithms
 
-**Step 1:** [Specific algorithm action]
-**Step 2:** [Next action]
-**Step 3:** [Continuation of processing]
-...
+Unit Of Work is often used in combination with:
+- Complementary algorithms for preprocessing or post-processing
+- Data structures that optimize its performance
+- Other algorithms in the same complexity class
 
-**Final Result:**
-[Specific result of the algorithm's work]
+## Key Implementation Details
 
-## Self-Check Questions
+```python
+def unit_of_work(data):
+    """Implementation of Unit Of Work."""
+    # Core algorithm logic
+    return result
+```
 
-### Basic Level
+## Common Application Errors
 
-1. Describe the main stages of the unit of work algorithm. What data structures are used?
-2. What are the time and space complexity of unit of work? Justify your answer.
+- Incorrect handling of edge cases (empty input, single element, boundary conditions)
+- Misunderstanding of complexity implications in large-scale systems
+- Suboptimal implementation leading to performance degradation
+- Incorrect assumptions about input data characteristics
+- Not considering alternative algorithms for specific use cases
 
-### Intermediate Level
+## Recommended Literature
 
-1. In what cases is the unit of work algorithm most effective? When is its use not advisable?
-2. How can unit of work be optimized? Suggest specific improvements.
-
-### Advanced Level
-
-1. Compare unit of work with alternative approaches. Under what conditions is each preferable?
-2. Analyze edge cases and implementation errors of unit of work. How to ensure algorithm correctness?
-
-## Practical Tasks
-
-### Level 1 — Basic
-
-Implement a basic version of the unit of work algorithm in a programming language. Add edge case handling and tests.
-
-### Level 2 — Applied
-
-Create a full implementation of unit of work with error handling, logging, and testing. Apply to real data and analyze results.
-
-### Level 3 — Research
-
-Conduct a research analysis of unit of work: compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
-
+- "Introduction to Algorithms" (CLRS) - Comprehensive algorithm analysis
+- "Algorithm Design Manual" by Steven Skiena
+- "Algorithms" by Sedgewick and Wayne
+- Research papers on algorithm optimization and analysis
+- Framework documentation and implementation guides

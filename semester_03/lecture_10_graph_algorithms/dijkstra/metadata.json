@@ -1,8 +1,0 @@
-{
-  "name": "Dijkstra's Algorithm",
-  "category": "Graph Algorithm",
-  "complexity": {
-    "time": "O(E log V)",
-    "space": "O(V)"
-  }
-}

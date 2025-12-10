@@ -2,56 +2,51 @@
 
 ## Simple Explanation
 
-Random Search is an algorithm for solving specific problems in computer science. It performs a sequence of steps to process data and obtain results.
+Random Search Step-by-Step Execution: Step 1: Check middle (index 2, value 5)
 
-## Where It's Used
+This algorithm works by processing data systematically to achieve its goal. It's part of the **Optimization** category of algorithms.
 
-- solving practical programming problems;
-- optimizing application and system performance;
-- processing and analyzing data;
-- automating processes in various fields;
+## Algorithm Complexity
 
-## Example
+The time complexity is **O(n*iterations)**, which means the time it takes to run depends on the size of the input data. The space complexity is **O(n)**, indicating how much extra memory is needed.
 
-Consider a specific example of how random search works:
+## Where It's Used in Practice
 
-1. Data preparation: [specific input data]
-2. Algorithm application: [specific steps]
-3. Result: [specific result]
+Random Search is commonly used in:
+- Database query optimization
+- Search engines (binary search in sorted indices)
+- Autocomplete and suggestion systems
+- Computer science education and algorithm learning
 
-The algorithm performs operations sequentially, processing data according to specific rules.
+## What It Can Be Compared To
 
-## Self-Check Questions
+Think of Random Search like a systematic way of organizing or finding information - similar to how you might organize items or search through a collection efficiently.
 
-### Basic
+## Minimal Code Example
 
-1. What does the random search algorithm do?
-2. In what situations is random search used?
-3. What data is needed for the algorithm to work?
+```python
+def random_search(param_distributions, n_iter, objective_func):
+    """Implementation."""
+    best_score = float('-inf')
+    best_params = None
+    for _ in range(n_iter):
+    params = {k: dist() for k, dist in param_distributions.items()}
+    score = objective_func(params)
+    if score > best_score:
+        best_score = score
+        best_params = params
+    return result
+```
 
-### Intermediate
+## Common Mistakes
 
-1. How does random search handle edge cases?
-2. What are the advantages and disadvantages of random search?
-3. Can the performance of random search be improved?
+- Not handling edge cases (empty input, single element)
+- Misunderstanding the complexity implications
+- Incorrect implementation leading to wrong results
+- Not optimizing for the specific use case
 
-### Advanced
+## Recommended Literature
 
-1. What is the time complexity of random search?
-2. How does random search work with large volumes of data?
-3. How can random search be optimized?
-
-## Practical Tasks
-
-### Level 1 (Easy)
-
-Perform a simple operation with the random search algorithm. Use a small dataset (3-5 elements) and output the result.
-
-### Level 2 (Medium)
-
-Apply the random search algorithm to a more complex dataset. Analyze the result and explain each step of the algorithm's operation.
-
-### Level 3 (Advanced)
-
-Write an implementation of the random search algorithm in a programming language. Add error handling, input validation, tests, and documentation.
-
+- "Introduction to Algorithms" by Cormen, Leiserson, Rivest, and Stein
+- "Algorithms" by Robert Sedgewick and Kevin Wayne
+- Online resources: GeeksforGeeks, Wikipedia, Algorithm Visualizations

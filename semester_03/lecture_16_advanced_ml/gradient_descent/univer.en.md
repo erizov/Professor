@@ -1,86 +1,65 @@
 # Gradient Descent
 
-**Algorithm:** gradient_descent  
-**Discipline:** Machine Learning / AI
+## Algorithm Overview
 
-## Algorithm Definition
+Gradient Descent Step-by-Step Execution: Start([Start]) --> Init[Initialize data]
 
-Gradient Descent is an algorithm for solving problems in the field of machine learning / ai, which performs a sequence of operations to process data and obtain results.
+This algorithm belongs to the **Machine Learning** category and employs systematic data processing to achieve its objectives.
 
-## Technical Description
+## Complexity Analysis
 
-### What the Algorithm Does
+**Time Complexity:** O(n*d*i)
+- The algorithm's performance scales according to this complexity class
+- Best, average, and worst cases may vary based on input characteristics
 
-Gradient Descent is an algorithm for solving problems in the field of machine learning / ai, which performs a sequence of operations to process data and obtain results.
+**Space Complexity:** O(d)
+- Indicates the amount of additional memory required during execution
 
-**Key Steps:**
-1. Data input and validation
-2. Algorithm execution
-3. Result processing and output
+**Key Data Structures:** hash table/dictionary
 
-**Key Data Structures:**
-- Arrays or lists for data storage
-- Variables for intermediate results
-- Control structures for flow management
+## Real-World Applications
 
-## Application in Machine Learning / AI
+Gradient Descent is used in:
+- Software development frameworks
+- System optimization
+- Data processing pipelines
+- Algorithm libraries
 
-1. Data classification: applying the algorithm to predict object categories based on features
-2. Regression analysis: building a model to predict continuous values
-3. Clustering: grouping similar objects without prior labels
+## Conceptual Similarities
 
-## Step-by-Step Scenario
+This algorithm shares conceptual similarities with other algorithms in the Machine Learning category, following similar design patterns and optimization strategies.
 
-**Input Data:**
-[Specific input data for gradient descent]
+## Related Algorithms
 
-**Step 1:** [Specific algorithm action]
-**Step 2:** [Next action]
-**Step 3:** [Continuation of processing]
-...
+Gradient Descent is often used in combination with:
+- Complementary algorithms for preprocessing or post-processing
+- Data structures that optimize its performance
+- Other algorithms in the same complexity class
 
-**Final Result:**
-[Specific result of the algorithm's work]
+## Key Implementation Details
 
-## Self-Check Questions
+```python
+def gradient_descent(f, df, x0, learning_rate, iterations):
+    """Implementation."""
+    x = x0
+    for _ in range(iterations):
+    gradient = df(x)
+    x = x - learning_rate * gradient
+    return result
+```
 
-### Basic Level
+## Common Application Errors
 
-1. Describe the main stages of the gradient descent algorithm. What data structures are used?
-2. What are the time and space complexity of gradient descent? Justify your answer.
+- Incorrect handling of edge cases (empty input, single element, boundary conditions)
+- Misunderstanding of complexity implications in large-scale systems
+- Suboptimal implementation leading to performance degradation
+- Incorrect assumptions about input data characteristics
+- Not considering alternative algorithms for specific use cases
 
-### Intermediate Level
+## Recommended Literature
 
-1. In what cases is the gradient descent algorithm most effective? When is its use not advisable?
-2. How can gradient descent be optimized? Suggest specific improvements.
-
-### Advanced Level
-
-1. Compare gradient descent with alternative approaches. Under what conditions is each preferable?
-2. Analyze edge cases and implementation errors of gradient descent. How to ensure algorithm correctness?
-
-## Practical Tasks
-
-### Level 1 — Basic
-
-Implement a basic version of the gradient descent algorithm in a programming language. Add edge case handling and tests.
-
-### Level 2 — Applied
-
-Create a full implementation of gradient descent with error handling, logging, and testing. Apply to real data and analyze results.
-
-### Level 3 — Research
-
-Conduct a research analysis of gradient descent: compare with alternative algorithms, measure performance, analyze complexity, and formulate conclusions about applicability.
-
-## Ethical Reasoning
-
-The application of machine learning algorithms requires an ethical approach:
-
-**Key Ethical Principles:**
-- Fairness: the algorithm should not discriminate against user groups
-- Transparency: users should understand how decisions are made
-- Privacy: protection of personal data
-- Responsibility: human oversight of critical decisions
-- Security: protection against abuse and attacks
-
+- "Introduction to Algorithms" (CLRS) - Comprehensive algorithm analysis
+- "Algorithm Design Manual" by Steven Skiena
+- "Algorithms" by Sedgewick and Wayne
+- Research papers on algorithm optimization and analysis
+- Framework documentation and implementation guides
