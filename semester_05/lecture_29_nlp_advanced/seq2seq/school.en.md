@@ -4,14 +4,14 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Seq2Seq: The algorithm works by > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- **Purpose:** Seq2Seq: The algorithm works by systematically processing data according to a specific strategy.
 - **Complexity:** O(n*m*d)
 - **Category:** NLP
-- **Key Idea:** The algorithm works by > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
 
-Seq2Seq: The algorithm works by > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+Seq2Seq: The algorithm works by systematically processing data according to a specific strategy.
 
-The algorithm works by > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+The algorithm works by systematically processing data according to a specific strategy.
 
 **SEQ2SEQ** = Remember the key steps: step 1, step 2, step 3
 
@@ -73,6 +73,36 @@ Output: [result]
 
 
 ---
+
+
+## 🔍 Step-by-Step Execution
+
+**Step-by-Step Execution:**
+
+```python
+# Input
+data = [example input]
+
+# Step 1: Initialize
+state = initial_state
+
+# Step 2: Process
+# [Processing steps]
+
+# Step 3: Finalize
+result = final_state
+
+# Output
+return result
+```
+
+**Expected Output:**
+
+```
+Input: [example]
+Processing...
+Result: [output]
+```
 
 ## ✏️ Practice Exercise
 

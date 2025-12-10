@@ -116,6 +116,49 @@ Output: [result]
 
 ---
 
+
+## 🔍 Step-by-Step Execution
+
+**Step-by-Step Execution (Dynamic Programming):**
+
+```python
+# Input
+n = 5
+memo = {}
+
+# Step 1: Base cases
+memo[0] = 0
+memo[1] = 1
+
+# Step 2: Build up
+memo[2] = memo[1] + memo[0] = 1 + 0 = 1
+memo[3] = memo[2] + memo[1] = 1 + 1 = 2
+memo[4] = memo[3] + memo[2] = 2 + 1 = 3
+memo[5] = memo[4] + memo[3] = 3 + 2 = 5
+
+# Result
+return memo[5] = 5
+```
+
+**Variable States:**
+```
+Step | memo[0] | memo[1] | memo[2] | memo[3] | memo[4] | memo[5]
+-----|---------|---------|---------|---------|---------|--------
+Init |    0    |    1    |    -    |    -    |    -    |    -
+  1  |    0    |    1    |    1    |    -    |    -    |    -
+  2  |    0    |    1    |    1    |    2    |    -    |    -
+  3  |    0    |    1    |    1    |    2    |    3    |    -
+  4  |    0    |    1    |    1    |    2    |    3    |    5
+```
+
+**Expected Output:**
+
+```
+Input: [example]
+Processing...
+Result: [output]
+```
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**

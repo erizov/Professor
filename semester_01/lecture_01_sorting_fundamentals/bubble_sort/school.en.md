@@ -96,6 +96,47 @@ Continue until sorted: [1, 2, 5, 8, 9]
 
 ---
 
+
+## 🔍 Step-by-Step Execution
+
+**Step-by-Step Execution:**
+
+```python
+# Input
+arr = [5, 2, 8, 1, 9]
+n = len(arr)  # n = 5
+
+# Pass 1 (i = 0)
+j = 0: Compare arr[0]=5 and arr[1]=2 → 5 > 2, swap → arr = [2, 5, 8, 1, 9]
+j = 1: Compare arr[1]=5 and arr[2]=8 → 5 < 8, no swap → arr = [2, 5, 8, 1, 9]
+j = 2: Compare arr[2]=8 and arr[3]=1 → 8 > 1, swap → arr = [2, 5, 1, 8, 9]
+j = 3: Compare arr[3]=8 and arr[4]=9 → 8 < 9, no swap → arr = [2, 5, 1, 8, 9]
+# Largest element (9) is now at the end
+
+# Pass 2 (i = 1)
+j = 0: Compare arr[0]=2 and arr[1]=5 → 2 < 5, no swap → arr = [2, 5, 1, 8, 9]
+j = 1: Compare arr[1]=5 and arr[2]=1 → 5 > 1, swap → arr = [2, 1, 5, 8, 9]
+j = 2: Compare arr[2]=5 and arr[3]=8 → 5 < 8, no swap → arr = [2, 1, 5, 8, 9]
+
+# Pass 3 (i = 2)
+j = 0: Compare arr[0]=2 and arr[1]=1 → 2 > 1, swap → arr = [1, 2, 5, 8, 9]
+j = 1: Compare arr[1]=2 and arr[2]=5 → 2 < 5, no swap → arr = [1, 2, 5, 8, 9]
+
+# Result
+arr = [1, 2, 5, 8, 9]  # Sorted!
+```
+
+**Expected Output:**
+
+```
+Input: [5, 2, 8, 1, 9]
+Pass 1: [2, 5, 8, 1, 9] (swapped 5 and 2)
+Pass 2: [2, 5, 1, 8, 9] (swapped 8 and 1)
+Pass 3: [2, 1, 5, 8, 9] (swapped 5 and 1)
+Pass 4: [1, 2, 5, 8, 9] (swapped 2 and 1)
+Sorted: [1, 2, 5, 8, 9]
+```
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**

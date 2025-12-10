@@ -119,6 +119,36 @@ Output: [result]
 
 ---
 
+
+## 🔍 Step-by-Step Execution
+
+**Step-by-Step Execution:**
+
+```python
+# Input
+data = [example input]
+
+# Step 1: Initialize
+state = initial_state
+
+# Step 2: Process
+# [Processing steps]
+
+# Step 3: Finalize
+result = final_state
+
+# Output
+return result
+```
+
+**Expected Output:**
+
+```
+Input: [example]
+Processing...
+Result: [output]
+```
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**

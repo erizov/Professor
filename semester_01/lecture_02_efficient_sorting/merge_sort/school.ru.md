@@ -100,6 +100,47 @@ Output: [result]
 
 ---
 
+
+## 🔍 Step-by-Step Execution
+
+**Step-by-Step Execution:**
+
+```python
+# Input
+arr = [5, 2, 8, 1, 9]
+
+# Step 1: Split
+left = [5, 2, 8]
+right = [1, 9]
+
+# Step 2: Recursively sort halves
+merge_sort([5, 2, 8])
+  → Split: [5, 2] and [8]
+  → Sort [5, 2]: [2, 5]
+  → Merge: [2, 5, 8]
+left_sorted = [2, 5, 8]
+
+merge_sort([1, 9])
+  → Already sorted
+right_sorted = [1, 9]
+
+# Step 3: Merge sorted halves
+result = []
+Compare 2 and 1 → 1 < 2, add 1 → result = [1]
+Compare 2 and 9 → 2 < 9, add 2 → result = [1, 2]
+Compare 5 and 9 → 5 < 9, add 5 → result = [1, 2, 5]
+Compare 8 and 9 → 8 < 9, add 8 → result = [1, 2, 5, 8]
+Add remaining 9 → result = [1, 2, 5, 8, 9]
+```
+
+**Expected Output:**
+
+```
+Input: [example]
+Processing...
+Result: [output]
+```
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**

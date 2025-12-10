@@ -125,6 +125,42 @@ Step 3: Found! Element 7 is at index 3
 
 ---
 
+
+## 🔍 Step-by-Step Execution
+
+**Step-by-Step Execution:**
+
+```python
+# Input
+arr = [1, 3, 5, 7, 9, 11, 13]
+target = 7
+left = 0
+right = 6
+
+# Iteration 1
+mid = (0 + 6) // 2 = 3
+arr[mid] = arr[3] = 7
+7 == 7? Yes! Found at index 3
+
+# Result
+return 3
+```
+
+**Variable States:**
+```
+Iteration | left | right | mid | arr[mid] | Comparison | Action
+----------|------|-------|-----|----------|------------|--------
+    1     |  0   |   6   |  3  |    7     | 7 == 7     | Found!
+```
+
+**Expected Output:**
+
+```
+Searching for 7 in [1, 3, 5, 7, 9, 11, 13]
+Checking index 3: value = 7
+Found at index 3!
+```
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**

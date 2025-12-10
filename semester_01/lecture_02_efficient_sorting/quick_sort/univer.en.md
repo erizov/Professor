@@ -124,6 +124,43 @@ Output: [result]
 
 ---
 
+
+## 🔍 Step-by-Step Execution
+
+**Step-by-Step Execution:**
+
+```python
+# Input
+arr = [5, 2, 8, 1, 9]
+
+# Step 1: Choose pivot (middle element)
+pivot = arr[2] = 8
+
+# Step 2: Partition
+# Elements < 8: [5, 2, 1]
+# Elements = 8: [8]
+# Elements > 8: [9]
+left = [5, 2, 1]
+right = [9]
+
+# Step 3: Recursively sort left
+quick_sort([5, 2, 1])
+  → pivot = 2
+  → left = [1], right = [5]
+  → sorted_left = [1, 2, 5]
+
+# Step 4: Combine
+result = [1, 2, 5] + [8] + [9] = [1, 2, 5, 8, 9]
+```
+
+**Expected Output:**
+
+```
+Input: [example]
+Processing...
+Result: [output]
+```
+
 ## ✏️ Practice Exercise
 
 **Exercise 1 (Easy):**

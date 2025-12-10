@@ -4,14 +4,14 @@
 
 ## 📋 Quick Summary
 
-- **Purpose:** Transformer: The algorithm works by > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- **Purpose:** Transformer: The algorithm works by systematically processing data according to a specific strategy.
 - **Complexity:** O(n²*d)
 - **Category:** NLP
-- **Key Idea:** The algorithm works by > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- **Key Idea:** The algorithm works by systematically processing data according to a specific strategy.
 
-Transformer: The algorithm works by > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+Transformer: The algorithm works by systematically processing data according to a specific strategy.
 
-The algorithm works by > **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+The algorithm works by systematically processing data according to a specific strategy.
 
 **TRANSFORMER** = Remember the key steps: step 1, step 2, step 3
 
@@ -88,6 +88,36 @@ Output: [result]
 
 
 ---
+
+
+## 🔍 Step-by-Step Execution
+
+**Step-by-Step Execution:**
+
+```python
+# Input
+data = [example input]
+
+# Step 1: Initialize
+state = initial_state
+
+# Step 2: Process
+# [Processing steps]
+
+# Step 3: Finalize
+result = final_state
+
+# Output
+return result
+```
+
+**Expected Output:**
+
+```
+Input: [example]
+Processing...
+Result: [output]
+```
 
 ## ✏️ Practice Exercise
 
