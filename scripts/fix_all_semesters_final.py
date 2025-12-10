@@ -11,7 +11,7 @@ import re
 import json
 import ast
 from pathlib import Path
-from typing import Dict, Optional
+from typing import Dict, Optional, Tuple
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -25,34 +25,172 @@ if sys.platform == "win32":
     )
 
 
+def extract_description_from_readme(readme_path: Path) -> str:
+    """Extract description from README.md, skipping flowcharts."""
+    if not readme_path.exists():
+        return ""
+    
+    try:
+        content = readme_path.read_text(encoding='utf-8')
+        lines = content.split('\n')
+        description_parts = []
+        
+        # Skip title and find first meaningful paragraph
+        found_title = False
+        for i, line in enumerate(lines):
+            line_stripped = line.strip()
+            
+            if not line_stripped:
+                continue
+            
+            if line_stripped.startswith('#') and len(line_stripped) <= 50:
+                found_title = True
+                continue
+            
+            # Skip markdown elements and flowcharts
+            if (line_stripped.startswith('-') or 
+                line_stripped.startswith('*') or
+                line_stripped.startswith('[') or
+                line_stripped.startswith('!') or
+                '```' in line_stripped or
+                '┌' in line_stripped or
+                '│' in line_stripped or
+                'flowchart' in line_stripped.lower() or
+                'mermaid' in line_stripped.lower()):
+                continue
+            
+            # Collect meaningful description
+            if (found_title or i < 30) and len(line_stripped) > 30:
+                if not line_stripped.startswith('##'):
+                    description_parts.append(line_stripped)
+                    if len(description_parts) >= 2:
+                        break
+        
+        return ' '.join(description_parts) if description_parts else ""
+    except Exception:
+        return ""
+
+
+def extract_complexity_from_docstring(code: str) -> Tuple[str, str]:
+    """Extract complexity from docstrings."""
+    time_complexity = None
+    space_complexity = None
+    
+    docstring_pattern = r'"""(.*?)"""'
+    docstrings = re.findall(docstring_pattern, code, re.DOTALL)
+    
+    for doc in docstrings:
+        # Time complexity
+        time_patterns = [
+            r'Time Complexity[:\s]+O\([^)]+\)',
+            r'Time[:\s]+O\([^)]+\)',
+            r'O\([^)]+\)[^\n]*time',
+        ]
+        
+        for pattern in time_patterns:
+            match = re.search(pattern, doc, re.IGNORECASE)
+            if match:
+                comp_match = re.search(r'O\([^)]+\)', match.group())
+                if comp_match:
+                    time_complexity = comp_match.group()
+                    break
+        
+        # Space complexity
+        space_patterns = [
+            r'Space Complexity[:\s]+O\([^)]+\)',
+            r'Space[:\s]+O\([^)]+\)',
+            r'O\([^)]+\)[^\n]*space',
+        ]
+        
+        for pattern in space_patterns:
+            match = re.search(pattern, doc, re.IGNORECASE)
+            if match:
+                comp_match = re.search(r'O\([^)]+\)', match.group())
+                if comp_match:
+                    space_complexity = comp_match.group()
+                    break
+        
+        if time_complexity and space_complexity:
+            break
+    
+    return time_complexity, space_complexity
+
+
+def extract_use_cases_from_readme(readme_path: Path) -> list:
+    """Extract use cases from README.md."""
+    if not readme_path.exists():
+        return []
+    
+    try:
+        content = readme_path.read_text(encoding='utf-8')
+        use_cases = []
+        
+        sections = [
+            r'## Real-World Applications\s*\n(.*?)(?=\n##|\Z)',
+            r'## Where It\'s Used\s*\n(.*?)(?=\n##|\Z)',
+        ]
+        
+        for pattern in sections:
+            match = re.search(pattern, content, re.DOTALL | re.IGNORECASE)
+            if match:
+                section_content = match.group(1)
+                items = re.findall(r'[-*]\s+(.+?)(?:\n|$)', section_content)
+                use_cases.extend([item.strip() for item in items if len(item.strip()) > 10])
+                if use_cases:
+                    break
+        
+        return use_cases[:5]
+    except Exception:
+        return []
+
+
 def extract_algorithm_info(algorithm_folder: Path) -> Dict:
-    """Extract algorithm information from code and metadata."""
+    """Enhanced extraction from all available sources."""
     info = {
         'name': algorithm_folder.name,
         'category': 'Algorithms',
         'description': '',
-        'time_complexity': 'Varies',
-        'space_complexity': 'Varies',
+        'time_complexity': None,  # Will extract from sources
+        'space_complexity': None,  # Will extract from sources
         'functions': [],
-        'class_name': None
+        'class_name': None,
+        'use_cases': [],
     }
     
-    # Read metadata
+    # 1. Read metadata.json
     metadata_path = algorithm_folder / "metadata.json"
     if metadata_path.exists():
         try:
             metadata = json.loads(metadata_path.read_text(encoding='utf-8'))
             info.update(metadata)
+            
+            # Handle nested complexity structure
+            if 'complexity' in metadata:
+                if isinstance(metadata['complexity'], dict):
+                    if 'time' in metadata['complexity']:
+                        info['time_complexity'] = metadata['complexity']['time']
+                    if 'space' in metadata['complexity']:
+                        info['space_complexity'] = metadata['complexity']['space']
+                elif isinstance(metadata['complexity'], str):
+                    # Sometimes complexity is a string
+                    info['time_complexity'] = metadata['complexity']
+            
+            # Also check direct time_complexity and space_complexity fields
+            if 'time_complexity' in metadata:
+                info['time_complexity'] = metadata['time_complexity']
+            if 'space_complexity' in metadata:
+                info['space_complexity'] = metadata['space_complexity']
         except Exception:
             pass
     
-    # Read Python code
+    # 2. Read algorithm.py for code structure and docstrings
     code_path = algorithm_folder / "algorithm.py"
     if code_path.exists():
         try:
             code = code_path.read_text(encoding='utf-8')
             tree = ast.parse(code)
             
+            # Extract class and function names
             for node in ast.walk(tree):
                 if isinstance(node, ast.ClassDef):
                     info['class_name'] = node.name
@@ -61,59 +199,223 @@ def extract_algorithm_info(algorithm_folder: Path) -> Dict:
                             info['functions'].append(item.name)
                 elif isinstance(node, ast.FunctionDef):
                     info['functions'].append(node.name)
+            
+            # Extract complexity from docstrings (overrides metadata if better)
+            time_comp, space_comp = extract_complexity_from_docstring(code)
+            if time_comp and time_comp != 'O(n²)':  # Only use if not default
+                info['time_complexity'] = time_comp
+            if space_comp and space_comp != 'O(1)':  # Only use if not default
+                info['space_complexity'] = space_comp
         except Exception:
             pass
+    
+    # 3. Read README.md for descriptions and use cases
+    readme_path = algorithm_folder / "README.md"
+    if readme_path.exists():
+        # Extract description
+        description = extract_description_from_readme(readme_path)
+        if description:
+            info['description'] = description
+        
+        # Extract use cases
+        use_cases = extract_use_cases_from_readme(readme_path)
+        if use_cases:
+            info['use_cases'] = use_cases
+    
+    # Set defaults only if nothing was found
+    if not info['time_complexity']:
+        # Try to infer from algorithm name/type
+        name_lower = algorithm_folder.name.lower()
+        if 'sort' in name_lower:
+            if 'quick' in name_lower or 'merge' in name_lower:
+                info['time_complexity'] = 'O(n log n)'
+            elif 'bubble' in name_lower or 'insertion' in name_lower or 'selection' in name_lower:
+                info['time_complexity'] = 'O(n²)'
+            else:
+                info['time_complexity'] = 'O(n log n)'  # Most sorts are O(n log n)
+        elif 'search' in name_lower:
+            if 'binary' in name_lower:
+                info['time_complexity'] = 'O(log n)'
+            elif 'linear' in name_lower:
+                info['time_complexity'] = 'O(n)'
+            else:
+                info['time_complexity'] = 'O(log n)'  # Most searches are O(log n)
+        elif 'graph' in name_lower or 'dfs' in name_lower or 'bfs' in name_lower:
+            info['time_complexity'] = 'O(V + E)'
+        elif 'hash' in name_lower:
+            info['time_complexity'] = 'O(1) average, O(n) worst'
+        else:
+            info['time_complexity'] = 'Varies'  # Last resort
+    
+    if not info['space_complexity']:
+        name_lower = algorithm_folder.name.lower()
+        if 'sort' in name_lower:
+            if 'merge' in name_lower:
+                info['space_complexity'] = 'O(n)'
+            else:
+                info['space_complexity'] = 'O(1)'  # Most sorts are in-place
+        elif 'search' in name_lower:
+            if 'binary' in name_lower:
+                info['space_complexity'] = 'O(1) iterative, O(log n) recursive'
+            else:
+                info['space_complexity'] = 'O(1)'
+        elif 'graph' in name_lower or 'dfs' in name_lower or 'bfs' in name_lower:
+            info['space_complexity'] = 'O(V)'
+        elif 'hash' in name_lower:
+            info['space_complexity'] = 'O(n)'
+        else:
+            info['space_complexity'] = 'Varies'  # Last resort
     
     return info
 
 
+def generate_where_used(algorithm_name: str, info: Dict) -> str:
+    """Generate algorithm-specific where it's used section."""
+    readable_name = algorithm_name.replace('_', ' ').title()
+    category = info.get('category', 'Algorithms')
+    use_cases = info.get('use_cases', [])
+    name_lower = algorithm_name.lower()
+    
+    # Use extracted use cases if available
+    if use_cases:
+        use_cases_text = '\n'.join([f"- {uc}" for uc in use_cases[:5]])
+        return f"## Where It's Used in Practice\n\n{use_cases_text}"
+    
+    # Generate based on category and algorithm type
+    if category == 'Sorting' or 'sort' in name_lower:
+        return """## Where It's Used in Practice
+
+- **Database Systems:** Sorting query results, indexing, and organizing data
+- **Operating Systems:** Process scheduling, file system organization
+- **Data Analysis:** Preparing data for analysis, statistical operations
+- **Search Engines:** Ranking and organizing search results
+- **E-commerce:** Sorting products by price, rating, popularity"""
+    
+    elif category == 'Searching' or 'search' in name_lower:
+        return """## Where It's Used in Practice
+
+- **Database Systems:** Index lookups, query optimization
+- **Search Engines:** Finding documents, web pages, content
+- **Operating Systems:** File system searches, process lookup
+- **Compilers:** Symbol table lookups, code analysis
+- **Networking:** Routing table lookups, DNS resolution"""
+    
+    elif 'graph' in name_lower or 'dfs' in name_lower or 'bfs' in name_lower:
+        return """## Where It's Used in Practice
+
+- **Social Networks:** Finding connections, friend suggestions
+- **Web Crawling:** Discovering and indexing web pages
+- **Pathfinding:** GPS navigation, game AI
+- **Network Analysis:** Detecting cycles, finding shortest paths
+- **Compiler Design:** Control flow analysis, dependency resolution"""
+    
+    elif 'tree' in name_lower or 'heap' in name_lower:
+        return """## Where It's Used in Practice
+
+- **Priority Queues:** Task scheduling, event handling
+- **Database Indexing:** B-trees for efficient data access
+- **Expression Parsing:** Abstract syntax trees
+- **File Systems:** Directory structures, hierarchical data
+- **Decision Making:** Decision trees in machine learning"""
+    
+    elif 'hash' in name_lower:
+        return """## Where It's Used in Practice
+
+- **Database Systems:** Hash tables for fast lookups
+- **Caching:** Memoization, LRU caches
+- **Cryptography:** Hash functions for security
+- **Distributed Systems:** Consistent hashing for load balancing
+- **Compilers:** Symbol tables, identifier lookups"""
+    
+    elif 'dynamic' in name_lower or 'dp' in name_lower:
+        return """## Where It's Used in Practice
+
+- **Optimization Problems:** Knapsack, longest common subsequence
+- **String Processing:** Edit distance, pattern matching
+- **Game Development:** Pathfinding, resource allocation
+- **Bioinformatics:** Sequence alignment, DNA analysis
+- **Financial Systems:** Portfolio optimization, risk analysis"""
+    
+    else:
+        return f"""## Where It's Used in Practice
+
+- {readable_name} is used in {category.lower()} applications
+- Applied in systems requiring {category.lower()} algorithms
+- Used for solving {category.lower()}-related problems"""
+
+
 def generate_quick_summary(algorithm_name: str, info: Dict) -> str:
-    """Generate algorithm-specific quick summary."""
+    """Generate algorithm-specific quick summary using extracted info."""
     name_lower = algorithm_name.lower()
     readable_name = algorithm_name.replace('_', ' ').title()
     complexity = info.get('time_complexity', 'Varies')
+    space_complexity = info.get('space_complexity', 'Varies')
     category = info.get('category', 'Algorithms')
+    description = info.get('description', '')
     
-    # Algorithm-specific summaries (expand as needed)
-    summaries = {
-        'deadlock_detection': {
-            'purpose': 'Deadlock Detection identifies circular wait conditions in resource allocation graphs where processes are blocked waiting for each other indefinitely.',
-            'complexity': 'O(V + E) time, O(V) space where V is processes/resources and E is wait relationships',
-            'key_idea': 'Uses depth-first search (DFS) with recursion stack tracking to detect cycles in the wait-for graph, indicating deadlocked processes.',
-            'description': 'Deadlock Detection is a critical algorithm in operating systems that identifies when multiple processes are stuck in a circular wait condition, preventing any of them from making progress.',
-            'how_it_works': 'The algorithm builds a wait-for graph from process-resource relationships and uses DFS cycle detection to find circular dependencies that cause deadlocks.',
-            'memory_tip': 'DEADLOCK DETECTION = Remember: Build wait-for graph → DFS traversal → Track recursion stack → Detect cycles → Return deadlocked processes'
-        }
-    }
+    # Use extracted description if available
+    if description:
+        # Clean up description (remove flowchart text if present)
+        if 'Step-by-Step Execution' in description:
+            description = description.split('Step-by-Step Execution')[0].strip()
+        if len(description) > 300:
+            description = description[:300] + "..."
+        
+        # Generate purpose from description
+        if description:
+            # Extract first sentence as purpose
+            sentences = description.split('.')
+            purpose = sentences[0].strip() if sentences else readable_name
+            if len(purpose) > 150:
+                purpose = purpose[:150] + "..."
+        else:
+            purpose = f"{readable_name} is an algorithm in the {category} category."
+    else:
+        purpose = f"{readable_name} is an algorithm in the {category} category."
+        description = f"{readable_name} processes data systematically to achieve its goal."
     
-    if name_lower in summaries:
-        s = summaries[name_lower]
-        return f"""## 📋 Quick Summary
-
-- **Purpose:** {s['purpose']}
-- **Complexity:** {s['complexity']}
-- **Category:** {category}
-- **Key Idea:** {s['key_idea']}
-
-{s['description']}
-
-{s['how_it_works']}
-
-**{s['memory_tip']}**"""
+    # Generate key idea based on algorithm type
+    key_idea = ""
+    if 'sort' in name_lower:
+        key_idea = f"{readable_name} arranges elements in order by comparing and rearranging them."
+    elif 'search' in name_lower:
+        key_idea = f"{readable_name} finds elements in a data structure efficiently."
+    elif 'graph' in name_lower or 'dfs' in name_lower or 'bfs' in name_lower:
+        key_idea = f"{readable_name} traverses graph structures to find paths or connections."
+    elif 'tree' in name_lower or 'heap' in name_lower:
+        key_idea = f"{readable_name} organizes data in a tree structure for efficient operations."
+    elif 'hash' in name_lower:
+        key_idea = f"{readable_name} uses hash functions for fast data access."
+    elif 'dynamic' in name_lower or 'dp' in name_lower:
+        key_idea = f"{readable_name} solves problems by breaking them into subproblems and storing results."
+    elif 'greedy' in name_lower:
+        key_idea = f"{readable_name} makes locally optimal choices at each step."
+    else:
+        key_idea = f"{readable_name} uses systematic processing to solve problems."
     
-    # Generic summary
+    # Format complexity (avoid 'Varies' if possible)
+    if complexity and complexity != 'Varies':
+        complexity_str = complexity
+        if space_complexity and space_complexity != 'Varies':
+            complexity_str = f"{complexity} time, {space_complexity} space"
+    elif space_complexity and space_complexity != 'Varies':
+        complexity_str = f"Varies time, {space_complexity} space"
+    else:
+        complexity_str = "Varies"  # Last resort
+    
+    # Generate memory tip
+    memory_tip = f"{readable_name.upper().replace(' ', '_')} = Remember: {key_idea[:50]}..."
+    
     return f"""## 📋 Quick Summary
 
-- **Purpose:** {readable_name} solves [algorithm purpose] by [key approach].
-- **Complexity:** {complexity}
+- **Purpose:** {purpose}
+- **Complexity:** {complexity_str}
 - **Category:** {category}
-- **Key Idea:** {readable_name} uses [key technique] to [achieve goal].
+- **Key Idea:** {key_idea}
 
-{readable_name} is an algorithm that [brief description of what it does and why it's important].
+{description}
 
-The algorithm works by [key steps in the process].
-
-**{readable_name.upper().replace(' ', '_')}** = Remember: [key steps]"""
+**{memory_tip}**"""
 
 
 def generate_implementation_code(algorithm_name: str, info: Dict, algorithm_folder: Path) -> str:
@@ -272,19 +574,14 @@ def fix_english_file(md_file: Path) -> bool:
                     content = content[:errors_start] + new_errors + '\n\n' + content[errors_end:]
         
         # Fix "Where It's Used" generic placeholders
-        if 'General algorithmic problem solving' in content:
+        if 'General algorithmic problem solving' in content or 'Software development frameworks' in content:
+            new_where = generate_where_used(algorithm_name, info)
             where_start = content.find('## Where It\'s Used')
             if where_start != -1:
                 where_end = content.find('\n## ', where_start + 20)
+                if where_end == -1:
+                    where_end = content.find('\n\n---', where_start)
                 if where_end != -1:
-                    # Replace with algorithm-specific content
-                    category = info.get('category', 'Algorithms')
-                    readable_name = algorithm_name.replace('_', ' ').title()
-                    new_where = f"""## Where It's Used in Practice
-
-- {readable_name} is used in [specific domain based on category: {category}]
-- Applied in [specific technology/framework]
-- Used for [specific use case based on algorithm type]"""
                     content = content[:where_start] + new_where + '\n\n' + content[where_end:]
         
         # Fix "Related Algorithms" generic placeholders
