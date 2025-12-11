@@ -1,140 +1,183 @@
-# Knapsack
+# Knapsack Problem (0/1 Knapsack)
 
-# Univer
+## Convergence Speed and Complexity Estimate
 
-## 📋 Quick Summary
+**Time Complexity:**
+- **Dynamic Programming (Bottom-Up):** O(n × W) where n is number of items and W is knapsack capacity. We fill a 2D table of size (n+1) × (W+1), computing each cell in constant time.
+- **Space-Optimized DP:** O(n × W) time, O(W) space - using only one row of the DP table and updating it iteratively.
+- **Recursive with Memoization:** O(n × W) - each unique subproblem (item, remaining capacity) is solved once.
+- **Brute Force:** O(2ⁿ) - exponential time, checking all 2ⁿ possible subsets of items.
 
-- **Purpose:** Knapsack: For each item, decide whether to include it or not - store the best value for each weight capacity.
-- **Complexity:** O(n²)
-- **Category:** Algorithms
-- **Key Idea:** For each item, decide whether to include it or not - store the best value for each weight capacity.
+**Space Complexity:**
+- **Standard DP:** O(n × W) - 2D table storing maximum value for each (item, capacity) combination.
+- **Space-Optimized DP:** O(W) - only storing one row (current capacity values) and updating it.
+- **Memoized Recursive:** O(n × W) - memoization table plus recursion stack O(n).
 
-Knapsack: For each item, decide whether to include it or not - store the best value for each weight capacity.
+**Convergence:** The algorithm converges when the DP table is completely filled. Each cell dp[i][w] represents the maximum value achievable using first i items with capacity w. The final answer is in dp[n][W], computed after processing all n items and all capacities from 0 to W.
 
-For each item, decide whether to include it or not - store the best value for each weight capacity.
+**Pseudopolynomial Complexity:** O(n × W) is pseudopolynomial because W (capacity) is a number, not input size. If W is large (exponential in input size), this becomes exponential. True polynomial would be O(n × log W).
 
-**KNAPSACK** = Keep Noting All Possible Solutions, Always Check Knapsack. For each item, decide: take it or leave it?
+## Where the Algorithm is Used in Real Frameworks and Software
 
+The Knapsack problem is fundamental in optimization and resource allocation:
 
+- **Resource Allocation:**
+  - **Cloud computing** - allocating virtual machines with CPU/memory constraints
+  - **Budget optimization** - selecting projects within budget constraints
+  - **Portfolio optimization** - selecting investments with risk/return trade-offs
+  - **Resource scheduling** - allocating tasks with resource limits
 
+- **Cutting Stock Problem:**
+  - **Manufacturing** - cutting materials (wood, metal) to minimize waste
+  - **Paper industry** - cutting paper rolls to fulfill orders
+  - **Textile industry** - cutting fabric with minimum waste
 
+- **Cryptography:**
+  - **Merkle-Hellman knapsack cryptosystem** - public-key encryption (though broken)
+  - **Subset sum problems** - related cryptographic applications
 
+- **Game Development:**
+  - **Inventory systems** - selecting items with weight/value constraints
+  - **Loot systems** - optimizing loot selection within capacity
+  - **Character equipment** - selecting gear with stat/weight trade-offs
 
+- **Real-World Applications:**
+  - **Logistics** - loading trucks/containers with weight/volume constraints
+  - **Energy management** - selecting energy sources with cost/capacity limits
+  - **Project selection** - choosing projects with budget/time constraints
+  - **Advertising** - selecting ad placements with budget/impression constraints
 
+## What It's Similar To in Concept
 
-This algorithm belongs to the **Dynamic Programming** category and employs systematic data processing to achieve its objectives.
+The Knapsack problem shares conceptual similarities with:
 
+- **Dynamic Programming Pattern:** Classic DP problem - optimal substructure (solution to subproblem helps solve larger problem) and overlapping subproblems (same subproblems computed multiple times). Similar structure to other DP problems like coin change, longest increasing subsequence.
 
-> **Note**: Mermaid diagrams are rendered automatically on GitHub. For local viewing, use a Mermaid-compatible Markdown viewer.
+- **Subset Sum Problem:** Knapsack is generalization - instead of just checking if subset sums to target, we maximize value of subset with weight constraint. Both explore all possible subsets.
 
+- **Greedy Algorithms:** Similar to fractional knapsack (greedy works) but 0/1 knapsack requires DP because items can't be split. Greedy would choose highest value/weight ratio, but that's not optimal for 0/1 version.
 
+- **Backtracking:** Brute force solution explores all subsets (2ⁿ possibilities), similar to backtracking. DP optimizes this by storing results of subproblems.
 
-## Complexity Analysis
+- **Integer Linear Programming:** Knapsack can be formulated as ILP: maximize Σ(vᵢxᵢ) subject to Σ(wᵢxᵢ) ≤ W, xᵢ ∈ {0,1}. DP provides efficient solution for this specific ILP problem.
 
-**Time Complexity:** O(n) to O(n²) depending on implementation
-- Analysis based on algorithm structure and data operations
-- Best, average, and worst cases depend on input characteristics
-- Consider input size and data distribution
+## Which Algorithms It's Often Used With
 
-**Space Complexity:** O(1) to O(n) depending on approach
-- Additional memory for data structures and recursion
-- Auxiliary space for temporary variables
-- Consider in-place vs. extra space implementations
+The Knapsack algorithm is frequently combined with:
 
-**Key Data Structures:** 
-- Based on algorithm type: arrays, trees, graphs, hash tables, etc.
+- **Other Dynamic Programming Problems:**
+  - **Coin Change** - similar DP structure, different constraints
+  - **Longest Common Subsequence** - similar 2D DP table pattern
+  - **Edit Distance** - similar DP approach with different recurrence
 
+- **Optimization Techniques:**
+  - **Branch and Bound** - for solving large knapsack instances
+  - **Approximation algorithms** - for near-optimal solutions when exact solution too slow
+  - **Greedy algorithms** - for comparison and understanding trade-offs
 
-## Real-World Applications
+- **Related Problems:**
+  - **Fractional Knapsack** - where items can be split (greedy works)
+  - **Multiple Knapsack** - multiple knapsacks to fill
+  - **Bounded Knapsack** - each item has limited quantity
+  - **Unbounded Knapsack** - unlimited quantity of each item
 
-Knapsack is used in:
-- **Algorithms Applications:** Core functionality in Algorithms systems
-- **System Design:** Fundamental building blocks for larger systems
-- **Performance Optimization:** Efficient solutions to common problems
-- **Framework Integration:** Used in various software frameworks
+- **Data Structures:**
+  - **2D Arrays** - for DP table storage
+  - **Memoization tables** - for recursive DP approach
 
+## Key Code (Only Important Parts)
 
-## Conceptual Similarities
-
-Knapsack is conceptually similar to:
-- Other algorithms in the Algorithms category
-- Algorithms that use similar data structures and techniques
-- Related algorithms that solve similar problems
-
-
-## Related Algorithms
-
-Knapsack is often used in combination with:
-- Related algorithms in the Algorithms category
-- Complementary data structures that optimize performance
-- Algorithms that solve related problems
-
-
-## Key Implementation Details
+Here's a concise implementation highlighting the essential logic:
 
 ```python
-def knapsack(data):
-    """Implementation of Knapsack."""
-    # [Implementation details based on algorithm type]
-    return result
+def knapsack(weights: List[int], values: List[int], capacity: int) -> int:
+    """0/1 Knapsack using dynamic programming."""
+    n = len(weights)
+    # dp[i][w] = max value using first i items with capacity w
+    dp = [[0 for _ in range(capacity + 1)] for _ in range(n + 1)]
+    
+    for i in range(1, n + 1):
+        for w in range(1, capacity + 1):
+            # Can we include item i-1?
+            if weights[i - 1] <= w:
+                # Take max of: including item vs. not including item
+                dp[i][w] = max(
+                    values[i - 1] + dp[i - 1][w - weights[i - 1]],  # Include
+                    dp[i - 1][w]  # Don't include
+                )
+            else:
+                # Item too heavy, can't include
+                dp[i][w] = dp[i - 1][w]
+    
+    return dp[n][capacity]
+
+# Space-optimized version (O(W) space)
+def knapsack_optimized(weights: List[int], values: List[int], capacity: int) -> int:
+    """Space-optimized knapsack - only O(W) space."""
+    dp = [0] * (capacity + 1)
+    
+    for i in range(len(weights)):
+        # Process backwards to avoid overwriting needed values
+        for w in range(capacity, weights[i] - 1, -1):
+            dp[w] = max(dp[w], values[i] + dp[w - weights[i]])
+    
+    return dp[capacity]
 ```
 
+**Key Points:**
+- DP table: dp[i][w] = max value with first i items, capacity w
+- Recurrence: include item (if fits) or skip it
+- Time: O(n × W), Space: O(n × W) or O(W) optimized
+- Bottom-up approach fills table iteratively
+- Final answer: dp[n][capacity]
 
 ## Common Application Errors
 
-- **Incorrect handling of edge cases:** Solution: Test with empty input, single element, and boundary values.
-- **Misunderstanding complexity implications:** Solution: Analyze time and space complexity for your use case.
-- **Suboptimal implementation:** Solution: Profile and optimize based on actual usage patterns.
-- **Incorrect assumptions about input:** Solution: Validate input format and constraints before processing.
+1. **Wrong DP State Definition:**
+   - **Error:** Using dp[i] = max value with i items (missing capacity dimension)
+   - **Impact:** Can't track remaining capacity, incorrect results
+   - **Solution:** Always use 2D DP: dp[i][w] with both item count and capacity
 
+2. **Incorrect Recurrence Relation:**
+   - **Error:** Not checking if item fits before including it
+   - **Impact:** Accesses negative indices or incorrect values
+   - **Solution:** Always check `if weights[i-1] <= w` before including item
+
+3. **Array Index Off-by-One:**
+   - **Error:** Using 0-indexed items with 1-indexed DP table incorrectly
+   - **Impact:** Accesses wrong items, incorrect results
+   - **Solution:** Be consistent: dp[i][w] uses items[0..i-1], so item i-1 is current item
+
+4. **Not Initializing Base Cases:**
+   - **Error:** Not setting dp[0][w] = 0 for all w (no items = 0 value)
+   - **Impact:** Incorrect base case, wrong results
+   - **Solution:** Initialize dp[0][w] = 0 (0 items always gives 0 value)
+
+5. **Space Optimization Direction Error:**
+   - **Error:** Processing capacity forwards instead of backwards in optimized version
+   - **Impact:** Overwrites values needed for current iteration
+   - **Solution:** Process capacity backwards (W down to weights[i]) to preserve needed values
+
+6. **Confusing with Fractional Knapsack:**
+   - **Error:** Using greedy approach (sort by value/weight ratio) for 0/1 knapsack
+   - **Impact:** Greedy doesn't work for 0/1 version, gives suboptimal solution
+   - **Solution:** Use DP for 0/1 knapsack, greedy only works for fractional version
 
 ## Recommended Literature
 
-- "Introduction to Algorithms" (CLRS) - Comprehensive algorithm analysis
-- "Algorithm Design Manual" by Steven Skiena
-- "Algorithms" by Sedgewick and Wayne
-- Research papers on algorithm optimization and analysis
-- Framework documentation and implementation guides
+1. **"Introduction to Algorithms" (CLRS)** - Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein
+   - Comprehensive coverage of knapsack problem with detailed DP analysis and proof of correctness
 
+2. **"Algorithm Design Manual"** - Steven S. Skiena
+   - Practical approach to knapsack with implementation details, variations, and when to use different approaches
 
+3. **"Dynamic Programming: From Novice to Advanced"** - various online resources
+   - Step-by-step explanation of DP thinking process applied to knapsack
 
----
+4. **"Competitive Programming"** - various authors
+   - Knapsack as classic DP problem with optimization techniques and space reduction tricks
 
-## 🎯 Try It Yourself
-
-**Try this example:**
-```
-Input: [example data]
-
-Step 1: Initialize algorithm state
-Step 2: Process input data
-Step 3: Generate result
-
-Output: [algorithm result]
-```
-
-
-
-## Common Mistakes
-
-### ❌ Mistake 1: Not handling edge cases
-**Solution:** Always check for empty input, single element, or boundary values before processing.
-
-### ❌ Mistake 2: Incorrect initialization
-**Solution:** Ensure all variables and data structures are properly initialized before the main algorithm loop.
-
-### ❌ Mistake 3: Off-by-one errors in loops
-**Solution:** Carefully verify loop bounds and termination conditions. Test with small examples to catch boundary issues.
-
-### ❌ Mistake 4: Not validating input
-**Solution:** Add input validation to ensure data is in expected format and within valid ranges.
-
-### 💡 How to Avoid
-- Test with edge cases (empty input, single element, boundary values)
-- Trace through examples step-by-step
-- Use debugging tools to verify variable values
-- Review algorithm's key steps before implementing
-- Test with edge cases (empty input, single element, boundary values)
-- Trace through examples step-by-step
-- Use debugging tools to verify your logic
-- Review the algorithm's key steps before implementing
+5. **Online Resources:**
+   - GeeksforGeeks - detailed knapsack tutorials with examples
+   - LeetCode - practice problems (Knapsack variations)
+   - TopCoder tutorials - advanced DP techniques
