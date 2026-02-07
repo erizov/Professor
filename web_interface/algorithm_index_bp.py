@@ -6,17 +6,32 @@ Algorithm index page with Level and Language filters.
 
 from flask import Blueprint, render_template, request, jsonify, session
 from pathlib import Path
+import re
 import sqlite3
+import uuid
 
-ROOT = Path(__file__).resolve().parents[1]
-DB_PATH = ROOT / "database" / "algorithms.db"
+try:
+    from core.paths import PROJECT_ROOT, COURSE_ROOT, get_database_path
+    from core.exceptions import ValidationError
+except ImportError:
+    PROJECT_ROOT = Path(__file__).resolve().parents[1]
+    COURSE_ROOT = PROJECT_ROOT / "course"
+    ValidationError = ValueError  # type: ignore
+
+    def get_database_path(db_name: str = "algorithms.db") -> Path:
+        return PROJECT_ROOT / "database" / db_name
+
+ROOT = PROJECT_ROOT
+DB_PATH = get_database_path("algorithms.db")
+LESSON_ASK_LIMIT_PER_LESSON = 25
+LESSON_ASK_QUESTION_MAX_LEN = 1000
 
 algorithm_index_bp = Blueprint("algorithm_index", __name__, url_prefix="/algorithm-index")
 
 
 def get_db_connection():
     """Get database connection."""
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(str(DB_PATH))
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -224,6 +239,157 @@ def get_md_file():
         return jsonify({"content": content})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
+def _ensure_lesson_ask_table(conn: sqlite3.Connection) -> None:
+    """Create lesson_ask_usage table if not exists."""
+    conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS lesson_ask_usage (
+            session_id TEXT NOT NULL,
+            lesson_path TEXT NOT NULL,
+            count INTEGER NOT NULL DEFAULT 0,
+            updated_at TEXT,
+            PRIMARY KEY (session_id, lesson_path)
+        )
+        """
+    )
+    conn.commit()
+
+
+def _get_lesson_ask_session_id() -> str:
+    """Stable session id for rate limiting (user_id or anonymous session)."""
+    if session.get("user_id"):
+        return f"user_{session['user_id']}"
+    if not session.get("_lesson_ask_sid"):
+        session["_lesson_ask_sid"] = str(uuid.uuid4())
+    return session["_lesson_ask_sid"]
+
+
+def _validate_lesson_path(lesson_path: str) -> Path:
+    """Return resolved path if under ROOT and exists as directory; else raise ValidationError."""
+    if not lesson_path or ".." in lesson_path or lesson_path.startswith("/"):
+        raise ValidationError("Invalid lesson path")
+    path = (ROOT / lesson_path.replace("\\", "/").lstrip("/")).resolve()
+    try:
+        root_resolved = ROOT.resolve()
+        if not str(path).startswith(str(root_resolved)) or not path.is_dir():
+            raise ValueError("Lesson path not under project")
+    except Exception as e:
+        raise ValidationError("Invalid lesson path") from e
+    return path
+
+
+@algorithm_index_bp.route("/api/lesson-ask/limit")
+def lesson_ask_limit():
+    """Return used count and limit for current user/session and lesson."""
+    lesson_path = request.args.get("lesson_path")
+    if not lesson_path:
+        return jsonify({"error": "lesson_path required"}), 400
+    try:
+        _validate_lesson_path(lesson_path)
+    except (ValueError, ValidationError) as e:
+        return jsonify({"error": str(e)}), 400
+    sid = _get_lesson_ask_session_id()
+    conn = get_db_connection()
+    try:
+        _ensure_lesson_ask_table(conn)
+        row = conn.execute(
+            "SELECT count FROM lesson_ask_usage WHERE session_id = ? AND lesson_path = ?",
+            (sid, lesson_path),
+        ).fetchone()
+        used = int(row["count"]) if row else 0
+    finally:
+        conn.close()
+    return jsonify({"used": used, "limit": LESSON_ASK_LIMIT_PER_LESSON})
+
+
+@algorithm_index_bp.route("/api/lesson-ask", methods=["POST"])
+def lesson_ask():
+    """Ask AI a question about the current lesson. Rate limited to 25 per lesson per student."""
+    data = request.get_json() or {}
+    lesson_path = (data.get("lesson_path") or "").strip()
+    question = (data.get("question") or "").strip()
+    if not lesson_path:
+        return jsonify({"error": "lesson_path required"}), 400
+    if not question:
+        return jsonify({"error": "question required"}), 400
+    if len(question) > LESSON_ASK_QUESTION_MAX_LEN:
+        return jsonify({"error": "question too long"}), 400
+    if re.search(r"<script|javascript:|on\w+=|\.execute\s*\(|DROP\s+TABLE", question, re.I):
+        return jsonify({"error": "Invalid question"}), 400
+    try:
+        lesson_dir = _validate_lesson_path(lesson_path)
+    except (ValueError, ValidationError) as e:
+        return jsonify({"error": str(e)}), 400
+    sid = _get_lesson_ask_session_id()
+    conn = get_db_connection()
+    try:
+        _ensure_lesson_ask_table(conn)
+        row = conn.execute(
+            "SELECT count FROM lesson_ask_usage WHERE session_id = ? AND lesson_path = ?",
+            (sid, lesson_path),
+        ).fetchone()
+        used = int(row["count"]) if row else 0
+        if used >= LESSON_ASK_LIMIT_PER_LESSON:
+            return jsonify({"error": "Question limit reached for this lesson (25 max)."}), 429
+        from datetime import datetime
+        import openai
+        api_key = None
+        base_url = None
+        try:
+            from core.config import get_openai_api_key, get_openai_api_base
+            api_key = get_openai_api_key()
+            base_url = get_openai_api_base() or None
+        except ImportError:
+            pass
+        if not api_key:
+            return jsonify({"error": "AI not configured. Set OPENAI_API_KEY for this feature."}), 503
+        lesson_text = ""
+        for name in ("school.en.md", "univer.en.md", "README.md"):
+            f = lesson_dir / name
+            if f.exists():
+                try:
+                    lesson_text += f.read_text(encoding="utf-8")[:12000]
+                    break
+                except Exception:
+                    pass
+        if not lesson_text:
+            lesson_text = f"Lesson folder: {lesson_path}"
+        system = (
+            "You are a tutor for an algorithms course. Answer ONLY questions about this lesson. "
+            "Use the lesson content below. If the question is off-topic or not about this lesson, "
+            "politely say you can only answer questions about this lesson. Keep answers concise and educational."
+        )
+        user_content = f"Lesson content:\n\n{lesson_text[:10000]}\n\n---\nStudent question: {question}"
+        client = openai.OpenAI(api_key=api_key, base_url=base_url if base_url else None)
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": user_content},
+            ],
+            max_tokens=800,
+        )
+        answer = (response.choices[0].message.content or "").strip()
+        conn.execute(
+            """
+            INSERT INTO lesson_ask_usage (session_id, lesson_path, count, updated_at)
+            VALUES (?, ?, 1, ?)
+            ON CONFLICT(session_id, lesson_path) DO UPDATE SET
+                count = count + 1,
+                updated_at = ?
+            """,
+            (sid, lesson_path, datetime.utcnow().isoformat(), datetime.utcnow().isoformat()),
+        )
+        conn.commit()
+    except Exception as e:
+        if "429" in str(type(e).__name__) or "rate" in str(e).lower():
+            return jsonify({"error": "Rate limit exceeded. Try again later."}), 429
+        return jsonify({"error": "Failed to get answer. Try again."}), 500
+    finally:
+        conn.close()
+    return jsonify({"answer": answer, "used": used + 1, "limit": LESSON_ASK_LIMIT_PER_LESSON})
 
 
 @algorithm_index_bp.route("/api/preferences", methods=["GET", "POST"])

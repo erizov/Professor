@@ -340,6 +340,17 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <div id="preview-content" class="md-content"></div>
+            <!-- Ask AI about this lesson (rate limited: 25 questions per lesson) -->
+            <div id="lesson-ask-section" style="margin-top: 1.5rem; border-top: 1px solid #eee; padding-top: 1rem; display: none;">
+                <p id="lesson-ask-count" style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;"></p>
+                <button type="button" id="lesson-ask-toggle" class="btn btn-primary" style="margin-bottom: 0.5rem;">Ask AI about this lesson</button>
+                <div id="lesson-ask-panel" style="display: none;">
+                    <textarea id="lesson-ask-input" rows="3" placeholder="Ask a question about this lesson..." style="width: 100%; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 0.5rem;"></textarea>
+                    <button type="button" id="lesson-ask-submit" class="btn btn-primary">Send</button>
+                    <div id="lesson-ask-answer" style="margin-top: 1rem; padding: 1rem; background: #f9f9f9; border-radius: 4px; white-space: pre-wrap; display: none;"></div>
+                    <div id="lesson-ask-error" style="margin-top: 0.5rem; color: #c00; display: none;"></div>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -520,16 +531,46 @@
             pagination.appendChild(nextBtn);
         }
         
+        let currentLessonPath = null;
+
         // Show algorithm content in modal
         async function showAlgorithmContent(algo) {
             const modal = document.getElementById('previewModal');
             const content = document.getElementById('preview-content');
-            
+            const askSection = document.getElementById('lesson-ask-section');
+            const askPanel = document.getElementById('lesson-ask-panel');
+            const askAnswer = document.getElementById('lesson-ask-answer');
+            const askError = document.getElementById('lesson-ask-error');
+            const askInput = document.getElementById('lesson-ask-input');
+
+            currentLessonPath = algo.folder_path || null;
+            askSection.style.display = currentLessonPath ? 'block' : 'none';
+            askPanel.style.display = 'none';
+            askAnswer.style.display = 'none';
+            askAnswer.textContent = '';
+            askError.style.display = 'none';
+            askError.textContent = '';
+            if (askInput) askInput.value = '';
+
             const language = document.getElementById('header-language')?.value || document.getElementById('language')?.value || 'en';
             const loadingText = language === 'ru' ? 'Загрузка содержимого...' : 'Loading content...';
             content.innerHTML = `<div class="loading">${loadingText}</div>`;
             modal.style.display = 'block';
-            
+
+            if (currentLessonPath) {
+                try {
+                    const limRes = await fetch(`/algorithm-index/api/lesson-ask/limit?lesson_path=${encodeURIComponent(currentLessonPath)}`);
+                    const limData = await limRes.json();
+                    const countEl = document.getElementById('lesson-ask-count');
+                    if (countEl) countEl.textContent = language === 'ru'
+                        ? `Вопросов по этому уроку: ${limData.used || 0} / ${limData.limit || 25}`
+                        : `Questions this lesson: ${limData.used || 0} / ${limData.limit || 25}`;
+                } catch (e) {
+                    const countEl = document.getElementById('lesson-ask-count');
+                    if (countEl) countEl.textContent = '';
+                }
+            }
+
             try {
                 const level = document.getElementById('header-level')?.value || 'school';
                 const lang = document.getElementById('header-language')?.value || document.getElementById('language')?.value || 'en';
@@ -537,10 +578,9 @@
                     `/algorithm-index/api/md-file?path=${encodeURIComponent(algo.folder_path)}&level=${level}&language=${lang}`
                 );
                 const data = await response.json();
-                
+
                 if (data.content) {
-                    // Simple markdown rendering (you might want to use a library like marked.js)
-                    content.innerHTML = `<h1>${algo.display_name || algo.name}</h1>` + 
+                    content.innerHTML = `<h1>${algo.display_name || algo.name}</h1>` +
                                       convertMarkdownToHTML(data.content);
                 } else {
                     const notAvailableText = language === 'ru' ? 'Содержимое недоступно' : 'Content not available';
@@ -551,6 +591,54 @@
                 const errorText = language === 'ru' ? 'Ошибка загрузки содержимого' : 'Error loading content';
                 content.innerHTML = `<p>${errorText}</p>`;
             }
+        }
+
+        function setupLessonAsk() {
+            const toggle = document.getElementById('lesson-ask-toggle');
+            const panel = document.getElementById('lesson-ask-panel');
+            const submit = document.getElementById('lesson-ask-submit');
+            const input = document.getElementById('lesson-ask-input');
+            const answerEl = document.getElementById('lesson-ask-answer');
+            const errorEl = document.getElementById('lesson-ask-error');
+            if (!toggle || !panel || !submit || !input) return;
+            toggle.onclick = function() {
+                panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+                errorEl.style.display = 'none';
+                answerEl.style.display = 'none';
+            };
+            submit.onclick = async function() {
+                const q = (input.value || '').trim();
+                if (!q) return;
+                if (!currentLessonPath) return;
+                errorEl.style.display = 'none';
+                answerEl.style.display = 'none';
+                submit.disabled = true;
+                try {
+                    const res = await fetch('/algorithm-index/api/lesson-ask', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ lesson_path: currentLessonPath, question: q })
+                    });
+                    const data = await res.json().catch(() => ({}));
+                    if (res.ok && data.answer) {
+                        answerEl.textContent = data.answer;
+                        answerEl.style.display = 'block';
+                        const countEl = document.getElementById('lesson-ask-count');
+                        const lang = document.getElementById('header-language')?.value || 'en';
+                        if (countEl) countEl.textContent = lang === 'ru'
+                            ? `Вопросов по этому уроку: ${data.used || 0} / ${data.limit || 25}`
+                            : `Questions this lesson: ${data.used || 0} / ${data.limit || 25}`;
+                        input.value = '';
+                    } else {
+                        errorEl.textContent = data.error || 'Request failed';
+                        errorEl.style.display = 'block';
+                    }
+                } catch (e) {
+                    errorEl.textContent = 'Network error';
+                    errorEl.style.display = 'block';
+                }
+                submit.disabled = false;
+            };
         }
         
         // Simple markdown to HTML converter
@@ -810,7 +898,8 @@
             });
             
             loadFilters();
-            
+            setupLessonAsk();
+
             // Setup header dropdowns event listeners
             const headerLevel = document.getElementById('header-level');
             const headerLanguage = document.getElementById('header-language');
